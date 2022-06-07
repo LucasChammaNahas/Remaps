@@ -20,12 +20,9 @@
 !e::   SendRaw ]
 <^>!e::SendRaw ]
 
-!r::   SendRaw _
-<^>!r::SendRaw _
-
-<!t::  SendRaw +
->!t::  Send    {Space}{+}{Space}
-<^>!t::Send    {Space}{+}{Space}
+<!r::  SendRaw +
+>!r::  Send    {Space}{+}{Space}
+<^>!r::Send    {Space}{+}{Space}
 
 !a::   SendRaw @
 <^>!a::SendRaw @
