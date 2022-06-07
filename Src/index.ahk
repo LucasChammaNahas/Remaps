@@ -6,13 +6,17 @@
 ; ==============================================================
 
 
-; LABELS:: - carregados depois
+; :: - carregados depois
+
+; HOTSTRINGS
 ; ==============================================================
+#Include, %A_LineFile%\..\Hotstrings\emojis.ahk
+#Include, %A_LineFile%\..\Hotstrings\general.ahk
+#Include, %A_LineFile%\..\Hotstrings\programming.ahk
+#Include, %A_LineFile%\..\Hotstrings\symbols.ahk
 ; #Include, %A_LineFile%\..\SC_folders_B.ahk
 ; #Include, %A_LineFile%\..\SC_programs_B.ahk
 
-msgbox, FUNCIONA PORRA CARALHO
-#Include, %A_LineFile%\..\HS_hotstrings_B.ahk
 
 
 ; #Include, %A_LineFile%\..\HK_misc_B.ahk

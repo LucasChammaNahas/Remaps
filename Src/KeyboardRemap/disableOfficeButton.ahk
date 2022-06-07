@@ -1,8 +1,3 @@
-#^!+q::
-Send Sincerely
-return
-
-
 #^!Shift::
 #^+Alt::
 #!+Ctrl::
@@ -10,7 +5,3 @@ return
 ^!+RWin::
 Send {Blind}{vk07}
 return
-
-
-
-SincerelySincerely
