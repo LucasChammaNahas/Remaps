@@ -4,6 +4,9 @@
 ; ! alt
 ; > < right left
 
+!Space::   Send {Space}
+<^>!Space::Send {Space}
+
 !q::   SendRaw #
 <^>!q::SendRaw #
 
@@ -16,8 +19,9 @@
 !r::   SendRaw _
 <^>!r::SendRaw _
 
-!t::   SendRaw +
-<^>!t::SendRaw +
+<!t::  SendRaw +
+>!t::  Send    {Space}{+}{Space}
+<^>!t::Send    {Space}{+}{Space}
 
 !a::   SendRaw @
 <^>!a::SendRaw @
@@ -28,11 +32,13 @@
 !d::   SendRaw )
 <^>!d::SendRaw )
 
-!f::   SendRaw `=
-<^>!f::SendRaw `=
+<!f::  SendRaw `=
+>!f::  Send    {Space}`={Space}
+<^>!f::Send    {Space}`={Space}
 
-!g::   SendRaw *
-<^>!g::SendRaw *
+<!g::  SendRaw *
+>!g::  Send    {Space}*{Space}
+<^>!g::Send    {Space}*{Space}
 
 !z::   SendRaw $
 <^>!z::SendRaw $
@@ -43,11 +49,11 @@
 !c::   SendRaw }
 <^>!c::SendRaw }
 
-!v::   SendRaw `%
-<^>!v::SendRaw `%
+!v::   SendRaw !
+<^>!v::SendRaw !
 
-!b::   SendRaw !
-<^>!b::SendRaw !
+!b::   SendRaw `%
+<^>!b::SendRaw `%
 
 
 
@@ -56,14 +62,17 @@
 !y::   SendRaw &
 <^>!y::SendRaw &
 
-!u::   SendRaw ~
-<^>!u::SendRaw ~
+<!u::  SendRaw <
+>!u::  SendRaw <`=
+<^>!u::SendRaw <`=
 
-!i::   SendRaw ^
-<^>!i::SendRaw ^
+<!i::  SendRaw `=
+>!i::  Send    {Space}`=>{Space}
+<^>!i::Send    {Space}`=>{Space}
 
-!o::   SendRaw €
-<^>!o::SendRaw €
+<!o::  SendRaw >
+>!o::  SendRaw >`=
+<^>!o::SendRaw >`=
 
 !p::   SendRaw £
 <^>!p::SendRaw £
@@ -71,29 +80,30 @@
 !h::   SendRaw |
 <^>!h::SendRaw |
 
-!j::   Send ''{Left}
-<^>!j::Send ''{Left}
+!j::   SendRaw "
+<^>!j::SendRaw "
 
-!k::   Send {"}{"}{Left}
-<^>!k::Send {"}{"}{Left}
+!k::   SendRaw '
+<^>!k::SendRaw '
 
-!l::   Send ````{Left}
-<^>!l::Send ````{Left}
+!l::   SendRaw ``
+<^>!l::SendRaw ``
 
 !`;::   Send {End}`;
 <^>!`;::Send {End}`;
 
-!n::   SendRaw :
-<^>!n::SendRaw :
+!n::   SendRaw ~
+<^>!n::SendRaw ~
 
-!m::   SendRaw `;
-<^>!m::SendRaw `;
+<!m::  SendRaw :
+>!m::  Send    :{Space}
+<^>!m::Send    :{Space}
 
-!,::   SendRaw <
-<^>!,::SendRaw <
+!,::   SendRaw ^
+<^>!,::SendRaw ^
 
-!.::   SendRaw >
-<^>!.::SendRaw >
+!.::   SendRaw €
+<^>!.::SendRaw €
 
 !/::   SendRaw \
 <^>!/::SendRaw \
