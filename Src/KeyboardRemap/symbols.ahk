@@ -4,8 +4,12 @@
 ; ! alt
 ; > < right left
 
-!Space::   Send {Space}
-<^>!Space::Send {Space}
+!Space::   Send    {Space}
+<^>!Space::Send    {Space}
+<+Space::  SendRaw -
+>+Space::  Send    {Space}-{Space}
+>!Space::  SendRaw _
+<!>!Space::  SendRaw patofu mano
 
 !q::   SendRaw #
 <^>!q::SendRaw #
@@ -25,20 +29,25 @@
 
 !a::   SendRaw @
 <^>!a::SendRaw @
+<!>!a::SendRaw 1
 
 !s::   SendRaw (
 <^>!s::SendRaw (
+<!>!s::SendRaw 2
 
 !d::   SendRaw )
 <^>!d::SendRaw )
+<!>!d::SendRaw 3
 
 <!f::  SendRaw `=
 >!f::  Send    {Space}`={Space}
 <^>!f::Send    {Space}`={Space}
+<!>!f::SendRaw 4
 
 <!g::  SendRaw *
 >!g::  Send    {Space}*{Space}
 <^>!g::Send    {Space}*{Space}
+<!>!g::SendRaw 5
 
 !z::   SendRaw $
 <^>!z::SendRaw $
@@ -79,18 +88,23 @@
 
 !h::   SendRaw |
 <^>!h::SendRaw |
+<!>!h::SendRaw 6
 
 !j::   SendRaw "
 <^>!j::SendRaw "
+<!>!j::SendRaw 7
 
 !k::   SendRaw '
 <^>!k::SendRaw '
+<!>!k::SendRaw 8
 
 !l::   SendRaw ``
 <^>!l::SendRaw ``
+<!>!l::SendRaw 9
 
-!`;::   Send {End}`;
-<^>!`;::Send {End}`;
+!`;::   Send    {End}`;
+<^>!`;::Send    {End}`;
+<!>!`;::SendRaw 0
 
 !n::   SendRaw ~
 <^>!n::SendRaw ~
