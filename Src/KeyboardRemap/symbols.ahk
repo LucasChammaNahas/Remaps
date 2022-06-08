@@ -44,15 +44,15 @@
 <!>!t::Send    {Space}/{Space} ;Alt 2
 
 ;--> A <-------------------------------
-!a::   SendRaw @                      ;Alt
-<^>!a::SendRaw @                      ;AltGr
-<!>!a::SendRaw 1                      ;Alt 2
+!a::   SendRaw @                         ;Alt
+<^>!a::SendRaw @                         ;AltGr
+<!>!a::SendRaw 1                         ;Alt 2
 >^a::  Send    const  `={Space};{Left 4} ;Ctrl R
 
 ;--> S <-------------------------------
-!s::   SendRaw (                    ;Alt
-<^>!s::SendRaw (                    ;AltGr
-<!>!s::SendRaw 2                    ;Alt 2
+!s::   SendRaw (                     ;Alt
+<^>!s::SendRaw (                     ;AltGr
+<!>!s::SendRaw 2                     ;Alt 2
 >^s::  Send    const  `= '';{Left 6} ;Ctrl R
 
 ;--> D <-------------------------------
@@ -81,8 +81,8 @@
 >^z::  Send    ${{}  {}}{Left 2} ;Ctrl R
 
 ;--> X <-------------------------------
-!x::   SendRaw {                        ;Alt
-<^>!x::SendRaw {                        ;AltGr
+!x::   SendRaw {                         ;Alt
+<^>!x::SendRaw {                         ;AltGr
 >^x::  Send    const  `= {{}{}};{Left 6} ;Ctrl R
 
 ;--> C <-------------------------------
@@ -91,9 +91,9 @@
 >^c::  Send    ({{}{}}){Left 2} ;Ctrl R
 
 ;--> V <-------------------------------
-!v::   SendRaw *                               ;Alt
-<^>!v::SendRaw *                               ;AltGr
-<!>!v::Send    {Space}*{Space}                 ;Alt 2
+!v::   SendRaw *                                 ;Alt
+<^>!v::SendRaw *                                 ;AltGr
+<!>!v::Send    {Space}*{Space}                   ;Alt 2
 >^v::  Send    const {{}  {}} `={Space};{Left 6} ;Ctrl R
 
 ;--> B <-------------------------------
