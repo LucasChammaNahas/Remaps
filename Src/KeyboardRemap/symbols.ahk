@@ -8,158 +8,166 @@
 
 ;==> LEFT HAND <=====================================================
 ;--> SPACE <---------------------------
-!Space::   Send    {Space}
-<^>!Space::Send    {Space}
-<+Space::  SendRaw -
->+Space::  Send    {Space}-{Space}
->!Space::  SendRaw _
+<!Space::  Send    {Space}          ;Alt L
+>!Space::  SendRaw _                ;Alt R
+<^>!Space::SendRaw _                ;AltGr
+<+Space::  SendRaw -                ;Shift L
+>+Space::  Send    {Space}-{Space}  ;Shift R
 
 ;-->> Q <------------------------------
-!q::   SendRaw #
-<^>!q::SendRaw #
+!q::   SendRaw #  ;Alt
+<^>!q::SendRaw #  ;AltGr
 
-;--> Q <-------------------------------
-!w::   SendRaw [
-<^>!w::SendRaw [
+;--> W <-------------------------------
+!w::   SendRaw [ ;Alt
+<^>!w::SendRaw [ ;AltGr
 
-;--> Q <-------------------------------
-!e::   SendRaw ]
-<^>!e::SendRaw ]
+;--> E <-------------------------------
+!e::   SendRaw ] ;Alt
+<^>!e::SendRaw ] ;AltGr
 
-;--> Q <-------------------------------
-<!r::  SendRaw +
->!r::  Send    {Space}{+}{Space}
-<^>!r::Send    {Space}{+}{Space}
+;--> R <-------------------------------
+<!r::  SendRaw +                 ;Alt L
+>!r::  Send    {Space}{+}{Space} ;Alt R
+<^>!r::Send    {Space}{+}{Space} ;AltGr
 
-;--> Q <-------------------------------
-!a::   SendRaw @
-<^>!a::SendRaw @
-<!>!a::SendRaw 1
+;--> T <-------------------------------
+<!t::  SendRaw /               ;Alt L
+>!t::  Send    {Space}/{Space} ;Alt R
+<^>!t::Send    {Space}/{Space} ;AltGr
 
-;--> Q <-------------------------------
-!s::   SendRaw (
-<^>!s::SendRaw (
-<!>!s::SendRaw 2
+;--> A <-------------------------------
+!a::   SendRaw @ ;Alt
+<^>!a::SendRaw @ ;AltGr
+<!>!a::SendRaw 1 ;Alt 2
 
-;--> Q <-------------------------------
-!d::   SendRaw )
-<^>!d::SendRaw )
-<!>!d::SendRaw 3
+;--> S <-------------------------------
+!s::   SendRaw ( ;Alt
+<^>!s::SendRaw ( ;AltGr
+<!>!s::SendRaw 2 ;Alt 2
 
-;--> Q <-------------------------------
-<!f::  SendRaw `=
->!f::  Send    {Space}`={Space}
-<^>!f::Send    {Space}`={Space}
-<!>!f::SendRaw 4
+;--> D <-------------------------------
+!d::   SendRaw ) ;Alt
+<^>!d::SendRaw ) ;AltGr
+<!>!d::SendRaw 3 ;Alt 2
 
-;--> Q <-------------------------------
-<!g::  SendRaw *
->!g::  Send    {Space}*{Space}
-<^>!g::Send    {Space}*{Space}
-<!>!g::SendRaw 5
+;--> F <-------------------------------
+<!f::  SendRaw `=               ;Alt L
+>!f::  Send    {Space}`={Space} ;Alt R
+<^>!f::Send    {Space}`={Space} ;AltGr
+<!>!f::SendRaw 4 ;Alt 2
 
-;--> Q <-------------------------------
-!z::   SendRaw $
-<^>!z::SendRaw $
+;--> G <-------------------------------
+<!g::  SendRaw *               ;Alt L
+>!g::  Send    {Space}*{Space} ;Alt R
+<^>!g::Send    {Space}*{Space} ;AltGr
+<!>!g::SendRaw 5 ;Alt 2
 
-;--> Q <-------------------------------
-!x::   SendRaw {
-<^>!x::SendRaw {
+;--> Z <-------------------------------
+!z::   SendRaw $ ;Alt
+<^>!z::SendRaw $ ;AltGr
 
-;--> Q <-------------------------------
-!c::   SendRaw }
-<^>!c::SendRaw }
+;--> X <-------------------------------
+!x::   SendRaw { ;Alt
+<^>!x::SendRaw { ;AltGr
 
-;--> Q <-------------------------------
-!v::   SendRaw !
-<^>!v::SendRaw !
+;--> C <-------------------------------
+!c::   SendRaw } ;Alt
+<^>!c::SendRaw } ;AltGr
 
-;--> Q <-------------------------------
-!b::   SendRaw `%
-<^>!b::SendRaw `%
+;--> V <-------------------------------
+!v::   SendRaw ! ;Alt
+<^>!v::SendRaw ! ;AltGr
+
+;--> B <-------------------------------
+<!b::  SendRaw `%               ;Alt L
+>!b::  Send    {Space}`%{Space} ;Alt R
+<^>!b::Send    {Space}`%{Space} ;AltGr
 
 
 
 ;==> RIGHT HAND <====================================================
 ;--> Y <-------------------------------
-!y::   SendRaw &
-<^>!y::SendRaw &
-<^y::  Send    (() => {{}{}});{Left 3}
+<!y::  SendRaw &                       ;Alt L
+>!y::  Send    {Space}&&{Space}        ;Alt R
+<^>!y::Send    {Space}&&{Space}        ;AltGr
+<^y::  Send    (() => {{}{}});{Left 3} ;Ctrl L
 
 ;--> U <-------------------------------
-<!u::  SendRaw <
->!u::  SendRaw <`=
-<^>!u::SendRaw <`=
-<^u::  Send    (() => );{Left 7}
+<!u::  SendRaw <                 ;Alt L
+>!u::  SendRaw <`=               ;Alt R
+<^>!u::SendRaw <`=               ;AltGr
+<^u::  Send    (() => );{Left 7} ;Ctrl L
 
 ;--> I <-------------------------------
-<!i::  SendRaw `=
->!i::  Send    {Space}`=>{Space}
-<^>!i::Send    {Space}`=>{Space}
-<^i::  Send    () => {{}{}}{Left}
+<!i::  SendRaw `=                 ;Alt L
+>!i::  Send    {Space}`=>{Space}  ;Alt R
+<^>!i::Send    {Space}`=>{Space}  ;AltGr
+<^i::  Send    () => {{}{}}{Left} ;Ctrl L
 
 ;--> O <-------------------------------
-<!o::  SendRaw >
->!o::  SendRaw >`=
-<^>!o::SendRaw >`=
-<^o::  Send    () =>{Space}
+<!o::  SendRaw >            ;Alt L
+>!o::  SendRaw >`=          ;Alt R
+<^>!o::SendRaw >`=          ;AltGr
+<^o::  Send    () =>{Space} ;Ctrl L
 
 ;--> P <-------------------------------
-!p::   SendRaw £
-<^>!p::SendRaw £
+<!p::  SendRaw £ ;Alt L
+>!p::  SendRaw € ;Alt R
+<^>!p::SendRaw € ;AltGr
 
 ;--> H <-------------------------------
-!h::   SendRaw |
-<^>!h::SendRaw |
-<!>!h::SendRaw 6
-<^h::  SendRaw : [
+<!h::  SendRaw |                ;Alt L
+>!h::  Send    {Space}||{Space} ;Alt R
+<^>!h::Send    {Space}||{Space} ;AltGr
+<!>!h::SendRaw 6                ;Alt 2
+<^h::  SendRaw : [              ;Ctrl L
 
 ;--> J <-------------------------------
-!j::   SendRaw "
-<^>!j::SendRaw "
-<!>!j::SendRaw 7
-<^j::  SendRaw : {
+!j::   SendRaw "   ;Alt
+<^>!j::SendRaw "   ;AltGr
+<!>!j::SendRaw 7   ;Alt 2
+<^j::  SendRaw : { ;Ctrl L
 
 ;--> K <-------------------------------
-!k::   SendRaw '
-<^>!k::SendRaw '
-<!>!k::SendRaw 8
-<^k::  SendRaw : '
+!k::   SendRaw '   ;Alt
+<^>!k::SendRaw '   ;AltGr
+<!>!k::SendRaw 8   ;Alt 2
+<^k::  SendRaw : ' ;Ctrl L
 
 ;--> L <-------------------------------
-!l::   SendRaw ``
-<^>!l::SendRaw ``
-<!>!l::SendRaw 9
-<^l::  SendRaw `={
+!l::   SendRaw ``  ;Alt
+<^>!l::SendRaw ``  ;AltGr
+<!>!l::SendRaw 9   ;Alt 2
+<^l::  SendRaw `={ ;Ctrl L
 
 ;--> ; <-------------------------------
-!`;::   Send    {End}`;
-<^>!`;::Send    {End}`;
-<!>!`;::SendRaw 0
-<^`;::  SendRaw `="
+!`;::   Send    +{Home}^x{End}`;{Home}^v ;Alt
+<^>!`;::Send    +{Home}^x{End}`;{Home}^v ;AltGr
+<!>!`;::SendRaw 0                        ;Alt 2
+<^`;::  SendRaw `="                      ;Ctrl L
 
 ;--> N <-------------------------------
-!n::   SendRaw ~
-<^>!n::SendRaw ~
-<^n::  Send    if (){Left}
+!n::   SendRaw ~           ;Alt
+<^>!n::SendRaw ~           ;AltGr
+<^n::  Send    if (){Left} ;Ctrl L
 
 ;--> M <-------------------------------
-<!m::  SendRaw :
->!m::  Send    :{Space}
-<^>!m::Send    :{Space}
-<^m::  Send    if () {{}{}}{Left}{Enter}{Up}{End}{Left 3}
+<!m::  SendRaw :                                          ;Alt L
+>!m::  Send    :{Space}                                   ;Alt R
+<^>!m::Send    :{Space}                                   ;AltGr
+<^m::  Send    if () {{}{}}{Left}{Enter}{Up}{End}{Left 3} ;Ctrl L
 
 ;--> , <-------------------------------
-!,::   SendRaw ^
-<^>!,::SendRaw ^
-<^,::  Send    +{Home}^x{End},{Home}^v
+!,::   Send +{Home}^x{End},{Home}^v            ;Alt
+<^>!,::Send +{Home}^x{End},{Home}^v            ;AltGr
+<^,::  Send +^{Left}^x<^v></^v>^{Left}{Left 2} ;Ctrl L
 
 ;--> . <-------------------------------
-!.::   SendRaw €
-<^>!.::SendRaw €
-<^.::  Send    +^{Left}^x<^v></^v>^{Left}{Left 2}
+!.::   SendRaw ^            ;Alt
+<^>!.::SendRaw ^            ;AltGr
+<^.::  Send    < />{Left 3} ;Ctrl L
 
 ;--> / <-------------------------------
-!/::   SendRaw \
-<^>!/::SendRaw \
-<^/::  Send    < />{Left 3}
+!/::   SendRaw \ ;Alt
+<^>!/::SendRaw \ ;AltGr
