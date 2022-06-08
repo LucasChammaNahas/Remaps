@@ -23,18 +23,21 @@
 <^>!w::SendRaw [ ;AltGr
 
 ;--> E <-------------------------------
-!e::   SendRaw ] ;Alt
-<^>!e::SendRaw ] ;AltGr
+!e::   SendRaw ]               ;Alt
+<^>!e::SendRaw ]               ;AltGr
+<!>!e::Send    {Space}-{Space} ;Alt 2
 
 ;--> R <-------------------------------
 <!r::  SendRaw +                 ;Alt L
 >!r::  Send    {Space}{+}{Space} ;Alt R
 <^>!r::Send    {Space}{+}{Space} ;AltGr
+<!>!r::Send    {Space}{+}{Space} ;Alt 2
 
 ;--> T <-------------------------------
 <!t::  SendRaw /               ;Alt L
 >!t::  Send    {Space}/{Space} ;Alt R
 <^>!t::Send    {Space}/{Space} ;AltGr
+<!>!e::Send    {Space}/{Space} ;Alt 2
 
 ;--> A <-------------------------------
 !a::   SendRaw @ ;Alt
@@ -55,13 +58,13 @@
 <!f::  SendRaw `=               ;Alt L
 >!f::  Send    {Space}`={Space} ;Alt R
 <^>!f::Send    {Space}`={Space} ;AltGr
-<!>!f::SendRaw 4 ;Alt 2
+<!>!f::SendRaw 4                ;Alt 2
 
 ;--> G <-------------------------------
-<!g::  SendRaw *               ;Alt L
->!g::  Send    {Space}*{Space} ;Alt R
-<^>!g::Send    {Space}*{Space} ;AltGr
-<!>!g::SendRaw 5 ;Alt 2
+<!g::  SendRaw !               ;Alt L
+>!g::  Send    {Space}!{Space} ;Alt R
+<^>!g::Send    {Space}!{Space} ;AltGr
+<!>!g::SendRaw 5               ;Alt 2
 
 ;--> Z <-------------------------------
 !z::   SendRaw $ ;Alt
@@ -76,13 +79,15 @@
 <^>!c::SendRaw } ;AltGr
 
 ;--> V <-------------------------------
-!v::   SendRaw ! ;Alt
-<^>!v::SendRaw ! ;AltGr
+!v::   SendRaw *               ;Alt
+<^>!v::SendRaw *               ;AltGr
+<!>!v::Send    {Space}*{Space} ;Alt 2
 
 ;--> B <-------------------------------
 <!b::  SendRaw `%               ;Alt L
 >!b::  Send    {Space}`%{Space} ;Alt R
 <^>!b::Send    {Space}`%{Space} ;AltGr
+<!>!b::Send    {Space}`%{Space} ;Alt 2
 
 
 
@@ -103,6 +108,7 @@
 <!i::  SendRaw `=                 ;Alt L
 >!i::  Send    {Space}`=>{Space}  ;Alt R
 <^>!i::Send    {Space}`=>{Space}  ;AltGr
+<!>!i::Send    {Space}`={Space}   ;Alt 2
 <^i::  Send    () => {{}{}}{Left} ;Ctrl L
 
 ;--> O <-------------------------------
@@ -159,13 +165,15 @@
 <^m::  Send    if () {{}{}}{Left}{Enter}{Up}{End}{Left 3} ;Ctrl L
 
 ;--> , <-------------------------------
-!,::   Send +{Home}^x{End},{Home}^v            ;Alt
-<^>!,::Send +{Home}^x{End},{Home}^v            ;AltGr
-<^,::  Send +^{Left}^x<^v></^v>^{Left}{Left 2} ;Ctrl L
+!,::   Send    +{Home}^x{End},{Home}^v            ;Alt
+<^>!,::Send    +{Home}^x{End},{Home}^v            ;AltGr
+<!>!,::SendRaw ,                                  ;Alt 2
+<^,::  Send    +^{Left}^x<^v></^v>^{Left}{Left 2} ;Ctrl L
 
 ;--> . <-------------------------------
 !.::   SendRaw ^            ;Alt
 <^>!.::SendRaw ^            ;AltGr
+<!>!.::SendRaw .            ;Alt 2
 <^.::  Send    < />{Left 3} ;Ctrl L
 
 ;--> / <-------------------------------
