@@ -1,4 +1,10 @@
-﻿
+﻿#NoEnv                      ; Recommended for performance and compatibility with future AutoHotkey releases.
+; #Warn                     ; Enable warnings to assist with detecting common errors.
+#SingleInstance FORCE       ; Skip invocation dialog box and silently replace previously executing instance of this script.
+SendMode Input              ; Recommended for new scripts due to its superior speed and reliability.
+; SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+
+
 ; SCRIPTS - carregados antes
 ; ==============================================================
 ; #Include, %A_LineFile%\..\HK_remapSymbols_A.ahk
@@ -14,6 +20,10 @@
 #Include, %A_LineFile%\..\Hotstrings\general.ahk
 #Include, %A_LineFile%\..\Hotstrings\programming.ahk
 #Include, %A_LineFile%\..\Hotstrings\symbols.ahk
+
+#Include, %A_LineFile%\..\Hotkeys\symbols.ahk
+#Include, %A_LineFile%\..\Hotkeys\textNavigation.ahk
+#Include, %A_LineFile%\..\System\disableOfficeButton.ahk
 ; #Include, %A_LineFile%\..\SC_folders_B.ahk
 ; #Include, %A_LineFile%\..\SC_programs_B.ahk
 
@@ -33,6 +43,9 @@
 ; msgbox %$toggle_symbols%
 ; return
  
-; ^ESC::exitapp
+^ESC::
+msgbox Bye!
+exitapp
+return
 ; ==============================================================
 
