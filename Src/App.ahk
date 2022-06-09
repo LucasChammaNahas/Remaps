@@ -37,25 +37,8 @@ SendMode Input              ; Recommended for new scripts due to its superior sp
 
 ; INICIALIZAÇÃO DE VARIAVEIS
 ; ==============================================================
-; ^F2:: 
-; $toggle_symbols    := !$toggle_symbols
-; $toggle_capitalize := !$toggle_capitalize
-; msgbox %$toggle_symbols%
-; return
- 
-^ESC::
-MsgBox, 4, , Exit the App?
-IfMsgBox, Yes 
-{
-  MsgBox, , , Bye!, 1
-  exitapp
-}
-return
+#Include, %A_LineFile%\..\Controller\Controller.ahk
 
-#ESC::
-MsgBox, , , Reloading..., 1
-Reload
-return
 
 ; ==============================================================
 
