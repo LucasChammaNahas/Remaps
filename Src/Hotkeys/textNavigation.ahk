@@ -1,64 +1,89 @@
 
 ;--> Navigation <----------------------
 #If GetKeyState("CapsLock", "P")
-  ~Space:: Left
+  ; Space forward, enter downwards and esc 
+  *~Space:: Send {Left}
+  *~Enter:: Send {Left}
+  *9::      Send {Esc}
 
-  a:: ^a
-  s:: ^a
-  e:: ^x
-  d:: ^c
-  f:: ^v
-  v:: ^z 
+  ; Copy paste etc
+  a:: Send ^a
+  s:: Send ^a
+  e:: Send ^x
+  d:: Send ^c
+  f:: Send ^v
+  v:: Send ^z 
   
-  !e:: Send ^a^x
-  !d:: Send ^a^c
-  !f:: Send ^a^v
-  !v:: ^y
-
-  i:: Up
-  k:: Down
-  j:: Left
-  l:: Right
-
-  >!i:: Send +!{Up}
-  >!k:: Send +!{Down}
-  >!j:: Send ^!{Down}
-  >!l:: Send ^!{Up}
-
-  <!i:: Up
-  <!k:: Down
-  <!j:: Left
-  <!l:: Right
-
-  y::  Send ^{Left} +^{Right}
-  h::  Home
- `;::  End
-  m::  Backspace
-  n:: ^Backspace
-  u::  Del
-  o:: ^Del
+  ; Copy paste etc
+  >!a:: Send ^a
+  >!s:: Send ^a
+  >!e:: Send ^x
+  >!d:: Send ^c
+  >!f:: Send ^v
+  >!v:: Send ^z 
   
-  >!h::  +Home
-  >!`;:: +End
-  >!m::   Backspace
-  >!n::   Backspace
-  >!u::   Del
-  >!o::   Del
+  ; Copy paste etc. with select all
+  <!e:: Send ^a^x
+  <!d:: Send ^a^c
+  <!f:: Send ^a^v
+  <!v:: ^y
 
+  ; Normal arrows
+  i:: Send {Up}
+  k:: Send {Down}
+  j:: Send {Left}
+  l:: Send {Right}
+
+  ; Arrows with shift
+  >!i:: Send +{Up}
+  >!k:: Send +{Down}
+  >!j:: Send +{Left}
+  >!l:: Send +{Right}
+
+  ; Move linhe up/down
+  <!i:: Send !{Up}
+  <!k:: Send !{Down}
+
+  ; Copy line up/down
+  <!>!i:: Send +!{Up}
+  <!>!k:: Send +!{Down}
+
+  ; Copy cursor up/down
+  <!>!u:: Send ^!{Down}
+  <!>!j:: Send ^!{Up}
+
+  ; Select word
+  y:: Send ^{Left} +^{Right}
+
+  ; Delete, backspace, home, end
+  h:: Send  {Home}
+ `;:: Send  {End}
+  m:: Send ^{Backspace}
+  n:: Send  {Backspace}
+  u:: Send  {Del}
+  o:: Send ^{Del}
+  
+  ; Delete, backspace, home, end with shift
+  >!h::  Send +{Home}
+  >!`;:: Send +{End}
+  >!m::  Send  {Backspace}
+  >!n::  Send  {Backspace}
+  >!u::  Send  {Del}
+  >!o::  Send  {Del}
+
+  ; Delete rest/begining of line
   <!n:: Send +{Home} {Del}
   <!o:: Send +{End} {Del}
 #If
 
 
 ;--> CapsLock <------------------------
-; If you hold capslock down, it repeats rapidly. 
-; wasCapslockReleased logic solves this
-wasCapslockReleased := 0
+wasCapslockReleased := 0 ; Solves rapid repetition when caps is held down
 previousTimestamp := A_TickCount
 
-CapsLock Up::wasCapslockReleased := 1
+*CapsLock Up::wasCapslockReleased := 1
 
-CapsLock::
+*CapsLock::
   currentTimestamp := A_TickCount
   interval := currentTimestamp - previousTimestamp
   if(interval < 300 and wasCapslockReleased = 1) {
