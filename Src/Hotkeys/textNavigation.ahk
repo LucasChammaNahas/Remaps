@@ -49,8 +49,8 @@
   <!>!k:: Send +!{Down}
 
   ; Copy cursor up/down
-  <!>!u:: Send ^!{Down}
-  <!>!j:: Send ^!{Up}
+  <!>!u:: Send ^!{Up}
+  <!>!j:: Send ^!{Down}
 
   ; Select word
   y:: Send ^{Left} +^{Right}
