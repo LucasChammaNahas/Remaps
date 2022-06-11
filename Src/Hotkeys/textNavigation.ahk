@@ -1,23 +1,52 @@
 
 ;--> Navigation <----------------------
 #If GetKeyState("CapsLock", "P")
-i::Up
-k::Down
-j::Left
-l::Right
-m::Backspace
-n::^Backspace
-`;::End
-h::Home
-,::Del
-.::^Del
-~Space::Left
-a::
-s::^a
-d::^c
-e::^x
-f::^v
-v::^z
+  ~Space:: Left
+
+  a:: ^a
+  s:: ^a
+  e:: ^x
+  d:: ^c
+  f:: ^v
+  v:: ^z 
+  
+  !e:: Send ^a^x
+  !d:: Send ^a^c
+  !f:: Send ^a^v
+  !v:: ^y
+
+  i:: Up
+  k:: Down
+  j:: Left
+  l:: Right
+
+  >!i:: Send +!{Up}
+  >!k:: Send +!{Down}
+  >!j:: Send ^!{Down}
+  >!l:: Send ^!{Up}
+
+  <!i:: Up
+  <!k:: Down
+  <!j:: Left
+  <!l:: Right
+
+  y::  Send ^{Left} +^{Right}
+  h::  Home
+ `;::  End
+  m::  Backspace
+  n:: ^Backspace
+  u::  Del
+  o:: ^Del
+  
+  >!h::  +Home
+  >!`;:: +End
+  >!m::   Backspace
+  >!n::   Backspace
+  >!u::   Del
+  >!o::   Del
+
+  <!n:: Send +{Home} {Del}
+  <!o:: Send +{End} {Del}
 #If
 
 
