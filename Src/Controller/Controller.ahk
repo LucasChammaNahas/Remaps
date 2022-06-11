@@ -1,4 +1,11 @@
 
+::>>>disableSymbols::
+$hotkeySymbols := 0
+return
+
+::>>>enableSymbols::
+$hotkeySymbols := 1
+return
 
 ^ESC::
 ::ahkExit::

@@ -13,14 +13,18 @@
   d:: Send ^c
   f:: Send ^v
   v:: Send ^z 
+  g:: Send  {WheelUp}
+  b:: Send  {WheelDown} 
   
-  ; Copy paste etc
+  ; Copy paste etc (shift)
   >!a:: Send ^a
   >!s:: Send ^a
   >!e:: Send ^x
   >!d:: Send ^c
   >!f:: Send ^v
   >!v:: Send ^z 
+  >!g:: Send +{WheelUp}
+  >!b:: Send +{WheelDown} 
   
   ; Copy paste etc. with select all
   <!e:: Send ^a^x

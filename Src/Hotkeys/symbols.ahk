@@ -159,10 +159,10 @@
   <^l::  SendRaw `={ ;Ctrl L
 
   ;--> ; <-------------------------------
-  !`;::   Send    +{Home}^x{End}`;{Home}^v ;Alt
-  <^>!`;::Send    +{Home}^x{End}`;{Home}^v ;AltGr
-  <!>!`;::SendRaw 0                        ;Alt 2
-  <^`;::  SendRaw `="                      ;Ctrl L
+  !`;::   Send    {End}`; ;Alt
+  <^>!`;::Send    {End}`; ;AltGr
+  <!>!`;::SendRaw 0       ;Alt 2
+  <^`;::  SendRaw `="     ;Ctrl L
 
   ;--> N <-------------------------------
   !n::   SendRaw ~           ;Alt
