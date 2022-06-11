@@ -5,6 +5,8 @@ SendMode Input              ; Recommended for new scripts due to its superior sp
 ; SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 
+#Include, %A_LineFile%\..\Config\globalVariables.ahk
+
 ; SCRIPTS - carregados antes
 ; ==============================================================
 ; #Include, %A_LineFile%\..\HK_remapSymbols_A.ahk

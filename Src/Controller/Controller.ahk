@@ -1,9 +1,5 @@
-; ^F2:: 
-; $toggle_symbols    := !$toggle_symbols
-; $toggle_capitalize := !$toggle_capitalize
-; msgbox %$toggle_symbols%
-; return
- 
+
+
 ^ESC::
 ::ahkExit::
 MsgBox, 4, , Exit the App?

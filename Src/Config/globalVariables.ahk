@@ -1,0 +1,1 @@
+$hotkeySymbols := 1
