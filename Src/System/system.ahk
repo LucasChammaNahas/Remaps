@@ -6,11 +6,6 @@
 !NumpadAdd::  send {Volume_Down 5}
 !NumpadSub::  send {Volume_Up 5}
 
-^#Up::    Send !{Tab}
-^#Left::  Send !{Esc}
-^#Right:: Send !+{Esc}
-; ~LWin::Send {Blind}{vkE8}
-
 wasWinReleased := 0 ; Solves rapid repetition when win is held down
 previousTimestamp := A_TickCount
 ~LWin Up::wasWinReleased := 1
@@ -29,23 +24,4 @@ return
 
 
 
-;Send two windows side-by-side
-^Insert::
-WinMaximize, A
-Sleep, 100
-Send, !{Tab}
-Sleep, 100
-WinMaximize, A
-Sleep, 100
-Send, !{Tab}
-Sleep, 100
-Send, #{Left}
-Sleep, 100
-Send, {Esc}
-Sleep, 100
-Send, !{Tab}
-Sleep, 100
-Send, #{Right}
-Sleep, 100
-Send, {Esc}
-return
+

@@ -18,10 +18,10 @@ SendMode Input              ; Recommended for new scripts due to its superior sp
 
 ; HOTSTRINGS
 ; ==============================================================
-#Include, %A_LineFile%\..\Hotstrings\emojis.ahk
-#Include, %A_LineFile%\..\Hotstrings\general.ahk
-#Include, %A_LineFile%\..\Hotstrings\programming.ahk
-#Include, %A_LineFile%\..\Hotstrings\symbols.ahk
+; #Include, %A_LineFile%\..\Hotstrings\emojis.ahk
+; #Include, %A_LineFile%\..\Hotstrings\general.ahk
+; #Include, %A_LineFile%\..\Hotstrings\programming.ahk
+; #Include, %A_LineFile%\..\Hotstrings\symbols.ahk
 
 #Include, %A_LineFile%\..\Hotkeys\symbols.ahk
 #Include, %A_LineFile%\..\Hotkeys\textNavigation.ahk
@@ -29,7 +29,7 @@ SendMode Input              ; Recommended for new scripts due to its superior sp
 #Include, %A_LineFile%\..\System\powerManagement.ahk
 #Include, %A_LineFile%\..\System\system.ahk
 #Include, %A_LineFile%\..\System\listary.ahk
-#Include, %A_LineFile%\..\System\windowNavigation.ahk
+#Include, %A_LineFile%\..\System\windowManipulation.ahk
 ; #Include, %A_LineFile%\..\SC_folders_B.ahk
 ; #Include, %A_LineFile%\..\SC_programs_B.ahk
 

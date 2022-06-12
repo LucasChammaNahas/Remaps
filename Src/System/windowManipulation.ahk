@@ -1,3 +1,5 @@
+;==> Window Navigation <=============================================
+
 win0   := ""
 win1   := ""
 win2   := ""
@@ -68,10 +70,53 @@ winEnt := ""
  #NumpadEnter:: WinActivate, ahk_id %winEnt%
 
 
+;==> Window Resizing <===============================================
 
+;--> windows side-by-side <------------
+^Insert::
+  time := 70  
+  WinMaximize, A
+  Sleep, time
+  Send, !{Tab}
+  Sleep, time
+  WinMaximize, A
+  Sleep, time
+  Send, !{Tab}
+  Sleep, time
+  Send, #{Left}
+  Sleep, time
+  Send, {Esc}
+  Sleep, time
+  Send, !{Tab}
+  Sleep, time
+  Send, #{Right}
+  Sleep, time
+  Send, {Esc}
+return
 
+^Numpad0::Send !{Tab}
 
-
+^Numpad1::
+  time := 70  
+  WinMaximize, A
+  Sleep, time
+  Send, {Esc}
+  Sleep, time
+  Send, #{Left}
+  ; Send, !{Tab}
+  ; Sleep, time
+  ; WinMaximize, A
+  ; Sleep, time
+  ; Send, !{Tab}
+  ; Sleep, time
+  ; Sleep, time
+  ; Sleep, time
+  ; Send, !{Tab}
+  ; Sleep, time
+  ; Send, #{Right}
+  ; Sleep, time
+  Send, {Esc}
+return
 
 
 
