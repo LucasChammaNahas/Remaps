@@ -129,9 +129,9 @@
     <^o:: Send    () =>{Space} ;Ctrl L
 
   ;--> P <-------------------------------
-    <!p:: SendRaw £ ;Alt L
-    >!p:: SendRaw € ;Alt R
-  <^>!p:: SendRaw € ;AltGr
+    <!p:: Send £ ;Alt L
+    >!p:: Send € ;Alt R
+  <^>!p:: Send € ;AltGr
 
   ;--> H <-------------------------------
     <!h:: SendRaw |                ;Alt L
@@ -176,9 +176,9 @@
     <^m:: Send    if () {{}{}}{Left}{Enter}{Up}{End}{Left 3} ;Ctrl L
 
   ;--> , <-------------------------------
-     !,:: Send    +{Home}^x{End},{Home}^v            ;Alt
-  <^>!,:: Send    +{Home}^x{End},{Home}^v            ;AltGr
-  <!>!,:: SendRaw `,                                 ;Alt 2
+     !,:: Send      {End},                           ;Alt
+  <^>!,:: Send      {End},                           ;AltGr
+  <!>!,:: SendRaw  `,                                ;Alt 2
     <^,:: Send    +^{Left}^x<^v></^v>^{Left}{Left 2} ;Ctrl L
 
   ;--> . <-------------------------------
