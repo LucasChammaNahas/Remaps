@@ -1,8 +1,13 @@
-﻿
+﻿; Screenshot
+#q:: Send +#s
+
+
+
+
 #F12:: 
-pwr("52356b98-4ea9-44bb-9067-d34ab774e11f","MINIMUM STATE")
+; pwr("52356b98-4ea9-44bb-9067-d34ab774e11f","MINIMUM STATE")
 Sleep, 2000
-; Shutdown, 1
+Shutdown, 1
 return
 
 #F11:: 
