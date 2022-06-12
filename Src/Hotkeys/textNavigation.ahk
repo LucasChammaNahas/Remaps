@@ -12,7 +12,7 @@
   e:: Send ^x
   d:: Send ^c
   f:: Send ^v
-  v:: Send ^z 
+  v:: Send ^z
   g:: Send  {WheelUp}
   b:: Send  {WheelDown} 
   

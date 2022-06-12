@@ -1,9 +1,10 @@
 ﻿#Enter:: 
-SetStoreCapsLockMode, Off
+!Enter:: 
+; SetStoreCapsLockMode, Off
 Send, {Control}
 Sleep, 100
 Send, {Control}
-SetStoreCapsLockMode, on
+; SetStoreCapsLockMode, On
 return
 
 #IfWinActive ahk_exe listary.exe
