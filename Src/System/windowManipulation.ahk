@@ -100,58 +100,21 @@ return
   time := 70  
   WinMaximize, A
   Sleep, time
-  Send, {Esc}
-  Sleep, time
   Send, #{Left}
-  ; Send, !{Tab}
-  ; Sleep, time
-  ; WinMaximize, A
-  ; Sleep, time
-  ; Send, !{Tab}
-  ; Sleep, time
-  ; Sleep, time
-  ; Sleep, time
-  ; Send, !{Tab}
-  ; Sleep, time
-  ; Send, #{Right}
-  ; Sleep, time
+  Sleep, time
   Send, {Esc}
 return
 
+^Numpad2:: WinMinimize, A
 
+^Numpad3::
+  time := 70  
+  WinMaximize, A
+  Sleep, time
+  Send, #{Right}
+  Sleep, time
+  Send, {Esc}
+return
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-; WinGet, id, List,,, Program Manager
-; ; msgbox, %id%
-; Loop, %id%
-; {
-;     this_id := id%A_Index%
-;     WinGetClass, this_class, ahk_id %this_id%
-;     WinGetTitle, this_title, ahk_id %this_id%
-;     if InStr(this_title, "Google Chrome") {
-;       WinActivate, ahk_id %this_id%
-;       msgbox, %id%
-;       break
-;     }
-
-
-;     ; MsgBox, 4, , Visiting All Windows`n%A_Index% of %id%`nahk_id %this_id%`nahk_class %this_class%`n%this_title%`n`nContinue?
-;     ; IfMsgBox, NO, break
-; }
-; return 
+^Numpad5::WinMaximize, A
+ 
