@@ -3,5 +3,5 @@
 #!+Ctrl::
 ^!+LWin::
 ^!+RWin::
-Send {Blind}{vk07}
+  Send {Blind}{vk07}
 return

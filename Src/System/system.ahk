@@ -20,8 +20,5 @@ previousTimestamp := A_TickCount
   previousTimestamp := currentTimestamp
 return
 
-
-
-
-
-
+;--> Ctrl + Y <------------------------
+<^b:: Send ^y
