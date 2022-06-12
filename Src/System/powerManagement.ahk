@@ -1,18 +1,18 @@
 
 ;--> Shut Down PC <--------------------
 #F12::shutdownComputer()
-
 #IfWinActive ahk_exe listary.exe
-  ::`;`;shutdown:: 
+  :B0:`;`;shutdown:: 
+    Send {Esc}
     shutdownComputer()
   return 
 #IfWinActive
 
 ;--> Restart PC <----------------------
 #F11::restartComputer()
-
 #IfWinActive ahk_exe listary.exe
-  ::`;`;restart:: 
+  :B0:`;`;restart:: 
+    Send {Esc}
     restartComputer()
   return 
 #IfWinActive
@@ -25,8 +25,11 @@
 
 ;--> CPU Status <----------------------
 #IfWinActive ahk_exe listary.exe
-  ::`;`;powerstatus:: 
-    getCpuStatus()
+  :B0:`;`;powerstatus:: 
+  :B0:`;`;powerstate:: 
+  :B0:`;`;powerlevel::
+    Send {Esc}
+    getCpuState()
   return 
 #IfWinActive
 
@@ -39,9 +42,13 @@ changeCpuState(id, msg) {
   return  
 }
 
-getCpuStatus() {
-  Run, powercfg /getactivescheme
-  MsgBox, % Run, powercfg /getactivescheme
+getCpuState() {
+  shell := ComObjCreate("WScript.Shell")
+  exec := shell.Exec(ComSpec " /C powercfg /getactivescheme")
+  result := exec.StdOut.ReadAll()
+  resultLen := StrLen(result)
+  updatedResult := SubStr(result, 59, resultLen-59) ;Retrieves only the name
+  MsgBox, CPU > %updatedResult%
 }
 
 shutdownComputer() {
@@ -60,18 +67,4 @@ restartComputer() {
     {
       Shutdown, 2
     }
-}
-
-^F7::
-RunWaitOne()
-; MsgBox % RunWaitOne()
-; msgbox %A_ScriptDir%
-return 
-
-
-
-RunWaitOne() {
-    shell := ComObjCreate("WScript.Shell")
-    exec := shell.Exec(ComSpec " /C powercfg /getactivescheme")
-   MsgBox % exec.StdOut.ReadAll()
 }
