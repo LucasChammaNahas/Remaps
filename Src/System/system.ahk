@@ -25,25 +25,7 @@ previousTimestamp := A_TickCount
   previousTimestamp := currentTimestamp
 return
 
-; ^F7::
-; WinGet, id, List,,, Program Manager
-; ; msgbox, %id%
-; Loop, %id%
-; {
-;     this_id := id%A_Index%
-;     WinGetClass, this_class, ahk_id %this_id%
-;     WinGetTitle, this_title, ahk_id %this_id%
-;     if InStr(this_title, "Google Chrome") {
-;       WinActivate, ahk_id %this_id%
-;       msgbox, %id%
-;       break
-;     }
 
-
-;     ; MsgBox, 4, , Visiting All Windows`n%A_Index% of %id%`nahk_id %this_id%`nahk_class %this_class%`n%this_title%`n`nContinue?
-;     ; IfMsgBox, NO, break
-; }
-; return 
 
 
 

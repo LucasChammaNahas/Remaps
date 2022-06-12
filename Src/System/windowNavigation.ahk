@@ -1,0 +1,112 @@
+win0   := ""
+win1   := ""
+win2   := ""
+win3   := ""
+win4   := ""
+win5   := ""
+win6   := ""
+win7   := ""
+win8   := ""
+win9   := ""
+winDot := ""
+winEqu := ""
+winDiv := ""
+winMul := ""
+winSub := ""
+winAdd := ""
+winEnt := ""
+
+^#Numpad0::     win0 := WinExist("A")
+ #Numpad0::     WinActivate, ahk_id %win0%
+
+^#Numpad1::     win1 := WinExist("A")
+ #Numpad1::     WinActivate, ahk_id %win1%
+
+^#Numpad2::     win2 := WinExist("A")
+ #Numpad2::     WinActivate, ahk_id %win2%
+
+^#Numpad3::     win3 := WinExist("A")
+ #Numpad3::     WinActivate, ahk_id %win3%
+
+^#Numpad4::     win4 := WinExist("A")
+ #Numpad4::     WinActivate, ahk_id %win4%
+
+^#Numpad5::     win5 := WinExist("A")
+ #Numpad5::     WinActivate, ahk_id %win5%
+
+^#Numpad6::     win6 := WinExist("A")
+ #Numpad6::     WinActivate, ahk_id %win6%
+
+^#Numpad7::     win7 := WinExist("A")
+ #Numpad7::     WinActivate, ahk_id %win7%
+
+^#Numpad8::     win8 := WinExist("A")
+ #Numpad8::     WinActivate, ahk_id %win8%
+
+^#Numpad9::     win9 := WinExist("A")
+ #Numpad9::     WinActivate, ahk_id %win9%
+
+^#NumpadDot::   winDot := WinExist("A")
+ #NumpadDot::   WinActivate, ahk_id %winDot%
+
+^#=::           winEqu := WinExist("A")
+ #=::           WinActivate, ahk_id %winEqu%
+
+^#NumpadDiv::   winDiv := WinExist("A")
+ #NumpadDiv::   WinActivate, ahk_id %winDiv%
+
+^#NumpadMult::  winMul := WinExist("A")
+ #NumpadMult::  WinActivate, ahk_id %winMul%
+
+^#NumpadAdd::   winAdd := WinExist("A")
+ #NumpadAdd::   WinActivate, ahk_id %winAdd%
+
+^#NumpadSub::   winSub := WinExist("A")
+ #NumpadSub::   WinActivate, ahk_id %winSub%
+
+^#NumpadEnter:: winEnt := WinExist("A")
+ #NumpadEnter:: WinActivate, ahk_id %winEnt%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; WinGet, id, List,,, Program Manager
+; ; msgbox, %id%
+; Loop, %id%
+; {
+;     this_id := id%A_Index%
+;     WinGetClass, this_class, ahk_id %this_id%
+;     WinGetTitle, this_title, ahk_id %this_id%
+;     if InStr(this_title, "Google Chrome") {
+;       WinActivate, ahk_id %this_id%
+;       msgbox, %id%
+;       break
+;     }
+
+
+;     ; MsgBox, 4, , Visiting All Windows`n%A_Index% of %id%`nahk_id %this_id%`nahk_class %this_class%`n%this_title%`n`nContinue?
+;     ; IfMsgBox, NO, break
+; }
+; return 
