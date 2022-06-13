@@ -17,6 +17,8 @@
 :*:str`;`;::const  = ''`;{Left 2}
 :*:strd`;`;::const  = ""`;{Left 2}
 :*:strl`;`;::const  = `````;{Left 2}
+:*:switch`;`;::switch () {{}{}}{Left}{Enter}case :{Enter}`;{Enter}break`;{Enter}default: {Home}{Up}{Tab}{Home}{Up}{Tab}{Up 2}{End}{Left 3}
 
 :*://`;`;:://===================================================================================================
+
 
