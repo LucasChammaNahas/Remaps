@@ -57,7 +57,7 @@
   <!>!j:: Send ^!{Down}
 
   ; Select word
-  y:: Send ^{Left} +^{Right}
+  y:: Send ^{Left}+^{Right}
 
   ; Delete, backspace, home, end
   h:: Send  {Home}
@@ -76,8 +76,8 @@
   >!o::  Send  {Del}
 
   ; Delete rest/begining of line
-  <!n:: Send +{Home} {Del}
-  <!o:: Send +{End} {Del}
+  <!n:: Send +{Home}{Del}
+  <!o:: Send +{End}{Del}
 #If
 
 
