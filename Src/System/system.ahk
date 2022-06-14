@@ -10,7 +10,7 @@
       thisId := id%A_Index%
       WinGet, thisPath, ProcessPath, % "ahk_id" id%A_Index%
       WinGetTitle, title, % "ahk_id" id%A_Index%
-      if (thisPath = activePath && title) { ;winclose tries to close windowsOS itself, which has a blank title. Windows should not be closed
+      if (thisPath = activePath && title) { ;When dealing with file explorer, winclose tries to close windowsOS itself, which has a blank title. Windows should not be closed
         WinClose, ahk_id %thisId%
       }
     }
