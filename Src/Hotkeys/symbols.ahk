@@ -1,4 +1,5 @@
 #If $hotkeySymbols = 1
+#If !GetKeyState("CapsLock", "P")
 
   ;==> MAJOR KEYS <====================================================
   ;--> SPACE <---------------------------
@@ -21,12 +22,14 @@
   ;--> W <-------------------------------
      !w:: SendRaw {                         ;Alt
   <^>!w:: SendRaw {                         ;AltGr
+  <!>!w:: Send    {Space}-{Space}           ;Alt 2
     >^w:: Send    const  `= {{}{}};{Left 6} ;Ctrl R
 
   ;--> E <-------------------------------
-     !e:: SendRaw }                ;Alt
-  <^>!e:: SendRaw }                ;AltGr
-    >^e:: Send    ({{}{}}){Left 2} ;Ctrl R
+     !e:: SendRaw }                 ;Alt
+  <^>!e:: SendRaw }                 ;AltGr
+  <!>!e:: Send    {Space}{+}{Space} ;Alt 2
+    >^e:: Send    ({{}{}}){Left 2}  ;Ctrl R
 
   ;--> R <-------------------------------
     <!r:: SendRaw +                                 ;Alt L
@@ -72,8 +75,8 @@
     >^g:: Send    {Space}{!}`=={Space} ;Ctrl R
 
   ;--> Z <-------------------------------
-     !z:: SendRaw $                 ;Alt
-  <^>!z:: SendRaw $                 ;AltGr
+     !z:: SendRaw # ;Alt
+  <^>!z:: SendRaw # ;AltGr
     
   ;--> X <-------------------------------
      !x:: SendRaw [                     ;Alt
@@ -190,6 +193,7 @@
      !/:: SendRaw \ ;Alt
   <^>!/:: SendRaw \ ;AltGr
 
+#If
 #If
 
 ; ^    control
