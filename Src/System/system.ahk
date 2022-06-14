@@ -1,11 +1,41 @@
-﻿;--> ScreenShot <----------------------
-#q:: Send +#s
+﻿;--> Close All Instances <-------------
+#q::
+  WinGet, activePath, ProcessPath, A
+  WinGet, id, List,,, Program Manager
+  Loop, %id%
+  {
+    thisId := id%A_Index%
+    WinGet, thisPath, ProcessPath, % "ahk_id" id%A_Index%
+    if (thisPath = activePath) {
+      WinClose, ahk_id %thisId%
+    }
+  }
+return
 
 ;--> Close Window <--------------------
 #w::
- id := WinExist("A")
- WinClose, ahk_id %id%
+  id := WinExist("A")
+  WinClose, ahk_id %id%
 return
+
+;--> Close Tab <-----------------------
+#e::
+  WinGet, activePath, ProcessPath, A
+  if(ativePath = "C:\Program Files\Google\Chrome\Application\chrome.exe"){
+    Send ^w
+    return
+  }
+  if("D:\Programs\Tor Browser\Browser\firefox.exe"){
+    Send ^w
+    return
+  }
+  if("D:\Programs\Microsoft VS Code\Code.exe"){
+    Send ^F4
+    return
+  }
+return
+
+
 
 
 ;--> Open Apps <-----------------------
@@ -18,13 +48,14 @@ return
 ^!Numpad8:: Run, "D:\OneDrive\PROGRAMS\Shell.lnk",, Max
 
 
-
-
 ;--> Volume <--------------------------
 !NumpadMult:: send {Volume_Mute}
 !NumpadAdd::  send {Volume_Down 5}
 !NumpadSub::  send {Volume_Up 5}
 
+
+
+;--> Double Tap to Menu <--------------
 wasWinReleased := 0 ; Solves rapid repetition when win is held down
 previousTimestamp := A_TickCount
 ~LWin Up::wasWinReleased := 1
