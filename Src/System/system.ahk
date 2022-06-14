@@ -1,13 +1,18 @@
 ﻿;--> Close All Instances <-------------
 #q::
-  WinGet, activePath, ProcessPath, A
-  WinGet, id, List,,, Program Manager
-  Loop, %id%
+  MsgBox, 4, , Close All Instances of this App?
+  IfMsgBox, Yes 
   {
-    thisId := id%A_Index%
-    WinGet, thisPath, ProcessPath, % "ahk_id" id%A_Index%
-    if (thisPath = activePath) {
-      WinClose, ahk_id %thisId%
+    WinGet, activePath, ProcessPath, A
+    WinGet, id, List,,, Program Manager
+    Loop, %id%
+    {
+      thisId := id%A_Index%
+      WinGet, thisPath, ProcessPath, % "ahk_id" id%A_Index%
+      WinGetTitle, title, % "ahk_id" id%A_Index%
+      if (thisPath = activePath && title) { ;winclose tries to close windowsOS itself, which has a blank title. Windows should not be closed
+        WinClose, ahk_id %thisId%
+      }
     }
   }
 return
@@ -34,9 +39,6 @@ return
     return
   }
 return
-
-
-
 
 ;--> Open Apps <-----------------------
 ^!Numpad0:: Run, "D:\OneDrive\PROGRAMS",, Max
