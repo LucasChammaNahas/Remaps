@@ -83,17 +83,17 @@
 
 ;--> CapsLock <------------------------
 wasCapslockReleased := 0 ; Solves rapid repetition when caps is held down
-previousTimestamp := A_TickCount
+previousCapslockTimestamp := A_TickCount
 
 *CapsLock Up::wasCapslockReleased := 1
 
 *CapsLock::
   currentTimestamp := A_TickCount
-  interval := currentTimestamp - previousTimestamp
+  interval := currentTimestamp - previousCapslockTimestamp
   if(interval < 300 and wasCapslockReleased = 1) {
     SetCapsLockState % !GetKeyState("CapsLock", "T")
   }
   wasCapslockReleased := 0
-  previousTimestamp := currentTimestamp
+  previousCapslockTimestamp := currentTimestamp
 return
 

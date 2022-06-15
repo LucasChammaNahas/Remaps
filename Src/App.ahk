@@ -32,6 +32,7 @@ SendMode Input              ; Recommended for new scripts due to its superior sp
 #Include, %A_LineFile%\..\System\system.ahk
 #Include, %A_LineFile%\..\System\listary.ahk
 #Include, %A_LineFile%\..\System\windowManipulation.ahk
+#Include, %A_LineFile%\..\System\clipboard.ahk
 ; #Include, %A_LineFile%\..\SC_folders_B.ahk
 ; #Include, %A_LineFile%\..\SC_programs_B.ahk
 
