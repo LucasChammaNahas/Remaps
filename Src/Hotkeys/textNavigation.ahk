@@ -36,6 +36,10 @@
   >!j:: Send +{Left}
   >!l:: Send +{Right}
 
+  ; Move arrows fast
+  <!j:: Send ^{Left}
+  <!l:: Send ^{Right}
+
   ; Move linhe up/down
   <!i:: Send !{Up}
   <!k:: Send !{Down}
