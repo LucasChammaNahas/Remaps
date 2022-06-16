@@ -87,7 +87,6 @@
   ;--> C <-------------------------------
      !c:: SendRaw ]                 ;Alt
   <^>!c:: SendRaw ]                 ;AltGr
-  <!>!c:: Send    {Space}-{Space}   ;Alt 2
     >^c:: Send    ([]){Left 2}      ;Ctrl R
 
   ;--> V <-------------------------------
