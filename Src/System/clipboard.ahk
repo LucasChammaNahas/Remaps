@@ -4,7 +4,8 @@ clip2 := ""
 clip3 := ""
 
 #If GetKeyState("CapsLock", "P")
-  x::
+    x::
+  >!x::
     clip := %Clipboard%
     Clipboard := ""
     Send, ^x
@@ -12,7 +13,8 @@ clip3 := ""
     clip1 = %Clipboard%
     Clipboard := clip
   return
-  c::
+    c::
+  >!c::
     clip := Clipboard
     Clipboard := ""
     Send, ^c
@@ -20,13 +22,15 @@ clip3 := ""
     clip1 = %Clipboard%
     Clipboard := clip
   return
-  v::
+    v::
+  >!v::
     Clipboard := clip1
     Send, ^v
     Clipboard := clip
   return
 
-  s::
+   s::
+ >!s::
     clip := Clipboard
     Clipboard := ""
     Send, ^x
@@ -34,7 +38,8 @@ clip3 := ""
     clip2 = %Clipboard%
     Clipboard := clip
   return
-  d::
+    d::
+  >!d::
     clip := Clipboard
     Clipboard := ""
     Send, ^c
@@ -42,13 +47,15 @@ clip3 := ""
     clip2 = %Clipboard%
     Clipboard := clip
   return
-  f::
+    f::
+  >!f::
     Clipboard := clip2
     Send, ^v
     Clipboard := clip
   return
 
-  w::
+    w::
+  >!w::
     clip := Clipboard
     Clipboard := ""
     Send, ^x
@@ -56,7 +63,8 @@ clip3 := ""
     clip3 = %Clipboard%
     Clipboard := clip
   return
-  e::
+    e::
+  >!e::
     clip := Clipboard
     Clipboard := ""
     Send, ^c
@@ -64,7 +72,8 @@ clip3 := ""
     clip3 = %Clipboard%
     Clipboard := clip
   return
-  r::
+    r::
+  >!r::
     Clipboard := clip3
     Send, ^v
     Clipboard := clip

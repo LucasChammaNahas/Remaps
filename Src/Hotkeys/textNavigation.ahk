@@ -14,11 +14,7 @@
   
   ; Copy paste etc (shift)
   >!a:: Send ^a
-  >!s:: Send ^a
-  >!e:: Send ^x
-  >!d:: Send ^c
-  >!f:: Send ^v
-  >!v:: Send ^z 
+  >!t:: Send ^z 
   >!g:: Send +{WheelUp}
   >!b:: Send +{WheelDown} 
   
