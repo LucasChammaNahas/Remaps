@@ -1,43 +1,48 @@
 
-^i:: gridMoveMouse("up",    "rough")
-^k:: gridMoveMouse("down",  "rough")
-^j:: gridMoveMouse("left",  "rough")
-^l:: gridMoveMouse("right", "rough")
+#!i:: moveMouse("up",    "big")
+#!k:: moveMouse("down",  "big")
+#!j:: moveMouse("left",  "big")
+#!l:: moveMouse("right", "big")
 
-^#i:: gridMoveMouse("up",    "fine")
-^#k:: gridMoveMouse("down",  "fine")
-^#j:: gridMoveMouse("left",  "fine")
-^#l:: gridMoveMouse("right", "fine")
+^#!i:: moveMouse("up",    "medium")
+^#!k:: moveMouse("down",  "medium")
+^#!j:: moveMouse("left",  "medium")
+^#!l:: moveMouse("right", "medium")
 
-^#!i::moveMouse("up")
-^#!k::moveMouse("down")
-^#!j::moveMouse("left")
-^#!l::moveMouse("right")
+^!i:: moveMouse("up",    "small")
+^!k:: moveMouse("down",  "small")
+^!j:: moveMouse("left",  "small")
+^!l:: moveMouse("right", "small")
 
-  ^o::
- ^#o::
+ #!o::
 ^#!o::
+ ^!o::
   click right
 return
 
-  ^u::
- ^#u::
+ #!u::
 ^#!u::
+ ^!u::
   If (A_PriorHotKey = A_ThisHotKey)
     return
   click down
 return
 
-  ^u up::
- ^#u up::
+ #!u up::
 ^#!u up::
+ ^!u up::
   click up
 return
 
-moveMouse(dir)
+moveMouse(dir, type)
 {
-  speed := 10
-  stepSize := 10
+  speed := 1
+  stepSize := A_ScreenWidth / 10
+  if(type = "medium")
+    stepSize := A_ScreenWidth / 100
+  if(type = "small")
+    stepSize := 3
+
   stepX := 0
   stepY := 0
   if (dir = "left" ) 
@@ -50,15 +55,16 @@ moveMouse(dir)
     stepY :=  1
 
   x := stepX * stepSize
-  y := stepY * stepSize
+  y := stepY * stepSize * A_ScreenHeight / A_ScreenWidth
+
   MouseMove, x, y, speed, R
 }
 
 
 gridMoveMouse(dir, type)
 {
-  speed := 10
-  typeFactor := type="fine" ? 9 : 3
+  speed := 5
+  typeFactor := type="fine" ? 25 : 5
   stepX := 0
   stepY := 0
   if (dir = "left" ) 

@@ -27,7 +27,7 @@ SetMouseDelay, 0
 #Include, %A_LineFile%\..\Hotkeys\general.ahk
 #Include, %A_LineFile%\..\Hotkeys\textNavigation.ahk
 #Include, %A_LineFile%\..\Hotkeys\mouseNavigation.ahk
-; #Include, %A_LineFile%\..\Hotkeys\symbols.ahk
+#Include, %A_LineFile%\..\Hotkeys\symbols.ahk
 
 #Include, %A_LineFile%\..\System\disableOfficeButton.ahk
 #Include, %A_LineFile%\..\System\powerManagement.ahk
