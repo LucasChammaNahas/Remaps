@@ -7,10 +7,12 @@
   *9::      Send {Esc}
 
   ; Copy paste etc
-  a:: Send ^a
-  t:: Send ^z
-  g:: Send  {WheelUp}
-  b:: Send  {WheelDown} 
+  a::    Send ^a
+  t::    Send ^z
+  g::    Send  {WheelUp}
+  b::    Send  {WheelDown} 
+  Up::   Send  {WheelUp}
+  Down:: Send  {WheelDown} 
   
   ; Copy paste etc (shift)
   >!a:: Send ^a
@@ -78,6 +80,8 @@
 
 
 ;--> CapsLock <------------------------
+; THIS LOGIG HAS TO BE MOVED TO A SEPARATE FILE AND LOADED FIRST
+
 wasCapslockReleased := 0 ; Solves rapid repetition when caps is held down
 previousCapslockTimestamp := A_TickCount
 
