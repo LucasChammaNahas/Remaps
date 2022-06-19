@@ -11,16 +11,16 @@ return
   MsgBox, , , Symbols > ON, 1
 return
 
-^ESC::
-:B0:exit`;::
-  Send {Esc}
-  MsgBox, 4, , Exit the App?
-  IfMsgBox, Yes 
-  {
-    MsgBox, , , Bye!, 1
-    ExitApp
-  }
-return
+; ^ESC::
+; :B0:exit`;::
+;   Send {Esc}
+;   MsgBox, 4, , Exit the App?
+;   IfMsgBox, Yes 
+;   {
+;     MsgBox, , , Bye!, 1
+;     ExitApp
+;   }
+; return
 
 #ESC::
 :B0:reload`;::
