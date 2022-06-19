@@ -4,6 +4,7 @@
 
 :*O:lucas,,::Lucas Chamma Nahas
 :*O:mail,,::lucasnahas@gmail.com
+:*O:mailw,,::lucas@learntolovedigital.com
 :*O:passport,,::GC376680
 :*O:pass,,::GC376680
 :*O:brp,,::RY9385827

@@ -22,8 +22,7 @@ SendMode Input              ; Recommended for new scripts due to its superior sp
 #Include, %A_LineFile%\..\Hotstrings\accents.ahk
 #Include, %A_LineFile%\..\Hotstrings\general.ahk
 #Include, %A_LineFile%\..\Hotstrings\programming.ahk
-; #Include, %A_LineFile%\..\Hotstrings\emojis.ahk
-; #Include, %A_LineFile%\..\Hotstrings\symbols.ahk
+#Include, %A_LineFile%\..\Hotstrings\emojis.ahk
 
 #Include, %A_LineFile%\..\Hotkeys\general.ahk
 #Include, %A_LineFile%\..\Hotkeys\textNavigation.ahk
