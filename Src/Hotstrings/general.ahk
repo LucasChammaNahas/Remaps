@@ -1,18 +1,18 @@
 ﻿
-:*O:p,,::£
-:*O:e,,::€
+:*:p,,::£
+:*:e,,::€
 
-:*O:lucas,,::Lucas Chamma Nahas
-:*O:mail,,::lucasnahas@gmail.com
-:*O:mailw,,::lucas@learntolovedigital.com
-:*O:passport,,::GC376680
-:*O:pass,,::GC376680
-:*O:brp,,::RY9385827
-:*O:brpfull,,::IRGBRRY93858279
-:*O:nin,,::NJ451648A
-:*O:rg,,::29.604.227-4
-:*O:cpf,,::312.610.548-30
+:*:lucas,,::Lucas Chamma Nahas
+:*:mail,,::lucasnahas@gmail.com
+:*:mailw,,::lucas@learntolovedigital.com
+:*:passport,,::GC376680
+:*:pass,,::GC376680
+:*:brp,,::RY9385827
+:*:brpfull,,::IRGBRRY93858279
+:*:nin,,::NJ451648A
+:*:rg,,::29.604.227-4
+:*:cpf,,::312.610.548-30
 
-:*O:jac,,::Jacqueline Tereza da Silva
-:*O:mailj,,::jacsnt@yahoo.com.br
-:*O:mailj2,,::jacqueline.silva@ed.ac.uk
+:*:jac,,::Jacqueline Tereza da Silva
+:*:mailj,,::jacsnt@yahoo.com.br
+:*:mailj2,,::jacqueline.silva@ed.ac.uk
