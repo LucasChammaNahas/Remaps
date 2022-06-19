@@ -3,7 +3,7 @@
 #SingleInstance FORCE       ; Skip invocation dialog box and silently replace previously executing instance of this script.
 CoordMode, Mouse, Screen
 SetMouseDelay, 0
-; SendMode Input              ; Recommended for new scripts due to its superior speed and reliability.
+SendMode Input              ; Recommended for new scripts due to its superior speed and reliability.
 ; SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 #Include, %A_LineFile%\..\Config\globalVariables.ahk
@@ -19,6 +19,7 @@ SetMouseDelay, 0
 
 ; HOTSTRINGS
 ; ==============================================================
+#Include, %A_LineFile%\..\Hotstrings\accents.ahk
 #Include, %A_LineFile%\..\Hotstrings\general.ahk
 #Include, %A_LineFile%\..\Hotstrings\programming.ahk
 ; #Include, %A_LineFile%\..\Hotstrings\emojis.ahk
