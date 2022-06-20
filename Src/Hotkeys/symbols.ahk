@@ -1,5 +1,6 @@
-#If $hotkeySymbols = 1
+
 #If !GetKeyState("CapsLock", "P")
+#If $hotkeySymbols = 1
 
   ;==> MAJOR KEYS <====================================================
   ;--> SPACE <---------------------------
