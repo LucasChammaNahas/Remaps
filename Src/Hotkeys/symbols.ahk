@@ -3,13 +3,13 @@
 
   ;==> MAJOR KEYS <====================================================
   ;--> SPACE <---------------------------
-  <!Space::  Send    {Space}                         ;Alt L
-  >!Space::  SendRaw _                               ;Alt R
-  <^>!Space::SendRaw _                               ;AltGr
-  <+Space::  SendRaw -                               ;Shift L
-  >+Space::  Send    {Space}-{Space}                 ;Shift R
-  >^Space::  Send    console.log('💡 --> ', ){Left}  ;Ctrl R
-  #!Space::  Send    ^/                              ;Win + Alt
+  <!Space::  Send    {Space}                      ;Alt L
+  >!Space::  SendRaw _                            ;Alt R
+  <^>!Space::SendRaw _                            ;AltGr
+  <+Space::  SendRaw -                            ;Shift L
+  >+Space::  Send    {Space}-{Space}              ;Shift R
+  >^Space::  Send    console.log('--> ', ){Left}  ;Ctrl R
+  #!Space::  Send    ^/                           ;Win + Alt
 
 
 
@@ -112,10 +112,10 @@
     <^y:: Send    (() => {{}{}});{Left 3} ;Ctrl L
 
   ;--> U <-------------------------------
-    <!u:: SendRaw <                 ;Alt L
-    >!u:: SendRaw <`=               ;Alt R
-  <^>!u:: SendRaw <`=               ;AltGr
-    <^u:: Send    (() => );{Left 7} ;Ctrl L
+    <!u:: SendRaw <                   ;Alt L
+    >!u:: Send    {Space}{<}`={Space} ;Alt R
+  <^>!u:: Send    {Space}{<}`={Space} ;AltGr
+    <^u:: Send    (() => );{Left 7}   ;Ctrl L
 
   ;--> I <-------------------------------
     <!i:: SendRaw `=                 ;Alt L
@@ -125,11 +125,11 @@
     <^i:: Send    () => {{}{}}{Left} ;Ctrl L
 
   ;--> O <-------------------------------
-    <!o:: SendRaw >               ;Alt L
-    >!o:: SendRaw >`=             ;Alt R
-  <^>!o:: SendRaw >`=             ;AltGr
-  <!>!o:: Send    {Space}*{Space} ;Alt 2
-    <^o:: Send    () =>{Space}    ;Ctrl L
+    <!o:: SendRaw >                   ;Alt L
+    >!o:: Send    {Space}{>}`={Space} ;Alt R
+  <^>!o:: Send    {Space}{>}`={Space} ;AltGr
+  <!>!o:: Send    {Space}*{Space}     ;Alt 2
+    <^o:: Send    () =>{Space}        ;Ctrl L
 
   ;--> P <-------------------------------
   ; empty for now
@@ -180,7 +180,7 @@
      !,:: Send      {End},                           ;Alt
   <^>!,:: Send      {End},                           ;AltGr
   <!>!,:: SendRaw  `,                                ;Alt 2
-    <^,:: Send    +^{Left}^x<^v></^v>^{Left}{Left 2} ;Ctrl L
+    <^,:: Send    +^{Left}^c{Del}{<}^v{>}{<}/^v{>}^{Left}{Left 2} ;Ctrl L
 
   ;--> . <-------------------------------
      !.:: SendRaw ^            ;Alt

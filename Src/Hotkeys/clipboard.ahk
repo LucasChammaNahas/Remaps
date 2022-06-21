@@ -26,9 +26,7 @@ clip3 := ""
   return
   v::
 >!v::
-    Clipboard := clip1
-    Send, ^v
-    Clipboard := clip
+    Send %clip1%
   return
 
   ;--> ROW 2 <-------------------------
@@ -52,9 +50,7 @@ clip3 := ""
   return
   f::
 >!f::
-    Clipboard := clip2
-    Send, ^v
-    Clipboard := clip
+    Send %clip2%
   return
 
   ;--> ROW 3 <-------------------------
@@ -78,9 +74,7 @@ clip3 := ""
   return
   r::
 >!r::
-    Clipboard := clip3
-    Send, ^v
-    Clipboard := clip
+    Send %clip3%
   return
 
 #If

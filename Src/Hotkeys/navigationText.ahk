@@ -2,17 +2,19 @@
 #If $navTextController = 1 && GetKeyState("CapsLock", "P")
 
   ; Space forward, enter downwards and esc 
-  *~Space:: Send {Left}
-  *~Enter:: Send {Left}
-  *9::      Send {Esc}
+  *Space:: Send {Space}{Left}
+  *Enter:: Send {Enter}{Left}
+  *9::     Send {Esc}
 
   ; Copy paste etc
-  a::    Send ^a
-  t::    Send ^z
-  g::    Send  {WheelUp}
-  b::    Send  {WheelDown} 
-  Up::   Send  {WheelUp}
-  Down:: Send  {WheelDown} 
+  a::     Send ^a
+  t::     Send ^z
+  g::     Send  {WheelUp}
+  b::     Send  {WheelDown} 
+  Up::    Send  {WheelUp}
+  Down::  Send  {WheelDown} 
+  Left::  Send +{WheelUp}
+  Right:: Send +{WheelDown} 
   
   ; Copy paste etc (shift)
   >!a:: Send ^a
@@ -24,7 +26,7 @@
   <!e:: Send ^a^x
   <!d:: Send ^a^c
   <!f:: Send ^a^v
-  <!v:: ^y
+  <!t:: Send ^y
 
   ; Normal arrows
   i:: Send {Up}
@@ -69,9 +71,9 @@
   >!h::  Send +{Home}
   >!`;:: Send +{End}
   >!m::  Send  {Backspace}
-  >!n::  Send  {Backspace}
+  >!n::  Send ^{Backspace}
   >!u::  Send  {Del}
-  >!o::  Send  {Del}
+  >!o::  Send ^{Del}
 
   ; Delete rest/begining of line
   <!n:: Send +{Home}{Del}
