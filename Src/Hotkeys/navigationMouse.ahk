@@ -25,15 +25,7 @@
   #!u::
   ^#!u::
   ^!u::
-    If (A_PriorHotKey = A_ThisHotKey)
-      return
-    click down
-  return
-
-  #!u up::
-  ^#!u up::
-  ^!u up::
-    click up
+    Send {Click}
   return
 
 #If
