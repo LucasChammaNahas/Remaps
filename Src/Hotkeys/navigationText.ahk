@@ -1,6 +1,6 @@
 
-;--> Navigation <----------------------
-#If GetKeyState("CapsLock", "P")
+#If $navTextController = 1 && GetKeyState("CapsLock", "P")
+
   ; Space forward, enter downwards and esc 
   *~Space:: Send {Left}
   *~Enter:: Send {Left}
@@ -76,24 +76,20 @@
   ; Delete rest/begining of line
   <!n:: Send +{Home}{Del}
   <!o:: Send +{End}{Del}
+
 #If
 
 
-;--> CapsLock <------------------------
-; THIS LOGIG HAS TO BE MOVED TO A SEPARATE FILE AND LOADED FIRST
-
-wasCapslockReleased := 0 ; Solves rapid repetition when caps is held down
-previousCapslockTimestamp := A_TickCount
-
-*CapsLock Up::wasCapslockReleased := 1
-
-*CapsLock::
-  currentTimestamp := A_TickCount
-  interval := currentTimestamp - previousCapslockTimestamp
-  if(interval < 300 and wasCapslockReleased = 1) {
-    SetCapsLockState % !GetKeyState("CapsLock", "T")
-  }
-  wasCapslockReleased := 0
-  previousCapslockTimestamp := currentTimestamp
-return
-
+  ;--> CapsLock <------------------------
+  wasCapslockReleased := 0 ; Solves rapid repetition when caps is held down
+  previousCapslockTimestamp := A_TickCount
+  *CapsLock Up::wasCapslockReleased := 1
+  *CapsLock::
+    currentTimestamp := A_TickCount
+    interval := currentTimestamp - previousCapslockTimestamp
+    if(interval < 300 and wasCapslockReleased = 1) {
+      SetCapsLockState % !GetKeyState("CapsLock", "T")
+    }
+    wasCapslockReleased := 0
+    previousCapslockTimestamp := currentTimestamp
+  return

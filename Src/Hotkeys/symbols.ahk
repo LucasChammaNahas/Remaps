@@ -1,6 +1,5 @@
 
-#If !GetKeyState("CapsLock", "P")
-#If $hotkeySymbols = 1
+#If $symbolsController = 1 && !GetKeyState("CapsLock", "P")
 
   ;==> MAJOR KEYS <====================================================
   ;--> SPACE <---------------------------
@@ -133,7 +132,7 @@
     <^o:: Send    () =>{Space}    ;Ctrl L
 
   ;--> P <-------------------------------
-
+  ; empty for now
 
   ;--> H <-------------------------------
     <!h:: SendRaw |                ;Alt L
@@ -194,11 +193,3 @@
   <^>!/:: SendRaw \ ;AltGr
 
 #If
-#If
-
-; ^    control
-; +    shift
-; #    win
-; !    alt
-; <^>! altGr
-; > <  right left

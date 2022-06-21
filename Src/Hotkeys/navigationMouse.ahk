@@ -1,38 +1,47 @@
 
-#!i:: moveMouse("up",    "big")
-#!k:: moveMouse("down",  "big")
-#!j:: moveMouse("left",  "big")
-#!l:: moveMouse("right", "big")
+#If $navMouseController = 1
 
-^#!i:: moveMouse("up",    "medium")
-^#!k:: moveMouse("down",  "medium")
-^#!j:: moveMouse("left",  "medium")
-^#!l:: moveMouse("right", "medium")
+  #!i:: moveMouse("up",    "big")
+  #!k:: moveMouse("down",  "big")
+  #!j:: moveMouse("left",  "big")
+  #!l:: moveMouse("right", "big")
 
-^!i:: moveMouse("up",    "small")
-^!k:: moveMouse("down",  "small")
-^!j:: moveMouse("left",  "small")
-^!l:: moveMouse("right", "small")
+  ^#!i:: moveMouse("up",    "medium")
+  ^#!k:: moveMouse("down",  "medium")
+  ^#!j:: moveMouse("left",  "medium")
+  ^#!l:: moveMouse("right", "medium")
 
- #!o::
-^#!o::
- ^!o::
-  click right
-return
+  ^!i:: moveMouse("up",    "small")
+  ^!k:: moveMouse("down",  "small")
+  ^!j:: moveMouse("left",  "small")
+  ^!l:: moveMouse("right", "small")
 
- #!u::
-^#!u::
- ^!u::
-  If (A_PriorHotKey = A_ThisHotKey)
-    return
-  click down
-return
+  #!o::
+  ^#!o::
+  ^!o::
+    click right
+  return
 
- #!u up::
-^#!u up::
- ^!u up::
-  click up
-return
+  #!u::
+  ^#!u::
+  ^!u::
+    If (A_PriorHotKey = A_ThisHotKey)
+      return
+    click down
+  return
+
+  #!u up::
+  ^#!u up::
+  ^!u up::
+    click up
+  return
+
+#If
+
+
+
+
+;==> FUNCTIONS <=====================================================
 
 moveMouse(dir, type)
 {

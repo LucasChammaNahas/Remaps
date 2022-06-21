@@ -15,6 +15,7 @@
 #Include, %A_WorkingDir%\Hotkeys\clipboard.ahk
 #Include, %A_WorkingDir%\Hotkeys\disableOfficeButton.ahk
 #Include, %A_WorkingDir%\Hotkeys\general.ahk
+; #Include, %A_WorkingDir%\Hotkeys\navigationApps.ahk
 ; #Include, %A_WorkingDir%\Hotkeys\navigationDesktops.ahk
 #Include, %A_WorkingDir%\Hotkeys\navigationText.ahk
 #Include, %A_WorkingDir%\Hotkeys\navigationWindow.ahk
