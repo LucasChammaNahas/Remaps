@@ -46,5 +46,3 @@ return
   MsgBox, , , Reloading App..., 1
   Reload
 return
-
-q:: msgbox, %$symbolsController% 
