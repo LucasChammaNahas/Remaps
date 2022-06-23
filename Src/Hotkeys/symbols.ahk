@@ -174,6 +174,7 @@
     <!m:: SendRaw :                                          ;Alt L
     >!m:: Send    :{Space}                                   ;Alt R
   <^>!m:: Send    :{Space}                                   ;AltGr
+  <!>!m:: Send   `;{Space}                                   ;Alt 2
     <^m:: Send    if () {{}{}}{Left}{Enter}{Up}{End}{Left 3} ;Ctrl L
 
   ;--> , <-------------------------------
