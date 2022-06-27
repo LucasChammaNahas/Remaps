@@ -132,7 +132,9 @@
     <^o:: Send    () =>{Space}        ;Ctrl L
 
   ;--> P <-------------------------------
-  ; empty for now
+    <!p:: SendRaw -                  ;Alt L
+    >!p:: Send    {Space}-{>}{Space} ;Alt R
+  <^>!p:: Send    {Space}-{>}{Space} ;AltGr
 
   ;--> H <-------------------------------
     <!h:: SendRaw |                ;Alt L
