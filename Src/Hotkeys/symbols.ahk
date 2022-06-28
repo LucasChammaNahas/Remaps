@@ -177,26 +177,26 @@
     ; <^`;:: SendRaw : { ;Ctrl L
 
   ;--> N <-------------------------------
-     !n:: Send    {End}`;              ;Alt
-  <^>!n:: Send    {End}`;              ;AltGr
-  <!>!n:: Send    {Space}-{Space}      ;Alt 2
-    ; <^n:: SendRaw `="                  ;Ctrl L
+    <!n:: SendRaw /                           ;Alt L
+    >!n:: Send    {Space}/{Space}             ;Alt R
+  <^>!n:: Send    {Space}/{Space}             ;AltGr
+    ; >^n:: Send    const [] `={Space};{Left 5} ;Ctrl R
 
   ;--> M <-------------------------------
-    <!m:: SendRaw /                           ;Alt L
-    >!m:: Send    {Space}/{Space}             ;Alt R
-  <^>!m:: Send    {Space}/{Space}             ;AltGr
-  <!>!m:: Send   `;{Space}                    ;Alt 2
-    ; >^m:: Send    const [] `={Space};{Left 5} ;Ctrl R
+    <!m:: SendRaw *               ;Alt L
+    >!m:: Send    {Space}*{Space} ;Alt R
+  <^>!m:: Send    {Space}*{Space} ;AltGr
 
   ;--> , <-------------------------------
-    <!,:: SendRaw *               ;Alt L
-    >!,:: Send    {Space}*{Space} ;Alt R
-  <^>!,:: Send    {Space}*{Space} ;AltGr
-  <!>!,:: SendRaw  `,             ;Alt 2
+     !m:: Send     {End}`, ;Alt
+  <^>!m:: Send     {End}`, ;AltGr
+  <!>!,:: SendRaw `,       ;Alt 2
 
   ;--> . <-------------------------------
-  <!>!.:: SendRaw . ;Alt 2
+     !.:: Send    {End}`;  ;Alt
+  <^>!.:: Send    {End}`;  ;AltGr
+  <!>!.:: Send   `;{Space} ;Alt 2
+    ; <^.:: SendRaw `="      ;Ctrl L
 
   ;--> / <-------------------------------
      !/:: SendRaw \ ;Alt
