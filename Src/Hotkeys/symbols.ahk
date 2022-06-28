@@ -22,7 +22,6 @@
   ;--> W <-------------------------------
      !w:: SendRaw {                         ;Alt
   <^>!w:: SendRaw {                         ;AltGr
-  <!>!w:: Send    {Space}-{Space}           ;Alt 2
     >^w:: Send    const  `= {{}{}};{Left 6} ;Ctrl R
 
   ;--> E <-------------------------------
@@ -38,10 +37,9 @@
     >^r:: Send    const {{}  {}} `={Space};{Left 6} ;Ctrl R
 
   ;--> T <-------------------------------
-    <!t:: SendRaw /               ;Alt L
-    >!t:: Send    {Space}/{Space} ;Alt R
-  <^>!t:: Send    {Space}/{Space} ;AltGr
-  <!>!t:: Send    {Space}/{Space} ;Alt 2
+     !t:: SendRaw ~           ;Alt
+  <^>!t:: SendRaw ~           ;AltGr
+    <^t:: Send    if (){Left} ;Ctrl L
 
   ;--> A <-------------------------------
      !a:: SendRaw @                         ;Alt
@@ -69,11 +67,9 @@
     >^f:: Send    {Space}`==={Space} ;Ctrl R
 
   ;--> G <-------------------------------
-    <!g:: SendRaw -                    ;Alt L
-    >!g:: Send    {Space}-{Space}      ;Alt R
-  <^>!g:: Send    {Space}-{Space}      ;AltGr
-  <!>!g:: SendRaw 5                    ;Alt 2
-    >^g:: Send    {Space}{!}`=={Space} ;Ctrl R
+     !g:: SendRaw !                 ;Alt
+  <^>!g:: Send    {Space}{!}{Space} ;AltGr
+  <!>!g:: SendRaw 5                 ;Alt 2
 
   ;--> Z <-------------------------------
      !z:: SendRaw # ;Alt
@@ -91,16 +87,17 @@
     >^c:: Send    ([]){Left 2}      ;Ctrl R
 
   ;--> V <-------------------------------
-    <!v:: SendRaw *                           ;Alt L
-    >!v:: Send    {Space}*{Space}             ;Alt R
-  <^>!v:: Send    {Space}*{Space}             ;AltGr
+    <!v:: SendRaw /                           ;Alt L
+    >!v:: Send    {Space}/{Space}             ;Alt R
+  <^>!v:: Send    {Space}/{Space}             ;AltGr
   <!>!v:: Send    {Space}/{Space}             ;Alt 2
     >^v:: Send    const [] `={Space};{Left 5} ;Ctrl R
 
   ;--> B <-------------------------------
-     !b:: SendRaw !                 ;Alt
-  <^>!b:: Send    {Space}{!}{Space} ;AltGr
-  <!>!b:: Send    {Space}*{Space}   ;Alt 2
+    <!b:: SendRaw *               ;Alt L
+    >!b:: Send    {Space}*{Space} ;Alt R
+  <^>!b:: Send    {Space}*{Space} ;AltGr
+  <!>!b:: Send    {Space}*{Space} ;Alt 2
 
 
 
@@ -128,13 +125,13 @@
     <!o:: SendRaw >                   ;Alt L
     >!o:: Send    {Space}{>}`={Space} ;Alt R
   <^>!o:: Send    {Space}{>}`={Space} ;AltGr
-  <!>!o:: Send    {Space}`%{Space}    ;Alt 2
     <^o:: Send    () =>{Space}        ;Ctrl L
 
   ;--> P <-------------------------------
     <!p:: SendRaw `%               ;Alt L
     >!p:: Send    {Space}`%{Space} ;Alt R
   <^>!p:: Send    {Space}`%{Space} ;AltGr
+  <!>!p:: Send    {Space}`%{Space}    ;Alt 2
 
   ;--> H <-------------------------------
     <!h:: SendRaw |                ;Alt L
@@ -168,9 +165,11 @@
     <^`;:: SendRaw `="     ;Ctrl L
 
   ;--> N <-------------------------------
-     !n:: SendRaw ~           ;Alt
-  <^>!n:: SendRaw ~           ;AltGr
-    <^n:: Send    if (){Left} ;Ctrl L
+    <!n:: SendRaw -                    ;Alt L
+    >!n:: Send    {Space}-{Space}      ;Alt R
+  <^>!n:: Send    {Space}-{Space}      ;AltGr
+  <!>!n:: Send    {Space}-{Space}      ;Alt 2
+    >^n:: Send    {Space}{!}`=={Space} ;Ctrl R
 
   ;--> M <-------------------------------
     <!m:: SendRaw :                                          ;Alt L
