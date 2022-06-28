@@ -23,13 +23,14 @@
     <!w:: SendRaw <                   ;Alt L
     >!w:: Send    {Space}{<}`={Space} ;Alt R
   <^>!w:: Send    {Space}{<}`={Space} ;AltGr
+  <!>!w:: Send    {Space}*{Space}     ;Alt 2
     <^w:: Send    (() => );{Left 7}   ;Ctrl L
 
   ;--> E <-------------------------------
     <!e:: SendRaw `=                 ;Alt L
     >!e:: Send    {Space}`={Space}   ;Alt R
   <^>!e:: Send    {Space}`={Space}   ;AltGr
-  <!>!e:: Send    {Space}{+}{Space}  ;Alt 2
+  <!>!e:: Send    {Space}/{Space}    ;Alt 2
     >^e:: Send    {Space}`==={Space} ;Ctrl R
 
   ;--> R <-------------------------------
@@ -80,26 +81,26 @@
   ;--> X <-------------------------------
      !x:: SendRaw _                     ;Alt
   <^>!x:: SendRaw _                     ;AltGr
-  <!>!x:: Send    {Space}{+}{Space}     ;Alt 2
 
   ;--> C <-------------------------------
     <!c:: SendRaw +                                 ;Alt L
     >!c:: Send    {Space}{+}{Space}                 ;Alt R
   <^>!c:: Send    {Space}{+}{Space}                 ;AltGr
+  <!>!c:: Send    {Space}{+}{Space}                 ;Alt 2
     >^c:: Send    const {{}  {}} `={Space};{Left 6} ;Ctrl R
 
   ;--> V <-------------------------------
     <!v:: SendRaw -                    ;Alt L
     >!v:: Send    {Space}-{Space}      ;Alt R
   <^>!v:: Send    {Space}-{Space}      ;AltGr
-  <!>!v:: Send    {Space}/{Space}      ;Alt 2
+  <!>!v:: Send    {Space}-{Space}      ;Alt 2
     >^v:: Send    {Space}{!}`=={Space} ;Ctrl R
 
   ;--> B <-------------------------------
     <!b:: SendRaw `%               ;Alt L
     >!b:: Send    {Space}`%{Space} ;Alt R
   <^>!b:: Send    {Space}`%{Space} ;AltGr
-  <!>!b:: Send    {Space}*{Space}  ;Alt 2
+  <!>!b:: Send    {Space}`%{Space} ;Alt 2
 
 
 
@@ -142,7 +143,6 @@
   ;--> P <-------------------------------
      !p:: SendRaw $                 ;Alt
   <^>!p:: SendRaw $                 ;AltGr
-  <!>!p:: Send    {Space}`%{Space}  ;Alt 2
     >^p:: Send    ${{}  {}}{Left 2} ;Ctrl R
 
   ;--> H <-------------------------------
@@ -196,7 +196,7 @@
   <!>!,:: SendRaw  `,             ;Alt 2
 
   ;--> . <-------------------------------
-  <!>!.:: SendRaw .            ;Alt 2
+  <!>!.:: SendRaw . ;Alt 2
 
   ;--> / <-------------------------------
      !/:: SendRaw \ ;Alt
