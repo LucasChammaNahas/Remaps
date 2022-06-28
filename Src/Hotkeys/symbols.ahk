@@ -188,8 +188,8 @@
   <^>!m:: Send    {Space}*{Space} ;AltGr
 
   ;--> , <-------------------------------
-     !m:: Send     {End}`, ;Alt
-  <^>!m:: Send     {End}`, ;AltGr
+     !,:: Send     {End}`, ;Alt
+  <^>!,:: Send     {End}`, ;AltGr
   <!>!,:: SendRaw `,       ;Alt 2
 
   ;--> . <-------------------------------
