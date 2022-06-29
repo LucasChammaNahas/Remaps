@@ -45,8 +45,8 @@
     ; <^t:: Send    if (){Left} ;Ctrl L
 
   ;--> A <-------------------------------
-     !a:: SendRaw '   ;Alt
-  <^>!a:: SendRaw '   ;AltGr
+     !a:: SendRaw @   ;Alt
+  <^>!a:: SendRaw @   ;AltGr
   <!>!a:: SendRaw 1   ;Alt 2
     ; <^a:: SendRaw : ' ;Ctrl L
 
@@ -69,13 +69,13 @@
     ; >^f:: Send    const  `= [];{Left 6} ;Ctrl R
 
   ;--> G <-------------------------------
-     !g:: SendRaw !                 ;Alt
-  <^>!g:: Send    {Space}{!}{Space} ;AltGr
-  <!>!g:: SendRaw 5                 ;Alt 2
+     !g:: Send    {End}`; ;Alt
+  <^>!g:: Send    {End}`; ;AltGr
+  <!>!g:: SendRaw 5       ;Alt 2
 
   ;--> Z <-------------------------------
-     !z:: SendRaw @                         ;Alt
-  <^>!z:: SendRaw @                         ;AltGr
+     !z:: SendRaw !                         ;Alt
+  <^>!z:: SendRaw !                         ;AltGr
     ; >^z:: Send    const  `={Space};{Left 4} ;Ctrl R
     
   ;--> X <-------------------------------
@@ -171,10 +171,10 @@
     ; >^l:: Send    (''){Left 2} ;Ctrl R
 
   ;--> ; <-------------------------------
-     !`;:: SendRaw "   ;Alt
-  <^>!`;:: SendRaw "   ;AltGr
-  <!>!`;:: SendRaw 0   ;Alt 2
-    ; <^`;:: SendRaw : { ;Ctrl L
+     !`;:: SendRaw ' ;Alt
+  <^>!`;:: SendRaw ' ;AltGr
+  <!>!`;:: SendRaw 0 ;Alt 2
+    ; <^`;:: SendRaw : {     ;Ctrl L
 
   ;--> N <-------------------------------
     <!n:: SendRaw /                           ;Alt L
@@ -186,16 +186,17 @@
     <!m:: SendRaw *               ;Alt L
     >!m:: Send    {Space}*{Space} ;Alt R
   <^>!m:: Send    {Space}*{Space} ;AltGr
+  <!>!m:: Send   `;{Space}        ;Alt 2
 
   ;--> , <-------------------------------
-     !,:: Send     {End}`, ;Alt
-  <^>!,:: Send     {End}`, ;AltGr
-  <!>!,:: SendRaw `,       ;Alt 2
+     !,:: SendRaw `, ;Alt
+  <^>!,:: SendRaw `, ;AltGr
+  <!>!,:: SendRaw `, ;Alt 2
 
   ;--> . <-------------------------------
-     !.:: Send    {End}`;  ;Alt
-  <^>!.:: Send    {End}`;  ;AltGr
-  <!>!.:: Send   `;{Space} ;Alt 2
+     !.:: SendRaw "        ;Alt
+  <^>!.:: SendRaw "        ;AltGr
+  <!>!.:: Send    .{Space} ;Alt 2
     ; <^.:: SendRaw `="      ;Ctrl L
 
   ;--> / <-------------------------------
