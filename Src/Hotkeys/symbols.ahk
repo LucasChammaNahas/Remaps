@@ -74,8 +74,8 @@
   <!>!g:: SendRaw 5       ;Alt 2
 
   ;--> Z <-------------------------------
-     !z:: SendRaw !                         ;Alt
-  <^>!z:: SendRaw !                         ;AltGr
+     !z:: SendRaw $                         ;Alt
+  <^>!z:: SendRaw $                         ;AltGr
     ; >^z:: Send    const  `={Space};{Left 4} ;Ctrl R
     
   ;--> X <-------------------------------
@@ -141,8 +141,8 @@
     ; <^o:: Send    () =>{Space}        ;Ctrl L
 
   ;--> P <-------------------------------
-     !p:: SendRaw $                 ;Alt
-  <^>!p:: SendRaw $                 ;AltGr
+     !p:: SendRaw !                 ;Alt
+  <^>!p:: SendRaw !                 ;AltGr
     ; >^p:: Send    ${{}  {}}{Left 2} ;Ctrl R
 
   ;--> H <-------------------------------
