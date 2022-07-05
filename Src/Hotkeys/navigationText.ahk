@@ -76,7 +76,7 @@
   >!o::  Send ^{Del}
 
   ; Delete rest/begining of line
-  <!n:: Send +{Home}{Del}
+  <!n:: Send +{Home}{Backspace}
   <!o:: Send +{End}{Del}
 
 #If
