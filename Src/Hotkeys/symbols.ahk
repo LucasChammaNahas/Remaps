@@ -2,6 +2,10 @@
 #If $symbolsController = 1 && !GetKeyState("CapsLock", "P")
 
   ;==> MAJOR KEYS <====================================================
+
+  ;--> DISABLE ALT <---------------------
+  Alt:: return
+
   ;--> SPACE <---------------------------
   <!Space::  Send    {Space}                      ;Alt L
   >!Space::  SendRaw _                            ;Alt R
