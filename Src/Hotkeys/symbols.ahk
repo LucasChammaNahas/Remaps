@@ -6,6 +6,9 @@
   ;--> DISABLE ALT <---------------------
   Alt:: return
 
+  ;--> ENTER <---------------------------
+  !Enter:: Send {Enter}
+
   ;--> SPACE <---------------------------
   <!Space::  Send    {Space}                      ;Alt L
   >!Space::  SendRaw _                            ;Alt R
