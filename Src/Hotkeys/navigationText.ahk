@@ -62,10 +62,10 @@
   ; Delete, backspace, home, end
   h:: Send  {Home}
  `;:: Send  {End}
-  m:: Send  {Backspace}
+  u:: Send  {Backspace}
   n:: Send ^{Backspace}
-  u:: Send  {Del}
-  o:: Send ^{Del}
+  o:: Send  {Del}
+  p:: Send ^{Del}
   
   ; Delete, backspace, home, end with shift
   >!h::  Send +{Home}
