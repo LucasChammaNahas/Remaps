@@ -1,6 +1,9 @@
 ﻿
 ; ==> Config <=================================================================
 #Include, %A_WorkingDir%\Config\globalVariables.ahk
+#Include, %A_WorkingDir%\Config\capsLock.ahk
+#Include, %A_WorkingDir%\Config\winKey.ahk
+#Include, %A_WorkingDir%\Config\officeButton.ahk
 
 ; ==> Controller <=============================================================
 #Include, %A_WorkingDir%\Controller\Controller.ahk
@@ -13,10 +16,6 @@
 
 ; ==> HotKeys <================================================================
 #Include, %A_WorkingDir%\Hotkeys\clipboard.ahk
-#Include, %A_WorkingDir%\Hotkeys\disableOfficeButton.ahk
-#Include, %A_WorkingDir%\Hotkeys\general.ahk
-; #Include, %A_WorkingDir%\Hotkeys\navigationApps.ahk
-; #Include, %A_WorkingDir%\Hotkeys\navigationDesktops.ahk
 #Include, %A_WorkingDir%\Hotkeys\navigationText.ahk
 #Include, %A_WorkingDir%\Hotkeys\navigationWindow.ahk
 #Include, %A_WorkingDir%\Hotkeys\navigationMouse.ahk

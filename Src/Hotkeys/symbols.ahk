@@ -3,11 +3,10 @@
 
   ;==> MAJOR KEYS <====================================================
 
-  ;--> DISABLE ALT <---------------------
-  Alt:: return
-
-  ;--> ENTER <---------------------------
-  !Enter:: Send {Enter}
+  ;--> DEFAULT <-------------------------
+  Alt::        return
+  !Enter::     Send {Enter}
+  !Backspace:: Send {Backspace}
 
   ;--> SPACE <---------------------------
   <!Space::  Send    {Space}                      ;Alt L
