@@ -4,6 +4,7 @@
 #Include, %A_WorkingDir%\Config\capsLock.ahk
 #Include, %A_WorkingDir%\Config\winKey.ahk
 #Include, %A_WorkingDir%\Config\officeButton.ahk
+#Include, %A_WorkingDir%\Config\altKey.ahk
 
 ; ==> Controller <=============================================================
 #Include, %A_WorkingDir%\Controller\Controller.ahk

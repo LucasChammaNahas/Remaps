@@ -4,7 +4,6 @@
   ;==> MAJOR KEYS <====================================================
 
   ;--> DEFAULT <-------------------------
-  Alt::        return
   !Enter::     Send {Enter}
   !Backspace:: Send {Backspace}
 
