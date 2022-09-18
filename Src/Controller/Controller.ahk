@@ -1,8 +1,7 @@
-  :*B0:restartpc`;`;:: 
-    Send {Esc}
-    restartComputer()
-  return 
-
+:*B0:restartpc`;`;:: 
+  Send {Esc}
+  restartComputer()
+return 
 
 :B0:symbolsOff`;::
   Send {Esc}
