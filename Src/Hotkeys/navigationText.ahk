@@ -3,7 +3,7 @@
 
   ; Space forward, enter downwards and esc 
   *Space:: Send {Space}{Left}
-  *Enter:: Send {Enter}{Left}
+  *Enter:: Send {End}{Enter}
   *9::     Send {Esc}
 
   ; Copy paste etc
