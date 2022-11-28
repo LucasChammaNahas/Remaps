@@ -71,9 +71,9 @@
   <^>!g:: return    ;AltGr
 
   ;--> Z <-------------------------------
-    <!z:: return ;Alt L
-    >!z:: return ;Alt R
-  <^>!z:: return ;AltGr
+    <!z:: SendRaw / ;Alt L
+    >!z:: return    ;Alt R
+  <^>!z:: return    ;AltGr
     
   ;--> X <-------------------------------
     <!x:: SendRaw * ;Alt L
