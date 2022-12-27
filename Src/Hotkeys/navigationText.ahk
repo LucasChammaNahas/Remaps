@@ -4,7 +4,7 @@
   ; Space forward, enter downwards and esc 
   *Space:: Send {Space}{Left}
   *Enter:: Send {End}{Enter}
-  *9::     Send {Esc}
+  *q::     Send {Esc}
 
   ; Copy paste etc
   a::     Send ^a
@@ -40,43 +40,37 @@
   >!j:: Send +{Left}
   >!l:: Send +{Right}
 
-  ; Move arrows fast
-  <!j:: Send ^{Left}
-  <!l:: Send ^{Right}
+  ; Copy linhe up/down
+  <!u:: Send +!{Up}
+  <!j:: Send +!{Down}
 
   ; Move linhe up/down
   <!i:: Send !{Up}
   <!k:: Send !{Down}
 
-  ; Copy line up/down
-  <!>!i:: Send +!{Up}
-  <!>!k:: Send +!{Down}
-
-  ; Copy cursor up/down
-  <!>!u:: Send ^!{Up}
-  <!>!j:: Send ^!{Down}
+  ; Cursor up/down
+  <!o:: Send ^!{Up}
+  <!l:: Send ^!{Down}
 
   ; Select word
   y:: Send ^{Left}+^{Right}
 
   ; Delete, backspace, home, end
-  h:: Send  {Home}
- `;:: Send  {End}
-  u:: Send  {Backspace}
-  n:: Send ^{Backspace}
-  o:: Send  {Del}
-  p:: Send ^{Del}
+  h::         Send  {Home}
+ `;::         Send  {End}
+  u::         Send  {Backspace}
+  n::         Send ^{Backspace}
+  o::         Send  {Del}
+  p::         Send ^{Del}
+  Delete::    Send +{End}{Backspace}
+  Backspace:: Send +{Home}{Backspace}
   
   ; Delete, backspace, home, end with shift
   >!h::  Send +{Home}
   >!`;:: Send +{End}
-  >!m::  Send  {Backspace}
+  >!u::  Send  {Backspace}
   >!n::  Send ^{Backspace}
-  >!u::  Send  {Del}
-  >!o::  Send ^{Del}
-
-  ; Delete rest/begining of line
-  <!n:: Send +{Home}{Backspace}
-  <!o:: Send +{End}{Del}
+  >!o::  Send  {Del}
+  >!p::  Send ^{Del}
 
 #If

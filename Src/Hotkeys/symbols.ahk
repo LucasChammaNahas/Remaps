@@ -12,9 +12,7 @@
   >!Space::  Send    {Space}                      ;Alt R
   <^>!Space::Send    {Space}                      ;AltGr
   <+Space::  Send    {Space}                      ;Shift L
-  >+Space::  SendRaw _                            ;Shift R
   >^Space::  Send    console.log('--> ', ){Left}  ;Ctrl R
-  #!Space::  Send    ^/                           ;Win + Alt
 
 
 
@@ -98,16 +96,6 @@
 
 
   ;==> RIGHT HAND <====================================================
-  
-  ; ;--> 9 <-------------------------------
-  ;   <!9:: SendRaw $ ;Alt L
-  ;   >!9:: SendRaw $ ;Alt R
-  ; <^>!9:: SendRaw $ ;AltGr
-    
-  ; ;--> 0 <-------------------------------
-  ;   <!0:: SendRaw $ ;Alt L
-  ;   >!0:: SendRaw $ ;Alt R
-  ; <^>!0:: SendRaw $ ;AltGr
 
   ;--> Y <-------------------------------
     <!y:: SendRaw & ;Alt L
@@ -180,7 +168,7 @@
   <^>!.:: SendRaw . ;AltGr
 
   ;--> / <-------------------------------
-    <!/:: SendRaw \ ;Alt L
+    <!/:: SendRaw ? ;Alt L
     >!/:: return    ;Alt R
   <^>!/:: return    ;AltGr
 

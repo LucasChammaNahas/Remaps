@@ -8,7 +8,7 @@ clip3 := ""
   ;--> ROW 1 <-------------------------
   x::
 >!x::
-    clip := %Clipboard%
+    clip := Clipboard
     Clipboard := ""
     Send, ^x
     ClipWait, 2
