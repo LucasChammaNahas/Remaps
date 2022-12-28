@@ -74,7 +74,7 @@
   ;==> Window Resizing <===============================================
 
   ;--> windows side-by-side <------------
-  ^Numpad8::
+  #!h::
     time := 100  
     WinMaximize, A
     Sleep, time
@@ -91,9 +91,8 @@
     Send, {Esc}
   return
 
-  ^Numpad0::Send !{Tab}
-
-  ^Numpad1::
+  ;--> window to the left <------------
+  #!j::
     time := 150  
     WinMaximize, A
     Sleep, time
@@ -102,9 +101,12 @@
     Send, {Esc}
   return
 
-  ^Numpad2:: WinMinimize, A
+  ;--> window minimize <------------
+  #!k:: WinMinimize, A
 
-  ^Numpad3::
+  ;--> window to the right <------------
+  #!l::
+    ; MsgBox, , , Close All Instances of this App?
     time := 150  
     WinMaximize, A
     Sleep, time
@@ -113,6 +115,7 @@
     Send, {Esc}
   return
 
-  ^Numpad5::WinMaximize, A
+  ;--> window maximize <------------
+  #!i::WinMaximize, A
  
 #If

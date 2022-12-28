@@ -7,6 +7,14 @@
     IfMsgBox, Yes 
     {
       WinGet, activePath, ProcessPath, A
+      if(activePath = "C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe") {
+        exitViaMenu()
+        return
+      }
+      if(activePath = "C:\Program Files\Microsoft VS Code\Code.exe") {
+        exitViaMenu()
+        return
+      }
       WinGet, id, List,,, Program Manager
       Loop, %id%
       {
@@ -39,14 +47,25 @@
     }
   return
 
+  ;--> Reopen Tab <----------------------
+  #r::
+    WinGet, activePath, ProcessPath, A    
+    if(activePath = "C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"){
+      Send ^+{t}
+      return
+    }
+    if(activePath = "C:\Program Files\Microsoft VS Code\Code.exe"){
+      Send ^+{t}
+      return
+    }
+  return
+
   ;--> Open Apps <-----------------------
-  ^!Numpad0:: Run, "D:\OneDrive\PROGRAMS",, Max
-  ^!Numpad1:: Run, "D:\OneDrive\PROGRAMS\Code.lnk",, Max
-  ^!Numpad4:: Run, "D:\OneDrive\PROGRAMS\Tor.lnk",, Max
-  ^!Numpad5:: Run, "D:\OneDrive\PROGRAMS\Chrome.lnk",, Max
-  ^!Numpad6:: Run, "D:\OneDrive\PROGRAMS\Chrome HC.lnk",, Max
-  ^!Numpad7:: Run, "D:\OneDrive\FOLDERS",, Max
-  ^!Numpad8:: Run, "D:\OneDrive\PROGRAMS\Shell.lnk",, Max
+  ^!Numpad0:: Run, "C:\Users\Dell\OneDrive\0 Lucas\PROGRAMS",, Max
+  ^!Numpad1:: Run, "C:\Users\Dell\OneDrive\0 Lucas\PROGRAMS\Code.lnk",, Max
+  ^!Numpad5:: Run, "C:\Users\Dell\OneDrive\0 Lucas\PROGRAMS\Brave.lnk",, Max
+  ^!Numpad7:: Run, "C:\Users\Dell\OneDrive\0 Lucas\FOLDERS",, Max
+  ^!Enter::   Run, "C:\Users\Dell\OneDrive\0 Lucas\PROGRAMS\Shell.lnk",,
 
   ;--> Volume <--------------------------
   !NumpadMult:: send {Volume_Mute}
@@ -54,3 +73,12 @@
   !NumpadSub::  send {Volume_Up 5}
 
 #If
+
+
+;--> FUNCTIONS <-------------------------
+exitViaMenu() {
+  Send !{f}
+  Sleep, 100
+  Send {x}
+  return
+}
