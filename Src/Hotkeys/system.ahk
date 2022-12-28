@@ -38,11 +38,11 @@
   #e::
     WinGet, activePath, ProcessPath, A    
     if(activePath = "C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"){
-      Send ^F4
+      Send ^{F4}
       return
     }
     if(activePath = "C:\Program Files\Microsoft VS Code\Code.exe"){
-      Send ^F4
+      Send ^{F4}
       return
     }
   return
