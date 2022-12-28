@@ -60,6 +60,58 @@
     }
   return
 
+  ;--> Navigate Tab <--------------------  
+  ^!~h::
+    WinGet, activePath, ProcessPath, A    
+    if(activePath = "C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"){
+      Send ^{1}
+      return
+    }
+  return
+
+  ^!~j::
+    WinGet, activePath, ProcessPath, A    
+    if(activePath = "C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"){
+      Send ^{PgUp}
+      return
+    }
+  return
+
+  ^!~l::
+    WinGet, activePath, ProcessPath, A    
+    if(activePath = "C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"){
+      Send ^{PgDn}
+      return
+    }
+  return
+  
+  ^!~`;::
+    WinGet, activePath, ProcessPath, A    
+    if(activePath = "C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"){
+      Send ^{9}
+      return
+    }
+  return
+
+  ;--> Move Tab <------------------------
+
+  ^!~u::
+    WinGet, activePath, ProcessPath, A    
+    if(activePath = "C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"){
+      Send ^+{PgUp}
+      return
+    }
+  return
+
+  ^!~o::
+    WinGet, activePath, ProcessPath, A    
+    if(activePath = "C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"){
+      Send ^+{PgDn}
+      return
+    }
+  return
+
+
   ;--> Open Apps <-----------------------
   ^!Numpad0:: Run, "C:\Users\Dell\OneDrive\0 Lucas\PROGRAMS",, Max
   ^!Numpad1:: Run, "C:\Users\Dell\OneDrive\0 Lucas\PROGRAMS\Code.lnk",, Max
