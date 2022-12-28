@@ -19,7 +19,7 @@
 #Include, %A_WorkingDir%\Hotkeys\clipboard.ahk
 #Include, %A_WorkingDir%\Hotkeys\navigationText.ahk
 #Include, %A_WorkingDir%\Hotkeys\navigationWindow.ahk
-#Include, %A_WorkingDir%\Hotkeys\navigationMouse.ahk
+; #Include, %A_WorkingDir%\Hotkeys\navigationMouse.ahk
 #Include, %A_WorkingDir%\Hotkeys\powerManagement.ahk
 #Include, %A_WorkingDir%\Hotkeys\symbols.ahk
 #Include, %A_WorkingDir%\Hotkeys\system.ahk

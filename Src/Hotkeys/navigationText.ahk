@@ -5,6 +5,7 @@
   *Space:: Send {Space}{Left}
   *Enter:: Send {End}{Enter}
   *q::     Send {Esc}
+  *m::     Send {Esc}
 
   ; Copy paste etc
   a::     Send ^a

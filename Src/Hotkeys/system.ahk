@@ -28,16 +28,12 @@
 
   ;--> Close Tab <-----------------------
   #e::
-    WinGet, activePath, ProcessPath, A
-    if(ativePath = "C:\Program Files\Google\Chrome\Application\chrome.exe"){
-      Send ^w
+    WinGet, activePath, ProcessPath, A    
+    if(activePath = "C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"){
+      Send ^F4
       return
     }
-    if("D:\Programs\Tor Browser\Browser\firefox.exe"){
-      Send ^w
-      return
-    }
-    if("D:\Programs\Microsoft VS Code\Code.exe"){
+    if(activePath = "C:\Program Files\Microsoft VS Code\Code.exe"){
       Send ^F4
       return
     }

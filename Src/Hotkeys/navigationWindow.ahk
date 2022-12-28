@@ -18,6 +18,7 @@
   winAdd := ""
   winEnt := ""
 
+
   ^#Numpad0::     win0 := WinExist("A")
   #Numpad0::     WinActivate, ahk_id %win0%
 
@@ -73,23 +74,19 @@
   ;==> Window Resizing <===============================================
 
   ;--> windows side-by-side <------------
-  ^Insert::
-    time := 70  
+  ^Numpad8::
+    time := 100  
     WinMaximize, A
     Sleep, time
-    Send, !{Tab}
-    Sleep, time
-    WinMaximize, A
-    Sleep, time
-    Send, !{Tab}
-    Sleep, time
-    Send, #{Left}
+    Send, #{Right}
     Sleep, time
     Send, {Esc}
     Sleep, time
     Send, !{Tab}
     Sleep, time
-    Send, #{Right}
+    WinMaximize, A
+    Sleep, time
+    Send, #{Left}
     Sleep, time
     Send, {Esc}
   return
@@ -97,7 +94,7 @@
   ^Numpad0::Send !{Tab}
 
   ^Numpad1::
-    time := 70  
+    time := 150  
     WinMaximize, A
     Sleep, time
     Send, #{Left}
@@ -108,10 +105,10 @@
   ^Numpad2:: WinMinimize, A
 
   ^Numpad3::
-    time := 70  
+    time := 150  
     WinMaximize, A
     Sleep, time
-    Send, #{Right}
+    Send, #{Right}   
     Sleep, time
     Send, {Esc}
   return
