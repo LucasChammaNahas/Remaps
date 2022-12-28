@@ -157,8 +157,8 @@
 
   ;--> M <-------------------------------
     <!m:: SendRaw _ ;Alt L
-    >!m:: return    ;Alt R
-  <^>!m:: return    ;AltGr
+    >!m:: SendRaw 0 ;Alt R
+  <^>!m:: SendRaw 0 ;AltGr
 
   ;--> , <-------------------------------
     <!,:: SendRaw `, ;Alt L
