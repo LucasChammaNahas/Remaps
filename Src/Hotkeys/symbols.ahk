@@ -20,8 +20,8 @@
   
   ;-->> Q <------------------------------
     <!q:: SendRaw # ;Alt L
-    >!q:: return    ;Alt R
-  <^>!q:: return    ;AltGr
+    >!q:: SendRaw 0 ;Alt R
+  <^>!q:: SendRaw 0 ;AltGr
 
   ;--> W <-------------------------------
     <!w:: SendRaw | ;Alt L
@@ -70,8 +70,8 @@
 
   ;--> Z <-------------------------------
     <!z:: SendRaw / ;Alt L
-    >!z:: return    ;Alt R
-  <^>!z:: return    ;AltGr
+    >!z:: SendRaw 0 ;Alt R
+  <^>!z:: SendRaw 0 ;AltGr
     
   ;--> X <-------------------------------
     <!x:: SendRaw * ;Alt L
@@ -146,9 +146,12 @@
   <^>!l:: SendRaw * ;AltGr
 
   ;--> ; <-------------------------------
-    <!`;:: SendRaw " ;Alt L
+    <!`;:: SendRaw : ;Alt L
     >!`;:: SendRaw / ;Alt R
   <^>!`;:: SendRaw / ;AltGr
+
+  ;--> ' <-------------------------------
+    <!':: SendRaw " ;Alt L
 
   ;--> N <-------------------------------
     <!n:: SendRaw - ;Alt L
