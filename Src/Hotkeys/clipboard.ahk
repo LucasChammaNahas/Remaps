@@ -26,7 +26,7 @@ clip3 := ""
   return
   v::
 >!v::
-    Send %clip1%
+    SendRaw %clip1%
   return
 
   ;--> ROW 2 <-------------------------
@@ -50,7 +50,7 @@ clip3 := ""
   return
   f::
 >!f::
-    Send %clip2%
+    SendRaw %clip2%
   return
 
   ;--> ROW 3 <-------------------------
@@ -74,7 +74,7 @@ clip3 := ""
   return
   r::
 >!r::
-    Send %clip3%
+    SendRaw %clip3%
   return
 
 #If
