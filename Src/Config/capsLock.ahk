@@ -1,37 +1,42 @@
-  isCapslockDown := 0 ; Solves rapid repetition when caps is held down
-  capsLockDownTimestamp := A_TickCount
+isCapslockDown := false ; Solves rapid repetition when caps is held down
+capsLockDownTimestamp := A_TickCount
 
-  *CapsLock Up::
-    currentTimestamp := A_TickCount
-    interval := currentTimestamp - capsLockDownTimestamp
-    if(interval < 300) {
-      Send {Escape}
-    }
-    isCapslockDown := 0
-  return
+
++CapsLock::CapsLock
+
+*CapsLock::
+  if(isCapslockDown = false) {
+    capsLockDownTimestamp := A_TickCount
+  }
+  isCapslockDown := true
+return
   
-  *CapsLock::
-    if(isCapslockDown = 0) {
-      capsLockDownTimestamp := A_TickCount
-    }
-    isCapslockDown := 1
-  return
-    
-  +CapsLock::CapsLock
+*CapsLock Up::
+  currentTimestamp := A_TickCount
+  interval := currentTimestamp - capsLockDownTimestamp
+  if(interval < 300) {
+    Send {Escape}
+  }
+  isCapslockDown := false
+return
 
 
 
-  
-  ; lastCapslockDownTimestamp := A_TickCount
-  ; *CapsLock::
-  ;   currentTimestamp := A_TickCount
-  ;   interval := currentTimestamp - lastCapslockDownTimestamp
-  ;   if(interval < 300 and isCapslockDown = 0) {
-  ;     SetCapsLockState % !GetKeyState("CapsLock", "T")
-  ;   }
-  ;   lastCapslockDownTimestamp := currentTimestamp
-  ;   isCapslockDown := 1
-  ; return
 
 
-    ; MsgBox You pressed Yes.
+
+; OLD WAY ----------------------------------------------------------------
+; 
+; lastCapslockDownTimestamp := A_TickCount
+; *CapsLock::
+;   currentTimestamp := A_TickCount
+;   interval := currentTimestamp - lastCapslockDownTimestamp
+;   if(interval < 300 and isCapslockDown = 0) {
+;     SetCapsLockState % !GetKeyState("CapsLock", "T")
+;   }
+;   lastCapslockDownTimestamp := currentTimestamp
+;   isCapslockDown := 1
+; return
+
+
+  ; MsgBox You pressed Yes.
