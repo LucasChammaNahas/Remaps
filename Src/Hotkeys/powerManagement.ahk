@@ -72,7 +72,7 @@ shutdownComputer() {
   IfMsgBox, Yes 
     {
       changeCpuState("f7082d56-696b-4d9a-8565-57a90d85a147","LOW")
-      ; Sleep, 1000
+      Sleep, 3000
       Shutdown, 1
     }
 }
@@ -92,7 +92,7 @@ restartComputerLow() {
   IfMsgBox, Yes 
     {
       changeCpuState("f7082d56-696b-4d9a-8565-57a90d85a147","LOW")
-      ; Sleep, 1000
+      Sleep, 3000
       Shutdown, 2
     }
 }
