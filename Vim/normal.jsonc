@@ -36,24 +36,12 @@
          "after": ["y"]
       },
       {
-         "before":["d","d"],
-         "after": ["y","y"]
-      },
-      {
          "before":["x"],
          "after": ["c"]
       },
       {
-         "before":["x","x"],
-         "after": ["c","c"]
-      },
-      {
          "before":["s"],
          "after": ["d"]
-      },
-      {
-         "before":["s","s"],
-         "after": ["d","d"]
       },
       {
          "before":["u"],
@@ -74,6 +62,10 @@
       {
          "before":["<Backspace>"],
          "after": ["X"]
+      },
+      {
+         "before":["y"],
+         "after": ["~"]
       },
       {
          "before":["f"],
@@ -97,10 +89,6 @@
       },
 
       // SHIFT
-      // {
-      //    "before":[""],
-      //    "after": [""]
-      // },
       {
          "before":["L"],
          "after": ["E"]
@@ -112,6 +100,78 @@
       {
          "before":["H"],
          "after": ["0"]
-      }
+      },
+      {
+         "before":[":"],
+         "after": ["$"]
+      },
+      {
+         "before":["I"],
+         "after": ["2", "g","k"]
+      },
+      {
+         "before":["K"],
+         "after": ["2", "g","j"]
+      },
+      {
+         "before":["A"],
+         "after": ["F"]
+      },
+      {
+         "before":["Z"],
+         "commands": ["redo"]
+      },
+      {
+         "before":["F"],
+         "after": ["g", "P"]
+      },
+      {
+         "before":["D"],
+         "after": ["Y"]
+      },
+      {
+         "before":["X"],
+         "after": ["C"]
+      },
+      {
+         "before":["S"],
+         "after": ["D"]
+      },
+      {
+         "before":["U"],
+         "after": ["I"]
+      },
+      {
+         "before":["O"],
+         "after": ["A"]
+      },
+      {
+         "before":[""],
+         "after": [""]
+      },
+      {
+         "before":[""],
+         "after": [""]
+      },
+      {
+         "before":[""],
+         "after": [""]
+      },
+      {
+         "before":[""],
+         "after": [""]
+      },
+      {
+         "before":[""],
+         "after": [""]
+      },
+      {
+         "before":[""],
+         "after": [""]
+      },
+      {
+         "before":[""],
+         "after": [""]
+      },
    ]
 }

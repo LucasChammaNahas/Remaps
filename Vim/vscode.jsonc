@@ -1,0 +1,28 @@
+[
+   {
+      "key": "shift+,",
+      "command": "vim.remap",
+      "when": "inputFocus && vim.mode == 'Normal'",
+      "args": {
+         "after": [","]
+      }
+   },
+   {
+      "key": "shift+enter",
+      "command": "vim.remap",
+      "when": "inputFocus && vim.mode == 'Normal'",
+      "args": {
+         "after": ["O"]
+      }
+   },
+   {
+     "key": "tab",
+     "command": "editor.action.indentLines",
+     "when": "editorTextFocus && !editorReadonly"
+   },
+   {
+     "key": "shift+tab",
+     "command": "editor.action.outdentLines",
+     "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+   }
+]
