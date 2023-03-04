@@ -1,0 +1,60 @@
+{
+   "vim.operatorPendingModeKeyBindingsNonRecursive": [
+      {
+         "before": ["u"],
+         "after": ["i"]
+      },
+      {
+         "before": ["o"],
+         "after": ["a"]
+      },
+      {
+         "before": ["j"],
+         "after": ["h"]
+      },
+      {
+         "before": ["J"],
+         "after": ["B"]
+      },
+      {
+         "before": ["L"],
+         "after": ["W"]
+      },
+      {
+         "before": ["h"],
+         "after": ["^"]
+      },
+      {
+         "before": ["H"],
+         "after": ["0"]
+      },
+      {
+         "before": [";"],
+         "after": ["g", "_"]
+      },
+      {
+         "before": [":"],
+         "after": ["$"]
+      },
+      {
+         "before": ["i"],
+         "after": ["k"]
+      },
+      {
+         "before": ["k"],
+         "after": ["j"]
+      },
+      {
+         "before": ["d"],
+         "after": ["y"]
+      },
+      {
+         "before": ["x"],
+         "after": ["c"]
+      },
+      {
+         "before": ["s"],
+         "after": ["d"]
+      }
+   ]
+}

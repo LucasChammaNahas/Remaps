@@ -1,0 +1,117 @@
+{
+
+
+   "vim.normalModeKeyBindingsNonRecursive": [
+      // NORMAL
+      {
+         "before":["i"],
+         "after": ["g", "k"]
+      },
+      {
+         "before":["k"],
+         "after": ["g", "j"]
+      },
+      {
+         "before":["j"],
+         "after": ["h"]
+      },
+      {
+         "before":["h"],
+         "after": ["^"]
+      },
+      {
+         "before":[";"],
+         "after": ["g", "_"]
+      },
+      {
+         "before":["a"],
+         "after": ["f"]
+      },
+      {
+         "before":[","],
+         "after": [";"]
+      },
+      {
+         "before":["d"],
+         "after": ["y"]
+      },
+      {
+         "before":["d","d"],
+         "after": ["y","y"]
+      },
+      {
+         "before":["x"],
+         "after": ["c"]
+      },
+      {
+         "before":["x","x"],
+         "after": ["c","c"]
+      },
+      {
+         "before":["s"],
+         "after": ["d"]
+      },
+      {
+         "before":["s","s"],
+         "after": ["d","d"]
+      },
+      {
+         "before":["u"],
+         "after": ["i"]
+      },
+      {
+         "before":["o"],
+         "after": ["a"]
+      },
+      {
+         "before":["z"],
+         "commands": ["undo"]
+      },
+      {
+         "before":["<Delete>"],
+         "after": ["x"]
+      },
+      {
+         "before":["<Backspace>"],
+         "after": ["X"]
+      },
+      {
+         "before":["f"],
+         "after": ["g", "p"]
+      },
+      {
+         "before":["<Enter>"],
+         "after": ["o"]
+      },
+      {
+         "before":["<Tab>"],
+         "commands": ["editor.action.indentLines"]
+      },
+      {
+         "before":["c"],
+         "after": ["V"]
+      },
+      {
+         "before":["m"],
+         "after": ["`"]
+      },
+
+      // SHIFT
+      // {
+      //    "before":[""],
+      //    "after": [""]
+      // },
+      {
+         "before":["L"],
+         "after": ["E"]
+      },
+      {
+         "before":["J"],
+         "after": ["B"]
+      },
+      {
+         "before":["H"],
+         "after": ["0"]
+      }
+   ]
+}
