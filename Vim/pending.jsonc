@@ -1,5 +1,6 @@
 {
    "vim.operatorPendingModeKeyBindingsNonRecursive": [
+      // Insert
       {
          "before": ["u"],
          "after": ["i"]
@@ -8,18 +9,44 @@
          "before": ["o"],
          "after": ["a"]
       },
+
+      // Movements
+      {
+         "before": ["i"],
+         "after": ["k"]
+      },
+      {
+         "before": ["k"],
+         "after": ["j"]
+      },
       {
          "before": ["j"],
          "after": ["h"]
       },
+
+      // Movements words
       {
-         "before": ["J"],
+         "before": ["g", "w"],
+         "after": ["b"]
+      },
+      {
+         "before": ["G", "W"],
          "after": ["B"]
+      },
+      {
+         "before": ["G", "E"],
+         "after": ["g", "E"]
       },
       {
          "before": ["L"],
          "after": ["W"]
       },
+      {
+         "before": ["J"],
+         "after": ["B"]
+      },
+
+      // Movements Line
       {
          "before": ["h"],
          "after": ["^"]
@@ -36,14 +63,18 @@
          "before": [":"],
          "after": ["$"]
       },
+
+      // Movements Targeted
       {
-         "before": ["i"],
-         "after": ["k"]
+         "before": ["a"],
+         "after": ["f"]
       },
       {
-         "before": ["k"],
-         "after": ["j"]
+         "before": ["A"],
+         "after": ["F"]
       },
+
+      // Operators
       {
          "before": ["d"],
          "after": ["y"]

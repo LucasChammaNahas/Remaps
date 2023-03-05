@@ -16,13 +16,65 @@
       }
    },
    {
-     "key": "tab",
-     "command": "editor.action.indentLines",
-     "when": "editorTextFocus && !editorReadonly"
+      "key": "tab",
+      "command": "editor.action.indentLines",
+      "when": "editorTextFocus && !editorReadonly"
    },
    {
-     "key": "shift+tab",
-     "command": "editor.action.outdentLines",
-     "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+      "key": "shift+tab",
+      "command": "editor.action.outdentLines",
+      "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+   },
+
+   // Ctrl
+   {
+      "key": "ctrl+i",
+      "command": "cursorUp",
+      "when": "editorTextFocus && !editorReadonly"
+   },
+   {
+     "key": "ctrl+i",
+     "command": "-editor.action.triggerSuggest",
+     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+   },
+   {
+      "key": "ctrl+k",
+      "command": "cursorDown",
+      "when": "editorTextFocus && !editorReadonly"
+   },
+   {
+      "key": "ctrl+j",
+      "command": "cursorLeft",
+      "when": "editorTextFocus && !editorReadonly"
+   },
+   {
+      "key": "ctrl+l",
+      "command": "cursorRight",
+      "when": "editorTextFocus && !editorReadonly"
+   },
+   {
+      "key": "ctrl+h",
+      "command": "cursorHome",
+      "when": "editorTextFocus && !editorReadonly"
+   },
+   {
+      "key": "ctrl+;",
+      "command": "cursorEnd",
+      "when": "editorTextFocus && !editorReadonly"
+   },
+   {
+      "key": "ctrl+u",
+      "command": "deleteLeft",
+      "when": "editorTextFocus && !editorReadonly"
+   },
+   {
+      "key": "ctrl+o",
+      "command": "deleteRight",
+      "when": "editorTextFocus && !editorReadonly"
+   },
+   {
+      "key": "ctrl+n",
+      "command": "deleteWordLeft",
+      "when": "editorTextFocus && !editorReadonly"
    }
 ]
