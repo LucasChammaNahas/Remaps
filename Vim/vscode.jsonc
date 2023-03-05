@@ -76,5 +76,183 @@
       "key": "ctrl+n",
       "command": "deleteWordLeft",
       "when": "editorTextFocus && !editorReadonly"
-   }
+   },
+   {
+      "key": "ctrl+s",
+      "command": "workbench.actions.file.save"
+   },
+   
+
+   // Alt Shift
+   {
+      "key": "alt+shift+i",
+      "command": "vim.remap",
+      "when": "inputFocus && vim.mode=='Normal'",
+      "args": {
+         "after": ["<C-u>"]
+      }
+   },
+   {
+      "key": "alt+shift+k",
+      "command": "vim.remap",
+      "when": "inputFocus && vim.mode=='Normal'",
+      "args": {
+         "after": ["<C-d>"]
+      }
+   },
+
+   // Ctrl Shift
+   {
+      "key": "ctrl+shift+i",
+      "command": "editor.action.moveLinesUpAction",
+      "when": "inputFocus"
+   },
+   {
+      "key": "ctrl+shift+k",
+      "command": "editor.action.moveLinesDownAction",
+      "when": "inputFocus"
+   },
+   {
+      "key": "ctrl+shift+u",
+      "command": "editor.action.copyLinesUpAction",
+      "when": "inputFocus"
+   },
+   {
+      "key": "ctrl+shift+j",
+      "command": "editor.action.copyLinesDownAction",
+      "when": "inputFocus"
+   },
+   {
+      "key": "ctrl+shift+o",
+      "command": "cursorColumnSelectUp",
+      "when": "inputFocus"
+   },
+   {
+      "key": "ctrl+shift+l",
+      "command": "cursorColumnSelectDown",
+      "when": "inputFocus"
+   },
+   {
+      "key": "ctrl+shift+n",
+      "command": "workbench.action.files.newUntitledFile",
+      "when": "inputFocus"
+   },
+   {
+      "key": "ctrl+shift+m",
+      "command": "workbench.action.newWindow",
+      "when": "inputFocus"
+   },
+   
+
+   // Ctrl Alt
+   {
+      "key": "ctrl+alt+s",
+      "command": "saveAll"
+   },
+   {
+      "key": "ctrl+alt+x",
+      "command": "workbench.action.closeActiveEditor",
+      "when": "inputFocus"
+   },
+   {
+      "key": "ctrl+alt+t",
+      "command": "workbench.action.closeOtherEditors",
+      "when": "inputFocus"
+   },
+   {
+      "key": "ctrl+alt+r",
+      "command": "workbench.action.closeAllEditors",
+      "when": "inputFocus"
+   },
+   {
+      "key": "ctrl+alt+e",
+      "command": "workbench.action.closeEditorsInGroup",
+      "when": "inputFocus"
+   },
+   {
+      "key": "ctrl+alt+w ctrl+alt+w",
+      "command": "workbench.action.closeWindow",
+      "when": "inputFocus"
+   },
 ]
+
+
+
+
+
+
+
+
+
+
+
+// {
+//    "key": "ctrl+alt+k",
+//    "command": "workbench.action.focusLeftGroup"
+//  },
+//  {
+//    "key": "ctrl+alt+i",
+//    "command": "workbench.action.focusRightGroup"
+//  },
+//  {
+//    "key": "ctrl+alt+l",
+//    "command": "workbench.action.nextEditorInGroup"
+//  },
+//  {
+//    "key": "ctrl+alt+j",
+//    "command": "workbench.action.previousEditorInGroup"
+//  },
+//  {
+//    "key": "ctrl+alt+h",
+//    "command": "workbench.action.openEditorAtIndex1"
+//  },
+//  {
+//    "key": "ctrl+alt+;",
+//    "command": "workbench.action.lastEditorInGroup"
+//  },
+
+//  {
+//    "key": "ctrl+alt+o",
+//    "command": "workbench.action.moveEditorRightInGroup"
+//  },
+//  {
+//    "key": "ctrl+alt+u",
+//    "command": "workbench.action.moveEditorLeftInGroup"
+//  },
+//  {
+//    "key": "ctrl+alt+p",
+//    "command": "workbench.action.moveEditorToRightGroup"
+//  },
+//  {
+//    "key": "ctrl+alt+y",
+//    "command": "workbench.action.moveEditorToLeftGroup"
+//  },
+
+//  {
+//    "key": "ctrl+alt+j",
+//    "command": "-code-runner.runByLanguage"
+//  },
+//  {
+//    "key": "ctrl+alt+k",
+//    "command": "-code-runner.runCustomCommand"
+//  },
+//  {
+//    "key": "ctrl+alt+7",
+//    "command": "workbench.action.newGroupRight"
+//  },
+//  {
+//    "key": "ctrl+alt+win+down",
+//    "command": "workbench.action.moveEditorToBelowGroup"
+//  },
+//  {
+//    "key": "ctrl+alt+win+up",
+//    "command": "workbench.action.moveEditorToAboveGroup"
+//  },
+//  {
+//    "key": "ctrl+alt+numpad_add",
+//    "command": "workbench.action.decreaseViewSize"
+//  },
+//  {
+//    "key": "ctrl+alt+numpad_subtract",
+//    "command": "workbench.action.increaseViewSize"
+//  },

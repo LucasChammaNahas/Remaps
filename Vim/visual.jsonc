@@ -274,6 +274,14 @@
       {
          "before": ["<leader>", "j"],
          "after": ["O"]
+      },
+      {
+         "before": ["<leader>", "s"],
+         "commands": ["workbench.actions.file.save"]
+      },
+      {
+         "before": ["<leader>", "S"],
+         "commands": ["saveAll"]
       }
    ]
 }
