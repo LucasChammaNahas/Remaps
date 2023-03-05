@@ -145,33 +145,126 @@
          "before":["O"],
          "after": ["A"]
       },
+
+      // Z => B
       {
-         "before":[""],
+         "before":["b"],
+         "after": ["z"]
+      },
+      {
+         "before":["B"],
+         "after": ["z"]
+      },
+      {
+         "before":["b", "j"],
+         "after": ["z", "z"]
+      },
+      {
+         "before":["b", "i"],
+         "after": ["z", "t"]
+      },
+      {
+         "before":["b", "k"],
+         "after": ["z", "b"]
+      },
+
+      // G
+      {
+         "before":["g", "w"],
          "after": [""]
       },
       {
-         "before":[""],
-         "after": [""]
+         "before":["G", "W"],
+         "after": ["B"]
       },
       {
-         "before":[""],
-         "after": [""]
+         "before":["G", "D"],
+         "after": ["g", "D"]
       },
       {
-         "before":[""],
-         "after": [""]
+         "before":["G", "I"],
+         "after": ["g", "g"]
       },
       {
-         "before":[""],
-         "after": [""]
+         "before":["G", "J"],
+         "after": ["50", "%"]
       },
       {
-         "before":[""],
-         "after": [""]
+         "before":["G", "K"],
+         "after": ["G"]
       },
       {
-         "before":[""],
-         "after": [""]
+         "before":["g", "i"],
+         "after": ["H"]
+      },
+      {
+         "before":["g", "j"],
+         "after": ["M"]
+      },
+      {
+         "before":["g", "k"],
+         "after": ["L"]
+      },
+
+      // T
+      {
+         "before":["t", "h"],
+         "after": ["z", "f"]
+      },
+      {
+         "before":["t", "s"],
+         "after": ["z", "d"]
+      },
+      {
+         "before":["t", "j"],
+         "commands": ["editor.toggleFold"]
+      },
+      {
+         "before":["t", "y"],
+         "commands": ["editor.foldLevel1"]
+      },
+      {
+         "before":["t", "u"],
+         "commands": ["editor.foldLevel2"]
+      },
+      {
+         "before":["t", "i"],
+         "commands": ["editor.foldLevel3"]
+      },
+      {
+         "before":["t", "o"],
+         "commands": ["editor.foldLevel4"]
+      },
+      {
+         "before":["t", "p"],
+         "commands": ["editor.foldLevel5"]
+      },
+      {
+         "before":["T", "T"],
+         "commands": ["editor.foldAll"]
+      },
+      {
+         "before":["t", "t"],
+         "commands": ["editor.unfoldAll"]
+      },
+      
+
+      // Leader
+      {
+         "before":["<leader>", "l"],
+         "after": ["J"]
+      },
+      {
+         "before":["<leader>", "y"],
+         "after": ["g", "~"]
+      },
+      {
+         "before":["<leader>", "u"],
+         "after": ["g", "u"]
+      },
+      {
+         "before":["<leader>", "U"],
+         "after": ["g", "U"]
       },
    ]
 }
