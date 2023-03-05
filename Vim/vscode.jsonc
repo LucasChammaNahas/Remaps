@@ -33,9 +33,9 @@
       "when": "editorTextFocus && !editorReadonly"
    },
    {
-     "key": "ctrl+i",
-     "command": "-editor.action.triggerSuggest",
-     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+      "key": "ctrl+i",
+      "command": "-editor.action.triggerSuggest",
+      "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
    },
    {
       "key": "ctrl+k",
@@ -81,7 +81,6 @@
       "key": "ctrl+s",
       "command": "workbench.actions.file.save"
    },
-   
 
    // Alt Shift
    {
@@ -142,7 +141,6 @@
       "command": "workbench.action.newWindow",
       "when": "inputFocus"
    },
-   
 
    // Ctrl Alt
    {
@@ -174,8 +172,22 @@
       "command": "workbench.action.closeWindow",
       "when": "inputFocus"
    },
+   {
+      "key": "ctrl+alt+0",
+      "command": "workbench.action.evenEditorWidths",
+      "when": "inputFocus"
+   },
+   {
+      "key": "ctrl+alt+-",
+      "command": "workbench.action.decreaseViewSize",
+      "when": "inputFocus"
+   },
+   {
+      "key": "ctrl+alt+=",
+      "command": "workbench.action.increaseViewSize",
+      "when": "inputFocus"
+   }
 ]
-
 
 
 
