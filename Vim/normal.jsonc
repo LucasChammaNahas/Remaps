@@ -155,6 +155,10 @@
          "before": ["O"],
          "after": ["A"]
       },
+      {
+         "before": ["M"],
+         "after": ["m"]
+      },
 
       // Z => B
       {
@@ -214,6 +218,14 @@
       {
          "before": ["g", "k"],
          "after": ["L"]
+      },
+      {
+         "before": ["g", "n"],
+         "after": ["g", ";"]
+      },
+      {
+         "before": ["G", "N"],
+         "after": ["g", ","]
       },
 
       // T
