@@ -282,6 +282,14 @@
       {
          "before": ["<leader>", "S"],
          "commands": ["saveAll"]
+      },
+      {
+         "before": ["<leader>", "w", "w"],
+         "commands": ["workbench.action.closeActiveEditor"]
+      },
+      {
+         "before": ["<leader>", "W", "W"],
+         "after": ["Z", "Q"]
       }
    ]
 }
