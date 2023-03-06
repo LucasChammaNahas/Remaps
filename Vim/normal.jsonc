@@ -54,6 +54,10 @@
          "after": [";"]
       },
       {
+         "before": ["g","z","a"],
+         "after": [","]
+      },
+      {
          "before": ["d"],
          "after": ["y"]
       },
@@ -71,11 +75,11 @@
       },
       {
          "before": ["<Delete>"],
-         "after": ["x"]
+         "commands": ["deleteRight"]
       },
       {
          "before": ["<Backspace>"],
-         "after": ["X"]
+         "commands": ["deleteLeft"]
       },
       {
          "before": ["y"],
