@@ -2,7 +2,7 @@
    "vim.normalModeKeyBindingsNonRecursive": [
       // MODES
       {
-         "before": ["c"],
+         "before": ["c", "c"],
          "after": ["V"]
       },
       {
@@ -82,7 +82,7 @@
          "commands": ["deleteLeft"]
       },
       {
-         "before": ["y"],
+         "before": ["y", "y"],
          "after": ["~"]
       },
       {
@@ -114,6 +114,10 @@
       {
          "before": ["H"],
          "after": ["0"]
+      },
+      {
+         "before": ["|"],
+         "after": [":"]
       },
       {
          "before": [":"],
@@ -194,6 +198,10 @@
       {
          "before": ["G", "W"],
          "after": ["B"]
+      },
+      {
+         "before": ["G", "E"],
+         "after": ["g", "E"]
       },
       {
          "before": ["G", "D"],
