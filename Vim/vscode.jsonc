@@ -2,17 +2,17 @@
    {
       "key": "shift+,",
       "command": "vim.remap",
-      "when": "inputFocus && vim.mode == 'Normal'",
+      "when": "editorTextFocus && vim.mode == 'Normal'",
       "args": {
-         "after": ["g","z","a"]
+         "after": ["g", "z", "a"]
       }
    },
    {
       "key": "shift+enter",
       "command": "vim.remap",
-      "when": "inputFocus && vim.mode == 'Normal'",
+      "when": "editorTextFocus && vim.mode == 'Normal'",
       "args": {
-         "after": ["g","z","b"]
+         "after": ["g", "z", "b"]
       }
    },
    {
@@ -30,7 +30,17 @@
    {
       "key": "ctrl+i",
       "command": "cursorUp",
-      "when": "editorTextFocus && !editorReadonly"
+      "when": "textInputFocus"
+   },
+   {
+      "key": "ctrl+i",
+      "command": "selectPrevSuggestion",
+      "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+   },
+   {
+      "key": "ctrl+i",
+      "command": "list.focusUp",
+      "when": "!editorFocus"
    },
    {
       "key": "ctrl+i",
@@ -40,53 +50,73 @@
    {
       "key": "ctrl+k",
       "command": "cursorDown",
-      "when": "editorTextFocus && !editorReadonly"
+      "when": "textInputFocus"
+   },
+   {
+      "key": "ctrl+k",
+      "command": "selectNextSuggestion",
+      "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+   },
+   {
+      "key": "ctrl+k",
+      "command": "list.focusDown",
+      "when": "!editorFocus"
    },
    {
       "key": "ctrl+j",
       "command": "cursorLeft",
-      "when": "editorTextFocus && !editorReadonly"
+      "when": "textInputFocus"
+   },
+   {
+      "key": "ctrl+j",
+      "command": "list.collapse",
+      "when": "!editorFocus"
    },
    {
       "key": "ctrl+l",
       "command": "cursorRight",
-      "when": "editorTextFocus && !editorReadonly"
+      "when": "textInputFocus"
+   },
+   {
+      "key": "ctrl+l",
+      "command": "list.expand",
+      "when": "!editorFocus"
    },
    {
       "key": "ctrl+h",
       "command": "cursorHome",
-      "when": "editorTextFocus && !editorReadonly"
+      "when": "textInputFocus"
    },
    {
       "key": "ctrl+;",
       "command": "cursorEnd",
-      "when": "editorTextFocus && !editorReadonly"
+      "when": "textInputFocus"
    },
    {
       "key": "ctrl+u",
       "command": "deleteLeft",
-      "when": "editorTextFocus && !editorReadonly"
+      "when": "textInputFocus"
    },
    {
       "key": "ctrl+o",
       "command": "deleteRight",
-      "when": "editorTextFocus && !editorReadonly"
+      "when": "textInputFocus"
    },
    {
       "key": "ctrl+n",
       "command": "deleteWordLeft",
-      "when": "editorTextFocus && !editorReadonly"
+      "when": "textInputFocus"
    },
    {
       "key": "ctrl+s",
-      "command": "workbench.actions.file.save"
+      "command": "workbench.action.files.save"
    },
 
    // Alt Shift
    {
       "key": "alt+shift+i",
       "command": "vim.remap",
-      "when": "inputFocus && vim.mode=='Normal'",
+      "when": "editorTextFocus && vim.mode=='Normal'",
       "args": {
          "after": ["<C-u>"]
       }
@@ -94,7 +124,7 @@
    {
       "key": "alt+shift+k",
       "command": "vim.remap",
-      "when": "inputFocus && vim.mode=='Normal'",
+      "when": "editorTextFocus && vim.mode=='Normal'",
       "args": {
          "after": ["<C-d>"]
       }
@@ -148,42 +178,40 @@
    {
       "key": "ctrl+shift+i",
       "command": "editor.action.moveLinesUpAction",
-      "when": "inputFocus"
+      "when": "editorTextFocus"
    },
    {
       "key": "ctrl+shift+k",
       "command": "editor.action.moveLinesDownAction",
-      "when": "inputFocus"
+      "when": "editorTextFocus"
    },
    {
       "key": "ctrl+shift+u",
       "command": "editor.action.copyLinesUpAction",
-      "when": "inputFocus"
+      "when": "editorTextFocus"
    },
    {
       "key": "ctrl+shift+j",
       "command": "editor.action.copyLinesDownAction",
-      "when": "inputFocus"
+      "when": "editorTextFocus"
    },
    {
       "key": "ctrl+shift+o",
       "command": "cursorColumnSelectUp",
-      "when": "inputFocus"
+      "when": "editorTextFocus"
    },
    {
       "key": "ctrl+shift+l",
       "command": "cursorColumnSelectDown",
-      "when": "inputFocus"
+      "when": "editorTextFocus"
    },
    {
       "key": "ctrl+shift+n",
-      "command": "workbench.action.files.newUntitledFile",
-      "when": "inputFocus"
+      "command": "workbench.action.files.newUntitledFile"
    },
    {
       "key": "ctrl+shift+m",
-      "command": "workbench.action.newWindow",
-      "when": "inputFocus"
+      "command": "workbench.action.newWindow"
    },
 
    // Ctrl Alt
@@ -193,106 +221,86 @@
    },
    {
       "key": "ctrl+alt+x",
-      "command": "workbench.action.closeActiveEditor",
-      "when": "inputFocus"
+      "command": "workbench.action.closeActiveEditor"
    },
    {
       "key": "ctrl+alt+t",
-      "command": "workbench.action.closeOtherEditors",
-      "when": "inputFocus"
+      "command": "workbench.action.closeOtherEditors"
    },
    {
       "key": "ctrl+alt+r",
-      "command": "workbench.action.closeAllEditors",
-      "when": "inputFocus"
+      "command": "workbench.action.closeAllEditors"
    },
    {
       "key": "ctrl+alt+e",
-      "command": "workbench.action.closeEditorsInGroup",
-      "when": "inputFocus"
+      "command": "workbench.action.closeEditorsInGroup"
    },
    {
       "key": "ctrl+alt+w ctrl+alt+w",
-      "command": "workbench.action.closeWindow",
-      "when": "inputFocus"
+      "command": "workbench.action.closeWindow"
    },
    {
       "key": "ctrl+alt+0",
-      "command": "workbench.action.evenEditorWidths",
-      "when": "inputFocus"
+      "command": "workbench.action.evenEditorWidths"
    },
    {
       "key": "ctrl+alt+-",
-      "command": "workbench.action.decreaseViewSize",
-      "when": "inputFocus"
+      "command": "workbench.action.decreaseViewSize"
    },
    {
       "key": "ctrl+alt+=",
-      "command": "workbench.action.increaseViewSize",
-      "when": "inputFocus"
+      "command": "workbench.action.increaseViewSize"
    },
    {
       "key": "ctrl+alt+j",
-      "command": "workbench.action.focusLeftGroup",
-      "when": "inputFocus"
+      "command": "workbench.action.focusLeftGroup"
    },
    {
       "key": "ctrl+alt+l",
-      "command": "workbench.action.focusRightGroup",
-      "when": "inputFocus"
+      "command": "workbench.action.focusRightGroup"
    },
    {
       "key": "ctrl+alt+i",
-      "command": "workbench.action.focusAboveGroup",
-      "when": "inputFocus"
+      "command": "workbench.action.focusAboveGroup"
    },
    {
       "key": "ctrl+alt+k",
-      "command": "workbench.action.focusBelowGroup",
-      "when": "inputFocus"
+      "command": "workbench.action.focusBelowGroup"
    },
 
    // Ctrl Alt Shift
    {
       "key": "ctrl+alt+shift+j",
-      "command": "workbench.action.moveActiveEditorGroupLeft",
-      "when": "inputFocus"
+      "command": "workbench.action.moveActiveEditorGroupLeft"
    },
    {
       "key": "ctrl+alt+shift+l",
-      "command": "workbench.action.moveActiveEditorGroupRight",
-      "when": "inputFocus"
+      "command": "workbench.action.moveActiveEditorGroupRight"
    },
    {
       "key": "ctrl+alt+shift+i",
-      "command": "workbench.action.moveActiveEditorGroupUp",
-      "when": "inputFocus"
+      "command": "workbench.action.moveActiveEditorGroupUp"
    },
    {
       "key": "ctrl+alt+shift+k",
-      "command": "workbench.action.moveActiveEditorGroupDown",
-      "when": "inputFocus"
+      "command": "workbench.action.moveActiveEditorGroupDown"
    },
 
    // Win Alt
    {
       "key": "win+alt+j",
-      "command": "workbench.action.moveEditorToLeftGroup",
-      "when": "inputFocus"
+      "command": "workbench.action.moveEditorToLeftGroup"
    },
    {
       "key": "win+alt+l",
-      "command": "workbench.action.moveEditorToRightGroup",
-      "when": "inputFocus"
+      "command": "workbench.action.moveEditorToRightGroup"
    },
    {
       "key": "win+alt+i",
-      "command": "workbench.action.moveEditorToAboveGroup",
-      "when": "inputFocus"
+      "command": "workbench.action.moveEditorToAboveGroup"
    },
    {
       "key": "win+alt+k",
-      "command": "workbench.action.moveEditorToBelowGroup",
-      "when": "inputFocus"
+      "command": "workbench.action.moveEditorToBelowGroup"
    }
 ]
