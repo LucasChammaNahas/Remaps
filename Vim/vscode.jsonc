@@ -25,6 +25,26 @@
       "command": "editor.action.outdentLines",
       "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus"
    },
+   {
+      "key": "i",
+      "command": "list.focusUp",
+      "when": "!inputFocus"
+   },
+   {
+      "key": "k",
+      "command": "list.focusDown",
+      "when": "!inputFocus"
+   },
+   {
+      "key": "j",
+      "command": "list.collapse",
+      "when": "!inputFocus"
+   },
+   {
+      "key": "l",
+      "command": "list.expand",
+      "when": "!inputFocus"
+   },
 
    // Ctrl
    {
@@ -36,11 +56,6 @@
       "key": "ctrl+i",
       "command": "selectPrevSuggestion",
       "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-   },
-   {
-      "key": "ctrl+i",
-      "command": "list.focusUp",
-      "when": "!editorFocus"
    },
    {
       "key": "ctrl+i",
@@ -58,29 +73,14 @@
       "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
    },
    {
-      "key": "ctrl+k",
-      "command": "list.focusDown",
-      "when": "!editorFocus"
-   },
-   {
       "key": "ctrl+j",
       "command": "cursorLeft",
       "when": "textInputFocus"
    },
    {
-      "key": "ctrl+j",
-      "command": "list.collapse",
-      "when": "!editorFocus"
-   },
-   {
       "key": "ctrl+l",
       "command": "cursorRight",
       "when": "textInputFocus"
-   },
-   {
-      "key": "ctrl+l",
-      "command": "list.expand",
-      "when": "!editorFocus"
    },
    {
       "key": "ctrl+h",
