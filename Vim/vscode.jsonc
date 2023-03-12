@@ -2,7 +2,7 @@
    {
       "key": "shift+,",
       "command": "vim.remap",
-      "when": "inputFocus",
+      "when": "inputFocus && vim.mode == 'Normal'",
       "args": {
          "after": ["g","z","a"]
       }
@@ -12,7 +12,7 @@
       "command": "vim.remap",
       "when": "inputFocus && vim.mode == 'Normal'",
       "args": {
-         "after": ["O"]
+         "after": ["g","z","b"]
       }
    },
    {

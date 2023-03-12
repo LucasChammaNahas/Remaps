@@ -87,14 +87,22 @@
       },
       {
          "before": ["f"],
-         "after": ["g", "p"]
+         "after": ["g", "P"]
       },
       {
          "before": ["<Enter>"],
          "after": ["o"]
       },
       {
+         "before": ["g","z","b"],
+         "after": ["O"]
+      },
+      {
          "before": ["<Tab>"],
+         "commands": ["editor.action.indentLines"]
+      },
+      {
+         "before": ["<"],
          "commands": ["editor.action.indentLines"]
       },
       {
@@ -132,8 +140,16 @@
          "after": ["2", "g", "j"]
       },
       {
+         "before": ["P"],
+         "after": ["g", "p"]
+      },
+      {
          "before": ["A"],
          "after": ["F"]
+      },
+      {
+         "before": ["F"],
+         "after": ["P"]
       },
       {
          "before": ["Z"],

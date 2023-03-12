@@ -1,21 +1,42 @@
 /*
-   block:
+   block: gP
       P --> paste above, cursor above
       gP -> paste above, cursor below
 
-   visual block normal:
+   visual block normal: gp
       p --> paste above, cursor above
       P --> paste below, cursor above (doesn't work in sequence)
       gp -> paste above, cursor below
    
    visual block inverted: nope... 
 
-   visual line:
+   visual line: p, gP
       gp -> doesn't work
+   
+   visual word: p/gp & gP
+      p  -> |a()a()a()
+      P  -> a(a(a()))| (doesn't work)
+      gp -> |a()a()a()
+      gP -> a()a()a()|
+      
 
+   p  -> 
+   P  -> X
+   gp -> X
+   gP -> 
+
+   f => gP
+   F => P
+   p => p
+   P => gp
 
 */
 
+az gzagza,,<<a()
+
+a()a()|
+a(
+a()xa()
 
 function a() {
    function b() {
@@ -58,7 +79,7 @@ function a() {
 
 
 
-
+xXWORDx
 
 
 /** ***
