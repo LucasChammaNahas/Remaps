@@ -30,24 +30,42 @@
       "command": "editor.action.outdentLines",
       "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus"
    },
-
-   // Navigate menus
    {
+      // Backspace
+      "key": "Backspace",
+      "command": "deleteLeft",
+      "when": "textInputFocus"
+   },
+   {
+      // Delete
+      "key": "delete",
+      "command": "deleteRight",
+      "when": "textInputFocus"
+   },
+   //
+   //
+   //
+   // MENU NAV --------------
+   {
+      // Up
       "key": "i",
       "command": "list.focusUp",
       "when": "!inputFocus"
    },
    {
+      // Down
       "key": "k",
       "command": "list.focusDown",
       "when": "!inputFocus"
    },
    {
+      // left
       "key": "j",
       "command": "list.collapse",
       "when": "!inputFocus"
    },
    {
+      // Right
       "key": "l",
       "command": "list.expand",
       "when": "!inputFocus"

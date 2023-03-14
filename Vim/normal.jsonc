@@ -1,20 +1,26 @@
 {
    "vim.normalModeKeyBindingsNonRecursive": [
-      // MODES
+      //---- MODES --------------------------------------------------------------------------------
+      // SWITCHING MODES ----
       {
-         "before": ["c", "c"],
+         // Visual Line
+         "before": ["c", "v"],
          "after": ["V"]
       },
       {
-         "before": ["V"],
+         // Visual Block
+         "before": ["c", "c"],
          "after": ["<C-v>"]
       },
       {
+         // Visual Block
          "before": ["C"],
          "after": ["<C-v>"]
       },
-
-      // Insert
+      // 
+      // 
+      // 
+      // INSERT MODE --------
       {
          "before": ["u"],
          "after": ["i"]
@@ -23,8 +29,18 @@
          "before": ["o"],
          "after": ["a"]
       },
-
-      // NORMAL
+      //---- MODES --------------------------------------------------------------------------------
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //---- NORMAL MODE --------------------------------------------------------------------------
+      // BASIC MOVEMENTS ----
       {
          "before": ["i"],
          "after": ["g", "k"]
@@ -37,6 +53,10 @@
          "before": ["j"],
          "after": ["h"]
       },
+      // 
+      // 
+      // 
+      // LINE MOVEMENTS -----
       {
          "before": ["h"],
          "after": ["^"]
@@ -45,6 +65,10 @@
          "before": [";"],
          "after": ["g", "_"]
       },
+      // 
+      // 
+      // 
+      // TARGETED MOVEMENTS -
       {
          "before": ["a"],
          "after": ["f"]
@@ -54,9 +78,13 @@
          "after": [";"]
       },
       {
-         "before": ["g","z","a"],
+         "before": ["g", "z", "a"],
          "after": [","]
       },
+      // 
+      // 
+      // 
+      // OPERATORS ----------
       {
          "before": ["d"],
          "after": ["y"]
@@ -70,18 +98,6 @@
          "after": ["d"]
       },
       {
-         "before": ["z"],
-         "commands": ["undo"]
-      },
-      {
-         "before": ["<Delete>"],
-         "commands": ["deleteRight"]
-      },
-      {
-         "before": ["<Backspace>"],
-         "commands": ["deleteLeft"]
-      },
-      {
          "before": ["y", "y"],
          "after": ["~"]
       },
@@ -89,22 +105,34 @@
          "before": ["f"],
          "after": ["g", "P"]
       },
+      // 
+      // 
+      // 
+      // COMMANDS --------
+      {
+         "before": ["z"],
+         "commands": ["undo"]
+      },
+      // {
+      //    "before": ["<Delete>"],
+      //    "commands": ["deleteRight"]
+      // },
+      // {
+      //    "before": ["<Backspace>"],
+      //    "commands": ["deleteLeft"]
+      // },
       {
          "before": ["<Enter>"],
          "after": ["o"]
       },
       {
-         "before": ["g","z","b"],
+         "before": ["g", "z", "b"],
          "after": ["O"]
       },
-      {
-         "before": ["<Tab>"],
-         "commands": ["editor.action.indentLines"]
-      },
-      {
-         "before": ["<"],
-         "commands": ["editor.action.indentLines"]
-      },
+      // 
+      // 
+      // 
+      // INSERT MODE --------
       {
          "before": ["m"],
          "after": ["`"]
@@ -183,6 +211,18 @@
          "before": ["M"],
          "after": ["m"]
       },
+      //---- GENERAL ---------------------------------------------------------------------------------
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //---- CTRL ------------------------------------------------------------------------------------
+      // BASIC EDIT ------------
 
       // Z => B
       {

@@ -1,20 +1,26 @@
 {
    "vim.visualModeKeyBindingsNonRecursive": [
-      // MODES
+      //---- MODES --------------------------------------------------------------------------------
+      // SWITCHING MODES ----
       {
-         "before": ["c"],
+         // Visual Line
+         "before": ["c", "v"],
          "after": ["V"]
       },
       {
-         "before": ["V"],
+         // Visual Block
+         "before": ["c", "c"],
          "after": ["<C-v>"]
       },
       {
+         // Visual Block
          "before": ["C"],
          "after": ["<C-v>"]
       },
-
-      // Inner/Outer selectors
+      // 
+      // 
+      // 
+      // INSERT SELECTORS ---
       {
          "before": ["u"],
          "after": ["i"]
@@ -23,8 +29,18 @@
          "before": ["o"],
          "after": ["a"]
       },
-
-      // NORMAL
+      //---- MODES --------------------------------------------------------------------------------
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //---- NORMAL MODE --------------------------------------------------------------------------
+      // BASIC MOVEMENTS ----
       {
          "before": ["i"],
          "after": ["g", "k"]
@@ -54,7 +70,7 @@
          "after": [";"]
       },
       {
-         "before": ["g","z","a"],
+         "before": ["g", "z", "a"],
          "after": [","]
       },
       {
