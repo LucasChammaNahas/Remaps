@@ -9,8 +9,10 @@
          "before": ["o"],
          "after": ["a"]
       },
-
-      // Movements
+      //
+      //
+      //
+      // Movements ----------
       {
          "before": ["i"],
          "after": ["k"]
@@ -23,8 +25,10 @@
          "before": ["j"],
          "after": ["h"]
       },
-
-      // Movements words
+      //
+      //
+      //
+      // Movements words ----
       {
          "before": ["g", "w"],
          "after": ["b"]
@@ -45,8 +49,10 @@
          "before": ["J"],
          "after": ["B"]
       },
-
-      // Movements Line
+      //
+      //
+      //
+      // Movements Line -----
       {
          "before": ["h"],
          "after": ["^"]
@@ -63,8 +69,10 @@
          "before": [":"],
          "after": ["$"]
       },
-
-      // Movements Targeted
+      //
+      //
+      //
+      // Movements Targeted -
       {
          "before": ["a"],
          "after": ["f"]
@@ -73,8 +81,10 @@
          "before": ["A"],
          "after": ["F"]
       },
-
-      // Operators
+      //
+      //
+      //
+      // Operators ----------
       {
          "before": ["d"],
          "after": ["y"]
