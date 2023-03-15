@@ -1,9 +1,12 @@
 {
-   "vim.leader": "<space>",
    "vim.neovimPath": "C:\\Program Files\\neovim\\bin\\nvim.exe",
+   "vim.leader": "<space>",
    "vim.scroll": 2,
    "vim.cursorStylePerMode.normal": "underline",
    "vim.timeout": 1000,
+   "vim.useCtrlKeys": false,
+   "vim.useSystemClipboard": true,
+   "vim.hlsearch": true,
    "vim.handleKeys": {
       "<C-c>": false,
       "<C-v>": false,
