@@ -1,3 +1,18 @@
+
+arrows in find mode
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
    block: gP
       P --> paste above, cursor above

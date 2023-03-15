@@ -429,7 +429,7 @@
       {
          // Save file
          "before": ["<leader>", "s"],
-         "commands": ["workbench.actions.file.save"]
+         "commands": ["workbench.actions.files.save"]
       },
       {
          // Save all files
