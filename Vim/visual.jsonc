@@ -1,5 +1,5 @@
 {
-   "vim.normalModeKeyBindingsNonRecursive": [
+   "vim.visualModeKeyBindingsNonRecursive": [
       //---- MODES --------------------------------------------------------------------------------
       // SWITCHING MODES ----
       {
@@ -20,26 +20,16 @@
       //
       //
       //
-      // INSERT MODE --------
+      // INSERT SELECTORS ---
       {
-         // Insert before
+         // Inner
          "before": ["u"],
          "after": ["i"]
       },
       {
-         // Insert start of line
-         "before": ["U"],
-         "after": ["I"]
-      },
-      {
-         // Insert after
+         // Outer
          "before": ["o"],
          "after": ["a"]
-      },
-      {
-         // Insert end of line
-         "before": ["O"],
-         "after": ["A"]
       },
       //---- MODES --------------------------------------------------------------------------------
       //
@@ -187,7 +177,7 @@
       },
       {
          // Toggle case
-         "before": ["y", "y"],
+         "before": ["y"],
          "after": ["~"]
       },
       //
@@ -407,29 +397,34 @@
       //
       //---- LEADER -------------------------------------------------------------------------------
       {
-         // Join with line below with space
-         "before": ["<leader>", "l"],
-         "after": ["J"]
-      },
-      {
-         // Toggle case operator
+         // Toggle case
          "before": ["<leader>", "y"],
-         "after": ["g", "~"]
+         "after": ["~"]
       },
       {
-         // Lowercase operator
+         // Lowercase
          "before": ["<leader>", "u"],
-         "after": ["g", "u"]
+         "after": ["u"]
       },
       {
-         // Uppercase operator
+         // Uppercase
          "before": ["<leader>", "U"],
-         "after": ["g", "U"]
+         "after": ["U"]
+      },
+      {
+         // Put cursor at end of selection
+         "before": ["<leader>", "l"],
+         "after": ["o"]
+      },
+      {
+         // Put cursor at start of selection
+         "before": ["<leader>", "j"],
+         "after": ["O"]
       },
       {
          // Save file
          "before": ["<leader>", "s"],
-         "commands": ["workbench.actions.files.save"]
+         "commands": ["workbench.actions.file.save"]
       },
       {
          // Save all files
