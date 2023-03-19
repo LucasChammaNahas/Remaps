@@ -1,0 +1,450 @@
+{
+   "vim.normalModeKeyBindingsNonRecursive": [
+      //---- MODES --------------------------------------------------------------------------------
+      // SWITCHING MODES ----
+      {
+         // Visual Line
+         "before": ["c", "v"],
+         "after": ["V"]
+      },
+      {
+         // Visual Block
+         "before": ["c", "c"],
+         "after": ["<C-v>"]
+      },
+      {
+         // Visual Block
+         "before": ["C"],
+         "after": ["<C-v>"]
+      },
+      //
+      //
+      //
+      // INSERT MODE --------
+      {
+         // Insert before
+         "before": ["u"],
+         "after": ["i"]
+      },
+      {
+         // Insert start of line
+         "before": ["U"],
+         "after": ["I"]
+      },
+      {
+         // Insert after
+         "before": ["o"],
+         "after": ["a"]
+      },
+      {
+         // Insert end of line
+         "before": ["O"],
+         "after": ["A"]
+      },
+      //---- MODES --------------------------------------------------------------------------------
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //---- NORMAL MODE --------------------------------------------------------------------------
+      // BASIC MOVEMENTS ----
+      {
+         // Up
+         "before": ["i"],
+         "after": ["g", "k"]
+      },
+      {
+         // Strong up
+         "before": ["I"],
+         "after": ["2", "g", "k"]
+      },
+      {
+         // Down
+         "before": ["k"],
+         "after": ["g", "j"]
+      },
+      {
+         // Strong down
+         "before": ["K"],
+         "after": ["2", "g", "j"]
+      },
+      {
+         // Left
+         "before": ["j"],
+         "after": ["h"]
+      },
+      {
+         // Strong left
+         "before": ["J"],
+         "after": ["B"]
+      },
+      {
+         // Strong right
+         "before": ["L"],
+         "after": ["E"]
+      },
+      //
+      //
+      //
+      // LINE MOVEMENTS -----
+      {
+         // Home
+         "before": ["h"],
+         "after": ["^"]
+      },
+      {
+         // Strong home
+         "before": ["H"],
+         "after": ["0"]
+      },
+      {
+         // End
+         "before": [";"],
+         "after": ["g", "_"]
+      },
+      {
+         // Strong end
+         "before": [":"],
+         "after": ["$"]
+      },
+      //
+      //
+      //
+      // TARGETED MOVEMENTS -
+      {
+         // Target
+         "before": ["a"],
+         "after": ["f"]
+      },
+      {
+         // Target backwards
+         "before": ["A"],
+         "after": ["F"]
+      },
+      {
+         // Repeat target
+         "before": [","],
+         "after": [";"]
+      },
+      {
+         // Repeat target backwards fix
+         "before": ["g", "z", "a"],
+         "after": [","]
+      },
+      //
+      //
+      //
+      // OPERATORS ----------
+      {
+         // Yank
+         "before": ["d"],
+         "after": ["y"]
+      },
+      {
+         // Strong yank
+         "before": ["D"],
+         "after": ["Y"]
+      },
+      {
+         // Change
+         "before": ["x"],
+         "after": ["c"]
+      },
+      {
+         // Strong change
+         "before": ["X"],
+         "after": ["C"]
+      },
+      {
+         // Cut
+         "before": ["s"],
+         "after": ["d"]
+      },
+      {
+         // Strong cut
+         "before": ["S"],
+         "after": ["D"]
+      },
+      {
+         // Paste
+         "before": ["f"],
+         "after": ["g", "P"]
+      },
+      {
+         // Paste secondary
+         "before": ["F"],
+         "after": ["P"]
+      },
+      {
+         // Paste secondary
+         "before": ["P"],
+         "after": ["g", "p"]
+      },
+      {
+         // Toggle case
+         "before": ["y", "y"],
+         "after": ["~"]
+      },
+      //
+      //
+      //
+      // COMMANDS -----------
+      {
+         // Undo
+         "before": ["z"],
+         "commands": ["undo"]
+      },
+      {
+         // Redo
+         "before": ["Z"],
+         "commands": ["redo"]
+      },
+      {
+         // Insert line below and enter insert mode
+         "before": ["<Enter>"],
+         "after": ["o"]
+      },
+      {
+         // Insert line above and enter insert mode fix
+         "before": ["g", "z", "b"],
+         "after": ["O"]
+      },
+      {
+         // Insert command
+         "before": ["|"],
+         "after": [":"]
+      },
+      //
+      //
+      //
+      // MARKS --------------
+      {
+         // Go to mark
+         "before": ["m"],
+         "after": ["`"]
+      },
+      {
+         // Set to mark
+         "before": ["M"],
+         "after": ["m"]
+      },
+      //---- NORMAL MODE --------------------------------------------------------------------------
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //---- Z => B -------------------------------------------------------------------------------
+      {
+         // Maps z to b
+         "before": ["b"],
+         "after": ["z"]
+      },
+      {
+         // Maps Z to b
+         "before": ["B"],
+         "after": ["z"]
+      },
+      {
+         // Scroll page until cursor is on center
+         "before": ["b", "j"],
+         "after": ["z", "z"]
+      },
+      {
+         // Scroll page until cursor is on top
+         "before": ["b", "i"],
+         "after": ["z", "t"]
+      },
+      {
+         // Scroll page until cursor is at the bottom
+         "before": ["b", "k"],
+         "after": ["z", "b"]
+      },
+      //---- Z => B -------------------------------------------------------------------------------
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //---- G ------------------------------------------------------------------------------------
+      {
+         // Word backwards
+         "before": ["g", "w"],
+         "after": ["b"]
+      },
+      {
+         // WORD backwards
+         "before": ["G", "W"],
+         "after": ["B"]
+      },
+      {
+         // WORD forwards
+         "before": ["G", "E"],
+         "after": ["g", "E"]
+      },
+      {
+         // Go to global definition
+         "before": ["G", "D"],
+         "after": ["g", "D"]
+      },
+      {
+         // Go to top of screen
+         "before": ["g", "i"],
+         "after": ["H"]
+      },
+      {
+         // Go to middle of screen
+         "before": ["g", "j"],
+         "after": ["M"]
+      },
+      {
+         // Go to bottom of screen
+         "before": ["g", "k"],
+         "after": ["L"]
+      },
+      {
+         // Go to top of document
+         "before": ["G", "I"],
+         "after": ["g", "g"]
+      },
+      {
+         // Go to bottom of document
+         "before": ["G", "K"],
+         "after": ["G"]
+      },
+      {
+         // Go back in change list
+         "before": ["g", "n"],
+         "after": ["g", ";"]
+      },
+      {
+         // Go forth in change list
+         "before": ["G", "N"],
+         "after": ["g", ","]
+      },
+      //---- G ------------------------------------------------------------------------------------
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //---- T ------------------------------------------------------------------------------------
+      {
+         // Manually define a fold up to motion
+         "before": ["t", "h"],
+         "after": ["z", "f"]
+      },
+      {
+         // Delete fold
+         "before": ["t", "s"],
+         "after": ["z", "d"]
+      },
+      {
+         // Toggle collapse region
+         "before": ["t", "j"],
+         "commands": ["editor.toggleFold"]
+      },
+      {
+         // Collapse region 1
+         "before": ["t", "y"],
+         "commands": ["editor.foldLevel1"]
+      },
+      {
+         // Collapse region 2
+         "before": ["t", "u"],
+         "commands": ["editor.foldLevel2"]
+      },
+      {
+         // Collapse region 3
+         "before": ["t", "i"],
+         "commands": ["editor.foldLevel3"]
+      },
+      {
+         // Collapse region 4
+         "before": ["t", "o"],
+         "commands": ["editor.foldLevel4"]
+      },
+      {
+         // Collapse region 5
+         "before": ["t", "p"],
+         "commands": ["editor.foldLevel5"]
+      },
+      {
+         // Collapse all
+         "before": ["T", "T"],
+         "commands": ["editor.foldAll"]
+      },
+      {
+         // Uncollapse all
+         "before": ["t", "t"],
+         "commands": ["editor.unfoldAll"]
+      },
+      //---- T ------------------------------------------------------------------------------------
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //---- LEADER -------------------------------------------------------------------------------
+      {
+         // Join with line below with space
+         "before": ["<leader>", "l"],
+         "after": ["J"]
+      },
+      {
+         // Toggle case operator
+         "before": ["<leader>", "y"],
+         "after": ["g", "~"]
+      },
+      {
+         // Lowercase operator
+         "before": ["<leader>", "u"],
+         "after": ["g", "u"]
+      },
+      {
+         // Uppercase operator
+         "before": ["<leader>", "U"],
+         "after": ["g", "U"]
+      },
+      {
+         // Save file
+         "before": ["<leader>", "s"],
+         "commands": ["workbench.actions.files.save"]
+      },
+      {
+         // Save all files
+         "before": ["<leader>", "S"],
+         "commands": ["saveAll"]
+      },
+      {
+         // Close editor
+         "before": ["<leader>", "w", "w"],
+         "commands": ["workbench.action.closeActiveEditor"]
+      },
+      {
+         // Close window
+         "before": ["<leader>", "W", "W"],
+         "after": ["Z", "Q"]
+      }
+   ]
+}
