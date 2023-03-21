@@ -49,7 +49,7 @@
       "when": "textInputFocus"
    },
    {
-      // Was conflicting with symbols
+      // NEW !!! Was conflicting with symbols
       "key": "alt+h",
       "command": "-git.viewFileHistory"
    },

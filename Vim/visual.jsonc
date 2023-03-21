@@ -46,22 +46,22 @@
       {
          // Up
          "before": ["i"],
-         "after": ["g", "k"]
+         "after": ["k"]
       },
       {
-         // Strong up
+         // Up + scroll
          "before": ["I"],
-         "after": ["2", "g", "k"]
-      },
+         "after": ["<C-u>"]
+      },      
       {
          // Down
          "before": ["k"],
-         "after": ["g", "j"]
+         "after": ["j"]
       },
       {
-         // Strong down
+         // Down + scroll
          "before": ["K"],
-         "after": ["2", "g", "j"]
+         "after": ["<C-d>"]
       },
       {
          // Left

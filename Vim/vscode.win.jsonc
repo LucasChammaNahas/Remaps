@@ -83,10 +83,28 @@
    //---- CTRL ------------------------------------------------------------------------------------
    // BASIC EDIT ------------
    {
+      // Strong move cursor up
+      "key": "ctrl+i",
+      "command": "vim.remap",
+      "when": "editorTextFocus && vim.mode == 'Normal'",
+      "args": {
+         "after": ["3", "k"]
+      }
+   },
+   {
+      // Strong move cursor up
+      "key": "ctrl+i",
+      "command": "vim.remap",
+      "when": "editorTextFocus && vim.mode == 'Visual'",
+      "args": {
+         "after": ["3", "k"]
+      }
+   },
+   {
       // Move cursor up
       "key": "ctrl+i",
       "command": "cursorUp",
-      "when": "textInputFocus"
+      "when": "textInputFocus && vim.mode == 'Insert'"
    },
    {
       // Move cursor up in suggestion list
@@ -101,10 +119,28 @@
       "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
    },
    {
+      // Strong move cursor down
+      "key": "ctrl+k",
+      "command": "vim.remap",
+      "when": "editorTextFocus && vim.mode == 'Normal'",
+      "args": {
+         "after": ["3", "j"]
+      }
+   },
+   {
+      // Strong move cursor down
+      "key": "ctrl+k",
+      "command": "vim.remap",
+      "when": "editorTextFocus && vim.mode == 'Visual'",
+      "args": {
+         "after": ["3", "j"]
+      }
+   },
+   {
       // Move cursor down
       "key": "ctrl+k",
       "command": "cursorDown",
-      "when": "textInputFocus"
+      "when": "textInputFocus && vim.mode == 'Insert'"
    },
    {
       // Move cursor down in suggestion list
@@ -170,27 +206,6 @@
    //
    //
    //---- ALT SHIFT -------------------------------------------------------------------------------
-   {
-      // Move up + scroll combo
-      "key": "alt+shift+i",
-      "command": "vim.remap",
-      "when": "editorTextFocus && vim.mode=='Normal'",
-      "args": {
-         "after": ["<C-u>"]
-      }
-   },
-   {
-      // Move down + scroll combo
-      "key": "alt+shift+k",
-      "command": "vim.remap",
-      "when": "editorTextFocus && vim.mode=='Normal'",
-      "args": {
-         "after": ["<C-d>"]
-      }
-   },
-   //
-   //
-   //
    // EDITORS ---------------
    {
       // Focus editor left
