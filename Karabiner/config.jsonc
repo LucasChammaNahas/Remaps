@@ -1,126 +1,125 @@
 {
-   "title": "COMPLEX MODIFICATIONS",
-   "rules": [
-     {
-       "description": "Maps Shift+Esc to CapsLock",
-       "manipulators": [
-         {
-           "type": "basic",
-           "from": {
-             "key_code": "escape",
-             "modifiers": {
-               "mandatory": ["shift"],
-               "optional": ["caps_lock"]
-             }
-           },
-           "to": [
-             {
-               "key_code": "caps_lock",
-               "lazy": true
-             }
-           ]
-         }
-       ]
-     },
+  "title": "COMPLEX MODIFICATIONS",
+  "rules": [
+    {
+      "description": "Maps Shift+Esc to CapsLock",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "escape",
+            "modifiers": {
+              "mandatory": ["shift"],
+              "optional": ["caps_lock"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "caps_lock",
+              "lazy": true
+            }
+          ]
+        }
+      ]
+    },
 
 
 
 
- 
-     {
-       "description": "Maps Capslock to Ctrl/Esc",
-       "manipulators": [
-         {
-           "type": "basic",
-           "from": {
-             "key_code": "escape",
-             "modifiers": {
-               "optional": ["any"]
-             }
-           },
-           "to": [
-             {
-               "key_code": "right_command",
-               "lazy": true
-             }
-           ],
-           "to_if_alone": [
-             {
-               "key_code": "escape"
-             }
-           ]
-         }
-       ]
-     },
+
+    {
+      "description": "Maps Capslock to Ctrl/Esc",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "escape",
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_command",
+              "lazy": true
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "escape"
+            }
+          ]
+        }
+      ]
+    },
 
 
 
 
- 
-     {
-       "description": "CapsLock I/J/K/L",
-       "manipulators": [
-         {
-           "type": "basic",
-           "from": {
-             "key_code": "i",
-             "modifiers": {
-               "mandatory": ["left_command"]
-             }
-           },
-           "to": [
-             {
-               "key_code": "up_arrow"
-             }
-           ]
-         },
 
-         {
-           "type": "basic",
-           "from": {
-             "key_code": "j",
-             "modifiers": {
-               "mandatory": ["left_command"]
-             }
-           },
-           "to": [
-             {
-               "key_code": "left_arrow"
-             }
-           ]
-         },
+    {
+      "description": "CapsLock I/J/K/L",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": ["right_command"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "up_arrow"
+            }
+          ]
+        },
 
-         {
-           "type": "basic",
-           "from": {
-             "key_code": "k",
-             "modifiers": {
-               "mandatory": ["left_command"]
-             }
-           },
-           "to": [
-             {
-               "key_code": "down_arrow"
-             }
-           ]
-         },
-         
-         {
-           "type": "basic",
-           "from": {
-             "key_code": "l",
-             "modifiers": {
-               "mandatory": ["left_command"]
-             }
-           },
-           "to": [
-             {
-               "key_code": "right_arrow"
-             }
-           ]
-         }
-       ]
-     }
-   ]
- }
- 
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": ["right_command"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow"
+            }
+          ]
+        },
+
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "k",
+            "modifiers": {
+              "mandatory": ["right_command"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "down_arrow"
+            }
+          ]
+        },
+        
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "l",
+            "modifiers": {
+              "mandatory": ["right_command"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
