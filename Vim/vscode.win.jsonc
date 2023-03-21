@@ -209,32 +209,32 @@
    // EDITORS ---------------
    {
       // Focus editor left
-      "key": "alt+shift+j",
+      "key": "ctrl+alt+j",
       "command": "workbench.action.previousEditorInGroup"
    },
    {
       // Focus editor right
-      "key": "alt+shift+l",
+      "key": "ctrl+alt+l",
       "command": "workbench.action.nextEditorInGroup"
    },
    {
       // Focus first editor
-      "key": "alt+shift+h",
+      "key": "ctrl+alt+h",
       "command": "workbench.action.openEditorAtIndex1"
    },
    {
       // Focus last editor
-      "key": "alt+shift+;",
+      "key": "ctrl+alt+;",
       "command": "workbench.action.lastEditorInGroup"
    },
    {
       // Move editor left
-      "key": "alt+shift+u",
+      "key": "ctrl+alt+u",
       "command": "workbench.action.moveEditorLeftInGroup"
    },
    {
       // Move editor right
-      "key": "alt+shift+o",
+      "key": "ctrl+alt+o",
       "command": "workbench.action.moveEditorRightInGroup"
    },
    //
@@ -243,27 +243,27 @@
    // SIDEBAR ---------------
    {
       // Search project
-      "key": "alt+shift+9",
+      "key": "ctrl+alt+9",
       "command": "workbench.action.findInFiles"
    },
    {
       // Commits / Source control
-      "key": "alt+shift+0",
+      "key": "ctrl+alt+0",
       "command": "workbench.view.scm"
    },
    {
       // Terminal
-      "key": "alt+shift+7",
+      "key": "ctrl+alt+7",
       "command": "workbench.action.terminal.toggleTerminal"
    },
    {
       // File tree explorer
-      "key": "alt+shift+n",
+      "key": "ctrl+alt+i",
       "command": "workbench.view.explorer"
    },
    {
       // Toggle sidebar
-      "key": "alt+shift+m",
+      "key": "ctrl+alt+k",
       "command": "workbench.action.toggleSidebarVisibility"
    },
    //---- ALT SHIFT -------------------------------------------------------------------------------
@@ -280,53 +280,39 @@
    // VS COOL STUFF ---------
    {
       // Move line up
-      "key": "ctrl+shift+i",
+      "key": "alt+shift+i",
       "command": "editor.action.moveLinesUpAction",
       "when": "editorTextFocus"
    },
    {
       // Move line down
-      "key": "ctrl+shift+k",
+      "key": "alt+shift+k",
       "command": "editor.action.moveLinesDownAction",
       "when": "editorTextFocus"
    },
    {
       // Copy line up
-      "key": "ctrl+shift+u",
+      "key": "alt+shift+u",
       "command": "editor.action.copyLinesUpAction",
       "when": "editorTextFocus"
    },
    {
       // Copy line down
-      "key": "ctrl+shift+j",
+      "key": "alt+shift+j",
       "command": "editor.action.copyLinesDownAction",
       "when": "editorTextFocus"
    },
    {
       // Multiple cursors up
-      "key": "ctrl+shift+o",
+      "key": "alt+shift+o",
       "command": "cursorColumnSelectUp",
       "when": "editorTextFocus"
    },
    {
       // Multiple cursors down
-      "key": "ctrl+shift+l",
+      "key": "alt+shift+l",
       "command": "cursorColumnSelectDown",
       "when": "editorTextFocus"
-   },
-   //
-   //
-   //
-   // WINDOWS ---------------
-   {
-      // New file
-      "key": "ctrl+shift+n",
-      "command": "workbench.action.files.newUntitledFile"
-   },
-   {
-      // New window
-      "key": "ctrl+shift+m",
-      "command": "workbench.action.newWindow"
    },
    //---- CTRL SHIFT ------------------------------------------------------------------------------
    //
@@ -342,32 +328,32 @@
    // SAVE QUIT -------------
    {
       // Save all
-      "key": "ctrl+alt+s",
+      "key": "ctrl+shift+s",
       "command": "saveAll"
    },
    {
       // Close current editor
-      "key": "ctrl+alt+x",
+      "key": "ctrl+shift+x",
       "command": "workbench.action.closeActiveEditor"
    },
    {
       // Close all editors but current
-      "key": "ctrl+alt+t",
+      "key": "ctrl+shift+t",
       "command": "workbench.action.closeOtherEditors"
    },
    {
       // Close all editors
-      "key": "ctrl+alt+r",
+      "key": "ctrl+shift+r",
       "command": "workbench.action.closeAllEditors"
    },
    {
       // Close all in current group
-      "key": "ctrl+alt+e",
+      "key": "ctrl+shift+e",
       "command": "workbench.action.closeEditorsInGroup"
    },
    {
       // Close window
-      "key": "ctrl+alt+w ctrl+alt+w",
+      "key": "ctrl+shift+w ctrl+alt+w",
       "command": "workbench.action.closeWindow"
    },
    //
@@ -376,17 +362,17 @@
    // EDITOR SIZES ----------
    {
       // Make equal sizes
-      "key": "ctrl+alt+0",
+      "key": "ctrl+shift+0",
       "command": "workbench.action.evenEditorWidths"
    },
    {
       // Decrease editor size
-      "key": "ctrl+alt+-",
+      "key": "ctrl+shift+-",
       "command": "workbench.action.decreaseViewSize"
    },
    {
       // Increase editor size
-      "key": "ctrl+alt+=",
+      "key": "ctrl+shift+=",
       "command": "workbench.action.increaseViewSize"
    },
    //
@@ -395,23 +381,37 @@
    // FOCUS GROUPS ----------
    {
       // Focus group above
-      "key": "ctrl+alt+i",
+      "key": "ctrl+shift+i",
       "command": "workbench.action.focusAboveGroup"
    },
    {
       // Focus group below
-      "key": "ctrl+alt+k",
+      "key": "ctrl+shift+k",
       "command": "workbench.action.focusBelowGroup"
    },
    {
       // Focus left group
-      "key": "ctrl+alt+j",
+      "key": "ctrl+shift+j",
       "command": "workbench.action.focusLeftGroup"
    },
    {
       // Focus right group
-      "key": "ctrl+alt+l",
+      "key": "ctrl+shift+l",
       "command": "workbench.action.focusRightGroup"
+   },
+   //
+   //
+   //
+   // WINDOWS ---------------
+   {
+      // New file
+      "key": "ctrl+shift+n",
+      "command": "workbench.action.files.newUntitledFile"
+   },
+   {
+      // New window
+      "key": "ctrl+shift+m",
+      "command": "workbench.action.newWindow"
    },
    //---- CTRL ALT --------------------------------------------------------------------------------
    //
@@ -427,22 +427,22 @@
    // MOVE GROUPS -----------
    {
       // Move group up
-      "key": "ctrl+alt+shift+i",
+      "key": "win+alt+i",
       "command": "workbench.action.moveActiveEditorGroupUp"
    },
    {
       // Move group down
-      "key": "ctrl+alt+shift+k",
+      "key": "win+alt+k",
       "command": "workbench.action.moveActiveEditorGroupDown"
    },
    {
       // Move group to the left
-      "key": "ctrl+alt+shift+j",
+      "key": "win+alt+j",
       "command": "workbench.action.moveActiveEditorGroupLeft"
    },
    {
       // Move group to the right
-      "key": "ctrl+alt+shift+l",
+      "key": "win+alt+l",
       "command": "workbench.action.moveActiveEditorGroupRight"
    },
    //---- CTRL ALT SHIFT --------------------------------------------------------------------------
@@ -459,22 +459,22 @@
    // MOVE INTO GROUPS ------
    {
       // Move to group above
-      "key": "win+alt+i",
+      "key": "ctrl+alt+shift+i",
       "command": "workbench.action.moveEditorToAboveGroup"
    },
    {
       // Move to group below
-      "key": "win+alt+k",
+      "key": "ctrl+alt+shift+k",
       "command": "workbench.action.moveEditorToBelowGroup"
    },
    {
       // Move to left group
-      "key": "win+alt+j",
+      "key": "ctrl+alt+shift+j",
       "command": "workbench.action.moveEditorToLeftGroup"
    },
    {
       // Move to right group
-      "key": "win+alt+l",
+      "key": "ctrl+alt+shift+l",
       "command": "workbench.action.moveEditorToRightGroup"
    }
 ]
