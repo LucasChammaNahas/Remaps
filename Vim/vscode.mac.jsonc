@@ -109,7 +109,7 @@
       "command": "vim.remap",
       "when": "editorTextFocus && vim.mode == 'Normal'",
       "args": {
-         "after": ["3", "i"]
+         "after": ["5", "i"]
       }
    },
    {
@@ -118,7 +118,7 @@
       "command": "vim.remap",
       "when": "editorTextFocus && vim.mode == 'Visual'",
       "args": {
-         "after": ["3", "i"]
+         "after": ["5", "i"]
       }
    },
    {
@@ -145,7 +145,7 @@
       "command": "vim.remap",
       "when": "editorTextFocus && vim.mode == 'Normal'",
       "args": {
-         "after": ["3", "k"]
+         "after": ["5", "k"]
       }
    },
    {
@@ -154,7 +154,7 @@
       "command": "vim.remap",
       "when": "editorTextFocus && vim.mode == 'Visual'",
       "args": {
-         "after": ["3", "k"]
+         "after": ["5", "k"]
       }
    },
    {
@@ -173,13 +173,49 @@
       // Move cursor left
       "key": "cmd+j",
       "command": "cursorLeft",
-      "when": "textInputFocus"
+      "when": "textInputFocus && vim.mode == 'Insert'"
+   },
+   {
+      // Strong move cursor left
+      "key": "cmd+j",
+      "command": "vim.remap",
+      "when": "editorTextFocus && vim.mode == 'Normal'",
+      "args": {
+         "after": ["3", "j"]
+      }
+   },
+   {
+      // Strong move cursor left
+      "key": "cmd+j",
+      "command": "vim.remap",
+      "when": "editorTextFocus && vim.mode == 'Visual'",
+      "args": {
+         "after": ["3", "j"]
+      }
    },
    {
       // Move cursor right
       "key": "cmd+l",
       "command": "cursorRight",
-      "when": "textInputFocus"
+      "when": "textInputFocus && vim.mode == 'Insert'"
+   },
+   {
+      // Strong move cursor left
+      "key": "cmd+l",
+      "command": "vim.remap",
+      "when": "editorTextFocus && vim.mode == 'Normal'",
+      "args": {
+         "after": ["3", "l"]
+      }
+   },
+   {
+      // Strong move cursor left
+      "key": "cmd+l",
+      "command": "vim.remap",
+      "when": "editorTextFocus && vim.mode == 'Visual'",
+      "args": {
+         "after": ["3", "l"]
+      }
    },
    {
       // Move cursor home
