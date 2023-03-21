@@ -88,7 +88,7 @@
       "command": "vim.remap",
       "when": "editorTextFocus && vim.mode == 'Normal'",
       "args": {
-         "after": ["3", "k"]
+         "after": ["3", "i"]
       }
    },
    {
@@ -97,7 +97,7 @@
       "command": "vim.remap",
       "when": "editorTextFocus && vim.mode == 'Visual'",
       "args": {
-         "after": ["3", "k"]
+         "after": ["3", "i"]
       }
    },
    {
@@ -124,7 +124,7 @@
       "command": "vim.remap",
       "when": "editorTextFocus && vim.mode == 'Normal'",
       "args": {
-         "after": ["3", "j"]
+         "after": ["3", "k"]
       }
    },
    {
@@ -133,7 +133,7 @@
       "command": "vim.remap",
       "when": "editorTextFocus && vim.mode == 'Visual'",
       "args": {
-         "after": ["3", "j"]
+         "after": ["3", "k"]
       }
    },
    {
