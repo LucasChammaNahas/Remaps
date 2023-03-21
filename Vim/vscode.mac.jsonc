@@ -19,6 +19,12 @@
       }
    },
    {
+      // Emmet abbreviation
+      "key": "alt+tab",
+      "command": "editor.emmet.action.expandAbbreviation",
+      "when": "editorTextFocus && !editorReadonly"
+   },
+   {
       // Indent text
       "key": "tab",
       "command": "editor.action.indentLines",
