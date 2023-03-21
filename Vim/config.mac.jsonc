@@ -1,13 +1,14 @@
 {
    "vim.leader": "<space>",
-   "vim.scroll": 2,
+   "vim.scroll": 3,
    "vim.cursorStylePerMode.normal": "underline",
    "vim.timeout": 1000,
    "vim.useSystemClipboard": true,
-   "vim.hlsearch": true,
    "vim.highlightedyank.enable": true,
    "vim.highlightedyank.color": "rgba(100, 250, 100, 1)",
-   "vim.highlightedyank.duration": 300,
+   "vim.highlightedyank.duration": 100,
+   "vim.hlsearch": true,
    "vim.mouseSelectionGoesIntoVisualMode": false,
-   "vim.useCtrlKeys": false
+   "vim.statusBarColors.insert": "#50ff05",
+   "vim.useCtrlKeys": false,
 }
