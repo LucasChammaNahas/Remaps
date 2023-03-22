@@ -236,32 +236,32 @@
    // EDITORS ---------------
    {
       // Focus editor left
-      "key": "cmd+alt+j",
+      "key": "alt+shift+j",
       "command": "workbench.action.previousEditorInGroup"
    },
    {
       // Focus editor right
-      "key": "cmd+alt+l",
+      "key": "alt+shift+l",
       "command": "workbench.action.nextEditorInGroup"
    },
    {
       // Focus first editor
-      "key": "cmd+alt+h",
+      "key": "alt+shift+h",
       "command": "workbench.action.openEditorAtIndex1"
    },
    {
       // Focus last editor
-      "key": "cmd+alt+;",
+      "key": "alt+shift+;",
       "command": "workbench.action.lastEditorInGroup"
    },
    {
       // Move editor left
-      "key": "cmd+alt+u",
+      "key": "alt+shift+u",
       "command": "workbench.action.moveEditorLeftInGroup"
    },
    {
       // Move editor right
-      "key": "cmd+alt+o",
+      "key": "alt+shift+o",
       "command": "workbench.action.moveEditorRightInGroup"
    },
    //
@@ -270,27 +270,27 @@
    // SIDEBAR ---------------
    {
       // Search project
-      "key": "cmd+alt+9",
+      "key": "alt+shift+9",
       "command": "workbench.action.findInFiles"
    },
    {
       // Commits / Source control
-      "key": "cmd+alt+0",
+      "key": "alt+shift+0",
       "command": "workbench.view.scm"
    },
    {
       // Terminal
-      "key": "cmd+alt+7",
+      "key": "alt+shift+7",
       "command": "workbench.action.terminal.toggleTerminal"
    },
    {
       // File tree explorer
-      "key": "cmd+alt+i",
+      "key": "alt+shift+i",
       "command": "workbench.view.explorer"
    },
    {
       // Toggle sidebar
-      "key": "cmd+alt+k",
+      "key": "alt+shift+k",
       "command": "workbench.action.toggleSidebarVisibility"
    },
    //---- ALT SHIFT -------------------------------------------------------------------------------
@@ -303,55 +303,55 @@
    //
    //
    //
-   //---- CTRL SHIFT ------------------------------------------------------------------------------
+   //---- CTRL ALT --------------------------------------------------------------------------------
    // VS COOL STUFF ---------
    {
       // Move line up
-      "key": "alt+shift+i",
+      "key": "cmd+alt+i",
       "command": "editor.action.moveLinesUpAction",
       "when": "editorTextFocus"
    },
    {
       // Move line down
-      "key": "alt+shift+k",
+      "key": "cmd+alt+k",
       "command": "editor.action.moveLinesDownAction",
       "when": "editorTextFocus"
    },
    {
       // Copy line up
-      "key": "alt+shift+u",
+      "key": "cmd+alt+u",
       "command": "editor.action.copyLinesUpAction",
       "when": "editorTextFocus"
    },
    {
       // Copy line down
-      "key": "alt+shift+j",
+      "key": "cmd+alt+j",
       "command": "editor.action.copyLinesDownAction",
       "when": "editorTextFocus"
    },
    {
       // Multiple cursors up
-      "key": "alt+shift+o",
+      "key": "cmd+alt+o",
       "command": "cursorColumnSelectUp",
       "when": "editorTextFocus"
    },
    {
       // Multiple cursors down
-      "key": "alt+shift+l",
+      "key": "cmd+shift+l",
       "command": "cursorColumnSelectDown",
       "when": "editorTextFocus"
    },
-   //---- CTRL SHIFT ------------------------------------------------------------------------------
-   //
-   //
-   //
-   //
-   //
-   //
-   //
-   //
-   //
    //---- CTRL ALT --------------------------------------------------------------------------------
+   //
+   //
+   //
+   //
+   //
+   //
+   //
+   //
+   //
+   //---- CTRL SHIFT ------------------------------------------------------------------------------
    // SAVE QUIT -------------
    {
       // Save all
@@ -380,7 +380,7 @@
    },
    {
       // Close window
-      "key": "cmd+shift+w cmd+alt+w",
+      "key": "cmd+shift+w cmd+shift+w",
       "command": "workbench.action.closeWindow"
    },
    //
@@ -440,7 +440,7 @@
       "key": "cmd+shift+m",
       "command": "workbench.action.newWindow"
    },
-   //---- CTRL ALT --------------------------------------------------------------------------------
+   //---- CTRL SHIFT ------------------------------------------------------------------------------
    //
    //
    //
