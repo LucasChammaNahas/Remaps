@@ -235,14 +235,19 @@
    //---- ALT SHIFT -------------------------------------------------------------------------------
    // SAVE QUIT -------------
    {
-      // Close window
-      "key": "alt+shift+q alt+shift+q",
-      "command": "workbench.action.closeWindow"
+      // Quit all instances
+      "key": "shift+alt+q shift+alt+q",
+      "command": "workbench.action.quit"
    },
    {
-      // Close current editor
-      "key": "alt+shift+w",
-      "command": "workbench.action.closeActiveEditor"
+      // Quit all instances
+      "key": "cmd+q",
+      "command": "-workbench.action.quit"
+   },
+   {
+      // Close window
+      "key": "alt+shift+w alt+shift+w",
+      "command": "workbench.action.closeWindow"
    },
    {
       // Close all in current group
