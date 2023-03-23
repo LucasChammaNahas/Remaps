@@ -233,6 +233,40 @@
    //
    //
    //---- ALT SHIFT -------------------------------------------------------------------------------
+   // SAVE QUIT -------------
+   {
+      // Close window
+      "key": "alt+shift+q alt+shift+q",
+      "command": "workbench.action.closeWindow"
+   },
+   {
+      // Close current editor
+      "key": "alt+shift+w",
+      "command": "workbench.action.closeActiveEditor"
+   },
+   {
+      // Close all in current group
+      "key": "alt+shift+e alt+shift+e",
+      "command": "workbench.action.closeEditorsInGroup"
+   },
+   {
+      // Close all editors but current
+      "key": "alt+shift+r alt+shift+r",
+      "command": "workbench.action.closeOtherEditors"
+   },
+   {
+      // Close all editors
+      "key": "alt+shift+t alt+shift+t",
+      "command": "workbench.action.closeAllEditors"
+   },
+   {
+      // Save all
+      "key": "alt+shift+s",
+      "command": "saveAll"
+   },
+   //
+   //
+   //
    // EDITORS ---------------
    {
       // Focus editor left
@@ -337,7 +371,7 @@
    },
    {
       // Multiple cursors down
-      "key": "cmd+shift+l",
+      "key": "cmd+alt+l",
       "command": "cursorColumnSelectDown",
       "when": "editorTextFocus"
    },
@@ -352,40 +386,6 @@
    //
    //
    //---- CTRL SHIFT ------------------------------------------------------------------------------
-   // SAVE QUIT -------------
-   {
-      // Save all
-      "key": "cmd+shift+s",
-      "command": "saveAll"
-   },
-   {
-      // Close current editor
-      "key": "cmd+shift+x",
-      "command": "workbench.action.closeActiveEditor"
-   },
-   {
-      // Close all editors but current
-      "key": "cmd+shift+t",
-      "command": "workbench.action.closeOtherEditors"
-   },
-   {
-      // Close all editors
-      "key": "cmd+shift+r",
-      "command": "workbench.action.closeAllEditors"
-   },
-   {
-      // Close all in current group
-      "key": "cmd+shift+e",
-      "command": "workbench.action.closeEditorsInGroup"
-   },
-   {
-      // Close window
-      "key": "cmd+shift+w cmd+shift+w",
-      "command": "workbench.action.closeWindow"
-   },
-   //
-   //
-   //
    // EDITOR SIZES ----------
    {
       // Make equal sizes
