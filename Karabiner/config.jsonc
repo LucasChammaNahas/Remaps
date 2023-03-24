@@ -210,6 +210,29 @@
 
 
 
+
+    {
+      "description": "Disable hide window",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": ["right_command", "left_option"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "out"
+            }
+          ]
+        }
+      ]
+    },
+
+
+
     {
       "description": "Loop Apps with Capslock + e",
       "manipulators": [
