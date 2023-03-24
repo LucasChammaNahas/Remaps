@@ -206,6 +206,29 @@
           ]
         }
       ]
+    },
+
+
+
+    {
+      "description": "Loop Apps with Capslock + e",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "e",
+            "modifiers": {
+              "mandatory": ["right_command"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "tab",
+              "modifiers": ["left_command"]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
