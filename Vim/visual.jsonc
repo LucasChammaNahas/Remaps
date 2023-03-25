@@ -17,6 +17,11 @@
          "before": ["C"],
          "after": ["<C-v>"]
       },
+      {
+         // Solves text being copied as it is pasted
+         "before": ["p"],
+         "after": ["p", "g", "v", "y"]
+      },
       //
       //
       //
