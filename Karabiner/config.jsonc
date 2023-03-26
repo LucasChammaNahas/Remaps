@@ -25,8 +25,6 @@
 
 
 
-
-
     {
       "description": "Maps Capslock to Ctrl/Esc",
       "manipulators": [
@@ -52,8 +50,6 @@
         }
       ]
     },
-
-
 
 
 
@@ -104,7 +100,7 @@
             }
           ]
         },
-        
+
         {
           "type": "basic",
           "from": {
@@ -121,7 +117,6 @@
         }
       ]
     },
-
 
 
 
@@ -173,7 +168,7 @@
             }
           ]
         },
-        
+
         {
           "type": "basic",
           "from": {
@@ -189,7 +184,7 @@
             }
           ]
         },
-        
+
         {
           "type": "basic",
           "from": {
@@ -207,7 +202,6 @@
         }
       ]
     },
-
 
 
 
