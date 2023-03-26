@@ -255,6 +255,11 @@
       "command": "workbench.action.closeAllEditors"
    },
    {
+      // Close active editor
+      "key": "alt+shift+x",
+      "command": "workbench.action.closeActiveEditor"
+   },
+   {
       // Save all
       "key": "alt+shift+s",
       "command": "saveAll"
