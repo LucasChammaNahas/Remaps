@@ -199,6 +199,21 @@
               "modifiers": ["left_option"]
             }
           ]
+        },
+
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": ["right_command"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "spacebar"
+            }
+          ]
         }
       ]
     },
