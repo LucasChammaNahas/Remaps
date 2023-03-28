@@ -1,4 +1,12 @@
 {
+   "workbench.colorCustomizations": {
+      "editor.lineHighlightBackground": "#4cfe49",
+      "editor.selectionBackground": "#6b6b6b",
+      "editor.selectionHighlightBackground": "#6b6b6b",
+      "editor.wordHighlightBackground": "#404040",
+      "editorCursor.foreground": "#ff4949"
+  },
+
    "vim.leader": "<space>",
    "vim.scroll": 3,
    "vim.cursorStylePerMode.normal": "underline",
@@ -10,6 +18,6 @@
    "vim.hlsearch": true,
    "vim.mouseSelectionGoesIntoVisualMode": false,
    "vim.statusBarColors.insert": "#50ff05",
-  "vim.foldfix": true,
+   "vim.foldfix": true,
    "vim.useCtrlKeys": false,
 }
