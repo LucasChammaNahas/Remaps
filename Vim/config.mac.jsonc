@@ -10,5 +10,6 @@
    "vim.hlsearch": true,
    "vim.mouseSelectionGoesIntoVisualMode": false,
    "vim.statusBarColors.insert": "#50ff05",
-   "vim.useCtrlKeys": false
+  "vim.foldfix": true,
+   "vim.useCtrlKeys": false,
 }
