@@ -49,6 +49,12 @@
       "key": "cmd+space",
       "command": "editor.action.inlineSuggest.trigger"
    },
+   {
+      // Open and go into a file from file tree
+      "key": "cmd+enter",
+      "command": "explorer.openAndPassFocus",
+      "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus"
+   },
 
    
 

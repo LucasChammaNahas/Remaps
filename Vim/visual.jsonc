@@ -41,11 +41,6 @@
          "before": ["C"],
          "after": ["<C-v>"]
       },
-      {
-         // Solves text being copied as it is pasted
-         "before": ["p"],
-         "after": ["p", "g", "v", "y"]
-      },
 
 
 
@@ -273,23 +268,48 @@
       },
       {
          // Paste
+         "before": ["p"],
+         "after": ["g", "p", "g", "v", "y"]
+      },
+      {
+         // Paste
          "before": ["f"],
-         "after": ["g", "P"]
+         "after": ["p", "g", "v", "y"]
       },
       {
-         // Paste secondary
+         // Paste
          "before": ["F"],
-         "after": ["P"]
+         "after": ["p", "g", "v", "y"]
       },
       {
-         // Paste secondary
+         // Paste
          "before": ["P"],
-         "after": ["g", "p"]
+         "after": ["g", "p", "g", "v", "y"]
       },
       {
          // Toggle case
          "before": ["y"],
          "after": ["~"]
+      },
+      {
+         // Solves text being copied as it is pasted
+         "before": ["p"],
+         "after": ["p", "g", "v", "y"]
+      },
+      {
+         // Solves text being copied as it is pasted
+         "before": ["f"],
+         "after": ["g", "P", "g", "v", "y"]
+      },
+      {
+         // Solves text being copied as it is pasted
+         "before": ["P"],
+         "after": ["P", "g", "v", "y"]
+      },
+      {
+         // Solves text being copied as it is pasted
+         "before": ["F"],
+         "after": ["g", "p", "g", "v", "y"]
       },
 
 
@@ -663,5 +683,5 @@
          "before": ["<leader>", "W", "W"],
          "after": ["Z", "Q"]
       }
-   ]
+   ],
 }
