@@ -120,7 +120,7 @@
       {
          // Up + scroll
          "before": ["I"],
-         "after": ["<C-u>"]
+         "after": ["3", "k", "z", "z"]
       },      
       {
          // Down
@@ -130,7 +130,7 @@
       {
          // Down + scroll
          "before": ["K"],
-         "after": ["<C-d>"]
+         "after": ["3", "j", "z", "z"]
       },
       {
          // Left
