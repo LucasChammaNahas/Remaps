@@ -264,7 +264,7 @@
       {
         // Change word
         "before": ["x", "x"],
-        "after": ["v", "i", "w", "c"]
+        "after": ["v","i","w","\"","_","c"]
       },
       {
          // Strong change
