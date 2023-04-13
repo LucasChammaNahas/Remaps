@@ -602,6 +602,12 @@
       // Move editor to group below
       "key": "ctrl+alt+l",
       "command": "workbench.action.moveEditorToBelowGroup"
+   },
+   {
+      // Open selected file when on file tree
+      "key": "cmd+enter",
+      "command": "explorer.openAndPassFocus",
+      "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus"
    }
  ]
  

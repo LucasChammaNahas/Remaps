@@ -2,26 +2,40 @@
 arrows in find mode
 
 
-cut word
+
+
+
+
+del cmd
 del word
-cut line
 del line
 
+cut cmd
+cut word
+cut line
 
-ss
+copy cmd
+copy word
+copy line
+copy "a-b"
+copy to slot X
+
+paste from slot X
+
+
+
+
+s
 S
+ss
+SS
+sd
+SD
+s<>
 
- S => cut
-SS => cut word
-SL => cut line
 
-s => del
-ss => del word
-sL => del line
 
-d => copy
-dd => copy word
-dL => copy line
+
 
 
 
