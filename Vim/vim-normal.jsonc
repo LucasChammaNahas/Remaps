@@ -262,7 +262,7 @@
          "after": ["y", "y"]
       },
       {
-         // Strong yank
+         // Yank
          "before": ["D"],
          "after": ["y"]
       },
@@ -277,9 +277,9 @@
          "after": ["y", "y"]
       },
       {
-         // Change
+         // Change with delete
          "before": ["x"],
-         "after": ["c"]
+         "after": ["c", "\"", "_"]
       },
       {
         // Change word with delete
@@ -290,6 +290,11 @@
          // Change line with delete
          "before": ["x", "<leader>"],
          "after": ["c", "\"", "_", "c"]
+      },
+      {
+         // Change with cut
+         "before": ["X"],
+         "after": ["c"]
       },
       {
         // Change word with cut
@@ -322,6 +327,16 @@
          "after": ["d"]
       },
       {
+         // Cut word
+         "before": ["S", "S"],
+         "after": ["v", "i", "w", "d"]
+      },
+      {
+         // Cut line
+         "before": ["S", "<leader>"],
+         "after": ["d", "d"]
+      },
+      {
          // Paste
          "before": ["f"],
          "after": ["g", "P"]
@@ -340,6 +355,16 @@
          // Toggle case
          "before": ["y", "y"],
          "after": ["~"]
+      },
+      {
+         // Select word
+         "before": ["w", "w"],
+         "after": ["v", "i", "w"]
+      },
+      {
+         // Select word
+         "before": ["W", "W"],
+         "after": ["v", "a", "w"]
       },
 
 

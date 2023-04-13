@@ -242,29 +242,39 @@
          "after": ["y"]
       },
       {
-         // Strong yank
+         // Yank
          "before": ["D"],
-         "after": ["Y"]
+         "after": ["y"]
       },
       {
-         // Change
+         // Yank to register 1
+         "before": ["<leader>", "d", "h"],
+         "after": ["\"", "h", "y"]
+      },
+      {
+         // Yank to register 2
+         "before": ["<leader>", "d", "j"],
+         "after": ["\"", "j", "y"]
+      },
+      {
+         // Change with delete
          "before": ["x"],
+         "after": ["\"", "_", "c"]
+      },
+      {
+         // Change with cut
+         "before": ["X"],
          "after": ["c"]
       },
       {
-         // Strong change
-         "before": ["X"],
-         "after": ["C"]
+         // Delete
+         "before": ["s"],
+         "after": ["\"", "_", "d"]
       },
       {
          // Cut
-         "before": ["s"],
-         "after": ["d"]
-      },
-      {
-         // Strong cut
          "before": ["S"],
-         "after": ["D"]
+         "after": ["d"]
       },
       {
          // Paste
@@ -285,11 +295,6 @@
          // Paste
          "before": ["P"],
          "after": ["g", "p", "g", "v", "y"]
-      },
-      {
-         // Toggle case
-         "before": ["y"],
-         "after": ["~"]
       },
       {
          // Solves text being copied as it is pasted
@@ -310,6 +315,11 @@
          // Solves text being copied as it is pasted
          "before": ["F"],
          "after": ["g", "p", "g", "v", "y"]
+      },
+      {
+         // Toggle case
+         "before": ["y"],
+         "after": ["~"]
       },
 
 
