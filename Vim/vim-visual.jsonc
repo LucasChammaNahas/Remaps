@@ -257,6 +257,16 @@
          "after": ["\"", "j", "y"]
       },
       {
+         // Yank to register 3
+         "before": ["<leader>", "d", "k"],
+         "after": ["\"", "k", "y"]
+      },
+      {
+         // Yank to register 4
+         "before": ["<leader>", "d", "l"],
+         "after": ["\"", "l", "y"]
+      },
+      {
          // Change with delete
          "before": ["x"],
          "after": ["\"", "_", "c"]
@@ -267,6 +277,26 @@
          "after": ["c"]
       },
       {
+         // Change and cut to register 1
+         "before": ["<leader>", "X", "h"],
+         "after": ["\"", "h", "c"]
+      },
+      {
+         // Change and cut to register 2
+         "before": ["<leader>", "X", "j"],
+         "after": ["\"", "j", "c"]
+      },
+      {
+         // Change and cut to register 3
+         "before": ["<leader>", "X", "k"],
+         "after": ["\"", "k", "c"]
+      },
+      {
+         // Change and cut to register 4
+         "before": ["<leader>", "X", "l"],
+         "after": ["\"", "l", "c"]
+      },
+      {
          // Delete
          "before": ["s"],
          "after": ["\"", "_", "d"]
@@ -275,6 +305,26 @@
          // Cut
          "before": ["S"],
          "after": ["d"]
+      },
+      {
+         // Cut to register 1
+         "before": ["<leader>", "S", "h"],
+         "after": ["\"", "h", "d"]
+      },
+      {
+         // Cut to register 2
+         "before": ["<leader>", "S", "j"],
+         "after": ["\"", "j", "d"]
+      },
+      {
+         // Cut to register 3
+         "before": ["<leader>", "S", "k"],
+         "after": ["\"", "k", "d"]
+      },
+      {
+         // Cut to register 4
+         "before": ["<leader>", "S", "l"],
+         "after": ["\"", "l", "d"]
       },
       {
          // Paste

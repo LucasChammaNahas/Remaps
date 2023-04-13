@@ -279,7 +279,7 @@
       {
          // Change with delete
          "before": ["x"],
-         "after": ["c", "\"", "_"]
+         "after": ["\"", "_", "c"]
       },
       {
         // Change word with delete
@@ -289,7 +289,7 @@
       {
          // Change line with delete
          "before": ["x", "<leader>"],
-         "after": ["c", "\"", "_", "c"]
+         "after": ["\"", "_", "c", "c"]
       },
       {
          // Change with cut
@@ -309,7 +309,7 @@
       {
          // Delete
          "before": ["s"],
-         "after": ["d", "\"", "_"]
+         "after": ["\"", "_", "d"]
       },
       {
          // Delete word
@@ -319,7 +319,7 @@
       {
          // Delete line
          "before": ["s", "<leader>"],
-         "after": ["d", "\"", "_", "d"]
+         "after": ["\"", "_", "d", "d"]
       },
       {
          // Cut
@@ -350,6 +350,26 @@
          // Paste secondary
          "before": ["P"],
          "after": ["g", "p"]
+      },
+      {
+         // Paste from register 1
+         "before": ["<leader>", "f", "h"],
+         "after": ["\"", "h", "g", "P"]
+      },
+      {
+         // Paste from register 2
+         "before": ["<leader>", "f", "j"],
+         "after": ["\"", "j", "g", "P"]
+      },
+      {
+         // Paste from register 3
+         "before": ["<leader>", "f", "k"],
+         "after": ["\"", "k", "g", "P"]
+      },
+      {
+         // Paste from register 4
+         "before": ["<leader>", "f", "l"],
+         "after": ["\"", "l", "g", "P"]
       },
       {
          // Toggle case
