@@ -327,44 +327,44 @@
          "after": ["\"", "l", "d"]
       },
       {
-         // Paste
-         "before": ["p"],
-         "after": ["g", "p", "g", "v", "y"]
-      },
-      {
-         // Paste
-         "before": ["f"],
-         "after": ["p", "g", "v", "y"]
-      },
-      {
-         // Paste
-         "before": ["F"],
-         "after": ["p", "g", "v", "y"]
-      },
-      {
-         // Paste
-         "before": ["P"],
-         "after": ["g", "p", "g", "v", "y"]
-      },
-      {
-         // Solves text being copied as it is pasted
+         // Paste (solves text being copied as it is pasted)
          "before": ["p"],
          "after": ["p", "g", "v", "y"]
       },
       {
-         // Solves text being copied as it is pasted
+         // Paste (solves text being copied as it is pasted)
          "before": ["f"],
          "after": ["g", "P", "g", "v", "y"]
       },
       {
-         // Solves text being copied as it is pasted
+         // Paste (solves text being copied as it is pasted)
          "before": ["P"],
          "after": ["P", "g", "v", "y"]
       },
       {
-         // Solves text being copied as it is pasted
+         // Paste (solves text being copied as it is pasted)
          "before": ["F"],
          "after": ["g", "p", "g", "v", "y"]
+      },
+      {
+         // Paste from register 1
+         "before": ["<leader>", "f", "h"],
+         "after": ["\"", "h", "g", "P", "g", "v", "y"]
+      },
+      {
+         // Paste from register 2
+         "before": ["<leader>", "f", "j"],
+         "after": ["\"", "j", "g", "P", "g", "v", "y"]
+      },
+      {
+         // Paste from register 3
+         "before": ["<leader>", "f", "k"],
+         "after": ["\"", "k", "g", "P", "g", "v", "y"]
+      },
+      {
+         // Paste from register 4
+         "before": ["<leader>", "f", "l"],
+         "after": ["\"", "l", "g", "P", "g", "v", "y"]
       },
       {
          // Toggle case
