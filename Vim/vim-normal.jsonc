@@ -262,9 +262,14 @@
          "after": ["c"]
       },
       {
-        // Change word
+        // Change word with delete
         "before": ["x", "x"],
         "after": ["v","i","w","\"","_","c"]
+      },
+      {
+        // Change word with cut
+        "before": ["x", "d"],
+        "after": ["v","i","w","c"]
       },
       {
          // Strong change
