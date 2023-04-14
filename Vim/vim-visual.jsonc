@@ -514,7 +514,7 @@
       },
       {
          // Save all files
-         "before": ["<leader>", "S"],
+         "before": ["g", "s"],
          "commands": ["saveAll"]
       },
       {
