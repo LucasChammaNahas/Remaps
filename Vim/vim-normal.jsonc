@@ -338,34 +338,64 @@
       */                            
                                     
       {
-         // Change with delete
+         // Change delete
          "before": ["x"],
          "after": ["\"", "_", "c"]
       },
       {
-         // Change word with delete
+         // Change delete word
          "before": ["x", "x"],
          "after": ["v", "i", "w", "\"", "_", "c"]
       },
       {
-         // Change line with delete
+         // Change delete line
          "before": ["x", "<leader>"],
          "after": ["\"", "_", "c", "c"]
       },
       {
-         // Change with cut
+         // Change cut
          "before": ["X"],
          "after": ["c"]
       },
       {
-         // Change word with cut
+         // Change cut to register A
+         "before": ["<leader>", "X"],
+         "after": ["\"", "a", "c"]
+      },
+      {
+         // Change cut to register B
+         "before": ["<leader>", "<leader>", "X"],
+         "after": ["\"", "b", "c"]
+      },
+      {
+         // Change cut word
          "before": ["X", "X"],
          "after": ["v", "i", "w", "c"]
       },
       {
-         // Change line with cut
+         // Change cut word to register A
+         "before": ["<leader>", "X", "X"],
+         "after": ["v", "i", "w", "\"", "a", "c"]
+      },
+      {
+         // Change cut word to register B
+         "before": ["<leader>", "<leader>", "X", "X"],
+         "after": ["v", "i", "w", "\"", "b", "c"]
+      },
+      {
+         // Change cut line
          "before": ["X", "<leader>"],
          "after": ["c", "c"]
+      },
+      {
+         // Change line to register A
+         "before": ["<leader>", "X", "<leader>"],
+         "after": ["\"", "a", "c", "c"]
+      },
+      {
+         // Change line to register B
+         "before": ["<leader>", "<leader>", "X", "<leader>"],
+         "after": ["\"", "b", "c", "c"]
       },
 
       

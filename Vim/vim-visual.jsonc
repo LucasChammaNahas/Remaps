@@ -288,22 +288,22 @@
       */                            
         
       {
-         // Change with delete
+         // Change delete
          "before": ["x"],
          "after": ["\"", "_", "c"]
       },
       {
-         // Change with cut
+         // Change cut
          "before": ["X"],
          "after": ["c"]
       },
       {
-         // Change and cut to register A
+         // Change cut to register A
          "before": ["<leader>", "X"],
          "after": ["\"", "a", "c"]
       },
       {
-         // Change and cut to register B
+         // Change cut to register B
          "before": ["<leader>", "<leader>", "X"],
          "after": ["\"", "b", "c"]
       },
@@ -771,36 +771,6 @@
          // Uncollapse all
          "before": ["t", "t"],
          "commands": ["editor.unfoldAll"]
-      },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      /********************************************************************************************
-   
-      888                             888                  
-      888                             888                  
-      888                             888                  
-      888       .d88b.   8888b.   .d88888  .d88b.  888d888 
-      888      d8P  Y8b     "88b d88" 888 d8P  Y8b 888P"   
-      888      88888888 .d888888 888  888 88888888 888     
-      888      Y8b.     888  888 Y88b 888 Y8b.     888     
-      88888888  "Y8888  "Y888888  "Y88888  "Y8888  888     
-                                 
-      ********************************************************************************************/
-      
-
-      
+      }      
    ],
 }
