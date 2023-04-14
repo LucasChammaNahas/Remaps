@@ -378,12 +378,12 @@
       },
       {
          // Select word
-         "before": ["w", "w"],
+         "before": ["w"],
          "after": ["v", "i", "w"]
       },
       {
          // Select word
-         "before": ["W", "W"],
+         "before": ["W"],
          "after": ["v", "a", "w"]
       },
 
