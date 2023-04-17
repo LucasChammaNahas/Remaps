@@ -630,7 +630,7 @@
       {
          // Save file
          "before": ["g", "s"],
-         "commands": ["workbench.actions.file.save"]
+         "commands": ["workbench.action.files.save"]
       },
       {
          // Save all files
