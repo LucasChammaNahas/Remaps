@@ -45,8 +45,8 @@
       "when": "textInputFocus"
    },
    {
-      // doesnt work
-      "key": "cmd+space",
+      // Trigger suggest
+      "key": "cmd+g",
       "command": "editor.action.inlineSuggest.trigger"
    },
    {
@@ -472,7 +472,7 @@
 
    {
       // Search project
-      "key": "cmd+alt+9",
+      "key": "cmd+alt+h",
       "command": "workbench.action.findInFiles"
    },
    {
