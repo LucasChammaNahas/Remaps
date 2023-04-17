@@ -1,56 +1,57 @@
 {
-   "workbench.iconTheme": "material-icon-theme",
-   "[javascript]": {
-     "editor.defaultFormatter": "esbenp.prettier-vscode"
-   },
-   "emmet.triggerExpansionOnTab": true,
-   "emmet.includeLanguages": {
-     "javascript": "javascriptreact",
-     "vue-html": "html",
-     "razor": "html",
-     "plaintext": "jade"
-   },
-   "editor.tabSize": 2,
-   "diffEditor.ignoreTrimWhitespace": false,
-   "files.autoSaveDelay": 3000,
-   "[javascriptreact]": {
-     "editor.defaultFormatter": "esbenp.prettier-vscode"
-   },
-   "workbench.colorTheme": "Bearded Theme Monokai Stone",
-   "[scss]": {
-     "editor.defaultFormatter": "esbenp.prettier-vscode"
-   },
-   "workbench.startupEditor": "none",
-   "editor.accessibilitySupport": "off",
-   "[html]": {
-     "editor.defaultFormatter": "esbenp.prettier-vscode"
-   },
-   "git.confirmSync": false,
- 
-   "[jsonc]": {
-     "editor.defaultFormatter": "esbenp.prettier-vscode"
-   },
-   "[css]": {
-     "editor.defaultFormatter": "esbenp.prettier-vscode"
-   },
-   "[json]": {
-     "editor.defaultFormatter": "esbenp.prettier-vscode"
-   },
-   "editor.inlineSuggest.enabled": false,
-   "emmet.showExpandedAbbreviation": "never",
-   "prettier.jsxSingleQuote": true,
-   "prettier.singleQuote": true,
-   "window.zoomLevel": 1,
-   "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+  "window.zoomLevel": 1,
+  "editor.tabSize": 2,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.tree.indent": 8,
+  "workbench.startupEditor": "none",
+  "editor.accessibilitySupport": "off",
+  "git.confirmSync": false,
+
+  // Prettier
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[scss]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },  
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true,
    
-   "workbench.colorCustomizations": {
-      "editor.lineHighlightBackground": "#4cfe49",
-      "editor.selectionBackground": "#6b6b6b",
-      "editor.selectionHighlightBackground": "#6b6b6b",
-      "editor.wordHighlightBackground": "#404040",
-      "editorCursor.foreground": "#ff4949"
+  // Suggestions
+  "editor.quickSuggestions": {
+    "comments": "off",
+    "strings": "off",
+    "other": "off"
+  },
+  "editor.inlineSuggest.enabled": true,
+  "editor.snippetSuggestions": "top",
+
+  // Emmet
+  "emmet.showExpandedAbbreviation": "never",
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "vue-html": "html",
+    "razor": "html",
+    "plaintext": "jade"
   },
  
+  // Word separators
+  "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+   
+  // Appearance
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#4cfe49",
+    "editor.selectionBackground": "#6b6b6b",
+    "editor.selectionHighlightBackground": "#6b6b6b",
+    "editor.wordHighlightBackground": "#404040",
+    "editorCursor.foreground": "#ff4949"
+  },
+  "workbench.colorTheme": "Bearded Theme Monokai Stone",
+  "workbench.iconTheme": "material-icon-theme",
+
+  // VIM
    "vim.leader": "<space>",
    "vim.scroll": 3,
    "vim.cursorStylePerMode.normal": "underline",
@@ -58,14 +59,14 @@
    "vim.useSystemClipboard": true,
    "vim.highlightedyank.enable": true,
    "vim.highlightedyank.color": "rgba(100, 250, 100, 1)",
-   "vim.highlightedyank.duration": 100,
+   "vim.highlightedyank.duration": 150,
    "vim.hlsearch": true,
    "vim.mouseSelectionGoesIntoVisualMode": false,
    "vim.statusBarColors.insert": "#50ff05",
    "vim.useCtrlKeys": false,
    "vim.foldfix": true,
    "vim.handleKeys": {
-     "<C-d>": false,
+     "<C-d>": false
    },
 
 }

@@ -294,17 +294,17 @@
       },
       {
          // Change cut
-         "before": ["X"],
+         "before": ["<leader>", "x"],
          "after": ["c"]
       },
       {
          // Change cut to register A
-         "before": ["<leader>", "X"],
+         "before": ["<leader>", "<leader>", "x"],
          "after": ["\"", "a", "c"]
       },
       {
          // Change cut to register B
-         "before": ["<leader>", "<leader>", "X"],
+         "before": ["<leader>", "<leader>", "<leader>", "x"],
          "after": ["\"", "b", "c"]
       },
 
@@ -338,17 +338,17 @@
         
       {
          // Cut
-         "before": ["S"],
+         "before": ["<leader>", "s"],
          "after": ["d"]
       },
       {
          // Cut to register A
-         "before": ["<leader>", "S"],
+         "before": ["<leader>", "<leader>", "s"],
          "after": ["\"", "a", "d"]
       },
       {
          // Cut to register B
-         "before": ["<leader>", "<leader>", "S"],
+         "before": ["<leader>", "<leader>", "<leader>", "s"],
          "after": ["\"", "b", "d"]
       },
 

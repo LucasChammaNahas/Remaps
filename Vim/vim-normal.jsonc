@@ -354,47 +354,47 @@
       },
       {
          // Change cut
-         "before": ["X"],
+         "before": ["<leader>", "x"],
          "after": ["c"]
       },
       {
          // Change cut to register A
-         "before": ["<leader>", "X"],
+         "before": ["<leader>", "<leader>", "x"],
          "after": ["\"", "a", "c"]
       },
       {
          // Change cut to register B
-         "before": ["<leader>", "<leader>", "X"],
+         "before": ["<leader>", "<leader>", "<leader>", "x"],
          "after": ["\"", "b", "c"]
       },
       {
          // Change cut word
-         "before": ["X", "X"],
+         "before": ["<leader>", "x", "x"],
          "after": ["v", "i", "w", "c"]
       },
       {
          // Change cut word to register A
-         "before": ["<leader>", "X", "X"],
+         "before": ["<leader>", "<leader>", "x", "x"],
          "after": ["v", "i", "w", "\"", "a", "c"]
       },
       {
          // Change cut word to register B
-         "before": ["<leader>", "<leader>", "X", "X"],
+         "before": ["<leader>", "<leader>", "<leader>", "x", "x"],
          "after": ["v", "i", "w", "\"", "b", "c"]
       },
       {
          // Change cut line
-         "before": ["X", "<leader>"],
+         "before": ["<leader>", "x", "<leader>"],
          "after": ["c", "c"]
       },
       {
          // Change line to register A
-         "before": ["<leader>", "X", "<leader>"],
+         "before": ["<leader>", "<leader>", "x", "<leader>"],
          "after": ["\"", "a", "c", "c"]
       },
       {
          // Change line to register B
-         "before": ["<leader>", "<leader>", "X", "<leader>"],
+         "before": ["<leader>", "<leader>", "<leader>", "x", "<leader>"],
          "after": ["\"", "b", "c", "c"]
       },
 
@@ -438,47 +438,47 @@
         
       {
          // Cut
-         "before": ["S"],
+         "before": ["<leader>", "s"],
          "after": ["d"]
       },
       {
          // Cut to register A
-         "before": ["<leader>", "S"],
+         "before": ["<leader>", "<leader>", "s"],
          "after": ["\"", "a", "d"]
       },
       {
          // Cut to register B
-         "before": ["<leader>", "<leader>", "S"],
+         "before": ["<leader>", "<leader>", "<leader>", "s"],
          "after": ["\"", "b", "d"]
       },
       {
          // Cut word
-         "before": ["S", "S"],
+         "before": ["<leader>", "s", "s"],
          "after": ["v", "i", "w", "d"]
       },
       {
          // Cut word to register A
-         "before": ["<leader>", "S", "S"],
+         "before": ["<leader>", "<leader>", "s", "s"],
          "after": ["v", "i", "w", "\"", "a", "d"]
       },
       {
          // Cut word to register B
-         "before": ["<leader>", "<leader>", "S", "S"],
+         "before": ["<leader>", "<leader>", "<leader>", "s", "s"],
          "after": ["v", "i", "w", "\"", "b", "d"]
       },
       {
          // Cut line
-         "before": ["S", "<leader>"],
+         "before": ["<leader>", "s", "<leader>"],
          "after": ["d", "d"]
       },
       {
          // Cut line to register A
-         "before": ["<leader>", "S", "<leader>"],
+         "before": ["<leader>", "<leader>", "s", "<leader>"],
          "after": ["\"", "a", "d", "d"]
       },
       {
          // Cut line to register B
-         "before": ["<leader>", "<leader>", "S", "<leader>"],
+         "before": ["<leader>", "<leader>", "<leader>", "s", "<leader>"],
          "after": ["\"", "b", "d", "d"]
       },
 
