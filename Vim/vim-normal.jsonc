@@ -629,12 +629,12 @@
         
       {
          // Save file
-         "before": ["<leader>", "s"],
-         "commands": ["workbench.action.files.save"]
+         "before": ["g", "s"],
+         "commands": ["workbench.actions.file.save"]
       },
       {
          // Save all files
-         "before": ["g", "s"],
+         "before": ["g", "g", "s"],
          "commands": ["saveAll"]
       },
       {
@@ -756,7 +756,7 @@
 
       {
          // Go to global definition
-         "before": ["G", "D"],
+         "before": ["g", "g", "d"],
          "after": ["g", "D"]
       },
       {
@@ -776,12 +776,12 @@
       },
       {
          // Go to top of document
-         "before": ["G", "I"],
+         "before": ["g", "g", "i"],
          "after": ["g", "g"]
       },
       {
          // Go to bottom of document
-         "before": ["G", "K"],
+         "before": ["g", "g", "k"],
          "after": ["G"]
       },
       {
@@ -791,7 +791,7 @@
       },
       {
          // Go forth in change list
-         "before": ["G", "N"],
+         "before": ["g", "g", "n"],
          "after": ["g", ","]
       },
 
