@@ -55,7 +55,7 @@
    "vim.leader": "<space>",
    "vim.scroll": 3,
    "vim.cursorStylePerMode.normal": "underline",
-   "vim.timeout": 1000,
+   "vim.timeout": 5000,
    "vim.useSystemClipboard": true,
    "vim.highlightedyank.enable": true,
    "vim.highlightedyank.color": "rgba(100, 250, 100, 1)",
