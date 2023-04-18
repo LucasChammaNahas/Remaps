@@ -46,13 +46,13 @@
    },
    {
       // Trigger suggest
-      "key": "cmd+g",
+      "key": "ctrl+g",
       "command": "editor.action.triggerSuggest",
       "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
    },
    {
       // Open selected file when on file tree
-      "key": "cmd+enter",
+      "key": "ctrl+enter",
       "command": "explorer.openAndPassFocus",
       "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus"
    },
@@ -176,30 +176,24 @@
       "command": "-git.viewFileHistory"
    },
    {
-      // Deals with ctrl c not working on mac
-      "key": "cmd+c",
-      "command": "-extension.vim_cmd+c",
-      "when": "editorTextFocus && vim.active && vim.overrideCopy && vim.use<D-c> && !inDebugRepl"
-   },
-   {
       // Disable toggle panel
-      "key": "cmd+j",
+      "key": "ctrl+j",
       "command": "-workbench.action.togglePanel"
    },
    {
       // Quit all instances
-      "key": "cmd+q",
+      "key": "ctrl+q",
       "command": "-workbench.action.quit"
    },
    {
       // Deactivates trigger suggest
-      "key": "cmd+i",
+      "key": "ctrl+i",
       "command": "-editor.action.triggerSuggest",
       "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
    },
    {
       // Deactivates find next match
-      "key": "cmd+g",
+      "key": "ctrl+g",
       "command": "-editor.action.nextMatchFindAction",
       "when": "editorFocus"
    },
@@ -431,37 +425,37 @@
 
    {
       // Move line up
-      "key": "cmd+alt+i",
+      "key": "ctrl+alt+i",
       "command": "editor.action.moveLinesUpAction",
       "when": "editorTextFocus"
    },
    {
       // Move line down
-      "key": "cmd+alt+k",
+      "key": "ctrl+alt+k",
       "command": "editor.action.moveLinesDownAction",
       "when": "editorTextFocus"
    },
    {
       // Copy line up
-      "key": "cmd+alt+u",
+      "key": "ctrl+alt+u",
       "command": "editor.action.copyLinesUpAction",
       "when": "editorTextFocus"
    },
    {
       // Copy line down
-      "key": "cmd+alt+j",
+      "key": "ctrl+alt+j",
       "command": "editor.action.copyLinesDownAction",
       "when": "editorTextFocus"
    },
    {
       // Multiple cursors up
-      "key": "cmd+alt+o",
+      "key": "ctrl+alt+o",
       "command": "cursorColumnSelectUp",
       "when": "editorTextFocus"
    },
    {
       // Multiple cursors down
-      "key": "cmd+alt+l",
+      "key": "ctrl+alt+l",
       "command": "cursorColumnSelectDown",
       "when": "editorTextFocus"
    },
@@ -479,27 +473,27 @@
 
    {
       // Search project
-      "key": "cmd+alt+p",
+      "key": "ctrl+alt+p",
       "command": "workbench.action.findInFiles"
    },
    {
       // Commits / Source control
-      "key": "cmd+alt+0",
+      "key": "ctrl+alt+0",
       "command": "workbench.view.scm"
    },
    {
       // Terminal
-      "key": "cmd+alt+7",
+      "key": "ctrl+alt+7",
       "command": "workbench.action.terminal.toggleTerminal"
    },
    {
       // File tree explorer
-      "key": "cmd+alt+n",
+      "key": "ctrl+alt+n",
       "command": "workbench.view.explorer"
    },
    {
       // Toggle sidebar
-      "key": "cmd+alt+m",
+      "key": "ctrl+alt+m",
       "command": "workbench.action.toggleSidebarVisibility"
    },
 
@@ -542,12 +536,12 @@
 
    {
       // New file
-      "key": "cmd+shift+n",
+      "key": "ctrl+shift+n",
       "command": "workbench.action.files.newUntitledFile"
    },
    {
       // New window
-      "key": "cmd+shift+m",
+      "key": "ctrl+shift+m",
       "command": "workbench.action.newWindow"
    },
 
@@ -582,32 +576,32 @@
 
    {
       // Move group up
-      "key": "ctrl+alt+u",
+      "key": "win+alt+u",
       "command": "workbench.action.moveActiveEditorGroupUp"
    },
    {
       // Move group down
-      "key": "ctrl+alt+j",
+      "key": "win+alt+j",
       "command": "workbench.action.moveActiveEditorGroupDown"
    },
    {
       // Focus group above
-      "key": "ctrl+alt+i",
+      "key": "win+alt+i",
       "command": "workbench.action.focusAboveGroup"
    },
    {
       // Focus group below
-      "key": "ctrl+alt+k",
+      "key": "win+alt+k",
       "command": "workbench.action.focusBelowGroup"
    },
    {
       // Move editor to group above
-      "key": "ctrl+alt+o",
+      "key": "win+alt+o",
       "command": "workbench.action.moveEditorToAboveGroup"
    },
    {
       // Move editor to group below
-      "key": "ctrl+alt+l",
+      "key": "win+alt+l",
       "command": "workbench.action.moveEditorToBelowGroup"
    }
  ]
