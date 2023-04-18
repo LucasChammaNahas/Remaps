@@ -265,12 +265,12 @@
       },
       {
          // Yank to register A
-         "before": ["<leader>", "d"],
+         "before": ["g", "d"],
          "after": ["\"", "a", "y"]
       },
       {
          // Yank to register B
-         "before": ["<leader>", "<leader>", "d"],
+         "before": ["g", "g", "d"],
          "after": ["\"", "b", "y"]
       },
 
@@ -294,17 +294,17 @@
       },
       {
          // Change cut
-         "before": ["<leader>", "x"],
+         "before": ["g", "x"],
          "after": ["c"]
       },
       {
          // Change cut to register A
-         "before": ["<leader>", "<leader>", "x"],
+         "before": ["g", "g", "x"],
          "after": ["\"", "a", "c"]
       },
       {
          // Change cut to register B
-         "before": ["<leader>", "<leader>", "<leader>", "x"],
+         "before": ["g", "g", "g", "x"],
          "after": ["\"", "b", "c"]
       },
 
@@ -338,17 +338,17 @@
         
       {
          // Cut
-         "before": ["<leader>", "s"],
+         "before": ["g", "s"],
          "after": ["d"]
       },
       {
          // Cut to register A
-         "before": ["<leader>", "<leader>", "s"],
+         "before": ["g", "g", "s"],
          "after": ["\"", "a", "d"]
       },
       {
          // Cut to register B
-         "before": ["<leader>", "<leader>", "<leader>", "s"],
+         "before": ["g", "g", "g", "s"],
          "after": ["\"", "b", "d"]
       },
 
@@ -385,22 +385,22 @@
       },
       {
          // Paste from register A
-         "before": ["<leader>", "f"],
+         "before": ["g", "f"],
          "after": ["\"", "a", "g", "P", "g", "v", "y"]
       },
       {
          // Paste from register B
-         "before": ["<leader>", "<leader>", "f"],
+         "before": ["g", "g", "f"],
          "after": ["\"", "b", "g", "P", "g", "v", "y"]
       },
       {
          // Paste from register A
-         "before": ["<leader>", "p"],
+         "before": ["g", "p"],
          "after": ["\"", "a", "p", "g", "v", "y"]
       },
       {
          // Paste from register B
-         "before": ["<leader>", "<leader>", "p"],
+         "before": ["g", "g", "p"],
          "after": ["\"", "b", "p", "g", "v", "y"]
       },
 
@@ -509,12 +509,12 @@
         
       {
          // Save file
-         "before": ["g", "s"],
+         "before": ["<leader>", "s"],
          "commands": ["workbench.action.files.save"]
       },
       {
          // Save all files
-         "before": ["g", "g", "s"],
+         "before": ["<leader>", "<leader>", "s"],
          "commands": ["saveAll"]
       },
       {

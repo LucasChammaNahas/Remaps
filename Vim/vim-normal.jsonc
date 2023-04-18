@@ -290,12 +290,12 @@
       },
       {
          // Yank to register A
-         "before": ["<leader>", "d"],
+         "before": ["g", "d"],
          "after": ["\"", "a", "y"]
       },
       {
          // Yank to register B
-         "before": ["<leader>", "<leader>", "d"],
+         "before": ["g", "g", "d"],
          "after": ["\"", "b", "y"]
       },
       {
@@ -305,12 +305,12 @@
       },
       {
          // Yank word to register A
-         "before": ["<leader>", "d", "d"],
+         "before": ["g", "d", "d"],
          "after": ["v", "i", "w", "\"", "a", "y"]
       },
       {
          // Yank word to register B
-         "before": ["<leader>", "<leader>", "d", "d"],
+         "before": ["g", "g", "d", "d"],
          "after": ["v", "i", "w", "\"", "b", "y"]
       },
       {
@@ -320,27 +320,27 @@
       },
       {
          // Yank WORD to register A
-         "before": ["<leader>", "D", "D"],
+         "before": ["G", "D", "D"],
          "after": ["B", "v", "E", "\"", "a", "y"]
       },
       {
          // Yank WORD to register B
-         "before": ["<leader>", "<leader>", "D", "D"],
+         "before": ["G", "G", "D", "D"],
          "after": ["B", "v", "E", "\"", "b", "y"]
       },
       {
          // Yank line
-         "before": ["d", "<leader>"],
+         "before": ["d", "k"],
          "after": ["y", "y"]
       },
       {
          // Yank line to register A
-         "before": ["<leader>", "d", "<leader>"],
+         "before": ["g", "d", "k"],
          "after": ["\"", "a", "y", "y"]
       },
       {
          // Yank line to register B
-         "before": ["<leader>", "<leader>", "d", "<leader>"],
+         "before": ["g", "g", "d", "k"],
          "after": ["\"", "b", "y", "y"]
       },
 
@@ -369,67 +369,67 @@
       },
       {
          // Change delete line
-         "before": ["x", "<leader>"],
+         "before": ["x", "k"],
          "after": ["\"", "_", "c", "c"]
       },
       {
          // Change cut
-         "before": ["<leader>", "x"],
+         "before": ["g", "x"],
          "after": ["c"]
       },
       {
          // Change cut to register A
-         "before": ["<leader>", "<leader>", "x"],
+         "before": ["g", "g", "x"],
          "after": ["\"", "a", "c"]
       },
       {
          // Change cut to register B
-         "before": ["<leader>", "<leader>", "<leader>", "x"],
+         "before": ["g", "g", "g", "x"],
          "after": ["\"", "b", "c"]
       },
       {
          // Change cut word
-         "before": ["<leader>", "x", "x"],
+         "before": ["g", "x", "x"],
          "after": ["v", "i", "w", "c"]
       },
       {
          // Change cut word to register A
-         "before": ["<leader>", "<leader>", "x", "x"],
+         "before": ["g", "g", "x", "x"],
          "after": ["v", "i", "w", "\"", "a", "c"]
       },
       {
          // Change cut word to register B
-         "before": ["<leader>", "<leader>", "<leader>", "x", "x"],
+         "before": ["g", "g", "g", "x", "x"],
          "after": ["v", "i", "w", "\"", "b", "c"]
       },
       {
          // Change cut WORD
-         "before": ["<leader>", "X", "X"],
+         "before": ["G", "X", "X"],
          "after": ["B", "v", "E", "c"]
       },
       {
          // Change cut WORD to register A
-         "before": ["<leader>", "<leader>", "X", "X"],
+         "before": ["G", "G", "X", "X"],
          "after": ["B", "v", "E", "\"", "a", "c"]
       },
       {
          // Change cut WORD to register B
-         "before": ["<leader>", "<leader>", "<leader>", "X", "X"],
+         "before": ["G", "G", "G", "X", "X"],
          "after": ["B", "v", "E", "\"", "b", "c"]
       },
       {
          // Change cut line
-         "before": ["<leader>", "x", "<leader>"],
+         "before": ["g", "x", "k"],
          "after": ["c", "c"]
       },
       {
          // Change line to register A
-         "before": ["<leader>", "<leader>", "x", "<leader>"],
+         "before": ["g", "g", "x", "k"],
          "after": ["\"", "a", "c", "c"]
       },
       {
          // Change line to register B
-         "before": ["<leader>", "<leader>", "<leader>", "x", "<leader>"],
+         "before": ["g", "g", "g", "x", "k"],
          "after": ["\"", "b", "c", "c"]
       },
 
@@ -461,7 +461,7 @@
       },
       {
          // Delete line
-         "before": ["s", "<leader>"],
+         "before": ["s", "k"],
          "after": ["\"", "_", "d", "d"]
       },
 
@@ -478,62 +478,62 @@
         
       {
          // Cut
-         "before": ["<leader>", "s"],
+         "before": ["g", "s"],
          "after": ["d"]
       },
       {
          // Cut to register A
-         "before": ["<leader>", "<leader>", "s"],
+         "before": ["g", "g", "s"],
          "after": ["\"", "a", "d"]
       },
       {
          // Cut to register B
-         "before": ["<leader>", "<leader>", "<leader>", "s"],
+         "before": ["g", "g", "g", "s"],
          "after": ["\"", "b", "d"]
       },
       {
          // Cut word
-         "before": ["<leader>", "s", "s"],
+         "before": ["g", "s", "s"],
          "after": ["v", "i", "w", "d"]
       },
       {
          // Cut word to register A
-         "before": ["<leader>", "<leader>", "s", "s"],
+         "before": ["g", "g", "s", "s"],
          "after": ["v", "i", "w", "\"", "a", "d"]
       },
       {
          // Cut word to register B
-         "before": ["<leader>", "<leader>", "<leader>", "s", "s"],
+         "before": ["g", "g", "g", "s", "s"],
          "after": ["v", "i", "w", "\"", "b", "d"]
       },
       {
          // Cut WORD
-         "before": ["<leader>", "S", "S"],
+         "before": ["G", "S", "S"],
          "after": ["B", "v", "E", "d"]
       },
       {
          // Cut WORD to register A
-         "before": ["<leader>", "<leader>", "S", "S"],
+         "before": ["G", "G", "S", "S"],
          "after": ["B", "v", "E", "\"", "a", "d"]
       },
       {
          // Cut WORD to register B
-         "before": ["<leader>", "<leader>", "<leader>", "S", "S"],
+         "before": ["G", "G", "G", "S", "S"],
          "after": ["B", "v", "E", "\"", "b", "d"]
       },
       {
          // Cut line
-         "before": ["<leader>", "s", "<leader>"],
+         "before": ["g", "s", "k"],
          "after": ["d", "d"]
       },
       {
          // Cut line to register A
-         "before": ["<leader>", "<leader>", "s", "<leader>"],
+         "before": ["g", "g", "s", "k"],
          "after": ["\"", "a", "d", "d"]
       },
       {
          // Cut line to register B
-         "before": ["<leader>", "<leader>", "<leader>", "s", "<leader>"],
+         "before": ["g", "g", "g", "s", "k"],
          "after": ["\"", "b", "d", "d"]
       },
 
@@ -565,22 +565,22 @@
       },
       {
          // Paste from register A
-         "before": ["<leader>", "f"],
+         "before": ["g", "f"],
          "after": ["\"", "a", "g", "P"]
       },
       {
          // Paste from register B
-         "before": ["<leader>", "<leader>", "f"],
+         "before": ["g", "g", "f"],
          "after": ["\"", "b", "g", "P"]
       },
       {
          // Paste from register A
-         "before": ["<leader>", "p"],
+         "before": ["g", "p"],
          "after": ["\"", "a", "p"]
       },
       {
          // Paste from register B
-         "before": ["<leader>", "<leader>", "p"],
+         "before": ["g", "g", "p"],
          "after": ["\"", "b", "p"]
       },
 
@@ -684,12 +684,12 @@
         
       {
          // Save file
-         "before": ["g", "s"],
+         "before": ["<leader>", "s"],
          "commands": ["workbench.action.files.save"]
       },
       {
          // Save all files
-         "before": ["g", "g", "s"],
+         "before": ["<leader>", "<leader>", "s"],
          "commands": ["saveAll"]
       },
       {
