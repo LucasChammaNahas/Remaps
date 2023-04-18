@@ -472,7 +472,7 @@
 
    {
       // Search project
-      "key": "cmd+alt+h",
+      "key": "cmd+alt+p",
       "command": "workbench.action.findInFiles"
    },
    {
