@@ -47,7 +47,8 @@
    {
       // Trigger suggest
       "key": "cmd+g",
-      "command": "editor.action.inlineSuggest.trigger"
+      "command": "editor.action.triggerSuggest",
+      "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
    },
    {
       // Open selected file when on file tree
@@ -195,6 +196,12 @@
       "key": "cmd+i",
       "command": "-editor.action.triggerSuggest",
       "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+   },
+   {
+      // Deactivates find next match
+      "key": "cmd+g",
+      "command": "-editor.action.nextMatchFindAction",
+      "when": "editorFocus"
    },
 
 
