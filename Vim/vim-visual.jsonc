@@ -130,12 +130,12 @@
       {
          // Strong left
          "before": ["J"],
-         "after": ["B"]
+         "after": ["b"]
       },
       {
          // Strong right
          "before": ["L"],
-         "after": ["E"]
+         "after": ["e"]
       },
 
 
@@ -265,12 +265,12 @@
       },
       {
          // Yank to register A
-         "before": ["g", "d"],
+         "before": ["n", "d"],
          "after": ["\"", "a", "y"]
       },
       {
          // Yank to register B
-         "before": ["g", "g", "d"],
+         "before": ["n", "n", "d"],
          "after": ["\"", "b", "y"]
       },
 
@@ -294,17 +294,17 @@
       },
       {
          // Change cut
-         "before": ["g", "x"],
+         "before": ["n", "x"],
          "after": ["c"]
       },
       {
          // Change cut to register A
-         "before": ["g", "g", "x"],
+         "before": ["n", "n", "x"],
          "after": ["\"", "a", "c"]
       },
       {
          // Change cut to register B
-         "before": ["g", "g", "g", "x"],
+         "before": ["n", "n", "n", "x"],
          "after": ["\"", "b", "c"]
       },
 
@@ -338,17 +338,17 @@
         
       {
          // Cut
-         "before": ["g", "s"],
+         "before": ["n", "s"],
          "after": ["d"]
       },
       {
          // Cut to register A
-         "before": ["g", "g", "s"],
+         "before": ["n", "n", "s"],
          "after": ["\"", "a", "d"]
       },
       {
          // Cut to register B
-         "before": ["g", "g", "g", "s"],
+         "before": ["n", "n", "n", "s"],
          "after": ["\"", "b", "d"]
       },
 
@@ -385,22 +385,22 @@
       },
       {
          // Paste from register A
-         "before": ["g", "f"],
+         "before": ["n", "f"],
          "after": ["\"", "a", "g", "P", "g", "v", "y"]
       },
       {
          // Paste from register B
-         "before": ["g", "g", "f"],
+         "before": ["n", "n", "f"],
          "after": ["\"", "b", "g", "P", "g", "v", "y"]
       },
       {
          // Paste from register A
-         "before": ["g", "p"],
+         "before": ["n", "p"],
          "after": ["\"", "a", "p", "g", "v", "y"]
       },
       {
          // Paste from register B
-         "before": ["g", "g", "p"],
+         "before": ["n", "n", "p"],
          "after": ["\"", "b", "p", "g", "v", "y"]
       },
 
@@ -635,19 +635,9 @@
 
 
       {
-         // Go to definition
-         "before": ["n", "d"],
-         "after": ["g", "d"]
-      },
-      {
          // Go to global definition
-         "before": ["n", "n", "d"],
+         "before": ["g", "g", "d"],
          "after": ["g", "D"]
-      },
-      {
-         // Go to file
-         "before": ["n", "d"],
-         "after": ["g", "f"]
       },
       {
          // Go to top of screen
