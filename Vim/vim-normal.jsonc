@@ -810,9 +810,19 @@
 
 
       {
+         // Go to definition
+         "before": ["n", "d"],
+         "after": ["g", "d"]
+      },
+      {
          // Go to global definition
-         "before": ["g", "g", "d"],
+         "before": ["n", "n", "d"],
          "after": ["g", "D"]
+      },
+      {
+         // Go to file
+         "before": ["n", "d"],
+         "after": ["g", "f"]
       },
       {
          // Go to top of screen
