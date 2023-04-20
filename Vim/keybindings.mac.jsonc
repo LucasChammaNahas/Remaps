@@ -56,6 +56,18 @@
       "command": "explorer.openAndPassFocus",
       "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus"
    },
+   {
+      // Scroll line up
+      "key": "shift+cmd+i",
+      "command": "scrollLineUp",
+      "when": "textInputFocus"
+   },
+   {
+      // Scroll line down
+      "key": "shift+cmd+k",
+      "command": "scrollLineDown",
+      "when": "textInputFocus"
+   },
 
    
 
@@ -202,6 +214,12 @@
       "key": "cmd+g",
       "command": "-editor.action.nextMatchFindAction",
       "when": "editorFocus"
+   },
+   {
+      // Disables delete line
+      "key": "shift+cmd+k",
+      "command": "-editor.action.deleteLines",
+      "when": "textInputFocus && !editorReadonly"
    },
 
 
