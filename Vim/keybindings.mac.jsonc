@@ -581,14 +581,14 @@
 
 
    {
-      // Move group up
+      // Move editor to group above
       "key": "ctrl+alt+u",
-      "command": "workbench.action.moveActiveEditorGroupUp"
+      "command": "workbench.action.moveEditorToAboveGroup"
    },
    {
-      // Move group down
+      // Move editor to group below
       "key": "ctrl+alt+j",
-      "command": "workbench.action.moveActiveEditorGroupDown"
+      "command": "workbench.action.moveEditorToBelowGroup"
    },
    {
       // Focus group above
@@ -601,14 +601,14 @@
       "command": "workbench.action.focusBelowGroup"
    },
    {
-      // Move editor to group above
+      // Move group up
       "key": "ctrl+alt+o",
-      "command": "workbench.action.moveEditorToAboveGroup"
+      "command": "workbench.action.moveActiveEditorGroupUp"
    },
    {
-      // Move editor to group below
+      // Move group down
       "key": "ctrl+alt+l",
-      "command": "workbench.action.moveEditorToBelowGroup"
+      "command": "workbench.action.moveActiveEditorGroupDown"
    }
  ]
  
