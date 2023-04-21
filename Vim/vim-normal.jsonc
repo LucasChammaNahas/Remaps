@@ -781,12 +781,12 @@
       },
       {
          // Scroll page until cursor is on top
-         "before": ["b", "i"],
+         "before": ["b", "k"],
          "after": ["z", "t"]
       },
       {
          // Scroll page until cursor is at the bottom
-         "before": ["b", "k"],
+         "before": ["b", "i"],
          "after": ["z", "b"]
       },
 
