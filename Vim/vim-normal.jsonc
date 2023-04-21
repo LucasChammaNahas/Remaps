@@ -267,9 +267,14 @@
          "after": ["E", "v", "B"]
       },
       {
-         // One time insert
+         // One time insert right
          "before": ["n", "r"],
          "after": ["a", " ", "<ESC>", "r"]
+      },
+      {
+         // One time insert left
+         "before": ["g", "r"],
+         "after": ["i", " ", "<ESC>", "r"]
       },
 
 
