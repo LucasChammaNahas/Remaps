@@ -1,0 +1,946 @@
+{
+   "vim.normalModeKeyBindingsNonRecursive": [
+      /********************************************************************************************
+   
+      888b     d888               888                   
+      8888b   d8888               888                   
+      88888b.d88888               888                   
+      888Y88888P888  .d88b.   .d88888  .d88b.  .d8888b  
+      888 Y888P 888 d88""88b d88" 888 d8P  Y8b 88K      
+      888  Y8P  888 888  888 888  888 88888888 "Y8888b. 
+      888   "   888 Y88..88P Y88b 888 Y8b.          X88 
+      888       888  "Y88P"   "Y88888  "Y8888   88888P' 
+                                 
+      ********************************************************************************************/
+
+
+
+      /*
+      .d88888b             oo   dP            dP       oo                   
+      88.    "'                 88            88                            
+      `Y88888b. dP  dP  dP dP d8888P .d8888b. 88d888b. dP 88d888b. .d8888b. 
+            `8b 88  88  88 88   88   88'  `"" 88'  `88 88 88'  `88 88'  `88 
+      d8'   .8P 88.88b.88' 88   88   88.  ... 88    88 88 88    88 88.  .88 
+       Y88888P  8888P Y8P  dP   dP   `88888P' dP    dP dP dP    dP `8888P88 
+                                                                        .88 
+                                                                    d8888P   
+      */
+
+      {
+         // Visual Line
+         "before": ["c", "v"],
+         "after": ["V"]
+      },
+      {
+         // Visual Block
+         "before": ["c", "c"],
+         "after": ["<C-v>"]
+      },
+      {
+         // Visual Block
+         "before": ["C"],
+         "after": ["<C-v>"]
+      },
+
+
+
+      /*
+      dP                                       dP   
+      88                                       88   
+      88 88d888b. .d8888b. .d8888b. 88d888b. d8888P 
+      88 88'  `88 Y8ooooo. 88ooood8 88'  `88   88   
+      88 88    88       88 88.  ... 88         88   
+      dP dP    dP `88888P' `88888P' dP         dP   
+      */
+
+      {
+         // Insert before
+         "before": ["u"],
+         "after": ["i"]
+      },
+      {
+         // Insert start of line
+         "before": ["U"],
+         "after": ["I"]
+      },
+      {
+         // Insert after
+         "before": ["o"],
+         "after": ["a"]
+      },
+      {
+         // Insert end of line
+         "before": ["O"],
+         "after": ["A"]
+      },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      /********************************************************************************************
+   
+      888b     d888                                                            888             
+      8888b   d8888                                                            888             
+      88888b.d88888                                                            888             
+      888Y88888P888  .d88b.  888  888  .d88b.  88888b.d88b.   .d88b.  88888b.  888888 .d8888b  
+      888 Y888P 888 d88""88b 888  888 d8P  Y8b 888 "888 "88b d8P  Y8b 888 "88b 888    88K      
+      888  Y8P  888 888  888 Y88  88P 88888888 888  888  888 88888888 888  888 888    "Y8888b. 
+      888   "   888 Y88..88P  Y8bd8P  Y8b.     888  888  888 Y8b.     888  888 Y88b.       X88 
+      888       888  "Y88P"    Y88P    "Y8888  888  888  888  "Y8888  888  888  "Y888  88888P' 
+                                 
+      ********************************************************************************************/
+
+
+
+      /*
+       888888ba                    oo          
+       88    `8b                               
+      a88aaaa8P' .d8888b. .d8888b. dP .d8888b. 
+       88   `8b. 88'  `88 Y8ooooo. 88 88'  `"" 
+       88    .88 88.  .88       88 88 88.  ... 
+       88888888P `88888P8 `88888P' dP `88888P' 
+      */
+
+      {
+         // Up
+         "before": ["i"],
+         "after": ["k"]
+      },
+      {
+         // Up + scroll
+         "before": ["I"],
+         "after": ["3", "k", "z", "z"]
+      },      
+      {
+         // Down
+         "before": ["k"],
+         "after": ["j"]
+      },
+      {
+         // Down + scroll
+         "before": ["K"],
+         "after": ["3", "j", "z", "z"]
+      },
+      {
+         // Left
+         "before": ["j"],
+         "after": ["h"]
+      },
+      {
+         // Strong left
+         "before": ["J"],
+         "after": ["b"]
+      },
+      {
+         // Strong right
+         "before": ["L"],
+         "after": ["e"]
+      },
+
+
+
+      /*
+      dP        oo                   
+      88                             
+      88        dP 88d888b. .d8888b. 
+      88        88 88'  `88 88ooood8 
+      88        88 88    88 88.  ... 
+      88888888P dP dP    dP `88888P' 
+      */
+
+      {
+         // Home
+         "before": ["h"],
+         "after": ["^"]
+      },
+      {
+         // Strong home
+         "before": ["H"],
+         "after": ["0"]
+      },
+      {
+         // End
+         "before": [";"],
+         "after": ["g", "_"]
+      },
+      {
+         // Strong end
+         "before": [":"],
+         "after": ["$"]
+      },
+
+
+
+      /*
+      d888888P                                       dP                  dP 
+         88                                          88                  88 
+         88    .d8888b. 88d888b. .d8888b. .d8888b. d8888P .d8888b. .d888b88 
+         88    88'  `88 88'  `88 88'  `88 88ooood8   88   88ooood8 88'  `88 
+         88    88.  .88 88       88.  .88 88.  ...   88   88.  ... 88.  .88 
+         dP    `88888P8 dP       `8888P88 `88888P'   dP   `88888P' `88888P8 
+                                      .88                                   
+                                  d8888P                                     
+      */
+
+      {
+         // Target
+         "before": ["a"],
+         "after": ["f"]
+      },
+      {
+         // Target backwards
+         "before": ["A"],
+         "after": ["F"]
+      },
+      {
+         // Repeat target
+         "before": [","],
+         "after": [";"]
+      },
+      {
+         // Repeat target backwards fix
+         "before": ["g", "z", "a"],
+         "after": [","]
+      },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      /********************************************************************************************
+   
+       .d88888b.                                     888                              
+      d88P" "Y88b                                    888                              
+      888     888                                    888                              
+      888     888 88888b.   .d88b.  888d888  8888b.  888888  .d88b.  888d888 .d8888b  
+      888     888 888 "88b d8P  Y8b 888P"       "88b 888    d88""88b 888P"   88K      
+      888     888 888  888 88888888 888     .d888888 888    888  888 888     "Y8888b. 
+      Y88b. .d88P 888 d88P Y8b.     888     888  888 Y88b.  Y88..88P 888          X88 
+      "Y88888P"  88888P"   "Y8888  888     "Y888888  "Y888  "Y88P"  888      88888P' 
+                  888                                                                 
+                  888                                                                 
+                  888                                                                 
+                                 
+      ********************************************************************************************/
+      
+      
+
+      {
+         // Toggle case
+         "before": ["y", "y"],
+         "after": ["~"]
+      },
+      {
+         // Select word
+         "before": ["w"],
+         "after": ["v", "i", "w"]
+      },
+      {
+         // Select WORD
+         "before": ["W"],
+         "after": ["E", "v", "B"]
+      },
+      {
+         // Select WORD
+         "before": ["e"],
+         "after": ["E", "v", "B"]
+      },
+      {
+         // One time insert right
+         "before": ["n", "r"],
+         "after": ["a", " ", "<ESC>", "r"]
+      },
+      {
+         // One time insert left
+         "before": ["g", "r"],
+         "after": ["i", " ", "<ESC>", "r"]
+      },
+
+
+
+      /*
+      dP    dP                   dP       
+      Y8.  .8P                   88       
+       Y8aa8P  .d8888b. 88d888b. 88  .dP  
+         88    88'  `88 88'  `88 88888"   
+         88    88.  .88 88    88 88  `8b. 
+         dP    `88888P8 dP    dP dP   `YP 
+      */                            
+        
+      {
+         // Yank
+         "before": ["d"],
+         "after": ["y"]
+      },
+      {
+         // Yank
+         "before": ["D"],
+         "after": ["y"]
+      },
+      {
+         // Yank to register A
+         "before": ["n", "d"],
+         "after": ["\"", "a", "y"]
+      },
+      {
+         // Yank to register B
+         "before": ["n", "n", "d"],
+         "after": ["\"", "b", "y"]
+      },
+      {
+         // Yank word
+         "before": ["d", "d"],
+         "after": ["v", "i", "w", "y"]
+      },
+      {
+         // Yank word to register A
+         "before": ["n", "d", "d"],
+         "after": ["v", "i", "w", "\"", "a", "y"]
+      },
+      {
+         // Yank word to register B
+         "before": ["n", "n", "d", "d"],
+         "after": ["v", "i", "w", "\"", "b", "y"]
+      },
+      {
+         // Yank WORD
+         "before": ["D", "D"],
+         "after": ["E", "v", "B", "y"]
+      },
+      {
+         // Yank WORD to register A
+         "before": ["N", "D", "D"],
+         "after": ["E", "v", "B", "\"", "a", "y"]
+      },
+      {
+         // Yank WORD to register B
+         "before": ["N", "N", "D", "D"],
+         "after": ["E", "v", "B", "\"", "b", "y"]
+      },
+      {
+         // Yank line
+         "before": ["d", "k"],
+         "after": ["y", "y"]
+      },
+      {
+         // Yank line to register A
+         "before": ["n", "d", "k"],
+         "after": ["\"", "a", "y", "y"]
+      },
+      {
+         // Yank line to register B
+         "before": ["n", "n", "d", "k"],
+         "after": ["\"", "b", "y", "y"]
+      },
+
+
+
+      /*
+       a88888b. dP                                           
+      d8'   `88 88                                           
+      88        88d888b. .d8888b. 88d888b. .d8888b. .d8888b. 
+      88        88'  `88 88'  `88 88'  `88 88'  `88 88ooood8 
+      Y8.   .88 88    88 88.  .88 88    88 88.  .88 88.  ... 
+       Y88888P' dP    dP `88888P8 dP    dP `8888P88 `88888P' 
+                                                .88          
+                                            d8888P           
+      */                            
+                                    
+      {
+         // Change delete
+         "before": ["x"],
+         "after": ["\"", "_", "c"]
+      },
+      {
+         // Change delete word
+         "before": ["x", "x"],
+         "after": ["v", "i", "w", "\"", "_", "c"]
+      },
+      {
+         // Change delete line
+         "before": ["x", "k"],
+         "after": ["\"", "_", "c", "c"]
+      },
+      {
+         // Change cut
+         "before": ["n", "x"],
+         "after": ["c"]
+      },
+      {
+         // Change cut to register A
+         "before": ["n", "n", "x"],
+         "after": ["\"", "a", "c"]
+      },
+      {
+         // Change cut to register B
+         "before": ["n", "n", "n", "x"],
+         "after": ["\"", "b", "c"]
+      },
+      {
+         // Change cut word
+         "before": ["n", "x", "x"],
+         "after": ["v", "i", "w", "c"]
+      },
+      {
+         // Change cut word to register A
+         "before": ["n", "n", "x", "x"],
+         "after": ["v", "i", "w", "\"", "a", "c"]
+      },
+      {
+         // Change cut word to register B
+         "before": ["n", "n", "n", "x", "x"],
+         "after": ["v", "i", "w", "\"", "b", "c"]
+      },
+      {
+         // Change cut WORD
+         "before": ["N", "X", "X"],
+         "after": ["E", "v", "B", "c"]
+      },
+      {
+         // Change cut WORD to register A
+         "before": ["N", "N", "X", "X"],
+         "after": ["E", "v", "B", "\"", "a", "c"]
+      },
+      {
+         // Change cut WORD to register B
+         "before": ["N", "N", "N", "X", "X"],
+         "after": ["E", "v", "B", "\"", "b", "c"]
+      },
+      {
+         // Change cut line
+         "before": ["n", "x", "k"],
+         "after": ["c", "c"]
+      },
+      {
+         // Change line to register A
+         "before": ["n", "n", "x", "k"],
+         "after": ["\"", "a", "c", "c"]
+      },
+      {
+         // Change line to register B
+         "before": ["n", "n", "n", "x", "k"],
+         "after": ["\"", "b", "c", "c"]
+      },
+
+      
+
+      /*
+      888888ba           dP            dP            
+      88    `8b          88            88            
+      88     88 .d8888b. 88 .d8888b. d8888P .d8888b. 
+      88     88 88ooood8 88 88ooood8   88   88ooood8 
+      88    .8P 88.  ... 88 88.  ...   88   88.  ... 
+      8888888P  `88888P' dP `88888P'   dP   `88888P' 
+      */                            
+        
+      {
+         // Delete
+         "before": ["s"],
+         "after": ["\"", "_", "d"]
+      },
+      {
+         // Delete word
+         "before": ["s", "s"],
+         "after": ["v", "i", "w", "\"", "_", "d"]
+      },
+      {
+         // Delete WORD
+         "before": ["S", "S"],
+         "after": ["E", "v", "B", "\"", "_", "d"]
+      },
+      {
+         // Delete line
+         "before": ["s", "k"],
+         "after": ["\"", "_", "d", "d"]
+      },
+
+      
+
+      /*
+       a88888b.            dP   
+      d8'   `88            88   
+      88        dP    dP d8888P 
+      88        88    88   88   
+      Y8.   .88 88.  .88   88   
+       Y88888P' `88888P'   dP   
+      */                            
+        
+      {
+         // Cut
+         "before": ["n", "s"],
+         "after": ["d"]
+      },
+      {
+         // Cut to register A
+         "before": ["n", "n", "s"],
+         "after": ["\"", "a", "d"]
+      },
+      {
+         // Cut to register B
+         "before": ["n", "n", "n", "s"],
+         "after": ["\"", "b", "d"]
+      },
+      {
+         // Cut word
+         "before": ["n", "s", "s"],
+         "after": ["v", "i", "w", "d"]
+      },
+      {
+         // Cut word to register A
+         "before": ["n", "n", "s", "s"],
+         "after": ["v", "i", "w", "\"", "a", "d"]
+      },
+      {
+         // Cut word to register B
+         "before": ["n", "n", "n", "s", "s"],
+         "after": ["v", "i", "w", "\"", "b", "d"]
+      },
+      {
+         // Cut WORD
+         "before": ["N", "S", "S"],
+         "after": ["E", "v", "B", "d"]
+      },
+      {
+         // Cut WORD to register A
+         "before": ["N", "N", "S", "S"],
+         "after": ["E", "v", "B", "\"", "a", "d"]
+      },
+      {
+         // Cut WORD to register B
+         "before": ["N", "N", "N", "S", "S"],
+         "after": ["E", "v", "B", "\"", "b", "d"]
+      },
+      {
+         // Cut line
+         "before": ["n", "s", "k"],
+         "after": ["d", "d"]
+      },
+      {
+         // Cut line to register A
+         "before": ["n", "n", "s", "k"],
+         "after": ["\"", "a", "d", "d"]
+      },
+      {
+         // Cut line to register B
+         "before": ["n", "n", "n", "s", "k"],
+         "after": ["\"", "b", "d", "d"]
+      },
+
+      
+
+      /*
+       888888ba                      dP            
+       88    `8b                     88            
+      a88aaaa8P' .d8888b. .d8888b. d8888P .d8888b. 
+       88        88'  `88 Y8ooooo.   88   88ooood8 
+       88        88.  .88       88   88   88.  ... 
+       dP        `88888P8 `88888P'   dP   `88888P' 
+      */                            
+        
+      {
+         // Paste
+         "before": ["f"],
+         "after": ["g", "P"]
+      },
+      {
+         // Paste secondary
+         "before": ["F"],
+         "after": ["P"]
+      },
+      {
+         // Paste secondary
+         "before": ["P"],
+         "after": ["g", "p"]
+      },
+      {
+         // Paste from register A
+         "before": ["n", "f"],
+         "after": ["\"", "a", "g", "P"]
+      },
+      {
+         // Paste from register B
+         "before": ["n", "n", "f"],
+         "after": ["\"", "b", "g", "P"]
+      },
+      {
+         // Paste from register A
+         "before": ["n", "p"],
+         "after": ["\"", "a", "p"]
+      },
+      {
+         // Paste from register B
+         "before": ["n", "n", "p"],
+         "after": ["\"", "b", "p"]
+      },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      /********************************************************************************************
+   
+       .d8888b.                                                              888          
+      d88P  Y88b                                                             888          
+      888    888                                                             888          
+      888         .d88b.  88888b.d88b.  88888b.d88b.   8888b.  88888b.   .d88888 .d8888b  
+      888        d88""88b 888 "888 "88b 888 "888 "88b     "88b 888 "88b d88" 888 88K      
+      888    888 888  888 888  888  888 888  888  888 .d888888 888  888 888  888 "Y8888b. 
+      Y88b  d88P Y88..88P 888  888  888 888  888  888 888  888 888  888 Y88b 888      X88 
+       "Y8888P"   "Y88P"  888  888  888 888  888  888 "Y888888 888  888  "Y88888  88888P' 
+                                                                                    
+      ********************************************************************************************/
+      
+
+
+      {
+         // Undo
+         "before": ["z"],
+         "commands": ["undo"]
+      },
+      {
+         // Redo
+         "before": ["Z"],
+         "commands": ["redo"]
+      },
+      {
+         // Insert line below and enter insert mode
+         "before": ["<Enter>"],
+         "after": ["o"]
+      },
+      {
+         // Insert line above and enter insert mode fix
+         "before": ["g", "z", "b"],
+         "after": ["O"]
+      },
+      {
+         // Insert command
+         "before": ["|"],
+         "after": [":"]
+      },
+      {
+         // Join with line below with space
+         "before": ["<leader>", "l"],
+         "after": ["J"]
+      },
+
+      
+
+      /*
+       a88888b.                            
+      d8'   `88                            
+      88        .d8888b. .d8888b. .d8888b. 
+      88        88'  `88 Y8ooooo. 88ooood8 
+      Y8.   .88 88.  .88       88 88.  ... 
+       Y88888P' `88888P8 `88888P' `88888P' 
+      */                            
+        
+      {
+         // Toggle case operator
+         "before": ["<leader>", "y"],
+         "after": ["g", "~"]
+      },
+      {
+         // Lowercase operator
+         "before": ["<leader>", "u"],
+         "after": ["g", "u"]
+      },
+      {
+         // Uppercase operator
+         "before": ["<leader>", "U"],
+         "after": ["g", "U"]
+      },
+
+      
+
+      /*
+      .d88888b                             
+      88.    "'                            
+      `Y88888b. .d8888b. dP   .dP .d8888b. 
+            `8b 88'  `88 88   d8' 88ooood8 
+      d8'   .8P 88.  .88 88 .88'  88.  ... 
+       Y88888P  `88888P8 8888P'   `88888P' 
+      */                            
+        
+      {
+         // Save file
+         "before": ["<leader>", "s"],
+         "commands": ["workbench.action.files.save"]
+      },
+      {
+         // Save all files
+         "before": ["<leader>", "<leader>", "s"],
+         "commands": ["saveAll"]
+      },
+      {
+         // Close editor
+         "before": ["<leader>", "w", "w"],
+         "commands": ["workbench.action.closeActiveEditor"]
+      },
+      {
+         // Close window
+         "before": ["<leader>", "W", "W"],
+         "after": ["Z", "Q"]
+      },
+
+
+
+      /*
+      8888ba.88ba                    dP                
+      88  `8b  `8b                   88                
+      88   88   88 .d8888b. 88d888b. 88  .dP  .d8888b. 
+      88   88   88 88'  `88 88'  `88 88888"   Y8ooooo. 
+      88   88   88 88.  .88 88       88  `8b.       88 
+      dP   dP   dP `88888P8 dP       dP   `YP `88888P' 
+      */
+
+      {
+         // Go to mark
+         "before": ["m"],
+         "after": ["`"]
+      },
+      {
+         // Set to mark
+         "before": ["M"],
+         "after": ["m"]
+      },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      /********************************************************************************************
+   
+       .d8888b.                            888 888 
+      d88P  Y88b                           888 888 
+      Y88b.                                888 888 
+       "Y888b.    .d8888b 888d888  .d88b.  888 888 
+          "Y88b. d88P"    888P"   d88""88b 888 888 
+            "888 888      888     888  888 888 888 
+      Y88b  d88P Y88b.    888     Y88..88P 888 888 
+       "Y8888P"   "Y8888P 888      "Y88P"  888 888 
+                                 
+      ********************************************************************************************/
+
+
+      
+      {
+         // Maps z to b
+         "before": ["b"],
+         "after": ["z"]
+      },
+      {
+         // Maps Z to b
+         "before": ["B"],
+         "after": ["z"]
+      },
+      {
+         // Scroll page until cursor is on center
+         "before": ["b", "j"],
+         "after": ["z", "z"]
+      },
+      {
+         // Scroll page until cursor is on top
+         "before": ["b", "k"],
+         "after": ["z", "t"]
+      },
+      {
+         // Scroll page until cursor is at the bottom
+         "before": ["b", "i"],
+         "after": ["z", "b"]
+      },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      /********************************************************************************************
+   
+       .d8888b.           
+      d88P  Y88b          
+      888    888          
+      888         .d88b.  
+      888  88888 d88""88b 
+      888    888 888  888 
+      Y88b  d88P Y88..88P 
+       "Y8888P88  "Y88P"  
+                          
+      ********************************************************************************************/
+      
+
+
+      {
+         // Go to global definition
+         "before": ["g", "g", "d"],
+         "after": ["g", "D"]
+      },
+      {
+         // Go to top of screen
+         "before": ["g", "i"],
+         "after": ["H"]
+      },
+      {
+         // Go to middle of screen
+         "before": ["g", "j"],
+         "after": ["M"]
+      },
+      {
+         // Go to bottom of screen
+         "before": ["g", "k"],
+         "after": ["L"]
+      },
+      {
+         // Go to top of document
+         "before": ["g", "g", "i"],
+         "after": ["g", "g"]
+      },
+      {
+         // Go to bottom of document
+         "before": ["g", "g", "k"],
+         "after": ["G"]
+      },
+      {
+         // Go back in change list
+         "before": ["g", "n"],
+         "after": ["g", ";"]
+      },
+      {
+         // Go forth in change list
+         "before": ["g", "g", "n"],
+         "after": ["g", ","]
+      },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      /********************************************************************************************
+   
+       .d8888b.           888 888                                     
+      d88P  Y88b          888 888                                     
+      888    888          888 888                                     
+      888         .d88b.  888 888  8888b.  88888b.  .d8888b   .d88b.  
+      888        d88""88b 888 888     "88b 888 "88b 88K      d8P  Y8b 
+      888    888 888  888 888 888 .d888888 888  888 "Y8888b. 88888888 
+      Y88b  d88P Y88..88P 888 888 888  888 888 d88P      X88 Y8b.     
+       "Y8888P"   "Y88P"  888 888 "Y888888 88888P"   88888P'  "Y8888  
+                                           888                        
+                                           888                        
+                                           888                             
+                                 
+      ********************************************************************************************/
+      
+
+
+      {
+         // Manually define a fold up to motion
+         "before": ["t", "h"],
+         "after": ["z", "f"]
+      },
+      {
+         // Delete fold
+         "before": ["t", "s"],
+         "after": ["z", "d"]
+      },
+      {
+         // Toggle collapse region
+         "before": ["t", "j"],
+         "commands": ["editor.toggleFold"]
+      },
+      {
+         // Collapse region 1
+         "before": ["t", "y"],
+         "commands": ["editor.foldLevel1"]
+      },
+      {
+         // Collapse region 2
+         "before": ["t", "u"],
+         "commands": ["editor.foldLevel2"]
+      },
+      {
+         // Collapse region 3
+         "before": ["t", "i"],
+         "commands": ["editor.foldLevel3"]
+      },
+      {
+         // Collapse region 4
+         "before": ["t", "o"],
+         "commands": ["editor.foldLevel4"]
+      },
+      {
+         // Collapse region 5
+         "before": ["t", "p"],
+         "commands": ["editor.foldLevel5"]
+      },
+      {
+         // Collapse all
+         "before": ["T", "T"],
+         "commands": ["editor.foldAll"]
+      },
+      {
+         // Uncollapse all
+         "before": ["t", "t"],
+         "commands": ["editor.unfoldAll"]
+      }
+   ],
+}

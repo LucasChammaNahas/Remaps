@@ -1,0 +1,16 @@
+{
+   "vim.neovimPath": "C:\\Program Files\\neovim\\bin\\nvim.exe",
+   "vim.leader": "<space>",
+   "vim.scroll": 3,
+   "vim.cursorStylePerMode.normal": "underline",
+   "vim.timeout": 1000,
+   "vim.useSystemClipboard": true,
+   "vim.highlightedyank.enable": true,
+   "vim.highlightedyank.color": "rgba(100, 250, 100, 1)",
+   "vim.highlightedyank.duration": 100,
+   "vim.hlsearch": true,
+   "vim.mouseSelectionGoesIntoVisualMode": false,
+   "vim.statusBarColors.insert": "#50ff05",
+   "vim.foldfix": true,
+   "vim.useCtrlKeys": false,
+}
