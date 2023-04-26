@@ -6,9 +6,6 @@
 ; *capslock up::send % (a_priorkey = "capslock") ? "{ctrl up}{esc}" : "{ctrl up}"
 
 
-
-
-
 ; OLD WAY ----------------------------------------------------------------
 ; 
 ; lastCapslockDownTimestamp := A_TickCount
