@@ -1,5 +1,5 @@
 +CapsLock::CapsLock
-*capslock up::send % (A_PriorKey = "Capslock") ? "{esc}" : ""
+*CapsLock Up::send % (A_PriorKey = "CapsLock") ? "{Esc}" : ""
 
 
 ; *capslock::send {ctrl down}
