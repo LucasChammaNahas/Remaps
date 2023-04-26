@@ -20,6 +20,8 @@ return
   isCapslockDown := false
 return
 
+; *capslock::send {ctrl down}
+; *capslock up::send % (a_priorkey = "capslock") ? "{ctrl up}{esc}" : "{ctrl up}"
 
 
 
