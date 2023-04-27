@@ -86,7 +86,7 @@
       "command": "vim.remap",
       "when": "editorTextFocus && vim.mode == 'Normal'",
       "args": {
-         "after": ["3", "i"]
+         "after": ["2", "i"]
       }
    },
    {
@@ -95,7 +95,7 @@
       "command": "vim.remap",
       "when": "editorTextFocus && vim.mode == 'Visual'",
       "args": {
-         "after": ["3", "i"]
+         "after": ["2", "i"]
       }
    },
    {
@@ -104,7 +104,7 @@
       "command": "vim.remap",
       "when": "editorTextFocus && vim.mode == 'Normal'",
       "args": {
-         "after": ["3", "k"]
+         "after": ["2", "k"]
       }
    },
    {
@@ -113,7 +113,7 @@
       "command": "vim.remap",
       "when": "editorTextFocus && vim.mode == 'Visual'",
       "args": {
-         "after": ["3", "k"]
+         "after": ["2", "k"]
       }
    },
    {
@@ -122,7 +122,7 @@
       "command": "vim.remap",
       "when": "editorTextFocus && vim.mode == 'Normal'",
       "args": {
-         "after": ["5", "j"]
+         "after": ["3", "j"]
       }
    },
    {
@@ -131,7 +131,7 @@
       "command": "vim.remap",
       "when": "editorTextFocus && vim.mode == 'Visual'",
       "args": {
-         "after": ["5", "j"]
+         "after": ["3", "j"]
       }
    },
    {
@@ -140,7 +140,7 @@
       "command": "vim.remap",
       "when": "editorTextFocus && vim.mode == 'Normal'",
       "args": {
-         "after": ["5", "l"]
+         "after": ["3", "l"]
       }
    },
    {
@@ -149,7 +149,7 @@
       "command": "vim.remap",
       "when": "editorTextFocus && vim.mode == 'Visual'",
       "args": {
-         "after": ["5", "l"]
+         "after": ["3", "l"]
       }
    },
    {
