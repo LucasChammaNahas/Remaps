@@ -67,7 +67,19 @@
    88  .d8P   88  88   88   88 
    888888'    dP  dP   dP   dP 
    */
-                          
+      
+   {
+      // Prevents from going into normal mode when closing suggest box
+      "key": "escape",
+      "command": "extension.vim_escape",
+      "when": "editorTextFocus && vim.active && !inDebugRepl && !suggestWidgetVisible"
+   },
+   {
+      // Prevents from going into normal mode when closing suggest box
+      "key": "escape",
+      "command": "-extension.vim_escape",
+      "when": "editorTextFocus && vim.active && !inDebugRepl"
+   },
    {
       // Strong move cursor up
       "key": "up",
