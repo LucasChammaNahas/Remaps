@@ -509,27 +509,41 @@
 
    {
       // Search project
-      "key": "cmd+alt+p",
-      "command": "workbench.action.findInFiles"
+      "key": "ctrl+alt+p",
+      "command": "workbench.action.findInFiles",
+      "when": "textInputFocus"
+   },
+   {
+      // Returns to editor
+      "key": "ctrl+alt+p",
+      "command": "workbench.action.focusActiveEditorGroup",
+      "when": "!textInputFocus"
    },
    {
       // Commits / Source control
-      "key": "cmd+alt+0",
+      "key": "ctrl+alt+0",
       "command": "workbench.view.scm"
    },
    {
       // Terminal
-      "key": "cmd+alt+7",
+      "key": "ctrl+alt+7",
       "command": "workbench.action.terminal.toggleTerminal"
    },
    {
       // File tree explorer
-      "key": "cmd+alt+n",
-      "command": "workbench.view.explorer"
+      "key": "ctrl+alt+n",
+      "command": "workbench.view.explorer",
+      "when": "textInputFocus"
+   },
+   {
+      // Returns to editor
+      "key": "ctrl+alt+n",
+      "command": "workbench.action.focusActiveEditorGroup",
+      "when": "!textInputFocus"
    },
    {
       // Toggle sidebar
-      "key": "cmd+alt+m",
+      "key": "ctrl+alt+m",
       "command": "workbench.action.toggleSidebarVisibility"
    },
 

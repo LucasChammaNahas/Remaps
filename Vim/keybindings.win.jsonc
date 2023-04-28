@@ -486,7 +486,14 @@
    {
       // Search project
       "key": "ctrl+alt+p",
-      "command": "workbench.action.findInFiles"
+      "command": "workbench.action.findInFiles",
+      "when": "textInputFocus"
+   },
+   {
+      // Returns to editor
+      "key": "ctrl+alt+p",
+      "command": "workbench.action.focusActiveEditorGroup",
+      "when": "!textInputFocus"
    },
    {
       // Commits / Source control
@@ -501,7 +508,14 @@
    {
       // File tree explorer
       "key": "ctrl+alt+n",
-      "command": "workbench.view.explorer"
+      "command": "workbench.view.explorer",
+      "when": "textInputFocus"
+   },
+   {
+      // Returns to editor
+      "key": "ctrl+alt+n",
+      "command": "workbench.action.focusActiveEditorGroup",
+      "when": "!textInputFocus"
    },
    {
       // Toggle sidebar
