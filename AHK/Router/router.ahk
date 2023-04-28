@@ -16,7 +16,7 @@
 #Include, %A_WorkingDir%\Hotstrings\emojis.ahk
 
 ; ==> HotKeys <================================================================
-#Include, %A_WorkingDir%\Hotkeys\clipboard.ahk
+; #Include, %A_WorkingDir%\Hotkeys\clipboard.ahk
 #Include, %A_WorkingDir%\Hotkeys\navigationText.ahk
 #Include, %A_WorkingDir%\Hotkeys\navigationWindow.ahk
 ; #Include, %A_WorkingDir%\Hotkeys\navigationMouse.ahk
