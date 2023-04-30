@@ -393,21 +393,6 @@
          "after": ["\"", "_", "c"]
       },
       {
-         // Change delete word
-         "before": ["x", "x"],
-         "after": ["v", "i", "w", "\"", "_", "c"]
-      },
-      {
-         // Change delete WORD
-         "before": ["X", "X"],
-         "after": ["E", "v", "B", "\"", "_", "c"]
-      },
-      {
-         // Change delete line
-         "before": ["x", "k"],
-         "after": ["\"", "_", "c", "c"]
-      },
-      {
          // Change cut to register A
          "before": ["n", "x"],
          "after": ["\"", "a", "c"]
@@ -421,6 +406,11 @@
          // Change cut to register C
          "before": ["n", "n", "n", "x"],
          "after": ["\"", "c", "c"]
+      },
+      {
+         // Change delete word
+         "before": ["x", "x"],
+         "after": ["v", "i", "w", "\"", "_", "c"]
       },
       {
          // Change cut word to register A
@@ -438,6 +428,11 @@
          "after": ["v", "i", "w", "\"", "c", "c"]
       },
       {
+         // Change delete WORD
+         "before": ["X", "X"],
+         "after": ["E", "v", "B", "\"", "_", "c"]
+      },
+      {
          // Change cut WORD to register A
          "before": ["N", "X", "X"],
          "after": ["E", "v", "B", "\"", "a", "c"]
@@ -453,17 +448,22 @@
          "after": ["E", "v", "B", "\"", "c", "c"]
       },
       {
-         // Change line to register A
+         // Change delete line
+         "before": ["x", "k"],
+         "after": ["\"", "_", "c", "c"]
+      },
+      {
+         // Change cut line to register A
          "before": ["n", "x", "k"],
          "after": ["\"", "a", "c", "c"]
       },
       {
-         // Change line to register B
+         // Change cut line to register B
          "before": ["n", "n", "x", "k"],
          "after": ["\"", "b", "c", "c"]
       },
       {
-         // Change line to register B
+         // Change cut line to register B
          "before": ["n", "n", "n", "x", "k"],
          "after": ["\"", "c", "c", "c"]
       },
