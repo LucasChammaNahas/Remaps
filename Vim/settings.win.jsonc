@@ -2,7 +2,9 @@
   // Editor
   "breadcrumbs.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
+  "editor.cursorWidth": 2,
   "editor.tabSize": 2,
+  "editor.fontSize": 18,
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.columnSelection": false,
@@ -26,7 +28,9 @@
   "typescript.preferences.quoteStyle": "single",
   "workbench.editor.labelFormat": "short",
   "workbench.startupEditor": "none",
+  "window.zoomLevel": -1.5,
   "workbench.tree.indent": 8,
+  "workbench.editor.wrapTabs": true,
 
   // Prettier
   "prettier.printWidth": 120,
@@ -68,7 +72,9 @@
     "editor.selectionBackground": "#6b6b6b",
     "editor.selectionHighlightBackground": "#6b6b6b",
     "editor.wordHighlightBackground": "#404040",
-    "editorCursor.foreground": "#ff4949"
+    "editorCursor.foreground": "#ff4949",
+    "tab.activeBorder": "#4cfe49",
+    "tab.activeBackground": "#222"
   },
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Bearded Theme Vivid Black",
@@ -78,7 +84,6 @@
   "material-icon-theme.activeIconPack": "react",
 
   // VIM ----------------------------------------------------------
-
   "vim.leader": "<space>",
   "vim.scroll": 3,
   "vim.cursorStylePerMode.normal": "underline",
