@@ -566,7 +566,7 @@
       },
       {
          // Set to mark
-         "before": ["M"],
+         "before": ["m", "m"],
          "after": ["m"]
       },
 
