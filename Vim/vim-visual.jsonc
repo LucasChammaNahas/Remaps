@@ -273,6 +273,11 @@
          "before": ["n", "n", "d"],
          "after": ["\"", "b", "y"]
       },
+      {
+         // Yank to register C
+         "before": ["n", "n", "n", "d"],
+         "after": ["\"", "c", "y"]
+      },
 
 
 
@@ -293,19 +298,19 @@
          "after": ["\"", "_", "c"]
       },
       {
-         // Change cut
-         "before": ["n", "x"],
-         "after": ["c"]
-      },
-      {
          // Change cut to register A
-         "before": ["n", "n", "x"],
+         "before": ["n", "x"],
          "after": ["\"", "a", "c"]
       },
       {
          // Change cut to register B
-         "before": ["n", "n", "n", "x"],
+         "before": ["n", "n", "x"],
          "after": ["\"", "b", "c"]
+      },
+      {
+         // Change cut to register C
+         "before": ["n", "n", "n", "x"],
+         "after": ["\"", "c", "c"]
       },
 
       
@@ -321,7 +326,7 @@
         
       {
          // Delete
-         "before": ["s"],
+         "before": ["a"],
          "after": ["\"", "_", "d"]
       },
 
@@ -338,18 +343,23 @@
         
       {
          // Cut
-         "before": ["n", "s"],
+         "before": ["s"],
          "after": ["d"]
       },
       {
          // Cut to register A
-         "before": ["n", "n", "s"],
+         "before": ["n", "s"],
          "after": ["\"", "a", "d"]
       },
       {
          // Cut to register B
-         "before": ["n", "n", "n", "s"],
+         "before": ["n", "n", "s"],
          "after": ["\"", "b", "d"]
+      },
+      {
+         // Cut to register C
+         "before": ["n", "n", "n", "s"],
+         "after": ["\"", "c", "d"]
       },
 
       
@@ -365,23 +375,8 @@
         
       {
          // Paste (solves text being copied as it is pasted)
-         "before": ["p"],
-         "after": ["p", "g", "v", "y"]
-      },
-      {
-         // Paste (solves text being copied as it is pasted)
          "before": ["f"],
          "after": ["g", "P", "g", "v", "y"]
-      },
-      {
-         // Paste (solves text being copied as it is pasted)
-         "before": ["P"],
-         "after": ["P", "g", "v", "y"]
-      },
-      {
-         // Paste (solves text being copied as it is pasted)
-         "before": ["F"],
-         "after": ["g", "p", "g", "v", "y"]
       },
       {
          // Paste from register A
@@ -394,6 +389,16 @@
          "after": ["\"", "b", "g", "P", "g", "v", "y"]
       },
       {
+         // Paste from register C
+         "before": ["n", "n", "n", "f"],
+         "after": ["\"", "c", "g", "P", "g", "v", "y"]
+      },
+      {
+         // Paste (solves text being copied as it is pasted)
+         "before": ["p"],
+         "after": ["p", "g", "v", "y"]
+      },
+      {
          // Paste from register A
          "before": ["n", "p"],
          "after": ["\"", "a", "p", "g", "v", "y"]
@@ -402,6 +407,21 @@
          // Paste from register B
          "before": ["n", "n", "p"],
          "after": ["\"", "b", "p", "g", "v", "y"]
+      },
+      {
+         // Paste from register C
+         "before": ["n", "n", "n", "p"],
+         "after": ["\"", "c", "p", "g", "v", "y"]
+      },
+      {
+         // Paste (solves text being copied as it is pasted)
+         "before": ["F"],
+         "after": ["g", "p", "g", "v", "y"]
+      },
+      {
+         // Paste (solves text being copied as it is pasted)
+         "before": ["P"],
+         "after": ["P", "g", "v", "y"]
       },
 
 
