@@ -6,9 +6,9 @@
 
   ;Scroll
   Up::    Send  {Ctrl Up}{WheelUp}{Ctrl Down}
-  Down::  Send  {Ctrl Up}{WheelDown} {Ctrl Down}
+  Down::  Send  {Ctrl Up}{WheelDown}{Ctrl Down}
   Left::  Send +{Ctrl Up}{WheelUp}{Ctrl Down}
-  Right:: Send +{Ctrl Up}{WheelDown} {Ctrl Down}
+  Right:: Send +{Ctrl Up}{WheelDown}{Ctrl Down}
   
   ; Normal arrows
   i:: Send {Ctrl Up}{Up}{Ctrl Down}
