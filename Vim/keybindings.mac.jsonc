@@ -15,18 +15,6 @@
 
 
    {
-      // Indent text
-      "key": "alt+tab",
-      "command": "editor.action.indentLines",
-      "when": "editorTextFocus && !editorReadonly"
-   },
-   {
-      // Outdent text
-      "key": "shift+tab",
-      "command": "editor.action.outdentLines",
-      "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus"
-   },
-   {
       // Backspace
       "key": "Backspace",
       "command": "deleteLeft",

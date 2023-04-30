@@ -694,6 +694,16 @@
          "before": ["g", "g", "n"],
          "after": ["g", ","]
       },
+      {
+         // Indent line
+         "before": ["g", "o"],
+         "commands": ["editor.action.indentLines"]
+      },
+      {
+         // Outdent line
+         "before": ["g", "u"],
+         "commands": ["editor.action.outdentLines"]
+      },
 
 
 
