@@ -78,16 +78,7 @@
       // Strong move cursor up
       "key": "up",
       "command": "vim.remap",
-      "when": "editorTextFocus && vim.mode == 'Normal'",
-      "args": {
-         "after": ["2", "i"]
-      }
-   },
-   {
-      // Strong move cursor up
-      "key": "up",
-      "command": "vim.remap",
-      "when": "editorTextFocus && vim.mode == 'Visual'",
+      "when": "editorTextFocus && vim.mode != 'Insert'",
       "args": {
          "after": ["2", "i"]
       }
@@ -96,16 +87,7 @@
       // Strong move cursor down
       "key": "down",
       "command": "vim.remap",
-      "when": "editorTextFocus && vim.mode == 'Normal'",
-      "args": {
-         "after": ["2", "k"]
-      }
-   },
-   {
-      // Strong move cursor down
-      "key": "down",
-      "command": "vim.remap",
-      "when": "editorTextFocus && vim.mode == 'Visual'",
+      "when": "editorTextFocus && vim.mode != 'Insert'",
       "args": {
          "after": ["2", "k"]
       }
@@ -114,16 +96,7 @@
       // Strong move cursor left
       "key": "left",
       "command": "vim.remap",
-      "when": "editorTextFocus && vim.mode == 'Normal'",
-      "args": {
-         "after": ["3", "j"]
-      }
-   },
-   {
-      // Strong move cursor left
-      "key": "left",
-      "command": "vim.remap",
-      "when": "editorTextFocus && vim.mode == 'Visual'",
+      "when": "editorTextFocus && vim.mode != 'Insert'",
       "args": {
          "after": ["3", "j"]
       }
@@ -132,16 +105,7 @@
       // Strong move cursor right
       "key": "right",
       "command": "vim.remap",
-      "when": "editorTextFocus && vim.mode == 'Normal'",
-      "args": {
-         "after": ["3", "l"]
-      }
-   },
-   {
-      // Strong move cursor right
-      "key": "right",
-      "command": "vim.remap",
-      "when": "editorTextFocus && vim.mode == 'Visual'",
+      "when": "editorTextFocus && vim.mode != 'Insert'",
       "args": {
          "after": ["3", "l"]
       }
