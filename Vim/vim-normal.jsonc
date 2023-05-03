@@ -481,22 +481,22 @@
         
       {
          // Delete
-         "before": ["a"],
+         "before": ["s"],
          "after": ["\"", "_", "d"]
       },
       {
          // Delete word
-         "before": ["a", "a"],
+         "before": ["s", "s"],
          "after": ["v", "i", "w", "\"", "_", "d"]
       },
       {
          // Delete WORD
-         "before": ["A", "A"],
+         "before": ["S", "S"],
          "after": ["E", "v", "B", "\"", "_", "d"]
       },
       {
          // Delete line
-         "before": ["a", "k"],
+         "before": ["s", "k"],
          "after": ["\"", "_", "d", "d"]
       },
 
@@ -513,82 +513,82 @@
         
       {
          // Cut
-         "before": ["s"],
+         "before": ["a"],
          "after": ["d"]
       },
       {
          // Cut to register A
-         "before": ["n", "s"],
+         "before": ["n", "a"],
          "after": ["\"", "a", "d"]
       },
       {
          // Cut to register B
-         "before": ["n", "n", "s"],
+         "before": ["n", "n", "a"],
          "after": ["\"", "b", "d"]
       },
       {
          // Cut to register C
-         "before": ["n", "n", "n", "s"],
+         "before": ["n", "n", "n", "a"],
          "after": ["\"", "c", "d"]
       },
       {
          // Cut word
-         "before": ["s", "s"],
+         "before": ["a", "a"],
          "after": ["v", "i", "w", "d"]
       },
       {
          // Cut word to register A
-         "before": ["n", "s", "s"],
+         "before": ["n", "a", "a"],
          "after": ["v", "i", "w", "\"", "a", "d"]
       },
       {
          // Cut word to register B
-         "before": ["n", "n", "s", "s"],
+         "before": ["n", "n", "a", "a"],
          "after": ["v", "i", "w", "\"", "b", "d"]
       },
       {
          // Cut word to register C
-         "before": ["n", "n", "n", "s", "s"],
+         "before": ["n", "n", "n", "a", "a"],
          "after": ["v", "i", "w", "\"", "c", "d"]
       },
       {
          // Cut WORD
-         "before": ["S", "S"],
+         "before": ["A", "A"],
          "after": ["E", "v", "B", "d"]
       },
       {
          // Cut WORD to register A
-         "before": ["N", "S", "S"],
+         "before": ["N", "A", "A"],
          "after": ["E", "v", "B", "\"", "a", "d"]
       },
       {
          // Cut WORD to register B
-         "before": ["N", "N", "S", "S"],
+         "before": ["N", "N", "A", "A"],
          "after": ["E", "v", "B", "\"", "b", "d"]
       },
       {
          // Cut WORD to register C
-         "before": ["N", "N", "N", "S", "S"],
+         "before": ["N", "N", "N", "A", "A"],
          "after": ["E", "v", "B", "\"", "c", "d"]
       },
       {
          // Cut line
-         "before": ["s", "k"],
+         "before": ["a", "k"],
          "after": ["d", "d"]
       },
       {
          // Cut line to register A
-         "before": ["n", "s", "k"],
+         "before": ["n", "a", "k"],
          "after": ["\"", "a", "d", "d"]
       },
       {
          // Cut line to register B
-         "before": ["n", "n", "s", "k"],
+         "before": ["n", "n", "a", "k"],
          "after": ["\"", "b", "d", "d"]
       },
       {
          // Cut line to register C
-         "before": ["n", "n", "n", "s", "k"],
+         "before": ["n", "n", "n", "a", "k"],
          "after": ["\"", "c", "d", "d"]
       },
 
