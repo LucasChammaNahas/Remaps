@@ -326,7 +326,7 @@
         
       {
          // Delete
-         "before": ["a"],
+         "before": ["s"],
          "after": ["\"", "_", "d"]
       },
 
@@ -343,22 +343,22 @@
         
       {
          // Cut
-         "before": ["s"],
+         "before": ["a"],
          "after": ["d"]
       },
       {
          // Cut to register A
-         "before": ["n", "s"],
+         "before": ["n", "a"],
          "after": ["\"", "a", "d"]
       },
       {
          // Cut to register B
-         "before": ["n", "n", "s"],
+         "before": ["n", "n", "a"],
          "after": ["\"", "b", "d"]
       },
       {
          // Cut to register C
-         "before": ["n", "n", "n", "s"],
+         "before": ["n", "n", "n", "a"],
          "after": ["\"", "c", "d"]
       },
 
