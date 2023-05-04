@@ -185,12 +185,12 @@
 
       {
          // Target
-         "before": ["a"],
+         "before": ["("],
          "after": ["f"]
       },
       {
          // Target backwards
-         "before": ["A"],
+         "before": [")"],
          "after": ["F"]
       },
       {
