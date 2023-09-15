@@ -113,11 +113,11 @@
 
 
   ;--> Open Apps <-----------------------
-  ^!Numpad0:: Run, "C:\Users\Dell\OneDrive\0 Lucas\PROGRAMS",, Max
-  ^!Numpad1:: Run, "C:\Users\Dell\OneDrive\0 Lucas\PROGRAMS\Code.lnk",, Max
-  ^!Numpad5:: Run, "C:\Users\Dell\OneDrive\0 Lucas\PROGRAMS\Brave.lnk",, Max
-  ^!Numpad7:: Run, "C:\Users\Dell\OneDrive\0 Lucas\FOLDERS",, Max
-  ^!Enter::   Run, "C:\Users\Dell\OneDrive\0 Lucas\PROGRAMS\Shell.lnk",,
+  ^!Numpad0:: Run, "C:\Users\lucas\OneDrive\0 Lucas\PROGRAMS",, Max
+  ^!Numpad1:: Run, "C:\Users\lucas\OneDrive\0 Lucas\PROGRAMS\Code.lnk",, Max
+  ^!Numpad5:: Run, "C:\Users\lucas\OneDrive\0 Lucas\PROGRAMS\Brave.lnk",, Max
+  ^!Numpad7:: Run, "C:\Users\lucas\OneDrive\0 Lucas\FOLDERS",, Max
+  ^!Enter::   Run, "C:\Users\lucas\OneDrive\0 Lucas\PROGRAMS\PowerShell.lnk",,
 
   ;--> Volume <--------------------------
   !NumpadMult:: send {Volume_Mute}
