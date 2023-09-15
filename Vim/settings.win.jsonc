@@ -17,6 +17,7 @@
   "explorer.confirmDelete": false,
   "extensions.ignoreRecommendations": true,
   "git.confirmSync": false,
+  "git.suggestSmartCommit": false,
   "files.associations": { "*.css": "scss" },
   "files.exclude": { "**/.git": false },
   "javascript.updateImportsOnFileMove.enabled": "never",
@@ -26,9 +27,9 @@
   "typescript.suggest.autoImports": true,
   "typescript.updateImportsOnFileMove.enabled": "never",
   "typescript.preferences.quoteStyle": "single",
+  "window.zoomLevel": -1.5,
   "workbench.editor.labelFormat": "short",
   "workbench.startupEditor": "none",
-  "window.zoomLevel": -1.5,
   "workbench.tree.indent": 8,
   "workbench.editor.wrapTabs": true,
 
@@ -42,10 +43,10 @@
   "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "prettier.jsxSingleQuote": true,
-  "prettier.singleQuote": true,
   "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[typescriptreact]": { "editor.defaultFormatter": "vscode.typescript-language-features" },
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
 
   // Suggestions
   "editor.quickSuggestions": {
@@ -76,11 +77,11 @@
     "tab.activeBorder": "#4cfe49",
     "tab.activeBackground": "#222"
   },
+  "editor.renderLineHighlight": "gutter",
+  "material-icon-theme.folders.color": "#00fc93",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Bearded Theme Vivid Black",
-  "material-icon-theme.folders.color": "#4cfe49",
   "material-icon-theme.folders.theme": "specific",
-  "editor.renderLineHighlight": "gutter",
   "material-icon-theme.activeIconPack": "react",
 
   // VIM ----------------------------------------------------------
