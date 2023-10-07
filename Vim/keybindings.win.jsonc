@@ -38,6 +38,12 @@
       "command": "explorer.openAndPassFocus",
       "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus"
    },
+   {
+      // Disables copilot when pressing ctrl+enter
+      "key": "ctrl+enter",
+      "command": "-github.copilot.generate",
+      "when": "editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
+   },
 
    
 
@@ -49,7 +55,8 @@
    88  .d8P   88  88   88   88 
    888888'    dP  dP   dP   dP 
    */
-      
+
+   
    {
       // Prevents from going into normal mode when closing suggest box
       "key": "escape",
@@ -70,7 +77,7 @@
       "args": {
          "after": ["2", "i"]
       }
-   },
+   },  
    {
       // Strong move cursor down
       "key": "down",
@@ -86,7 +93,7 @@
       "command": "vim.remap",
       "when": "editorTextFocus && vim.mode != 'Insert'",
       "args": {
-         "after": ["3", "j"]
+         "after": ["2", "j"]
       }
    },
    {
@@ -95,7 +102,7 @@
       "command": "vim.remap",
       "when": "editorTextFocus && vim.mode != 'Insert'",
       "args": {
-         "after": ["3", "l"]
+         "after": ["2", "l"]
       }
    },
    {
@@ -576,5 +583,4 @@
       "key": "win+alt+l",
       "command": "workbench.action.moveEditorToBelowGroup"
    }
- ]
- 
+]
