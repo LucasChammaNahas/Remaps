@@ -98,7 +98,7 @@
       "command": "vim.remap",
       "when": "editorTextFocus && vim.mode != 'Insert'",
       "args": {
-         "after": ["3", "j"]
+         "after": ["2", "j"]
       }
    },
    {
@@ -107,7 +107,7 @@
       "command": "vim.remap",
       "when": "editorTextFocus && vim.mode != 'Insert'",
       "args": {
-         "after": ["3", "l"]
+         "after": ["2", "l"]
       }
    },
    {

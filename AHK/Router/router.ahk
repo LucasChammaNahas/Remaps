@@ -11,9 +11,9 @@
 
 ; ==> HotStrings <=============================================================
 ; #Include, %A_WorkingDir%\Hotstrings\accents.ahk
-#Include, %A_WorkingDir%\Hotstrings\general.ahk
-#Include, %A_WorkingDir%\Hotstrings\programming.ahk
-#Include, %A_WorkingDir%\Hotstrings\emojis.ahk
+; #Include, %A_WorkingDir%\Hotstrings\general.ahk
+; #Include, %A_WorkingDir%\Hotstrings\programming.ahk
+; #Include, %A_WorkingDir%\Hotstrings\emojis.ahk
 
 ; ==> HotKeys <================================================================
 ; #Include, %A_WorkingDir%\Hotkeys\clipboard.ahk
