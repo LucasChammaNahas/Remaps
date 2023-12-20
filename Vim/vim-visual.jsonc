@@ -1,6 +1,6 @@
 {
-   "vim.visualModeKeyBindingsNonRecursive": [
-      /********************************************************************************************
+  "vim.visualModeKeyBindingsNonRecursive": [
+    /********************************************************************************************
    
       888b     d888               888                   
       8888b   d8888               888                   
@@ -13,9 +13,7 @@
                                  
       ********************************************************************************************/
 
-
-
-      /*
+    /*
       .d88888b             oo   dP            dP       oo                   
       88.    "'                 88            88                            
       `Y88888b. dP  dP  dP dP d8888P .d8888b. 88d888b. dP 88d888b. .d8888b. 
@@ -26,25 +24,23 @@
                                                                     d8888P   
       */
 
-      {
-         // (NOT REVISED) Visual Line
-         "before": ["c", "v"],
-         "after": ["V"]
-      },
-      {
-         // (NOT REVISED) Visual Block
-         "before": ["c", "c"],
-         "after": ["<C-v>"]
-      },
-      {
-         // (NOT REVISED) Visual Block
-         "before": ["C"],
-         "after": ["<C-v>"]
-      },
+    {
+      // (NOT REVISED) Visual Line
+      "before": ["c", "v"],
+      "after": ["V"]
+    },
+    {
+      // (NOT REVISED) Visual Block
+      "before": ["c", "c"],
+      "after": ["<C-v>"]
+    },
+    {
+      // (NOT REVISED) Visual Block
+      "before": ["C"],
+      "after": ["<C-v>"]
+    },
 
-
-
-      /*
+    /*
       dP                                       dP   
       88                                       88   
       88 88d888b. .d8888b. .d8888b. 88d888b. d8888P 
@@ -53,32 +49,18 @@
       dP dP    dP `88888P' `88888P' dP         dP   
       */
 
-      {
-         // (NOT REVISED) Inner
-         "before": ["u"],
-         "after": ["i"]
-      },
-      {
-         // (NOT REVISED) Outer
-         "before": ["o"],
-         "after": ["a"]
-      },
+    {
+      // (NOT REVISED) Inner
+      "before": ["u"],
+      "after": ["i"]
+    },
+    {
+      // (NOT REVISED) Outer
+      "before": ["o"],
+      "after": ["a"]
+    },
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      /********************************************************************************************
+    /********************************************************************************************
    
       888b     d888                                                            888             
       8888b   d8888                                                            888             
@@ -91,9 +73,7 @@
                                  
       ********************************************************************************************/
 
-
-
-      /*
+    /*
        888888ba                    oo          
        88    `8b                               
       a88aaaa8P' .d8888b. .d8888b. dP .d8888b. 
@@ -102,45 +82,44 @@
        88888888P `88888P8 `88888P' dP `88888P' 
       */
 
-      {
-         // (NOT REVISED) Up
-         "before": ["i"],
-         "after": ["k"]
-      },
-      {
-         // (NOT REVISED) Up + scroll
-         "before": ["I"],
-         "after": ["3", "k", "z", "z"]
-      },      
-      {
-         // (NOT REVISED) Down
-         "before": ["k"],
-         "after": ["j"]
-      },
-      {
-         // (NOT REVISED) Down + scroll
-         "before": ["K"],
-         "after": ["3", "j", "z", "z"]
-      },
-      {
-         // (NOT REVISED) Left
-         "before": ["j"],
-         "after": ["h"]
-      },
-      {
-         // (NOT REVISED) Strong left
-         "before": ["J"],
-         "after": ["b"]
-      },
-      {
-         // (NOT REVISED) Strong right
-         "before": ["L"],
-         "after": ["e"]
-      },
+    {
+      // Up
+      "before": ["i"],
+      "after": ["k"]
+    },
+    {
+      // Down
+      "before": ["k"],
+      "after": ["j"]
+    },
+    {
+      // Left
+      "before": ["j"],
+      "after": ["h"]
+    },
 
+    {
+      // (NOT REVISED) Up + scroll
+      "before": ["I"],
+      "after": ["3", "k", "z", "z"]
+    },
+    {
+      // (NOT REVISED) Down + scroll
+      "before": ["K"],
+      "after": ["3", "j", "z", "z"]
+    },
+    {
+      // (NOT REVISED) Strong left
+      "before": ["J"],
+      "after": ["b"]
+    },
+    {
+      // (NOT REVISED) Strong right
+      "before": ["L"],
+      "after": ["e"]
+    },
 
-
-      /*
+    /*
       dP        oo                   
       88                             
       88        dP 88d888b. .d8888b. 
@@ -149,30 +128,28 @@
       88888888P dP dP    dP `88888P' 
       */
 
-      {
-         // (NOT REVISED) Home
-         "before": ["h"],
-         "after": ["^"]
-      },
-      {
-         // (NOT REVISED) Strong home
-         "before": ["H"],
-         "after": ["0"]
-      },
-      {
-         // (NOT REVISED) End
-         "before": [";"],
-         "after": ["g", "_"]
-      },
-      {
-         // (NOT REVISED) Strong end
-         "before": [":"],
-         "after": ["$"]
-      },
+    {
+      // (NOT REVISED) Home
+      "before": ["h"],
+      "after": ["^"]
+    },
+    {
+      // (NOT REVISED) Strong home
+      "before": ["H"],
+      "after": ["0"]
+    },
+    {
+      // (NOT REVISED) End
+      "before": [";"],
+      "after": ["g", "_"]
+    },
+    {
+      // (NOT REVISED) Strong end
+      "before": [":"],
+      "after": ["$"]
+    },
 
-
-
-      /*
+    /*
       d888888P                                       dP                  dP 
          88                                          88                  88 
          88    .d8888b. 88d888b. .d8888b. .d8888b. d8888P .d8888b. .d888b88 
@@ -183,42 +160,28 @@
                                   d8888P                                     
       */
 
-      {
-         // (NOT REVISED) Target
-         "before": ["("],
-         "after": ["f"]
-      },
-      {
-         // (NOT REVISED) Target backwards
-         "before": [")"],
-         "after": ["F"]
-      },
-      {
-         // (NOT REVISED) Repeat target
-         "before": [","],
-         "after": [";"]
-      },
-      {
-         // (NOT REVISED) Repeat target backwards fix
-         "before": ["g", "z", "a"],
-         "after": [","]
-      },
+    {
+      // (NOT REVISED) Target
+      "before": ["("],
+      "after": ["f"]
+    },
+    {
+      // (NOT REVISED) Target backwards
+      "before": [")"],
+      "after": ["F"]
+    },
+    {
+      // (NOT REVISED) Repeat target
+      "before": [","],
+      "after": [";"]
+    },
+    {
+      // (NOT REVISED) Repeat target backwards fix
+      "before": ["g", "z", "a"],
+      "after": [","]
+    },
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      /********************************************************************************************
+    /********************************************************************************************
    
        .d88888b.                                     888                              
       d88P" "Y88b                                    888                              
@@ -233,55 +196,49 @@
                   888                                                                 
                                  
       ********************************************************************************************/
-                               
-      
-      
-      {
-         // (NOT REVISED) Toggle case
-         "before": ["y"],
-         "after": ["~"]
-      },
 
+    {
+      // (NOT REVISED) Toggle case
+      "before": ["y"],
+      "after": ["~"]
+    },
 
-
-      /*
+    /*
       dP    dP                   dP       
       Y8.  .8P                   88       
        Y8aa8P  .d8888b. 88d888b. 88  .dP  
          88    88'  `88 88'  `88 88888"   
          88    88.  .88 88    88 88  `8b. 
          dP    `88888P8 dP    dP dP   `YP 
-      */ 
+      */
 
-      {
-         // (NOT REVISED) Yank
-         "before": ["d"],
-         "after": ["y"]
-      },
-      {
-         // (NOT REVISED) Yank
-         "before": ["D"],
-         "after": ["y"]
-      },
-      {
-         // (NOT REVISED) Yank to register A
-         "before": ["n", "d"],
-         "after": ["\"", "a", "y"]
-      },
-      {
-         // (NOT REVISED) Yank to register B
-         "before": ["n", "n", "d"],
-         "after": ["\"", "b", "y"]
-      },
-      {
-         // (NOT REVISED) Yank to register C
-         "before": ["n", "n", "n", "d"],
-         "after": ["\"", "c", "y"]
-      },
+    {
+      // (NOT REVISED) Yank
+      "before": ["d"],
+      "after": ["y"]
+    },
+    {
+      // (NOT REVISED) Yank
+      "before": ["D"],
+      "after": ["y"]
+    },
+    {
+      // (NOT REVISED) Yank to register A
+      "before": ["n", "d"],
+      "after": ["\"", "a", "y"]
+    },
+    {
+      // (NOT REVISED) Yank to register B
+      "before": ["n", "n", "d"],
+      "after": ["\"", "b", "y"]
+    },
+    {
+      // (NOT REVISED) Yank to register C
+      "before": ["n", "n", "n", "d"],
+      "after": ["\"", "c", "y"]
+    },
 
-
-
-      /*
+    /*
        a88888b. dP                                           
       d8'   `88 88                                           
       88        88d888b. .d8888b. 88d888b. .d8888b. .d8888b. 
@@ -290,155 +247,135 @@
        Y88888P' dP    dP `88888P8 dP    dP `8888P88 `88888P' 
                                                 .88          
                                             d8888P           
-      */                            
-        
-      {
-         // (NOT REVISED) Change delete
-         "before": ["x"],
-         "after": ["\"", "_", "c"]
-      },
-      {
-         // (NOT REVISED) Change cut to register A
-         "before": ["n", "x"],
-         "after": ["\"", "a", "c"]
-      },
-      {
-         // (NOT REVISED) Change cut to register B
-         "before": ["n", "n", "x"],
-         "after": ["\"", "b", "c"]
-      },
-      {
-         // (NOT REVISED) Change cut to register C
-         "before": ["n", "n", "n", "x"],
-         "after": ["\"", "c", "c"]
-      },
+      */
 
-      
+    {
+      // (NOT REVISED) Change delete
+      "before": ["x"],
+      "after": ["\"", "_", "c"]
+    },
+    {
+      // (NOT REVISED) Change cut to register A
+      "before": ["n", "x"],
+      "after": ["\"", "a", "c"]
+    },
+    {
+      // (NOT REVISED) Change cut to register B
+      "before": ["n", "n", "x"],
+      "after": ["\"", "b", "c"]
+    },
+    {
+      // (NOT REVISED) Change cut to register C
+      "before": ["n", "n", "n", "x"],
+      "after": ["\"", "c", "c"]
+    },
 
-      /*
+    /*
       888888ba           dP            dP            
       88    `8b          88            88            
       88     88 .d8888b. 88 .d8888b. d8888P .d8888b. 
       88     88 88ooood8 88 88ooood8   88   88ooood8 
       88    .8P 88.  ... 88 88.  ...   88   88.  ... 
       8888888P  `88888P' dP `88888P'   dP   `88888P' 
-      */                            
-        
-      {
-         // (NOT REVISED) Delete
-         "before": ["s"],
-         "after": ["\"", "_", "d"]
-      },
+      */
 
-      
+    {
+      // (NOT REVISED) Delete
+      "before": ["s"],
+      "after": ["\"", "_", "d"]
+    },
 
-      /*
+    /*
        a88888b.            dP   
       d8'   `88            88   
       88        dP    dP d8888P 
       88        88    88   88   
       Y8.   .88 88.  .88   88   
        Y88888P' `88888P'   dP   
-      */                            
-        
-      {
-         // (NOT REVISED) Cut
-         "before": ["a"],
-         "after": ["d"]
-      },
-      {
-         // (NOT REVISED) Cut to register A
-         "before": ["n", "a"],
-         "after": ["\"", "a", "d"]
-      },
-      {
-         // (NOT REVISED) Cut to register B
-         "before": ["n", "n", "a"],
-         "after": ["\"", "b", "d"]
-      },
-      {
-         // (NOT REVISED) Cut to register C
-         "before": ["n", "n", "n", "a"],
-         "after": ["\"", "c", "d"]
-      },
+      */
 
-      
+    {
+      // (NOT REVISED) Cut
+      "before": ["a"],
+      "after": ["d"]
+    },
+    {
+      // (NOT REVISED) Cut to register A
+      "before": ["n", "a"],
+      "after": ["\"", "a", "d"]
+    },
+    {
+      // (NOT REVISED) Cut to register B
+      "before": ["n", "n", "a"],
+      "after": ["\"", "b", "d"]
+    },
+    {
+      // (NOT REVISED) Cut to register C
+      "before": ["n", "n", "n", "a"],
+      "after": ["\"", "c", "d"]
+    },
 
-      /*
+    /*
        888888ba                      dP            
        88    `8b                     88            
       a88aaaa8P' .d8888b. .d8888b. d8888P .d8888b. 
        88        88'  `88 Y8ooooo.   88   88ooood8 
        88        88.  .88       88   88   88.  ... 
        dP        `88888P8 `88888P'   dP   `88888P' 
-      */                            
-        
-      {
-         // (NOT REVISED) Paste (solves text being copied as it is pasted)
-         "before": ["f"],
-         "after": ["g", "P", "g", "v", "y"]
-      },
-      {
-         // (NOT REVISED) Paste from register A
-         "before": ["n", "f"],
-         "after": ["\"", "a", "g", "P", "g", "v", "y"]
-      },
-      {
-         // (NOT REVISED) Paste from register B
-         "before": ["n", "n", "f"],
-         "after": ["\"", "b", "g", "P", "g", "v", "y"]
-      },
-      {
-         // (NOT REVISED) Paste from register C
-         "before": ["n", "n", "n", "f"],
-         "after": ["\"", "c", "g", "P", "g", "v", "y"]
-      },
-      {
-         // (NOT REVISED) Paste (solves text being copied as it is pasted)
-         "before": ["p"],
-         "after": ["p", "g", "v", "y"]
-      },
-      {
-         // (NOT REVISED) Paste from register A
-         "before": ["n", "p"],
-         "after": ["\"", "a", "p", "g", "v", "y"]
-      },
-      {
-         // (NOT REVISED) Paste from register B
-         "before": ["n", "n", "p"],
-         "after": ["\"", "b", "p", "g", "v", "y"]
-      },
-      {
-         // (NOT REVISED) Paste from register C
-         "before": ["n", "n", "n", "p"],
-         "after": ["\"", "c", "p", "g", "v", "y"]
-      },
-      {
-         // (NOT REVISED) Paste (solves text being copied as it is pasted)
-         "before": ["F"],
-         "after": ["g", "p", "g", "v", "y"]
-      },
-      {
-         // (NOT REVISED) Paste (solves text being copied as it is pasted)
-         "before": ["P"],
-         "after": ["P", "g", "v", "y"]
-      },
+      */
 
+    {
+      // (NOT REVISED) Paste (solves text being copied as it is pasted)
+      "before": ["f"],
+      "after": ["g", "P", "g", "v", "y"]
+    },
+    {
+      // (NOT REVISED) Paste from register A
+      "before": ["n", "f"],
+      "after": ["\"", "a", "g", "P", "g", "v", "y"]
+    },
+    {
+      // (NOT REVISED) Paste from register B
+      "before": ["n", "n", "f"],
+      "after": ["\"", "b", "g", "P", "g", "v", "y"]
+    },
+    {
+      // (NOT REVISED) Paste from register C
+      "before": ["n", "n", "n", "f"],
+      "after": ["\"", "c", "g", "P", "g", "v", "y"]
+    },
+    {
+      // (NOT REVISED) Paste (solves text being copied as it is pasted)
+      "before": ["p"],
+      "after": ["p", "g", "v", "y"]
+    },
+    {
+      // (NOT REVISED) Paste from register A
+      "before": ["n", "p"],
+      "after": ["\"", "a", "p", "g", "v", "y"]
+    },
+    {
+      // (NOT REVISED) Paste from register B
+      "before": ["n", "n", "p"],
+      "after": ["\"", "b", "p", "g", "v", "y"]
+    },
+    {
+      // (NOT REVISED) Paste from register C
+      "before": ["n", "n", "n", "p"],
+      "after": ["\"", "c", "p", "g", "v", "y"]
+    },
+    {
+      // (NOT REVISED) Paste (solves text being copied as it is pasted)
+      "before": ["F"],
+      "after": ["g", "p", "g", "v", "y"]
+    },
+    {
+      // (NOT REVISED) Paste (solves text being copied as it is pasted)
+      "before": ["P"],
+      "after": ["P", "g", "v", "y"]
+    },
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-      /********************************************************************************************
+    /********************************************************************************************
    
        .d8888b.                                                              888          
       d88P  Y88b                                                             888          
@@ -450,107 +387,99 @@
        "Y8888P"   "Y88P"  888  888  888 888  888  888 "Y888888 888  888  "Y88888  88888P' 
                                                                                     
       ********************************************************************************************/
-      
 
+    {
+      // (NOT REVISED) Undo
+      "before": ["z"],
+      "commands": ["undo"]
+    },
+    {
+      // (NOT REVISED) Redo
+      "before": ["Z"],
+      "commands": ["redo"]
+    },
+    {
+      // (NOT REVISED) Insert line below and enter insert mode
+      "before": ["<Enter>"],
+      "after": ["o"]
+    },
+    {
+      // (NOT REVISED) Insert line above and enter insert mode fix
+      "before": ["g", "z", "b"],
+      "after": ["O"]
+    },
+    {
+      // (NOT REVISED) Insert command
+      "before": ["|"],
+      "after": [":"]
+    },
+    {
+      // (NOT REVISED) Put cursor at end of selection
+      "before": ["<leader>", "l"],
+      "after": ["o"]
+    },
+    {
+      // (NOT REVISED) Put cursor at start of selection
+      "before": ["<leader>", "j"],
+      "after": ["O"]
+    },
 
-      {
-         // (NOT REVISED) Undo
-         "before": ["z"],
-         "commands": ["undo"]
-      },
-      {
-         // (NOT REVISED) Redo
-         "before": ["Z"],
-         "commands": ["redo"]
-      },
-      {
-         // (NOT REVISED) Insert line below and enter insert mode
-         "before": ["<Enter>"],
-         "after": ["o"]
-      },
-      {
-         // (NOT REVISED) Insert line above and enter insert mode fix
-         "before": ["g", "z", "b"],
-         "after": ["O"]
-      },
-      {
-         // (NOT REVISED) Insert command
-         "before": ["|"],
-         "after": [":"]
-      },
-      {
-         // (NOT REVISED) Put cursor at end of selection
-         "before": ["<leader>", "l"],
-         "after": ["o"]
-      },
-      {
-         // (NOT REVISED) Put cursor at start of selection
-         "before": ["<leader>", "j"],
-         "after": ["O"]
-      },
-
-      
-
-      /*
+    /*
        a88888b.                            
       d8'   `88                            
       88        .d8888b. .d8888b. .d8888b. 
       88        88'  `88 Y8ooooo. 88ooood8 
       Y8.   .88 88.  .88       88 88.  ... 
        Y88888P' `88888P8 `88888P' `88888P' 
-      */                            
-        
-      {
-         // (NOT REVISED) Toggle case
-         "before": ["<leader>", "y"],
-         "after": ["~"]
-      },
-      {
-         // (NOT REVISED) Lowercase
-         "before": ["<leader>", "u"],
-         "after": ["u"]
-      },
-      {
-         // (NOT REVISED) Uppercase
-         "before": ["<leader>", "U"],
-         "after": ["U"]
-      },
+      */
 
-      
+    {
+      // (NOT REVISED) Toggle case
+      "before": ["<leader>", "y"],
+      "after": ["~"]
+    },
+    {
+      // (NOT REVISED) Lowercase
+      "before": ["<leader>", "u"],
+      "after": ["u"]
+    },
+    {
+      // (NOT REVISED) Uppercase
+      "before": ["<leader>", "U"],
+      "after": ["U"]
+    },
 
-      /*
+    /*
       .d88888b                             
       88.    "'                            
       `Y88888b. .d8888b. dP   .dP .d8888b. 
             `8b 88'  `88 88   d8' 88ooood8 
       d8'   .8P 88.  .88 88 .88'  88.  ... 
        Y88888P  `88888P8 8888P'   `88888P' 
-      */                            
-        
-      {
-         // (NOT REVISED) Save file
-         "before": ["<leader>", "s"],
-         "commands": ["workbench.action.files.save"]
-      },
-      {
-         // (NOT REVISED) Save all files
-         "before": ["<leader>", "<leader>", "s"],
-         "commands": ["saveAll"]
-      },
-      {
-         // (NOT REVISED) Close editor
-         "before": ["<leader>", "w", "w"],
-         "commands": ["workbench.action.closeActiveEditor"]
-      },
-      {
-         // (NOT REVISED) Close window
-         "before": ["<leader>", "W", "W"],
-         "after": ["Z", "Q"]
-      },
+      */
 
+    {
+      // (NOT REVISED) Save file
+      "before": ["<leader>", "s"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      // (NOT REVISED) Save all files
+      "before": ["<leader>", "<leader>", "s"],
+      "commands": ["saveAll"]
+    },
+    {
+      // (NOT REVISED) Close editor
+      "before": ["<leader>", "w", "w"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      // (NOT REVISED) Close window
+      "before": ["<leader>", "W", "W"],
+      "after": ["Z", "Q"]
+    },
 
-
-      /*
+    /*
       8888ba.88ba                    dP                
       88  `8b  `8b                   88                
       88   88   88 .d8888b. 88d888b. 88  .dP  .d8888b. 
@@ -559,32 +488,18 @@
       dP   dP   dP `88888P8 dP       dP   `YP `88888P' 
       */
 
-      {
-         // (NOT REVISED) Go to mark
-         "before": ["m"],
-         "after": ["`"]
-      },
-      {
-         // (NOT REVISED) Set to mark
-         "before": ["m", "m"],
-         "after": ["m"]
-      },
+    {
+      // (NOT REVISED) Go to mark
+      "before": ["m"],
+      "after": ["`"]
+    },
+    {
+      // (NOT REVISED) Set to mark
+      "before": ["m", "m"],
+      "after": ["m"]
+    },
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      /********************************************************************************************
+    /********************************************************************************************
    
        .d8888b.                            888 888 
       d88P  Y88b                           888 888 
@@ -597,49 +512,33 @@
                                  
       ********************************************************************************************/
 
+    {
+      // (NOT REVISED) Maps z to b
+      "before": ["b"],
+      "after": ["z"]
+    },
+    {
+      // (NOT REVISED) Maps Z to b
+      "before": ["B"],
+      "after": ["z"]
+    },
+    {
+      // (NOT REVISED) Scroll page until cursor is on center
+      "before": ["b", "j"],
+      "after": ["z", "z"]
+    },
+    {
+      // (NOT REVISED) Scroll page until cursor is on top
+      "before": ["b", "k"],
+      "after": ["z", "t"]
+    },
+    {
+      // (NOT REVISED) Scroll page until cursor is at the bottom
+      "before": ["b", "i"],
+      "after": ["z", "b"]
+    },
 
-      
-      {
-         // (NOT REVISED) Maps z to b
-         "before": ["b"],
-         "after": ["z"]
-      },
-      {
-         // (NOT REVISED) Maps Z to b
-         "before": ["B"],
-         "after": ["z"]
-      },
-      {
-         // (NOT REVISED) Scroll page until cursor is on center
-         "before": ["b", "j"],
-         "after": ["z", "z"]
-      },
-      {
-         // (NOT REVISED) Scroll page until cursor is on top
-         "before": ["b", "k"],
-         "after": ["z", "t"]
-      },
-      {
-         // (NOT REVISED) Scroll page until cursor is at the bottom
-         "before": ["b", "i"],
-         "after": ["z", "b"]
-      },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      /********************************************************************************************
+    /********************************************************************************************
    
        .d8888b.           
       d88P  Y88b          
@@ -651,75 +550,59 @@
        "Y8888P88  "Y88P"  
                           
       ********************************************************************************************/
-      
 
+    {
+      // (NOT REVISED) Go to global definition
+      "before": ["g", "g", "d"],
+      "after": ["g", "D"]
+    },
+    {
+      // (NOT REVISED) Go to top of screen
+      "before": ["g", "i"],
+      "after": ["H"]
+    },
+    {
+      // (NOT REVISED) Go to middle of screen
+      "before": ["g", "j"],
+      "after": ["M"]
+    },
+    {
+      // (NOT REVISED) Go to bottom of screen
+      "before": ["g", "k"],
+      "after": ["L"]
+    },
+    {
+      // (NOT REVISED) Go to top of document
+      "before": ["g", "g", "i"],
+      "after": ["g", "g"]
+    },
+    {
+      // (NOT REVISED) Go to bottom of document
+      "before": ["g", "g", "k"],
+      "after": ["G"]
+    },
+    {
+      // (NOT REVISED) Go back in change list
+      "before": ["g", "n"],
+      "after": ["g", ";"]
+    },
+    {
+      // (NOT REVISED) Go forth in change list
+      "before": ["g", "g", "n"],
+      "after": ["g", ","]
+    },
+    {
+      // (NOT REVISED) Indent line
+      "before": ["g", "o"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      // (NOT REVISED) Outdent line
+      "before": ["g", "u"],
+      "commands": ["editor.action.outdentLines"]
+    },
 
-      {
-         // (NOT REVISED) Go to global definition
-         "before": ["g", "g", "d"],
-         "after": ["g", "D"]
-      },
-      {
-         // (NOT REVISED) Go to top of screen
-         "before": ["g", "i"],
-         "after": ["H"]
-      },
-      {
-         // (NOT REVISED) Go to middle of screen
-         "before": ["g", "j"],
-         "after": ["M"]
-      },
-      {
-         // (NOT REVISED) Go to bottom of screen
-         "before": ["g", "k"],
-         "after": ["L"]
-      },
-      {
-         // (NOT REVISED) Go to top of document
-         "before": ["g", "g", "i"],
-         "after": ["g", "g"]
-      },
-      {
-         // (NOT REVISED) Go to bottom of document
-         "before": ["g", "g", "k"],
-         "after": ["G"]
-      },
-      {
-         // (NOT REVISED) Go back in change list
-         "before": ["g", "n"],
-         "after": ["g", ";"]
-      },
-      {
-         // (NOT REVISED) Go forth in change list
-         "before": ["g", "g", "n"],
-         "after": ["g", ","]
-      },
-      {
-         // (NOT REVISED) Indent line
-         "before": ["g", "o"],
-         "commands": ["editor.action.indentLines"]
-      },
-      {
-         // (NOT REVISED) Outdent line
-         "before": ["g", "u"],
-         "commands": ["editor.action.outdentLines"]
-      },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      /********************************************************************************************
+    /********************************************************************************************
    
        .d8888b.           888 888                                     
       d88P  Y88b          888 888                                     
@@ -734,58 +617,56 @@
                                            888                             
                                  
       ********************************************************************************************/
-      
 
-
-      {
-         // (NOT REVISED) Manually define a fold up to motion
-         "before": ["t", "h"],
-         "after": ["z", "f"]
-      },
-      {
-         // (NOT REVISED) Delete fold
-         "before": ["t", "s"],
-         "after": ["z", "d"]
-      },
-      {
-         // (NOT REVISED) Toggle collapse region
-         "before": ["t", "j"],
-         "commands": ["editor.toggleFold"]
-      },
-      {
-         // (NOT REVISED) Collapse region 1
-         "before": ["t", "y"],
-         "commands": ["editor.foldLevel1"]
-      },
-      {
-         // (NOT REVISED) Collapse region 2
-         "before": ["t", "u"],
-         "commands": ["editor.foldLevel2"]
-      },
-      {
-         // (NOT REVISED) Collapse region 3
-         "before": ["t", "i"],
-         "commands": ["editor.foldLevel3"]
-      },
-      {
-         // (NOT REVISED) Collapse region 4
-         "before": ["t", "o"],
-         "commands": ["editor.foldLevel4"]
-      },
-      {
-         // (NOT REVISED) Collapse region 5
-         "before": ["t", "p"],
-         "commands": ["editor.foldLevel5"]
-      },
-      {
-         // (NOT REVISED) Collapse all
-         "before": ["T", "T"],
-         "commands": ["editor.foldAll"]
-      },
-      {
-         // (NOT REVISED) Uncollapse all
-         "before": ["t", "t"],
-         "commands": ["editor.unfoldAll"]
-      }      
-   ],
+    {
+      // (NOT REVISED) Manually define a fold up to motion
+      "before": ["t", "h"],
+      "after": ["z", "f"]
+    },
+    {
+      // (NOT REVISED) Delete fold
+      "before": ["t", "s"],
+      "after": ["z", "d"]
+    },
+    {
+      // (NOT REVISED) Toggle collapse region
+      "before": ["t", "j"],
+      "commands": ["editor.toggleFold"]
+    },
+    {
+      // (NOT REVISED) Collapse region 1
+      "before": ["t", "y"],
+      "commands": ["editor.foldLevel1"]
+    },
+    {
+      // (NOT REVISED) Collapse region 2
+      "before": ["t", "u"],
+      "commands": ["editor.foldLevel2"]
+    },
+    {
+      // (NOT REVISED) Collapse region 3
+      "before": ["t", "i"],
+      "commands": ["editor.foldLevel3"]
+    },
+    {
+      // (NOT REVISED) Collapse region 4
+      "before": ["t", "o"],
+      "commands": ["editor.foldLevel4"]
+    },
+    {
+      // (NOT REVISED) Collapse region 5
+      "before": ["t", "p"],
+      "commands": ["editor.foldLevel5"]
+    },
+    {
+      // (NOT REVISED) Collapse all
+      "before": ["T", "T"],
+      "commands": ["editor.foldAll"]
+    },
+    {
+      // (NOT REVISED) Uncollapse all
+      "before": ["t", "t"],
+      "commands": ["editor.unfoldAll"]
+    }
+  ]
 }
