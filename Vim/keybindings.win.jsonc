@@ -15,19 +15,13 @@
 
 
    {
-      // (NOT REVISED) Backspace
+      // Required to backspace delete on normal mode (for some reason)
       "key": "Backspace",
       "command": "deleteLeft",
       "when": "textInputFocus"
    },
    {
-      // (NOT REVISED) Delete
-      "key": "delete",
-      "command": "deleteRight",
-      "when": "textInputFocus"
-   },
-   {
-      // (NOT REVISED) Trigger suggest
+      // Trigger suggest. (Mac wont work with ctrl+space)
       "key": "ctrl+g",
       "command": "editor.action.triggerSuggest",
       "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
@@ -39,7 +33,13 @@
       "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus"
    },
    {
-      // (NOT REVISED) Disables copilot when pressing ctrl+enter
+      // Trigger Copilot
+      "key": "ctrl+alt+space",
+      "command": "github.copilot.generate",
+      "when": "editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
+   },
+   {
+      // Disables copilot when pressing ctrl+enter
       "key": "ctrl+enter",
       "command": "-github.copilot.generate",
       "when": "editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
@@ -58,19 +58,20 @@
 
    
    {
-      // (NOT REVISED) Prevents from going into normal mode when closing suggest box
+      // Prevents from going into normal mode when closing suggest box
       "key": "escape",
       "command": "extension.vim_escape",
-      "when": "editorTextFocus && vim.active && !inDebugRepl && !suggestWidgetVisible"
+      "when": "editorTextFocus && vim.active && !suggestWidgetVisible"
    },
    {
-      // (NOT REVISED) Prevents from going into normal mode when closing suggest box
+      // Prevents from going into normal mode when closing suggest box
       "key": "escape",
       "command": "-extension.vim_escape",
-      "when": "editorTextFocus && vim.active && !inDebugRepl"
+      "when": "editorTextFocus && vim.active"
    },
+
    {
-      // (NOT REVISED) Strong move cursor up
+      // Strong move cursor up
       "key": "up",
       "command": "vim.remap",
       "when": "editorTextFocus && vim.mode != 'Insert'",
@@ -79,7 +80,7 @@
       }
    },  
    {
-      // (NOT REVISED) Strong move cursor down
+      // Strong move cursor down
       "key": "down",
       "command": "vim.remap",
       "when": "editorTextFocus && vim.mode != 'Insert'",
@@ -88,7 +89,7 @@
       }
    },
    {
-      // (NOT REVISED) Strong move cursor left
+      // Strong move cursor left
       "key": "left",
       "command": "vim.remap",
       "when": "editorTextFocus && vim.mode != 'Insert'",
@@ -97,7 +98,7 @@
       }
    },
    {
-      // (NOT REVISED) Strong move cursor right
+      // Strong move cursor right
       "key": "right",
       "command": "vim.remap",
       "when": "editorTextFocus && vim.mode != 'Insert'",
@@ -466,9 +467,9 @@
    },
    {
       // (NOT REVISED) Returns to editor
-      "key": "ctrl+alt+n",
+      "key": "escape",
       "command": "workbench.action.focusActiveEditorGroup",
-      "when": "!textInputFocus"
+      "when": "!textInputFocus && !treeFindOpen"
    },
    {
       // (NOT REVISED) Toggle sidebar
@@ -513,11 +514,6 @@
    8888' Y88'   dP dP    dP `88888P8 `88888P' 8888P Y8P  `88888P' 
    */
 
-   {
-      // (NOT REVISED) New file
-      "key": "ctrl+shift+n",
-      "command": "workbench.action.files.newUntitledFile"
-   },
    {
       // (NOT REVISED) New window
       "key": "ctrl+shift+m",
@@ -582,5 +578,124 @@
       // (NOT REVISED) Move editor to group below
       "key": "win+alt+l",
       "command": "workbench.action.moveEditorToBelowGroup"
+   },
+   {
+      "key": "ctrl+c",
+      "command": "-vscode-neovim.escape",
+      "when": "editorTextFocus && neovim.ctrlKeysNormal && neovim.init && !dirtyDiffVisible && !findWidgetVisible && !inReferenceSearchEditor && !markersNavigationVisible && !notebookCellFocused && !notificationCenterVisible && !parameterHintsVisible && !referenceSearchVisible && neovim.mode == 'normal'"
+   },
+   {
+      "key": "ctrl+c",
+      "command": "-vscode-neovim.escape",
+      "when": "editorTextFocus && neovim.ctrlKeysInsert && neovim.init && neovim.mode != 'normal'"
+   },
+   {
+      "key": "escape",
+      "command": "closeFindWidget",
+      "when": "findWidgetVisible"
+   },
+   {
+      "key": "ctrl+enter",
+      "command": "-explorer.openToSide",
+      "when": "explorerViewletFocus && foldersViewVisible && !inputFocus"
+   },
+   {
+      "key": "ctrl+enter",
+      "command": "renameFile",
+      "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+   },
+   {
+      "key": "ctrl+n",
+      "command": "explorer.newFile",
+      "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+   },
+   {
+      "key": "ctrl+shift+n",
+      "command": "explorer.newFolder",
+      "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+   },
+   {
+      "key": "t y",
+      "command": "workbench.files.action.collapseExplorerFolders",
+      "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+   },
+   {
+      "key": "ctrl+alt+8",
+      "command": "search.action.collapseSearchResults"
+   },
+   {
+      "key": "ctrl+alt+9",
+      "command": "search.action.focusSearchList"
+   },
+   {
+      "key": "k",
+      "command": "list.focusDown",
+      "when": "listFocus && !inputFocus"
+   },
+   {
+      "key": "j",
+      "command": "-list.focusDown",
+      "when": "listFocus && !inputFocus"
+   },
+   {
+      "key": "i",
+      "command": "list.focusUp",
+      "when": "listFocus && !inputFocus"
+   },
+   {
+      "key": "k",
+      "command": "-list.focusUp",
+      "when": "listFocus && !inputFocus"
+   },
+   {
+      "key": "g k",
+      "command": "list.focusLast",
+      "when": "listFocus && !inputFocus"
+   },
+   {
+      "key": "shift+g",
+      "command": "-list.focusLast",
+      "when": "listFocus && !inputFocus"
+   },
+   {
+      "key": "g i",
+      "command": "list.focusFirst",
+      "when": "listFocus && !inputFocus"
+   },
+   {
+      "key": "g g",
+      "command": "-list.focusFirst",
+      "when": "listFocus && !inputFocus"
+   },
+   {
+      "key": "j",
+      "command": "list.collapse",
+      "when": "listFocus && !inputFocus"
+   },
+   {
+      "key": "n",
+      "command": "workbench.action.files.newUntitledFile",
+      "when": "listFocus && !inputFocus && !filesExplorerFocus"
+   },
+   {
+      "key": "h",
+      "command": "-list.collapse",
+      "when": "listFocus && !inputFocus"
+   },
+   {
+      "key": "ctrl+alt+n ctrl+alt+n",
+      "command": "outline.focus"
+   },
+   {
+      "key": "ctrl+alt+win+0",
+      "command": "workbench.scm.focus"
+   },
+   {
+      "key": "ctrl+alt+win+9",
+      "command": "gitlens.views.repositories.focus"
+   },
+   {
+      "key": "ctrl+alt+win+8",
+      "command": "gitlens.views.commits.focus"
    }
 ]
