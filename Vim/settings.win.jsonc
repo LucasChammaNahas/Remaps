@@ -1,5 +1,5 @@
 {
-  // Editor
+  // (NOT REVISED) Editor
   "breadcrumbs.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.cursorWidth": 2,
@@ -33,7 +33,7 @@
   "workbench.tree.indent": 8,
   "workbench.editor.wrapTabs": true,
 
-  // Prettier
+  // (NOT REVISED) Prettier
   "prettier.printWidth": 120,
   "prettier.tabWidth": 2,
   "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
@@ -48,7 +48,7 @@
   "prettier.singleQuote": true,
   "prettier.jsxSingleQuote": true,
 
-  // Suggestions
+  // (NOT REVISED) Suggestions
   "editor.quickSuggestions": {
     "comments": "off",
     "strings": "off",
@@ -58,16 +58,16 @@
   "editor.inlineSuggest.showToolbar": "always",
   "editor.snippetSuggestions": "top",
 
-  // Emmet
+  // (NOT REVISED) Emmet
   "emmet.showExpandedAbbreviation": "never",
   "emmet.triggerExpansionOnTab": true,
   "emmet.includeLanguages": { "javascript": "javascriptreact" },
   "emmet.syntaxProfiles": { "javascript": "jsx" },
 
-  // Word separators
+  // (NOT REVISED) Word separators
   "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
 
-  // Appearance
+  // (NOT REVISED) Appearance
   "workbench.colorCustomizations": {
     "editor.lineHighlightBackground": "#4cfe49",
     "editor.selectionBackground": "#6b6b6b",
@@ -84,7 +84,7 @@
   "material-icon-theme.folders.theme": "specific",
   "material-icon-theme.activeIconPack": "react",
 
-  // VIM ----------------------------------------------------------
+  // (NOT REVISED) VIM ----------------------------------------------------------
   "vim.leader": "<space>",
   "vim.scroll": 3,
   "vim.cursorStylePerMode.normal": "underline",

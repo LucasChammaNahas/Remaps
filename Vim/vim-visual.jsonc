@@ -27,17 +27,17 @@
       */
 
       {
-         // Visual Line
+         // (NOT REVISED) Visual Line
          "before": ["c", "v"],
          "after": ["V"]
       },
       {
-         // Visual Block
+         // (NOT REVISED) Visual Block
          "before": ["c", "c"],
          "after": ["<C-v>"]
       },
       {
-         // Visual Block
+         // (NOT REVISED) Visual Block
          "before": ["C"],
          "after": ["<C-v>"]
       },
@@ -54,12 +54,12 @@
       */
 
       {
-         // Inner
+         // (NOT REVISED) Inner
          "before": ["u"],
          "after": ["i"]
       },
       {
-         // Outer
+         // (NOT REVISED) Outer
          "before": ["o"],
          "after": ["a"]
       },
@@ -103,37 +103,37 @@
       */
 
       {
-         // Up
+         // (NOT REVISED) Up
          "before": ["i"],
          "after": ["k"]
       },
       {
-         // Up + scroll
+         // (NOT REVISED) Up + scroll
          "before": ["I"],
          "after": ["3", "k", "z", "z"]
       },      
       {
-         // Down
+         // (NOT REVISED) Down
          "before": ["k"],
          "after": ["j"]
       },
       {
-         // Down + scroll
+         // (NOT REVISED) Down + scroll
          "before": ["K"],
          "after": ["3", "j", "z", "z"]
       },
       {
-         // Left
+         // (NOT REVISED) Left
          "before": ["j"],
          "after": ["h"]
       },
       {
-         // Strong left
+         // (NOT REVISED) Strong left
          "before": ["J"],
          "after": ["b"]
       },
       {
-         // Strong right
+         // (NOT REVISED) Strong right
          "before": ["L"],
          "after": ["e"]
       },
@@ -150,22 +150,22 @@
       */
 
       {
-         // Home
+         // (NOT REVISED) Home
          "before": ["h"],
          "after": ["^"]
       },
       {
-         // Strong home
+         // (NOT REVISED) Strong home
          "before": ["H"],
          "after": ["0"]
       },
       {
-         // End
+         // (NOT REVISED) End
          "before": [";"],
          "after": ["g", "_"]
       },
       {
-         // Strong end
+         // (NOT REVISED) Strong end
          "before": [":"],
          "after": ["$"]
       },
@@ -184,22 +184,22 @@
       */
 
       {
-         // Target
+         // (NOT REVISED) Target
          "before": ["("],
          "after": ["f"]
       },
       {
-         // Target backwards
+         // (NOT REVISED) Target backwards
          "before": [")"],
          "after": ["F"]
       },
       {
-         // Repeat target
+         // (NOT REVISED) Repeat target
          "before": [","],
          "after": [";"]
       },
       {
-         // Repeat target backwards fix
+         // (NOT REVISED) Repeat target backwards fix
          "before": ["g", "z", "a"],
          "after": [","]
       },
@@ -237,7 +237,7 @@
       
       
       {
-         // Toggle case
+         // (NOT REVISED) Toggle case
          "before": ["y"],
          "after": ["~"]
       },
@@ -254,27 +254,27 @@
       */ 
 
       {
-         // Yank
+         // (NOT REVISED) Yank
          "before": ["d"],
          "after": ["y"]
       },
       {
-         // Yank
+         // (NOT REVISED) Yank
          "before": ["D"],
          "after": ["y"]
       },
       {
-         // Yank to register A
+         // (NOT REVISED) Yank to register A
          "before": ["n", "d"],
          "after": ["\"", "a", "y"]
       },
       {
-         // Yank to register B
+         // (NOT REVISED) Yank to register B
          "before": ["n", "n", "d"],
          "after": ["\"", "b", "y"]
       },
       {
-         // Yank to register C
+         // (NOT REVISED) Yank to register C
          "before": ["n", "n", "n", "d"],
          "after": ["\"", "c", "y"]
       },
@@ -293,22 +293,22 @@
       */                            
         
       {
-         // Change delete
+         // (NOT REVISED) Change delete
          "before": ["x"],
          "after": ["\"", "_", "c"]
       },
       {
-         // Change cut to register A
+         // (NOT REVISED) Change cut to register A
          "before": ["n", "x"],
          "after": ["\"", "a", "c"]
       },
       {
-         // Change cut to register B
+         // (NOT REVISED) Change cut to register B
          "before": ["n", "n", "x"],
          "after": ["\"", "b", "c"]
       },
       {
-         // Change cut to register C
+         // (NOT REVISED) Change cut to register C
          "before": ["n", "n", "n", "x"],
          "after": ["\"", "c", "c"]
       },
@@ -325,7 +325,7 @@
       */                            
         
       {
-         // Delete
+         // (NOT REVISED) Delete
          "before": ["s"],
          "after": ["\"", "_", "d"]
       },
@@ -342,22 +342,22 @@
       */                            
         
       {
-         // Cut
+         // (NOT REVISED) Cut
          "before": ["a"],
          "after": ["d"]
       },
       {
-         // Cut to register A
+         // (NOT REVISED) Cut to register A
          "before": ["n", "a"],
          "after": ["\"", "a", "d"]
       },
       {
-         // Cut to register B
+         // (NOT REVISED) Cut to register B
          "before": ["n", "n", "a"],
          "after": ["\"", "b", "d"]
       },
       {
-         // Cut to register C
+         // (NOT REVISED) Cut to register C
          "before": ["n", "n", "n", "a"],
          "after": ["\"", "c", "d"]
       },
@@ -374,52 +374,52 @@
       */                            
         
       {
-         // Paste (solves text being copied as it is pasted)
+         // (NOT REVISED) Paste (solves text being copied as it is pasted)
          "before": ["f"],
          "after": ["g", "P", "g", "v", "y"]
       },
       {
-         // Paste from register A
+         // (NOT REVISED) Paste from register A
          "before": ["n", "f"],
          "after": ["\"", "a", "g", "P", "g", "v", "y"]
       },
       {
-         // Paste from register B
+         // (NOT REVISED) Paste from register B
          "before": ["n", "n", "f"],
          "after": ["\"", "b", "g", "P", "g", "v", "y"]
       },
       {
-         // Paste from register C
+         // (NOT REVISED) Paste from register C
          "before": ["n", "n", "n", "f"],
          "after": ["\"", "c", "g", "P", "g", "v", "y"]
       },
       {
-         // Paste (solves text being copied as it is pasted)
+         // (NOT REVISED) Paste (solves text being copied as it is pasted)
          "before": ["p"],
          "after": ["p", "g", "v", "y"]
       },
       {
-         // Paste from register A
+         // (NOT REVISED) Paste from register A
          "before": ["n", "p"],
          "after": ["\"", "a", "p", "g", "v", "y"]
       },
       {
-         // Paste from register B
+         // (NOT REVISED) Paste from register B
          "before": ["n", "n", "p"],
          "after": ["\"", "b", "p", "g", "v", "y"]
       },
       {
-         // Paste from register C
+         // (NOT REVISED) Paste from register C
          "before": ["n", "n", "n", "p"],
          "after": ["\"", "c", "p", "g", "v", "y"]
       },
       {
-         // Paste (solves text being copied as it is pasted)
+         // (NOT REVISED) Paste (solves text being copied as it is pasted)
          "before": ["F"],
          "after": ["g", "p", "g", "v", "y"]
       },
       {
-         // Paste (solves text being copied as it is pasted)
+         // (NOT REVISED) Paste (solves text being copied as it is pasted)
          "before": ["P"],
          "after": ["P", "g", "v", "y"]
       },
@@ -454,37 +454,37 @@
 
 
       {
-         // Undo
+         // (NOT REVISED) Undo
          "before": ["z"],
          "commands": ["undo"]
       },
       {
-         // Redo
+         // (NOT REVISED) Redo
          "before": ["Z"],
          "commands": ["redo"]
       },
       {
-         // Insert line below and enter insert mode
+         // (NOT REVISED) Insert line below and enter insert mode
          "before": ["<Enter>"],
          "after": ["o"]
       },
       {
-         // Insert line above and enter insert mode fix
+         // (NOT REVISED) Insert line above and enter insert mode fix
          "before": ["g", "z", "b"],
          "after": ["O"]
       },
       {
-         // Insert command
+         // (NOT REVISED) Insert command
          "before": ["|"],
          "after": [":"]
       },
       {
-         // Put cursor at end of selection
+         // (NOT REVISED) Put cursor at end of selection
          "before": ["<leader>", "l"],
          "after": ["o"]
       },
       {
-         // Put cursor at start of selection
+         // (NOT REVISED) Put cursor at start of selection
          "before": ["<leader>", "j"],
          "after": ["O"]
       },
@@ -501,17 +501,17 @@
       */                            
         
       {
-         // Toggle case
+         // (NOT REVISED) Toggle case
          "before": ["<leader>", "y"],
          "after": ["~"]
       },
       {
-         // Lowercase
+         // (NOT REVISED) Lowercase
          "before": ["<leader>", "u"],
          "after": ["u"]
       },
       {
-         // Uppercase
+         // (NOT REVISED) Uppercase
          "before": ["<leader>", "U"],
          "after": ["U"]
       },
@@ -528,22 +528,22 @@
       */                            
         
       {
-         // Save file
+         // (NOT REVISED) Save file
          "before": ["<leader>", "s"],
          "commands": ["workbench.action.files.save"]
       },
       {
-         // Save all files
+         // (NOT REVISED) Save all files
          "before": ["<leader>", "<leader>", "s"],
          "commands": ["saveAll"]
       },
       {
-         // Close editor
+         // (NOT REVISED) Close editor
          "before": ["<leader>", "w", "w"],
          "commands": ["workbench.action.closeActiveEditor"]
       },
       {
-         // Close window
+         // (NOT REVISED) Close window
          "before": ["<leader>", "W", "W"],
          "after": ["Z", "Q"]
       },
@@ -560,12 +560,12 @@
       */
 
       {
-         // Go to mark
+         // (NOT REVISED) Go to mark
          "before": ["m"],
          "after": ["`"]
       },
       {
-         // Set to mark
+         // (NOT REVISED) Set to mark
          "before": ["m", "m"],
          "after": ["m"]
       },
@@ -600,27 +600,27 @@
 
       
       {
-         // Maps z to b
+         // (NOT REVISED) Maps z to b
          "before": ["b"],
          "after": ["z"]
       },
       {
-         // Maps Z to b
+         // (NOT REVISED) Maps Z to b
          "before": ["B"],
          "after": ["z"]
       },
       {
-         // Scroll page until cursor is on center
+         // (NOT REVISED) Scroll page until cursor is on center
          "before": ["b", "j"],
          "after": ["z", "z"]
       },
       {
-         // Scroll page until cursor is on top
+         // (NOT REVISED) Scroll page until cursor is on top
          "before": ["b", "k"],
          "after": ["z", "t"]
       },
       {
-         // Scroll page until cursor is at the bottom
+         // (NOT REVISED) Scroll page until cursor is at the bottom
          "before": ["b", "i"],
          "after": ["z", "b"]
       },
@@ -655,52 +655,52 @@
 
 
       {
-         // Go to global definition
+         // (NOT REVISED) Go to global definition
          "before": ["g", "g", "d"],
          "after": ["g", "D"]
       },
       {
-         // Go to top of screen
+         // (NOT REVISED) Go to top of screen
          "before": ["g", "i"],
          "after": ["H"]
       },
       {
-         // Go to middle of screen
+         // (NOT REVISED) Go to middle of screen
          "before": ["g", "j"],
          "after": ["M"]
       },
       {
-         // Go to bottom of screen
+         // (NOT REVISED) Go to bottom of screen
          "before": ["g", "k"],
          "after": ["L"]
       },
       {
-         // Go to top of document
+         // (NOT REVISED) Go to top of document
          "before": ["g", "g", "i"],
          "after": ["g", "g"]
       },
       {
-         // Go to bottom of document
+         // (NOT REVISED) Go to bottom of document
          "before": ["g", "g", "k"],
          "after": ["G"]
       },
       {
-         // Go back in change list
+         // (NOT REVISED) Go back in change list
          "before": ["g", "n"],
          "after": ["g", ";"]
       },
       {
-         // Go forth in change list
+         // (NOT REVISED) Go forth in change list
          "before": ["g", "g", "n"],
          "after": ["g", ","]
       },
       {
-         // Indent line
+         // (NOT REVISED) Indent line
          "before": ["g", "o"],
          "commands": ["editor.action.indentLines"]
       },
       {
-         // Outdent line
+         // (NOT REVISED) Outdent line
          "before": ["g", "u"],
          "commands": ["editor.action.outdentLines"]
       },
@@ -738,52 +738,52 @@
 
 
       {
-         // Manually define a fold up to motion
+         // (NOT REVISED) Manually define a fold up to motion
          "before": ["t", "h"],
          "after": ["z", "f"]
       },
       {
-         // Delete fold
+         // (NOT REVISED) Delete fold
          "before": ["t", "s"],
          "after": ["z", "d"]
       },
       {
-         // Toggle collapse region
+         // (NOT REVISED) Toggle collapse region
          "before": ["t", "j"],
          "commands": ["editor.toggleFold"]
       },
       {
-         // Collapse region 1
+         // (NOT REVISED) Collapse region 1
          "before": ["t", "y"],
          "commands": ["editor.foldLevel1"]
       },
       {
-         // Collapse region 2
+         // (NOT REVISED) Collapse region 2
          "before": ["t", "u"],
          "commands": ["editor.foldLevel2"]
       },
       {
-         // Collapse region 3
+         // (NOT REVISED) Collapse region 3
          "before": ["t", "i"],
          "commands": ["editor.foldLevel3"]
       },
       {
-         // Collapse region 4
+         // (NOT REVISED) Collapse region 4
          "before": ["t", "o"],
          "commands": ["editor.foldLevel4"]
       },
       {
-         // Collapse region 5
+         // (NOT REVISED) Collapse region 5
          "before": ["t", "p"],
          "commands": ["editor.foldLevel5"]
       },
       {
-         // Collapse all
+         // (NOT REVISED) Collapse all
          "before": ["T", "T"],
          "commands": ["editor.foldAll"]
       },
       {
-         // Uncollapse all
+         // (NOT REVISED) Uncollapse all
          "before": ["t", "t"],
          "commands": ["editor.unfoldAll"]
       }      
