@@ -23,17 +23,17 @@
       */
 
     {
-      // (NOT REVISED) Up
+      // Up
       "before": ["i"],
       "after": ["k"]
     },
     {
-      // (NOT REVISED) Down
+      // Down
       "before": ["k"],
       "after": ["j"]
     },
     {
-      // (NOT REVISED) Left
+      // Left
       "before": ["j"],
       "after": ["h"]
     },
