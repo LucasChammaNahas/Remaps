@@ -188,6 +188,48 @@
     },
 
     /*
+       .d888888                      dP          
+      d8'    88                      88          
+      88aaaaa88a 88d8b.d8b. 88d888b. 88 .d8888b. 
+      88     88  88'`88'`88 88'  `88 88 88ooood8 
+      88     88  88  88  88 88.  .88 88 88.  ... 
+      88     88  dP  dP  dP 88Y888P' dP `88888P' 
+                            88                   
+                            dP                                                   
+    */
+
+    {
+      // Go to top of screen
+      "before": ["g", "i"],
+      "after": ["H"]
+    },
+    {
+      // Go to middle of screen
+      "before": ["g", "j"],
+      "after": ["M"]
+    },
+    {
+      // Go to middle of screen
+      "before": ["g", "l"],
+      "after": ["M"]
+    },
+    {
+      // Go to bottom of screen
+      "before": ["g", "k"],
+      "after": ["L"]
+    },
+    {
+      // Go to top of document
+      "before": ["g", "g", "i"],
+      "after": ["g", "g"]
+    },
+    {
+      // Go to bottom of document
+      "before": ["g", "g", "k"],
+      "after": ["G"]
+    },
+
+    /*
       d888888P                                       dP                  dP 
          88                                          88                  88 
          88    .d8888b. 88d888b. .d8888b. .d8888b. d8888P .d8888b. .d888b88 
@@ -843,31 +885,6 @@
       // (NOT REVISED) Go to global definition
       "before": ["g", "g", "d"],
       "after": ["g", "D"]
-    },
-    {
-      // (NOT REVISED) Go to top of screen
-      "before": ["g", "i"],
-      "after": ["H"]
-    },
-    {
-      // (NOT REVISED) Go to middle of screen
-      "before": ["g", "j"],
-      "after": ["M"]
-    },
-    {
-      // (NOT REVISED) Go to bottom of screen
-      "before": ["g", "k"],
-      "after": ["L"]
-    },
-    {
-      // (NOT REVISED) Go to top of document
-      "before": ["g", "g", "i"],
-      "after": ["g", "g"]
-    },
-    {
-      // (NOT REVISED) Go to bottom of document
-      "before": ["g", "g", "k"],
-      "after": ["G"]
     },
     {
       // (NOT REVISED) Go back in change list
