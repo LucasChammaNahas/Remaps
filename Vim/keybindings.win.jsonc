@@ -58,16 +58,16 @@
 
    
    {
-      // Prevents from going into normal mode when closing suggest box
+      // Prevents from going into normal mode when closing suggest box (!inDebugRepl is required for some reason)
       "key": "escape",
       "command": "extension.vim_escape",
-      "when": "editorTextFocus && vim.active && !suggestWidgetVisible"
+      "when": "editorTextFocus && vim.active && !inDebugRepl && !suggestWidgetVisible"
    },
    {
-      // Prevents from going into normal mode when closing suggest box
+      // Prevents from going into normal mode when closing suggest box (!inDebugRepl is required for some reason)
       "key": "escape",
       "command": "-extension.vim_escape",
-      "when": "editorTextFocus && vim.active"
+      "when": "editorTextFocus && !inDebugRepl && vim.active"
    },
 
    {
