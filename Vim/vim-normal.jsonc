@@ -177,24 +177,14 @@
     */
 
     {
-      // (NOT REVISED) Home
+      // Home
       "before": ["h"],
       "after": ["^"]
     },
     {
-      // (NOT REVISED) Strong home
-      "before": ["H"],
-      "after": ["0"]
-    },
-    {
-      // (NOT REVISED) End
+      // End
       "before": [";"],
       "after": ["g", "_"]
-    },
-    {
-      // (NOT REVISED) Strong end
-      "before": [":"],
-      "after": ["$"]
     },
 
     /*

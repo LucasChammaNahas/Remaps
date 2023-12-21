@@ -99,24 +99,14 @@
       */
 
     {
-      // (NOT REVISED)
+      // Home
       "before": ["h"],
       "after": ["^"]
     },
     {
-      // (NOT REVISED)
-      "before": ["H"],
-      "after": ["0"]
-    },
-    {
-      // (NOT REVISED)
+      // End
       "before": [";"],
       "after": ["g", "_"]
-    },
-    {
-      // (NOT REVISED)
-      "before": [":"],
-      "after": ["$"]
     },
 
     /*
