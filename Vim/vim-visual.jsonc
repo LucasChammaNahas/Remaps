@@ -223,23 +223,33 @@
       */
 
     {
-      // (NOT REVISED) Target
-      "before": ["("],
+      // Target forwards
+      "before": ["<leader>", "p", ";"],
       "after": ["f"]
     },
     {
-      // (NOT REVISED) Target backwards
-      "before": [")"],
+      // Target forwards before
+      "before": ["<leader>", "p", "l"],
+      "after": ["t"]
+    },
+    {
+      // Target backwards
+      "before": ["<leader>", "p", "h"],
       "after": ["F"]
     },
     {
-      // (NOT REVISED) Repeat target
-      "before": [","],
+      // Target backwards before
+      "before": ["<leader>", "p", "j"],
+      "after": ["T"]
+    },
+    {
+      // Repeat previous forward target
+      "before": ["n", "p"],
       "after": [";"]
     },
     {
-      // (NOT REVISED) Repeat target backwards fix
-      "before": ["g", "z", "a"],
+      // Repeat previous backward target 
+      "before": ["n", "n", "p"],
       "after": [","]
     },
 

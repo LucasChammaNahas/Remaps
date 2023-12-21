@@ -121,14 +121,34 @@
       */
 
     {
-      // (NOT REVISED)
-      "before": ["a"],
+      // Target forwards
+      "before": ["<leader>", "p", ";"],
       "after": ["f"]
     },
     {
-      // (NOT REVISED)
-      "before": ["A"],
+      // Target forwards before
+      "before": ["<leader>", "p", "l"],
+      "after": ["t"]
+    },
+    {
+      // Target backwards
+      "before": ["<leader>", "p", "h"],
       "after": ["F"]
+    },
+    {
+      // Target backwards before
+      "before": ["<leader>", "p", "j"],
+      "after": ["T"]
+    },
+    {
+      // Repeat previous forward target
+      "before": ["n", "p"],
+      "after": [";"]
+    },
+    {
+      // Repeat previous backward target 
+      "before": ["n", "n", "p"],
+      "after": [","]
     },
 
     /********************************************************************************************

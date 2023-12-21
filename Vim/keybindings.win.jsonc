@@ -107,15 +107,6 @@
       }
    },
    {
-      // (NOT REVISED) Repeat backwards previous f, t, F or T
-      "key": "shift+,",
-      "command": "vim.remap",
-      "when": "editorTextFocus && vim.mode == 'Normal'",
-      "args": {
-         "after": ["g", "z", "a"]
-      }
-   },
-   {
       // (NOT REVISED) Insert new line above
       "key": "shift+enter",
       "command": "vim.remap",
