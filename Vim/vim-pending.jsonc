@@ -11,7 +11,7 @@
       888   "   888 Y88..88P  Y8bd8P  Y8b.     888  888  888 Y8b.     888  888 Y88b.       X88 
       888       888  "Y88P"    Y88P    "Y8888  888  888  888  "Y8888  888  888  "Y888  88888P' 
                                  
-      ********************************************************************************************/
+    ********************************************************************************************/
 
     /*
        888888ba                    oo          
@@ -20,7 +20,7 @@
        88   `8b. 88'  `88 Y8ooooo. 88 88'  `"" 
        88    .88 88.  .88       88 88 88.  ... 
        88888888P `88888P8 `88888P' dP `88888P' 
-      */
+    */
 
     {
       // Up
@@ -45,32 +45,48 @@
       88  d8'  d8' 88'  `88 88'  `88 88'  `88 Y8ooooo. 
       88.d8P8.d8P  88.  .88 88       88.  .88       88 
       8888' Y88'   `88888P' dP       `88888P8 `88888P' 
-      */
+    */
 
     {
-      // (NOT REVISED)
-      "before": ["g", "w"],
+      // Go to start of word
+      "before": ["w", ";"],
+      "after": ["w"]
+    },
+    {
+      // Go to start of WORD
+      "before": ["w", "w", ";"],
+      "after": ["W"]
+    },
+    {
+      // Go to end of word
+      "before": ["w", "l"],
+      "after": ["e"]
+    },
+    {
+      // Go to end of WORD
+      "before": ["w", "w", "l"],
+      "after": ["E"]
+    },
+
+    {
+      // Go back to start of word
+      "before": ["w", "j"],
       "after": ["b"]
     },
     {
-      // (NOT REVISED)
-      "before": ["G", "W"],
+      // Go back to start of WORD
+      "before": ["w", "w", "j"],
       "after": ["B"]
     },
     {
-      // (NOT REVISED)
-      "before": ["G", "E"],
+      // Go back to end of word
+      "before": ["w", "h"],
+      "after": ["g", "e"]
+    },
+    {
+      // Go back to end of WORD
+      "before": ["w", "w", "h"],
       "after": ["g", "E"]
-    },
-    {
-      // (NOT REVISED)
-      "before": ["J"],
-      "after": ["b"]
-    },
-    {
-      // (NOT REVISED)
-      "before": ["L"],
-      "after": ["e"]
     },
 
     /*

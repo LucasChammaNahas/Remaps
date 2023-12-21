@@ -141,6 +141,57 @@
     },
 
     /*
+      dP   dP   dP                         dP          
+      88   88   88                         88          
+      88  .8P  .8P .d8888b. 88d888b. .d888b88 .d8888b. 
+      88  d8'  d8' 88'  `88 88'  `88 88'  `88 Y8ooooo. 
+      88.d8P8.d8P  88.  .88 88       88.  .88       88 
+      8888' Y88'   `88888P' dP       `88888P8 `88888P' 
+    */
+
+    {
+      // Go to start of word
+      "before": ["w", ";"],
+      "after": ["w"]
+    },
+    {
+      // Go to start of WORD
+      "before": ["w", "w", ";"],
+      "after": ["W"]
+    },
+    {
+      // Go to end of word
+      "before": ["w", "l"],
+      "after": ["e"]
+    },
+    {
+      // Go to end of WORD
+      "before": ["w", "w", "l"],
+      "after": ["E"]
+    },
+
+    {
+      // Go back to start of word
+      "before": ["w", "j"],
+      "after": ["b"]
+    },
+    {
+      // Go back to start of WORD
+      "before": ["w", "w", "j"],
+      "after": ["B"]
+    },
+    {
+      // Go back to end of word
+      "before": ["w", "h"],
+      "after": ["g", "e"]
+    },
+    {
+      // Go back to end of WORD
+      "before": ["w", "w", "h"],
+      "after": ["g", "E"]
+    },
+
+    /*
       dP        oo                   
       88                             
       88        dP 88d888b. .d8888b. 
