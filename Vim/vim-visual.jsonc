@@ -614,56 +614,43 @@
     },
 
     /********************************************************************************************
-   
-       .d8888b.                            888 888 
-      d88P  Y88b                           888 888 
-      Y88b.                                888 888 
-       "Y888b.    .d8888b 888d888  .d88b.  888 888 
-          "Y88b. d88P"    888P"   d88""88b 888 888 
-            "888 888      888     888  888 888 888 
-      Y88b  d88P Y88b.    888     Y88..88P 888 888 
-       "Y8888P"   "Y8888P 888      "Y88P"  888 888 
-                                 
-      ********************************************************************************************/
+
+       .d8888b.                            888 888      .d8888b.          .d8888b.           
+      d88P  Y88b                           888 888     d88P  "88b        d88P  Y88b          
+      Y88b.                                888 888     Y88b. d88P        888    888          
+       "Y888b.    .d8888b 888d888  .d88b.  888 888      "Y8888P"         888         .d88b.  
+          "Y88b. d88P"    888P"   d88""88b 888 888     .d88P88K.d88P     888  88888 d88""88b 
+            "888 888      888     888  888 888 888     888"  Y888P"      888    888 888  888 
+      Y88b  d88P Y88b.    888     Y88..88P 888 888     Y88b .d8888b      Y88b  d88P Y88..88P 
+       "Y8888P"   "Y8888P 888      "Y88P"  888 888      "Y8888P" Y88b     "Y8888P88  "Y88P"  
+                          
+    ********************************************************************************************/
 
     {
-      // (NOT REVISED) Maps z to b
-      "before": ["b"],
-      "after": ["z"]
-    },
-    {
-      // (NOT REVISED) Maps Z to b
-      "before": ["B"],
-      "after": ["z"]
-    },
-    {
-      // (NOT REVISED) Scroll page until cursor is on center
-      "before": ["b", "j"],
+      // Scroll page until cursor is on center
+      "before": ["g", "."],
       "after": ["z", "z"]
     },
     {
-      // (NOT REVISED) Scroll page until cursor is on top
-      "before": ["b", "k"],
+      // Scroll page until cursor is on top
+      "before": ["g", "o"],
+      "after": ["z", "b"]
+    },
+    {
+      // Scroll page until cursor is at the bottom
+      "before": ["g", "l"],
       "after": ["z", "t"]
     },
     {
-      // (NOT REVISED) Scroll page until cursor is at the bottom
-      "before": ["b", "i"],
-      "after": ["z", "b"]
+      // Scroll page up
+      "before": ["g", "u"],
+      "after": ["<C-u>"]
     },
-
-    /********************************************************************************************
-   
-       .d8888b.           
-      d88P  Y88b          
-      888    888          
-      888         .d88b.  
-      888  88888 d88""88b 
-      888    888 888  888 
-      Y88b  d88P Y88..88P 
-       "Y8888P88  "Y88P"  
-                          
-      ********************************************************************************************/
+    {
+      // Scroll page down
+      "before": ["g", "j"],
+      "after": ["<C-d>"]
+    },
 
     {
       // (NOT REVISED) Go to global definition
