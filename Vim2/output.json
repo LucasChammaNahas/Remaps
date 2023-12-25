@@ -1,0 +1,26 @@
+{
+  "movements": {
+    "basic": [
+      {
+        "comment": "Move Cursor Strong Up",
+        "before": "<leader>i",
+        "after": "5k"
+      },
+      {
+        "comment": "Move Cursor Strong Down",
+        "before": "<leader>k",
+        "after": "5j"
+      },
+      {
+        "comment": "Move Cursor Strong Left",
+        "before": "<leader>j",
+        "after": "12h"
+      },
+      {
+        "comment": "Move Cursor Strong Right",
+        "before": "<leader>l",
+        "after": "12l"
+      }
+    ]
+  }
+}

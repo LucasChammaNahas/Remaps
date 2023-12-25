@@ -237,35 +237,46 @@
          dP    `88888P8 dP       `8888P88 `88888P'   dP   `88888P' `88888P8 
                                       .88                                   
                                   d8888P                                     
-      */
+    */
+
+    {
+      // Target forwards to special symbol
+      "before": ["n", "a"],
+      "after": ["f", "@"]
+    },
+    {
+      // Target backwards to special symbol
+      "before": ["<leader>", "n", "a"],
+      "after": ["F", "@"]
+    },
 
     {
       // Target forwards
-      "before": ["<leader>", "p", ";"],
+      "before": [")"],
       "after": ["f"]
     },
     {
       // Target forwards before
-      "before": ["<leader>", "p", "l"],
+      "before": ["<leader>", ")"],
       "after": ["t"]
     },
     {
       // Target backwards
-      "before": ["<leader>", "p", "h"],
+      "before": ["("],
       "after": ["F"]
     },
     {
       // Target backwards before
-      "before": ["<leader>", "p", "j"],
+      "before": ["<leader>", "("],
       "after": ["T"]
     },
     {
-      // Repeat previous forward target
+      // Repeat previous target
       "before": ["n", "p"],
       "after": [";"]
     },
     {
-      // Repeat previous backward target
+      // Repeat previous target backwards
       "before": ["n", "n", "p"],
       "after": [","]
     },
@@ -639,7 +650,7 @@
       "after": ["g", "P"]
     },
     {
-      // (NOT REVISED) Paste from register A
+      // (NOT REVISED) Paste from register A (usar o <leader> ao invez de n)
       "before": ["n", "f"],
       "after": ["\"", "a", "g", "P"]
     },
