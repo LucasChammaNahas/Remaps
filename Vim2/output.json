@@ -1,7 +1,121 @@
 {
+  "change": [
+    {
+      "comment": "Change to Register Black Hole",
+      "before": [
+        "x"
+      ],
+      "after": "\"_c"
+    },
+    {
+      "comment": "Change to Register A",
+      "before": [
+        "<leader>x"
+      ],
+      "after": "\"ac"
+    },
+    {
+      "comment": "Change to Register B",
+      "before": [
+        "<leader><leader>x"
+      ],
+      "after": "\"bc"
+    },
+    {
+      "comment": "Change to Register C",
+      "before": [
+        "<leader><leader><leader>x"
+      ],
+      "after": "\"cc"
+    },
+    {
+      "comment": "Change Word to Register Black Hole",
+      "before": [
+        "xx"
+      ],
+      "after": "viw\"_c"
+    },
+    {
+      "comment": "Change Word to Register A",
+      "before": [
+        "<leader>xx"
+      ],
+      "after": "viw\"ac"
+    },
+    {
+      "comment": "Change Word to Register B",
+      "before": [
+        "<leader><leader>xx"
+      ],
+      "after": "viw\"bc"
+    },
+    {
+      "comment": "Change Word to Register C",
+      "before": [
+        "<leader><leader><leader>xx"
+      ],
+      "after": "viw\"cc"
+    },
+    {
+      "comment": "Change WORD to Register Black Hole",
+      "before": [
+        "XX"
+      ],
+      "after": "EvB\"_c"
+    },
+    {
+      "comment": "Change WORD to Register A",
+      "before": [
+        "<leader>XX"
+      ],
+      "after": "EvB\"ac"
+    },
+    {
+      "comment": "Change WORD to Register B",
+      "before": [
+        "<leader><leader>XX"
+      ],
+      "after": "EvB\"bc"
+    },
+    {
+      "comment": "Change WORD to Register C",
+      "before": [
+        "<leader><leader><leader>XX"
+      ],
+      "after": "EvB\"cc"
+    },
+    {
+      "comment": "Change Line to Register Black Hole",
+      "before": [
+        "xk"
+      ],
+      "after": "\"_cc"
+    },
+    {
+      "comment": "Change Line to Register A",
+      "before": [
+        "<leader>xk"
+      ],
+      "after": "\"acc"
+    },
+    {
+      "comment": "Change Line to Register B",
+      "before": [
+        "<leader><leader>xk"
+      ],
+      "after": "\"bcc"
+    },
+    {
+      "comment": "Change Line to Register C",
+      "before": [
+        "<leader><leader><leader>xk"
+      ],
+      "after": "\"ccc"
+    }
+  ],
   "yank": [
     {
-      "comment": "Yank to Register 0",
+      "comment": "Yank to Register Clipboard",
       "before": [
         "d"
       ],
@@ -29,7 +143,7 @@
       "after": "\"cy"
     },
     {
-      "comment": "Yank Word to Register 0",
+      "comment": "Yank Word to Register Clipboard",
       "before": [
         "dd"
       ],
@@ -57,7 +171,7 @@
       "after": "viw\"cy"
     },
     {
-      "comment": "Yank WORD to Register 0",
+      "comment": "Yank WORD to Register Clipboard",
       "before": [
         "DD"
       ],
@@ -85,7 +199,7 @@
       "after": "EvB\"cy"
     },
     {
-      "comment": "Yank Line to Register 0",
+      "comment": "Yank Line to Register Clipboard",
       "before": [
         "dk"
       ],

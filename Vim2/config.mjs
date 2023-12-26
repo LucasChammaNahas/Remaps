@@ -2,6 +2,32 @@ import { getTargetedMotions } from './utils/getTargetedMotions.mjs';
 import { getTextManipulationMotions } from './Utils/getTextManipulationMotions.mjs';
 
 export const config = {
+  change: [
+    ...getTextManipulationMotions({
+      before: 'x',
+      after: 'c',
+      operatorName: 'Change',
+    }),
+    ...getTextManipulationMotions({
+      before: 'xx',
+      after: 'c',
+      operatorName: 'Change',
+      targetName: 'Word',
+    }),
+    ...getTextManipulationMotions({
+      before: 'XX',
+      after: 'c',
+      operatorName: 'Change',
+      targetName: 'WORD',
+    }),
+    ...getTextManipulationMotions({
+      before: 'xk',
+      after: 'cc',
+      operatorName: 'Change',
+      targetName: 'Line',
+    }),
+  ],
+
   yank: [
     ...getTextManipulationMotions({
       before: 'd',
@@ -12,14 +38,12 @@ export const config = {
       before: 'dd',
       after: 'y',
       operatorName: 'Yank',
-      afterPrefix: 'viw',
       targetName: 'Word',
     }),
     ...getTextManipulationMotions({
       before: 'DD',
       after: 'y',
       operatorName: 'Yank',
-      afterPrefix: 'EvB',
       targetName: 'WORD',
     }),
     ...getTextManipulationMotions({
