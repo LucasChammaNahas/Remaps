@@ -2,11 +2,86 @@ import { getTargetedMotions } from './utils/getTargetedMotions.mjs';
 import { getTextManipulationMotions } from './Utils/getTextManipulationMotions.mjs';
 
 export const config = {
+  paste: [
+    ...getTextManipulationMotions({
+      before: 'wf',
+      after: 'p',
+      operatorName: 'Paste',
+      targetName: 'Word',
+    }),
+    ...getTextManipulationMotions({
+      before: 'wwf',
+      after: 'p',
+      operatorName: 'Paste',
+      targetName: 'WORD',
+    }),
+    ...getTextManipulationMotions({
+      before: 'f',
+      after: 'gP',
+      operatorName: 'Paste Before',
+    }),
+    ...getTextManipulationMotions({
+      before: 'p',
+      after: 'p',
+      operatorName: 'Paste After',
+    }),
+  ],
+
+  delete: [
+    ...getTextManipulationMotions({
+      before: 's',
+      after: 'd',
+      operatorName: 'Delete',
+    }),
+    ...getTextManipulationMotions({
+      before: 'ss',
+      after: 'd',
+      operatorName: 'Delete',
+      targetName: 'Word',
+    }),
+    ...getTextManipulationMotions({
+      before: 'SS',
+      after: 'd',
+      operatorName: 'Delete',
+      targetName: 'WORD',
+    }),
+    ...getTextManipulationMotions({
+      before: 'sk',
+      after: 'dd',
+      operatorName: 'Delete',
+      targetName: 'Line',
+    }),
+  ],
+  cut: [
+    ...getTextManipulationMotions({
+      before: 'a',
+      after: 'd',
+      operatorName: 'Cut',
+    }),
+    ...getTextManipulationMotions({
+      before: 'aa',
+      after: 'd',
+      operatorName: 'Cut',
+      targetName: 'Word',
+    }),
+    ...getTextManipulationMotions({
+      before: 'AA',
+      after: 'd',
+      operatorName: 'Cut',
+      targetName: 'WORD',
+    }),
+    ...getTextManipulationMotions({
+      before: 'ak',
+      after: 'dd',
+      operatorName: 'Cut',
+      targetName: 'Line',
+    }),
+  ],
   change: [
     ...getTextManipulationMotions({
       before: 'x',
       after: 'c',
-      operatorName: 'Change',
+      operatorName: 'Cut',
     }),
     ...getTextManipulationMotions({
       before: 'xx',

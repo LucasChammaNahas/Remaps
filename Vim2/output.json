@@ -1,112 +1,342 @@
 {
+  "paste": [
+    {
+      "comment": "Paste Before Word From Register Clipboard",
+      "before": [
+        "wf"
+      ],
+      "after": "viwp"
+    },
+    {
+      "comment": "Paste Before Word From Register A",
+      "before": [
+        "<leader>wf"
+      ],
+      "after": "viw\"ap"
+    },
+    {
+      "comment": "Paste Before Word From Register B",
+      "before": [
+        "<leader><leader>wf"
+      ],
+      "after": "viw\"bp"
+    },
+    {
+      "comment": "Paste Before Word From Register C",
+      "before": [
+        "<leader><leader><leader>wf"
+      ],
+      "after": "viw\"cp"
+    },
+    {
+      "comment": "Paste Before From Register Clipboard",
+      "before": [
+        "f"
+      ],
+      "after": "gP"
+    },
+    {
+      "comment": "Paste Before From Register A",
+      "before": [
+        "<leader>f"
+      ],
+      "after": "\"agP"
+    },
+    {
+      "comment": "Paste Before From Register B",
+      "before": [
+        "<leader><leader>f"
+      ],
+      "after": "\"bgP"
+    },
+    {
+      "comment": "Paste Before From Register C",
+      "before": [
+        "<leader><leader><leader>f"
+      ],
+      "after": "\"cgP"
+    },
+    {
+      "comment": "Paste After From Register Clipboard",
+      "before": [
+        "p"
+      ],
+      "after": "p"
+    },
+    {
+      "comment": "Paste After From Register A",
+      "before": [
+        "<leader>p"
+      ],
+      "after": "\"ap"
+    },
+    {
+      "comment": "Paste After From Register B",
+      "before": [
+        "<leader><leader>p"
+      ],
+      "after": "\"bp"
+    },
+    {
+      "comment": "Paste After From Register C",
+      "before": [
+        "<leader><leader><leader>p"
+      ],
+      "after": "\"cp"
+    }
+  ],
+  "delete": [
+    {
+      "comment": "Delete To Register Black Hole",
+      "before": [
+        "s"
+      ],
+      "after": "\"_d"
+    },
+    {
+      "comment": "Delete Word To Register Black Hole",
+      "before": [
+        "ss"
+      ],
+      "after": "viw\"_d"
+    },
+    {
+      "comment": "Delete WORD To Register Black Hole",
+      "before": [
+        "SS"
+      ],
+      "after": "EvB\"_d"
+    },
+    {
+      "comment": "Delete Line To Register Black Hole",
+      "before": [
+        "sk"
+      ],
+      "after": "\"_dd"
+    }
+  ],
+  "cut": [
+    {
+      "comment": "Cut To Register Clipboard",
+      "before": [
+        "a"
+      ],
+      "after": "d"
+    },
+    {
+      "comment": "Cut To Register A",
+      "before": [
+        "<leader>a"
+      ],
+      "after": "\"ad"
+    },
+    {
+      "comment": "Cut To Register B",
+      "before": [
+        "<leader><leader>a"
+      ],
+      "after": "\"bd"
+    },
+    {
+      "comment": "Cut To Register C",
+      "before": [
+        "<leader><leader><leader>a"
+      ],
+      "after": "\"cd"
+    },
+    {
+      "comment": "Cut Word To Register Clipboard",
+      "before": [
+        "aa"
+      ],
+      "after": "viwd"
+    },
+    {
+      "comment": "Cut Word To Register A",
+      "before": [
+        "<leader>aa"
+      ],
+      "after": "viw\"ad"
+    },
+    {
+      "comment": "Cut Word To Register B",
+      "before": [
+        "<leader><leader>aa"
+      ],
+      "after": "viw\"bd"
+    },
+    {
+      "comment": "Cut Word To Register C",
+      "before": [
+        "<leader><leader><leader>aa"
+      ],
+      "after": "viw\"cd"
+    },
+    {
+      "comment": "Cut WORD To Register Clipboard",
+      "before": [
+        "AA"
+      ],
+      "after": "EvBd"
+    },
+    {
+      "comment": "Cut WORD To Register A",
+      "before": [
+        "<leader>AA"
+      ],
+      "after": "EvB\"ad"
+    },
+    {
+      "comment": "Cut WORD To Register B",
+      "before": [
+        "<leader><leader>AA"
+      ],
+      "after": "EvB\"bd"
+    },
+    {
+      "comment": "Cut WORD To Register C",
+      "before": [
+        "<leader><leader><leader>AA"
+      ],
+      "after": "EvB\"cd"
+    },
+    {
+      "comment": "Cut Line To Register Clipboard",
+      "before": [
+        "ak"
+      ],
+      "after": "dd"
+    },
+    {
+      "comment": "Cut Line To Register A",
+      "before": [
+        "<leader>ak"
+      ],
+      "after": "\"add"
+    },
+    {
+      "comment": "Cut Line To Register B",
+      "before": [
+        "<leader><leader>ak"
+      ],
+      "after": "\"bdd"
+    },
+    {
+      "comment": "Cut Line To Register C",
+      "before": [
+        "<leader><leader><leader>ak"
+      ],
+      "after": "\"cdd"
+    }
+  ],
   "change": [
     {
-      "comment": "Change to Register Black Hole",
+      "comment": "Cut To Register Clipboard",
       "before": [
         "x"
       ],
-      "after": "\"_c"
+      "after": "c"
     },
     {
-      "comment": "Change to Register A",
+      "comment": "Cut To Register A",
       "before": [
         "<leader>x"
       ],
       "after": "\"ac"
     },
     {
-      "comment": "Change to Register B",
+      "comment": "Cut To Register B",
       "before": [
         "<leader><leader>x"
       ],
       "after": "\"bc"
     },
     {
-      "comment": "Change to Register C",
+      "comment": "Cut To Register C",
       "before": [
         "<leader><leader><leader>x"
       ],
       "after": "\"cc"
     },
     {
-      "comment": "Change Word to Register Black Hole",
+      "comment": "Change Word To Register Black Hole",
       "before": [
         "xx"
       ],
       "after": "viw\"_c"
     },
     {
-      "comment": "Change Word to Register A",
+      "comment": "Change Word To Register A",
       "before": [
         "<leader>xx"
       ],
       "after": "viw\"ac"
     },
     {
-      "comment": "Change Word to Register B",
+      "comment": "Change Word To Register B",
       "before": [
         "<leader><leader>xx"
       ],
       "after": "viw\"bc"
     },
     {
-      "comment": "Change Word to Register C",
+      "comment": "Change Word To Register C",
       "before": [
         "<leader><leader><leader>xx"
       ],
       "after": "viw\"cc"
     },
     {
-      "comment": "Change WORD to Register Black Hole",
+      "comment": "Change WORD To Register Black Hole",
       "before": [
         "XX"
       ],
       "after": "EvB\"_c"
     },
     {
-      "comment": "Change WORD to Register A",
+      "comment": "Change WORD To Register A",
       "before": [
         "<leader>XX"
       ],
       "after": "EvB\"ac"
     },
     {
-      "comment": "Change WORD to Register B",
+      "comment": "Change WORD To Register B",
       "before": [
         "<leader><leader>XX"
       ],
       "after": "EvB\"bc"
     },
     {
-      "comment": "Change WORD to Register C",
+      "comment": "Change WORD To Register C",
       "before": [
         "<leader><leader><leader>XX"
       ],
       "after": "EvB\"cc"
     },
     {
-      "comment": "Change Line to Register Black Hole",
+      "comment": "Change Line To Register Black Hole",
       "before": [
         "xk"
       ],
       "after": "\"_cc"
     },
     {
-      "comment": "Change Line to Register A",
+      "comment": "Change Line To Register A",
       "before": [
         "<leader>xk"
       ],
       "after": "\"acc"
     },
     {
-      "comment": "Change Line to Register B",
+      "comment": "Change Line To Register B",
       "before": [
         "<leader><leader>xk"
       ],
       "after": "\"bcc"
     },
     {
-      "comment": "Change Line to Register C",
+      "comment": "Change Line To Register C",
       "before": [
         "<leader><leader><leader>xk"
       ],
@@ -115,112 +345,112 @@
   ],
   "yank": [
     {
-      "comment": "Yank to Register Clipboard",
+      "comment": "Yank To Register Clipboard",
       "before": [
         "d"
       ],
       "after": "y"
     },
     {
-      "comment": "Yank to Register A",
+      "comment": "Yank To Register A",
       "before": [
         "<leader>d"
       ],
       "after": "\"ay"
     },
     {
-      "comment": "Yank to Register B",
+      "comment": "Yank To Register B",
       "before": [
         "<leader><leader>d"
       ],
       "after": "\"by"
     },
     {
-      "comment": "Yank to Register C",
+      "comment": "Yank To Register C",
       "before": [
         "<leader><leader><leader>d"
       ],
       "after": "\"cy"
     },
     {
-      "comment": "Yank Word to Register Clipboard",
+      "comment": "Yank Word To Register Clipboard",
       "before": [
         "dd"
       ],
       "after": "viwy"
     },
     {
-      "comment": "Yank Word to Register A",
+      "comment": "Yank Word To Register A",
       "before": [
         "<leader>dd"
       ],
       "after": "viw\"ay"
     },
     {
-      "comment": "Yank Word to Register B",
+      "comment": "Yank Word To Register B",
       "before": [
         "<leader><leader>dd"
       ],
       "after": "viw\"by"
     },
     {
-      "comment": "Yank Word to Register C",
+      "comment": "Yank Word To Register C",
       "before": [
         "<leader><leader><leader>dd"
       ],
       "after": "viw\"cy"
     },
     {
-      "comment": "Yank WORD to Register Clipboard",
+      "comment": "Yank WORD To Register Clipboard",
       "before": [
         "DD"
       ],
       "after": "EvBy"
     },
     {
-      "comment": "Yank WORD to Register A",
+      "comment": "Yank WORD To Register A",
       "before": [
         "<leader>DD"
       ],
       "after": "EvB\"ay"
     },
     {
-      "comment": "Yank WORD to Register B",
+      "comment": "Yank WORD To Register B",
       "before": [
         "<leader><leader>DD"
       ],
       "after": "EvB\"by"
     },
     {
-      "comment": "Yank WORD to Register C",
+      "comment": "Yank WORD To Register C",
       "before": [
         "<leader><leader><leader>DD"
       ],
       "after": "EvB\"cy"
     },
     {
-      "comment": "Yank Line to Register Clipboard",
+      "comment": "Yank Line To Register Clipboard",
       "before": [
         "dk"
       ],
       "after": "yy"
     },
     {
-      "comment": "Yank Line to Register A",
+      "comment": "Yank Line To Register A",
       "before": [
         "<leader>dk"
       ],
       "after": "\"ayy"
     },
     {
-      "comment": "Yank Line to Register B",
+      "comment": "Yank Line To Register B",
       "before": [
         "<leader><leader>dk"
       ],
       "after": "\"byy"
     },
     {
-      "comment": "Yank Line to Register C",
+      "comment": "Yank Line To Register C",
       "before": [
         "<leader><leader><leader>dk"
       ],

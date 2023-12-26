@@ -7,6 +7,7 @@ export function getTextManipulationMotions(props) {
   let auxLeader = '';
   let registers = ['"a', '"b', '"c'];
   let afterPrefix = '';
+  let toOrFrom = 'To';
 
   if (operatorName === 'Yank') {
     registers.unshift('');
@@ -18,7 +19,11 @@ export function getTextManipulationMotions(props) {
     registers.unshift('');
   }
   if (operatorName === 'Delete') {
-    registers = [''];
+    registers = ['"_'];
+  }
+  if (operatorName.includes('Paste')) {
+    registers.unshift('');
+    toOrFrom = 'From';
   }
 
   if (targetName === 'Word') {
@@ -37,7 +42,7 @@ export function getTextManipulationMotions(props) {
       registerName = 'Black Hole';
     }
 
-    let comment = `${operatorName} ${targetName} to Register ${registerName}`;
+    let comment = `${operatorName} ${targetName} ${toOrFrom} Register ${registerName}`;
     comment = comment.replace(/\s{2,}/g, ' ');
 
     const operator = {

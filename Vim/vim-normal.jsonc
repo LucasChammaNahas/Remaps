@@ -298,12 +298,12 @@
       ********************************************************************************************/
 
     // {
-    //   // (NOT REVISED) One time insert right
+    //   // One time insert right
     //   "before": ["n", "r"],
     //   "after": ["a", " ", "<ESC>", "r"]
     // },
     // {
-    //   // (NOT REVISED) One time insert left
+    //   // One time insert left
     //   "before": ["g", "r"],
     //   "after": ["i", " ", "<ESC>", "r"]
     // },
@@ -318,87 +318,87 @@
       */
 
     {
-      // (NOT REVISED) Yank
+      // Yank
       "before": ["d"],
       "after": ["y"]
     },
     {
-      // (NOT REVISED) Yank
+      // Yank
       "before": ["D"],
       "after": ["y"]
     },
     {
-      // (NOT REVISED) Yank to register A
+      // Yank to register A
       "before": ["n", "d"],
       "after": ["\"", "a", "y"]
     },
     {
-      // (NOT REVISED) Yank to register B
+      // Yank to register B
       "before": ["n", "n", "d"],
       "after": ["\"", "b", "y"]
     },
     {
-      // (NOT REVISED) Yank to register C
+      // Yank to register C
       "before": ["n", "n", "n", "d"],
       "after": ["\"", "c", "y"]
     },
     {
-      // (NOT REVISED) Yank word
+      // Yank word
       "before": ["d", "d"],
       "after": ["v", "i", "w", "y"]
     },
     {
-      // (NOT REVISED) Yank word to register A
+      // Yank word to register A
       "before": ["n", "d", "d"],
       "after": ["v", "i", "w", "\"", "a", "y"]
     },
     {
-      // (NOT REVISED) Yank word to register B
+      // Yank word to register B
       "before": ["n", "n", "d", "d"],
       "after": ["v", "i", "w", "\"", "b", "y"]
     },
     {
-      // (NOT REVISED) Yank word to register C
+      // Yank word to register C
       "before": ["n", "n", "n", "d", "d"],
       "after": ["v", "i", "w", "\"", "c", "y"]
     },
     {
-      // (NOT REVISED) Yank WORD
+      // Yank WORD
       "before": ["D", "D"],
       "after": ["E", "v", "B", "y"]
     },
     {
-      // (NOT REVISED) Yank WORD to register A
+      // Yank WORD to register A
       "before": ["N", "D", "D"],
       "after": ["E", "v", "B", "\"", "a", "y"]
     },
     {
-      // (NOT REVISED) Yank WORD to register B
+      // Yank WORD to register B
       "before": ["N", "N", "D", "D"],
       "after": ["E", "v", "B", "\"", "b", "y"]
     },
     {
-      // (NOT REVISED) Yank WORD to register C
+      // Yank WORD to register C
       "before": ["N", "N", "N", "D", "D"],
       "after": ["E", "v", "B", "\"", "c", "y"]
     },
     {
-      // (NOT REVISED) Yank line
+      // Yank line
       "before": ["d", "k"],
       "after": ["y", "y"]
     },
     {
-      // (NOT REVISED) Yank line to register A
+      // Yank line to register A
       "before": ["n", "d", "k"],
       "after": ["\"", "a", "y", "y"]
     },
     {
-      // (NOT REVISED) Yank line to register B
+      // Yank line to register B
       "before": ["n", "n", "d", "k"],
       "after": ["\"", "b", "y", "y"]
     },
     {
-      // (NOT REVISED) Yank line to register C
+      // Yank line to register C
       "before": ["n", "n", "n", "d", "k"],
       "after": ["\"", "c", "y", "y"]
     },
@@ -415,82 +415,82 @@
       */
 
     {
-      // (NOT REVISED) Change delete
+      // Change delete
       "before": ["x"],
       "after": ["\"", "_", "c"]
     },
     {
-      // (NOT REVISED) Change cut to register A
+      // Change cut to register A
       "before": ["n", "x"],
       "after": ["\"", "a", "c"]
     },
     {
-      // (NOT REVISED) Change cut to register B
+      // Change cut to register B
       "before": ["n", "n", "x"],
       "after": ["\"", "b", "c"]
     },
     {
-      // (NOT REVISED) Change cut to register C
+      // Change cut to register C
       "before": ["n", "n", "n", "x"],
       "after": ["\"", "c", "c"]
     },
     {
-      // (NOT REVISED) Change delete word
+      // Change delete word
       "before": ["x", "x"],
       "after": ["v", "i", "w", "\"", "_", "c"]
     },
     {
-      // (NOT REVISED) Change cut word to register A
+      // Change cut word to register A
       "before": ["n", "x", "x"],
       "after": ["v", "i", "w", "\"", "a", "c"]
     },
     {
-      // (NOT REVISED) Change cut word to register B
+      // Change cut word to register B
       "before": ["n", "n", "x", "x"],
       "after": ["v", "i", "w", "\"", "b", "c"]
     },
     {
-      // (NOT REVISED) Change cut word to register C
+      // Change cut word to register C
       "before": ["n", "n", "n", "x", "x"],
       "after": ["v", "i", "w", "\"", "c", "c"]
     },
     {
-      // (NOT REVISED) Change delete WORD
+      // Change delete WORD
       "before": ["X", "X"],
       "after": ["E", "v", "B", "\"", "_", "c"]
     },
     {
-      // (NOT REVISED) Change cut WORD to register A
+      // Change cut WORD to register A
       "before": ["N", "X", "X"],
       "after": ["E", "v", "B", "\"", "a", "c"]
     },
     {
-      // (NOT REVISED) Change cut WORD to register B
+      // Change cut WORD to register B
       "before": ["N", "N", "X", "X"],
       "after": ["E", "v", "B", "\"", "b", "c"]
     },
     {
-      // (NOT REVISED) Change cut WORD to register C
+      // Change cut WORD to register C
       "before": ["N", "N", "N", "X", "X"],
       "after": ["E", "v", "B", "\"", "c", "c"]
     },
     {
-      // (NOT REVISED) Change delete line
+      // Change delete line
       "before": ["x", "k"],
       "after": ["\"", "_", "c", "c"]
     },
     {
-      // (NOT REVISED) Change cut line to register A
+      // Change cut line to register A
       "before": ["n", "x", "k"],
       "after": ["\"", "a", "c", "c"]
     },
     {
-      // (NOT REVISED) Change cut line to register B
+      // Change cut line to register B
       "before": ["n", "n", "x", "k"],
       "after": ["\"", "b", "c", "c"]
     },
     {
-      // (NOT REVISED) Change cut line to register B
+      // Change cut line to register B
       "before": ["n", "n", "n", "x", "k"],
       "after": ["\"", "c", "c", "c"]
     },
@@ -505,22 +505,22 @@
       */
 
     {
-      // (NOT REVISED) Delete
+      // Delete
       "before": ["s"],
       "after": ["\"", "_", "d"]
     },
     {
-      // (NOT REVISED) Delete word
+      // Delete word
       "before": ["s", "s"],
       "after": ["v", "i", "w", "\"", "_", "d"]
     },
     {
-      // (NOT REVISED) Delete WORD
+      // Delete WORD
       "before": ["S", "S"],
       "after": ["E", "v", "B", "\"", "_", "d"]
     },
     {
-      // (NOT REVISED) Delete line
+      // Delete line
       "before": ["s", "k"],
       "after": ["\"", "_", "d", "d"]
     },
@@ -535,82 +535,82 @@
       */
 
     {
-      // (NOT REVISED) Cut
+      // Cut
       "before": ["a"],
       "after": ["d"]
     },
     {
-      // (NOT REVISED) Cut to register A
+      // Cut to register A
       "before": ["n", "a"],
       "after": ["\"", "a", "d"]
     },
     {
-      // (NOT REVISED) Cut to register B
+      // Cut to register B
       "before": ["n", "n", "a"],
       "after": ["\"", "b", "d"]
     },
     {
-      // (NOT REVISED) Cut to register C
+      // Cut to register C
       "before": ["n", "n", "n", "a"],
       "after": ["\"", "c", "d"]
     },
     {
-      // (NOT REVISED) Cut word
+      // Cut word
       "before": ["a", "a"],
       "after": ["v", "i", "w", "d"]
     },
     {
-      // (NOT REVISED) Cut word to register A
+      // Cut word to register A
       "before": ["n", "a", "a"],
       "after": ["v", "i", "w", "\"", "a", "d"]
     },
     {
-      // (NOT REVISED) Cut word to register B
+      // Cut word to register B
       "before": ["n", "n", "a", "a"],
       "after": ["v", "i", "w", "\"", "b", "d"]
     },
     {
-      // (NOT REVISED) Cut word to register C
+      // Cut word to register C
       "before": ["n", "n", "n", "a", "a"],
       "after": ["v", "i", "w", "\"", "c", "d"]
     },
     {
-      // (NOT REVISED) Cut WORD
+      // Cut WORD
       "before": ["A", "A"],
       "after": ["E", "v", "B", "d"]
     },
     {
-      // (NOT REVISED) Cut WORD to register A
+      // Cut WORD to register A
       "before": ["N", "A", "A"],
       "after": ["E", "v", "B", "\"", "a", "d"]
     },
     {
-      // (NOT REVISED) Cut WORD to register B
+      // Cut WORD to register B
       "before": ["N", "N", "A", "A"],
       "after": ["E", "v", "B", "\"", "b", "d"]
     },
     {
-      // (NOT REVISED) Cut WORD to register C
+      // Cut WORD to register C
       "before": ["N", "N", "N", "A", "A"],
       "after": ["E", "v", "B", "\"", "c", "d"]
     },
     {
-      // (NOT REVISED) Cut line
+      // Cut line
       "before": ["a", "k"],
       "after": ["d", "d"]
     },
     {
-      // (NOT REVISED) Cut line to register A
+      // Cut line to register A
       "before": ["n", "a", "k"],
       "after": ["\"", "a", "d", "d"]
     },
     {
-      // (NOT REVISED) Cut line to register B
+      // Cut line to register B
       "before": ["n", "n", "a", "k"],
       "after": ["\"", "b", "d", "d"]
     },
     {
-      // (NOT REVISED) Cut line to register C
+      // Cut line to register C
       "before": ["n", "n", "n", "a", "k"],
       "after": ["\"", "c", "d", "d"]
     },
@@ -625,50 +625,50 @@
       */
 
     {
-      // (NOT REVISED) Paste
+      // Paste
       "before": ["f"],
       "after": ["g", "P"]
     },
     {
-      // (NOT REVISED) Paste from register A (usar o <leader> ao invez de n)
+      // Paste from register A (usar o <leader> ao invez de n)
       "before": ["n", "f"],
       "after": ["\"", "a", "g", "P"]
     },
     {
-      // (NOT REVISED) Paste from register B
+      // Paste from register B
       "before": ["n", "n", "f"],
       "after": ["\"", "b", "g", "P"]
     },
     {
-      // (NOT REVISED) Paste from register C
+      // Paste from register C
       "before": ["n", "n", "n", "f"],
       "after": ["\"", "c", "g", "P"]
     },
     {
-      // (NOT REVISED) Paste from register A
+      // Paste from register A
       "before": ["n", "p"],
       "after": ["\"", "a", "p"]
     },
     {
-      // (NOT REVISED) Paste from register B
+      // Paste from register B
       "before": ["n", "n", "p"],
       "after": ["\"", "b", "p"]
     },
     {
-      // (NOT REVISED) Paste from register C
+      // Paste from register C
       "before": ["n", "n", "n", "p"],
       "after": ["\"", "c", "p"]
     },
-    {
-      // (NOT REVISED) Paste secondary
-      "before": ["F"],
-      "after": ["P"]
-    },
-    {
-      // (NOT REVISED) Paste secondary
-      "before": ["P"],
-      "after": ["g", "p"]
-    },
+    // {
+    //   // Paste secondary
+    //   "before": ["F"],
+    //   "after": ["P"]
+    // },
+    // {
+    //   // Paste secondary
+    //   "before": ["P"],
+    //   "after": ["g", "p"]
+    // },
 
     /********************************************************************************************
    
