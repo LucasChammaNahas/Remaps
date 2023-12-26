@@ -297,36 +297,16 @@
                                  
       ********************************************************************************************/
 
-    {
-      // (NOT REVISED) Toggle case
-      "before": ["y", "y"],
-      "after": ["~"]
-    },
-    {
-      // (NOT REVISED) Select word
-      "before": ["w"],
-      "after": ["v", "i", "w"]
-    },
-    {
-      // (NOT REVISED) Select WORD
-      "before": ["W"],
-      "after": ["E", "v", "B"]
-    },
-    {
-      // (NOT REVISED) Select WORD
-      "before": ["e"],
-      "after": ["E", "v", "B"]
-    },
-    {
-      // (NOT REVISED) One time insert right
-      "before": ["n", "r"],
-      "after": ["a", " ", "<ESC>", "r"]
-    },
-    {
-      // (NOT REVISED) One time insert left
-      "before": ["g", "r"],
-      "after": ["i", " ", "<ESC>", "r"]
-    },
+    // {
+    //   // (NOT REVISED) One time insert right
+    //   "before": ["n", "r"],
+    //   "after": ["a", " ", "<ESC>", "r"]
+    // },
+    // {
+    //   // (NOT REVISED) One time insert left
+    //   "before": ["g", "r"],
+    //   "after": ["i", " ", "<ESC>", "r"]
+    // },
 
     /*
       dP    dP                   dP       
@@ -704,6 +684,22 @@
       ********************************************************************************************/
 
     {
+      // (NOT REVISED) Select word
+      "before": ["w"],
+      "after": ["v", "i", "w"]
+    },
+    {
+      // (NOT REVISED) Select WORD
+      "before": ["W"],
+      "after": ["E", "v", "B"]
+    },
+    {
+      // (NOT REVISED) Select WORD
+      "before": ["e"],
+      "after": ["E", "v", "B"]
+    },
+
+    {
       // (NOT REVISED) Undo
       "before": ["z"],
       "commands": ["undo"]
@@ -773,6 +769,11 @@
        Y88888P' `88888P8 `88888P' `88888P' 
       */
 
+    {
+      // (NOT REVISED) Toggle case
+      "before": ["y", "y"],
+      "after": ["~"]
+    },
     {
       // (NOT REVISED) Toggle case operator
       "before": ["<leader>", "y"],
@@ -878,6 +879,7 @@
       "after": ["<C-d>"]
     },
 
+    // move to COMMANDS
     {
       // (NOT REVISED) Go to global definition
       "before": ["g", "g", "d"],

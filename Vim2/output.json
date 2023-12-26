@@ -1,1210 +1,1325 @@
 {
-  "modes": {
-    "switching": [
-      {
-        "comment": "Visual Line",
-        "before": "cv",
-        "after": "V"
-      },
-      {
-        "comment": "Visual Block",
-        "before": "cc",
-        "after": "<C-v>"
-      }
-    ]
-  },
-  "movements": {
-    "basic": [
-      {
-        "comment": "Move Cursor Up",
-        "before": [
-          "i"
-        ],
-        "after": "k"
-      },
-      {
-        "comment": "Move Cursor Down",
-        "before": [
-          "k"
-        ],
-        "after": "j"
-      },
-      {
-        "comment": "Move Cursor Left",
-        "before": [
-          "j"
-        ],
-        "after": "h"
-      },
-      {
-        "comment": "Move Cursor Right",
-        "before": [
-          "l"
-        ],
-        "after": "l"
-      },
-      {
-        "comment": "Move Cursor Strong Up",
-        "before": [
-          "<leader>I"
-        ],
-        "after": "5k"
-      },
-      {
-        "comment": "Move Cursor Strong Down",
-        "before": [
-          "<leader>K"
-        ],
-        "after": "5j"
-      },
-      {
-        "comment": "Move Cursor Strong Left",
-        "before": [
-          "<leader>J"
-        ],
-        "after": "12h"
-      },
-      {
-        "comment": "Move Cursor Strong Right",
-        "before": [
-          "<leader>L"
-        ],
-        "after": "12l"
-      },
-      {
-        "comment": "Move Cursor Stronger Up",
-        "before": [
-          "I"
-        ],
-        "after": "10k"
-      },
-      {
-        "comment": "Move Cursor Stronger Down",
-        "before": [
-          "K"
-        ],
-        "after": "10j"
-      },
-      {
-        "comment": "Move Cursor Stronger Left",
-        "before": [
-          "J"
-        ],
-        "after": "10h"
-      },
-      {
-        "comment": "Move Cursor Stronger Right",
-        "before": [
-          "L"
-        ],
-        "after": "10l"
-      }
-    ],
-    "word": [
-      {
-        "comment": "Go to Start of Word",
-        "before": [
-          "w;"
-        ],
-        "after": "w"
-      },
-      {
-        "comment": "Go to Start of WORD",
-        "before": [
-          "ww;"
-        ],
-        "after": "W"
-      },
-      {
-        "comment": "Go to End of Word",
-        "before": [
-          "wl"
-        ],
-        "after": "e"
-      },
-      {
-        "comment": "Go to Start of WORD",
-        "before": [
-          "wwl"
-        ],
-        "after": "E"
-      },
-      {
-        "comment": "Go Back to Start of Word",
-        "before": [
-          "wj"
-        ],
-        "after": "b"
-      },
-      {
-        "comment": "Go Back to Start of WORD",
-        "before": [
-          "wwj"
-        ],
-        "after": "B"
-      },
-      {
-        "comment": "Go Back to End of Word",
-        "before": [
-          "wh"
-        ],
-        "after": "ge"
-      },
-      {
-        "comment": "Go Back to Start of WORD",
-        "before": [
-          "wwh"
-        ],
-        "after": "gE"
-      }
-    ],
-    "line": [
-      {
-        "comment": "Go to Start of Line",
-        "before": [
-          "h"
-        ],
-        "after": "^"
-      },
-      {
-        "comment": "Go to End of Line",
-        "before": [
-          ";"
-        ],
-        "after": "g_"
-      }
-    ],
-    "ample": [
-      {
-        "comment": "Go to Top of Screen",
-        "before": [
-          "gi"
-        ],
-        "after": "H"
-      },
-      {
-        "comment": "Go to Middle of Screen",
-        "before": [
-          "gj",
-          "gl"
-        ],
-        "after": "M"
-      },
-      {
-        "comment": "Go to Bottom of Screen",
-        "before": [
-          "gk"
-        ],
-        "after": "L"
-      },
-      {
-        "comment": "Go to Top of Document",
-        "before": [
-          "ggi"
-        ],
-        "after": "gg"
-      },
-      {
-        "comment": "Go to Bottom of Document",
-        "before": [
-          "ggk"
-        ],
-        "after": "G"
-      }
-    ],
-    "targeted": [
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "nq"
-        ],
-        "after": "f#"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "nq"
-        ],
-        "after": "t#"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>nq"
-        ],
-        "after": "F#"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>nq"
-        ],
-        "after": "T#"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "nw"
-        ],
-        "after": "f|"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "nw"
-        ],
-        "after": "t|"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>nw"
-        ],
-        "after": "F|"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>nw"
-        ],
-        "after": "T|"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "ne"
-        ],
-        "after": "f["
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "ne"
-        ],
-        "after": "t["
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>ne"
-        ],
-        "after": "F["
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>ne"
-        ],
-        "after": "T["
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "nr"
-        ],
-        "after": "f]"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "nr"
-        ],
-        "after": "t]"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>nr"
-        ],
-        "after": "F]"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>nr"
-        ],
-        "after": "T]"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "nt"
-        ],
-        "after": "f~"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "nt"
-        ],
-        "after": "t~"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>nt"
-        ],
-        "after": "F~"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>nt"
-        ],
-        "after": "T~"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "na"
-        ],
-        "after": "f@"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "na"
-        ],
-        "after": "t@"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>na"
-        ],
-        "after": "F@"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>na"
-        ],
-        "after": "T@"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "ns"
-        ],
-        "after": "f("
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "ns"
-        ],
-        "after": "t("
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>ns"
-        ],
-        "after": "F("
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>ns"
-        ],
-        "after": "T("
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "nd"
-        ],
-        "after": "f)"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "nd"
-        ],
-        "after": "t)"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>nd"
-        ],
-        "after": "F)"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>nd"
-        ],
-        "after": "T)"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "nf"
-        ],
-        "after": "f;"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "nf"
-        ],
-        "after": "t;"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>nf"
-        ],
-        "after": "F;"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>nf"
-        ],
-        "after": "T;"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "ng"
-        ],
-        "after": "f:"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "ng"
-        ],
-        "after": "t:"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>ng"
-        ],
-        "after": "F:"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>ng"
-        ],
-        "after": "T:"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "nz"
-        ],
-        "after": "f/"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "nz"
-        ],
-        "after": "t/"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>nz"
-        ],
-        "after": "F/"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>nz"
-        ],
-        "after": "T/"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "nx"
-        ],
-        "after": "f*"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "nx"
-        ],
-        "after": "t*"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>nx"
-        ],
-        "after": "F*"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>nx"
-        ],
-        "after": "T*"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "nc"
-        ],
-        "after": "f+"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "nc"
-        ],
-        "after": "t+"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>nc"
-        ],
-        "after": "F+"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>nc"
-        ],
-        "after": "T+"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "nv"
-        ],
-        "after": "f%"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "nv"
-        ],
-        "after": "t%"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>nv"
-        ],
-        "after": "F%"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>nv"
-        ],
-        "after": "T%"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "nb"
-        ],
-        "after": "f$"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "nb"
-        ],
-        "after": "t$"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>nb"
-        ],
-        "after": "F$"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>nb"
-        ],
-        "after": "T$"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "ny"
-        ],
-        "after": "f&"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "ny"
-        ],
-        "after": "t&"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>ny"
-        ],
-        "after": "F&"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>ny"
-        ],
-        "after": "T&"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "nu"
-        ],
-        "after": "f<"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "nu"
-        ],
-        "after": "t<"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>nu"
-        ],
-        "after": "F<"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>nu"
-        ],
-        "after": "T<"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "ni"
-        ],
-        "after": "f="
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "ni"
-        ],
-        "after": "t="
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>ni"
-        ],
-        "after": "F="
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>ni"
-        ],
-        "after": "T="
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "no"
-        ],
-        "after": "f>"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "no"
-        ],
-        "after": "t>"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>no"
-        ],
-        "after": "F>"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>no"
-        ],
-        "after": "T>"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "np"
-        ],
-        "after": "f!"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "np"
-        ],
-        "after": "t!"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>np"
-        ],
-        "after": "F!"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>np"
-        ],
-        "after": "T!"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "nh"
-        ],
-        "after": "f`"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "nh"
-        ],
-        "after": "t`"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>nh"
-        ],
-        "after": "F`"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>nh"
-        ],
-        "after": "T`"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "nj"
-        ],
-        "after": "f{"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "nj"
-        ],
-        "after": "t{"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>nj"
-        ],
-        "after": "F{"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>nj"
-        ],
-        "after": "T{"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "nk"
-        ],
-        "after": "f}"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "nk"
-        ],
-        "after": "t}"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>nk"
-        ],
-        "after": "F}"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>nk"
-        ],
-        "after": "T}"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "nl"
-        ],
-        "after": "f'"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "nl"
-        ],
-        "after": "t'"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>nl"
-        ],
-        "after": "F'"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>nl"
-        ],
-        "after": "T'"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "n;"
-        ],
-        "after": "f:"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "n;"
-        ],
-        "after": "t:"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>n;"
-        ],
-        "after": "F:"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>n;"
-        ],
-        "after": "T:"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "n'"
-        ],
-        "after": "f\""
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "n'"
-        ],
-        "after": "t\""
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>n'"
-        ],
-        "after": "F\""
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>n'"
-        ],
-        "after": "T\""
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "nn"
-        ],
-        "after": "f-"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "nn"
-        ],
-        "after": "t-"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>nn"
-        ],
-        "after": "F-"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>nn"
-        ],
-        "after": "T-"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "nm"
-        ],
-        "after": "f_"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "nm"
-        ],
-        "after": "t_"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>nm"
-        ],
-        "after": "F_"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>nm"
-        ],
-        "after": "T_"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "n,"
-        ],
-        "after": "f,"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "n,"
-        ],
-        "after": "t,"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>n,"
-        ],
-        "after": "F,"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>n,"
-        ],
-        "after": "T,"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "n."
-        ],
-        "after": "f."
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "n."
-        ],
-        "after": "t."
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>n."
-        ],
-        "after": "F."
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>n."
-        ],
-        "after": "T."
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "n/"
-        ],
-        "after": "f?"
-      },
-      {
-        "comment": "Target Forwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "n/"
-        ],
-        "after": "t?"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "n",
-        "before": [
-          "<leader>n/"
-        ],
-        "after": "F?"
-      },
-      {
-        "comment": "Target Backwards Special Symbol",
-        "modes": "v",
-        "before": [
-          "<leader>n/"
-        ],
-        "after": "T?"
-      }
-    ]
-  }
+  "yank": [
+    {
+      "comment": "Yank to Register 0",
+      "before": [
+        "d"
+      ],
+      "after": "y"
+    },
+    {
+      "comment": "Yank to Register A",
+      "before": [
+        "<leader>d"
+      ],
+      "after": "\"ay"
+    },
+    {
+      "comment": "Yank to Register B",
+      "before": [
+        "<leader><leader>d"
+      ],
+      "after": "\"by"
+    },
+    {
+      "comment": "Yank to Register C",
+      "before": [
+        "<leader><leader><leader>d"
+      ],
+      "after": "\"cy"
+    },
+    {
+      "comment": "Yank Word to Register 0",
+      "before": [
+        "dd"
+      ],
+      "after": "viwy"
+    },
+    {
+      "comment": "Yank Word to Register A",
+      "before": [
+        "<leader>dd"
+      ],
+      "after": "viw\"ay"
+    },
+    {
+      "comment": "Yank Word to Register B",
+      "before": [
+        "<leader><leader>dd"
+      ],
+      "after": "viw\"by"
+    },
+    {
+      "comment": "Yank Word to Register C",
+      "before": [
+        "<leader><leader><leader>dd"
+      ],
+      "after": "viw\"cy"
+    },
+    {
+      "comment": "Yank WORD to Register 0",
+      "before": [
+        "DD"
+      ],
+      "after": "EvBy"
+    },
+    {
+      "comment": "Yank WORD to Register A",
+      "before": [
+        "<leader>DD"
+      ],
+      "after": "EvB\"ay"
+    },
+    {
+      "comment": "Yank WORD to Register B",
+      "before": [
+        "<leader><leader>DD"
+      ],
+      "after": "EvB\"by"
+    },
+    {
+      "comment": "Yank WORD to Register C",
+      "before": [
+        "<leader><leader><leader>DD"
+      ],
+      "after": "EvB\"cy"
+    },
+    {
+      "comment": "Yank Line to Register 0",
+      "before": [
+        "dk"
+      ],
+      "after": "yy"
+    },
+    {
+      "comment": "Yank Line to Register A",
+      "before": [
+        "<leader>dk"
+      ],
+      "after": "\"ayy"
+    },
+    {
+      "comment": "Yank Line to Register B",
+      "before": [
+        "<leader><leader>dk"
+      ],
+      "after": "\"byy"
+    },
+    {
+      "comment": "Yank Line to Register C",
+      "before": [
+        "<leader><leader><leader>dk"
+      ],
+      "after": "\"cyy"
+    }
+  ],
+  "switching": [
+    {
+      "comment": "Visual Line",
+      "before": "cv",
+      "after": "V"
+    },
+    {
+      "comment": "Visual Block",
+      "before": "cc",
+      "after": "<C-v>"
+    }
+  ],
+  "movements": [
+    {
+      "comment": "Move Cursor Up",
+      "before": [
+        "i"
+      ],
+      "after": "k"
+    },
+    {
+      "comment": "Move Cursor Down",
+      "before": [
+        "k"
+      ],
+      "after": "j"
+    },
+    {
+      "comment": "Move Cursor Left",
+      "before": [
+        "j"
+      ],
+      "after": "h"
+    },
+    {
+      "comment": "Move Cursor Right",
+      "before": [
+        "l"
+      ],
+      "after": "l"
+    },
+    {
+      "comment": "Move Cursor Strong Up",
+      "before": [
+        "<leader>I"
+      ],
+      "after": "5k"
+    },
+    {
+      "comment": "Move Cursor Strong Down",
+      "before": [
+        "<leader>K"
+      ],
+      "after": "5j"
+    },
+    {
+      "comment": "Move Cursor Strong Left",
+      "before": [
+        "<leader>J"
+      ],
+      "after": "12h"
+    },
+    {
+      "comment": "Move Cursor Strong Right",
+      "before": [
+        "<leader>L"
+      ],
+      "after": "12l"
+    },
+    {
+      "comment": "Move Cursor Stronger Up",
+      "before": [
+        "I"
+      ],
+      "after": "10k"
+    },
+    {
+      "comment": "Move Cursor Stronger Down",
+      "before": [
+        "K"
+      ],
+      "after": "10j"
+    },
+    {
+      "comment": "Move Cursor Stronger Left",
+      "before": [
+        "J"
+      ],
+      "after": "10h"
+    },
+    {
+      "comment": "Move Cursor Stronger Right",
+      "before": [
+        "L"
+      ],
+      "after": "10l"
+    }
+  ],
+  "word": [
+    {
+      "comment": "Go to Start of Word",
+      "before": [
+        "w;"
+      ],
+      "after": "w"
+    },
+    {
+      "comment": "Go to Start of WORD",
+      "before": [
+        "ww;"
+      ],
+      "after": "W"
+    },
+    {
+      "comment": "Go to End of Word",
+      "before": [
+        "wl"
+      ],
+      "after": "e"
+    },
+    {
+      "comment": "Go to Start of WORD",
+      "before": [
+        "wwl"
+      ],
+      "after": "E"
+    },
+    {
+      "comment": "Go Back to Start of Word",
+      "before": [
+        "wj"
+      ],
+      "after": "b"
+    },
+    {
+      "comment": "Go Back to Start of WORD",
+      "before": [
+        "wwj"
+      ],
+      "after": "B"
+    },
+    {
+      "comment": "Go Back to End of Word",
+      "before": [
+        "wh"
+      ],
+      "after": "ge"
+    },
+    {
+      "comment": "Go Back to Start of WORD",
+      "before": [
+        "wwh"
+      ],
+      "after": "gE"
+    }
+  ],
+  "line": [
+    {
+      "comment": "Go to Start of Line",
+      "before": [
+        "h"
+      ],
+      "after": "^"
+    },
+    {
+      "comment": "Go to End of Line",
+      "before": [
+        ";"
+      ],
+      "after": "g_"
+    }
+  ],
+  "ample": [
+    {
+      "comment": "Go to Top of Screen",
+      "before": [
+        "gi"
+      ],
+      "after": "H"
+    },
+    {
+      "comment": "Go to Middle of Screen",
+      "before": [
+        "gj",
+        "gl"
+      ],
+      "after": "M"
+    },
+    {
+      "comment": "Go to Bottom of Screen",
+      "before": [
+        "gk"
+      ],
+      "after": "L"
+    },
+    {
+      "comment": "Go to Top of Document",
+      "before": [
+        "ggi"
+      ],
+      "after": "gg"
+    },
+    {
+      "comment": "Go to Bottom of Document",
+      "before": [
+        "ggk"
+      ],
+      "after": "G"
+    }
+  ],
+  "scroll": [
+    {
+      "comment": "Scroll Page Until Cursor is at Top",
+      "before": [
+        "go"
+      ],
+      "after": "zb"
+    },
+    {
+      "comment": "Scroll Page Until Cursor is at Center",
+      "before": [
+        "g."
+      ],
+      "after": "zz"
+    },
+    {
+      "comment": "Scroll Page Until Cursor is at Bottom",
+      "before": [
+        "gl"
+      ],
+      "after": "zt"
+    },
+    {
+      "comment": "Scroll Page Up",
+      "before": [
+        "gu"
+      ],
+      "after": "<C-u>"
+    },
+    {
+      "comment": "Scroll Page Down",
+      "before": [
+        "gj"
+      ],
+      "after": "<C-d>"
+    }
+  ],
+  "targeted": [
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "nq"
+      ],
+      "after": "f#"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "nq"
+      ],
+      "after": "t#"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "<leader>nq"
+      ],
+      "after": "F#"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "<leader>nq"
+      ],
+      "after": "T#"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "nw"
+      ],
+      "after": "f|"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "nw"
+      ],
+      "after": "t|"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "<leader>nw"
+      ],
+      "after": "F|"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "<leader>nw"
+      ],
+      "after": "T|"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "ne"
+      ],
+      "after": "f["
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "ne"
+      ],
+      "after": "t["
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "<leader>ne"
+      ],
+      "after": "F["
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "<leader>ne"
+      ],
+      "after": "T["
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "nr"
+      ],
+      "after": "f]"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "nr"
+      ],
+      "after": "t]"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "<leader>nr"
+      ],
+      "after": "F]"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "<leader>nr"
+      ],
+      "after": "T]"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "nt"
+      ],
+      "after": "f~"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "nt"
+      ],
+      "after": "t~"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "<leader>nt"
+      ],
+      "after": "F~"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "<leader>nt"
+      ],
+      "after": "T~"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "na"
+      ],
+      "after": "f@"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "na"
+      ],
+      "after": "t@"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "<leader>na"
+      ],
+      "after": "F@"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "<leader>na"
+      ],
+      "after": "T@"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "ns"
+      ],
+      "after": "f("
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "ns"
+      ],
+      "after": "t("
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "<leader>ns"
+      ],
+      "after": "F("
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "<leader>ns"
+      ],
+      "after": "T("
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "nd"
+      ],
+      "after": "f)"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "nd"
+      ],
+      "after": "t)"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "<leader>nd"
+      ],
+      "after": "F)"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "<leader>nd"
+      ],
+      "after": "T)"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "nf"
+      ],
+      "after": "f;"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "nf"
+      ],
+      "after": "t;"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "<leader>nf"
+      ],
+      "after": "F;"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "<leader>nf"
+      ],
+      "after": "T;"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "ng"
+      ],
+      "after": "f:"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "ng"
+      ],
+      "after": "t:"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "<leader>ng"
+      ],
+      "after": "F:"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "<leader>ng"
+      ],
+      "after": "T:"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "nz"
+      ],
+      "after": "f/"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "nz"
+      ],
+      "after": "t/"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "<leader>nz"
+      ],
+      "after": "F/"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "<leader>nz"
+      ],
+      "after": "T/"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "nx"
+      ],
+      "after": "f*"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "nx"
+      ],
+      "after": "t*"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "<leader>nx"
+      ],
+      "after": "F*"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "<leader>nx"
+      ],
+      "after": "T*"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "nc"
+      ],
+      "after": "f+"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "nc"
+      ],
+      "after": "t+"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "<leader>nc"
+      ],
+      "after": "F+"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "<leader>nc"
+      ],
+      "after": "T+"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "nv"
+      ],
+      "after": "f%"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "nv"
+      ],
+      "after": "t%"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "<leader>nv"
+      ],
+      "after": "F%"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "<leader>nv"
+      ],
+      "after": "T%"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "nb"
+      ],
+      "after": "f$"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "nb"
+      ],
+      "after": "t$"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "<leader>nb"
+      ],
+      "after": "F$"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "<leader>nb"
+      ],
+      "after": "T$"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "ny"
+      ],
+      "after": "f&"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "ny"
+      ],
+      "after": "t&"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "<leader>ny"
+      ],
+      "after": "F&"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "<leader>ny"
+      ],
+      "after": "T&"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "nu"
+      ],
+      "after": "f<"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "nu"
+      ],
+      "after": "t<"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "<leader>nu"
+      ],
+      "after": "F<"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "<leader>nu"
+      ],
+      "after": "T<"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "ni"
+      ],
+      "after": "f="
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "ni"
+      ],
+      "after": "t="
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "<leader>ni"
+      ],
+      "after": "F="
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "<leader>ni"
+      ],
+      "after": "T="
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "no"
+      ],
+      "after": "f>"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "no"
+      ],
+      "after": "t>"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "<leader>no"
+      ],
+      "after": "F>"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "<leader>no"
+      ],
+      "after": "T>"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "np"
+      ],
+      "after": "f!"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "np"
+      ],
+      "after": "t!"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "<leader>np"
+      ],
+      "after": "F!"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "<leader>np"
+      ],
+      "after": "T!"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "nh"
+      ],
+      "after": "f`"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "nh"
+      ],
+      "after": "t`"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "<leader>nh"
+      ],
+      "after": "F`"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "<leader>nh"
+      ],
+      "after": "T`"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "nj"
+      ],
+      "after": "f{"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "nj"
+      ],
+      "after": "t{"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "<leader>nj"
+      ],
+      "after": "F{"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "<leader>nj"
+      ],
+      "after": "T{"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "nk"
+      ],
+      "after": "f}"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "nk"
+      ],
+      "after": "t}"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "<leader>nk"
+      ],
+      "after": "F}"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "<leader>nk"
+      ],
+      "after": "T}"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "nl"
+      ],
+      "after": "f'"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "nl"
+      ],
+      "after": "t'"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "<leader>nl"
+      ],
+      "after": "F'"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "<leader>nl"
+      ],
+      "after": "T'"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "n'"
+      ],
+      "after": "f\""
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "n'"
+      ],
+      "after": "t\""
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "<leader>n'"
+      ],
+      "after": "F\""
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "<leader>n'"
+      ],
+      "after": "T\""
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "nn"
+      ],
+      "after": "f-"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "nn"
+      ],
+      "after": "t-"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "<leader>nn"
+      ],
+      "after": "F-"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "<leader>nn"
+      ],
+      "after": "T-"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "nm"
+      ],
+      "after": "f_"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "nm"
+      ],
+      "after": "t_"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "<leader>nm"
+      ],
+      "after": "F_"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "<leader>nm"
+      ],
+      "after": "T_"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "n,"
+      ],
+      "after": "f,"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "n,"
+      ],
+      "after": "t,"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "<leader>n,"
+      ],
+      "after": "F,"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "<leader>n,"
+      ],
+      "after": "T,"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "n."
+      ],
+      "after": "f."
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "n."
+      ],
+      "after": "t."
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "<leader>n."
+      ],
+      "after": "F."
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "<leader>n."
+      ],
+      "after": "T."
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "n/"
+      ],
+      "after": "f?"
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "n/"
+      ],
+      "after": "t?"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "n",
+      "before": [
+        "<leader>n/"
+      ],
+      "after": "F?"
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "modes": "v",
+      "before": [
+        "<leader>n/"
+      ],
+      "after": "T?"
+    }
+  ]
 }
