@@ -1,7 +1,7 @@
 const leader = '<leader>';
 
 export function getTextManipulationMotions(props) {
-  const { before, after, operatorName, targetName = '' } = props;
+  const { before, after, operatorName, targetName = '', modes } = props;
 
   const operators = [];
   let auxLeader = '';
@@ -50,6 +50,10 @@ export function getTextManipulationMotions(props) {
       before: [auxLeader + before],
       after: afterPrefix + register + after,
     };
+
+    if (modes) {
+      operator.modes = modes;
+    }
 
     operators.push(operator);
     auxLeader += leader;

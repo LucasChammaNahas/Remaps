@@ -2,133 +2,6 @@ import { getTargetedMotions } from './utils/getTargetedMotions.mjs';
 import { getTextManipulationMotions } from './Utils/getTextManipulationMotions.mjs';
 
 export const config = {
-  paste: [
-    ...getTextManipulationMotions({
-      before: 'wf',
-      after: 'p',
-      operatorName: 'Paste',
-      targetName: 'Word',
-    }),
-    ...getTextManipulationMotions({
-      before: 'wwf',
-      after: 'p',
-      operatorName: 'Paste',
-      targetName: 'WORD',
-    }),
-    ...getTextManipulationMotions({
-      before: 'f',
-      after: 'gP',
-      operatorName: 'Paste Before',
-    }),
-    ...getTextManipulationMotions({
-      before: 'p',
-      after: 'p',
-      operatorName: 'Paste After',
-    }),
-  ],
-
-  delete: [
-    ...getTextManipulationMotions({
-      before: 's',
-      after: 'd',
-      operatorName: 'Delete',
-    }),
-    ...getTextManipulationMotions({
-      before: 'ss',
-      after: 'd',
-      operatorName: 'Delete',
-      targetName: 'Word',
-    }),
-    ...getTextManipulationMotions({
-      before: 'SS',
-      after: 'd',
-      operatorName: 'Delete',
-      targetName: 'WORD',
-    }),
-    ...getTextManipulationMotions({
-      before: 'sk',
-      after: 'dd',
-      operatorName: 'Delete',
-      targetName: 'Line',
-    }),
-  ],
-  cut: [
-    ...getTextManipulationMotions({
-      before: 'a',
-      after: 'd',
-      operatorName: 'Cut',
-    }),
-    ...getTextManipulationMotions({
-      before: 'aa',
-      after: 'd',
-      operatorName: 'Cut',
-      targetName: 'Word',
-    }),
-    ...getTextManipulationMotions({
-      before: 'AA',
-      after: 'd',
-      operatorName: 'Cut',
-      targetName: 'WORD',
-    }),
-    ...getTextManipulationMotions({
-      before: 'ak',
-      after: 'dd',
-      operatorName: 'Cut',
-      targetName: 'Line',
-    }),
-  ],
-  change: [
-    ...getTextManipulationMotions({
-      before: 'x',
-      after: 'c',
-      operatorName: 'Cut',
-    }),
-    ...getTextManipulationMotions({
-      before: 'xx',
-      after: 'c',
-      operatorName: 'Change',
-      targetName: 'Word',
-    }),
-    ...getTextManipulationMotions({
-      before: 'XX',
-      after: 'c',
-      operatorName: 'Change',
-      targetName: 'WORD',
-    }),
-    ...getTextManipulationMotions({
-      before: 'xk',
-      after: 'cc',
-      operatorName: 'Change',
-      targetName: 'Line',
-    }),
-  ],
-
-  yank: [
-    ...getTextManipulationMotions({
-      before: 'd',
-      after: 'y',
-      operatorName: 'Yank',
-    }),
-    ...getTextManipulationMotions({
-      before: 'dd',
-      after: 'y',
-      operatorName: 'Yank',
-      targetName: 'Word',
-    }),
-    ...getTextManipulationMotions({
-      before: 'DD',
-      after: 'y',
-      operatorName: 'Yank',
-      targetName: 'WORD',
-    }),
-    ...getTextManipulationMotions({
-      before: 'dk',
-      after: 'yy',
-      operatorName: 'Yank',
-      targetName: 'Line',
-    }),
-  ],
-
   switching: [
     {
       comment: 'Visual Line',
@@ -318,4 +191,169 @@ export const config = {
   ],
 
   targeted: getTargetedMotions(),
+
+  paste: [
+    ...getTextManipulationMotions({
+      before: 'wf',
+      after: 'pgvy',
+      operatorName: 'Paste',
+      targetName: 'Word',
+      modes: 'n',
+    }),
+    ...getTextManipulationMotions({
+      before: 'wwf',
+      after: 'pgvy',
+      operatorName: 'Paste',
+      targetName: 'WORD',
+      modes: 'n',
+    }),
+    ...getTextManipulationMotions({
+      before: 'f',
+      after: 'gP',
+      operatorName: 'Paste Before',
+      modes: 'n',
+    }),
+    ...getTextManipulationMotions({
+      before: 'f',
+      after: 'gPgvy',
+      operatorName: 'Paste Before',
+      modes: 'v',
+    }),
+    ...getTextManipulationMotions({
+      before: 'p',
+      after: 'p',
+      operatorName: 'Paste After',
+      modes: 'n',
+    }),
+    ...getTextManipulationMotions({
+      before: 'p',
+      after: 'pgvy',
+      operatorName: 'Paste After',
+      modes: 'v',
+    }),
+  ],
+
+  delete: [
+    ...getTextManipulationMotions({
+      before: 's',
+      after: 'd',
+      operatorName: 'Delete',
+    }),
+    ...getTextManipulationMotions({
+      before: 'ss',
+      after: 'd',
+      operatorName: 'Delete',
+      targetName: 'Word',
+      modes: 'n',
+    }),
+    ...getTextManipulationMotions({
+      before: 'SS',
+      after: 'd',
+      operatorName: 'Delete',
+      targetName: 'WORD',
+      modes: 'n',
+    }),
+    ...getTextManipulationMotions({
+      before: 'sk',
+      after: 'dd',
+      operatorName: 'Delete',
+      targetName: 'Line',
+      modes: 'n',
+    }),
+  ],
+  
+  cut: [
+    ...getTextManipulationMotions({
+      before: 'a',
+      after: 'd',
+      operatorName: 'Cut',
+    }),
+    ...getTextManipulationMotions({
+      before: 'aa',
+      after: 'd',
+      operatorName: 'Cut',
+      targetName: 'Word',
+      modes: 'n',
+    }),
+    ...getTextManipulationMotions({
+      before: 'AA',
+      after: 'd',
+      operatorName: 'Cut',
+      targetName: 'WORD',
+      modes: 'n',
+    }),
+    ...getTextManipulationMotions({
+      before: 'ak',
+      after: 'dd',
+      operatorName: 'Cut',
+      targetName: 'Line',
+      modes: 'n',
+    }),
+  ],
+  
+  change: [
+    ...getTextManipulationMotions({
+      before: 'x',
+      after: 'c',
+      operatorName: 'Cut',
+    }),
+    ...getTextManipulationMotions({
+      before: 'xx',
+      after: 'c',
+      operatorName: 'Change',
+      targetName: 'Word',
+      modes: 'n',
+    }),
+    ...getTextManipulationMotions({
+      before: 'XX',
+      after: 'c',
+      operatorName: 'Change',
+      targetName: 'WORD',
+      modes: 'n',
+    }),
+    ...getTextManipulationMotions({
+      before: 'xk',
+      after: 'cc',
+      operatorName: 'Change',
+      targetName: 'Line',
+      modes: 'n',
+    }),
+  ],
+
+  yank: [
+    ...getTextManipulationMotions({
+      before: 'd',
+      after: 'y',
+      operatorName: 'Yank',
+    }),
+    ...getTextManipulationMotions({
+      before: 'dd',
+      after: 'y',
+      operatorName: 'Yank',
+      targetName: 'Word',
+      modes: 'n',
+    }),
+    ...getTextManipulationMotions({
+      before: 'DD',
+      after: 'y',
+      operatorName: 'Yank',
+      targetName: 'WORD',
+      modes: 'n',
+    }),
+    ...getTextManipulationMotions({
+      before: 'dk',
+      after: 'yy',
+      operatorName: 'Yank',
+      targetName: 'Line',
+      modes: 'n',
+    }),
+  ],
+
+  insert: [
+    {
+      comment: 'Insert Line Below',
+      before: ['go'],
+      after: 'zb',
+    },
+  ],
 };

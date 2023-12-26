@@ -322,11 +322,11 @@
       "before": ["d"],
       "after": ["y"]
     },
-    {
-      // Yank
-      "before": ["D"],
-      "after": ["y"]
-    },
+    // {
+    //   // Yank
+    //   "before": ["D"],
+    //   "after": ["y"]
+    // },
     {
       // Yank to register A
       "before": ["n", "d"],
@@ -683,49 +683,49 @@
                                                                                     
       ********************************************************************************************/
 
-    {
-      // (NOT REVISED) Select word
-      "before": ["w"],
-      "after": ["v", "i", "w"]
-    },
-    {
-      // (NOT REVISED) Select WORD
-      "before": ["W"],
-      "after": ["E", "v", "B"]
-    },
-    {
-      // (NOT REVISED) Select WORD
-      "before": ["e"],
-      "after": ["E", "v", "B"]
-    },
+    // {
+    //   // Select word
+    //   "before": ["w"],
+    //   "after": ["v", "i", "w"]
+    // },
+    // {
+    //   // Select WORD
+    //   "before": ["W"],
+    //   "after": ["E", "v", "B"]
+    // },
+    // {
+    //   // Select WORD
+    //   "before": ["e"],
+    //   "after": ["E", "v", "B"]
+    // },
 
+    // {
+    //   // Undo
+    //   "before": ["z"],
+    //   "commands": ["undo"]
+    // },
+    // {
+    //   // Redo
+    //   "before": ["Z"],
+    //   "commands": ["redo"]
+    // },
     {
-      // (NOT REVISED) Undo
-      "before": ["z"],
-      "commands": ["undo"]
-    },
-    {
-      // (NOT REVISED) Redo
-      "before": ["Z"],
-      "commands": ["redo"]
-    },
-    {
-      // (NOT REVISED) Insert line below and enter insert mode
+      // Insert line below and enter insert mode
       "before": ["<Enter>"],
       "after": ["o"]
     },
     {
-      // (NOT REVISED) Insert line above and enter insert mode fix
+      // Insert line above and enter insert mode fix
       "before": ["g", "z", "b"],
       "after": ["O"]
     },
     {
-      // (NOT REVISED) Insert command
+      // Insert command
       "before": ["|"],
       "after": [":"]
     },
     {
-      // (NOT REVISED) Join with line below with space
+      // Join with line below with space
       "before": ["<leader>", "l"],
       "after": ["J"]
     },
