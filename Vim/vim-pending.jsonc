@@ -120,36 +120,36 @@
                                   d8888P                                     
       */
 
-    {
-      // Target forwards
-      "before": ["<leader>", "p", ";"],
-      "after": ["f"]
-    },
-    {
-      // Target forwards before
-      "before": ["<leader>", "p", "l"],
-      "after": ["t"]
-    },
-    {
-      // Target backwards
-      "before": ["<leader>", "p", "h"],
-      "after": ["F"]
-    },
-    {
-      // Target backwards before
-      "before": ["<leader>", "p", "j"],
-      "after": ["T"]
-    },
-    {
-      // Repeat previous forward target
-      "before": ["n", "p"],
-      "after": [";"]
-    },
-    {
-      // Repeat previous backward target 
-      "before": ["n", "n", "p"],
-      "after": [","]
-    },
+    // {
+    //   // Target forwards
+    //   "before": ["<leader>", "p", ";"],
+    //   "after": ["f"]
+    // },
+    // {
+    //   // Target forwards before
+    //   "before": ["<leader>", "p", "l"],
+    //   "after": ["t"]
+    // },
+    // {
+    //   // Target backwards
+    //   "before": ["<leader>", "p", "h"],
+    //   "after": ["F"]
+    // },
+    // {
+    //   // Target backwards before
+    //   "before": ["<leader>", "p", "j"],
+    //   "after": ["T"]
+    // },
+    // {
+    //   // Repeat previous forward target
+    //   "before": ["n", "p"],
+    //   "after": [";"]
+    // },
+    // {
+    //   // Repeat previous backward target 
+    //   "before": ["n", "n", "p"],
+    //   "after": [","]
+    // },
 
     /********************************************************************************************
    
@@ -167,21 +167,21 @@
                                  
       ********************************************************************************************/
 
-    {
-      // (NOT REVISED)
-      "before": ["d"],
-      "after": ["y"]
-    },
-    {
-      // (NOT REVISED)
-      "before": ["x"],
-      "after": ["c"]
-    },
-    {
-      // (NOT REVISED)
-      "before": ["s"],
-      "after": ["d"]
-    },
+    // {
+    //   //
+    //   "before": ["d"],
+    //   "after": ["y"]
+    // },
+    // {
+    //   //
+    //   "before": ["x"],
+    //   "after": ["c"]
+    // },
+    // {
+    //   //
+    //   "before": ["s"],
+    //   "after": ["d"]
+    // },
 
     /*
       dP                                       dP   
@@ -193,12 +193,12 @@
       */
 
     {
-      // (NOT REVISED)
+      //
       "before": ["u"],
       "after": ["i"]
     },
     {
-      // (NOT REVISED)
+      //
       "before": ["o"],
       "after": ["a"]
     }

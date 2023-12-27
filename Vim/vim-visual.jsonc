@@ -24,21 +24,21 @@
                                                                     d8888P   
       */
 
-    {
-      // (NOT REVISED) Visual Line
-      "before": ["c", "v"],
-      "after": ["V"]
-    },
-    {
-      // (NOT REVISED) Visual Block
-      "before": ["c", "c"],
-      "after": ["<C-v>"]
-    },
-    {
-      // (NOT REVISED) Visual Block
-      "before": ["C"],
-      "after": ["<C-v>"]
-    },
+    // {
+    //   // Visual Line
+    //   "before": ["c", "v"],
+    //   "after": ["V"]
+    // },
+    // {
+    //   // Visual Block
+    //   "before": ["c", "c"],
+    //   "after": ["<C-v>"]
+    // },
+    // {
+    //   // Visual Block
+    //   "before": ["C"],
+    //   "after": ["<C-v>"]
+    // },
 
     /*
       dP                                       dP   
@@ -50,12 +50,12 @@
       */
 
     {
-      // (NOT REVISED) Inner
+      // Inner
       "before": ["u"],
       "after": ["i"]
     },
     {
-      // (NOT REVISED) Outer
+      // Outer
       "before": ["o"],
       "after": ["a"]
     },
@@ -542,22 +542,22 @@
       */
 
     {
-      // (NOT REVISED) Toggle case
+      //Toggle case
       "before": ["y"],
       "after": ["~"]
     },
+    // {
+    //   //Toggle case
+    //   "before": ["<leader>", "y"],
+    //   "after": ["~"]
+    // },
     {
-      // (NOT REVISED) Toggle case
-      "before": ["<leader>", "y"],
-      "after": ["~"]
-    },
-    {
-      // (NOT REVISED) Lowercase
+      //Lowercase
       "before": ["<leader>", "u"],
       "after": ["u"]
     },
     {
-      // (NOT REVISED) Uppercase
+      //Uppercase
       "before": ["<leader>", "U"],
       "after": ["U"]
     },
@@ -651,11 +651,11 @@
       "after": ["<C-d>"]
     },
 
-    {
-      // (NOT REVISED) Go to global definition
-      "before": ["g", "g", "d"],
-      "after": ["g", "D"]
-    },
+    // {
+    //   // Go to global definition
+    //   "before": ["g", "g", "d"],
+    //   "after": ["g", "D"]
+    // },
     {
       // (NOT REVISED) Go back in change list
       "before": ["g", "n"],
@@ -667,12 +667,12 @@
       "after": ["g", ","]
     },
     {
-      // (NOT REVISED) Indent line
+      // Indent line
       "before": ["g", "o"],
       "commands": ["editor.action.indentLines"]
     },
     {
-      // (NOT REVISED) Outdent line
+      // Outdent line
       "before": ["g", "u"],
       "commands": ["editor.action.outdentLines"]
     },

@@ -770,25 +770,25 @@
       */
 
     {
-      // (NOT REVISED) Toggle case
+      //Toggle case
       "before": ["y", "y"],
       "after": ["~"]
     },
-    {
-      // (NOT REVISED) Toggle case operator
-      "before": ["<leader>", "y"],
-      "after": ["g", "~"]
-    },
-    {
-      // (NOT REVISED) Lowercase operator
-      "before": ["<leader>", "u"],
-      "after": ["g", "u"]
-    },
-    {
-      // (NOT REVISED) Uppercase operator
-      "before": ["<leader>", "U"],
-      "after": ["g", "U"]
-    },
+    // {
+    //   //Toggle case operator
+    //   "before": ["<leader>", "y"],
+    //   "after": ["g", "~"]
+    // },
+    // {
+    //   //Lowercase operator
+    //   "before": ["<leader>", "u"],
+    //   "after": ["g", "u"]
+    // },
+    // {
+    //   //Uppercase operator
+    //   "before": ["<leader>", "U"],
+    //   "after": ["g", "U"]
+    // },
 
     /*
       .d88888b                             
@@ -879,9 +879,8 @@
       "after": ["<C-d>"]
     },
 
-    // move to COMMANDS
     {
-      // (NOT REVISED) Go to global definition
+      // Go to global definition
       "before": ["g", "g", "d"],
       "after": ["g", "D"]
     },
@@ -896,12 +895,12 @@
       "after": ["g", ","]
     },
     {
-      // (NOT REVISED) Indent line
+      // Indent line
       "before": ["g", "o"],
       "commands": ["editor.action.indentLines"]
     },
     {
-      // (NOT REVISED) Outdent line
+      // Outdent line
       "before": ["g", "u"],
       "commands": ["editor.action.outdentLines"]
     },
