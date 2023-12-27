@@ -311,12 +311,6 @@
                                  
       ********************************************************************************************/
 
-    {
-      // (NOT REVISED) Toggle case
-      "before": ["y"],
-      "after": ["~"]
-    },
-
     /*
       dP    dP                   dP       
       Y8.  .8P                   88       
@@ -502,38 +496,38 @@
                                                                                     
       ********************************************************************************************/
 
+    // {
+    //   // Undo
+    //   "before": ["z"],
+    //   "commands": ["undo"]
+    // },
+    // {
+    //   // Redo
+    //   "before": ["Z"],
+    //   "commands": ["redo"]
+    // },
     {
-      // (NOT REVISED) Undo
-      "before": ["z"],
-      "commands": ["undo"]
-    },
-    {
-      // (NOT REVISED) Redo
-      "before": ["Z"],
-      "commands": ["redo"]
-    },
-    {
-      // (NOT REVISED) Insert line below and enter insert mode
+      // Insert line below and enter insert mode
       "before": ["<Enter>"],
       "after": ["o"]
     },
     {
-      // (NOT REVISED) Insert line above and enter insert mode fix
+      // Insert line above and enter insert mode fix
       "before": ["g", "z", "b"],
       "after": ["O"]
     },
     {
-      // (NOT REVISED) Insert command
+      // Insert command
       "before": ["|"],
       "after": [":"]
     },
     {
-      // (NOT REVISED) Put cursor at end of selection
+      // Put cursor at end of selection
       "before": ["<leader>", "l"],
       "after": ["o"]
     },
     {
-      // (NOT REVISED) Put cursor at start of selection
+      // Put cursor at start of selection
       "before": ["<leader>", "j"],
       "after": ["O"]
     },
@@ -547,6 +541,11 @@
        Y88888P' `88888P8 `88888P' `88888P' 
       */
 
+    {
+      // (NOT REVISED) Toggle case
+      "before": ["y"],
+      "after": ["~"]
+    },
     {
       // (NOT REVISED) Toggle case
       "before": ["<leader>", "y"],

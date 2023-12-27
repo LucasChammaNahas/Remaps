@@ -261,7 +261,7 @@ export const config = {
       modes: 'n',
     }),
   ],
-  
+
   cut: [
     ...getTextManipulationMotions({
       before: 'a',
@@ -290,7 +290,7 @@ export const config = {
       modes: 'n',
     }),
   ],
-  
+
   change: [
     ...getTextManipulationMotions({
       before: 'x',
@@ -351,9 +351,74 @@ export const config = {
 
   insert: [
     {
-      comment: 'Insert Line Below',
-      before: ['go'],
-      after: 'zb',
+      comment: 'Insert Cursor Before',
+      before: ['u'],
+      after: 'i',
+      modes: 'n',
+    },
+    {
+      comment: 'Insert Cursor at Start of Line',
+      before: ['U'],
+      after: 'I',
+      modes: 'n',
+    },
+    {
+      comment: 'Insert Cursor After',
+      before: ['o'],
+      after: 'a',
+      modes: 'n',
+    },
+    {
+      comment: 'Insert Cursor at End of Line',
+      before: ['U'],
+      after: 'A',
+      modes: 'n',
+    },
+    {
+      comment: 'Insert Line Below and Enter Insert Mode',
+      before: ['<Enter>'],
+      after: 'o',
+      modes: 'n',
+    },
+    {
+      comment: 'Insert Line Above and Enter Insert Mode (Fix)',
+      before: ['gza'],
+      after: 'O',
+      modes: 'n',
+    },
+    {
+      comment: 'Insert Command on Command Line',
+      before: ['|'],
+      after: ':',
+    },
+  ],
+
+  case: [
+    {
+      comment: '',
+      before: [''],
+      after: '',
+    },
+  ],
+
+  x: [
+    {
+      comment: 'Join With Line Below With Space',
+      before: ['cl'],
+      after: 'J',
+      modes: 'n',
+    },
+    {
+      comment: 'Join With Line Below Without Space',
+      before: ['cj'],
+      after: 'gJ',
+      modes: 'n',
+    },
+    {
+      comment: 'Toggle Extremes of Selected Area',
+      before: ['<Enter>'],
+      after: 'o',
+      modes: 'v',
     },
   ],
 };

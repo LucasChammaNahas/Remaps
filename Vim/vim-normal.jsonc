@@ -740,22 +740,22 @@
       */
 
     {
-      // (NOT REVISED) Insert before
+      // Insert before
       "before": ["u"],
       "after": ["i"]
     },
     {
-      // (NOT REVISED) Insert start of line
+      // Insert start of line
       "before": ["U"],
       "after": ["I"]
     },
     {
-      // (NOT REVISED) Insert after
+      // Insert after
       "before": ["o"],
       "after": ["a"]
     },
     {
-      // (NOT REVISED) Insert end of line
+      // Insert end of line
       "before": ["O"],
       "after": ["A"]
     },
