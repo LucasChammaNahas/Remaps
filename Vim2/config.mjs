@@ -81,28 +81,28 @@ export const config = {
       key: ['up'],
       command: 'vim.remap',
       when: 'editorTextFocus && vim.mode != "Insert"',
-      after:'2i',
+      after: '2i',
     },
     {
       comment: 'Move Cursor Strong Down',
       key: ['down'],
       command: 'vim.remap',
       when: 'editorTextFocus && vim.mode != "Insert"',
-      after:'2k',
+      after: '2k',
     },
     {
       comment: 'Move Cursor Strong Left',
       key: ['left'],
       command: 'vim.remap',
       when: 'editorTextFocus && vim.mode != "Insert"',
-      after:'2j',
+      after: '2j',
     },
     {
       comment: 'Move Cursor Strong Right',
       key: ['right'],
       command: 'vim.remap',
       when: 'editorTextFocus && vim.mode != "Insert"',
-      after:'2l',
+      after: '2l',
     },
   ],
 
@@ -413,7 +413,7 @@ export const config = {
       key: ['shift+enter'],
       command: 'vim.remap',
       when: 'editorTextFocus && vim.mode == "Normal"',
-      after:'gza',
+      after: 'gza',
     },
     {
       comment: 'Insert Line Above and Enter Insert Mode (Fix)',
@@ -454,6 +454,83 @@ export const config = {
       before: ['<Enter>'],
       after: 'o',
       modes: 'v',
+    },
+  ],
+
+  vsCode: [
+    {
+      comment: 'Delete Left. (Required to Delete While in Normal Mode)',
+      key: ['Backspace'],
+      command: 'deleteLeft',
+      when: 'textInputFocus',
+    },
+    {
+      comment: 'Delete Right. (Required to Delete While in Normal Mode)',
+      key: ['delete'],
+      command: 'deleteRight',
+      when: 'textInputFocus',
+    },
+    {
+      comment: "Trigger Suggestions (Mac Doesn't Work With ctrl+space)",
+      key: ['ctrl+g'],
+      command: 'editor.action.triggerSuggest',
+      when: 'editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible',
+    },
+    {
+      comment: "Trigger Suggestions (Mac Doesn't Work With ctrl+space)",
+      key: 'ctrl+g',
+      command: '-editor.action.nextMatchFindAction',
+      when: 'editorFocus',
+    },
+    {
+      comment: 'Trigger Copilot',
+      key: 'ctrl+alt+space',
+      command: 'github.copilot.generate',
+      when: 'editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused',
+    },
+    {
+      comment: 'Disables Copilot When Pressing ctrl+enter',
+      key: 'ctrl+enter',
+      command: '-github.copilot.generate',
+      when: 'editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused',
+    },
+    {
+      comment:
+        'Prevents from Going into Normal Mode When Closing Suggest Box (!inDebugRepl is Required for Some Reason)',
+      key: 'escape',
+      command: 'extension.vim_escape',
+      when: 'editorTextFocus && vim.active && !inDebugRepl && !suggestWidgetVisible',
+    },
+    {
+      comment:
+        'Prevents from Going into Normal Mode When Closing Suggest Box (!inDebugRepl is Required for Some Reason)',
+      key: 'escape',
+      command: '-extension.vim_escape',
+      when: 'editorTextFocus && !inDebugRepl && vim.active',
+    },
+  ],
+
+  disabledCommands: [
+    {
+      coment: 'Conflict With Symbols',
+      key: 'alt+h',
+      command: '-git.viewFileHistory',
+    },
+    {
+      coment: 'Toggle Panel',
+      key: 'ctrl+j',
+      command: '-workbench.action.togglePanel',
+    },
+    {
+      coment: 'Quit All Instances',
+      key: 'ctrl+q',
+      command: '-workbench.action.quit',
+    },
+    {
+      coment: 'Trigger Suggest',
+      key: 'ctrl+i',
+      command: '-editor.action.triggerSuggest',
+      when: 'editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible',
     },
   ],
 };

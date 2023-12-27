@@ -15,31 +15,31 @@
 
 
    {
-      // (NOT REVISED)  Required to backspace delete on normal mode (for some reason)
+      // Required to backspace delete on normal mode (for some reason)
       "key": "Backspace",
       "command": "deleteLeft",
       "when": "textInputFocus"
    },
    {
-      // (NOT REVISED)  Trigger suggest. (Mac wont work with ctrl+space)
+      // Trigger suggest. (Mac wont work with ctrl+space)
       "key": "ctrl+g",
       "command": "editor.action.triggerSuggest",
       "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
    },
+   // {
+   //    // Open selected file when on file tree
+   //    "key": "ctrl+enter",
+   //    "command": "explorer.openAndPassFocus",
+   //    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus"
+   // },
    {
-      // (NOT REVISED)  Open selected file when on file tree
-      "key": "ctrl+enter",
-      "command": "explorer.openAndPassFocus",
-      "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus"
-   },
-   {
-      // (NOT REVISED)  Trigger Copilot
+      // Trigger Copilot
       "key": "ctrl+alt+space",
       "command": "github.copilot.generate",
       "when": "editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
    },
    {
-      // (NOT REVISED)  Disables copilot when pressing ctrl+enter
+      // Disables copilot when pressing ctrl+enter
       "key": "ctrl+enter",
       "command": "-github.copilot.generate",
       "when": "editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
@@ -58,13 +58,13 @@
 
    
    {
-      // (NOT REVISED)  Prevents from going into normal mode when closing suggest box (!inDebugRepl is required for some reason)
+      // Prevents from going into normal mode when closing suggest box (!inDebugRepl is required for some reason)
       "key": "escape",
       "command": "extension.vim_escape",
       "when": "editorTextFocus && vim.active && !inDebugRepl && !suggestWidgetVisible"
    },
    {
-      // (NOT REVISED)  Prevents from going into normal mode when closing suggest box (!inDebugRepl is required for some reason)
+      // Prevents from going into normal mode when closing suggest box (!inDebugRepl is required for some reason)
       "key": "escape",
       "command": "-extension.vim_escape",
       "when": "editorTextFocus && !inDebugRepl && vim.active"
@@ -128,28 +128,28 @@
    */
 
    {
-      // (NOT REVISED)  Was conflicting with symbols
+      // Was conflicting with symbols
       "key": "alt+h",
       "command": "-git.viewFileHistory"
    },
    {
-      // (NOT REVISED)  Disable toggle panel
+      // Disable toggle panel
       "key": "ctrl+j",
       "command": "-workbench.action.togglePanel"
    },
    {
-      // (NOT REVISED)  Quit all instances
+      // Quit all instances
       "key": "ctrl+q",
       "command": "-workbench.action.quit"
    },
    {
-      // (NOT REVISED)  Deactivates trigger suggest
+      // Deactivates trigger suggest
       "key": "ctrl+i",
       "command": "-editor.action.triggerSuggest",
       "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
    },
    {
-      // (NOT REVISED)  Deactivates find next match
+      // Deactivates find next match
       "key": "ctrl+g",
       "command": "-editor.action.nextMatchFindAction",
       "when": "editorFocus"
