@@ -546,12 +546,12 @@ export const config = {
     {
       comment: 'Indent Lines',
       before: ['co'],
-      after: 'editor.action.indentLines',
+      commands: 'editor.action.indentLines',
     },
     {
       comment: 'Outdent Lines',
       before: ['cu'],
-      after: 'editor.action.outdentLines',
+      commands: 'editor.action.outdentLines',
     },
   ],
 
@@ -631,4 +631,159 @@ export const config = {
       when: 'editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible',
     },
   ],
+
+  appNavigation: [
+    {
+      comment: 'Up',
+      key: ['i'],
+      command: 'list.focusUp',
+      when: 'listFocus && !inputFocus',
+    },
+    {
+      comment: 'Down',
+      key: ['k'],
+      command: 'list.focusDown',
+      when: 'listFocus && !inputFocus',
+    },
+    {
+      comment: 'Collapse Current Item',
+      key: ['j'],
+      command: 'list.collapse',
+      when: 'listFocus && !inputFocus',
+    },
+    {
+      comment: 'Collapse All',
+      key: ['ty'],
+      command: 'workbench.files.action.collapseExplorerFolders',
+      when: 'listFocus && !inputFocus',
+    },
+    {
+      comment: 'Expand Current Item',
+      key: ['l'],
+      command: 'list.toggleExpand',
+      when: 'listFocus && !inputFocus',
+    },
+    {
+      comment: 'Navigate to Top',
+      key: ['gi'],
+      command: 'list.focusFirst',
+      when: 'listFocus && !inputFocus',
+    },
+    {
+      comment: 'Navigate to Bottom',
+      key: ['gk'],
+      command: 'list.focusLast',
+      when: 'listFocus && !inputFocus',
+    },
+    {
+      comment: 'Go Back to Editor',
+      key: ['escape'],
+      command: 'workbench.action.focusActiveEditorGroup',
+      when: '!textInputFocus && !treeFindOpen',
+    },
+    {
+      comment: 'Toggle Side Panel',
+      key: ['bm'],
+      command: 'workbench.action.toggleSidebarVisibility',
+      when: '!inputFocus',
+    },
+    {
+      comment: 'Toggle Side Panel',
+      before: ['bm'],
+      commands: 'workbench.action.toggleSidebarVisibility',
+    },
+  ],
+
+  treeNavigation: [
+    {
+      comment: 'Open Tree View',
+      key: ['bn'],
+      command: 'workbench.view.explorer',
+      when: 'listFocus && !inputFocus',
+    },
+    {
+      comment: 'Open Tree View',
+      before: ['bn'],
+      commands: 'workbench.view.explorer',
+    },
+    {
+      comment: 'Go to File ',
+      key: ['Enter'],
+      command: 'list.select',
+      when: 'listFocus && !inputFocus',
+    },
+    {
+      comment: 'Create New File',
+      key: ['n'],
+      command: 'explorer.newFile',
+      when: 'listFocus && !inputFocus',
+    },
+    {
+      comment: 'New Folder',
+      key: ['m'],
+      command: 'explorer.newFolder',
+      when: 'listFocus && !inputFocus',
+    },
+    {
+      comment: 'Collapse Tree',
+      key: ['q'],
+      command: 'workbench.files.action.collapseExplorerFolders',
+      when: 'listFocus && !inputFocus',
+    },
+    {
+      comment: 'Cut File',
+      key: ['a'],
+      command: 'filesExplorer.cut',
+      when: 'listFocus && !inputFocus',
+    },
+    {
+      comment: 'Delete File',
+      key: ['s'],
+      command: 'deleteFile',
+      when: 'listFocus && !inputFocus',
+    },
+    {
+      comment: 'Copy File',
+      key: ['d'],
+      command: 'filesExplorer.copy',
+      when: 'listFocus && !inputFocus',
+    },
+    {
+      comment: 'Paste File',
+      key: ['p'],
+      command: 'filesExplorer.paste',
+      when: 'listFocus && !inputFocus',
+    },
+    {
+      comment: 'Rename File',
+      key: ['r'],
+      command: 'renameFile',
+      when: 'listFocus && !inputFocus',
+    },
+    {
+      comment: 'Find in Tree',
+      key: ['f'],
+      command: 'list.find',
+      when: 'listFocus && !inputFocus',
+    },
+  ],
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
