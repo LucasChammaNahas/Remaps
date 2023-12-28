@@ -1205,4 +1205,43 @@ export const config = {
       when: 'workbench.scm.active && !inputFocus',
     },
   ],
+
+  textManipulation: [
+    {
+      comment: 'Move Line Up',
+      key: ['ctrl+i'],
+      command: 'editor.action.moveLinesUpAction',
+      when: 'editorTextFocus && !editorReadonly',
+    },
+    {
+      comment: 'Move Line Down',
+      key: ['ctrl+k'],
+      command: 'editor.action.moveLinesDownAction',
+      when: 'editorTextFocus && !editorReadonly',
+    },
+    {
+      comment: 'Copy Line Up',
+      key: ['ctrl+u'],
+      command: 'editor.action.copyLinesUpAction',
+      when: 'editorTextFocus && !editorReadonly',
+    },
+    {
+      comment: 'Copy Line Down',
+      key: ['ctrl+j'],
+      command: 'editor.action.copyLinesDownAction',
+      when: 'editorTextFocus && !editorReadonly',
+    },
+    {
+      comment: 'Duplicate Cursor Up',
+      key: ['ctrl+o'],
+      command: 'cursorColumnSelectUp',
+      when: 'editorTextFocus && !editorReadonly',
+    },
+    {
+      comment: 'Duplicate Cursor Down',
+      key: ['ctrl+l'],
+      command: 'cursorColumnSelectDown',
+      when: 'editorTextFocus && !editorReadonly',
+    },
+  ],
 };
