@@ -576,33 +576,33 @@ export const config = {
     },
     {
       comment: "Trigger Suggestions (Mac Doesn't Work With ctrl+space)",
-      key: 'ctrl+g',
+      key: ['ctrl+g'],
       command: '-editor.action.nextMatchFindAction',
       when: 'editorFocus',
     },
     {
       comment: 'Trigger Copilot',
-      key: 'ctrl+alt+space',
+      key: ['ctrl+alt+space'],
       command: 'github.copilot.generate',
       when: 'editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused',
     },
     {
       comment: 'Disables Copilot When Pressing ctrl+enter',
-      key: 'ctrl+enter',
+      key: ['ctrl+enter'],
       command: '-github.copilot.generate',
       when: 'editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused',
     },
     {
       comment:
         'Prevents from Going into Normal Mode When Closing Suggest Box (!inDebugRepl is Required for Some Reason)',
-      key: 'escape',
+      key: ['escape'],
       command: 'extension.vim_escape',
       when: 'editorTextFocus && vim.active && !inDebugRepl && !suggestWidgetVisible',
     },
     {
       comment:
         'Prevents from Going into Normal Mode When Closing Suggest Box (!inDebugRepl is Required for Some Reason)',
-      key: 'escape',
+      key: ['escape'],
       command: '-extension.vim_escape',
       when: 'editorTextFocus && !inDebugRepl && vim.active',
     },
@@ -611,22 +611,22 @@ export const config = {
   disabledCommands: [
     {
       coment: 'Conflict With Symbols',
-      key: 'alt+h',
+      key: ['alt+h'],
       command: '-git.viewFileHistory',
     },
     {
-      coment: 'Toggle Panel',
-      key: 'ctrl+j',
-      command: '-workbench.action.togglePanel',
-    },
-    {
       coment: 'Quit All Instances',
-      key: 'ctrl+q',
+      key: ['ctrl+q'],
       command: '-workbench.action.quit',
     },
     {
+      coment: 'Open View List',
+      key: ['ctrl+q'],
+      command: '-workbench.action.quickOpenView',
+    },
+    {
       coment: 'Trigger Suggest',
-      key: 'ctrl+i',
+      key: ['ctrl+i'],
       command: '-editor.action.triggerSuggest',
       when: 'editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible',
     },
@@ -653,9 +653,9 @@ export const config = {
     },
     {
       comment: 'Collapse All',
-      key: ['ty'],
+      key: ['t y'],
       command: 'workbench.files.action.collapseExplorerFolders',
-      when: 'listFocus && !inputFocus',
+      when: 'listFocus && !inputFocus && !inSearchEditor',
     },
     {
       comment: 'Expand Current Item',
@@ -665,13 +665,13 @@ export const config = {
     },
     {
       comment: 'Navigate to Top',
-      key: ['gi'],
+      key: ['g i'],
       command: 'list.focusFirst',
       when: 'listFocus && !inputFocus',
     },
     {
       comment: 'Navigate to Bottom',
-      key: ['gk'],
+      key: ['g k'],
       command: 'list.focusLast',
       when: 'listFocus && !inputFocus',
     },
@@ -683,7 +683,7 @@ export const config = {
     },
     {
       comment: 'Toggle Side Panel',
-      key: ['bm'],
+      key: ['b m'],
       command: 'workbench.action.toggleSidebarVisibility',
       when: '!inputFocus',
     },
@@ -697,7 +697,7 @@ export const config = {
   treeNavigation: [
     {
       comment: 'Open Tree View',
-      key: ['bn'],
+      key: ['b n'],
       command: 'workbench.view.explorer',
       when: 'listFocus && !inputFocus',
     },
@@ -767,27 +767,33 @@ export const config = {
       when: 'listFocus && !inputFocus',
     },
   ],
-  
-  searchPanel: [
+
+  openEditorsNavigation: [
     {
-      comment: 'Open Search Panel',
-      key: ['bp'],
+      comment: 'Open Open Editors View',
+    },
+  ],
+
+  searchPanelNavigation: [
+    {
+      comment: 'Open Search Panel View',
+      key: ['b p'],
       command: 'workbench.action.findInFiles',
       when: 'listFocus && !inputFocus',
     },
     {
-      comment: 'Open Search Panel',
+      comment: 'Open Search Panel View',
       before: ['bp'],
       commands: 'workbench.action.findInFiles',
     },
     {
-      comment: 'Open Replace Panel',
-      key: ['bh'],
+      comment: 'Open Replace Panel View',
+      key: ['b h'],
       command: 'workbench.action.replaceInFiles',
       when: 'listFocus && !inputFocus',
     },
     {
-      comment: 'Open Replace Panel',
+      comment: 'Open Replace Panel View',
       before: ['bh'],
       commands: 'workbench.action.replaceInFiles',
     },
@@ -805,13 +811,13 @@ export const config = {
     },
     {
       comment: 'Collapse Search Results',
-      key: ['ty'],
+      key: ['t y'],
       command: 'search.action.collapseSearchResults',
       when: 'inSearchEditor && !inputFocus',
     },
     {
       comment: 'Expand Search Results',
-      key: ['tt'],
+      key: ['t t'],
       command: 'search.action.expandSearchResults',
       when: 'inSearchEditor && !inputFocus',
     },
@@ -858,23 +864,136 @@ export const config = {
       when: 'inSearchEditor',
     },
   ],
+
+  terminalPanelNavigation: [
+    {
+      coment: 'Toggle Terminal Panel',
+      key: ['b t'],
+      command: 'workbench.action.togglePanel',
+      when: 'listFocus && !inputFocus',
+    },
+    {
+      coment: 'Toggle Terminal Panel',
+      key: ['ctrl+t'],
+      command: 'workbench.action.togglePanel',
+    },
+    {
+      coment: 'Toggle Terminal Panel',
+      key: ['ctrl+t'],
+      command: '-workbench.action.showAllSymbols',
+    },
+    {
+      coment: 'Toggle Terminal Panel',
+      before: ['bt'],
+      commands: 'workbench.action.togglePanel',
+    },
+
+    {
+      coment: 'Toggle Terminal',
+      key: ['b j'],
+      command: 'workbench.action.toggleTerminal',
+      when: 'listFocus && !inputFocus',
+    },
+    {
+      coment: 'Toggle Terminal',
+      before: ['bj'],
+      commands: 'workbench.action.toggleTerminal',
+    },
+
+    {
+      coment: 'Open New Terminal',
+      key: ['b space j'],
+      command: 'workbench.action.terminal.new',
+      when: 'listFocus && !inputFocus',
+    },
+    {
+      coment: 'Open New Terminal',
+      before: ['b<leader>j'],
+      commands: 'workbench.action.terminal.new',
+    },
+    {
+      coment: 'Open New Terminal',
+      key: ['ctrl+n'],
+      command: 'workbench.action.terminal.new',
+      when: 'terminalFocusInAny || terminalTabsFocus',
+    },
+
+    {
+      coment: 'Up in Terminal List',
+      key: ['i'],
+      command: 'workbench.action.terminal.focusPrevious',
+      when: 'terminalTabsFocus',
+    },
+    {
+      coment: 'Up in Terminal List',
+      key: ['ctrl+i'],
+      command: 'workbench.action.terminal.focusPrevious',
+      when: 'terminalFocusInAny || terminalTabsFocus',
+    },
+    {
+      coment: 'Down in Terminal List',
+      key: ['k'],
+      command: 'workbench.action.terminal.focusNext',
+      when: 'terminalTabsFocus',
+    },
+    {
+      coment: 'Down in Terminal List',
+      key: ['ctrl+k'],
+      command: 'workbench.action.terminal.focusNext',
+      when: 'terminalFocusInAny || terminalTabsFocus',
+    },
+
+    {
+      coment: 'Kill Terminal',
+      key: ['ctrl+q'],
+      command: 'workbench.action.terminal.killActiveTab',
+      when: 'terminalFocusInAny || terminalTabsFocus',
+    },
+    {
+      coment: 'Kill Terminal',
+      key: ['q'],
+      command: 'workbench.action.terminal.killActiveTab',
+      when: 'terminalTabsFocus',
+    },
+
+    {
+      coment: 'Rename Terminal',
+      key: ['r'],
+      command: 'workbench.action.terminal.renameActiveTab',
+      when: 'terminalTabsFocus',
+    },
+
+    {
+      coment: 'Toggle Terminal Max Height',
+      key: ['h'],
+      command: 'workbench.action.terminal.toggleEditorVisibility',
+      when: 'terminalTabsFocus',
+    },
+    {
+      coment: 'Toggle Terminal Max Height',
+      key: ['ctrl+h'],
+      command: 'workbench.action.terminal.toggleEditorVisibility',
+      when: 'terminalFocusInAny || terminalTabsFocus',
+    },
+
+    {
+      coment: 'Go to Terminal Side List',
+      key: ['ctrl+l'],
+      command: 'workbench.action.terminal.focusTabs',
+      when: 'terminalFocusInAny || terminalTabsFocus',
+    },
+
+    {
+      coment: 'Clear Terminal Current Command',
+      key: ['ctrl+backspace'],
+      command: 'workbench.action.terminal.clearSelection',
+      when: 'terminalFocusInAny && terminalHasBeenCreated && terminalTextSelected && !terminalFindVisible || terminalFocusInAny && terminalProcessSupported && terminalTextSelected && !terminalFindVisible',
+    },
+    {
+      coment: 'Clear Terminal Current Command',
+      key: ['escape'],
+      command: '-workbench.action.terminal.clearSelection',
+      when: 'terminalFocusInAny && terminalHasBeenCreated && terminalTextSelected && !terminalFindVisible || terminalFocusInAny && terminalProcessSupported && terminalTextSelected && !terminalFindVisible',
+    },
+  ],
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
