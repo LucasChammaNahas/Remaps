@@ -996,4 +996,103 @@ export const config = {
       when: 'terminalFocusInAny && terminalHasBeenCreated && terminalTextSelected && !terminalFindVisible || terminalFocusInAny && terminalProcessSupported && terminalTextSelected && !terminalFindVisible',
     },
   ],
+
+  sourceControl: [
+    {
+      comment: 'Open Source Control View',
+      key: ['b g'],
+      command: 'workbench.view.scm',
+      when: 'listFocus && !inputFocus',
+    },
+    {
+      comment: 'Open Source Control View',
+      before: ['bg'],
+      commands: 'workbench.view.scm',
+    },
+
+    {
+      comment: 'Open Commits View',
+      key: ['b space g'],
+      command: 'gitlens.views.commits.focus',
+      when: 'workbench.scm.active && !inputFocus',
+    },
+    {
+      comment: 'Reveal File on Explorer',
+      key: ['o'],
+      command: 'git.revealInExplorer',
+      when: 'workbench.scm.active && !inputFocus',
+    },
+    {
+      comment: 'Discard Changes',
+      key: ['q'],
+      command: 'git.clean',
+      when: 'workbench.scm.active && !inputFocus',
+    },
+    {
+      comment: 'Discard All Changes',
+      key: ['shift+q'],
+      command: 'git.cleanAll',
+      when: 'workbench.scm.active && !inputFocus',
+    },
+    {
+      comment: 'Stage the Current File',
+      key: ['a'],
+      command: 'git.stage',
+      when: 'workbench.scm.active && !inputFocus',
+    },
+    {
+      comment: 'Stage All Files',
+      key: ['shift+a'],
+      command: 'git.stageAll',
+      when: 'workbench.scm.active && !inputFocus',
+    },
+    {
+      comment: 'Unstage the Current File',
+      key: ['u'],
+      command: 'git.unstage',
+      when: 'workbench.scm.active && !inputFocus',
+    },
+    {
+      comment: 'Unstage All Files',
+      key: ['shift+u'],
+      command: 'git.unstageAll',
+      when: 'workbench.scm.active && !inputFocus',
+    },
+    {
+      comment: 'Commit Changes',
+      key: ['c'],
+      command: 'git.commitStaged',
+      when: 'workbench.scm.active && !inputFocus',
+    },
+    {
+      comment: 'Push Changes',
+      key: ['shift+p'],
+      command: 'git.push',
+      when: 'workbench.scm.active && !inputFocus',
+    },
+    {
+      comment: 'Pull Changes',
+      key: ['p'],
+      command: 'git.pull',
+      when: 'workbench.scm.active && !inputFocus',
+    },
+    {
+      comment: 'Fetch Changes',
+      key: ['f'],
+      command: 'git.fetch',
+      when: 'workbench.scm.active && !inputFocus',
+    },
+    {
+      comment: 'Merge Changes',
+      key: ['m'],
+      command: 'git.merge',
+      when: 'workbench.scm.active && !inputFocus',
+    },
+    {
+      comment: 'Checkout Branch (Open Dialog)',
+      key: ['z'],
+      command: 'git.checkout',
+      when: 'workbench.scm.active && !inputFocus',
+    },
+  ],
 };
