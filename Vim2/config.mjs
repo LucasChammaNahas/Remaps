@@ -750,7 +750,7 @@ export const config = {
     },
     {
       comment: 'Paste File',
-      key: ['p'],
+      key: ['f'],
       command: 'filesExplorer.paste',
       when: 'listFocus && !inputFocus',
     },
@@ -762,9 +762,100 @@ export const config = {
     },
     {
       comment: 'Find in Tree',
-      key: ['f'],
+      key: ['p'],
       command: 'list.find',
       when: 'listFocus && !inputFocus',
+    },
+  ],
+  
+  searchPanel: [
+    {
+      comment: 'Open Search Panel',
+      key: ['bp'],
+      command: 'workbench.action.findInFiles',
+      when: 'listFocus && !inputFocus',
+    },
+    {
+      comment: 'Open Search Panel',
+      before: ['bp'],
+      commands: 'workbench.action.findInFiles',
+    },
+    {
+      comment: 'Open Replace Panel',
+      key: ['bh'],
+      command: 'workbench.action.replaceInFiles',
+      when: 'listFocus && !inputFocus',
+    },
+    {
+      comment: 'Open Replace Panel',
+      before: ['bh'],
+      commands: 'workbench.action.replaceInFiles',
+    },
+    {
+      comment: 'Focus Search Input',
+      key: ['ctrl+f'],
+      command: 'workbench.action.findInFiles',
+      when: 'inSearchEditor',
+    },
+    {
+      comment: 'Focus Replace Input',
+      key: ['ctrl+h'],
+      command: 'workbench.action.replaceInFiles',
+      when: 'inSearchEditor',
+    },
+    {
+      comment: 'Collapse Search Results',
+      key: ['ty'],
+      command: 'search.action.collapseSearchResults',
+      when: 'inSearchEditor && !inputFocus',
+    },
+    {
+      comment: 'Expand Search Results',
+      key: ['tt'],
+      command: 'search.action.expandSearchResults',
+      when: 'inSearchEditor && !inputFocus',
+    },
+    {
+      comment: 'Replace the Current Focused Item',
+      key: ['Enter'],
+      command: 'search.action.replace',
+      when: 'inSearchEditor && !inputFocus',
+    },
+    {
+      comment: 'Replace All',
+      key: ['ctrl+Enter'],
+      command: 'search.action.replaceAll',
+      when: 'inSearchEditor && replaceActive',
+    },
+    {
+      comment: 'Toggle Match Case',
+      key: ['ctrl+u'],
+      command: 'toggleSearchEditorCaseSensitive',
+      when: 'inSearchEditor',
+    },
+    {
+      comment: 'Toggle Match Whole Word',
+      key: ['ctrl+o'],
+      command: 'toggleSearchEditorWholeWord',
+      when: 'inSearchEditor',
+    },
+    {
+      comment: 'Toggle Preserve Case',
+      key: ['ctrl+j'],
+      command: 'toggleSearchPreserveCase',
+      when: 'inSearchEditor',
+    },
+    {
+      comment: 'Focus Next Input Box',
+      key: ['ctrl+k'],
+      command: 'search.focus.nextInputBox',
+      when: 'inSearchEditor',
+    },
+    {
+      comment: 'Focus Previous Input Box',
+      key: ['ctrl+i'],
+      command: 'search.focus.previousInputBox',
+      when: 'inSearchEditor',
     },
   ],
 };
