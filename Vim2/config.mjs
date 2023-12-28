@@ -771,6 +771,46 @@ export const config = {
   openEditorsNavigation: [
     {
       comment: 'Open Open Editors View',
+      key: ['b space n'],
+      command: 'workbench.files.action.focusOpenEditorsView',
+      when: 'listFocus && !inputFocus',
+    },
+    {
+      comment: 'Open Open Editors View',
+      before: ['b<leader>n'],
+      commands: 'workbench.files.action.focusOpenEditorsView',
+    },
+    {
+      comment: 'Close File',
+      key: ['q'],
+      command: 'workbench.action.closeActiveEditor',
+      when: 'workbench.explorer.openEditorsView.active',
+    },
+    {
+      comment: 'Close All Files but Current',
+      key: ['shift+q'],
+      command: 'workbench.files.action.closeOtherEditors',
+      when: 'workbench.explorer.openEditorsView.active',
+    },
+    {
+      comment: 'New File',
+      key: ['n'],
+      command: 'explorer.newFile',
+      when: 'workbench.explorer.openEditorsView.active',
+    },
+  ],
+
+  outlineNavigation: [
+    {
+      comment: 'Open Outline View',
+      key: ['b o'],
+      command: 'outline.focus',
+      when: 'listFocus && !inputFocus',
+    },
+    {
+      comment: 'Open Outline View',
+      before: ['bo'],
+      commands: 'outline.focus',
     },
   ],
 
@@ -862,6 +902,57 @@ export const config = {
       key: ['ctrl+i'],
       command: 'search.focus.previousInputBox',
       when: 'inSearchEditor',
+    },
+  ],
+
+  findAndReplaceNavigation: [
+    {
+      comment: 'Go to Next Match',
+      key: ['ctrl+k'],
+      command: 'editor.action.nextMatchFindAction',
+      when: 'editorFocus && findWidgetVisible && findInputFocused || editorFocus && findWidgetVisible && replaceInputFocused',
+    },
+    {
+      comment: 'Go to Previous Match',
+      key: ['ctrl+i'],
+      command: 'editor.action.previousMatchFindAction',
+      when: 'editorFocus && findWidgetVisible && findInputFocused || editorFocus && findWidgetVisible && replaceInputFocused',
+    },
+    {
+      comment: 'Replace One',
+      key: ['enter'],
+      command: 'editor.action.replaceOne',
+      when: 'editorFocus && findWidgetVisible && findInputFocused || editorFocus && findWidgetVisible && replaceInputFocused',
+    },
+    {
+      comment: 'Replace All',
+      key: ['ctrl+enter'],
+      command: 'editor.action.replaceAll',
+      when: 'editorFocus && findWidgetVisible && findInputFocused || editorFocus && findWidgetVisible && replaceInputFocused',
+    },
+    {
+      comment: 'Toggle Match Case',
+      key: ['ctrl+u'],
+      command: 'toggleFindCaseSensitive',
+      when: 'editorFocus && findWidgetVisible && findInputFocused || editorFocus && findWidgetVisible && replaceInputFocused',
+    },
+    {
+      comment: 'Toggle Match Whole Word',
+      key: ['ctrl+o'],
+      command: 'toggleFindWholeWord',
+      when: 'editorFocus && findWidgetVisible && findInputFocused || editorFocus && findWidgetVisible && replaceInputFocused',
+    },
+    {
+      comment: 'Toggle Preserve Case',
+      key: ['ctrl+j'],
+      command: 'togglePreserveCase',
+      when: 'editorFocus && findWidgetVisible && findInputFocused || editorFocus && findWidgetVisible && replaceInputFocused',
+    },
+    {
+      comment: 'Toggle Find in Selection',
+      key: ['ctrl+l'],
+      command: 'toggleFindInSelection',
+      when: 'editorFocus && findWidgetVisible && findInputFocused || editorFocus && findWidgetVisible && replaceInputFocused',
     },
   ],
 
