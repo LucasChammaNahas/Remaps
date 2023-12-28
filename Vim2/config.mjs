@@ -466,6 +466,9 @@ export const config = {
       after: 'J',
       modes: 'n',
     },
+  ],
+
+  miscellaneous: [
     {
       comment: 'Join With Line Below Without Space',
       before: ['cj'],
@@ -477,6 +480,12 @@ export const config = {
       before: ['<Enter>'],
       after: 'o',
       modes: 'v',
+    },
+    {
+      comment: 'Rename Symbol',
+      before: ['<leader>r'],
+      commands: 'editor.action.rename',
+      modes: 'n',
     },
   ],
 
@@ -632,7 +641,7 @@ export const config = {
     },
   ],
 
-  appNavigation: [
+  listNavigation: [
     {
       comment: 'Up',
       key: ['i'],
@@ -691,6 +700,7 @@ export const config = {
       comment: 'Toggle Side Panel',
       before: ['bm'],
       commands: 'workbench.action.toggleSidebarVisibility',
+      modes: 'n',
     },
   ],
 
@@ -705,6 +715,7 @@ export const config = {
       comment: 'Open Tree View',
       before: ['bn'],
       commands: 'workbench.view.explorer',
+      modes: 'n',
     },
     {
       comment: 'Go to File ',
@@ -779,6 +790,7 @@ export const config = {
       comment: 'Open Open Editors View',
       before: ['b<leader>n'],
       commands: 'workbench.files.action.focusOpenEditorsView',
+      modes: 'n',
     },
     {
       comment: 'Close File',
@@ -811,6 +823,7 @@ export const config = {
       comment: 'Open Outline View',
       before: ['bo'],
       commands: 'outline.focus',
+      modes: 'n',
     },
   ],
 
@@ -825,6 +838,7 @@ export const config = {
       comment: 'Open Search Panel View',
       before: ['bp'],
       commands: 'workbench.action.findInFiles',
+      modes: 'n',
     },
     {
       comment: 'Open Replace Panel View',
@@ -836,6 +850,7 @@ export const config = {
       comment: 'Open Replace Panel View',
       before: ['bh'],
       commands: 'workbench.action.replaceInFiles',
+      modes: 'n',
     },
     {
       comment: 'Focus Search Input',
@@ -977,6 +992,7 @@ export const config = {
       coment: 'Toggle Terminal Panel',
       before: ['bt'],
       commands: 'workbench.action.togglePanel',
+      modes: 'n',
     },
 
     {
@@ -989,6 +1005,7 @@ export const config = {
       coment: 'Toggle Terminal',
       before: ['bj'],
       commands: 'workbench.action.toggleTerminal',
+      modes: 'n',
     },
 
     {
@@ -1001,6 +1018,7 @@ export const config = {
       coment: 'Open New Terminal',
       before: ['b<leader>j'],
       commands: 'workbench.action.terminal.new',
+      modes: 'n',
     },
     {
       coment: 'Open New Terminal',
@@ -1099,6 +1117,7 @@ export const config = {
       comment: 'Open Source Control View',
       before: ['bg'],
       commands: 'workbench.view.scm',
+      modes: 'n',
     },
 
     {
