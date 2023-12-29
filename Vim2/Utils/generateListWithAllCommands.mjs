@@ -3,6 +3,7 @@ export function generateListWithAllCommands(config) {
 
   for (const subCommands of Object.values(config)) {
     let defaultModes = 'nv';
+
     if ('defaultModes' in subCommands[0]) {
       defaultModes = subCommands[0].defaultModes;
       subCommands.shift();
@@ -29,5 +30,5 @@ export function generateListWithAllCommands(config) {
     }
   }
 
-  console.log('allCommands', allCommands);
+  return allCommands;
 }
