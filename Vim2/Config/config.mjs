@@ -1,5 +1,5 @@
-import { getTargetedMovements } from './utils/getTargetedMotions.mjs';
-import { getTextCommands } from './Utils/getTextManipulationMotions.mjs';
+import { getTargetedMotions } from './getTargetedMotions.mjs';
+import { getTextCommands } from './getTextCommands.mjs';
 
 export const config = {
   modeSwitching: [
@@ -15,7 +15,7 @@ export const config = {
     },
   ],
 
-  basicMovements: [
+  basicMotions: [
     { defaultModes: 'nvp' },
 
     {
@@ -40,7 +40,7 @@ export const config = {
     },
   ],
 
-  smallBlockMovements: [
+  smallBlockMotions: [
     { defaultModes: 'nvp' },
 
     {
@@ -65,7 +65,7 @@ export const config = {
     },
   ],
 
-  bigBlockMovements: [
+  bigBlockMotions: [
     { defaultModes: 'nvp' },
 
     {
@@ -90,7 +90,7 @@ export const config = {
     },
   ],
 
-  fastMovements: [
+  fastMotions: [
     {
       comment: 'Move Cursor Strong Up',
       key: 'up',
@@ -121,7 +121,7 @@ export const config = {
     },
   ],
 
-  wordMovements: [
+  wordMotions: [
     { defaultModes: 'nvp' },
 
     {
@@ -166,7 +166,7 @@ export const config = {
     },
   ],
 
-  lineMovements: [
+  lineMotions: [
     { defaultModes: 'nvp' },
 
     {
@@ -181,7 +181,7 @@ export const config = {
     },
   ],
 
-  ampleMovements: [
+  ampleMotions: [
     {
       comment: 'Go to Top of Screen',
       before: 'gi',
@@ -209,7 +209,7 @@ export const config = {
     },
   ],
 
-  scrollMovements: [
+  scrollMotions: [
     {
       comment: 'Scroll Page Until Cursor is at Top',
       before: 'go',
@@ -237,7 +237,7 @@ export const config = {
     },
   ],
 
-  targetedMovements: getTargetedMovements(),
+  targetedMotions: getTargetedMotions(),
 
   pasteCommands: [
     { defaultModes: 'n' },

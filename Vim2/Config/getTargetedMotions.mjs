@@ -1,4 +1,4 @@
-export function getTargetedMovements() {
+export function getTargetedMotions() {
   const remaps = [];
 
   for (const key of keyToSymbolMap) {

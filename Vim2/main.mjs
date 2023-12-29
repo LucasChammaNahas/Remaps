@@ -1,8 +1,13 @@
-import { config } from './config.mjs';
+import { config } from './Config/config.mjs';
+import { generateListWithAllCommands } from './Utils/generateListWithAllCommands.mjs';
 import fs from 'fs';
 
-const jsonData = JSON.stringify(config, null, 2);
 
-fs.writeFileSync('output.json', jsonData);
 
-// console.log(f.getMovements({ comment: 'Move cursor up', direction: 'y' }));
+generateListWithAllCommands(config);
+
+
+
+// const jsonData = JSON.stringify(config, null, 2);
+// fs.writeFileSync('output.json', jsonData);
+
