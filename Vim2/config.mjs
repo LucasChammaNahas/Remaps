@@ -528,6 +528,61 @@ export const config = {
     },
   ],
 
+  foldCommands: [
+    { defaultModes: 'n' },
+
+    {
+      comment: 'Define a Fold Up Motion',
+      before: 'th',
+      after: 'zf',
+    },
+    {
+      comment: 'Delete a Fold Up Motion',
+      before: 'ts',
+      after: 'zd',
+    },
+    {
+      comment: 'Toggle Fold Up Motion',
+      before: 'tj',
+      after: 'editor.toggleFold',
+    },
+    {
+      comment: 'Fold Up Region Level 1',
+      before: 'ty',
+      after: 'editor.foldLevel1',
+    },
+    {
+      comment: 'Fold Up Region Level 2',
+      before: 'tu',
+      after: 'editor.foldLevel2',
+    },
+    {
+      comment: 'Fold Up Region Level 3',
+      before: 'ti',
+      after: 'editor.foldLevel3',
+    },
+    {
+      comment: 'Fold Up Region Level 4',
+      before: 'to',
+      after: 'editor.foldLevel4',
+    },
+    {
+      comment: 'Fold Up Region Level 5',
+      before: 'tp',
+      after: 'editor.foldLevel5',
+    },
+    {
+      comment: 'Fold Up All Levels',
+      before: 'TT',
+      after: 'editor.foldAll',
+    },
+    {
+      comment: 'Unfold Up All Levels',
+      before: 'tt',
+      after: 'editor.unfoldAll',
+    },
+  ],
+
   miscellaneousCommands: [
     { defaultModes: 'n' },
 
@@ -1441,4 +1496,3 @@ export const config = {
     },
   ],
 };
- 
