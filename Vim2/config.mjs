@@ -240,25 +240,24 @@ export const config = {
   targetedMovements: getTargetedMovements(),
 
   pasteCommands: [
+    { defaultModes: 'n' },
+
     ...getTextCommands({
       before: 'wf',
       after: 'pgvy',
       operatorName: 'Paste',
       targetName: 'Word',
-      modes: 'n',
     }),
     ...getTextCommands({
       before: 'wwf',
       after: 'pgvy',
       operatorName: 'Paste',
       targetName: 'WORD',
-      modes: 'n',
     }),
     ...getTextCommands({
       before: 'f',
       after: 'gP',
       operatorName: 'Paste Before',
-      modes: 'n',
     }),
     ...getTextCommands({
       before: 'f',
@@ -270,7 +269,6 @@ export const config = {
       before: 'p',
       after: 'p',
       operatorName: 'Paste After',
-      modes: 'n',
     }),
     ...getTextCommands({
       before: 'p',
@@ -281,122 +279,124 @@ export const config = {
   ],
 
   deleteCommands: [
+    { defaultModes: 'n' },
+
     ...getTextCommands({
       before: 's',
       after: 'd',
       operatorName: 'Delete',
+      modes: 'nv',
     }),
     ...getTextCommands({
       before: 'ss',
       after: 'd',
       operatorName: 'Delete',
       targetName: 'Word',
-      modes: 'n',
     }),
     ...getTextCommands({
       before: 'SS',
       after: 'd',
       operatorName: 'Delete',
       targetName: 'WORD',
-      modes: 'n',
     }),
     ...getTextCommands({
       before: 'sk',
       after: 'dd',
       operatorName: 'Delete',
       targetName: 'Line',
-      modes: 'n',
     }),
   ],
 
   cutCommands: [
+    { defaultModes: 'n' },
+
     ...getTextCommands({
       before: 'a',
       after: 'd',
       operatorName: 'Cut',
+      modes: 'nv',
     }),
     ...getTextCommands({
       before: 'aa',
       after: 'd',
       operatorName: 'Cut',
       targetName: 'Word',
-      modes: 'n',
     }),
     ...getTextCommands({
       before: 'AA',
       after: 'd',
       operatorName: 'Cut',
       targetName: 'WORD',
-      modes: 'n',
     }),
     ...getTextCommands({
       before: 'ak',
       after: 'dd',
       operatorName: 'Cut',
       targetName: 'Line',
-      modes: 'n',
     }),
   ],
 
   changeCommands: [
+    { defaultModes: 'n' },
+
     ...getTextCommands({
       before: 'x',
       after: 'c',
       operatorName: 'Cut',
+      modes: 'nv',
     }),
     ...getTextCommands({
       before: 'xx',
       after: 'c',
       operatorName: 'Change',
       targetName: 'Word',
-      modes: 'n',
     }),
     ...getTextCommands({
       before: 'XX',
       after: 'c',
       operatorName: 'Change',
       targetName: 'WORD',
-      modes: 'n',
     }),
     ...getTextCommands({
       before: 'xk',
       after: 'cc',
       operatorName: 'Change',
       targetName: 'Line',
-      modes: 'n',
     }),
   ],
 
   yankCommands: [
+    { defaultModes: 'n' },
+
     ...getTextCommands({
       before: 'd',
       after: 'y',
       operatorName: 'Yank',
+      modes: 'nv',
     }),
     ...getTextCommands({
       before: 'dd',
       after: 'y',
       operatorName: 'Yank',
       targetName: 'Word',
-      modes: 'n',
     }),
     ...getTextCommands({
       before: 'DD',
       after: 'y',
       operatorName: 'Yank',
       targetName: 'WORD',
-      modes: 'n',
     }),
     ...getTextCommands({
       before: 'dk',
       after: 'yy',
       operatorName: 'Yank',
       targetName: 'Line',
-      modes: 'n',
     }),
   ],
 
   insertCommands: [
+    { defaultModes: 'n' },
+
     {
       comment: 'Inner Selector',
       before: 'u',
@@ -409,35 +409,32 @@ export const config = {
       after: 'a',
       modes: 'vp',
     },
+
     {
       comment: 'Insert Cursor Before',
       before: 'u',
       after: 'i',
-      modes: 'n',
     },
     {
       comment: 'Insert Cursor at Start of Line',
       before: 'U',
       after: 'I',
-      modes: 'n',
     },
     {
       comment: 'Insert Cursor After',
       before: 'o',
       after: 'a',
-      modes: 'n',
     },
     {
       comment: 'Insert Cursor at End of Line',
       before: 'U',
       after: 'A',
-      modes: 'n',
     },
+
     {
       comment: 'Insert Line Below and Enter Insert Mode',
       before: '<Enter>',
       after: 'o',
-      modes: 'n',
     },
     {
       comment: 'Insert Line Above and Enter Insert Mode',
@@ -450,47 +447,23 @@ export const config = {
       comment: 'Insert Line Above and Enter Insert Mode (Fix)',
       before: 'gza',
       after: 'O',
-      modes: 'n',
     },
+
     {
       comment: 'Insert Command on Command Line',
       before: '|',
       after: ':',
     },
-    {
-      comment: 'Join With Line Below With Space',
-      before: 'cl',
-      after: 'J',
-      modes: 'n',
-    },
-  ],
-
-  miscellaneousCommands: [
-    {
-      comment: 'Join With Line Below Without Space',
-      before: 'cj',
-      after: 'gJ',
-      modes: 'n',
-    },
-    {
-      comment: 'Toggle Extremes of Selected Area',
-      before: '<Enter>',
-      after: 'o',
-      modes: 'v',
-    },
-    {
-      comment: 'Rename Symbol',
-      before: '<leader>r',
-      command: 'editor.action.rename',
-      modes: 'n',
-    },
   ],
 
   caseCommands: [
+    { defaultModes: 'n' },
+
     {
       comment: 'Toggle Case',
       before: 'yy',
       after: '~',
+      modes: 'nv',
     },
     {
       comment: 'Upper Case',
@@ -508,37 +481,31 @@ export const config = {
       comment: 'Toggle Word Case',
       before: 'ywy',
       after: 'viw~',
-      modes: 'n',
     },
     {
       comment: 'Word Upper Case',
       before: 'ywu',
       after: 'viwU',
-      modes: 'n',
     },
     {
       comment: 'Word Lower Case',
       before: 'ywi',
       after: 'viwu',
-      modes: 'n',
     },
     {
       comment: 'Toggle WORD Case',
       before: 'ywwy',
       after: 'EvB~',
-      modes: 'n',
     },
     {
       comment: 'WORD Upper Case',
       before: 'ywwu',
       after: 'EvBU',
-      modes: 'n',
     },
     {
       comment: 'WORD Lower Case',
       before: 'ywwi',
       after: 'EvBu',
-      modes: 'n',
     },
   ],
 
@@ -558,6 +525,32 @@ export const config = {
       comment: 'Outdent Lines',
       before: 'cu',
       command: 'editor.action.outdentLines',
+    },
+  ],
+
+  miscellaneousCommands: [
+    { defaultModes: 'n' },
+
+    {
+      comment: 'Join With Line Below Without Space',
+      before: 'cj',
+      after: 'gJ',
+    },
+    {
+      comment: 'Join With Line Below With Space',
+      before: 'cl',
+      after: 'J',
+    },
+    {
+      comment: 'Toggle Extremes of Selected Area',
+      before: '<Enter>',
+      after: 'o',
+      modes: 'v',
+    },
+    {
+      comment: 'Rename Symbol',
+      before: '<leader>r',
+      command: 'editor.action.rename',
     },
   ],
 
