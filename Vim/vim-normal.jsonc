@@ -800,22 +800,22 @@
       */
 
     {
-      // (NOT REVISED) Save file
+      // Save file
       "before": ["<leader>", "s"],
       "commands": ["workbench.action.files.save"]
     },
     {
-      // (NOT REVISED) Save all files
+      // Save all files
       "before": ["<leader>", "<leader>", "s"],
       "commands": ["saveAll"]
     },
     {
-      // (NOT REVISED) Close editor
+      // Close editor
       "before": ["<leader>", "w", "w"],
       "commands": ["workbench.action.closeActiveEditor"]
     },
     {
-      // (NOT REVISED) Close window
+      // Close window
       "before": ["<leader>", "W", "W"],
       "after": ["Z", "Q"]
     },
@@ -922,52 +922,52 @@
       ********************************************************************************************/
 
     {
-      // (NOT REVISED) Manually define a fold up to motion
+      // Manually define a fold up to motion
       "before": ["t", "h"],
       "after": ["z", "f"]
     },
     {
-      // (NOT REVISED) Delete fold
+      // Delete fold
       "before": ["t", "s"],
       "after": ["z", "d"]
     },
     {
-      // (NOT REVISED) Toggle collapse region
+      // Toggle collapse region
       "before": ["t", "j"],
       "commands": ["editor.toggleFold"]
     },
     {
-      // (NOT REVISED) Collapse region 1
+      // Collapse region 1
       "before": ["t", "y"],
       "commands": ["editor.foldLevel1"]
     },
     {
-      // (NOT REVISED) Collapse region 2
+      // Collapse region 2
       "before": ["t", "u"],
       "commands": ["editor.foldLevel2"]
     },
     {
-      // (NOT REVISED) Collapse region 3
+      // Collapse region 3
       "before": ["t", "i"],
       "commands": ["editor.foldLevel3"]
     },
     {
-      // (NOT REVISED) Collapse region 4
+      // Collapse region 4
       "before": ["t", "o"],
       "commands": ["editor.foldLevel4"]
     },
     {
-      // (NOT REVISED) Collapse region 5
+      // Collapse region 5
       "before": ["t", "p"],
       "commands": ["editor.foldLevel5"]
     },
     {
-      // (NOT REVISED) Collapse all
+      // Collapse all
       "before": ["T", "T"],
       "commands": ["editor.foldAll"]
     },
     {
-      // (NOT REVISED) Uncollapse all
+      // Uncollapse all
       "before": ["t", "t"],
       "commands": ["editor.unfoldAll"]
     }

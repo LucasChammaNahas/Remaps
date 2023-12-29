@@ -194,37 +194,37 @@
    */
 
    {
-      // (NOT REVISED)  Quit all instances
+      //  Quit all instances
       "key": "alt+shift+q shift+alt+q",
       "command": "workbench.action.quit"
    },
    {
-      // (NOT REVISED)  Close window
+      //  Close window
       "key": "alt+shift+w alt+shift+w",
       "command": "workbench.action.closeWindow"
    },
    {
-      // (NOT REVISED)  Close all in current group
+      //  Close all in current group
       "key": "alt+shift+e alt+shift+e",
       "command": "workbench.action.closeEditorsInGroup"
    },
    {
-      // (NOT REVISED)  Close all editors but current
+      //  Close all editors but current
       "key": "alt+shift+r alt+shift+r",
       "command": "workbench.action.closeOtherEditors"
    },
    {
-      // (NOT REVISED)  Close all editors
+      //  Close all editors
       "key": "alt+shift+t alt+shift+t",
       "command": "workbench.action.closeAllEditors"
    },
    {
-      // (NOT REVISED)  Close active editor
+      //  Close active editor
       "key": "alt+shift+x",
       "command": "workbench.action.closeActiveEditor"
    },
    {
-      // (NOT REVISED)  Save all
+      //  Save all
       "key": "alt+shift+s",
       "command": "saveAll"
    },
@@ -241,32 +241,32 @@
    */
 
    {
-      // (NOT REVISED)  Focus editor left
+      //  Focus editor left
       "key": "alt+shift+j",
       "command": "workbench.action.previousEditorInGroup"
    },
    {
-      // (NOT REVISED)  Focus editor right
+      //  Focus editor right
       "key": "alt+shift+l",
       "command": "workbench.action.nextEditorInGroup"
    },
    {
-      // (NOT REVISED)  Focus first editor
+      //  Focus first editor
       "key": "alt+shift+i",
       "command": "workbench.action.openEditorAtIndex1"
    },
    {
-      // (NOT REVISED)  Focus last editor
+      //  Focus last editor
       "key": "alt+shift+k",
       "command": "workbench.action.lastEditorInGroup"
    },
    {
-      // (NOT REVISED)  Move editor left
+      //  Move editor left
       "key": "alt+shift+u",
       "command": "workbench.action.moveEditorLeftInGroup"
    },
    {
-      // (NOT REVISED)  Move editor right
+      //  Move editor right
       "key": "alt+shift+o",
       "command": "workbench.action.moveEditorRightInGroup"
    },
@@ -285,32 +285,32 @@
    */   
 
    {
-      // (NOT REVISED)  Move editor to left group
+      //  Move editor to left group
       "key": "alt+shift+y",
       "command": "workbench.action.moveEditorToLeftGroup"
    },
    {
-      // (NOT REVISED)  Move editor to right group
+      //  Move editor to right group
       "key": "alt+shift+p",
       "command": "workbench.action.moveEditorToRightGroup"
    },
    {
-      // (NOT REVISED)  Focus left group
+      //  Focus left group
       "key": "alt+shift+h",
       "command": "workbench.action.focusLeftGroup"
    },
    {
-      // (NOT REVISED)  Focus right group
+      //  Focus right group
       "key": "alt+shift+;",
       "command": "workbench.action.focusRightGroup"
    },
    {
-      // (NOT REVISED)  Move group to the left
+      //  Move group to the left
       "key": "alt+shift+m",
       "command": "workbench.action.moveActiveEditorGroupLeft"
    },
    {
-      // (NOT REVISED)  Move group to the right
+      //  Move group to the right
       "key": "alt+shift+.",
       "command": "workbench.action.moveActiveEditorGroupRight"
    },
@@ -327,17 +327,17 @@
    */
 
    {
-      // (NOT REVISED)  Make equal sizes
+      //  Make equal sizes
       "key": "alt+shift+0",
       "command": "workbench.action.evenEditorWidths"
    },
    {
-      // (NOT REVISED)  Decrease editor size
+      //  Decrease editor size
       "key": "alt+shift+-",
       "command": "workbench.action.decreaseViewSize"
    },
    {
-      // (NOT REVISED)  Increase editor size
+      //  Increase editor size
       "key": "alt+shift+=",
       "command": "workbench.action.increaseViewSize"
    },
@@ -381,37 +381,37 @@
    */
 
    {
-      // (NOT REVISED)  Move line up
+      //  Move line up
       "key": "ctrl+alt+i",
       "command": "editor.action.moveLinesUpAction",
       "when": "editorTextFocus"
    },
    {
-      // (NOT REVISED)  Move line down
+      //  Move line down
       "key": "ctrl+alt+k",
       "command": "editor.action.moveLinesDownAction",
       "when": "editorTextFocus"
    },
    {
-      // (NOT REVISED)  Copy line up
+      //  Copy line up
       "key": "ctrl+alt+u",
       "command": "editor.action.copyLinesUpAction",
       "when": "editorTextFocus"
    },
    {
-      // (NOT REVISED)  Copy line down
+      //  Copy line down
       "key": "ctrl+alt+j",
       "command": "editor.action.copyLinesDownAction",
       "when": "editorTextFocus"
    },
    {
-      // (NOT REVISED)  Multiple cursors up
+      //  Multiple cursors up
       "key": "ctrl+alt+o",
       "command": "cursorColumnSelectUp",
       "when": "editorTextFocus"
    },
    {
-      // (NOT REVISED)  Multiple cursors down
+      //  Multiple cursors down
       "key": "ctrl+alt+l",
       "command": "cursorColumnSelectDown",
       "when": "editorTextFocus"
@@ -429,41 +429,41 @@
    */
 
    {
-      // (NOT REVISED)  Search project
+      //  Search project
       "key": "ctrl+alt+p",
       "command": "workbench.action.findInFiles",
       "when": "textInputFocus"
    },
    {
-      // (NOT REVISED)  Returns to editor
+      //  Returns to editor
       "key": "ctrl+alt+p",
       "command": "workbench.action.focusActiveEditorGroup",
       "when": "!textInputFocus"
    },
    {
-      // (NOT REVISED)  Commits / Source control
+      //  Commits / Source control
       "key": "ctrl+alt+0",
       "command": "workbench.view.scm"
    },
    {
-      // (NOT REVISED)  Terminal
+      //  Terminal
       "key": "ctrl+alt+7",
       "command": "workbench.action.terminal.toggleTerminal"
    },
    {
-      // (NOT REVISED)  File tree explorer
+      //  File tree explorer
       "key": "ctrl+alt+n",
       "command": "workbench.view.explorer",
       "when": "textInputFocus"
    },
    {
-      // (NOT REVISED)  Returns to editor
+      //  Returns to editor
       "key": "escape",
       "command": "workbench.action.focusActiveEditorGroup",
       "when": "!textInputFocus && !treeFindOpen"
    },
    {
-      // (NOT REVISED)  Toggle sidebar
+      //  Toggle sidebar
       "key": "ctrl+alt+m",
       "command": "workbench.action.toggleSidebarVisibility"
    },
@@ -506,7 +506,7 @@
    */
 
    {
-      // (NOT REVISED)  New window
+      //  New window
       "key": "ctrl+shift+m",
       "command": "workbench.action.newWindow"
    },
@@ -541,32 +541,32 @@
 
 
    {
-      // (NOT REVISED)  Move group up
+      //  Move group up
       "key": "win+alt+u",
       "command": "workbench.action.moveActiveEditorGroupUp"
    },
    {
-      // (NOT REVISED)  Move group down
+      //  Move group down
       "key": "win+alt+j",
       "command": "workbench.action.moveActiveEditorGroupDown"
    },
    {
-      // (NOT REVISED)  Focus group above
+      //  Focus group above
       "key": "win+alt+i",
       "command": "workbench.action.focusAboveGroup"
    },
    {
-      // (NOT REVISED)  Focus group below
+      //  Focus group below
       "key": "win+alt+k",
       "command": "workbench.action.focusBelowGroup"
    },
    {
-      // (NOT REVISED)  Move editor to group above
+      //  Move editor to group above
       "key": "win+alt+o",
       "command": "workbench.action.moveEditorToAboveGroup"
    },
    {
-      // (NOT REVISED)  Move editor to group below
+      //  Move editor to group below
       "key": "win+alt+l",
       "command": "workbench.action.moveEditorToBelowGroup"
    },

@@ -669,15 +669,20 @@ export const config = {
       command: 'workbench.action.files.save',
     },
     {
+      comment: 'Save',
+      key: 'ctrl+e',
+      command: 'workbench.action.files.save',
+      when: 'editorFocus && !editorReadonly',
+    },
+    {
       comment: 'Save All',
       before: '<leader><leader>s',
       command: 'saveAll',
     },
     {
-      comment: 'Save',
-      key: 'ctrl+e',
-      command: 'workbench.action.files.save',
-      when: 'editorFocus && !editorReadonly',
+      comment: 'Save All',
+      key: 'ctrl+shift+s',
+      command: 'saveAll',
     },
   ],
 
