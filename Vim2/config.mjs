@@ -115,53 +115,47 @@ export const config = {
   ],
 
   word: [
+    { defaultModes: 'nvp' },
+
     {
       comment: 'Go to Start of Word',
       before: 'w;',
       after: 'w',
-      modes: 'nvp',
     },
     {
       comment: 'Go to Start of WORD',
       before: 'ww;',
       after: 'W',
-      modes: 'nvp',
     },
     {
       comment: 'Go to End of Word',
       before: 'wl',
       after: 'e',
-      modes: 'nvp',
     },
     {
       comment: 'Go to Start of WORD',
       before: 'wwl',
       after: 'E',
-      modes: 'nvp',
     },
     {
       comment: 'Go Back to Start of Word',
       before: 'wj',
       after: 'b',
-      modes: 'nvp',
     },
     {
       comment: 'Go Back to Start of WORD',
       before: 'wwj',
       after: 'B',
-      modes: 'nvp',
     },
     {
       comment: 'Go Back to End of Word',
       before: 'wh',
       after: 'ge',
-      modes: 'nvp',
     },
     {
       comment: 'Go Back to Start of WORD',
       before: 'wwh',
       after: 'gE',
-      modes: 'nvp',
     },
   ],
 
