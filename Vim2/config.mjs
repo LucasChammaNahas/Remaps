@@ -160,17 +160,17 @@ export const config = {
   ],
 
   line: [
+    { defaultModes: 'nvp' },
+
     {
       comment: 'Go to Start of Line',
       before: 'h',
       after: '^',
-      modes: 'nvp',
     },
     {
       comment: 'Go to End of Line',
       before: ';',
       after: 'g_',
-      modes: 'nvp',
     },
   ],
 
