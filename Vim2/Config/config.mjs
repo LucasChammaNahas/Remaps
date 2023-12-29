@@ -721,22 +721,22 @@ export const config = {
 
   disabledCommands: [
     {
-      coment: 'Conflict With Symbols',
+      comment: 'Conflict With Symbols',
       key: 'alt+h',
       command: '-git.viewFileHistory',
     },
     {
-      coment: 'Quit All Instances',
+      comment: 'Quit All Instances',
       key: 'ctrl+q',
       command: '-workbench.action.quit',
     },
     {
-      coment: 'Open View List',
+      comment: 'Open View List',
       key: 'ctrl+q',
       command: '-workbench.action.quickOpenView',
     },
     {
-      coment: 'Trigger Suggest',
+      comment: 'Trigger Suggest',
       key: 'ctrl+i',
       command: '-editor.action.triggerSuggest',
       when: 'editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible',
@@ -1078,133 +1078,133 @@ export const config = {
 
   terminalPanelNavigation: [
     {
-      coment: 'Toggle Terminal Panel',
+      comment: 'Toggle Terminal Panel',
       key: 'b t',
       command: 'workbench.action.togglePanel',
       when: 'listFocus && !inputFocus',
     },
     {
-      coment: 'Toggle Terminal Panel',
+      comment: 'Toggle Terminal Panel',
       key: 'ctrl+t',
       command: 'workbench.action.togglePanel',
     },
     {
-      coment: 'Toggle Terminal Panel',
+      comment: 'Toggle Terminal Panel',
       key: 'ctrl+t',
       command: '-workbench.action.showAllSymbols',
     },
     {
-      coment: 'Toggle Terminal Panel',
+      comment: 'Toggle Terminal Panel',
       before: 'bt',
       command: 'workbench.action.togglePanel',
       modes: 'n',
     },
 
     {
-      coment: 'Toggle Terminal',
+      comment: 'Toggle Terminal',
       key: 'b j',
       command: 'workbench.action.toggleTerminal',
       when: 'listFocus && !inputFocus',
     },
     {
-      coment: 'Toggle Terminal',
+      comment: 'Toggle Terminal',
       before: 'bj',
       command: 'workbench.action.toggleTerminal',
       modes: 'n',
     },
 
     {
-      coment: 'Open New Terminal',
+      comment: 'Open New Terminal',
       key: 'b space j',
       command: 'workbench.action.terminal.new',
       when: 'listFocus && !inputFocus',
     },
     {
-      coment: 'Open New Terminal',
+      comment: 'Open New Terminal',
       before: 'b<leader>j',
       command: 'workbench.action.terminal.new',
       modes: 'n',
     },
     {
-      coment: 'Open New Terminal',
+      comment: 'Open New Terminal',
       key: 'ctrl+n',
       command: 'workbench.action.terminal.new',
       when: 'terminalFocusInAny || terminalTabsFocus',
     },
 
     {
-      coment: 'Up in Terminal List',
+      comment: 'Up in Terminal List',
       key: 'i',
       command: 'workbench.action.terminal.focusPrevious',
       when: 'terminalTabsFocus',
     },
     {
-      coment: 'Up in Terminal List',
+      comment: 'Up in Terminal List',
       key: 'ctrl+i',
       command: 'workbench.action.terminal.focusPrevious',
       when: 'terminalFocusInAny || terminalTabsFocus',
     },
     {
-      coment: 'Down in Terminal List',
+      comment: 'Down in Terminal List',
       key: 'k',
       command: 'workbench.action.terminal.focusNext',
       when: 'terminalTabsFocus',
     },
     {
-      coment: 'Down in Terminal List',
+      comment: 'Down in Terminal List',
       key: 'ctrl+k',
       command: 'workbench.action.terminal.focusNext',
       when: 'terminalFocusInAny || terminalTabsFocus',
     },
 
     {
-      coment: 'Kill Terminal',
+      comment: 'Kill Terminal',
       key: 'ctrl+q',
       command: 'workbench.action.terminal.killActiveTab',
       when: 'terminalFocusInAny || terminalTabsFocus',
     },
     {
-      coment: 'Kill Terminal',
+      comment: 'Kill Terminal',
       key: 'q',
       command: 'workbench.action.terminal.killActiveTab',
       when: 'terminalTabsFocus',
     },
 
     {
-      coment: 'Rename Terminal',
+      comment: 'Rename Terminal',
       key: 'r',
       command: 'workbench.action.terminal.renameActiveTab',
       when: 'terminalTabsFocus',
     },
 
     {
-      coment: 'Toggle Terminal Max Height',
+      comment: 'Toggle Terminal Max Height',
       key: 'h',
       command: 'workbench.action.terminal.toggleEditorVisibility',
       when: 'terminalTabsFocus',
     },
     {
-      coment: 'Toggle Terminal Max Height',
+      comment: 'Toggle Terminal Max Height',
       key: 'ctrl+h',
       command: 'workbench.action.terminal.toggleEditorVisibility',
       when: 'terminalFocusInAny || terminalTabsFocus',
     },
 
     {
-      coment: 'Go to Terminal Side List',
+      comment: 'Go to Terminal Side List',
       key: 'ctrl+l',
       command: 'workbench.action.terminal.focusTabs',
       when: 'terminalFocusInAny || terminalTabsFocus',
     },
 
     {
-      coment: 'Clear Terminal Current Command',
+      comment: 'Clear Terminal Current Command',
       key: 'ctrl+backspace',
       command: 'workbench.action.terminal.clearSelection',
       when: 'terminalFocusInAny && terminalHasBeenCreated && terminalTextSelected && !terminalFindVisible || terminalFocusInAny && terminalProcessSupported && terminalTextSelected && !terminalFindVisible',
     },
     {
-      coment: 'Clear Terminal Current Command',
+      comment: 'Clear Terminal Current Command',
       key: 'escape',
       command: '-workbench.action.terminal.clearSelection',
       when: 'terminalFocusInAny && terminalHasBeenCreated && terminalTextSelected && !terminalFindVisible || terminalFocusInAny && terminalProcessSupported && terminalTextSelected && !terminalFindVisible',
