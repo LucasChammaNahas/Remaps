@@ -1244,4 +1244,23 @@ export const config = {
       when: 'editorTextFocus && !editorReadonly',
     },
   ],
+
+  save: [
+    {
+      comment: 'Save',
+      before: ['<leader>s'],
+      commands: ['workbench.action.files.save'],
+    },
+    {
+      comment: 'Save All',
+      before: ['<leader><leader>s'],
+      commands: ['saveAll'],
+    },
+    {
+      comment: 'Save',
+      key: ['ctrl+e'],
+      command: 'workbench.action.files.save',
+      when: 'editorFocus && !editorReadonly',
+    },
+  ],
 };
