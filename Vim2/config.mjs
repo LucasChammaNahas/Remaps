@@ -16,78 +16,74 @@ export const config = {
   ],
 
   movements: [
+    { defaultModes: 'nvp' },
+
     {
       comment: 'Move Cursor Up',
       before: 'i',
       after: 'k',
-      modes: 'nvp',
     },
     {
       comment: 'Move Cursor Down',
       before: 'k',
       after: 'j',
-      modes: 'nvp',
     },
     {
       comment: 'Move Cursor Left',
       before: 'j',
       after: 'h',
-      modes: 'nvp',
     },
     {
       comment: 'Move Cursor Right',
       before: 'l',
       after: 'l',
-      modes: 'nvp',
     },
+
+    // Leader Shift
     {
       comment: 'Move Cursor a Small Block Up',
       before: '<leader>I',
       after: '5k',
-      modes: 'nvp',
     },
     {
       comment: 'Move Cursor a Small Block Down',
       before: '<leader>K',
       after: '5j',
-      modes: 'nvp',
     },
     {
       comment: 'Move Cursor a Small Block Left',
       before: '<leader>J',
       after: '12h',
-      modes: 'nvp',
     },
     {
       comment: 'Move Cursor a Small Block Right',
       before: '<leader>L',
       after: '12l',
-      modes: 'nvp',
     },
+
+    // Shift
     {
       comment: 'Move Cursor a Big Block Up',
       before: 'I',
       after: '10k',
-      modes: 'nvp',
     },
     {
       comment: 'Move Cursor a Big Block Down',
       before: 'K',
       after: '10j',
-      modes: 'nvp',
     },
     {
       comment: 'Move Cursor a Big Block Left',
       before: 'J',
       after: '10h',
-      modes: 'nvp',
     },
     {
       comment: 'Move Cursor a Big Block Right',
       before: 'L',
       after: '10l',
-      modes: 'nvp',
     },
+
+    // Caps Lock
     {
       comment: 'Move Cursor Strong Up',
       key: 'up',
