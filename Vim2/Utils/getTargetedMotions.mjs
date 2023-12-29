@@ -33,7 +33,7 @@ function getObject(key0, key1, mode, type) {
   return {
     comment: `Target ${type} Special Symbol`,
     modes: mode,
-    before: [leader + 'n' + key0],
+    before: leader + 'n' + key0,
     after: afterSuffix + key1,
   };
 }

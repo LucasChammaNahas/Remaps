@@ -47,7 +47,7 @@ export function getTextManipulationMotions(props) {
 
     const operator = {
       comment,
-      before: [auxLeader + before],
+      before: auxLeader + before,
       after: afterPrefix + register + after,
     };
 
