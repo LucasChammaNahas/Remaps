@@ -1263,4 +1263,104 @@ export const config = {
       when: 'editorFocus && !editorReadonly',
     },
   ],
+
+  close: [
+    {
+      comment: 'Close Current Tab',
+      before: ['q'],
+      commands: ['workbench.action.closeActiveEditor'],
+      modes: 'n',
+    },
+    {
+      comment: 'Force Close Current Tab',
+      before: ['Q'],
+      after: 'ZQ',
+      modes: 'n',
+    },
+    {
+      comment: 'Close Current Group',
+      before: ['<leader>q'],
+      commands: ['workbench.action.closeEditorsInGroup'],
+      modes: 'n',
+    },
+    {
+      comment: 'Close All Tabs But Current',
+      before: ['<leader><leader>q'],
+      commands: ['workbench.action.closeOtherEditors'],
+      modes: 'n',
+    },
+    {
+      comment: 'Reopen Closed Tab',
+      before: ['gq'],
+      commands: ['workbench.action.reopenClosedEditor'],
+      modes: 'n',
+    },
+  ],
+
+  layoutManipulation: [
+    {
+      comment: 'Toggle Editor Group Layout (Vertical/Horizontal)',
+      before: ['ev'],
+      commands: 'workbench.action.toggleEditorGroupLayout',
+    },
+    {
+      comment: 'Toggle Editor Group Sizes',
+      before: ['eb'],
+      commands: 'workbench.action.toggleEditorWidths',
+    },
+    {
+      comment: 'Reset Editor Group Sizes',
+      before: ['ey'],
+      commands: 'workbench.action.evenEditorWidths',
+    },
+    {
+      comment: 'Increase Editor Group Size',
+      before: ['em'],
+      commands: 'workbench.action.increaseViewSize',
+    },
+    {
+      comment: 'Decrease Editor Group Size',
+      before: ['en'],
+      commands: 'workbench.action.decreaseViewSize',
+    },
+  ],
+
+  tabManipulation: [
+    {
+      comment: 'Focus Left Editor',
+      before: ['ej'],
+      commands: 'workbench.action.previousEditorInGroup',
+    },
+    {
+      comment: 'Focus Right Editor',
+      before: ['el'],
+      commands: 'workbench.action.nextEditorInGroup',
+    },
+    {
+      comment: 'Focus First Editor in Group',
+      before: ['eh'],
+      commands: 'workbench.action.firstEditorInGroup',
+    },
+    {
+      comment: 'Focus Last Editor in Group',
+      before: ['e;'],
+      commands: 'workbench.action.lastEditorInGroup',
+    },
+    {
+      comment: 'Focus Editor Number #',
+      before: ['eg'],
+      after: 'gt',
+    },
+
+    {
+      comment: 'Move Editor Left',
+      before: ['eu'],
+      commands: 'workbench.action.moveEditorLeftInGroup',
+    },
+    {
+      comment: 'Move Editor Right',
+      before: ['eo'],
+      commands: 'workbench.action.moveEditorRightInGroup',
+    },
+  ],
 };
