@@ -726,6 +726,9 @@ export const config = {
       command: 'list.focusLast',
       when: 'listFocus && !inputFocus',
     },
+  ],
+
+  panelNavigation: [
     {
       comment: 'Go Back to Editor',
       key: 'escape',
@@ -1316,6 +1319,7 @@ export const config = {
   ],
 
   tabManipulation: [
+    // Focus Editors
     {
       comment: 'Focus Left Editor',
       before: 'ej',
@@ -1342,6 +1346,7 @@ export const config = {
       after: 'gt',
     },
 
+    // Move Editors
     {
       comment: 'Move Editor Left',
       before: 'eu',
@@ -1353,4 +1358,87 @@ export const config = {
       command: 'workbench.action.moveEditorRightInGroup',
     },
   ],
+
+  tabBetweenGroupsManipulation: [
+    // Move Tabs
+    {
+      comment: 'Move Tab to Group on Left',
+      before: '<leader>ej',
+      command: 'workbench.action.moveEditorToLeftGroup',
+    },
+    {
+      comment: 'Move Tab to Group on Right',
+      before: '<leader>el',
+      command: 'workbench.action.moveEditorToRightGroup',
+    },
+    {
+      comment: 'Move Tab to Group Above',
+      before: '<leader>ei',
+      command: 'workbench.action.moveEditorToAboveGroup',
+    },
+    {
+      comment: 'Move Tab to Group Below',
+      before: '<leader>ek',
+      command: 'workbench.action.moveEditorToBelowGroup',
+    },
+
+    // Split Tabs
+    {
+      comment: 'Split Editor',
+      before: 'ee',
+      command: 'workbench.action.splitEditor',
+    },
+    {
+      comment: 'Split Editor Horizontally',
+      before: '<leader>ee',
+      command: 'workbench.action.splitEditorDown',
+    },
+  ],
+
+  groupManipulation: [
+    // Focus Groups
+    {
+      comment: 'Focus Left Group',
+      before: 'ew',
+      command: 'workbench.action.focusLeftGroup',
+    },
+    {
+      comment: 'Focus Right Group',
+      before: 'er',
+      command: 'workbench.action.focusRightGroup',
+    },
+    {
+      comment: 'Focus Group Above',
+      before: 'ei',
+      command: 'workbench.action.focusAboveGroup',
+    },
+    {
+      comment: 'Focus Group Below',
+      before: 'ek',
+      command: 'workbench.action.focusBelowGroup',
+    },
+
+    // Move Groups
+    {
+      comment: 'Move Group Left',
+      before: '<leader><leader>ej',
+      command: 'workbench.action.moveActiveEditorGroupLeft',
+    },
+    {
+      comment: 'Move Group Right',
+      before: '<leader><leader>el',
+      command: 'workbench.action.moveActiveEditorGroupRight',
+    },
+    {
+      comment: 'Move Group Up',
+      before: '<leader><leader>ei',
+      command: 'workbench.action.moveActiveEditorGroupUp',
+    },
+    {
+      comment: 'Move Group Down',
+      before: '<leader><leader>ek',
+      command: 'workbench.action.moveActiveEditorGroupDown',
+    },
+  ],
 };
+ 
