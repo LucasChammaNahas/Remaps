@@ -1,6 +1,6 @@
 const leader = '<leader>';
 
-export function getTextManipulationMotions(props) {
+export function getTextCommands(props) {
   const { before, after, operatorName, targetName = '', modes } = props;
 
   const operators = [];

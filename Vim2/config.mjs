@@ -1,8 +1,8 @@
-import { getTargetedMotions } from './utils/getTargetedMotions.mjs';
-import { getTextManipulationMotions } from './Utils/getTextManipulationMotions.mjs';
+import { getTargetedMovements } from './utils/getTargetedMotions.mjs';
+import { getTextCommands } from './Utils/getTextManipulationMotions.mjs';
 
 export const config = {
-  switching: [
+  modeSwitching: [
     {
       comment: 'Visual Line',
       before: 'cv',
@@ -15,7 +15,7 @@ export const config = {
     },
   ],
 
-  movements: [
+  basicMovements: [
     { defaultModes: 'nvp' },
 
     {
@@ -38,8 +38,11 @@ export const config = {
       before: 'l',
       after: 'l',
     },
+  ],
 
-    // Leader Shift
+  smallBlockMovements: [
+    { defaultModes: 'nvp' },
+
     {
       comment: 'Move Cursor a Small Block Up',
       before: '<leader>I',
@@ -60,8 +63,11 @@ export const config = {
       before: '<leader>L',
       after: '12l',
     },
+  ],
 
-    // Shift
+  bigBlockMovements: [
+    { defaultModes: 'nvp' },
+
     {
       comment: 'Move Cursor a Big Block Up',
       before: 'I',
@@ -82,8 +88,9 @@ export const config = {
       before: 'L',
       after: '10l',
     },
+  ],
 
-    // Caps Lock
+  fastMovements: [
     {
       comment: 'Move Cursor Strong Up',
       key: 'up',
@@ -114,7 +121,7 @@ export const config = {
     },
   ],
 
-  word: [
+  wordMovements: [
     { defaultModes: 'nvp' },
 
     {
@@ -159,7 +166,7 @@ export const config = {
     },
   ],
 
-  line: [
+  lineMovements: [
     { defaultModes: 'nvp' },
 
     {
@@ -174,7 +181,7 @@ export const config = {
     },
   ],
 
-  ample: [
+  ampleMovements: [
     {
       comment: 'Go to Top of Screen',
       before: 'gi',
@@ -202,7 +209,7 @@ export const config = {
     },
   ],
 
-  scroll: [
+  scrollMovements: [
     {
       comment: 'Scroll Page Until Cursor is at Top',
       before: 'go',
@@ -230,42 +237,42 @@ export const config = {
     },
   ],
 
-  targeted: getTargetedMotions(),
+  targetedMovements: getTargetedMovements(),
 
-  paste: [
-    ...getTextManipulationMotions({
+  pasteCommands: [
+    ...getTextCommands({
       before: 'wf',
       after: 'pgvy',
       operatorName: 'Paste',
       targetName: 'Word',
       modes: 'n',
     }),
-    ...getTextManipulationMotions({
+    ...getTextCommands({
       before: 'wwf',
       after: 'pgvy',
       operatorName: 'Paste',
       targetName: 'WORD',
       modes: 'n',
     }),
-    ...getTextManipulationMotions({
+    ...getTextCommands({
       before: 'f',
       after: 'gP',
       operatorName: 'Paste Before',
       modes: 'n',
     }),
-    ...getTextManipulationMotions({
+    ...getTextCommands({
       before: 'f',
       after: 'gPgvy',
       operatorName: 'Paste Before',
       modes: 'v',
     }),
-    ...getTextManipulationMotions({
+    ...getTextCommands({
       before: 'p',
       after: 'p',
       operatorName: 'Paste After',
       modes: 'n',
     }),
-    ...getTextManipulationMotions({
+    ...getTextCommands({
       before: 'p',
       after: 'pgvy',
       operatorName: 'Paste After',
@@ -273,27 +280,27 @@ export const config = {
     }),
   ],
 
-  delete: [
-    ...getTextManipulationMotions({
+  deleteCommands: [
+    ...getTextCommands({
       before: 's',
       after: 'd',
       operatorName: 'Delete',
     }),
-    ...getTextManipulationMotions({
+    ...getTextCommands({
       before: 'ss',
       after: 'd',
       operatorName: 'Delete',
       targetName: 'Word',
       modes: 'n',
     }),
-    ...getTextManipulationMotions({
+    ...getTextCommands({
       before: 'SS',
       after: 'd',
       operatorName: 'Delete',
       targetName: 'WORD',
       modes: 'n',
     }),
-    ...getTextManipulationMotions({
+    ...getTextCommands({
       before: 'sk',
       after: 'dd',
       operatorName: 'Delete',
@@ -302,27 +309,27 @@ export const config = {
     }),
   ],
 
-  cut: [
-    ...getTextManipulationMotions({
+  cutCommands: [
+    ...getTextCommands({
       before: 'a',
       after: 'd',
       operatorName: 'Cut',
     }),
-    ...getTextManipulationMotions({
+    ...getTextCommands({
       before: 'aa',
       after: 'd',
       operatorName: 'Cut',
       targetName: 'Word',
       modes: 'n',
     }),
-    ...getTextManipulationMotions({
+    ...getTextCommands({
       before: 'AA',
       after: 'd',
       operatorName: 'Cut',
       targetName: 'WORD',
       modes: 'n',
     }),
-    ...getTextManipulationMotions({
+    ...getTextCommands({
       before: 'ak',
       after: 'dd',
       operatorName: 'Cut',
@@ -331,27 +338,27 @@ export const config = {
     }),
   ],
 
-  change: [
-    ...getTextManipulationMotions({
+  changeCommands: [
+    ...getTextCommands({
       before: 'x',
       after: 'c',
       operatorName: 'Cut',
     }),
-    ...getTextManipulationMotions({
+    ...getTextCommands({
       before: 'xx',
       after: 'c',
       operatorName: 'Change',
       targetName: 'Word',
       modes: 'n',
     }),
-    ...getTextManipulationMotions({
+    ...getTextCommands({
       before: 'XX',
       after: 'c',
       operatorName: 'Change',
       targetName: 'WORD',
       modes: 'n',
     }),
-    ...getTextManipulationMotions({
+    ...getTextCommands({
       before: 'xk',
       after: 'cc',
       operatorName: 'Change',
@@ -360,27 +367,27 @@ export const config = {
     }),
   ],
 
-  yank: [
-    ...getTextManipulationMotions({
+  yankCommands: [
+    ...getTextCommands({
       before: 'd',
       after: 'y',
       operatorName: 'Yank',
     }),
-    ...getTextManipulationMotions({
+    ...getTextCommands({
       before: 'dd',
       after: 'y',
       operatorName: 'Yank',
       targetName: 'Word',
       modes: 'n',
     }),
-    ...getTextManipulationMotions({
+    ...getTextCommands({
       before: 'DD',
       after: 'y',
       operatorName: 'Yank',
       targetName: 'WORD',
       modes: 'n',
     }),
-    ...getTextManipulationMotions({
+    ...getTextCommands({
       before: 'dk',
       after: 'yy',
       operatorName: 'Yank',
@@ -389,7 +396,7 @@ export const config = {
     }),
   ],
 
-  insert: [
+  insertCommands: [
     {
       comment: 'Inner Selector',
       before: 'u',
@@ -458,7 +465,7 @@ export const config = {
     },
   ],
 
-  miscellaneous: [
+  miscellaneousCommands: [
     {
       comment: 'Join With Line Below Without Space',
       before: 'cj',
@@ -479,7 +486,7 @@ export const config = {
     },
   ],
 
-  case: [
+  caseCommands: [
     {
       comment: 'Toggle Case',
       before: 'yy',
@@ -535,7 +542,7 @@ export const config = {
     },
   ],
 
-  go: [
+  goCommands: [
     {
       comment: 'Go to Global Declaration',
       before: 'ggd',
@@ -604,6 +611,58 @@ export const config = {
       key: 'escape',
       command: '-extension.vim_escape',
       when: 'editorTextFocus && !inDebugRepl && vim.active',
+    },
+  ],
+
+  saveCommands: [
+    {
+      comment: 'Save',
+      before: '<leader>s',
+      command: 'workbench.action.files.save',
+    },
+    {
+      comment: 'Save All',
+      before: '<leader><leader>s',
+      command: 'saveAll',
+    },
+    {
+      comment: 'Save',
+      key: 'ctrl+e',
+      command: 'workbench.action.files.save',
+      when: 'editorFocus && !editorReadonly',
+    },
+  ],
+
+  closeCommands: [
+    {
+      comment: 'Close Current Tab',
+      before: 'q',
+      command: 'workbench.action.closeActiveEditor',
+      modes: 'n',
+    },
+    {
+      comment: 'Force Close Current Tab',
+      before: 'Q',
+      after: 'ZQ',
+      modes: 'n',
+    },
+    {
+      comment: 'Close Current Group',
+      before: '<leader>q',
+      command: 'workbench.action.closeEditorsInGroup',
+      modes: 'n',
+    },
+    {
+      comment: 'Close All Tabs But Current',
+      before: '<leader><leader>q',
+      command: 'workbench.action.closeOtherEditors',
+      modes: 'n',
+    },
+    {
+      comment: 'Reopen Closed Tab',
+      before: 'gq',
+      command: 'workbench.action.reopenClosedEditor',
+      modes: 'n',
     },
   ],
 
@@ -1096,7 +1155,7 @@ export const config = {
     },
   ],
 
-  sourceControl: [
+  sourceControlNavigation: [
     {
       comment: 'Open Source Control View',
       key: 'b g',
@@ -1232,58 +1291,6 @@ export const config = {
       key: 'ctrl+l',
       command: 'cursorColumnSelectDown',
       when: 'editorTextFocus && !editorReadonly',
-    },
-  ],
-
-  save: [
-    {
-      comment: 'Save',
-      before: '<leader>s',
-      command: 'workbench.action.files.save',
-    },
-    {
-      comment: 'Save All',
-      before: '<leader><leader>s',
-      command: 'saveAll',
-    },
-    {
-      comment: 'Save',
-      key: 'ctrl+e',
-      command: 'workbench.action.files.save',
-      when: 'editorFocus && !editorReadonly',
-    },
-  ],
-
-  close: [
-    {
-      comment: 'Close Current Tab',
-      before: 'q',
-      command: 'workbench.action.closeActiveEditor',
-      modes: 'n',
-    },
-    {
-      comment: 'Force Close Current Tab',
-      before: 'Q',
-      after: 'ZQ',
-      modes: 'n',
-    },
-    {
-      comment: 'Close Current Group',
-      before: '<leader>q',
-      command: 'workbench.action.closeEditorsInGroup',
-      modes: 'n',
-    },
-    {
-      comment: 'Close All Tabs But Current',
-      before: '<leader><leader>q',
-      command: 'workbench.action.closeOtherEditors',
-      modes: 'n',
-    },
-    {
-      comment: 'Reopen Closed Tab',
-      before: 'gq',
-      command: 'workbench.action.reopenClosedEditor',
-      modes: 'n',
     },
   ],
 
