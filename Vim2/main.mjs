@@ -13,11 +13,13 @@ const modes = {
   pending: 'vim.operatorPendingModeKeyBindingsNonRecursive',
 };
 
-const finalJson = {
+const vimFinal = {
   [modes.normal]: [],
   [modes.visual]: [],
   [modes.pending]: [],
 };
+
+const vscodeFinal = [];
 
 const commandList = generateListWithAllCommands(config);
 
@@ -27,17 +29,22 @@ for (const command of commandList) {
 
   if (commandTypes.includes('code')) {
     updatedCommand = generateCorrectCodeStructure(command);
+    vscodeFinal.push(updatedCommand);
   } else {
     updatedCommand = generateCorrectVimStructure(command);
     for (const type of commandTypes) {
-      finalJson[modes[type]].push(updatedCommand);
+      vimFinal[modes[type]].push(updatedCommand);
     }
   }
 }
 
-console.log('normal',finalJson[modes.normal].length);
-console.log('visual',finalJson[modes.visual].length);
-console.log('pending',finalJson[modes.pending].length);
+console.log('normal',vimFinal[modes.normal].length);
+console.log('visual',vimFinal[modes.visual].length);
+console.log('pending',vimFinal[modes.pending].length);
+console.log('vscode',vscodeFinal.length);
 
-const jsonData = JSON.stringify(finalJson, null, 2);
-fs.writeFileSync('output.json', jsonData);
+const vimJsonData = JSON.stringify(vimFinal, null, 2);
+fs.writeFileSync('vim.json', vimJsonData);
+
+const vscodeJsonData = JSON.stringify(vscodeFinal, null, 2);
+fs.writeFileSync('vscode.win.json', vscodeJsonData);
