@@ -44,7 +44,7 @@ console.log('pending',vimFinal[modes.pending].length);
 console.log('vscode',vscodeFinal.length);
 
 const vimJsonData = JSON.stringify(vimFinal, null, 2);
-fs.writeFileSync('vim.json', vimJsonData);
+fs.writeFileSync('vim.json', vimJsonData.replace(/\\"/g, "'"));
 
 const vscodeJsonData = JSON.stringify(vscodeFinal, null, 2);
-fs.writeFileSync('vscode.win.json', vscodeJsonData);
+fs.writeFileSync('vscode.win.json', vscodeJsonData.replace(/\\"/g, "'"));

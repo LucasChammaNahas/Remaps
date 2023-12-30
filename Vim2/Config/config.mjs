@@ -641,21 +641,21 @@ export const config = {
       when: 'editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused',
     },
     {
-      comment: 'Disables Copilot When Pressing ctrl+enter',
+      comment: 'Disable Copilot When Pressing ctrl+enter',
       key: 'ctrl+enter',
       command: '-github.copilot.generate',
       when: 'editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused',
     },
     {
       comment:
-        'Prevents from Going into Normal Mode When Closing Suggest Box (!inDebugRepl is Required for Some Reason)',
+        'Prevents From Going into Normal Mode When Closing Suggest Box (!inDebugRepl is Required for Some Reason)',
       key: 'escape',
       command: 'extension.vim_escape',
       when: 'editorTextFocus && vim.active && !inDebugRepl && !suggestWidgetVisible',
     },
     {
       comment:
-        'Prevents from Going into Normal Mode When Closing Suggest Box (!inDebugRepl is Required for Some Reason)',
+        'Prevents From Going into Normal Mode When Closing Suggest Box (!inDebugRepl is Required for Some Reason)',
       key: 'escape',
       command: '-extension.vim_escape',
       when: 'editorTextFocus && !inDebugRepl && vim.active',
@@ -793,7 +793,7 @@ export const config = {
       comment: 'Go Back to Editor',
       key: 'escape',
       command: 'workbench.action.focusActiveEditorGroup',
-      when: '!textInputFocus && !treeFindOpen',
+      when: '!textInputFocus && !treeFindOpen && !renameInputVisible',
     },
     {
       comment: 'Toggle Side Panel',
@@ -1073,6 +1073,12 @@ export const config = {
       key: 'ctrl+l',
       command: 'toggleFindInSelection',
       when: 'editorFocus && findWidgetVisible && findInputFocussed || editorFocus && findWidgetVisible && replaceInputFocused',
+    },
+    {
+      comment: 'Close Find Widget',
+      key: 'escape',
+      command: 'closeFindWidget',
+      when: 'editorTextFocus',
     },
   ],
 
