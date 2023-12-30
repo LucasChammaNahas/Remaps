@@ -1,4 +1,4 @@
-export function getCommandType(command) {
+export function getCommandTypes(command) {
   const isCode = 'key' in command;
   if (isCode) {
     return ['code'];
