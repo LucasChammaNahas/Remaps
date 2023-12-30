@@ -433,7 +433,7 @@ export const config = {
 
     {
       comment: 'Insert Line Below and Enter Insert Mode',
-      before: '<Enter>',
+      before: '<enter>',
       after: 'o',
     },
     {
@@ -544,42 +544,42 @@ export const config = {
     {
       comment: 'Toggle Fold Up Motion',
       before: 'tj',
-      after: 'editor.toggleFold',
+      command: 'editor.toggleFold',
     },
     {
       comment: 'Fold Up Region Level 1',
       before: 'ty',
-      after: 'editor.foldLevel1',
+      command: 'editor.foldLevel1',
     },
     {
       comment: 'Fold Up Region Level 2',
       before: 'tu',
-      after: 'editor.foldLevel2',
+      command: 'editor.foldLevel2',
     },
     {
       comment: 'Fold Up Region Level 3',
       before: 'ti',
-      after: 'editor.foldLevel3',
+      command: 'editor.foldLevel3',
     },
     {
       comment: 'Fold Up Region Level 4',
       before: 'to',
-      after: 'editor.foldLevel4',
+      command: 'editor.foldLevel4',
     },
     {
       comment: 'Fold Up Region Level 5',
       before: 'tp',
-      after: 'editor.foldLevel5',
+      command: 'editor.foldLevel5',
     },
     {
       comment: 'Fold Up All Levels',
       before: 'TT',
-      after: 'editor.foldAll',
+      command: 'editor.foldAll',
     },
     {
       comment: 'Unfold Up All Levels',
       before: 'tt',
-      after: 'editor.unfoldAll',
+      command: 'editor.unfoldAll',
     },
   ],
 
@@ -598,7 +598,7 @@ export const config = {
     },
     {
       comment: 'Toggle Extremes of Selected Area',
-      before: '<Enter>',
+      before: '<enter>',
       after: 'o',
       modes: 'v',
     },
@@ -612,7 +612,7 @@ export const config = {
   vsCode: [
     {
       comment: 'Delete Left. (Required to Delete While in Normal Mode)',
-      key: 'Backspace',
+      key: 'backspace',
       command: 'deleteLeft',
       when: 'textInputFocus',
     },
@@ -1030,49 +1030,49 @@ export const config = {
       comment: 'Go to Next Match',
       key: 'ctrl+k',
       command: 'editor.action.nextMatchFindAction',
-      when: 'editorFocus && findWidgetVisible && findInputFocused || editorFocus && findWidgetVisible && replaceInputFocused',
+      when: 'editorFocus && findWidgetVisible && findInputFocussed || editorFocus && findWidgetVisible && replaceInputFocused',
     },
     {
       comment: 'Go to Previous Match',
       key: 'ctrl+i',
       command: 'editor.action.previousMatchFindAction',
-      when: 'editorFocus && findWidgetVisible && findInputFocused || editorFocus && findWidgetVisible && replaceInputFocused',
+      when: 'editorFocus && findWidgetVisible && findInputFocussed || editorFocus && findWidgetVisible && replaceInputFocused',
     },
     {
       comment: 'Replace One',
       key: 'enter',
       command: 'editor.action.replaceOne',
-      when: 'editorFocus && findWidgetVisible && findInputFocused || editorFocus && findWidgetVisible && replaceInputFocused',
+      when: 'editorFocus && findWidgetVisible && findInputFocussed || editorFocus && findWidgetVisible && replaceInputFocused',
     },
     {
       comment: 'Replace All',
       key: 'ctrl+enter',
       command: 'editor.action.replaceAll',
-      when: 'editorFocus && findWidgetVisible && findInputFocused || editorFocus && findWidgetVisible && replaceInputFocused',
+      when: 'editorFocus && findWidgetVisible && findInputFocussed || editorFocus && findWidgetVisible && replaceInputFocused',
     },
     {
       comment: 'Toggle Match Case',
       key: 'ctrl+u',
       command: 'toggleFindCaseSensitive',
-      when: 'editorFocus && findWidgetVisible && findInputFocused || editorFocus && findWidgetVisible && replaceInputFocused',
+      when: 'editorFocus && findWidgetVisible && findInputFocussed || editorFocus && findWidgetVisible && replaceInputFocused',
     },
     {
       comment: 'Toggle Match Whole Word',
       key: 'ctrl+o',
       command: 'toggleFindWholeWord',
-      when: 'editorFocus && findWidgetVisible && findInputFocused || editorFocus && findWidgetVisible && replaceInputFocused',
+      when: 'editorFocus && findWidgetVisible && findInputFocussed || editorFocus && findWidgetVisible && replaceInputFocused',
     },
     {
       comment: 'Toggle Preserve Case',
       key: 'ctrl+j',
       command: 'togglePreserveCase',
-      when: 'editorFocus && findWidgetVisible && findInputFocused || editorFocus && findWidgetVisible && replaceInputFocused',
+      when: 'editorFocus && findWidgetVisible && findInputFocussed || editorFocus && findWidgetVisible && replaceInputFocused',
     },
     {
       comment: 'Toggle Find in Selection',
       key: 'ctrl+l',
       command: 'toggleFindInSelection',
-      when: 'editorFocus && findWidgetVisible && findInputFocused || editorFocus && findWidgetVisible && replaceInputFocused',
+      when: 'editorFocus && findWidgetVisible && findInputFocussed || editorFocus && findWidgetVisible && replaceInputFocused',
     },
   ],
 

@@ -8,7 +8,7 @@
     {
       "comment": "Visual Block",
       "before": ["c", "c"],
-      "after": ["<", "C", "-", "v", ">"]
+      "after": ["<C-v>"]
     },
     {
       "comment": "Move Cursor Up",
@@ -168,12 +168,12 @@
     {
       "comment": "Scroll Page Up",
       "before": ["g", "u"],
-      "after": ["<", "C", "-", "u", ">"]
+      "after": ["<C-u>"]
     },
     {
       "comment": "Scroll Page Down",
       "before": ["g", "j"],
-      "after": ["<", "C", "-", "d", ">"]
+      "after": ["<C-d>"]
     },
     {
       "comment": "Target Forwards Special Symbol",
@@ -837,7 +837,7 @@
     },
     {
       "comment": "Insert Line Below and Enter Insert Mode",
-      "before": ["<", "E", "n", "t", "e", "r", ">"],
+      "before": ["<enter>"],
       "after": ["o"]
     },
     {
@@ -913,42 +913,42 @@
     {
       "comment": "Toggle Fold Up Motion",
       "before": ["t", "j"],
-      "after": ["e", "d", "i", "t", "o", "r", ".", "t", "o", "g", "g", "l", "e", "F", "o", "l", "d"]
+      "commands": ["editor.toggleFold"]
     },
     {
       "comment": "Fold Up Region Level 1",
       "before": ["t", "y"],
-      "after": ["e", "d", "i", "t", "o", "r", ".", "f", "o", "l", "d", "L", "e", "v", "e", "l", "1"]
+      "commands": ["editor.foldLevel1"]
     },
     {
       "comment": "Fold Up Region Level 2",
       "before": ["t", "u"],
-      "after": ["e", "d", "i", "t", "o", "r", ".", "f", "o", "l", "d", "L", "e", "v", "e", "l", "2"]
+      "commands": ["editor.foldLevel2"]
     },
     {
       "comment": "Fold Up Region Level 3",
       "before": ["t", "i"],
-      "after": ["e", "d", "i", "t", "o", "r", ".", "f", "o", "l", "d", "L", "e", "v", "e", "l", "3"]
+      "commands": ["editor.foldLevel3"]
     },
     {
       "comment": "Fold Up Region Level 4",
       "before": ["t", "o"],
-      "after": ["e", "d", "i", "t", "o", "r", ".", "f", "o", "l", "d", "L", "e", "v", "e", "l", "4"]
+      "commands": ["editor.foldLevel4"]
     },
     {
       "comment": "Fold Up Region Level 5",
       "before": ["t", "p"],
-      "after": ["e", "d", "i", "t", "o", "r", ".", "f", "o", "l", "d", "L", "e", "v", "e", "l", "5"]
+      "commands": ["editor.foldLevel5"]
     },
     {
       "comment": "Fold Up All Levels",
       "before": ["T", "T"],
-      "after": ["e", "d", "i", "t", "o", "r", ".", "f", "o", "l", "d", "A", "l", "l"]
+      "commands": ["editor.foldAll"]
     },
     {
       "comment": "Unfold Up All Levels",
       "before": ["t", "t"],
-      "after": ["e", "d", "i", "t", "o", "r", ".", "u", "n", "f", "o", "l", "d", "A", "l", "l"]
+      "commands": ["editor.unfoldAll"]
     },
     {
       "comment": "Join With Line Below Without Space",
@@ -1190,7 +1190,7 @@
     {
       "comment": "Visual Block",
       "before": ["c", "c"],
-      "after": ["<", "C", "-", "v", ">"]
+      "after": ["<C-v>"]
     },
     {
       "comment": "Move Cursor Up",
@@ -1350,12 +1350,12 @@
     {
       "comment": "Scroll Page Up",
       "before": ["g", "u"],
-      "after": ["<", "C", "-", "u", ">"]
+      "after": ["<C-u>"]
     },
     {
       "comment": "Scroll Page Down",
       "before": ["g", "j"],
-      "after": ["<", "C", "-", "d", ">"]
+      "after": ["<C-d>"]
     },
     {
       "comment": "Target Forwards Special Symbol",
@@ -1799,7 +1799,7 @@
     },
     {
       "comment": "Toggle Extremes of Selected Area",
-      "before": ["<", "E", "n", "t", "e", "r", ">"],
+      "before": ["<enter>"],
       "after": ["o"]
     },
     {
