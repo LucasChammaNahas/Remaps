@@ -5,7 +5,10 @@
     "command": "vim.remap",
     "when": "editorTextFocus && vim.mode != 'Insert'",
     "args": {
-      "after": ["2", "i"]
+      "after": [
+        "2",
+        "i"
+      ]
     }
   },
   {
@@ -14,7 +17,10 @@
     "command": "vim.remap",
     "when": "editorTextFocus && vim.mode != 'Insert'",
     "args": {
-      "after": ["2", "k"]
+      "after": [
+        "2",
+        "k"
+      ]
     }
   },
   {
@@ -23,7 +29,10 @@
     "command": "vim.remap",
     "when": "editorTextFocus && vim.mode != 'Insert'",
     "args": {
-      "after": ["2", "j"]
+      "after": [
+        "2",
+        "j"
+      ]
     }
   },
   {
@@ -32,7 +41,10 @@
     "command": "vim.remap",
     "when": "editorTextFocus && vim.mode != 'Insert'",
     "args": {
-      "after": ["2", "l"]
+      "after": [
+        "2",
+        "l"
+      ]
     }
   },
   {
@@ -41,7 +53,11 @@
     "command": "vim.remap",
     "when": "editorTextFocus && vim.mode == 'Normal'",
     "args": {
-      "after": ["g", "z", "a"]
+      "after": [
+        "g",
+        "z",
+        "a"
+      ]
     }
   },
   {
@@ -94,7 +110,7 @@
   },
   {
     "comment": "Save",
-    "key": "ctrl+e",
+    "key": "ctrl+e space",
     "command": "workbench.action.files.save",
     "when": "editorFocus && !editorReadonly"
   },
@@ -251,7 +267,7 @@
     "when": "listFocus && !inputFocus"
   },
   {
-    "comment": "Close Current File",
+    "comment": "Close Current Editor",
     "key": "q",
     "command": "workbench.action.closeEditorsInGroup",
     "when": "focusedView == 'workbench.explorer.openEditorsView'"
@@ -266,6 +282,12 @@
     "comment": "New Untitled File",
     "key": "n",
     "command": "workbench.action.files.newUntitledFile",
+    "when": "focusedView == 'workbench.explorer.openEditorsView'"
+  },
+  {
+    "comment": "Reopen Closed Editor",
+    "key": "g q",
+    "command": "workbench.action.reopenClosedEditor",
     "when": "focusedView == 'workbench.explorer.openEditorsView'"
   },
   {
@@ -637,5 +659,25 @@
     "key": "ctrl+l",
     "command": "cursorColumnSelectDown",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "comment": "Focus Left Editor",
+    "key": "ctrl+e LeftArrow",
+    "command": "workbench.action.previousEditorInGroup"
+  },
+  {
+    "comment": "Focus Right Editor",
+    "key": "ctrl+e RightArrow",
+    "command": "workbench.action.nextEditorInGroup"
+  },
+  {
+    "comment": "Focus First Editor in Group",
+    "key": "ctrl+e Home",
+    "command": "workbench.action.firstEditorInGroup"
+  },
+  {
+    "comment": "Focus Last Editor in Group",
+    "key": "ctrl+e End",
+    "command": "workbench.action.lastEditorInGroup"
   }
 ]

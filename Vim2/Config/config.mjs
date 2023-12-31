@@ -670,7 +670,7 @@ export const config = {
     },
     {
       comment: 'Save',
-      key: 'ctrl+e',
+      key: 'ctrl+e space',
       command: 'workbench.action.files.save',
       when: 'editorFocus && !editorReadonly',
     },
@@ -688,13 +688,13 @@ export const config = {
 
   closeCommands: [
     {
-      comment: 'Close Current File',
+      comment: 'Close Current Editor',
       before: 'q',
       command: 'workbench.action.closeActiveEditor',
       modes: 'n',
     },
     {
-      comment: 'Force Close Current File',
+      comment: 'Force Close Current Editor',
       before: 'Q',
       after: 'ZQ',
       modes: 'n',
@@ -706,13 +706,13 @@ export const config = {
       modes: 'n',
     },
     {
-      comment: 'Close All Files',
+      comment: 'Close All Editors',
       before: '<leader><leader>q',
       command: 'workbench.action.closeAllGroups',
       modes: 'n',
     },
     {
-      comment: 'Reopen Closed File',
+      comment: 'Reopen Closed Editor',
       before: 'gq',
       command: 'workbench.action.reopenClosedEditor',
       modes: 'n',
@@ -898,7 +898,7 @@ export const config = {
       modes: 'n',
     },
     {
-      comment: 'Close Current File',
+      comment: 'Close Current Editor',
       key: 'q',
       command: 'workbench.action.closeEditorsInGroup',
       when: 'focusedView == "workbench.explorer.openEditorsView"',
@@ -916,7 +916,7 @@ export const config = {
       when: 'focusedView == "workbench.explorer.openEditorsView"',
     },
     {
-      comment: 'Reopen Closed File',
+      comment: 'Reopen Closed Editor',
       key: 'g q',
       command: 'workbench.action.reopenClosedEditor',
       when: 'focusedView == "workbench.explorer.openEditorsView"',
@@ -1398,8 +1398,18 @@ export const config = {
       command: 'workbench.action.previousEditorInGroup',
     },
     {
+      comment: 'Focus Left Editor',
+      key: 'ctrl+e left',
+      command: 'workbench.action.previousEditorInGroup',
+    },
+    {
       comment: 'Focus Right Editor',
       before: 'el',
+      command: 'workbench.action.nextEditorInGroup',
+    },
+    {
+      comment: 'Focus Right Editor',
+      key: 'ctrl+e right',
       command: 'workbench.action.nextEditorInGroup',
     },
     {
@@ -1408,8 +1418,18 @@ export const config = {
       command: 'workbench.action.firstEditorInGroup',
     },
     {
+      comment: 'Focus First Editor in Group',
+      key: 'ctrl+e home',
+      command: 'workbench.action.firstEditorInGroup',
+    },
+    {
       comment: 'Focus Last Editor in Group',
       before: 'e;',
+      command: 'workbench.action.lastEditorInGroup',
+    },
+    {
+      comment: 'Focus Last Editor in Group',
+      key: 'ctrl+e end',
       command: 'workbench.action.lastEditorInGroup',
     },
     {
