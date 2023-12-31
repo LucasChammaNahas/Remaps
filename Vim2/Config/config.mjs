@@ -793,7 +793,7 @@ export const config = {
       comment: 'Go Back to Editor',
       key: 'escape',
       command: 'workbench.action.focusActiveEditorGroup',
-      when: '!textInputFocus && !treeFindOpen && !renameInputVisible',
+      when: '!editorTextFocus && !treeFindOpen && !renameInputVisible',
     },
     {
       comment: 'Toggle Side Panel',
@@ -1036,49 +1036,49 @@ export const config = {
       comment: 'Go to Next Match',
       key: 'ctrl+k',
       command: 'editor.action.nextMatchFindAction',
-      when: 'editorFocus && findWidgetVisible && findInputFocussed || editorFocus && findWidgetVisible && replaceInputFocused',
+      when: 'editorFocus && findWidgetVisible',
     },
     {
       comment: 'Go to Previous Match',
       key: 'ctrl+i',
       command: 'editor.action.previousMatchFindAction',
-      when: 'editorFocus && findWidgetVisible && findInputFocussed || editorFocus && findWidgetVisible && replaceInputFocused',
+      when: 'editorFocus && findWidgetVisible',
     },
     {
       comment: 'Replace One',
       key: 'enter',
       command: 'editor.action.replaceOne',
-      when: 'editorFocus && findWidgetVisible && findInputFocussed || editorFocus && findWidgetVisible && replaceInputFocused',
+      when: 'editorFocus && findWidgetVisible && replaceInputFocused',
     },
     {
       comment: 'Replace All',
       key: 'ctrl+shfit+enter',
       command: 'editor.action.replaceAll',
-      when: 'editorFocus && findWidgetVisible && findInputFocussed || editorFocus && findWidgetVisible && replaceInputFocused',
+      when: 'editorFocus && findWidgetVisible',
     },
     {
       comment: 'Toggle Match Case',
       key: 'ctrl+u',
       command: 'toggleFindCaseSensitive',
-      when: 'editorFocus && findWidgetVisible && findInputFocussed || editorFocus && findWidgetVisible && replaceInputFocused',
+      when: 'editorFocus && findWidgetVisible',
     },
     {
       comment: 'Toggle Match Whole Word',
       key: 'ctrl+o',
       command: 'toggleFindWholeWord',
-      when: 'editorFocus && findWidgetVisible && findInputFocussed || editorFocus && findWidgetVisible && replaceInputFocused',
+      when: 'editorFocus && findWidgetVisible',
     },
     {
       comment: 'Toggle Preserve Case',
       key: 'ctrl+j',
       command: 'togglePreserveCase',
-      when: 'editorFocus && findWidgetVisible && findInputFocussed || editorFocus && findWidgetVisible && replaceInputFocused',
+      when: 'editorFocus && findWidgetVisible',
     },
     {
       comment: 'Toggle Find in Selection',
       key: 'ctrl+l',
       command: 'toggleFindInSelection',
-      when: 'editorFocus && findWidgetVisible && findInputFocussed || editorFocus && findWidgetVisible && replaceInputFocused',
+      when: 'editorFocus && findWidgetVisible',
     },
     {
       comment: 'Close Find Widget',
@@ -1236,13 +1236,19 @@ export const config = {
       command: 'workbench.view.scm',
       modes: 'n',
     },
-
     {
       comment: 'Open Commits View',
       key: 'b space g',
       command: 'gitlens.views.commits.focus',
-      when: 'activeViewlet == "workbench.view.scm" && !inputFocus',
+      when: 'listFocus && !inputFocus',
     },
+    {
+      comment: 'Open Commits View',
+      before: 'b<leader>g',
+      command: 'gitlens.views.commits.focus',
+      modes: 'n',
+    },
+
     {
       comment: 'Reveal File on Explorer',
       key: 'o',
