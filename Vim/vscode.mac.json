@@ -74,25 +74,25 @@
   },
   {
     "comment": "Trigger Suggestions (Mac Doesn't Work With ctrl+space)",
-    "key": "ctrl+g",
+    "key": "cmd+g",
     "command": "editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
   },
   {
     "comment": "Trigger Suggestions (Mac Doesn't Work With ctrl+space)",
-    "key": "ctrl+g",
+    "key": "cmd+g",
     "command": "-editor.action.nextMatchFindAction",
     "when": "editorFocus"
   },
   {
     "comment": "Trigger Copilot",
-    "key": "ctrl+alt+space",
+    "key": "cmd+alt+space",
     "command": "github.copilot.generate",
     "when": "editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
   },
   {
     "comment": "Disable Copilot When Pressing ctrl+enter",
-    "key": "ctrl+enter",
+    "key": "cmd+enter",
     "command": "-github.copilot.generate",
     "when": "editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
   },
@@ -110,25 +110,25 @@
   },
   {
     "comment": "Toggle Peek Call Hierarchy Direction",
-    "key": "ctrl+j",
+    "key": "cmd+j",
     "command": "editor.showOutgoingCalls",
     "when": "callHierarchyVisible && callHierarchyDirection == 'incomingCalls'"
   },
   {
     "comment": "Toggle Peek Call Hierarchy Direction",
-    "key": "ctrl+j",
+    "key": "cmd+j",
     "command": "editor.showIncomingCalls",
     "when": "callHierarchyVisible && callHierarchyDirection == 'outgoingCalls'"
   },
   {
     "comment": "Save",
-    "key": "ctrl+e space",
+    "key": "cmd+e space",
     "command": "workbench.action.files.save",
     "when": "editorFocus && !editorReadonly"
   },
   {
     "comment": "Save All",
-    "key": "ctrl+shift+s",
+    "key": "cmd+shift+s",
     "command": "saveAll"
   },
   {
@@ -138,17 +138,17 @@
   },
   {
     "comment": "Quit All Instances",
-    "key": "ctrl+q",
+    "key": "cmd+q",
     "command": "-workbench.action.quit"
   },
   {
     "comment": "Open View List",
-    "key": "ctrl+q",
+    "key": "cmd+q",
     "command": "-workbench.action.quickOpenView"
   },
   {
     "comment": "Trigger Suggest",
-    "key": "ctrl+i",
+    "key": "cmd+i",
     "command": "-editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
   },
@@ -322,13 +322,13 @@
   },
   {
     "comment": "Focus Search Input",
-    "key": "ctrl+f",
+    "key": "cmd+f",
     "command": "workbench.action.findInFiles",
     "when": "focusedView == 'workbench.view.search'"
   },
   {
     "comment": "Focus Replace Input",
-    "key": "ctrl+h",
+    "key": "cmd+h",
     "command": "workbench.action.replaceInFiles",
     "when": "focusedView == 'workbench.view.search'"
   },
@@ -352,49 +352,49 @@
   },
   {
     "comment": "Replace All",
-    "key": "ctrl+shift+enter",
+    "key": "cmd+shift+enter",
     "command": "search.action.replaceAll",
     "when": "focusedView == 'workbench.view.search' && replaceActive"
   },
   {
     "comment": "Toggle Match Case",
-    "key": "ctrl+u",
+    "key": "cmd+u",
     "command": "toggleSearchCaseSensitive",
     "when": "focusedView == 'workbench.view.search'"
   },
   {
     "comment": "Toggle Match Whole Word",
-    "key": "ctrl+o",
+    "key": "cmd+o",
     "command": "toggleSearchWholeWord",
     "when": "focusedView == 'workbench.view.search'"
   },
   {
     "comment": "Toggle Preserve Case",
-    "key": "ctrl+j",
+    "key": "cmd+j",
     "command": "toggleSearchPreserveCase",
     "when": "focusedView == 'workbench.view.search'"
   },
   {
     "comment": "Focus Next Input Box",
-    "key": "ctrl+k",
+    "key": "cmd+k",
     "command": "search.focus.nextInputBox",
     "when": "focusedView == 'workbench.view.search'"
   },
   {
     "comment": "Focus Previous Input Box",
-    "key": "ctrl+i",
+    "key": "cmd+i",
     "command": "search.focus.previousInputBox",
     "when": "focusedView == 'workbench.view.search'"
   },
   {
     "comment": "Go to Next Match",
-    "key": "ctrl+k",
+    "key": "cmd+k",
     "command": "editor.action.nextMatchFindAction",
     "when": "editorFocus && findWidgetVisible"
   },
   {
     "comment": "Go to Previous Match",
-    "key": "ctrl+i",
+    "key": "cmd+i",
     "command": "editor.action.previousMatchFindAction",
     "when": "editorFocus && findWidgetVisible"
   },
@@ -406,31 +406,31 @@
   },
   {
     "comment": "Replace All",
-    "key": "ctrl+shfit+enter",
+    "key": "cmd+shfit+enter",
     "command": "editor.action.replaceAll",
     "when": "editorFocus && findWidgetVisible"
   },
   {
     "comment": "Toggle Match Case",
-    "key": "ctrl+u",
+    "key": "cmd+u",
     "command": "toggleFindCaseSensitive",
     "when": "editorFocus && findWidgetVisible"
   },
   {
     "comment": "Toggle Match Whole Word",
-    "key": "ctrl+o",
+    "key": "cmd+o",
     "command": "toggleFindWholeWord",
     "when": "editorFocus && findWidgetVisible"
   },
   {
     "comment": "Toggle Preserve Case",
-    "key": "ctrl+j",
+    "key": "cmd+j",
     "command": "togglePreserveCase",
     "when": "editorFocus && findWidgetVisible"
   },
   {
     "comment": "Toggle Find in Selection",
-    "key": "ctrl+l",
+    "key": "cmd+l",
     "command": "toggleFindInSelection",
     "when": "editorFocus && findWidgetVisible"
   },
@@ -448,12 +448,19 @@
   },
   {
     "comment": "Toggle Terminal Panel",
-    "key": "ctrl+t",
-    "command": "workbench.action.togglePanel"
+    "key": "cmd+t",
+    "command": "workbench.action.togglePanel",
+    "when": "focusedView == 'terminal'"
+  },
+  {
+    "comment": "Focus Terminal Panel",
+    "key": "cmd+t",
+    "command": "workbench.action.focusPanel",
+    "when": "focusedView != 'terminal'"
   },
   {
     "comment": "Toggle Terminal Panel",
-    "key": "ctrl+t",
+    "key": "cmd+t",
     "command": "-workbench.action.showAllSymbols"
   },
   {
@@ -470,7 +477,7 @@
   },
   {
     "comment": "Open New Terminal",
-    "key": "ctrl+n",
+    "key": "cmd+n",
     "command": "workbench.action.terminal.new",
     "when": "terminalFocusInAny || terminalTabsFocus"
   },
@@ -482,7 +489,7 @@
   },
   {
     "comment": "Up in Terminal List",
-    "key": "ctrl+i",
+    "key": "cmd+i",
     "command": "workbench.action.terminal.focusPrevious",
     "when": "terminalFocusInAny || terminalTabsFocus"
   },
@@ -494,13 +501,13 @@
   },
   {
     "comment": "Down in Terminal List",
-    "key": "ctrl+k",
+    "key": "cmd+k",
     "command": "workbench.action.terminal.focusNext",
     "when": "terminalFocusInAny || terminalTabsFocus"
   },
   {
     "comment": "Kill Terminal",
-    "key": "ctrl+q",
+    "key": "cmd+q",
     "command": "workbench.action.terminal.killActiveTab",
     "when": "terminalFocusInAny || terminalTabsFocus"
   },
@@ -524,19 +531,19 @@
   },
   {
     "comment": "Toggle Terminal Max Height",
-    "key": "ctrl+h",
+    "key": "cmd+h",
     "command": "workbench.action.terminal.toggleEditorVisibility",
     "when": "terminalFocusInAny || terminalTabsFocus"
   },
   {
     "comment": "Go to Terminal Side List",
-    "key": "ctrl+l",
+    "key": "cmd+l",
     "command": "workbench.action.terminal.focusTabs",
     "when": "terminalFocusInAny || terminalTabsFocus"
   },
   {
     "comment": "Clear Terminal Current Command",
-    "key": "ctrl+backspace",
+    "key": "cmd+backspace",
     "command": "workbench.action.terminal.clearSelection",
     "when": "terminalFocusInAny && terminalHasBeenCreated && terminalTextSelected && !terminalFindVisible || terminalFocusInAny && terminalProcessSupported && terminalTextSelected && !terminalFindVisible"
   },
@@ -638,58 +645,58 @@
   },
   {
     "comment": "Move Line Up",
-    "key": "ctrl+i",
+    "key": "cmd+i",
     "command": "editor.action.moveLinesUpAction",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
     "comment": "Move Line Down",
-    "key": "ctrl+k",
+    "key": "cmd+k",
     "command": "editor.action.moveLinesDownAction",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
     "comment": "Copy Line Up",
-    "key": "ctrl+u",
+    "key": "cmd+u",
     "command": "editor.action.copyLinesUpAction",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
     "comment": "Copy Line Down",
-    "key": "ctrl+j",
+    "key": "cmd+j",
     "command": "editor.action.copyLinesDownAction",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
     "comment": "Duplicate Cursor Up",
-    "key": "ctrl+o",
+    "key": "cmd+o",
     "command": "cursorColumnSelectUp",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
     "comment": "Duplicate Cursor Down",
-    "key": "ctrl+l",
+    "key": "cmd+l",
     "command": "cursorColumnSelectDown",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
     "comment": "Focus Left Editor",
-    "key": "ctrl+e left",
+    "key": "cmd+e left",
     "command": "workbench.action.previousEditorInGroup"
   },
   {
     "comment": "Focus Right Editor",
-    "key": "ctrl+e right",
+    "key": "cmd+e right",
     "command": "workbench.action.nextEditorInGroup"
   },
   {
     "comment": "Focus First Editor in Group",
-    "key": "ctrl+e home",
+    "key": "cmd+e home",
     "command": "workbench.action.firstEditorInGroup"
   },
   {
     "comment": "Focus Last Editor in Group",
-    "key": "ctrl+e end",
+    "key": "cmd+e end",
     "command": "workbench.action.lastEditorInGroup"
   }
 ]

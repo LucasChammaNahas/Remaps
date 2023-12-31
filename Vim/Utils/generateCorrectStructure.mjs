@@ -15,12 +15,20 @@ export function generateCorrectVimStructure(command) {
   return updatedCommand;
 }
 
-export function generateCorrectCodeStructure(command) {
+export function generateCorrectCodeStructure(command, os) {
+  let key = command.key;
+  if (os === 'mac') {
+    key = key.replace('ctrl', 'cmd');
+    key = key.replace('win', 'ctrl');
+  }
+
   const updatedCommand = {
     comment: command.comment,
-    key: command.key,
+    key,
     command: command.command,
   };
+
+  console.log(key);
 
   if ('when' in command) {
     updatedCommand.when = command.when;

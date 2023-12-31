@@ -1171,6 +1171,13 @@ export const config = {
       comment: 'Toggle Terminal Panel',
       key: 'ctrl+t',
       command: 'workbench.action.togglePanel',
+      when: 'focusedView == "terminal"',
+    },
+    {
+      comment: 'Focus Terminal Panel',
+      key: 'ctrl+t',
+      command: 'workbench.action.focusPanel',
+      when: 'focusedView != "terminal"',
     },
     {
       comment: 'Toggle Terminal Panel',

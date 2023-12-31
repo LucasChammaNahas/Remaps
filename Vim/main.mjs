@@ -19,21 +19,25 @@ const vimFinal = {
   [modes.pending]: [],
 };
 
-const vscodeFinal = [];
+const winFinal = [];
+const macFinal = [];
 
 const commandList = generateListWithAllCommands(config);
 
 for (const command of commandList) {
   const commandTypes = getCommandTypes(command);
-  let updatedCommand;
 
   if (commandTypes.includes('code')) {
-    updatedCommand = generateCorrectCodeStructure(command);
-    vscodeFinal.push(updatedCommand);
+    const winCommand = generateCorrectCodeStructure(command, 'win');
+    winFinal.push(winCommand);
+
+    const macCommand = generateCorrectCodeStructure(command, 'mac');
+    macFinal.push(macCommand);
   } else {
-    updatedCommand = generateCorrectVimStructure(command);
+    const vimCommand = generateCorrectVimStructure(command);
+
     for (const type of commandTypes) {
-      vimFinal[modes[type]].push(updatedCommand);
+      vimFinal[modes[type]].push(vimCommand);
     }
   }
 }
@@ -41,10 +45,13 @@ for (const command of commandList) {
 console.log('normal', vimFinal[modes.normal].length);
 console.log('visual', vimFinal[modes.visual].length);
 console.log('pending', vimFinal[modes.pending].length);
-console.log('vscode', vscodeFinal.length);
+console.log('vscode', winFinal.length);
 
 const vimJsonData = JSON.stringify(vimFinal, null, 2);
 fs.writeFileSync('vim.json', vimJsonData);
 
-const vscodeJsonData = JSON.stringify(vscodeFinal, null, 2);
-fs.writeFileSync('vscode.win.json', vscodeJsonData.replace(/\\"/g, "'"));
+const winJsonData = JSON.stringify(winFinal, null, 2);
+fs.writeFileSync('vscode.win.json', winJsonData.replace(/\\"/g, "'"));
+
+const macJsonData = JSON.stringify(macFinal, null, 2);
+fs.writeFileSync('vscode.mac.json', macJsonData.replace(/\\"/g, "'"));
