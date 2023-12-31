@@ -915,12 +915,12 @@ export const config = {
       command: 'workbench.action.files.newUntitledFile',
       when: 'focusedView == "workbench.explorer.openEditorsView"',
     },
-    // {
-    //   comment: 'Reopen Closed File',
-    //   before: 'gq',
-    //   command: 'workbench.action.reopenClosedEditor',
-    //   modes: 'n',
-    // },
+    {
+      comment: 'Reopen Closed File',
+      key: 'g q',
+      command: 'workbench.action.reopenClosedEditor',
+      when: 'focusedView == "workbench.explorer.openEditorsView"',
+    },
   ],
 
   outlineNavigation: [

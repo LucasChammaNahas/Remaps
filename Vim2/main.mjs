@@ -38,10 +38,10 @@ for (const command of commandList) {
   }
 }
 
-console.log('normal',vimFinal[modes.normal].length);
-console.log('visual',vimFinal[modes.visual].length);
-console.log('pending',vimFinal[modes.pending].length);
-console.log('vscode',vscodeFinal.length);
+console.log('normal', vimFinal[modes.normal].length);
+console.log('visual', vimFinal[modes.visual].length);
+console.log('pending', vimFinal[modes.pending].length);
+console.log('vscode', vscodeFinal.length);
 
 const vimJsonData = JSON.stringify(vimFinal, null, 2);
 fs.writeFileSync('vim.json', vimJsonData);
