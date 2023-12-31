@@ -146,7 +146,7 @@
     "comment": "Collapse All",
     "key": "t y",
     "command": "workbench.files.action.collapseExplorerFolders",
-    "when": "listFocus && !inputFocus && !inSearchEditor"
+    "when": "listFocus && !inputFocus"
   },
   {
     "comment": "Expand Current Item",
@@ -251,22 +251,22 @@
     "when": "listFocus && !inputFocus"
   },
   {
-    "comment": "Close File",
+    "comment": "Close Current File",
     "key": "q",
-    "command": "workbench.action.closeActiveEditor",
-    "when": "workbench.explorer.openEditorsView.active"
+    "command": "workbench.action.closeEditorsInGroup",
+    "when": "focusedView == 'workbench.explorer.openEditorsView'"
   },
   {
-    "comment": "Close All Files but Current",
+    "comment": "Close Current Group",
     "key": "shift+q",
     "command": "workbench.files.action.closeOtherEditors",
-    "when": "workbench.explorer.openEditorsView.active"
+    "when": "focusedView == 'workbench.explorer.openEditorsView'"
   },
   {
-    "comment": "New File",
+    "comment": "New Untitled File",
     "key": "n",
-    "command": "explorer.newFile",
-    "when": "workbench.explorer.openEditorsView.active"
+    "command": "workbench.action.files.newUntitledFile",
+    "when": "focusedView == 'workbench.explorer.openEditorsView'"
   },
   {
     "comment": "Open Outline View",
@@ -290,67 +290,67 @@
     "comment": "Focus Search Input",
     "key": "ctrl+f",
     "command": "workbench.action.findInFiles",
-    "when": "inSearchEditor"
+    "when": "focusedView == 'workbench.view.search'"
   },
   {
     "comment": "Focus Replace Input",
     "key": "ctrl+h",
     "command": "workbench.action.replaceInFiles",
-    "when": "inSearchEditor"
+    "when": "focusedView == 'workbench.view.search'"
   },
   {
     "comment": "Collapse Search Results",
     "key": "t y",
     "command": "search.action.collapseSearchResults",
-    "when": "inSearchEditor && !inputFocus"
+    "when": "focusedView == 'workbench.view.search' && !inputFocus"
   },
   {
     "comment": "Expand Search Results",
     "key": "t t",
     "command": "search.action.expandSearchResults",
-    "when": "inSearchEditor && !inputFocus"
+    "when": "focusedView == 'workbench.view.search' && !inputFocus"
   },
   {
     "comment": "Replace the Current Focused Item",
     "key": "Enter",
     "command": "search.action.replace",
-    "when": "inSearchEditor && !inputFocus"
+    "when": "focusedView == 'workbench.view.search' && !inputFocus"
   },
   {
     "comment": "Replace All",
-    "key": "ctrl+enter",
+    "key": "ctrl+shift+enter",
     "command": "search.action.replaceAll",
-    "when": "inSearchEditor && replaceActive"
+    "when": "focusedView == 'workbench.view.search' && replaceActive"
   },
   {
     "comment": "Toggle Match Case",
     "key": "ctrl+u",
-    "command": "toggleSearchEditorCaseSensitive",
-    "when": "inSearchEditor"
+    "command": "toggleSearchCaseSensitive",
+    "when": "focusedView == 'workbench.view.search'"
   },
   {
     "comment": "Toggle Match Whole Word",
     "key": "ctrl+o",
-    "command": "toggleSearchEditorWholeWord",
-    "when": "inSearchEditor"
+    "command": "toggleSearchWholeWord",
+    "when": "focusedView == 'workbench.view.search'"
   },
   {
     "comment": "Toggle Preserve Case",
     "key": "ctrl+j",
     "command": "toggleSearchPreserveCase",
-    "when": "inSearchEditor"
+    "when": "focusedView == 'workbench.view.search'"
   },
   {
     "comment": "Focus Next Input Box",
     "key": "ctrl+k",
     "command": "search.focus.nextInputBox",
-    "when": "inSearchEditor"
+    "when": "focusedView == 'workbench.view.search'"
   },
   {
     "comment": "Focus Previous Input Box",
     "key": "ctrl+i",
     "command": "search.focus.previousInputBox",
-    "when": "inSearchEditor"
+    "when": "focusedView == 'workbench.view.search'"
   },
   {
     "comment": "Go to Next Match",
@@ -372,15 +372,9 @@
   },
   {
     "comment": "Replace All",
-    "key": "ctrl+enter",
+    "key": "ctrl+shfit+enter",
     "command": "editor.action.replaceAll",
-    "when": "editorFocus && findWidgetVisible"
-  },
-  {
-    "comment": "Replace All",
-    "key": "ctrl+alt+enter",
-    "command": "-editor.action.replaceAll",
-    "when": "editorFocus && findWidgetVisible"
+    "when": "editorFocus && findWidgetVisible && findInputFocussed || editorFocus && findWidgetVisible && replaceInputFocused"
   },
   {
     "comment": "Toggle Match Case",
@@ -410,7 +404,7 @@
     "comment": "Close Find Widget",
     "key": "escape",
     "command": "closeFindWidget",
-    "when": "editorTextFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && findWidgetVisible && vim.mode == 'Normal'"
   },
   {
     "comment": "Toggle Terminal Panel",

@@ -688,13 +688,13 @@ export const config = {
 
   closeCommands: [
     {
-      comment: 'Close Current Tab',
+      comment: 'Close Current File',
       before: 'q',
       command: 'workbench.action.closeActiveEditor',
       modes: 'n',
     },
     {
-      comment: 'Force Close Current Tab',
+      comment: 'Force Close Current File',
       before: 'Q',
       after: 'ZQ',
       modes: 'n',
@@ -706,13 +706,13 @@ export const config = {
       modes: 'n',
     },
     {
-      comment: 'Close All Tabs But Current',
+      comment: 'Close All Files',
       before: '<leader><leader>q',
-      command: 'workbench.action.closeOtherEditors',
+      command: 'workbench.action.closeAllGroups',
       modes: 'n',
     },
     {
-      comment: 'Reopen Closed Tab',
+      comment: 'Reopen Closed File',
       before: 'gq',
       command: 'workbench.action.reopenClosedEditor',
       modes: 'n',
@@ -898,23 +898,29 @@ export const config = {
       modes: 'n',
     },
     {
-      comment: 'Close File',
+      comment: 'Close Current File',
       key: 'q',
-      command: 'workbench.action.closeActiveEditor',
-      when: 'workbench.explorer.openEditorsView.active',
+      command: 'workbench.action.closeEditorsInGroup',
+      when: 'focusedView == "workbench.explorer.openEditorsView"',
     },
     {
-      comment: 'Close All Files but Current',
+      comment: 'Close Current Group',
       key: 'shift+q',
       command: 'workbench.files.action.closeOtherEditors',
-      when: 'workbench.explorer.openEditorsView.active',
+      when: 'focusedView == "workbench.explorer.openEditorsView"',
     },
     {
-      comment: 'New File',
+      comment: 'New Untitled File',
       key: 'n',
-      command: 'explorer.newFile',
-      when: 'workbench.explorer.openEditorsView.active',
+      command: 'workbench.action.files.newUntitledFile',
+      when: 'focusedView == "workbench.explorer.openEditorsView"',
     },
+    // {
+    //   comment: 'Reopen Closed File',
+    //   before: 'gq',
+    //   command: 'workbench.action.reopenClosedEditor',
+    //   modes: 'n',
+    // },
   ],
 
   outlineNavigation: [
