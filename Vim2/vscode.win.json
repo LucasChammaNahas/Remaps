@@ -109,6 +109,18 @@
     "when": "editorTextFocus && !inDebugRepl && vim.active"
   },
   {
+    "comment": "Toggle Peek Call Hierarchy Direction",
+    "key": "ctrl+j",
+    "command": "editor.showOutgoingCalls",
+    "when": "callHierarchyVisible && callHierarchyDirection == 'incomingCalls'"
+  },
+  {
+    "comment": "Toggle Peek Call Hierarchy Direction",
+    "key": "ctrl+j",
+    "command": "editor.showIncomingCalls",
+    "when": "callHierarchyVisible && callHierarchyDirection == 'outgoingCalls'"
+  },
+  {
     "comment": "Save",
     "key": "ctrl+e space",
     "command": "workbench.action.files.save",
@@ -186,7 +198,7 @@
     "comment": "Go Back to Editor",
     "key": "escape",
     "command": "workbench.action.focusActiveEditorGroup",
-    "when": "!editorTextFocus && !treeFindOpen && !renameInputVisible"
+    "when": "!editorTextFocus && !treeFindOpen && !renameInputVisible && !callHierarchyVisible"
   },
   {
     "comment": "Toggle Side Panel",

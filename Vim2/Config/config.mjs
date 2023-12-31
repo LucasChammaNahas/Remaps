@@ -702,6 +702,38 @@ export const config = {
     },
   ],
 
+  peekCommands: [
+    { defaultModes: 'n' },
+
+    {
+      comment: 'Peek Definition',
+      before: 'cd',
+      command: 'editor.action.peekDefinition',
+    },
+    {
+      comment: 'Peek Call Hierarchy',
+      before: 'cf',
+      command: 'editor.showCallHierarchy',
+    },
+    {
+      comment: 'Toggle Peek Call Hierarchy Direction',
+      key: 'ctrl+j',
+      command: 'editor.showOutgoingCalls',
+      when: 'callHierarchyVisible && callHierarchyDirection == "incomingCalls"',
+    },
+    {
+      comment: 'Toggle Peek Call Hierarchy Direction',
+      key: 'ctrl+j',
+      command: 'editor.showIncomingCalls',
+      when: 'callHierarchyVisible && callHierarchyDirection == "outgoingCalls"',
+    },
+    {
+      comment: 'Open Call Hierarchy View',
+      before: 'bf',
+      command: 'references-view.showCallHierarchy',
+    },
+  ],
+
   saveCommands: [
     {
       comment: 'Save',
@@ -833,7 +865,7 @@ export const config = {
       comment: 'Go Back to Editor',
       key: 'escape',
       command: 'workbench.action.focusActiveEditorGroup',
-      when: '!editorTextFocus && !treeFindOpen && !renameInputVisible',
+      when: '!editorTextFocus && !treeFindOpen && !renameInputVisible && !callHierarchyVisible',
     },
     {
       comment: 'Toggle Side Panel',
