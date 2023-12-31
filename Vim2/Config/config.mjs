@@ -583,7 +583,43 @@ export const config = {
     },
   ],
 
-  miscellaneousCommands: [
+  markCommands: [
+    {
+      comment: 'Set Mark',
+      before: 'M',
+      after: 'm',
+      modes: 'n',
+    },
+    {
+      comment: 'Go to Mark',
+      before: 'm',
+      after: '`',
+      modes: 'n',
+    },
+    {
+      comment: 'Copies From the current position up to mark #',
+      before: 'dm',
+      after: 'y`',
+      modes: 'n',
+    },
+  ],
+
+  changeListCommands: [
+    { defaultModes: 'n' },
+
+    {
+      comment: 'Go Back in Change List',
+      before: 'gn',
+      after: 'g;',
+    },
+    {
+      comment: 'Go Forth in Change List',
+      before: 'gm',
+      after: 'g,',
+    },
+  ],
+
+  joinLineCommands: [
     { defaultModes: 'n' },
 
     {
@@ -596,6 +632,9 @@ export const config = {
       before: 'cl',
       after: 'J',
     },
+  ],
+
+  miscellaneousCommands: [
     {
       comment: 'Toggle Extremes of Selected Area',
       before: '<enter>',
@@ -606,6 +645,7 @@ export const config = {
       comment: 'Rename Symbol',
       before: '<leader>r',
       command: 'editor.action.rename',
+      modes: 'n',
     },
   ],
 

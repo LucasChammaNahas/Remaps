@@ -2,4807 +2,2087 @@
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "comment": "Visual Line",
-      "before": [
-        "c",
-        "v"
-      ],
-      "after": [
-        "V"
-      ]
+      "before": ["c", "v"],
+      "after": ["V"]
     },
     {
       "comment": "Visual Block",
-      "before": [
-        "c",
-        "c"
-      ],
-      "after": [
-        "<C-v>"
-      ]
+      "before": ["c", "c"],
+      "after": ["<C-v>"]
     },
     {
       "comment": "Move Cursor Up",
-      "before": [
-        "i"
-      ],
-      "after": [
-        "k"
-      ]
+      "before": ["i"],
+      "after": ["k"]
     },
     {
       "comment": "Move Cursor Down",
-      "before": [
-        "k"
-      ],
-      "after": [
-        "j"
-      ]
+      "before": ["k"],
+      "after": ["j"]
     },
     {
       "comment": "Move Cursor Left",
-      "before": [
-        "j"
-      ],
-      "after": [
-        "h"
-      ]
+      "before": ["j"],
+      "after": ["h"]
     },
     {
       "comment": "Move Cursor Right",
-      "before": [
-        "l"
-      ],
-      "after": [
-        "l"
-      ]
+      "before": ["l"],
+      "after": ["l"]
     },
     {
       "comment": "Move Cursor a Small Block Up",
-      "before": [
-        "<leader>",
-        "I"
-      ],
-      "after": [
-        "5",
-        "k"
-      ]
+      "before": ["<leader>", "I"],
+      "after": ["5", "k"]
     },
     {
       "comment": "Move Cursor a Small Block Down",
-      "before": [
-        "<leader>",
-        "K"
-      ],
-      "after": [
-        "5",
-        "j"
-      ]
+      "before": ["<leader>", "K"],
+      "after": ["5", "j"]
     },
     {
       "comment": "Move Cursor a Small Block Left",
-      "before": [
-        "<leader>",
-        "J"
-      ],
-      "after": [
-        "1",
-        "2",
-        "h"
-      ]
+      "before": ["<leader>", "J"],
+      "after": ["1", "2", "h"]
     },
     {
       "comment": "Move Cursor a Small Block Right",
-      "before": [
-        "<leader>",
-        "L"
-      ],
-      "after": [
-        "1",
-        "2",
-        "l"
-      ]
+      "before": ["<leader>", "L"],
+      "after": ["1", "2", "l"]
     },
     {
       "comment": "Move Cursor a Big Block Up",
-      "before": [
-        "I"
-      ],
-      "after": [
-        "1",
-        "0",
-        "k"
-      ]
+      "before": ["I"],
+      "after": ["1", "0", "k"]
     },
     {
       "comment": "Move Cursor a Big Block Down",
-      "before": [
-        "K"
-      ],
-      "after": [
-        "1",
-        "0",
-        "j"
-      ]
+      "before": ["K"],
+      "after": ["1", "0", "j"]
     },
     {
       "comment": "Move Cursor a Big Block Left",
-      "before": [
-        "J"
-      ],
-      "after": [
-        "1",
-        "0",
-        "h"
-      ]
+      "before": ["J"],
+      "after": ["1", "0", "h"]
     },
     {
       "comment": "Move Cursor a Big Block Right",
-      "before": [
-        "L"
-      ],
-      "after": [
-        "1",
-        "0",
-        "l"
-      ]
+      "before": ["L"],
+      "after": ["1", "0", "l"]
     },
     {
       "comment": "Go to Start of Word",
-      "before": [
-        "w",
-        ";"
-      ],
-      "after": [
-        "w"
-      ]
+      "before": ["w", ";"],
+      "after": ["w"]
     },
     {
       "comment": "Go to Start of WORD",
-      "before": [
-        "w",
-        "w",
-        ";"
-      ],
-      "after": [
-        "W"
-      ]
+      "before": ["w", "w", ";"],
+      "after": ["W"]
     },
     {
       "comment": "Go to End of Word",
-      "before": [
-        "w",
-        "l"
-      ],
-      "after": [
-        "e"
-      ]
+      "before": ["w", "l"],
+      "after": ["e"]
     },
     {
       "comment": "Go to Start of WORD",
-      "before": [
-        "w",
-        "w",
-        "l"
-      ],
-      "after": [
-        "E"
-      ]
+      "before": ["w", "w", "l"],
+      "after": ["E"]
     },
     {
       "comment": "Go Back to Start of Word",
-      "before": [
-        "w",
-        "j"
-      ],
-      "after": [
-        "b"
-      ]
+      "before": ["w", "j"],
+      "after": ["b"]
     },
     {
       "comment": "Go Back to Start of WORD",
-      "before": [
-        "w",
-        "w",
-        "j"
-      ],
-      "after": [
-        "B"
-      ]
+      "before": ["w", "w", "j"],
+      "after": ["B"]
     },
     {
       "comment": "Go Back to End of Word",
-      "before": [
-        "w",
-        "h"
-      ],
-      "after": [
-        "g",
-        "e"
-      ]
+      "before": ["w", "h"],
+      "after": ["g", "e"]
     },
     {
       "comment": "Go Back to Start of WORD",
-      "before": [
-        "w",
-        "w",
-        "h"
-      ],
-      "after": [
-        "g",
-        "E"
-      ]
+      "before": ["w", "w", "h"],
+      "after": ["g", "E"]
     },
     {
       "comment": "Go to Start of Line",
-      "before": [
-        "h"
-      ],
-      "after": [
-        "^"
-      ]
+      "before": ["h"],
+      "after": ["^"]
     },
     {
       "comment": "Go to End of Line",
-      "before": [
-        ";"
-      ],
-      "after": [
-        "g",
-        "_"
-      ]
+      "before": [";"],
+      "after": ["g", "_"]
     },
     {
       "comment": "Go to Top of Screen",
-      "before": [
-        "g",
-        "i"
-      ],
-      "after": [
-        "H"
-      ]
+      "before": ["g", "i"],
+      "after": ["H"]
     },
     {
       "comment": "Go to Middle of Screen",
-      "before": [
-        "g",
-        "j"
-      ],
-      "after": [
-        "M"
-      ]
+      "before": ["g", "j"],
+      "after": ["M"]
     },
     {
       "comment": "Go to Middle of Screen",
-      "before": [
-        "g",
-        "l"
-      ],
-      "after": [
-        "M"
-      ]
+      "before": ["g", "l"],
+      "after": ["M"]
     },
     {
       "comment": "Go to Bottom of Screen",
-      "before": [
-        "g",
-        "k"
-      ],
-      "after": [
-        "L"
-      ]
+      "before": ["g", "k"],
+      "after": ["L"]
     },
     {
       "comment": "Go to Top of Document",
-      "before": [
-        "g",
-        "g",
-        "i"
-      ],
-      "after": [
-        "g",
-        "g"
-      ]
+      "before": ["g", "g", "i"],
+      "after": ["g", "g"]
     },
     {
       "comment": "Go to Bottom of Document",
-      "before": [
-        "g",
-        "g",
-        "k"
-      ],
-      "after": [
-        "G"
-      ]
+      "before": ["g", "g", "k"],
+      "after": ["G"]
     },
     {
       "comment": "Scroll Page Until Cursor is at Top",
-      "before": [
-        "g",
-        "o"
-      ],
-      "after": [
-        "z",
-        "b"
-      ]
+      "before": ["g", "o"],
+      "after": ["z", "b"]
     },
     {
       "comment": "Scroll Page Until Cursor is at Center",
-      "before": [
-        "g",
-        "."
-      ],
-      "after": [
-        "z",
-        "z"
-      ]
+      "before": ["g", "."],
+      "after": ["z", "z"]
     },
     {
       "comment": "Scroll Page Until Cursor is at Bottom",
-      "before": [
-        "g",
-        "l"
-      ],
-      "after": [
-        "z",
-        "t"
-      ]
+      "before": ["g", "l"],
+      "after": ["z", "t"]
     },
     {
       "comment": "Scroll Page Up",
-      "before": [
-        "g",
-        "u"
-      ],
-      "after": [
-        "<C-u>"
-      ]
+      "before": ["g", "u"],
+      "after": ["<C-u>"]
     },
     {
       "comment": "Scroll Page Down",
-      "before": [
-        "g",
-        "j"
-      ],
-      "after": [
-        "<C-d>"
-      ]
+      "before": ["g", "j"],
+      "after": ["<C-d>"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "q"
-      ],
-      "after": [
-        "f",
-        "#"
-      ]
+      "before": ["n", "q"],
+      "after": ["f", "#"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "q"
-      ],
-      "after": [
-        "F",
-        "#"
-      ]
+      "before": ["<leader>", "n", "q"],
+      "after": ["F", "#"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "w"
-      ],
-      "after": [
-        "f",
-        "|"
-      ]
+      "before": ["n", "w"],
+      "after": ["f", "|"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "w"
-      ],
-      "after": [
-        "F",
-        "|"
-      ]
+      "before": ["<leader>", "n", "w"],
+      "after": ["F", "|"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "e"
-      ],
-      "after": [
-        "f",
-        "["
-      ]
+      "before": ["n", "e"],
+      "after": ["f", "["]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "e"
-      ],
-      "after": [
-        "F",
-        "["
-      ]
+      "before": ["<leader>", "n", "e"],
+      "after": ["F", "["]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "r"
-      ],
-      "after": [
-        "f",
-        "]"
-      ]
+      "before": ["n", "r"],
+      "after": ["f", "]"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "r"
-      ],
-      "after": [
-        "F",
-        "]"
-      ]
+      "before": ["<leader>", "n", "r"],
+      "after": ["F", "]"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "t"
-      ],
-      "after": [
-        "f",
-        "~"
-      ]
+      "before": ["n", "t"],
+      "after": ["f", "~"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "t"
-      ],
-      "after": [
-        "F",
-        "~"
-      ]
+      "before": ["<leader>", "n", "t"],
+      "after": ["F", "~"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "a"
-      ],
-      "after": [
-        "f",
-        "@"
-      ]
+      "before": ["n", "a"],
+      "after": ["f", "@"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "a"
-      ],
-      "after": [
-        "F",
-        "@"
-      ]
+      "before": ["<leader>", "n", "a"],
+      "after": ["F", "@"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "s"
-      ],
-      "after": [
-        "f",
-        "("
-      ]
+      "before": ["n", "s"],
+      "after": ["f", "("]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "s"
-      ],
-      "after": [
-        "F",
-        "("
-      ]
+      "before": ["<leader>", "n", "s"],
+      "after": ["F", "("]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "d"
-      ],
-      "after": [
-        "f",
-        ")"
-      ]
+      "before": ["n", "d"],
+      "after": ["f", ")"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "d"
-      ],
-      "after": [
-        "F",
-        ")"
-      ]
+      "before": ["<leader>", "n", "d"],
+      "after": ["F", ")"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "f"
-      ],
-      "after": [
-        "f",
-        ";"
-      ]
+      "before": ["n", "f"],
+      "after": ["f", ";"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "f"
-      ],
-      "after": [
-        "F",
-        ";"
-      ]
+      "before": ["<leader>", "n", "f"],
+      "after": ["F", ";"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "g"
-      ],
-      "after": [
-        "f",
-        ":"
-      ]
+      "before": ["n", "g"],
+      "after": ["f", ":"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "g"
-      ],
-      "after": [
-        "F",
-        ":"
-      ]
+      "before": ["<leader>", "n", "g"],
+      "after": ["F", ":"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "z"
-      ],
-      "after": [
-        "f",
-        "/"
-      ]
+      "before": ["n", "z"],
+      "after": ["f", "/"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "z"
-      ],
-      "after": [
-        "F",
-        "/"
-      ]
+      "before": ["<leader>", "n", "z"],
+      "after": ["F", "/"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "x"
-      ],
-      "after": [
-        "f",
-        "*"
-      ]
+      "before": ["n", "x"],
+      "after": ["f", "*"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "x"
-      ],
-      "after": [
-        "F",
-        "*"
-      ]
+      "before": ["<leader>", "n", "x"],
+      "after": ["F", "*"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "c"
-      ],
-      "after": [
-        "f",
-        "+"
-      ]
+      "before": ["n", "c"],
+      "after": ["f", "+"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "c"
-      ],
-      "after": [
-        "F",
-        "+"
-      ]
+      "before": ["<leader>", "n", "c"],
+      "after": ["F", "+"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "v"
-      ],
-      "after": [
-        "f",
-        "%"
-      ]
+      "before": ["n", "v"],
+      "after": ["f", "%"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "v"
-      ],
-      "after": [
-        "F",
-        "%"
-      ]
+      "before": ["<leader>", "n", "v"],
+      "after": ["F", "%"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "b"
-      ],
-      "after": [
-        "f",
-        "$"
-      ]
+      "before": ["n", "b"],
+      "after": ["f", "$"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "b"
-      ],
-      "after": [
-        "F",
-        "$"
-      ]
+      "before": ["<leader>", "n", "b"],
+      "after": ["F", "$"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "y"
-      ],
-      "after": [
-        "f",
-        "&"
-      ]
+      "before": ["n", "y"],
+      "after": ["f", "&"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "y"
-      ],
-      "after": [
-        "F",
-        "&"
-      ]
+      "before": ["<leader>", "n", "y"],
+      "after": ["F", "&"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "u"
-      ],
-      "after": [
-        "f",
-        "<"
-      ]
+      "before": ["n", "u"],
+      "after": ["f", "<"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "u"
-      ],
-      "after": [
-        "F",
-        "<"
-      ]
+      "before": ["<leader>", "n", "u"],
+      "after": ["F", "<"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "i"
-      ],
-      "after": [
-        "f",
-        "="
-      ]
+      "before": ["n", "i"],
+      "after": ["f", "="]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "i"
-      ],
-      "after": [
-        "F",
-        "="
-      ]
+      "before": ["<leader>", "n", "i"],
+      "after": ["F", "="]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "o"
-      ],
-      "after": [
-        "f",
-        ">"
-      ]
+      "before": ["n", "o"],
+      "after": ["f", ">"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "o"
-      ],
-      "after": [
-        "F",
-        ">"
-      ]
+      "before": ["<leader>", "n", "o"],
+      "after": ["F", ">"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "p"
-      ],
-      "after": [
-        "f",
-        "!"
-      ]
+      "before": ["n", "p"],
+      "after": ["f", "!"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "p"
-      ],
-      "after": [
-        "F",
-        "!"
-      ]
+      "before": ["<leader>", "n", "p"],
+      "after": ["F", "!"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "h"
-      ],
-      "after": [
-        "f",
-        "`"
-      ]
+      "before": ["n", "h"],
+      "after": ["f", "`"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "h"
-      ],
-      "after": [
-        "F",
-        "`"
-      ]
+      "before": ["<leader>", "n", "h"],
+      "after": ["F", "`"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "j"
-      ],
-      "after": [
-        "f",
-        "{"
-      ]
+      "before": ["n", "j"],
+      "after": ["f", "{"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "j"
-      ],
-      "after": [
-        "F",
-        "{"
-      ]
+      "before": ["<leader>", "n", "j"],
+      "after": ["F", "{"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "k"
-      ],
-      "after": [
-        "f",
-        "}"
-      ]
+      "before": ["n", "k"],
+      "after": ["f", "}"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "k"
-      ],
-      "after": [
-        "F",
-        "}"
-      ]
+      "before": ["<leader>", "n", "k"],
+      "after": ["F", "}"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "l"
-      ],
-      "after": [
-        "f",
-        "'"
-      ]
+      "before": ["n", "l"],
+      "after": ["f", "'"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "l"
-      ],
-      "after": [
-        "F",
-        "'"
-      ]
+      "before": ["<leader>", "n", "l"],
+      "after": ["F", "'"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "'"
-      ],
-      "after": [
-        "f",
-        "\""
-      ]
+      "before": ["n", "'"],
+      "after": ["f", "\""]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "'"
-      ],
-      "after": [
-        "F",
-        "\""
-      ]
+      "before": ["<leader>", "n", "'"],
+      "after": ["F", "\""]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "n"
-      ],
-      "after": [
-        "f",
-        "-"
-      ]
+      "before": ["n", "n"],
+      "after": ["f", "-"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "n"
-      ],
-      "after": [
-        "F",
-        "-"
-      ]
+      "before": ["<leader>", "n", "n"],
+      "after": ["F", "-"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "m"
-      ],
-      "after": [
-        "f",
-        "_"
-      ]
+      "before": ["n", "m"],
+      "after": ["f", "_"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "m"
-      ],
-      "after": [
-        "F",
-        "_"
-      ]
+      "before": ["<leader>", "n", "m"],
+      "after": ["F", "_"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        ","
-      ],
-      "after": [
-        "f",
-        ","
-      ]
+      "before": ["n", ","],
+      "after": ["f", ","]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        ","
-      ],
-      "after": [
-        "F",
-        ","
-      ]
+      "before": ["<leader>", "n", ","],
+      "after": ["F", ","]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "."
-      ],
-      "after": [
-        "f",
-        "."
-      ]
+      "before": ["n", "."],
+      "after": ["f", "."]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "."
-      ],
-      "after": [
-        "F",
-        "."
-      ]
+      "before": ["<leader>", "n", "."],
+      "after": ["F", "."]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "/"
-      ],
-      "after": [
-        "f",
-        "?"
-      ]
+      "before": ["n", "/"],
+      "after": ["f", "?"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "/"
-      ],
-      "after": [
-        "F",
-        "?"
-      ]
+      "before": ["<leader>", "n", "/"],
+      "after": ["F", "?"]
     },
     {
       "comment": "Paste Word From Register Clipboard",
-      "before": [
-        "w",
-        "f"
-      ],
-      "after": [
-        "v",
-        "i",
-        "w",
-        "p",
-        "g",
-        "v",
-        "y"
-      ]
+      "before": ["w", "f"],
+      "after": ["v", "i", "w", "p", "g", "v", "y"]
     },
     {
       "comment": "Paste Word From Register A",
-      "before": [
-        "<leader>",
-        "w",
-        "f"
-      ],
-      "after": [
-        "v",
-        "i",
-        "w",
-        "\"",
-        "a",
-        "p",
-        "g",
-        "v",
-        "y"
-      ]
+      "before": ["<leader>", "w", "f"],
+      "after": ["v", "i", "w", "\"", "a", "p", "g", "v", "y"]
     },
     {
       "comment": "Paste Word From Register B",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "w",
-        "f"
-      ],
-      "after": [
-        "v",
-        "i",
-        "w",
-        "\"",
-        "b",
-        "p",
-        "g",
-        "v",
-        "y"
-      ]
+      "before": ["<leader>", "<leader>", "w", "f"],
+      "after": ["v", "i", "w", "\"", "b", "p", "g", "v", "y"]
     },
     {
       "comment": "Paste Word From Register C",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "<leader>",
-        "w",
-        "f"
-      ],
-      "after": [
-        "v",
-        "i",
-        "w",
-        "\"",
-        "c",
-        "p",
-        "g",
-        "v",
-        "y"
-      ]
+      "before": ["<leader>", "<leader>", "<leader>", "w", "f"],
+      "after": ["v", "i", "w", "\"", "c", "p", "g", "v", "y"]
     },
     {
       "comment": "Paste WORD From Register Clipboard",
-      "before": [
-        "w",
-        "w",
-        "f"
-      ],
-      "after": [
-        "E",
-        "v",
-        "B",
-        "p",
-        "g",
-        "v",
-        "y"
-      ]
+      "before": ["w", "w", "f"],
+      "after": ["E", "v", "B", "p", "g", "v", "y"]
     },
     {
       "comment": "Paste WORD From Register A",
-      "before": [
-        "<leader>",
-        "w",
-        "w",
-        "f"
-      ],
-      "after": [
-        "E",
-        "v",
-        "B",
-        "\"",
-        "a",
-        "p",
-        "g",
-        "v",
-        "y"
-      ]
+      "before": ["<leader>", "w", "w", "f"],
+      "after": ["E", "v", "B", "\"", "a", "p", "g", "v", "y"]
     },
     {
       "comment": "Paste WORD From Register B",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "w",
-        "w",
-        "f"
-      ],
-      "after": [
-        "E",
-        "v",
-        "B",
-        "\"",
-        "b",
-        "p",
-        "g",
-        "v",
-        "y"
-      ]
+      "before": ["<leader>", "<leader>", "w", "w", "f"],
+      "after": ["E", "v", "B", "\"", "b", "p", "g", "v", "y"]
     },
     {
       "comment": "Paste WORD From Register C",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "<leader>",
-        "w",
-        "w",
-        "f"
-      ],
-      "after": [
-        "E",
-        "v",
-        "B",
-        "\"",
-        "c",
-        "p",
-        "g",
-        "v",
-        "y"
-      ]
+      "before": ["<leader>", "<leader>", "<leader>", "w", "w", "f"],
+      "after": ["E", "v", "B", "\"", "c", "p", "g", "v", "y"]
     },
     {
       "comment": "Paste Before From Register Clipboard",
-      "before": [
-        "f"
-      ],
-      "after": [
-        "g",
-        "P"
-      ]
+      "before": ["f"],
+      "after": ["g", "P"]
     },
     {
       "comment": "Paste Before From Register A",
-      "before": [
-        "<leader>",
-        "f"
-      ],
-      "after": [
-        "\"",
-        "a",
-        "g",
-        "P"
-      ]
+      "before": ["<leader>", "f"],
+      "after": ["\"", "a", "g", "P"]
     },
     {
       "comment": "Paste Before From Register B",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "f"
-      ],
-      "after": [
-        "\"",
-        "b",
-        "g",
-        "P"
-      ]
+      "before": ["<leader>", "<leader>", "f"],
+      "after": ["\"", "b", "g", "P"]
     },
     {
       "comment": "Paste Before From Register C",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "<leader>",
-        "f"
-      ],
-      "after": [
-        "\"",
-        "c",
-        "g",
-        "P"
-      ]
+      "before": ["<leader>", "<leader>", "<leader>", "f"],
+      "after": ["\"", "c", "g", "P"]
     },
     {
       "comment": "Paste After From Register Clipboard",
-      "before": [
-        "p"
-      ],
-      "after": [
-        "p"
-      ]
+      "before": ["p"],
+      "after": ["p"]
     },
     {
       "comment": "Paste After From Register A",
-      "before": [
-        "<leader>",
-        "p"
-      ],
-      "after": [
-        "\"",
-        "a",
-        "p"
-      ]
+      "before": ["<leader>", "p"],
+      "after": ["\"", "a", "p"]
     },
     {
       "comment": "Paste After From Register B",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "p"
-      ],
-      "after": [
-        "\"",
-        "b",
-        "p"
-      ]
+      "before": ["<leader>", "<leader>", "p"],
+      "after": ["\"", "b", "p"]
     },
     {
       "comment": "Paste After From Register C",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "<leader>",
-        "p"
-      ],
-      "after": [
-        "\"",
-        "c",
-        "p"
-      ]
+      "before": ["<leader>", "<leader>", "<leader>", "p"],
+      "after": ["\"", "c", "p"]
     },
     {
       "comment": "Delete To Register Black Hole",
-      "before": [
-        "s"
-      ],
-      "after": [
-        "\"",
-        "_",
-        "d"
-      ]
+      "before": ["s"],
+      "after": ["\"", "_", "d"]
     },
     {
       "comment": "Delete Word To Register Black Hole",
-      "before": [
-        "s",
-        "s"
-      ],
-      "after": [
-        "v",
-        "i",
-        "w",
-        "\"",
-        "_",
-        "d"
-      ]
+      "before": ["s", "s"],
+      "after": ["v", "i", "w", "\"", "_", "d"]
     },
     {
       "comment": "Delete WORD To Register Black Hole",
-      "before": [
-        "S",
-        "S"
-      ],
-      "after": [
-        "E",
-        "v",
-        "B",
-        "\"",
-        "_",
-        "d"
-      ]
+      "before": ["S", "S"],
+      "after": ["E", "v", "B", "\"", "_", "d"]
     },
     {
       "comment": "Delete Line To Register Black Hole",
-      "before": [
-        "s",
-        "k"
-      ],
-      "after": [
-        "\"",
-        "_",
-        "d",
-        "d"
-      ]
+      "before": ["s", "k"],
+      "after": ["\"", "_", "d", "d"]
     },
     {
       "comment": "Cut To Register Clipboard",
-      "before": [
-        "a"
-      ],
-      "after": [
-        "d"
-      ]
+      "before": ["a"],
+      "after": ["d"]
     },
     {
       "comment": "Cut To Register A",
-      "before": [
-        "<leader>",
-        "a"
-      ],
-      "after": [
-        "\"",
-        "a",
-        "d"
-      ]
+      "before": ["<leader>", "a"],
+      "after": ["\"", "a", "d"]
     },
     {
       "comment": "Cut To Register B",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "a"
-      ],
-      "after": [
-        "\"",
-        "b",
-        "d"
-      ]
+      "before": ["<leader>", "<leader>", "a"],
+      "after": ["\"", "b", "d"]
     },
     {
       "comment": "Cut To Register C",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "<leader>",
-        "a"
-      ],
-      "after": [
-        "\"",
-        "c",
-        "d"
-      ]
+      "before": ["<leader>", "<leader>", "<leader>", "a"],
+      "after": ["\"", "c", "d"]
     },
     {
       "comment": "Cut Word To Register Clipboard",
-      "before": [
-        "a",
-        "a"
-      ],
-      "after": [
-        "v",
-        "i",
-        "w",
-        "d"
-      ]
+      "before": ["a", "a"],
+      "after": ["v", "i", "w", "d"]
     },
     {
       "comment": "Cut Word To Register A",
-      "before": [
-        "<leader>",
-        "a",
-        "a"
-      ],
-      "after": [
-        "v",
-        "i",
-        "w",
-        "\"",
-        "a",
-        "d"
-      ]
+      "before": ["<leader>", "a", "a"],
+      "after": ["v", "i", "w", "\"", "a", "d"]
     },
     {
       "comment": "Cut Word To Register B",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "a",
-        "a"
-      ],
-      "after": [
-        "v",
-        "i",
-        "w",
-        "\"",
-        "b",
-        "d"
-      ]
+      "before": ["<leader>", "<leader>", "a", "a"],
+      "after": ["v", "i", "w", "\"", "b", "d"]
     },
     {
       "comment": "Cut Word To Register C",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "<leader>",
-        "a",
-        "a"
-      ],
-      "after": [
-        "v",
-        "i",
-        "w",
-        "\"",
-        "c",
-        "d"
-      ]
+      "before": ["<leader>", "<leader>", "<leader>", "a", "a"],
+      "after": ["v", "i", "w", "\"", "c", "d"]
     },
     {
       "comment": "Cut WORD To Register Clipboard",
-      "before": [
-        "A",
-        "A"
-      ],
-      "after": [
-        "E",
-        "v",
-        "B",
-        "d"
-      ]
+      "before": ["A", "A"],
+      "after": ["E", "v", "B", "d"]
     },
     {
       "comment": "Cut WORD To Register A",
-      "before": [
-        "<leader>",
-        "A",
-        "A"
-      ],
-      "after": [
-        "E",
-        "v",
-        "B",
-        "\"",
-        "a",
-        "d"
-      ]
+      "before": ["<leader>", "A", "A"],
+      "after": ["E", "v", "B", "\"", "a", "d"]
     },
     {
       "comment": "Cut WORD To Register B",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "A",
-        "A"
-      ],
-      "after": [
-        "E",
-        "v",
-        "B",
-        "\"",
-        "b",
-        "d"
-      ]
+      "before": ["<leader>", "<leader>", "A", "A"],
+      "after": ["E", "v", "B", "\"", "b", "d"]
     },
     {
       "comment": "Cut WORD To Register C",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "<leader>",
-        "A",
-        "A"
-      ],
-      "after": [
-        "E",
-        "v",
-        "B",
-        "\"",
-        "c",
-        "d"
-      ]
+      "before": ["<leader>", "<leader>", "<leader>", "A", "A"],
+      "after": ["E", "v", "B", "\"", "c", "d"]
     },
     {
       "comment": "Cut Line To Register Clipboard",
-      "before": [
-        "a",
-        "k"
-      ],
-      "after": [
-        "d",
-        "d"
-      ]
+      "before": ["a", "k"],
+      "after": ["d", "d"]
     },
     {
       "comment": "Cut Line To Register A",
-      "before": [
-        "<leader>",
-        "a",
-        "k"
-      ],
-      "after": [
-        "\"",
-        "a",
-        "d",
-        "d"
-      ]
+      "before": ["<leader>", "a", "k"],
+      "after": ["\"", "a", "d", "d"]
     },
     {
       "comment": "Cut Line To Register B",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "a",
-        "k"
-      ],
-      "after": [
-        "\"",
-        "b",
-        "d",
-        "d"
-      ]
+      "before": ["<leader>", "<leader>", "a", "k"],
+      "after": ["\"", "b", "d", "d"]
     },
     {
       "comment": "Cut Line To Register C",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "<leader>",
-        "a",
-        "k"
-      ],
-      "after": [
-        "\"",
-        "c",
-        "d",
-        "d"
-      ]
+      "before": ["<leader>", "<leader>", "<leader>", "a", "k"],
+      "after": ["\"", "c", "d", "d"]
     },
     {
       "comment": "Cut To Register Clipboard",
-      "before": [
-        "x"
-      ],
-      "after": [
-        "c"
-      ]
+      "before": ["x"],
+      "after": ["c"]
     },
     {
       "comment": "Cut To Register A",
-      "before": [
-        "<leader>",
-        "x"
-      ],
-      "after": [
-        "\"",
-        "a",
-        "c"
-      ]
+      "before": ["<leader>", "x"],
+      "after": ["\"", "a", "c"]
     },
     {
       "comment": "Cut To Register B",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "x"
-      ],
-      "after": [
-        "\"",
-        "b",
-        "c"
-      ]
+      "before": ["<leader>", "<leader>", "x"],
+      "after": ["\"", "b", "c"]
     },
     {
       "comment": "Cut To Register C",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "<leader>",
-        "x"
-      ],
-      "after": [
-        "\"",
-        "c",
-        "c"
-      ]
+      "before": ["<leader>", "<leader>", "<leader>", "x"],
+      "after": ["\"", "c", "c"]
     },
     {
       "comment": "Change Word To Register Black Hole",
-      "before": [
-        "x",
-        "x"
-      ],
-      "after": [
-        "v",
-        "i",
-        "w",
-        "\"",
-        "_",
-        "c"
-      ]
+      "before": ["x", "x"],
+      "after": ["v", "i", "w", "\"", "_", "c"]
     },
     {
       "comment": "Change Word To Register A",
-      "before": [
-        "<leader>",
-        "x",
-        "x"
-      ],
-      "after": [
-        "v",
-        "i",
-        "w",
-        "\"",
-        "a",
-        "c"
-      ]
+      "before": ["<leader>", "x", "x"],
+      "after": ["v", "i", "w", "\"", "a", "c"]
     },
     {
       "comment": "Change Word To Register B",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "x",
-        "x"
-      ],
-      "after": [
-        "v",
-        "i",
-        "w",
-        "\"",
-        "b",
-        "c"
-      ]
+      "before": ["<leader>", "<leader>", "x", "x"],
+      "after": ["v", "i", "w", "\"", "b", "c"]
     },
     {
       "comment": "Change Word To Register C",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "<leader>",
-        "x",
-        "x"
-      ],
-      "after": [
-        "v",
-        "i",
-        "w",
-        "\"",
-        "c",
-        "c"
-      ]
+      "before": ["<leader>", "<leader>", "<leader>", "x", "x"],
+      "after": ["v", "i", "w", "\"", "c", "c"]
     },
     {
       "comment": "Change WORD To Register Black Hole",
-      "before": [
-        "X",
-        "X"
-      ],
-      "after": [
-        "E",
-        "v",
-        "B",
-        "\"",
-        "_",
-        "c"
-      ]
+      "before": ["X", "X"],
+      "after": ["E", "v", "B", "\"", "_", "c"]
     },
     {
       "comment": "Change WORD To Register A",
-      "before": [
-        "<leader>",
-        "X",
-        "X"
-      ],
-      "after": [
-        "E",
-        "v",
-        "B",
-        "\"",
-        "a",
-        "c"
-      ]
+      "before": ["<leader>", "X", "X"],
+      "after": ["E", "v", "B", "\"", "a", "c"]
     },
     {
       "comment": "Change WORD To Register B",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "X",
-        "X"
-      ],
-      "after": [
-        "E",
-        "v",
-        "B",
-        "\"",
-        "b",
-        "c"
-      ]
+      "before": ["<leader>", "<leader>", "X", "X"],
+      "after": ["E", "v", "B", "\"", "b", "c"]
     },
     {
       "comment": "Change WORD To Register C",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "<leader>",
-        "X",
-        "X"
-      ],
-      "after": [
-        "E",
-        "v",
-        "B",
-        "\"",
-        "c",
-        "c"
-      ]
+      "before": ["<leader>", "<leader>", "<leader>", "X", "X"],
+      "after": ["E", "v", "B", "\"", "c", "c"]
     },
     {
       "comment": "Change Line To Register Black Hole",
-      "before": [
-        "x",
-        "k"
-      ],
-      "after": [
-        "\"",
-        "_",
-        "c",
-        "c"
-      ]
+      "before": ["x", "k"],
+      "after": ["\"", "_", "c", "c"]
     },
     {
       "comment": "Change Line To Register A",
-      "before": [
-        "<leader>",
-        "x",
-        "k"
-      ],
-      "after": [
-        "\"",
-        "a",
-        "c",
-        "c"
-      ]
+      "before": ["<leader>", "x", "k"],
+      "after": ["\"", "a", "c", "c"]
     },
     {
       "comment": "Change Line To Register B",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "x",
-        "k"
-      ],
-      "after": [
-        "\"",
-        "b",
-        "c",
-        "c"
-      ]
+      "before": ["<leader>", "<leader>", "x", "k"],
+      "after": ["\"", "b", "c", "c"]
     },
     {
       "comment": "Change Line To Register C",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "<leader>",
-        "x",
-        "k"
-      ],
-      "after": [
-        "\"",
-        "c",
-        "c",
-        "c"
-      ]
+      "before": ["<leader>", "<leader>", "<leader>", "x", "k"],
+      "after": ["\"", "c", "c", "c"]
     },
     {
       "comment": "Yank To Register Clipboard",
-      "before": [
-        "d"
-      ],
-      "after": [
-        "y"
-      ]
+      "before": ["d"],
+      "after": ["y"]
     },
     {
       "comment": "Yank To Register A",
-      "before": [
-        "<leader>",
-        "d"
-      ],
-      "after": [
-        "\"",
-        "a",
-        "y"
-      ]
+      "before": ["<leader>", "d"],
+      "after": ["\"", "a", "y"]
     },
     {
       "comment": "Yank To Register B",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "d"
-      ],
-      "after": [
-        "\"",
-        "b",
-        "y"
-      ]
+      "before": ["<leader>", "<leader>", "d"],
+      "after": ["\"", "b", "y"]
     },
     {
       "comment": "Yank To Register C",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "<leader>",
-        "d"
-      ],
-      "after": [
-        "\"",
-        "c",
-        "y"
-      ]
+      "before": ["<leader>", "<leader>", "<leader>", "d"],
+      "after": ["\"", "c", "y"]
     },
     {
       "comment": "Yank Word To Register Clipboard",
-      "before": [
-        "d",
-        "d"
-      ],
-      "after": [
-        "v",
-        "i",
-        "w",
-        "y"
-      ]
+      "before": ["d", "d"],
+      "after": ["v", "i", "w", "y"]
     },
     {
       "comment": "Yank Word To Register A",
-      "before": [
-        "<leader>",
-        "d",
-        "d"
-      ],
-      "after": [
-        "v",
-        "i",
-        "w",
-        "\"",
-        "a",
-        "y"
-      ]
+      "before": ["<leader>", "d", "d"],
+      "after": ["v", "i", "w", "\"", "a", "y"]
     },
     {
       "comment": "Yank Word To Register B",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "d",
-        "d"
-      ],
-      "after": [
-        "v",
-        "i",
-        "w",
-        "\"",
-        "b",
-        "y"
-      ]
+      "before": ["<leader>", "<leader>", "d", "d"],
+      "after": ["v", "i", "w", "\"", "b", "y"]
     },
     {
       "comment": "Yank Word To Register C",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "<leader>",
-        "d",
-        "d"
-      ],
-      "after": [
-        "v",
-        "i",
-        "w",
-        "\"",
-        "c",
-        "y"
-      ]
+      "before": ["<leader>", "<leader>", "<leader>", "d", "d"],
+      "after": ["v", "i", "w", "\"", "c", "y"]
     },
     {
       "comment": "Yank WORD To Register Clipboard",
-      "before": [
-        "D",
-        "D"
-      ],
-      "after": [
-        "E",
-        "v",
-        "B",
-        "y"
-      ]
+      "before": ["D", "D"],
+      "after": ["E", "v", "B", "y"]
     },
     {
       "comment": "Yank WORD To Register A",
-      "before": [
-        "<leader>",
-        "D",
-        "D"
-      ],
-      "after": [
-        "E",
-        "v",
-        "B",
-        "\"",
-        "a",
-        "y"
-      ]
+      "before": ["<leader>", "D", "D"],
+      "after": ["E", "v", "B", "\"", "a", "y"]
     },
     {
       "comment": "Yank WORD To Register B",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "D",
-        "D"
-      ],
-      "after": [
-        "E",
-        "v",
-        "B",
-        "\"",
-        "b",
-        "y"
-      ]
+      "before": ["<leader>", "<leader>", "D", "D"],
+      "after": ["E", "v", "B", "\"", "b", "y"]
     },
     {
       "comment": "Yank WORD To Register C",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "<leader>",
-        "D",
-        "D"
-      ],
-      "after": [
-        "E",
-        "v",
-        "B",
-        "\"",
-        "c",
-        "y"
-      ]
+      "before": ["<leader>", "<leader>", "<leader>", "D", "D"],
+      "after": ["E", "v", "B", "\"", "c", "y"]
     },
     {
       "comment": "Yank Line To Register Clipboard",
-      "before": [
-        "d",
-        "k"
-      ],
-      "after": [
-        "y",
-        "y"
-      ]
+      "before": ["d", "k"],
+      "after": ["y", "y"]
     },
     {
       "comment": "Yank Line To Register A",
-      "before": [
-        "<leader>",
-        "d",
-        "k"
-      ],
-      "after": [
-        "\"",
-        "a",
-        "y",
-        "y"
-      ]
+      "before": ["<leader>", "d", "k"],
+      "after": ["\"", "a", "y", "y"]
     },
     {
       "comment": "Yank Line To Register B",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "d",
-        "k"
-      ],
-      "after": [
-        "\"",
-        "b",
-        "y",
-        "y"
-      ]
+      "before": ["<leader>", "<leader>", "d", "k"],
+      "after": ["\"", "b", "y", "y"]
     },
     {
       "comment": "Yank Line To Register C",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "<leader>",
-        "d",
-        "k"
-      ],
-      "after": [
-        "\"",
-        "c",
-        "y",
-        "y"
-      ]
+      "before": ["<leader>", "<leader>", "<leader>", "d", "k"],
+      "after": ["\"", "c", "y", "y"]
     },
     {
       "comment": "Insert Cursor Before",
-      "before": [
-        "u"
-      ],
-      "after": [
-        "i"
-      ]
+      "before": ["u"],
+      "after": ["i"]
     },
     {
       "comment": "Insert Cursor at Start of Line",
-      "before": [
-        "U"
-      ],
-      "after": [
-        "I"
-      ]
+      "before": ["U"],
+      "after": ["I"]
     },
     {
       "comment": "Insert Cursor After",
-      "before": [
-        "o"
-      ],
-      "after": [
-        "a"
-      ]
+      "before": ["o"],
+      "after": ["a"]
     },
     {
       "comment": "Insert Cursor at End of Line",
-      "before": [
-        "U"
-      ],
-      "after": [
-        "A"
-      ]
+      "before": ["U"],
+      "after": ["A"]
     },
     {
       "comment": "Insert Line Below and Enter Insert Mode",
-      "before": [
-        "<enter>"
-      ],
-      "after": [
-        "o"
-      ]
+      "before": ["<enter>"],
+      "after": ["o"]
     },
     {
       "comment": "Insert Line Above and Enter Insert Mode (Fix)",
-      "before": [
-        "g",
-        "z",
-        "a"
-      ],
-      "after": [
-        "O"
-      ]
+      "before": ["g", "z", "a"],
+      "after": ["O"]
     },
     {
       "comment": "Insert Command on Command Line",
-      "before": [
-        "|"
-      ],
-      "after": [
-        ":"
-      ]
+      "before": ["|"],
+      "after": [":"]
     },
     {
       "comment": "Toggle Case",
-      "before": [
-        "y",
-        "y"
-      ],
-      "after": [
-        "~"
-      ]
+      "before": ["y", "y"],
+      "after": ["~"]
     },
     {
       "comment": "Toggle Word Case",
-      "before": [
-        "y",
-        "w",
-        "y"
-      ],
-      "after": [
-        "v",
-        "i",
-        "w",
-        "~"
-      ]
+      "before": ["y", "w", "y"],
+      "after": ["v", "i", "w", "~"]
     },
     {
       "comment": "Word Upper Case",
-      "before": [
-        "y",
-        "w",
-        "u"
-      ],
-      "after": [
-        "v",
-        "i",
-        "w",
-        "U"
-      ]
+      "before": ["y", "w", "u"],
+      "after": ["v", "i", "w", "U"]
     },
     {
       "comment": "Word Lower Case",
-      "before": [
-        "y",
-        "w",
-        "i"
-      ],
-      "after": [
-        "v",
-        "i",
-        "w",
-        "u"
-      ]
+      "before": ["y", "w", "i"],
+      "after": ["v", "i", "w", "u"]
     },
     {
       "comment": "Toggle WORD Case",
-      "before": [
-        "y",
-        "w",
-        "w",
-        "y"
-      ],
-      "after": [
-        "E",
-        "v",
-        "B",
-        "~"
-      ]
+      "before": ["y", "w", "w", "y"],
+      "after": ["E", "v", "B", "~"]
     },
     {
       "comment": "WORD Upper Case",
-      "before": [
-        "y",
-        "w",
-        "w",
-        "u"
-      ],
-      "after": [
-        "E",
-        "v",
-        "B",
-        "U"
-      ]
+      "before": ["y", "w", "w", "u"],
+      "after": ["E", "v", "B", "U"]
     },
     {
       "comment": "WORD Lower Case",
-      "before": [
-        "y",
-        "w",
-        "w",
-        "i"
-      ],
-      "after": [
-        "E",
-        "v",
-        "B",
-        "u"
-      ]
+      "before": ["y", "w", "w", "i"],
+      "after": ["E", "v", "B", "u"]
     },
     {
       "comment": "Go to Global Declaration",
-      "before": [
-        "g",
-        "g",
-        "d"
-      ],
-      "after": [
-        "g",
-        "D"
-      ]
+      "before": ["g", "g", "d"],
+      "after": ["g", "D"]
     },
     {
       "comment": "Indent Lines",
-      "before": [
-        "c",
-        "o"
-      ],
-      "commands": [
-        "editor.action.indentLines"
-      ]
+      "before": ["c", "o"],
+      "commands": ["editor.action.indentLines"]
     },
     {
       "comment": "Outdent Lines",
-      "before": [
-        "c",
-        "u"
-      ],
-      "commands": [
-        "editor.action.outdentLines"
-      ]
+      "before": ["c", "u"],
+      "commands": ["editor.action.outdentLines"]
     },
     {
       "comment": "Define a Fold Up Motion",
-      "before": [
-        "t",
-        "h"
-      ],
-      "after": [
-        "z",
-        "f"
-      ]
+      "before": ["t", "h"],
+      "after": ["z", "f"]
     },
     {
       "comment": "Delete a Fold Up Motion",
-      "before": [
-        "t",
-        "s"
-      ],
-      "after": [
-        "z",
-        "d"
-      ]
+      "before": ["t", "s"],
+      "after": ["z", "d"]
     },
     {
       "comment": "Toggle Fold Up Motion",
-      "before": [
-        "t",
-        "j"
-      ],
-      "commands": [
-        "editor.toggleFold"
-      ]
+      "before": ["t", "j"],
+      "commands": ["editor.toggleFold"]
     },
     {
       "comment": "Fold Up Region Level 1",
-      "before": [
-        "t",
-        "y"
-      ],
-      "commands": [
-        "editor.foldLevel1"
-      ]
+      "before": ["t", "y"],
+      "commands": ["editor.foldLevel1"]
     },
     {
       "comment": "Fold Up Region Level 2",
-      "before": [
-        "t",
-        "u"
-      ],
-      "commands": [
-        "editor.foldLevel2"
-      ]
+      "before": ["t", "u"],
+      "commands": ["editor.foldLevel2"]
     },
     {
       "comment": "Fold Up Region Level 3",
-      "before": [
-        "t",
-        "i"
-      ],
-      "commands": [
-        "editor.foldLevel3"
-      ]
+      "before": ["t", "i"],
+      "commands": ["editor.foldLevel3"]
     },
     {
       "comment": "Fold Up Region Level 4",
-      "before": [
-        "t",
-        "o"
-      ],
-      "commands": [
-        "editor.foldLevel4"
-      ]
+      "before": ["t", "o"],
+      "commands": ["editor.foldLevel4"]
     },
     {
       "comment": "Fold Up Region Level 5",
-      "before": [
-        "t",
-        "p"
-      ],
-      "commands": [
-        "editor.foldLevel5"
-      ]
+      "before": ["t", "p"],
+      "commands": ["editor.foldLevel5"]
     },
     {
       "comment": "Fold Up All Levels",
-      "before": [
-        "T",
-        "T"
-      ],
-      "commands": [
-        "editor.foldAll"
-      ]
+      "before": ["T", "T"],
+      "commands": ["editor.foldAll"]
     },
     {
       "comment": "Unfold Up All Levels",
-      "before": [
-        "t",
-        "t"
-      ],
-      "commands": [
-        "editor.unfoldAll"
-      ]
+      "before": ["t", "t"],
+      "commands": ["editor.unfoldAll"]
+    },
+    {
+      "comment": "Set Mark",
+      "before": ["M"],
+      "after": ["m"]
+    },
+    {
+      "comment": "Go to Mark",
+      "before": ["m"],
+      "after": ["`"]
+    },
+    {
+      "comment": "Copies From the current position up to mark #",
+      "before": ["d", "m"],
+      "after": ["y", "`"]
     },
     {
       "comment": "Join With Line Below Without Space",
-      "before": [
-        "c",
-        "j"
-      ],
-      "after": [
-        "g",
-        "J"
-      ]
+      "before": ["c", "j"],
+      "after": ["g", "J"]
     },
     {
       "comment": "Join With Line Below With Space",
-      "before": [
-        "c",
-        "l"
-      ],
-      "after": [
-        "J"
-      ]
+      "before": ["c", "l"],
+      "after": ["J"]
     },
     {
       "comment": "Rename Symbol",
-      "before": [
-        "<leader>",
-        "r"
-      ],
-      "commands": [
-        "editor.action.rename"
-      ]
+      "before": ["<leader>", "r"],
+      "commands": ["editor.action.rename"]
     },
     {
       "comment": "Save",
-      "before": [
-        "<leader>",
-        "s"
-      ],
-      "commands": [
-        "workbench.action.files.save"
-      ]
+      "before": ["<leader>", "s"],
+      "commands": ["workbench.action.files.save"]
     },
     {
       "comment": "Save All",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "s"
-      ],
-      "commands": [
-        "saveAll"
-      ]
+      "before": ["<leader>", "<leader>", "s"],
+      "commands": ["saveAll"]
     },
     {
       "comment": "Close Current Editor",
-      "before": [
-        "q"
-      ],
-      "commands": [
-        "workbench.action.closeActiveEditor"
-      ]
+      "before": ["q"],
+      "commands": ["workbench.action.closeActiveEditor"]
     },
     {
       "comment": "Force Close Current Editor",
-      "before": [
-        "Q"
-      ],
-      "after": [
-        "Z",
-        "Q"
-      ]
+      "before": ["Q"],
+      "after": ["Z", "Q"]
     },
     {
       "comment": "Close Current Group",
-      "before": [
-        "<leader>",
-        "q"
-      ],
-      "commands": [
-        "workbench.action.closeEditorsInGroup"
-      ]
+      "before": ["<leader>", "q"],
+      "commands": ["workbench.action.closeEditorsInGroup"]
     },
     {
       "comment": "Close All Editors",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "q"
-      ],
-      "commands": [
-        "workbench.action.closeAllGroups"
-      ]
+      "before": ["<leader>", "<leader>", "q"],
+      "commands": ["workbench.action.closeAllGroups"]
     },
     {
       "comment": "Reopen Closed Editor",
-      "before": [
-        "g",
-        "q"
-      ],
-      "commands": [
-        "workbench.action.reopenClosedEditor"
-      ]
+      "before": ["g", "q"],
+      "commands": ["workbench.action.reopenClosedEditor"]
     },
     {
       "comment": "Toggle Side Panel",
-      "before": [
-        "b",
-        "m"
-      ],
-      "commands": [
-        "workbench.action.toggleSidebarVisibility"
-      ]
+      "before": ["b", "m"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
     },
     {
       "comment": "Open Tree View",
-      "before": [
-        "b",
-        "n"
-      ],
-      "commands": [
-        "workbench.view.explorer"
-      ]
+      "before": ["b", "n"],
+      "commands": ["workbench.view.explorer"]
     },
     {
       "comment": "Open Open Editors View",
-      "before": [
-        "b",
-        "<leader>",
-        "n"
-      ],
-      "commands": [
-        "workbench.files.action.focusOpenEditorsView"
-      ]
+      "before": ["b", "<leader>", "n"],
+      "commands": ["workbench.files.action.focusOpenEditorsView"]
     },
     {
       "comment": "Open Outline View",
-      "before": [
-        "b",
-        "o"
-      ],
-      "commands": [
-        "outline.focus"
-      ]
+      "before": ["b", "o"],
+      "commands": ["outline.focus"]
     },
     {
       "comment": "Open Search Panel View",
-      "before": [
-        "b",
-        "p"
-      ],
-      "commands": [
-        "workbench.action.findInFiles"
-      ]
+      "before": ["b", "p"],
+      "commands": ["workbench.action.findInFiles"]
     },
     {
       "comment": "Open Replace Panel View",
-      "before": [
-        "b",
-        "h"
-      ],
-      "commands": [
-        "workbench.action.replaceInFiles"
-      ]
+      "before": ["b", "h"],
+      "commands": ["workbench.action.replaceInFiles"]
     },
     {
       "comment": "Toggle Terminal Panel",
-      "before": [
-        "b",
-        "t"
-      ],
-      "commands": [
-        "workbench.action.togglePanel"
-      ]
+      "before": ["b", "t"],
+      "commands": ["workbench.action.togglePanel"]
     },
     {
       "comment": "Toggle Terminal",
-      "before": [
-        "b",
-        "j"
-      ],
-      "commands": [
-        "workbench.action.toggleTerminal"
-      ]
+      "before": ["b", "j"],
+      "commands": ["workbench.action.toggleTerminal"]
     },
     {
       "comment": "Open New Terminal",
-      "before": [
-        "b",
-        "<leader>",
-        "j"
-      ],
-      "commands": [
-        "workbench.action.terminal.new"
-      ]
+      "before": ["b", "<leader>", "j"],
+      "commands": ["workbench.action.terminal.new"]
     },
     {
       "comment": "Open Source Control View",
-      "before": [
-        "b",
-        "g"
-      ],
-      "commands": [
-        "workbench.view.scm"
-      ]
+      "before": ["b", "g"],
+      "commands": ["workbench.view.scm"]
+    },
+    {
+      "comment": "Open Commits View",
+      "before": ["b", "<leader>", "g"],
+      "commands": ["gitlens.views.commits.focus"]
     },
     {
       "comment": "Toggle Editor Group Layout (Vertical/Horizontal)",
-      "before": [
-        "e",
-        "v"
-      ],
-      "commands": [
-        "workbench.action.toggleEditorGroupLayout"
-      ]
+      "before": ["e", "v"],
+      "commands": ["workbench.action.toggleEditorGroupLayout"]
     },
     {
       "comment": "Toggle Editor Group Sizes",
-      "before": [
-        "e",
-        "b"
-      ],
-      "commands": [
-        "workbench.action.toggleEditorWidths"
-      ]
+      "before": ["e", "b"],
+      "commands": ["workbench.action.toggleEditorWidths"]
     },
     {
       "comment": "Reset Editor Group Sizes",
-      "before": [
-        "e",
-        "y"
-      ],
-      "commands": [
-        "workbench.action.evenEditorWidths"
-      ]
+      "before": ["e", "y"],
+      "commands": ["workbench.action.evenEditorWidths"]
     },
     {
       "comment": "Increase Editor Group Size",
-      "before": [
-        "e",
-        "m"
-      ],
-      "commands": [
-        "workbench.action.increaseViewSize"
-      ]
+      "before": ["e", "m"],
+      "commands": ["workbench.action.increaseViewSize"]
     },
     {
       "comment": "Decrease Editor Group Size",
-      "before": [
-        "e",
-        "n"
-      ],
-      "commands": [
-        "workbench.action.decreaseViewSize"
-      ]
+      "before": ["e", "n"],
+      "commands": ["workbench.action.decreaseViewSize"]
     },
     {
       "comment": "Focus Left Editor",
-      "before": [
-        "e",
-        "j"
-      ],
-      "commands": [
-        "workbench.action.previousEditorInGroup"
-      ]
+      "before": ["e", "j"],
+      "commands": ["workbench.action.previousEditorInGroup"]
     },
     {
       "comment": "Focus Right Editor",
-      "before": [
-        "e",
-        "l"
-      ],
-      "commands": [
-        "workbench.action.nextEditorInGroup"
-      ]
+      "before": ["e", "l"],
+      "commands": ["workbench.action.nextEditorInGroup"]
     },
     {
       "comment": "Focus First Editor in Group",
-      "before": [
-        "e",
-        "h"
-      ],
-      "commands": [
-        "workbench.action.firstEditorInGroup"
-      ]
+      "before": ["e", "h"],
+      "commands": ["workbench.action.firstEditorInGroup"]
     },
     {
       "comment": "Focus Last Editor in Group",
-      "before": [
-        "e",
-        ";"
-      ],
-      "commands": [
-        "workbench.action.lastEditorInGroup"
-      ]
+      "before": ["e", ";"],
+      "commands": ["workbench.action.lastEditorInGroup"]
     },
     {
       "comment": "Focus Editor Number #",
-      "before": [
-        "e",
-        "g"
-      ],
-      "after": [
-        "g",
-        "t"
-      ]
+      "before": ["e", "g"],
+      "after": ["g", "t"]
     },
     {
       "comment": "Move Editor Left",
-      "before": [
-        "e",
-        "u"
-      ],
-      "commands": [
-        "workbench.action.moveEditorLeftInGroup"
-      ]
+      "before": ["e", "u"],
+      "commands": ["workbench.action.moveEditorLeftInGroup"]
     },
     {
       "comment": "Move Editor Right",
-      "before": [
-        "e",
-        "o"
-      ],
-      "commands": [
-        "workbench.action.moveEditorRightInGroup"
-      ]
+      "before": ["e", "o"],
+      "commands": ["workbench.action.moveEditorRightInGroup"]
     },
     {
       "comment": "Move Tab to Group on Left",
-      "before": [
-        "<leader>",
-        "e",
-        "j"
-      ],
-      "commands": [
-        "workbench.action.moveEditorToLeftGroup"
-      ]
+      "before": ["<leader>", "e", "j"],
+      "commands": ["workbench.action.moveEditorToLeftGroup"]
     },
     {
       "comment": "Move Tab to Group on Right",
-      "before": [
-        "<leader>",
-        "e",
-        "l"
-      ],
-      "commands": [
-        "workbench.action.moveEditorToRightGroup"
-      ]
+      "before": ["<leader>", "e", "l"],
+      "commands": ["workbench.action.moveEditorToRightGroup"]
     },
     {
       "comment": "Move Tab to Group Above",
-      "before": [
-        "<leader>",
-        "e",
-        "i"
-      ],
-      "commands": [
-        "workbench.action.moveEditorToAboveGroup"
-      ]
+      "before": ["<leader>", "e", "i"],
+      "commands": ["workbench.action.moveEditorToAboveGroup"]
     },
     {
       "comment": "Move Tab to Group Below",
-      "before": [
-        "<leader>",
-        "e",
-        "k"
-      ],
-      "commands": [
-        "workbench.action.moveEditorToBelowGroup"
-      ]
+      "before": ["<leader>", "e", "k"],
+      "commands": ["workbench.action.moveEditorToBelowGroup"]
     },
     {
       "comment": "Split Editor",
-      "before": [
-        "e",
-        "e"
-      ],
-      "commands": [
-        "workbench.action.splitEditor"
-      ]
+      "before": ["e", "e"],
+      "commands": ["workbench.action.splitEditor"]
     },
     {
       "comment": "Split Editor Horizontally",
-      "before": [
-        "<leader>",
-        "e",
-        "e"
-      ],
-      "commands": [
-        "workbench.action.splitEditorDown"
-      ]
+      "before": ["<leader>", "e", "e"],
+      "commands": ["workbench.action.splitEditorDown"]
     },
     {
       "comment": "Focus Left Group",
-      "before": [
-        "e",
-        "w"
-      ],
-      "commands": [
-        "workbench.action.focusLeftGroup"
-      ]
+      "before": ["e", "w"],
+      "commands": ["workbench.action.focusLeftGroup"]
     },
     {
       "comment": "Focus Right Group",
-      "before": [
-        "e",
-        "r"
-      ],
-      "commands": [
-        "workbench.action.focusRightGroup"
-      ]
+      "before": ["e", "r"],
+      "commands": ["workbench.action.focusRightGroup"]
     },
     {
       "comment": "Focus Group Above",
-      "before": [
-        "e",
-        "i"
-      ],
-      "commands": [
-        "workbench.action.focusAboveGroup"
-      ]
+      "before": ["e", "i"],
+      "commands": ["workbench.action.focusAboveGroup"]
     },
     {
       "comment": "Focus Group Below",
-      "before": [
-        "e",
-        "k"
-      ],
-      "commands": [
-        "workbench.action.focusBelowGroup"
-      ]
+      "before": ["e", "k"],
+      "commands": ["workbench.action.focusBelowGroup"]
     },
     {
       "comment": "Move Group Left",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "e",
-        "j"
-      ],
-      "commands": [
-        "workbench.action.moveActiveEditorGroupLeft"
-      ]
+      "before": ["<leader>", "<leader>", "e", "j"],
+      "commands": ["workbench.action.moveActiveEditorGroupLeft"]
     },
     {
       "comment": "Move Group Right",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "e",
-        "l"
-      ],
-      "commands": [
-        "workbench.action.moveActiveEditorGroupRight"
-      ]
+      "before": ["<leader>", "<leader>", "e", "l"],
+      "commands": ["workbench.action.moveActiveEditorGroupRight"]
     },
     {
       "comment": "Move Group Up",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "e",
-        "i"
-      ],
-      "commands": [
-        "workbench.action.moveActiveEditorGroupUp"
-      ]
+      "before": ["<leader>", "<leader>", "e", "i"],
+      "commands": ["workbench.action.moveActiveEditorGroupUp"]
     },
     {
       "comment": "Move Group Down",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "e",
-        "k"
-      ],
-      "commands": [
-        "workbench.action.moveActiveEditorGroupDown"
-      ]
+      "before": ["<leader>", "<leader>", "e", "k"],
+      "commands": ["workbench.action.moveActiveEditorGroupDown"]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     {
       "comment": "Visual Line",
-      "before": [
-        "c",
-        "v"
-      ],
-      "after": [
-        "V"
-      ]
+      "before": ["c", "v"],
+      "after": ["V"]
     },
     {
       "comment": "Visual Block",
-      "before": [
-        "c",
-        "c"
-      ],
-      "after": [
-        "<C-v>"
-      ]
+      "before": ["c", "c"],
+      "after": ["<C-v>"]
     },
     {
       "comment": "Move Cursor Up",
-      "before": [
-        "i"
-      ],
-      "after": [
-        "k"
-      ]
+      "before": ["i"],
+      "after": ["k"]
     },
     {
       "comment": "Move Cursor Down",
-      "before": [
-        "k"
-      ],
-      "after": [
-        "j"
-      ]
+      "before": ["k"],
+      "after": ["j"]
     },
     {
       "comment": "Move Cursor Left",
-      "before": [
-        "j"
-      ],
-      "after": [
-        "h"
-      ]
+      "before": ["j"],
+      "after": ["h"]
     },
     {
       "comment": "Move Cursor Right",
-      "before": [
-        "l"
-      ],
-      "after": [
-        "l"
-      ]
+      "before": ["l"],
+      "after": ["l"]
     },
     {
       "comment": "Move Cursor a Small Block Up",
-      "before": [
-        "<leader>",
-        "I"
-      ],
-      "after": [
-        "5",
-        "k"
-      ]
+      "before": ["<leader>", "I"],
+      "after": ["5", "k"]
     },
     {
       "comment": "Move Cursor a Small Block Down",
-      "before": [
-        "<leader>",
-        "K"
-      ],
-      "after": [
-        "5",
-        "j"
-      ]
+      "before": ["<leader>", "K"],
+      "after": ["5", "j"]
     },
     {
       "comment": "Move Cursor a Small Block Left",
-      "before": [
-        "<leader>",
-        "J"
-      ],
-      "after": [
-        "1",
-        "2",
-        "h"
-      ]
+      "before": ["<leader>", "J"],
+      "after": ["1", "2", "h"]
     },
     {
       "comment": "Move Cursor a Small Block Right",
-      "before": [
-        "<leader>",
-        "L"
-      ],
-      "after": [
-        "1",
-        "2",
-        "l"
-      ]
+      "before": ["<leader>", "L"],
+      "after": ["1", "2", "l"]
     },
     {
       "comment": "Move Cursor a Big Block Up",
-      "before": [
-        "I"
-      ],
-      "after": [
-        "1",
-        "0",
-        "k"
-      ]
+      "before": ["I"],
+      "after": ["1", "0", "k"]
     },
     {
       "comment": "Move Cursor a Big Block Down",
-      "before": [
-        "K"
-      ],
-      "after": [
-        "1",
-        "0",
-        "j"
-      ]
+      "before": ["K"],
+      "after": ["1", "0", "j"]
     },
     {
       "comment": "Move Cursor a Big Block Left",
-      "before": [
-        "J"
-      ],
-      "after": [
-        "1",
-        "0",
-        "h"
-      ]
+      "before": ["J"],
+      "after": ["1", "0", "h"]
     },
     {
       "comment": "Move Cursor a Big Block Right",
-      "before": [
-        "L"
-      ],
-      "after": [
-        "1",
-        "0",
-        "l"
-      ]
+      "before": ["L"],
+      "after": ["1", "0", "l"]
     },
     {
       "comment": "Go to Start of Word",
-      "before": [
-        "w",
-        ";"
-      ],
-      "after": [
-        "w"
-      ]
+      "before": ["w", ";"],
+      "after": ["w"]
     },
     {
       "comment": "Go to Start of WORD",
-      "before": [
-        "w",
-        "w",
-        ";"
-      ],
-      "after": [
-        "W"
-      ]
+      "before": ["w", "w", ";"],
+      "after": ["W"]
     },
     {
       "comment": "Go to End of Word",
-      "before": [
-        "w",
-        "l"
-      ],
-      "after": [
-        "e"
-      ]
+      "before": ["w", "l"],
+      "after": ["e"]
     },
     {
       "comment": "Go to Start of WORD",
-      "before": [
-        "w",
-        "w",
-        "l"
-      ],
-      "after": [
-        "E"
-      ]
+      "before": ["w", "w", "l"],
+      "after": ["E"]
     },
     {
       "comment": "Go Back to Start of Word",
-      "before": [
-        "w",
-        "j"
-      ],
-      "after": [
-        "b"
-      ]
+      "before": ["w", "j"],
+      "after": ["b"]
     },
     {
       "comment": "Go Back to Start of WORD",
-      "before": [
-        "w",
-        "w",
-        "j"
-      ],
-      "after": [
-        "B"
-      ]
+      "before": ["w", "w", "j"],
+      "after": ["B"]
     },
     {
       "comment": "Go Back to End of Word",
-      "before": [
-        "w",
-        "h"
-      ],
-      "after": [
-        "g",
-        "e"
-      ]
+      "before": ["w", "h"],
+      "after": ["g", "e"]
     },
     {
       "comment": "Go Back to Start of WORD",
-      "before": [
-        "w",
-        "w",
-        "h"
-      ],
-      "after": [
-        "g",
-        "E"
-      ]
+      "before": ["w", "w", "h"],
+      "after": ["g", "E"]
     },
     {
       "comment": "Go to Start of Line",
-      "before": [
-        "h"
-      ],
-      "after": [
-        "^"
-      ]
+      "before": ["h"],
+      "after": ["^"]
     },
     {
       "comment": "Go to End of Line",
-      "before": [
-        ";"
-      ],
-      "after": [
-        "g",
-        "_"
-      ]
+      "before": [";"],
+      "after": ["g", "_"]
     },
     {
       "comment": "Go to Top of Screen",
-      "before": [
-        "g",
-        "i"
-      ],
-      "after": [
-        "H"
-      ]
+      "before": ["g", "i"],
+      "after": ["H"]
     },
     {
       "comment": "Go to Middle of Screen",
-      "before": [
-        "g",
-        "j"
-      ],
-      "after": [
-        "M"
-      ]
+      "before": ["g", "j"],
+      "after": ["M"]
     },
     {
       "comment": "Go to Middle of Screen",
-      "before": [
-        "g",
-        "l"
-      ],
-      "after": [
-        "M"
-      ]
+      "before": ["g", "l"],
+      "after": ["M"]
     },
     {
       "comment": "Go to Bottom of Screen",
-      "before": [
-        "g",
-        "k"
-      ],
-      "after": [
-        "L"
-      ]
+      "before": ["g", "k"],
+      "after": ["L"]
     },
     {
       "comment": "Go to Top of Document",
-      "before": [
-        "g",
-        "g",
-        "i"
-      ],
-      "after": [
-        "g",
-        "g"
-      ]
+      "before": ["g", "g", "i"],
+      "after": ["g", "g"]
     },
     {
       "comment": "Go to Bottom of Document",
-      "before": [
-        "g",
-        "g",
-        "k"
-      ],
-      "after": [
-        "G"
-      ]
+      "before": ["g", "g", "k"],
+      "after": ["G"]
     },
     {
       "comment": "Scroll Page Until Cursor is at Top",
-      "before": [
-        "g",
-        "o"
-      ],
-      "after": [
-        "z",
-        "b"
-      ]
+      "before": ["g", "o"],
+      "after": ["z", "b"]
     },
     {
       "comment": "Scroll Page Until Cursor is at Center",
-      "before": [
-        "g",
-        "."
-      ],
-      "after": [
-        "z",
-        "z"
-      ]
+      "before": ["g", "."],
+      "after": ["z", "z"]
     },
     {
       "comment": "Scroll Page Until Cursor is at Bottom",
-      "before": [
-        "g",
-        "l"
-      ],
-      "after": [
-        "z",
-        "t"
-      ]
+      "before": ["g", "l"],
+      "after": ["z", "t"]
     },
     {
       "comment": "Scroll Page Up",
-      "before": [
-        "g",
-        "u"
-      ],
-      "after": [
-        "<C-u>"
-      ]
+      "before": ["g", "u"],
+      "after": ["<C-u>"]
     },
     {
       "comment": "Scroll Page Down",
-      "before": [
-        "g",
-        "j"
-      ],
-      "after": [
-        "<C-d>"
-      ]
+      "before": ["g", "j"],
+      "after": ["<C-d>"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "q"
-      ],
-      "after": [
-        "t",
-        "#"
-      ]
+      "before": ["n", "q"],
+      "after": ["t", "#"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "q"
-      ],
-      "after": [
-        "T",
-        "#"
-      ]
+      "before": ["<leader>", "n", "q"],
+      "after": ["T", "#"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "w"
-      ],
-      "after": [
-        "t",
-        "|"
-      ]
+      "before": ["n", "w"],
+      "after": ["t", "|"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "w"
-      ],
-      "after": [
-        "T",
-        "|"
-      ]
+      "before": ["<leader>", "n", "w"],
+      "after": ["T", "|"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "e"
-      ],
-      "after": [
-        "t",
-        "["
-      ]
+      "before": ["n", "e"],
+      "after": ["t", "["]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "e"
-      ],
-      "after": [
-        "T",
-        "["
-      ]
+      "before": ["<leader>", "n", "e"],
+      "after": ["T", "["]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "r"
-      ],
-      "after": [
-        "t",
-        "]"
-      ]
+      "before": ["n", "r"],
+      "after": ["t", "]"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "r"
-      ],
-      "after": [
-        "T",
-        "]"
-      ]
+      "before": ["<leader>", "n", "r"],
+      "after": ["T", "]"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "t"
-      ],
-      "after": [
-        "t",
-        "~"
-      ]
+      "before": ["n", "t"],
+      "after": ["t", "~"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "t"
-      ],
-      "after": [
-        "T",
-        "~"
-      ]
+      "before": ["<leader>", "n", "t"],
+      "after": ["T", "~"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "a"
-      ],
-      "after": [
-        "t",
-        "@"
-      ]
+      "before": ["n", "a"],
+      "after": ["t", "@"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "a"
-      ],
-      "after": [
-        "T",
-        "@"
-      ]
+      "before": ["<leader>", "n", "a"],
+      "after": ["T", "@"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "s"
-      ],
-      "after": [
-        "t",
-        "("
-      ]
+      "before": ["n", "s"],
+      "after": ["t", "("]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "s"
-      ],
-      "after": [
-        "T",
-        "("
-      ]
+      "before": ["<leader>", "n", "s"],
+      "after": ["T", "("]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "d"
-      ],
-      "after": [
-        "t",
-        ")"
-      ]
+      "before": ["n", "d"],
+      "after": ["t", ")"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "d"
-      ],
-      "after": [
-        "T",
-        ")"
-      ]
+      "before": ["<leader>", "n", "d"],
+      "after": ["T", ")"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "f"
-      ],
-      "after": [
-        "t",
-        ";"
-      ]
+      "before": ["n", "f"],
+      "after": ["t", ";"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "f"
-      ],
-      "after": [
-        "T",
-        ";"
-      ]
+      "before": ["<leader>", "n", "f"],
+      "after": ["T", ";"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "g"
-      ],
-      "after": [
-        "t",
-        ":"
-      ]
+      "before": ["n", "g"],
+      "after": ["t", ":"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "g"
-      ],
-      "after": [
-        "T",
-        ":"
-      ]
+      "before": ["<leader>", "n", "g"],
+      "after": ["T", ":"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "z"
-      ],
-      "after": [
-        "t",
-        "/"
-      ]
+      "before": ["n", "z"],
+      "after": ["t", "/"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "z"
-      ],
-      "after": [
-        "T",
-        "/"
-      ]
+      "before": ["<leader>", "n", "z"],
+      "after": ["T", "/"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "x"
-      ],
-      "after": [
-        "t",
-        "*"
-      ]
+      "before": ["n", "x"],
+      "after": ["t", "*"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "x"
-      ],
-      "after": [
-        "T",
-        "*"
-      ]
+      "before": ["<leader>", "n", "x"],
+      "after": ["T", "*"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "c"
-      ],
-      "after": [
-        "t",
-        "+"
-      ]
+      "before": ["n", "c"],
+      "after": ["t", "+"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "c"
-      ],
-      "after": [
-        "T",
-        "+"
-      ]
+      "before": ["<leader>", "n", "c"],
+      "after": ["T", "+"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "v"
-      ],
-      "after": [
-        "t",
-        "%"
-      ]
+      "before": ["n", "v"],
+      "after": ["t", "%"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "v"
-      ],
-      "after": [
-        "T",
-        "%"
-      ]
+      "before": ["<leader>", "n", "v"],
+      "after": ["T", "%"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "b"
-      ],
-      "after": [
-        "t",
-        "$"
-      ]
+      "before": ["n", "b"],
+      "after": ["t", "$"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "b"
-      ],
-      "after": [
-        "T",
-        "$"
-      ]
+      "before": ["<leader>", "n", "b"],
+      "after": ["T", "$"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "y"
-      ],
-      "after": [
-        "t",
-        "&"
-      ]
+      "before": ["n", "y"],
+      "after": ["t", "&"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "y"
-      ],
-      "after": [
-        "T",
-        "&"
-      ]
+      "before": ["<leader>", "n", "y"],
+      "after": ["T", "&"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "u"
-      ],
-      "after": [
-        "t",
-        "<"
-      ]
+      "before": ["n", "u"],
+      "after": ["t", "<"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "u"
-      ],
-      "after": [
-        "T",
-        "<"
-      ]
+      "before": ["<leader>", "n", "u"],
+      "after": ["T", "<"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "i"
-      ],
-      "after": [
-        "t",
-        "="
-      ]
+      "before": ["n", "i"],
+      "after": ["t", "="]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "i"
-      ],
-      "after": [
-        "T",
-        "="
-      ]
+      "before": ["<leader>", "n", "i"],
+      "after": ["T", "="]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "o"
-      ],
-      "after": [
-        "t",
-        ">"
-      ]
+      "before": ["n", "o"],
+      "after": ["t", ">"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "o"
-      ],
-      "after": [
-        "T",
-        ">"
-      ]
+      "before": ["<leader>", "n", "o"],
+      "after": ["T", ">"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "p"
-      ],
-      "after": [
-        "t",
-        "!"
-      ]
+      "before": ["n", "p"],
+      "after": ["t", "!"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "p"
-      ],
-      "after": [
-        "T",
-        "!"
-      ]
+      "before": ["<leader>", "n", "p"],
+      "after": ["T", "!"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "h"
-      ],
-      "after": [
-        "t",
-        "`"
-      ]
+      "before": ["n", "h"],
+      "after": ["t", "`"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "h"
-      ],
-      "after": [
-        "T",
-        "`"
-      ]
+      "before": ["<leader>", "n", "h"],
+      "after": ["T", "`"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "j"
-      ],
-      "after": [
-        "t",
-        "{"
-      ]
+      "before": ["n", "j"],
+      "after": ["t", "{"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "j"
-      ],
-      "after": [
-        "T",
-        "{"
-      ]
+      "before": ["<leader>", "n", "j"],
+      "after": ["T", "{"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "k"
-      ],
-      "after": [
-        "t",
-        "}"
-      ]
+      "before": ["n", "k"],
+      "after": ["t", "}"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "k"
-      ],
-      "after": [
-        "T",
-        "}"
-      ]
+      "before": ["<leader>", "n", "k"],
+      "after": ["T", "}"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "l"
-      ],
-      "after": [
-        "t",
-        "'"
-      ]
+      "before": ["n", "l"],
+      "after": ["t", "'"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "l"
-      ],
-      "after": [
-        "T",
-        "'"
-      ]
+      "before": ["<leader>", "n", "l"],
+      "after": ["T", "'"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "'"
-      ],
-      "after": [
-        "t",
-        "\""
-      ]
+      "before": ["n", "'"],
+      "after": ["t", "\""]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "'"
-      ],
-      "after": [
-        "T",
-        "\""
-      ]
+      "before": ["<leader>", "n", "'"],
+      "after": ["T", "\""]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "n"
-      ],
-      "after": [
-        "t",
-        "-"
-      ]
+      "before": ["n", "n"],
+      "after": ["t", "-"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "n"
-      ],
-      "after": [
-        "T",
-        "-"
-      ]
+      "before": ["<leader>", "n", "n"],
+      "after": ["T", "-"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "m"
-      ],
-      "after": [
-        "t",
-        "_"
-      ]
+      "before": ["n", "m"],
+      "after": ["t", "_"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "m"
-      ],
-      "after": [
-        "T",
-        "_"
-      ]
+      "before": ["<leader>", "n", "m"],
+      "after": ["T", "_"]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        ","
-      ],
-      "after": [
-        "t",
-        ","
-      ]
+      "before": ["n", ","],
+      "after": ["t", ","]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        ","
-      ],
-      "after": [
-        "T",
-        ","
-      ]
+      "before": ["<leader>", "n", ","],
+      "after": ["T", ","]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "."
-      ],
-      "after": [
-        "t",
-        "."
-      ]
+      "before": ["n", "."],
+      "after": ["t", "."]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "."
-      ],
-      "after": [
-        "T",
-        "."
-      ]
+      "before": ["<leader>", "n", "."],
+      "after": ["T", "."]
     },
     {
       "comment": "Target Forwards Special Symbol",
-      "before": [
-        "n",
-        "/"
-      ],
-      "after": [
-        "t",
-        "?"
-      ]
+      "before": ["n", "/"],
+      "after": ["t", "?"]
     },
     {
       "comment": "Target Backwards Special Symbol",
-      "before": [
-        "<leader>",
-        "n",
-        "/"
-      ],
-      "after": [
-        "T",
-        "?"
-      ]
+      "before": ["<leader>", "n", "/"],
+      "after": ["T", "?"]
     },
     {
       "comment": "Paste Before From Register Clipboard",
-      "before": [
-        "f"
-      ],
-      "after": [
-        "g",
-        "P",
-        "g",
-        "v",
-        "y"
-      ]
+      "before": ["f"],
+      "after": ["g", "P", "g", "v", "y"]
     },
     {
       "comment": "Paste Before From Register A",
-      "before": [
-        "<leader>",
-        "f"
-      ],
-      "after": [
-        "\"",
-        "a",
-        "g",
-        "P",
-        "g",
-        "v",
-        "y"
-      ]
+      "before": ["<leader>", "f"],
+      "after": ["\"", "a", "g", "P", "g", "v", "y"]
     },
     {
       "comment": "Paste Before From Register B",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "f"
-      ],
-      "after": [
-        "\"",
-        "b",
-        "g",
-        "P",
-        "g",
-        "v",
-        "y"
-      ]
+      "before": ["<leader>", "<leader>", "f"],
+      "after": ["\"", "b", "g", "P", "g", "v", "y"]
     },
     {
       "comment": "Paste Before From Register C",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "<leader>",
-        "f"
-      ],
-      "after": [
-        "\"",
-        "c",
-        "g",
-        "P",
-        "g",
-        "v",
-        "y"
-      ]
+      "before": ["<leader>", "<leader>", "<leader>", "f"],
+      "after": ["\"", "c", "g", "P", "g", "v", "y"]
     },
     {
       "comment": "Paste After From Register Clipboard",
-      "before": [
-        "p"
-      ],
-      "after": [
-        "p",
-        "g",
-        "v",
-        "y"
-      ]
+      "before": ["p"],
+      "after": ["p", "g", "v", "y"]
     },
     {
       "comment": "Paste After From Register A",
-      "before": [
-        "<leader>",
-        "p"
-      ],
-      "after": [
-        "\"",
-        "a",
-        "p",
-        "g",
-        "v",
-        "y"
-      ]
+      "before": ["<leader>", "p"],
+      "after": ["\"", "a", "p", "g", "v", "y"]
     },
     {
       "comment": "Paste After From Register B",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "p"
-      ],
-      "after": [
-        "\"",
-        "b",
-        "p",
-        "g",
-        "v",
-        "y"
-      ]
+      "before": ["<leader>", "<leader>", "p"],
+      "after": ["\"", "b", "p", "g", "v", "y"]
     },
     {
       "comment": "Paste After From Register C",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "<leader>",
-        "p"
-      ],
-      "after": [
-        "\"",
-        "c",
-        "p",
-        "g",
-        "v",
-        "y"
-      ]
+      "before": ["<leader>", "<leader>", "<leader>", "p"],
+      "after": ["\"", "c", "p", "g", "v", "y"]
     },
     {
       "comment": "Delete To Register Black Hole",
-      "before": [
-        "s"
-      ],
-      "after": [
-        "\"",
-        "_",
-        "d"
-      ]
+      "before": ["s"],
+      "after": ["\"", "_", "d"]
     },
     {
       "comment": "Cut To Register Clipboard",
-      "before": [
-        "a"
-      ],
-      "after": [
-        "d"
-      ]
+      "before": ["a"],
+      "after": ["d"]
     },
     {
       "comment": "Cut To Register A",
-      "before": [
-        "<leader>",
-        "a"
-      ],
-      "after": [
-        "\"",
-        "a",
-        "d"
-      ]
+      "before": ["<leader>", "a"],
+      "after": ["\"", "a", "d"]
     },
     {
       "comment": "Cut To Register B",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "a"
-      ],
-      "after": [
-        "\"",
-        "b",
-        "d"
-      ]
+      "before": ["<leader>", "<leader>", "a"],
+      "after": ["\"", "b", "d"]
     },
     {
       "comment": "Cut To Register C",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "<leader>",
-        "a"
-      ],
-      "after": [
-        "\"",
-        "c",
-        "d"
-      ]
+      "before": ["<leader>", "<leader>", "<leader>", "a"],
+      "after": ["\"", "c", "d"]
     },
     {
       "comment": "Cut To Register Clipboard",
-      "before": [
-        "x"
-      ],
-      "after": [
-        "c"
-      ]
+      "before": ["x"],
+      "after": ["c"]
     },
     {
       "comment": "Cut To Register A",
-      "before": [
-        "<leader>",
-        "x"
-      ],
-      "after": [
-        "\"",
-        "a",
-        "c"
-      ]
+      "before": ["<leader>", "x"],
+      "after": ["\"", "a", "c"]
     },
     {
       "comment": "Cut To Register B",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "x"
-      ],
-      "after": [
-        "\"",
-        "b",
-        "c"
-      ]
+      "before": ["<leader>", "<leader>", "x"],
+      "after": ["\"", "b", "c"]
     },
     {
       "comment": "Cut To Register C",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "<leader>",
-        "x"
-      ],
-      "after": [
-        "\"",
-        "c",
-        "c"
-      ]
+      "before": ["<leader>", "<leader>", "<leader>", "x"],
+      "after": ["\"", "c", "c"]
     },
     {
       "comment": "Yank To Register Clipboard",
-      "before": [
-        "d"
-      ],
-      "after": [
-        "y"
-      ]
+      "before": ["d"],
+      "after": ["y"]
     },
     {
       "comment": "Yank To Register A",
-      "before": [
-        "<leader>",
-        "d"
-      ],
-      "after": [
-        "\"",
-        "a",
-        "y"
-      ]
+      "before": ["<leader>", "d"],
+      "after": ["\"", "a", "y"]
     },
     {
       "comment": "Yank To Register B",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "d"
-      ],
-      "after": [
-        "\"",
-        "b",
-        "y"
-      ]
+      "before": ["<leader>", "<leader>", "d"],
+      "after": ["\"", "b", "y"]
     },
     {
       "comment": "Yank To Register C",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "<leader>",
-        "d"
-      ],
-      "after": [
-        "\"",
-        "c",
-        "y"
-      ]
+      "before": ["<leader>", "<leader>", "<leader>", "d"],
+      "after": ["\"", "c", "y"]
     },
     {
       "comment": "Inner Selector",
-      "before": [
-        "u"
-      ],
-      "after": [
-        "i"
-      ]
+      "before": ["u"],
+      "after": ["i"]
     },
     {
       "comment": "Outer Selector",
-      "before": [
-        "o"
-      ],
-      "after": [
-        "a"
-      ]
+      "before": ["o"],
+      "after": ["a"]
     },
     {
       "comment": "Toggle Case",
-      "before": [
-        "y",
-        "y"
-      ],
-      "after": [
-        "~"
-      ]
+      "before": ["y", "y"],
+      "after": ["~"]
     },
     {
       "comment": "Upper Case",
-      "before": [
-        "y",
-        "u"
-      ],
-      "after": [
-        "U"
-      ]
+      "before": ["y", "u"],
+      "after": ["U"]
     },
     {
       "comment": "Lower Case",
-      "before": [
-        "y",
-        "i"
-      ],
-      "after": [
-        "u"
-      ]
+      "before": ["y", "i"],
+      "after": ["u"]
     },
     {
       "comment": "Indent Lines",
-      "before": [
-        "c",
-        "o"
-      ],
-      "commands": [
-        "editor.action.indentLines"
-      ]
+      "before": ["c", "o"],
+      "commands": ["editor.action.indentLines"]
     },
     {
       "comment": "Outdent Lines",
-      "before": [
-        "c",
-        "u"
-      ],
-      "commands": [
-        "editor.action.outdentLines"
-      ]
+      "before": ["c", "u"],
+      "commands": ["editor.action.outdentLines"]
     },
     {
       "comment": "Toggle Extremes of Selected Area",
-      "before": [
-        "<enter>"
-      ],
-      "after": [
-        "o"
-      ]
+      "before": ["<enter>"],
+      "after": ["o"]
     },
     {
       "comment": "Save",
-      "before": [
-        "<leader>",
-        "s"
-      ],
-      "commands": [
-        "workbench.action.files.save"
-      ]
+      "before": ["<leader>", "s"],
+      "commands": ["workbench.action.files.save"]
     },
     {
       "comment": "Save All",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "s"
-      ],
-      "commands": [
-        "saveAll"
-      ]
+      "before": ["<leader>", "<leader>", "s"],
+      "commands": ["saveAll"]
     },
     {
       "comment": "Toggle Editor Group Layout (Vertical/Horizontal)",
-      "before": [
-        "e",
-        "v"
-      ],
-      "commands": [
-        "workbench.action.toggleEditorGroupLayout"
-      ]
+      "before": ["e", "v"],
+      "commands": ["workbench.action.toggleEditorGroupLayout"]
     },
     {
       "comment": "Toggle Editor Group Sizes",
-      "before": [
-        "e",
-        "b"
-      ],
-      "commands": [
-        "workbench.action.toggleEditorWidths"
-      ]
+      "before": ["e", "b"],
+      "commands": ["workbench.action.toggleEditorWidths"]
     },
     {
       "comment": "Reset Editor Group Sizes",
-      "before": [
-        "e",
-        "y"
-      ],
-      "commands": [
-        "workbench.action.evenEditorWidths"
-      ]
+      "before": ["e", "y"],
+      "commands": ["workbench.action.evenEditorWidths"]
     },
     {
       "comment": "Increase Editor Group Size",
-      "before": [
-        "e",
-        "m"
-      ],
-      "commands": [
-        "workbench.action.increaseViewSize"
-      ]
+      "before": ["e", "m"],
+      "commands": ["workbench.action.increaseViewSize"]
     },
     {
       "comment": "Decrease Editor Group Size",
-      "before": [
-        "e",
-        "n"
-      ],
-      "commands": [
-        "workbench.action.decreaseViewSize"
-      ]
+      "before": ["e", "n"],
+      "commands": ["workbench.action.decreaseViewSize"]
     },
     {
       "comment": "Focus Left Editor",
-      "before": [
-        "e",
-        "j"
-      ],
-      "commands": [
-        "workbench.action.previousEditorInGroup"
-      ]
+      "before": ["e", "j"],
+      "commands": ["workbench.action.previousEditorInGroup"]
     },
     {
       "comment": "Focus Right Editor",
-      "before": [
-        "e",
-        "l"
-      ],
-      "commands": [
-        "workbench.action.nextEditorInGroup"
-      ]
+      "before": ["e", "l"],
+      "commands": ["workbench.action.nextEditorInGroup"]
     },
     {
       "comment": "Focus First Editor in Group",
-      "before": [
-        "e",
-        "h"
-      ],
-      "commands": [
-        "workbench.action.firstEditorInGroup"
-      ]
+      "before": ["e", "h"],
+      "commands": ["workbench.action.firstEditorInGroup"]
     },
     {
       "comment": "Focus Last Editor in Group",
-      "before": [
-        "e",
-        ";"
-      ],
-      "commands": [
-        "workbench.action.lastEditorInGroup"
-      ]
+      "before": ["e", ";"],
+      "commands": ["workbench.action.lastEditorInGroup"]
     },
     {
       "comment": "Focus Editor Number #",
-      "before": [
-        "e",
-        "g"
-      ],
-      "after": [
-        "g",
-        "t"
-      ]
+      "before": ["e", "g"],
+      "after": ["g", "t"]
     },
     {
       "comment": "Move Editor Left",
-      "before": [
-        "e",
-        "u"
-      ],
-      "commands": [
-        "workbench.action.moveEditorLeftInGroup"
-      ]
+      "before": ["e", "u"],
+      "commands": ["workbench.action.moveEditorLeftInGroup"]
     },
     {
       "comment": "Move Editor Right",
-      "before": [
-        "e",
-        "o"
-      ],
-      "commands": [
-        "workbench.action.moveEditorRightInGroup"
-      ]
+      "before": ["e", "o"],
+      "commands": ["workbench.action.moveEditorRightInGroup"]
     },
     {
       "comment": "Move Tab to Group on Left",
-      "before": [
-        "<leader>",
-        "e",
-        "j"
-      ],
-      "commands": [
-        "workbench.action.moveEditorToLeftGroup"
-      ]
+      "before": ["<leader>", "e", "j"],
+      "commands": ["workbench.action.moveEditorToLeftGroup"]
     },
     {
       "comment": "Move Tab to Group on Right",
-      "before": [
-        "<leader>",
-        "e",
-        "l"
-      ],
-      "commands": [
-        "workbench.action.moveEditorToRightGroup"
-      ]
+      "before": ["<leader>", "e", "l"],
+      "commands": ["workbench.action.moveEditorToRightGroup"]
     },
     {
       "comment": "Move Tab to Group Above",
-      "before": [
-        "<leader>",
-        "e",
-        "i"
-      ],
-      "commands": [
-        "workbench.action.moveEditorToAboveGroup"
-      ]
+      "before": ["<leader>", "e", "i"],
+      "commands": ["workbench.action.moveEditorToAboveGroup"]
     },
     {
       "comment": "Move Tab to Group Below",
-      "before": [
-        "<leader>",
-        "e",
-        "k"
-      ],
-      "commands": [
-        "workbench.action.moveEditorToBelowGroup"
-      ]
+      "before": ["<leader>", "e", "k"],
+      "commands": ["workbench.action.moveEditorToBelowGroup"]
     },
     {
       "comment": "Split Editor",
-      "before": [
-        "e",
-        "e"
-      ],
-      "commands": [
-        "workbench.action.splitEditor"
-      ]
+      "before": ["e", "e"],
+      "commands": ["workbench.action.splitEditor"]
     },
     {
       "comment": "Split Editor Horizontally",
-      "before": [
-        "<leader>",
-        "e",
-        "e"
-      ],
-      "commands": [
-        "workbench.action.splitEditorDown"
-      ]
+      "before": ["<leader>", "e", "e"],
+      "commands": ["workbench.action.splitEditorDown"]
     },
     {
       "comment": "Focus Left Group",
-      "before": [
-        "e",
-        "w"
-      ],
-      "commands": [
-        "workbench.action.focusLeftGroup"
-      ]
+      "before": ["e", "w"],
+      "commands": ["workbench.action.focusLeftGroup"]
     },
     {
       "comment": "Focus Right Group",
-      "before": [
-        "e",
-        "r"
-      ],
-      "commands": [
-        "workbench.action.focusRightGroup"
-      ]
+      "before": ["e", "r"],
+      "commands": ["workbench.action.focusRightGroup"]
     },
     {
       "comment": "Focus Group Above",
-      "before": [
-        "e",
-        "i"
-      ],
-      "commands": [
-        "workbench.action.focusAboveGroup"
-      ]
+      "before": ["e", "i"],
+      "commands": ["workbench.action.focusAboveGroup"]
     },
     {
       "comment": "Focus Group Below",
-      "before": [
-        "e",
-        "k"
-      ],
-      "commands": [
-        "workbench.action.focusBelowGroup"
-      ]
+      "before": ["e", "k"],
+      "commands": ["workbench.action.focusBelowGroup"]
     },
     {
       "comment": "Move Group Left",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "e",
-        "j"
-      ],
-      "commands": [
-        "workbench.action.moveActiveEditorGroupLeft"
-      ]
+      "before": ["<leader>", "<leader>", "e", "j"],
+      "commands": ["workbench.action.moveActiveEditorGroupLeft"]
     },
     {
       "comment": "Move Group Right",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "e",
-        "l"
-      ],
-      "commands": [
-        "workbench.action.moveActiveEditorGroupRight"
-      ]
+      "before": ["<leader>", "<leader>", "e", "l"],
+      "commands": ["workbench.action.moveActiveEditorGroupRight"]
     },
     {
       "comment": "Move Group Up",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "e",
-        "i"
-      ],
-      "commands": [
-        "workbench.action.moveActiveEditorGroupUp"
-      ]
+      "before": ["<leader>", "<leader>", "e", "i"],
+      "commands": ["workbench.action.moveActiveEditorGroupUp"]
     },
     {
       "comment": "Move Group Down",
-      "before": [
-        "<leader>",
-        "<leader>",
-        "e",
-        "k"
-      ],
-      "commands": [
-        "workbench.action.moveActiveEditorGroupDown"
-      ]
+      "before": ["<leader>", "<leader>", "e", "k"],
+      "commands": ["workbench.action.moveActiveEditorGroupDown"]
     }
   ],
   "vim.operatorPendingModeKeyBindingsNonRecursive": [
     {
       "comment": "Move Cursor Up",
-      "before": [
-        "i"
-      ],
-      "after": [
-        "k"
-      ]
+      "before": ["i"],
+      "after": ["k"]
     },
     {
       "comment": "Move Cursor Down",
-      "before": [
-        "k"
-      ],
-      "after": [
-        "j"
-      ]
+      "before": ["k"],
+      "after": ["j"]
     },
     {
       "comment": "Move Cursor Left",
-      "before": [
-        "j"
-      ],
-      "after": [
-        "h"
-      ]
+      "before": ["j"],
+      "after": ["h"]
     },
     {
       "comment": "Move Cursor Right",
-      "before": [
-        "l"
-      ],
-      "after": [
-        "l"
-      ]
+      "before": ["l"],
+      "after": ["l"]
     },
     {
       "comment": "Move Cursor a Small Block Up",
-      "before": [
-        "<leader>",
-        "I"
-      ],
-      "after": [
-        "5",
-        "k"
-      ]
+      "before": ["<leader>", "I"],
+      "after": ["5", "k"]
     },
     {
       "comment": "Move Cursor a Small Block Down",
-      "before": [
-        "<leader>",
-        "K"
-      ],
-      "after": [
-        "5",
-        "j"
-      ]
+      "before": ["<leader>", "K"],
+      "after": ["5", "j"]
     },
     {
       "comment": "Move Cursor a Small Block Left",
-      "before": [
-        "<leader>",
-        "J"
-      ],
-      "after": [
-        "1",
-        "2",
-        "h"
-      ]
+      "before": ["<leader>", "J"],
+      "after": ["1", "2", "h"]
     },
     {
       "comment": "Move Cursor a Small Block Right",
-      "before": [
-        "<leader>",
-        "L"
-      ],
-      "after": [
-        "1",
-        "2",
-        "l"
-      ]
+      "before": ["<leader>", "L"],
+      "after": ["1", "2", "l"]
     },
     {
       "comment": "Move Cursor a Big Block Up",
-      "before": [
-        "I"
-      ],
-      "after": [
-        "1",
-        "0",
-        "k"
-      ]
+      "before": ["I"],
+      "after": ["1", "0", "k"]
     },
     {
       "comment": "Move Cursor a Big Block Down",
-      "before": [
-        "K"
-      ],
-      "after": [
-        "1",
-        "0",
-        "j"
-      ]
+      "before": ["K"],
+      "after": ["1", "0", "j"]
     },
     {
       "comment": "Move Cursor a Big Block Left",
-      "before": [
-        "J"
-      ],
-      "after": [
-        "1",
-        "0",
-        "h"
-      ]
+      "before": ["J"],
+      "after": ["1", "0", "h"]
     },
     {
       "comment": "Move Cursor a Big Block Right",
-      "before": [
-        "L"
-      ],
-      "after": [
-        "1",
-        "0",
-        "l"
-      ]
+      "before": ["L"],
+      "after": ["1", "0", "l"]
     },
     {
       "comment": "Go to Start of Word",
-      "before": [
-        "w",
-        ";"
-      ],
-      "after": [
-        "w"
-      ]
+      "before": ["w", ";"],
+      "after": ["w"]
     },
     {
       "comment": "Go to Start of WORD",
-      "before": [
-        "w",
-        "w",
-        ";"
-      ],
-      "after": [
-        "W"
-      ]
+      "before": ["w", "w", ";"],
+      "after": ["W"]
     },
     {
       "comment": "Go to End of Word",
-      "before": [
-        "w",
-        "l"
-      ],
-      "after": [
-        "e"
-      ]
+      "before": ["w", "l"],
+      "after": ["e"]
     },
     {
       "comment": "Go to Start of WORD",
-      "before": [
-        "w",
-        "w",
-        "l"
-      ],
-      "after": [
-        "E"
-      ]
+      "before": ["w", "w", "l"],
+      "after": ["E"]
     },
     {
       "comment": "Go Back to Start of Word",
-      "before": [
-        "w",
-        "j"
-      ],
-      "after": [
-        "b"
-      ]
+      "before": ["w", "j"],
+      "after": ["b"]
     },
     {
       "comment": "Go Back to Start of WORD",
-      "before": [
-        "w",
-        "w",
-        "j"
-      ],
-      "after": [
-        "B"
-      ]
+      "before": ["w", "w", "j"],
+      "after": ["B"]
     },
     {
       "comment": "Go Back to End of Word",
-      "before": [
-        "w",
-        "h"
-      ],
-      "after": [
-        "g",
-        "e"
-      ]
+      "before": ["w", "h"],
+      "after": ["g", "e"]
     },
     {
       "comment": "Go Back to Start of WORD",
-      "before": [
-        "w",
-        "w",
-        "h"
-      ],
-      "after": [
-        "g",
-        "E"
-      ]
+      "before": ["w", "w", "h"],
+      "after": ["g", "E"]
     },
     {
       "comment": "Go to Start of Line",
-      "before": [
-        "h"
-      ],
-      "after": [
-        "^"
-      ]
+      "before": ["h"],
+      "after": ["^"]
     },
     {
       "comment": "Go to End of Line",
-      "before": [
-        ";"
-      ],
-      "after": [
-        "g",
-        "_"
-      ]
+      "before": [";"],
+      "after": ["g", "_"]
     },
     {
       "comment": "Inner Selector",
-      "before": [
-        "u"
-      ],
-      "after": [
-        "i"
-      ]
+      "before": ["u"],
+      "after": ["i"]
     },
     {
       "comment": "Outer Selector",
-      "before": [
-        "o"
-      ],
-      "after": [
-        "a"
-      ]
+      "before": ["o"],
+      "after": ["a"]
     }
   ]
 }
