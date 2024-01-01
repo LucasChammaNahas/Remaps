@@ -28,8 +28,6 @@ export function generateCorrectCodeStructure(command, os) {
     command: command.command,
   };
 
-  console.log(key);
-
   if ('when' in command) {
     updatedCommand.when = command.when;
   }

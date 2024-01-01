@@ -13,14 +13,16 @@ const modes = {
   pending: 'vim.operatorPendingModeKeyBindingsNonRecursive',
 };
 
-const vimFinal = {
+const vimSettings = {
   [modes.normal]: [],
   [modes.visual]: [],
   [modes.pending]: [],
 };
 
-const winFinal = [];
-const macFinal = [];
+const keybindings = {
+  win: [],
+  mac: [],
+};
 
 const commandList = generateListWithAllCommands(config);
 
@@ -29,29 +31,32 @@ for (const command of commandList) {
 
   if (commandTypes.includes('code')) {
     const winCommand = generateCorrectCodeStructure(command, 'win');
-    winFinal.push(winCommand);
+    keybindings.win.push(winCommand);
 
     const macCommand = generateCorrectCodeStructure(command, 'mac');
-    macFinal.push(macCommand);
+    keybindings.mac.push(macCommand);
   } else {
     const vimCommand = generateCorrectVimStructure(command);
 
     for (const type of commandTypes) {
-      vimFinal[modes[type]].push(vimCommand);
+      vimSettings[modes[type]].push(vimCommand);
     }
   }
 }
 
-console.log('normal', vimFinal[modes.normal].length);
-console.log('visual', vimFinal[modes.visual].length);
-console.log('pending', vimFinal[modes.pending].length);
-console.log('vscode', winFinal.length);
+for (const os of ['win', 'mac']) {
+  const complementarySettingsJson = fs.readFileSync(`./Config/${os}.settings.jsonc`, 'utf8') || '{}';
+  const complementarySettings = JSON.parse(complementarySettingsJson) || {};
+  const settings = { ...complementarySettings, ...vimSettings };
+  const settingsJson = JSON.stringify(settings, null, 2);
+  fs.writeFileSync(`./Build/${os}.vim.json`, settingsJson);
+  
+  const keybindingsJson = JSON.stringify(keybindings[os], null, 2);
+  fs.writeFileSync(`./Build/${os}.keybindings.json`, keybindingsJson.replace(/\\"/g, "'"));
+}
 
-const vimJsonData = JSON.stringify(vimFinal, null, 2);
-fs.writeFileSync('./Build/vim.json', vimJsonData);
-
-const winJsonData = JSON.stringify(winFinal, null, 2);
-fs.writeFileSync('./Build/vscode.win.json', winJsonData.replace(/\\"/g, "'"));
-
-const macJsonData = JSON.stringify(macFinal, null, 2);
-fs.writeFileSync('./Build/vscode.mac.json', macJsonData.replace(/\\"/g, "'"));
+console.log('normal', vimSettings[modes.normal].length);
+console.log('visual', vimSettings[modes.visual].length);
+console.log('pending', vimSettings[modes.pending].length);
+console.log('Win Keybindings', keybindings.win.length);
+console.log('Mac Keybindings', keybindings.mac.length);
