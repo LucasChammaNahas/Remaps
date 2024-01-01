@@ -48,10 +48,10 @@ console.log('pending', vimFinal[modes.pending].length);
 console.log('vscode', winFinal.length);
 
 const vimJsonData = JSON.stringify(vimFinal, null, 2);
-fs.writeFileSync('vim.json', vimJsonData);
+fs.writeFileSync('./Build/vim.json', vimJsonData);
 
 const winJsonData = JSON.stringify(winFinal, null, 2);
-fs.writeFileSync('vscode.win.json', winJsonData.replace(/\\"/g, "'"));
+fs.writeFileSync('./Build/vscode.win.json', winJsonData.replace(/\\"/g, "'"));
 
 const macJsonData = JSON.stringify(macFinal, null, 2);
-fs.writeFileSync('vscode.mac.json', macJsonData.replace(/\\"/g, "'"));
+fs.writeFileSync('./Build/vscode.mac.json', macJsonData.replace(/\\"/g, "'"));

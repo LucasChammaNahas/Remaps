@@ -406,7 +406,7 @@
   },
   {
     "comment": "Replace All",
-    "key": "cmd+shfit+enter",
+    "key": "cmd+shift+enter",
     "command": "editor.action.replaceAll",
     "when": "editorFocus && findWidgetVisible"
   },
@@ -526,13 +526,13 @@
   {
     "comment": "Toggle Terminal Max Height",
     "key": "h",
-    "command": "workbench.action.terminal.toggleEditorVisibility",
+    "command": "workbench.action.toggleMaximizedPanel",
     "when": "terminalTabsFocus"
   },
   {
     "comment": "Toggle Terminal Max Height",
     "key": "cmd+h",
-    "command": "workbench.action.terminal.toggleEditorVisibility",
+    "command": "workbench.action.toggleMaximizedPanel",
     "when": "terminalFocusInAny || terminalTabsFocus"
   },
   {

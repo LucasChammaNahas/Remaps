@@ -1,5 +1,5 @@
-import { getTargetedMotions } from './getTargetedMotions.mjs';
-import { getTextCommands } from './getTextCommands.mjs';
+import { getTargetedMotions } from '../Utils/getTargetedMotions.mjs';
+import { getTextCommands } from '../Utils/getTextCommands.mjs';
 
 export const config = {
   modeSwitching: [
@@ -1124,7 +1124,7 @@ export const config = {
     },
     {
       comment: 'Replace All',
-      key: 'ctrl+shfit+enter',
+      key: 'ctrl+shift+enter',
       command: 'editor.action.replaceAll',
       when: 'editorFocus && findWidgetVisible',
     },
@@ -1271,13 +1271,13 @@ export const config = {
     {
       comment: 'Toggle Terminal Max Height',
       key: 'h',
-      command: 'workbench.action.terminal.toggleEditorVisibility',
+      command: 'workbench.action.toggleMaximizedPanel',
       when: 'terminalTabsFocus',
     },
     {
       comment: 'Toggle Terminal Max Height',
       key: 'ctrl+h',
-      command: 'workbench.action.terminal.toggleEditorVisibility',
+      command: 'workbench.action.toggleMaximizedPanel',
       when: 'terminalFocusInAny || terminalTabsFocus',
     },
 
