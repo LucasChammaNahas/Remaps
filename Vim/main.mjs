@@ -45,12 +45,13 @@ for (const command of commandList) {
 }
 
 for (const os of ['win', 'mac']) {
-  const complementarySettingsJson = fs.readFileSync(`./Config/${os}.settings.jsonc`, 'utf8') || '{}';
+  const complementarySettingsJson =
+    fs.readFileSync(`./Config/${os}.settings.jsonc`, 'utf8') || '{}';
   const complementarySettings = JSON.parse(complementarySettingsJson) || {};
   const settings = { ...complementarySettings, ...vimSettings };
   const settingsJson = JSON.stringify(settings, null, 2);
   fs.writeFileSync(`./Build/${os}.vim.json`, settingsJson);
-  
+
   const keybindingsJson = JSON.stringify(keybindings[os], null, 2);
   fs.writeFileSync(`./Build/${os}.keybindings.json`, keybindingsJson.replace(/\\"/g, "'"));
 }
