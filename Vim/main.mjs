@@ -50,7 +50,7 @@ for (const os of ['win', 'mac']) {
   const complementarySettings = JSON.parse(complementarySettingsJson) || {};
   const settings = { ...complementarySettings, ...vimSettings };
   const settingsJson = JSON.stringify(settings, null, 2);
-  fs.writeFileSync(`./Build/${os}.vim.json`, settingsJson);
+  fs.writeFileSync(`./Build/${os}.settings.json`, settingsJson);
 
   const keybindingsJson = JSON.stringify(keybindings[os], null, 2);
   fs.writeFileSync(`./Build/${os}.keybindings.json`, keybindingsJson.replace(/\\"/g, "'"));
