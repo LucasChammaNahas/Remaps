@@ -239,6 +239,81 @@ export const config = {
 
   targetedMotions: getTargetedMotions(),
 
+  blockSelectionMotions: [
+    { defaultModes: 'v' },
+
+    {
+      comment: 'Select Inner {} Block',
+      before: 'uj',
+      after: 'i{',
+    },
+    {
+      comment: 'Select Outer {} Block',
+      before: 'oj',
+      after: 'a{',
+    },
+    {
+      comment: 'Select Inner [] Block ',
+      before: 'ue',
+      after: 'i[',
+    },
+    {
+      comment: 'Select Outer [] Block',
+      before: 'oe',
+      after: 'a[',
+    },
+    {
+      comment: 'Select Inner () Block',
+      before: 'us',
+      after: 'i(',
+    },
+    {
+      comment: 'Select Outer () Block',
+      before: 'os',
+      after: 'a(',
+    },
+    {
+      comment: 'Select Inner <> Block',
+      before: 'uu',
+      after: 'i<',
+    },
+    {
+      comment: 'Select Outer <> Block',
+      before: 'ou',
+      after: 'a<',
+    },
+    {
+      comment: 'Select Inner "" Block',
+      before: "u'",
+      after: 'i"',
+    },
+    {
+      comment: 'Select Outer "" Block',
+      before: "o'",
+      after: 'a"',
+    },
+    {
+      comment: 'Select Inner `` Block',
+      before: 'uh',
+      after: 'i`',
+    },
+    {
+      comment: 'Select Outer `` Block',
+      before: 'oh',
+      after: 'a`',
+    },
+    {
+      comment: "Select Inner '' Block",
+      before: 'ul',
+      after: "i'",
+    },
+    {
+      comment: "Select Outer '' Block",
+      before: 'ol',
+      after: "a'",
+    },
+  ],
+
   pasteCommands: [
     { defaultModes: 'n' },
 

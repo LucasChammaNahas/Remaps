@@ -4133,6 +4133,160 @@
       ]
     },
     {
+      "comment": "Select Inner {} Block",
+      "before": [
+        "u",
+        "j"
+      ],
+      "after": [
+        "i",
+        "{"
+      ]
+    },
+    {
+      "comment": "Select Outer {} Block",
+      "before": [
+        "o",
+        "j"
+      ],
+      "after": [
+        "a",
+        "{"
+      ]
+    },
+    {
+      "comment": "Select Inner [] Block ",
+      "before": [
+        "u",
+        "e"
+      ],
+      "after": [
+        "i",
+        "["
+      ]
+    },
+    {
+      "comment": "Select Outer [] Block",
+      "before": [
+        "o",
+        "e"
+      ],
+      "after": [
+        "a",
+        "["
+      ]
+    },
+    {
+      "comment": "Select Inner () Block",
+      "before": [
+        "u",
+        "s"
+      ],
+      "after": [
+        "i",
+        "("
+      ]
+    },
+    {
+      "comment": "Select Outer () Block",
+      "before": [
+        "o",
+        "s"
+      ],
+      "after": [
+        "a",
+        "("
+      ]
+    },
+    {
+      "comment": "Select Inner <> Block",
+      "before": [
+        "u",
+        "u"
+      ],
+      "after": [
+        "i",
+        "<"
+      ]
+    },
+    {
+      "comment": "Select Outer <> Block",
+      "before": [
+        "o",
+        "u"
+      ],
+      "after": [
+        "a",
+        "<"
+      ]
+    },
+    {
+      "comment": "Select Inner \"\" Block",
+      "before": [
+        "u",
+        "'"
+      ],
+      "after": [
+        "i",
+        "\""
+      ]
+    },
+    {
+      "comment": "Select Outer \"\" Block",
+      "before": [
+        "o",
+        "'"
+      ],
+      "after": [
+        "a",
+        "\""
+      ]
+    },
+    {
+      "comment": "Select Inner `` Block",
+      "before": [
+        "u",
+        "h"
+      ],
+      "after": [
+        "i",
+        "`"
+      ]
+    },
+    {
+      "comment": "Select Outer `` Block",
+      "before": [
+        "o",
+        "h"
+      ],
+      "after": [
+        "a",
+        "`"
+      ]
+    },
+    {
+      "comment": "Select Inner '' Block",
+      "before": [
+        "u",
+        "l"
+      ],
+      "after": [
+        "i",
+        "'"
+      ]
+    },
+    {
+      "comment": "Select Outer '' Block",
+      "before": [
+        "o",
+        "l"
+      ],
+      "after": [
+        "a",
+        "'"
+      ]
+    },
+    {
       "comment": "Paste Before From Register Clipboard",
       "before": [
         "f"
