@@ -441,32 +441,25 @@
     "when": "editorTextFocus && findWidgetVisible && vim.mode == 'Normal'"
   },
   {
-    "comment": "Toggle Terminal Panel",
+    "comment": "Toggle Panel",
     "key": "b t",
-    "command": "workbench.action.terminal.toggleTerminal",
+    "command": "workbench.action.togglePanel",
     "when": "listFocus && !inputFocus"
   },
   {
-    "comment": "Toggle Terminal Panel",
+    "comment": "Toggle Terminal",
     "key": "cmd+t",
-    "command": "workbench.action.terminal.toggleTerminal",
-    "when": "focusedView == 'terminal'"
+    "command": "workbench.action.terminal.toggleTerminal"
   },
   {
-    "comment": "Focus Terminal Panel",
-    "key": "cmd+t",
-    "command": "workbench.action.focusPanel",
-    "when": "focusedView != 'terminal'"
-  },
-  {
-    "comment": "Toggle Terminal Panel",
+    "comment": "Toggle Terminal",
     "key": "cmd+t",
     "command": "-workbench.action.showAllSymbols"
   },
   {
     "comment": "Toggle Terminal",
     "key": "b j",
-    "command": "workbench.action.toggleTerminal",
+    "command": "workbench.action.terminal.toggleTerminal",
     "when": "listFocus && !inputFocus"
   },
   {

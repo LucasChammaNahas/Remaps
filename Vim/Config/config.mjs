@@ -1237,30 +1237,13 @@ export const config = {
 
   terminalPanelNavigation: [
     {
-      comment: 'Toggle Terminal Panel',
+      comment: 'Toggle Panel',
       key: 'b t',
-      command: 'workbench.action.terminal.toggleTerminal',
+      command: 'workbench.action.togglePanel',
       when: 'listFocus && !inputFocus',
     },
     {
-      comment: 'Toggle Terminal Panel',
-      key: 'ctrl+t',
-      command: 'workbench.action.terminal.toggleTerminal',
-      when: 'focusedView == "terminal"',
-    },
-    {
-      comment: 'Focus Terminal Panel',
-      key: 'ctrl+t',
-      command: 'workbench.action.focusPanel',
-      when: 'focusedView != "terminal"',
-    },
-    {
-      comment: 'Toggle Terminal Panel',
-      key: 'ctrl+t',
-      command: '-workbench.action.showAllSymbols',
-    },
-    {
-      comment: 'Toggle Terminal Panel',
+      comment: 'Toggle Panel',
       before: 'bt',
       command: 'workbench.action.togglePanel',
       modes: 'n',
@@ -1268,14 +1251,24 @@ export const config = {
 
     {
       comment: 'Toggle Terminal',
+      key: 'ctrl+t',
+      command: 'workbench.action.terminal.toggleTerminal',
+    },
+    {
+      comment: 'Toggle Terminal',
+      key: 'ctrl+t',
+      command: '-workbench.action.showAllSymbols',
+    },
+    {
+      comment: 'Toggle Terminal',
       key: 'b j',
-      command: 'workbench.action.toggleTerminal',
+      command: 'workbench.action.terminal.toggleTerminal',
       when: 'listFocus && !inputFocus',
     },
     {
       comment: 'Toggle Terminal',
       before: 'bj',
-      command: 'workbench.action.toggleTerminal',
+      command: 'workbench.action.terminal.toggleTerminal',
       modes: 'n',
     },
 

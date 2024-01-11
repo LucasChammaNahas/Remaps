@@ -2750,7 +2750,7 @@
       ]
     },
     {
-      "comment": "Toggle Terminal Panel",
+      "comment": "Toggle Panel",
       "before": [
         "b",
         "t"
@@ -2766,7 +2766,7 @@
         "j"
       ],
       "commands": [
-        "workbench.action.toggleTerminal"
+        "workbench.action.terminal.toggleTerminal"
       ]
     },
     {
