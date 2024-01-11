@@ -281,7 +281,7 @@
   {
     "comment": "Close Current Editor",
     "key": "q",
-    "command": "workbench.action.closeEditorsInGroup",
+    "command": "workbench.action.closeActiveEditor",
     "when": "focusedView == 'workbench.explorer.openEditorsView'"
   },
   {
@@ -348,7 +348,7 @@
     "comment": "Replace the Current Focused Item",
     "key": "Enter",
     "command": "search.action.replace",
-    "when": "focusedView == 'workbench.view.search' && !inputFocus"
+    "when": "focusedView == 'workbench.view.search' && !inputFocus && replaceActive"
   },
   {
     "comment": "Replace All",
@@ -443,13 +443,13 @@
   {
     "comment": "Toggle Terminal Panel",
     "key": "b t",
-    "command": "workbench.action.togglePanel",
+    "command": "workbench.action.terminal.toggleTerminal",
     "when": "listFocus && !inputFocus"
   },
   {
     "comment": "Toggle Terminal Panel",
     "key": "cmd+t",
-    "command": "workbench.action.togglePanel",
+    "command": "workbench.action.terminal.toggleTerminal",
     "when": "focusedView == 'terminal'"
   },
   {
@@ -533,7 +533,7 @@
     "comment": "Toggle Terminal Max Height",
     "key": "cmd+h",
     "command": "workbench.action.toggleMaximizedPanel",
-    "when": "terminalFocusInAny || terminalTabsFocus"
+    "when": "panelFocus"
   },
   {
     "comment": "Go to Terminal Side List",

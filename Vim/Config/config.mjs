@@ -417,7 +417,7 @@ export const config = {
     ...getTextCommands({
       before: 'x',
       after: 'c',
-      operatorName: 'Cut',
+      operatorName: 'Change',
       modes: 'nv',
     }),
     ...getTextCommands({
@@ -1047,7 +1047,7 @@ export const config = {
     {
       comment: 'Close Current Editor',
       key: 'q',
-      command: 'workbench.action.closeEditorsInGroup',
+      command: 'workbench.action.closeActiveEditor',
       when: 'focusedView == "workbench.explorer.openEditorsView"',
     },
     {
@@ -1138,7 +1138,7 @@ export const config = {
       comment: 'Replace the Current Focused Item',
       key: 'Enter',
       command: 'search.action.replace',
-      when: 'focusedView == "workbench.view.search" && !inputFocus',
+      when: 'focusedView == "workbench.view.search" && !inputFocus && replaceActive',
     },
     {
       comment: 'Replace All',
@@ -1239,13 +1239,13 @@ export const config = {
     {
       comment: 'Toggle Terminal Panel',
       key: 'b t',
-      command: 'workbench.action.togglePanel',
+      command: 'workbench.action.terminal.toggleTerminal',
       when: 'listFocus && !inputFocus',
     },
     {
       comment: 'Toggle Terminal Panel',
       key: 'ctrl+t',
-      command: 'workbench.action.togglePanel',
+      command: 'workbench.action.terminal.toggleTerminal',
       when: 'focusedView == "terminal"',
     },
     {
@@ -1353,7 +1353,7 @@ export const config = {
       comment: 'Toggle Terminal Max Height',
       key: 'ctrl+h',
       command: 'workbench.action.toggleMaximizedPanel',
-      when: 'terminalFocusInAny || terminalTabsFocus',
+      when: 'panelFocus',
     },
 
     {

@@ -1738,16 +1738,18 @@
       ]
     },
     {
-      "comment": "Cut To Register Clipboard",
+      "comment": "Change To Register Black Hole",
       "before": [
         "x"
       ],
       "after": [
+        "\"",
+        "_",
         "c"
       ]
     },
     {
-      "comment": "Cut To Register A",
+      "comment": "Change To Register A",
       "before": [
         "<leader>",
         "x"
@@ -1759,7 +1761,7 @@
       ]
     },
     {
-      "comment": "Cut To Register B",
+      "comment": "Change To Register B",
       "before": [
         "<leader>",
         "<leader>",
@@ -1772,7 +1774,7 @@
       ]
     },
     {
-      "comment": "Cut To Register C",
+      "comment": "Change To Register C",
       "before": [
         "<leader>",
         "<leader>",
@@ -4470,16 +4472,18 @@
       ]
     },
     {
-      "comment": "Cut To Register Clipboard",
+      "comment": "Change To Register Black Hole",
       "before": [
         "x"
       ],
       "after": [
+        "\"",
+        "_",
         "c"
       ]
     },
     {
-      "comment": "Cut To Register A",
+      "comment": "Change To Register A",
       "before": [
         "<leader>",
         "x"
@@ -4491,7 +4495,7 @@
       ]
     },
     {
-      "comment": "Cut To Register B",
+      "comment": "Change To Register B",
       "before": [
         "<leader>",
         "<leader>",
@@ -4504,7 +4508,7 @@
       ]
     },
     {
-      "comment": "Cut To Register C",
+      "comment": "Change To Register C",
       "before": [
         "<leader>",
         "<leader>",
