@@ -1,3 +1,10 @@
+# Fixes: 
+ - bq conficting with q (close tab)
+ - ctrl h not working on mac
+ - add maximize current tab command
+
+
+
 # Fonts:
   - Nancyj
   - Colossal
