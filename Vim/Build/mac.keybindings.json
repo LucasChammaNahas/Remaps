@@ -320,12 +320,6 @@
     "when": "focusedView == 'workbench.explorer.openEditorsView'"
   },
   {
-    "comment": "Close Current Group",
-    "key": "shift+q",
-    "command": "workbench.files.action.closeOtherEditors",
-    "when": "focusedView == 'workbench.explorer.openEditorsView'"
-  },
-  {
     "comment": "New Untitled File",
     "key": "n",
     "command": "workbench.action.files.newUntitledFile",

@@ -2648,13 +2648,12 @@
       ]
     },
     {
-      "comment": "Force Close Current Editor",
+      "comment": "Close Other Editors in Group",
       "before": [
         "Q"
       ],
-      "after": [
-        "Z",
-        "Q"
+      "commands": [
+        "workbench.action.closeOtherEditors"
       ]
     },
     {

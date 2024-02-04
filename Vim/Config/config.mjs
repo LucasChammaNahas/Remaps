@@ -841,9 +841,9 @@ export const config = {
       modes: 'n',
     },
     {
-      comment: 'Force Close Current Editor',
+      comment: 'Close Other Editors in Group',
       before: 'Q',
-      after: 'ZQ',
+      command: 'workbench.action.closeOtherEditors',
       modes: 'n',
     },
     {
@@ -1104,12 +1104,6 @@ export const config = {
       comment: 'Close Current Editor',
       key: 'q',
       command: 'workbench.action.closeActiveEditor',
-      when: 'focusedView == "workbench.explorer.openEditorsView"',
-    },
-    {
-      comment: 'Close Current Group',
-      key: 'shift+q',
-      command: 'workbench.files.action.closeOtherEditors',
       when: 'focusedView == "workbench.explorer.openEditorsView"',
     },
     {
