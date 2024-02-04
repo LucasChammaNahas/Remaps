@@ -2689,13 +2689,43 @@
       ]
     },
     {
-      "comment": "Toggle Side Panel",
+      "comment": "Focus Sidebar",
+      "before": [
+        "b",
+        "b"
+      ],
+      "commands": [
+        "workbench.action.focusSideBar"
+      ]
+    },
+    {
+      "comment": "Toggle Sidebar",
       "before": [
         "b",
         "m"
       ],
       "commands": [
         "workbench.action.toggleSidebarVisibility"
+      ]
+    },
+    {
+      "comment": "Next Sidebar",
+      "before": [
+        "b",
+        "k"
+      ],
+      "commands": [
+        "workbench.action.nextSideBarView"
+      ]
+    },
+    {
+      "comment": "Previous Sidebar",
+      "before": [
+        "b",
+        "i"
+      ],
+      "commands": [
+        "workbench.action.previousSideBarView"
       ]
     },
     {
@@ -2712,8 +2742,7 @@
       "comment": "Open Open Editors View",
       "before": [
         "b",
-        "<leader>",
-        "n"
+        "o"
       ],
       "commands": [
         "workbench.files.action.focusOpenEditorsView"
@@ -2723,7 +2752,7 @@
       "comment": "Open Outline View",
       "before": [
         "b",
-        "o"
+        "l"
       ],
       "commands": [
         "outline.focus"
@@ -2815,7 +2844,7 @@
       "comment": "Toggle Editor Group Sizes",
       "before": [
         "e",
-        "b"
+        "m"
       ],
       "commands": [
         "workbench.action.toggleEditorWidths"
@@ -2825,7 +2854,7 @@
       "comment": "Reset Editor Group Sizes",
       "before": [
         "e",
-        "y"
+        "n"
       ],
       "commands": [
         "workbench.action.evenEditorWidths"
@@ -2835,7 +2864,7 @@
       "comment": "Increase Editor Group Size",
       "before": [
         "e",
-        "m"
+        "."
       ],
       "commands": [
         "workbench.action.increaseViewSize"
@@ -2845,7 +2874,7 @@
       "comment": "Decrease Editor Group Size",
       "before": [
         "e",
-        "n"
+        ","
       ],
       "commands": [
         "workbench.action.decreaseViewSize"
@@ -4665,56 +4694,6 @@
       ],
       "commands": [
         "saveAll"
-      ]
-    },
-    {
-      "comment": "Toggle Editor Group Layout (Vertical/Horizontal)",
-      "before": [
-        "e",
-        "v"
-      ],
-      "commands": [
-        "workbench.action.toggleEditorGroupLayout"
-      ]
-    },
-    {
-      "comment": "Toggle Editor Group Sizes",
-      "before": [
-        "e",
-        "b"
-      ],
-      "commands": [
-        "workbench.action.toggleEditorWidths"
-      ]
-    },
-    {
-      "comment": "Reset Editor Group Sizes",
-      "before": [
-        "e",
-        "y"
-      ],
-      "commands": [
-        "workbench.action.evenEditorWidths"
-      ]
-    },
-    {
-      "comment": "Increase Editor Group Size",
-      "before": [
-        "e",
-        "m"
-      ],
-      "commands": [
-        "workbench.action.increaseViewSize"
-      ]
-    },
-    {
-      "comment": "Decrease Editor Group Size",
-      "before": [
-        "e",
-        "n"
-      ],
-      "commands": [
-        "workbench.action.decreaseViewSize"
       ]
     },
     {

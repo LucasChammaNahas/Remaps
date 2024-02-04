@@ -1,7 +1,12 @@
 # Fixes: 
- - bq conficting with q (close tab)
- - ctrl h not working on mac
- - add maximize current tab command
+ - bq conficting with q (close tab) OK
+ - ctrl h not working on mac OK
+    - replace is now ctrl d (for both)
+    - max terminal is now ctrl m / m
+ - add maximize current tab command OK
+ - add equalize current tab command OK
+ - bb to focus lateral menu OK
+ - ctrl i/k to move file up/down in open editor OK
 
 
 

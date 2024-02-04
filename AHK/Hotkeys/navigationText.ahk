@@ -18,6 +18,7 @@
 
   ; Delete, backspace, home, end, Ctrl z
   y::         Send {z}
+  7::         Send {y}
   h::         Send {Ctrl Up}{Home}{Ctrl Down}
  `;::         Send {Ctrl Up}{End}{Ctrl Down}
   u::         Send {Ctrl Up}{Backspace}{Ctrl Down}

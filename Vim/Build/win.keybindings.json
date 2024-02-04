@@ -132,6 +132,18 @@
     "command": "saveAll"
   },
   {
+    "comment": "Open Replace",
+    "key": "ctrl+d",
+    "command": "editor.action.startFindReplaceAction",
+    "when": "editorFocus || editorIsOpen"
+  },
+  {
+    "comment": "Open Replace",
+    "key": "ctrl+h",
+    "command": "-editor.action.startFindReplaceAction",
+    "when": "editorFocus || editorIsOpen"
+  },
+  {
     "comment": "Conflict With Symbols",
     "key": "alt+h",
     "command": "-git.viewFileHistory"
@@ -151,6 +163,11 @@
     "key": "ctrl+i",
     "command": "-editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+  },
+  {
+    "comment": "Toggle Tab Focus Mode",
+    "key": "ctrl+m",
+    "command": "-editor.action.toggleTabFocusMode"
   },
   {
     "comment": "Up",
@@ -201,9 +218,27 @@
     "when": "!editorTextFocus && !treeFindOpen && !renameInputVisible && !callHierarchyVisible"
   },
   {
-    "comment": "Toggle Side Panel",
+    "comment": "Focus Sidebar",
+    "key": "b b",
+    "command": "workbench.action.focusSideBar",
+    "when": "!inputFocus"
+  },
+  {
+    "comment": "Toggle Sidebar",
     "key": "b m",
     "command": "workbench.action.toggleSidebarVisibility",
+    "when": "!inputFocus"
+  },
+  {
+    "comment": "Next Sidebar",
+    "key": "b k",
+    "command": "workbench.action.nextSideBarView",
+    "when": "!inputFocus"
+  },
+  {
+    "comment": "Previous Sidebar",
+    "key": "b i",
+    "command": "workbench.action.previousSideBarView",
     "when": "!inputFocus"
   },
   {
@@ -274,7 +309,7 @@
   },
   {
     "comment": "Open Open Editors View",
-    "key": "b space n",
+    "key": "b o",
     "command": "workbench.files.action.focusOpenEditorsView",
     "when": "listFocus && !inputFocus"
   },
@@ -303,8 +338,20 @@
     "when": "focusedView == 'workbench.explorer.openEditorsView'"
   },
   {
+    "comment": "Move Editor Up",
+    "key": "ctrl+i",
+    "command": "workbench.action.moveEditorLeftInGroup",
+    "when": "focusedView == 'workbench.explorer.openEditorsView'"
+  },
+  {
+    "comment": "Move Editor Down",
+    "key": "ctrl+k",
+    "command": "workbench.action.moveEditorRightInGroup",
+    "when": "focusedView == 'workbench.explorer.openEditorsView'"
+  },
+  {
     "comment": "Open Outline View",
-    "key": "b o",
+    "key": "b l",
     "command": "outline.focus",
     "when": "listFocus && !inputFocus"
   },
@@ -328,7 +375,7 @@
   },
   {
     "comment": "Focus Replace Input",
-    "key": "ctrl+h",
+    "key": "ctrl+d",
     "command": "workbench.action.replaceInFiles",
     "when": "focusedView == 'workbench.view.search'"
   },
@@ -518,13 +565,13 @@
   },
   {
     "comment": "Toggle Terminal Max Height",
-    "key": "h",
+    "key": "m",
     "command": "workbench.action.toggleMaximizedPanel",
     "when": "terminalTabsFocus"
   },
   {
     "comment": "Toggle Terminal Max Height",
-    "key": "ctrl+h",
+    "key": "ctrl+m",
     "command": "workbench.action.toggleMaximizedPanel",
     "when": "panelFocus"
   },

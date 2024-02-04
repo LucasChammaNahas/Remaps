@@ -866,6 +866,21 @@ export const config = {
     },
   ],
 
+  searchAndReplaceCommands: [
+    {
+      comment: 'Open Replace',
+      key: 'ctrl+d',
+      command: 'editor.action.startFindReplaceAction',
+      when: 'editorFocus || editorIsOpen',
+    },
+    {
+      comment: 'Open Replace',
+      key: 'ctrl+h',
+      command: '-editor.action.startFindReplaceAction',
+      when: 'editorFocus || editorIsOpen',
+    },
+  ],
+
   disabledCommands: [
     {
       comment: 'Conflict With Symbols',
@@ -887,6 +902,11 @@ export const config = {
       key: 'ctrl+i',
       command: '-editor.action.triggerSuggest',
       when: 'editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible',
+    },
+    {
+      comment: 'Toggle Tab Focus Mode',
+      key: 'ctrl+m',
+      command: '-editor.action.toggleTabFocusMode',
     },
   ],
 
@@ -935,7 +955,7 @@ export const config = {
     },
   ],
 
-  panelNavigation: [
+  sidebarNavigation: [
     {
       comment: 'Go Back to Editor',
       key: 'escape',
@@ -943,15 +963,51 @@ export const config = {
       when: '!editorTextFocus && !treeFindOpen && !renameInputVisible && !callHierarchyVisible',
     },
     {
-      comment: 'Toggle Side Panel',
+      comment: 'Focus Sidebar',
+      key: 'b b',
+      command: 'workbench.action.focusSideBar',
+      when: '!inputFocus',
+    },
+    {
+      comment: 'Focus Sidebar',
+      before: 'bb',
+      command: 'workbench.action.focusSideBar',
+      modes: 'n',
+    },
+    {
+      comment: 'Toggle Sidebar',
       key: 'b m',
       command: 'workbench.action.toggleSidebarVisibility',
       when: '!inputFocus',
     },
     {
-      comment: 'Toggle Side Panel',
+      comment: 'Toggle Sidebar',
       before: 'bm',
       command: 'workbench.action.toggleSidebarVisibility',
+      modes: 'n',
+    },
+    {
+      comment: 'Next Sidebar',
+      key: 'b k',
+      command: 'workbench.action.nextSideBarView',
+      when: '!inputFocus',
+    },
+    {
+      comment: 'Next Sidebar',
+      before: 'bk',
+      command: 'workbench.action.nextSideBarView',
+      modes: 'n',
+    },
+    {
+      comment: 'Previous Sidebar',
+      key: 'b i',
+      command: 'workbench.action.previousSideBarView',
+      when: '!inputFocus',
+    },
+    {
+      comment: 'Previous Sidebar',
+      before: 'bi',
+      command: 'workbench.action.previousSideBarView',
       modes: 'n',
     },
   ],
@@ -1034,13 +1090,13 @@ export const config = {
   openEditorsNavigation: [
     {
       comment: 'Open Open Editors View',
-      key: 'b space n',
+      key: 'b o',
       command: 'workbench.files.action.focusOpenEditorsView',
       when: 'listFocus && !inputFocus',
     },
     {
       comment: 'Open Open Editors View',
-      before: 'b<leader>n',
+      before: 'bo',
       command: 'workbench.files.action.focusOpenEditorsView',
       modes: 'n',
     },
@@ -1068,18 +1124,30 @@ export const config = {
       command: 'workbench.action.reopenClosedEditor',
       when: 'focusedView == "workbench.explorer.openEditorsView"',
     },
+    {
+      comment: 'Move Editor Up',
+      key: 'ctrl+i',
+      command: 'workbench.action.moveEditorLeftInGroup',
+      when: 'focusedView == "workbench.explorer.openEditorsView"',
+    },
+    {
+      comment: 'Move Editor Down',
+      key: 'ctrl+k',
+      command: 'workbench.action.moveEditorRightInGroup',
+      when: 'focusedView == "workbench.explorer.openEditorsView"',
+    },
   ],
 
   outlineNavigation: [
     {
       comment: 'Open Outline View',
-      key: 'b o',
+      key: 'b l',
       command: 'outline.focus',
       when: 'listFocus && !inputFocus',
     },
     {
       comment: 'Open Outline View',
-      before: 'bo',
+      before: 'bl',
       command: 'outline.focus',
       modes: 'n',
     },
@@ -1118,7 +1186,7 @@ export const config = {
     },
     {
       comment: 'Focus Replace Input',
-      key: 'ctrl+h',
+      key: 'ctrl+d',
       command: 'workbench.action.replaceInFiles',
       when: 'focusedView == "workbench.view.search"',
     },
@@ -1338,13 +1406,13 @@ export const config = {
 
     {
       comment: 'Toggle Terminal Max Height',
-      key: 'h',
+      key: 'm',
       command: 'workbench.action.toggleMaximizedPanel',
       when: 'terminalTabsFocus',
     },
     {
       comment: 'Toggle Terminal Max Height',
-      key: 'ctrl+h',
+      key: 'ctrl+m',
       command: 'workbench.action.toggleMaximizedPanel',
       when: 'panelFocus',
     },
@@ -1516,6 +1584,8 @@ export const config = {
   ],
 
   layoutManipulation: [
+    { defaultModes: 'n' },
+
     {
       comment: 'Toggle Editor Group Layout (Vertical/Horizontal)',
       before: 'ev',
@@ -1523,22 +1593,22 @@ export const config = {
     },
     {
       comment: 'Toggle Editor Group Sizes',
-      before: 'eb',
+      before: 'em',
       command: 'workbench.action.toggleEditorWidths',
     },
     {
       comment: 'Reset Editor Group Sizes',
-      before: 'ey',
+      before: 'en',
       command: 'workbench.action.evenEditorWidths',
     },
     {
       comment: 'Increase Editor Group Size',
-      before: 'em',
+      before: 'e.',
       command: 'workbench.action.increaseViewSize',
     },
     {
       comment: 'Decrease Editor Group Size',
-      before: 'en',
+      before: 'e,',
       command: 'workbench.action.decreaseViewSize',
     },
   ],
