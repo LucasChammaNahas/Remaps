@@ -40,30 +40,31 @@ export const config = {
     },
   ],
 
-  smallBlockMotions: [
-    { defaultModes: 'nvp' },
+  /// Remove
+  // smallBlockMotions: [
+  //   { defaultModes: 'nvp' },
 
-    {
-      comment: 'Move Cursor a Small Block Up',
-      before: '<leader>I',
-      after: '5k',
-    },
-    {
-      comment: 'Move Cursor a Small Block Down',
-      before: '<leader>K',
-      after: '5j',
-    },
-    {
-      comment: 'Move Cursor a Small Block Left',
-      before: '<leader>J',
-      after: '12h',
-    },
-    {
-      comment: 'Move Cursor a Small Block Right',
-      before: '<leader>L',
-      after: '12l',
-    },
-  ],
+  //   {
+  //     comment: 'Move Cursor a Small Block Up',
+  //     before: '<leader>I',
+  //     after: '5k',
+  //   },
+  //   {
+  //     comment: 'Move Cursor a Small Block Down',
+  //     before: '<leader>K',
+  //     after: '5j',
+  //   },
+  //   {
+  //     comment: 'Move Cursor a Small Block Left',
+  //     before: '<leader>J',
+  //     after: '12h',
+  //   },
+  //   {
+  //     comment: 'Move Cursor a Small Block Right',
+  //     before: '<leader>L',
+  //     after: '12l',
+  //   },
+  // ],
 
   bigBlockMotions: [
     { defaultModes: 'nvp' },
@@ -189,7 +190,7 @@ export const config = {
     },
     {
       comment: 'Go to Middle of Screen',
-      before: ['gj', 'gl'],
+      before: 'gj',
       after: 'M',
     },
     {
@@ -211,7 +212,7 @@ export const config = {
 
   scrollMotions: [
     {
-      comment: 'Scroll Page Until Cursor is at Top',
+      comment: 'Scroll Page Up (Until Cursor is at Bottom)',
       before: 'go',
       after: 'zb',
     },
@@ -221,18 +222,27 @@ export const config = {
       after: 'zz',
     },
     {
-      comment: 'Scroll Page Until Cursor is at Bottom',
+      comment: 'Scroll Page Down (Until Cursor is at Top)',
       before: 'gl',
       after: 'zt',
     },
     {
       comment: 'Scroll Page Up',
-      before: 'gu',
+      key: 'ctrl+shift+o',
+      command: 'vim.remap',
+      when: 'editorFocus',
       after: '<C-u>',
     },
     {
+      comment: 'Scroll Page Up',
+      key: 'ctrl+g',
+      command: '-workbench.action.gotoSymbol',
+    },
+    {
       comment: 'Scroll Page Down',
-      before: 'gj',
+      key: 'ctrl+shift+l',
+      command: 'vim.remap',
+      when: 'editorFocus',
       after: '<C-d>',
     },
   ],

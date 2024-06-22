@@ -1,6 +1,11 @@
 {
   "General": "-----------------------------------------------------------------",
   "breadcrumbs.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.cursorSurroundingLines": 3,
+  "editor.cursorSurroundingLinesStyle": "all",
+  "editor.stickyScroll.enabled": false,
+  "editor.scrollbar.horizontal": "visible",
   "editor.cursorWidth": 2,
   "editor.tabSize": 2,
   "editor.fontSize": 18,
@@ -15,8 +20,17 @@
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
   "extensions.ignoreRecommendations": true,
+  "files.eol": "\n",
   "git.confirmSync": false,
   "git.suggestSmartCommit": false,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "gitlens.views.repositories.files.layout": "tree",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
   "files.associations": {
     "*.css": "scss"
   },
@@ -26,6 +40,8 @@
   "javascript.updateImportsOnFileMove.enabled": "never",
   "javascript.preferences.quoteStyle": "single",
   "javascript.suggest.autoImports": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
   "security.workspace.trust.untrustedFiles": "open",
   "typescript.suggest.autoImports": true,
   "typescript.updateImportsOnFileMove.enabled": "never",
@@ -34,20 +50,9 @@
   "workbench.startupEditor": "none",
   "workbench.tree.indent": 8,
   "workbench.editor.wrapTabs": true,
-  "editor.cursorSurroundingLines": 3,
-  "editor.cursorSurroundingLinesStyle": "all",
-  "files.eol": "\n",
-  "diffEditor.ignoreTrimWhitespace": false,
-  "window.zoomLevel": -1,
-  "gitlens.views.repositories.files.layout": "tree",
-  "editor.scrollbar.horizontal": "visible",
   "workbench.editor.enablePreviewFromCodeNavigation": true,
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false
-  },
+  "workbench.tree.enableStickyScroll": false,
+  "window.zoomLevel": -1,
   "Prettier": "-----------------------------------------------------------------------------------",
   "prettier.printWidth": 100,
   "prettier.trailingComma": "all",
@@ -191,52 +196,6 @@
         "l"
       ],
       "after": [
-        "l"
-      ]
-    },
-    {
-      "comment": "Move Cursor a Small Block Up",
-      "before": [
-        "<leader>",
-        "I"
-      ],
-      "after": [
-        "5",
-        "k"
-      ]
-    },
-    {
-      "comment": "Move Cursor a Small Block Down",
-      "before": [
-        "<leader>",
-        "K"
-      ],
-      "after": [
-        "5",
-        "j"
-      ]
-    },
-    {
-      "comment": "Move Cursor a Small Block Left",
-      "before": [
-        "<leader>",
-        "J"
-      ],
-      "after": [
-        "1",
-        "2",
-        "h"
-      ]
-    },
-    {
-      "comment": "Move Cursor a Small Block Right",
-      "before": [
-        "<leader>",
-        "L"
-      ],
-      "after": [
-        "1",
-        "2",
         "l"
       ]
     },
@@ -410,16 +369,6 @@
       ]
     },
     {
-      "comment": "Go to Middle of Screen",
-      "before": [
-        "g",
-        "l"
-      ],
-      "after": [
-        "M"
-      ]
-    },
-    {
       "comment": "Go to Bottom of Screen",
       "before": [
         "g",
@@ -453,7 +402,7 @@
       ]
     },
     {
-      "comment": "Scroll Page Until Cursor is at Top",
+      "comment": "Scroll Page Up (Until Cursor is at Bottom)",
       "before": [
         "g",
         "o"
@@ -475,7 +424,7 @@
       ]
     },
     {
-      "comment": "Scroll Page Until Cursor is at Bottom",
+      "comment": "Scroll Page Down (Until Cursor is at Top)",
       "before": [
         "g",
         "l"
@@ -483,26 +432,6 @@
       "after": [
         "z",
         "t"
-      ]
-    },
-    {
-      "comment": "Scroll Page Up",
-      "before": [
-        "g",
-        "u"
-      ],
-      "after": [
-        "<C-u>"
-      ]
-    },
-    {
-      "comment": "Scroll Page Down",
-      "before": [
-        "g",
-        "j"
-      ],
-      "after": [
-        "<C-d>"
       ]
     },
     {
@@ -3162,52 +3091,6 @@
       ]
     },
     {
-      "comment": "Move Cursor a Small Block Up",
-      "before": [
-        "<leader>",
-        "I"
-      ],
-      "after": [
-        "5",
-        "k"
-      ]
-    },
-    {
-      "comment": "Move Cursor a Small Block Down",
-      "before": [
-        "<leader>",
-        "K"
-      ],
-      "after": [
-        "5",
-        "j"
-      ]
-    },
-    {
-      "comment": "Move Cursor a Small Block Left",
-      "before": [
-        "<leader>",
-        "J"
-      ],
-      "after": [
-        "1",
-        "2",
-        "h"
-      ]
-    },
-    {
-      "comment": "Move Cursor a Small Block Right",
-      "before": [
-        "<leader>",
-        "L"
-      ],
-      "after": [
-        "1",
-        "2",
-        "l"
-      ]
-    },
-    {
       "comment": "Move Cursor a Big Block Up",
       "before": [
         "I"
@@ -3377,16 +3260,6 @@
       ]
     },
     {
-      "comment": "Go to Middle of Screen",
-      "before": [
-        "g",
-        "l"
-      ],
-      "after": [
-        "M"
-      ]
-    },
-    {
       "comment": "Go to Bottom of Screen",
       "before": [
         "g",
@@ -3420,7 +3293,7 @@
       ]
     },
     {
-      "comment": "Scroll Page Until Cursor is at Top",
+      "comment": "Scroll Page Up (Until Cursor is at Bottom)",
       "before": [
         "g",
         "o"
@@ -3442,7 +3315,7 @@
       ]
     },
     {
-      "comment": "Scroll Page Until Cursor is at Bottom",
+      "comment": "Scroll Page Down (Until Cursor is at Top)",
       "before": [
         "g",
         "l"
@@ -3450,26 +3323,6 @@
       "after": [
         "z",
         "t"
-      ]
-    },
-    {
-      "comment": "Scroll Page Up",
-      "before": [
-        "g",
-        "u"
-      ],
-      "after": [
-        "<C-u>"
-      ]
-    },
-    {
-      "comment": "Scroll Page Down",
-      "before": [
-        "g",
-        "j"
-      ],
-      "after": [
-        "<C-d>"
       ]
     },
     {
@@ -4954,52 +4807,6 @@
         "l"
       ],
       "after": [
-        "l"
-      ]
-    },
-    {
-      "comment": "Move Cursor a Small Block Up",
-      "before": [
-        "<leader>",
-        "I"
-      ],
-      "after": [
-        "5",
-        "k"
-      ]
-    },
-    {
-      "comment": "Move Cursor a Small Block Down",
-      "before": [
-        "<leader>",
-        "K"
-      ],
-      "after": [
-        "5",
-        "j"
-      ]
-    },
-    {
-      "comment": "Move Cursor a Small Block Left",
-      "before": [
-        "<leader>",
-        "J"
-      ],
-      "after": [
-        "1",
-        "2",
-        "h"
-      ]
-    },
-    {
-      "comment": "Move Cursor a Small Block Right",
-      "before": [
-        "<leader>",
-        "L"
-      ],
-      "after": [
-        "1",
-        "2",
         "l"
       ]
     },

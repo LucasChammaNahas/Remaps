@@ -195,52 +195,6 @@
       ]
     },
     {
-      "comment": "Move Cursor a Small Block Up",
-      "before": [
-        "<leader>",
-        "I"
-      ],
-      "after": [
-        "5",
-        "k"
-      ]
-    },
-    {
-      "comment": "Move Cursor a Small Block Down",
-      "before": [
-        "<leader>",
-        "K"
-      ],
-      "after": [
-        "5",
-        "j"
-      ]
-    },
-    {
-      "comment": "Move Cursor a Small Block Left",
-      "before": [
-        "<leader>",
-        "J"
-      ],
-      "after": [
-        "1",
-        "2",
-        "h"
-      ]
-    },
-    {
-      "comment": "Move Cursor a Small Block Right",
-      "before": [
-        "<leader>",
-        "L"
-      ],
-      "after": [
-        "1",
-        "2",
-        "l"
-      ]
-    },
-    {
       "comment": "Move Cursor a Big Block Up",
       "before": [
         "I"
@@ -410,16 +364,6 @@
       ]
     },
     {
-      "comment": "Go to Middle of Screen",
-      "before": [
-        "g",
-        "l"
-      ],
-      "after": [
-        "M"
-      ]
-    },
-    {
       "comment": "Go to Bottom of Screen",
       "before": [
         "g",
@@ -453,7 +397,7 @@
       ]
     },
     {
-      "comment": "Scroll Page Until Cursor is at Top",
+      "comment": "Scroll Page Up (Until Cursor is at Bottom)",
       "before": [
         "g",
         "o"
@@ -475,7 +419,7 @@
       ]
     },
     {
-      "comment": "Scroll Page Until Cursor is at Bottom",
+      "comment": "Scroll Page Down (Until Cursor is at Top)",
       "before": [
         "g",
         "l"
@@ -483,26 +427,6 @@
       "after": [
         "z",
         "t"
-      ]
-    },
-    {
-      "comment": "Scroll Page Up",
-      "before": [
-        "g",
-        "u"
-      ],
-      "after": [
-        "<C-u>"
-      ]
-    },
-    {
-      "comment": "Scroll Page Down",
-      "before": [
-        "g",
-        "j"
-      ],
-      "after": [
-        "<C-d>"
       ]
     },
     {
@@ -3162,52 +3086,6 @@
       ]
     },
     {
-      "comment": "Move Cursor a Small Block Up",
-      "before": [
-        "<leader>",
-        "I"
-      ],
-      "after": [
-        "5",
-        "k"
-      ]
-    },
-    {
-      "comment": "Move Cursor a Small Block Down",
-      "before": [
-        "<leader>",
-        "K"
-      ],
-      "after": [
-        "5",
-        "j"
-      ]
-    },
-    {
-      "comment": "Move Cursor a Small Block Left",
-      "before": [
-        "<leader>",
-        "J"
-      ],
-      "after": [
-        "1",
-        "2",
-        "h"
-      ]
-    },
-    {
-      "comment": "Move Cursor a Small Block Right",
-      "before": [
-        "<leader>",
-        "L"
-      ],
-      "after": [
-        "1",
-        "2",
-        "l"
-      ]
-    },
-    {
       "comment": "Move Cursor a Big Block Up",
       "before": [
         "I"
@@ -3377,16 +3255,6 @@
       ]
     },
     {
-      "comment": "Go to Middle of Screen",
-      "before": [
-        "g",
-        "l"
-      ],
-      "after": [
-        "M"
-      ]
-    },
-    {
       "comment": "Go to Bottom of Screen",
       "before": [
         "g",
@@ -3420,7 +3288,7 @@
       ]
     },
     {
-      "comment": "Scroll Page Until Cursor is at Top",
+      "comment": "Scroll Page Up (Until Cursor is at Bottom)",
       "before": [
         "g",
         "o"
@@ -3442,7 +3310,7 @@
       ]
     },
     {
-      "comment": "Scroll Page Until Cursor is at Bottom",
+      "comment": "Scroll Page Down (Until Cursor is at Top)",
       "before": [
         "g",
         "l"
@@ -3450,26 +3318,6 @@
       "after": [
         "z",
         "t"
-      ]
-    },
-    {
-      "comment": "Scroll Page Up",
-      "before": [
-        "g",
-        "u"
-      ],
-      "after": [
-        "<C-u>"
-      ]
-    },
-    {
-      "comment": "Scroll Page Down",
-      "before": [
-        "g",
-        "j"
-      ],
-      "after": [
-        "<C-d>"
       ]
     },
     {
@@ -4954,52 +4802,6 @@
         "l"
       ],
       "after": [
-        "l"
-      ]
-    },
-    {
-      "comment": "Move Cursor a Small Block Up",
-      "before": [
-        "<leader>",
-        "I"
-      ],
-      "after": [
-        "5",
-        "k"
-      ]
-    },
-    {
-      "comment": "Move Cursor a Small Block Down",
-      "before": [
-        "<leader>",
-        "K"
-      ],
-      "after": [
-        "5",
-        "j"
-      ]
-    },
-    {
-      "comment": "Move Cursor a Small Block Left",
-      "before": [
-        "<leader>",
-        "J"
-      ],
-      "after": [
-        "1",
-        "2",
-        "h"
-      ]
-    },
-    {
-      "comment": "Move Cursor a Small Block Right",
-      "before": [
-        "<leader>",
-        "L"
-      ],
-      "after": [
-        "1",
-        "2",
         "l"
       ]
     },
