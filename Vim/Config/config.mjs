@@ -40,54 +40,38 @@ export const config = {
     },
   ],
 
-  /// Remove
-  // smallBlockMotions: [
-  //   { defaultModes: 'nvp' },
-
-  //   {
-  //     comment: 'Move Cursor a Small Block Up',
-  //     before: '<leader>I',
-  //     after: '5k',
-  //   },
-  //   {
-  //     comment: 'Move Cursor a Small Block Down',
-  //     before: '<leader>K',
-  //     after: '5j',
-  //   },
-  //   {
-  //     comment: 'Move Cursor a Small Block Left',
-  //     before: '<leader>J',
-  //     after: '12h',
-  //   },
-  //   {
-  //     comment: 'Move Cursor a Small Block Right',
-  //     before: '<leader>L',
-  //     after: '12l',
-  //   },
-  // ],
-
   bigBlockMotions: [
     { defaultModes: 'nvp' },
 
     {
       comment: 'Move Cursor a Big Block Up',
-      before: 'I',
-      after: '10k',
+      key: 'ctrl+shift+i',
+      command: 'vim.remap',
+      when: 'editorFocus',
+      after: '20i',
     },
     {
       comment: 'Move Cursor a Big Block Down',
-      before: 'K',
-      after: '10j',
+      key: 'ctrl+shift+k',
+      command: 'vim.remap',
+      when: 'editorFocus',
+      after: '20k',
+    },
+    {
+      comment: 'Move Cursor a Big Block Down',
+      key: 'ctrl+shift+k',
+      command: '-editor.action.deleteLines',
+      when: 'editorFocus',
     },
     {
       comment: 'Move Cursor a Big Block Left',
       before: 'J',
-      after: '10h',
+      after: '20h',
     },
     {
       comment: 'Move Cursor a Big Block Right',
       before: 'L',
-      after: '10l',
+      after: '20l',
     },
   ],
 
@@ -228,21 +212,12 @@ export const config = {
     },
     {
       comment: 'Scroll Page Up',
-      key: 'ctrl+shift+o',
-      command: 'vim.remap',
-      when: 'editorFocus',
+      before: 'I',
       after: '<C-u>',
     },
     {
-      comment: 'Scroll Page Up',
-      key: 'ctrl+g',
-      command: '-workbench.action.gotoSymbol',
-    },
-    {
       comment: 'Scroll Page Down',
-      key: 'ctrl+shift+l',
-      command: 'vim.remap',
-      when: 'editorFocus',
+      before: 'K',
       after: '<C-d>',
     },
   ],

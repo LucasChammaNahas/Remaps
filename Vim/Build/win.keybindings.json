@@ -1,5 +1,37 @@
 [
   {
+    "comment": "Move Cursor a Big Block Up",
+    "key": "ctrl+shift+i",
+    "command": "vim.remap",
+    "when": "editorFocus",
+    "args": {
+      "after": [
+        "2",
+        "0",
+        "i"
+      ]
+    }
+  },
+  {
+    "comment": "Move Cursor a Big Block Down",
+    "key": "ctrl+shift+k",
+    "command": "vim.remap",
+    "when": "editorFocus",
+    "args": {
+      "after": [
+        "2",
+        "0",
+        "k"
+      ]
+    }
+  },
+  {
+    "comment": "Move Cursor a Big Block Down",
+    "key": "ctrl+shift+k",
+    "command": "-editor.action.deleteLines",
+    "when": "editorFocus"
+  },
+  {
     "comment": "Move Cursor Strong Up",
     "key": "up",
     "command": "vim.remap",
@@ -44,33 +76,6 @@
       "after": [
         "2",
         "l"
-      ]
-    }
-  },
-  {
-    "comment": "Scroll Page Up",
-    "key": "ctrl+shift+o",
-    "command": "vim.remap",
-    "when": "editorFocus",
-    "args": {
-      "after": [
-        "<C-u>"
-      ]
-    }
-  },
-  {
-    "comment": "Scroll Page Up",
-    "key": "ctrl+g",
-    "command": "-workbench.action.gotoSymbol"
-  },
-  {
-    "comment": "Scroll Page Down",
-    "key": "ctrl+shift+l",
-    "command": "vim.remap",
-    "when": "editorFocus",
-    "args": {
-      "after": [
-        "<C-d>"
       ]
     }
   },

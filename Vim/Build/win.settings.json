@@ -122,12 +122,12 @@
   "editor.renderLineHighlight": "gutter",
   "material-icon-theme.folders.color": "#00fc93",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "Bearded Theme Coffee",
   "material-icon-theme.folders.theme": "specific",
   "material-icon-theme.activeIconPack": "react",
   "VIM": "----------------------------------------------------------------------------------------",
   "vim.leader": "<space>",
-  "vim.scroll": 10,
+  "vim.scroll": 2,
   "vim.cursorStylePerMode.normal": "underline",
   "vim.timeout": 5000,
   "vim.useSystemClipboard": true,
@@ -200,34 +200,12 @@
       ]
     },
     {
-      "comment": "Move Cursor a Big Block Up",
-      "before": [
-        "I"
-      ],
-      "after": [
-        "1",
-        "0",
-        "k"
-      ]
-    },
-    {
-      "comment": "Move Cursor a Big Block Down",
-      "before": [
-        "K"
-      ],
-      "after": [
-        "1",
-        "0",
-        "j"
-      ]
-    },
-    {
       "comment": "Move Cursor a Big Block Left",
       "before": [
         "J"
       ],
       "after": [
-        "1",
+        "2",
         "0",
         "h"
       ]
@@ -238,7 +216,7 @@
         "L"
       ],
       "after": [
-        "1",
+        "2",
         "0",
         "l"
       ]
@@ -432,6 +410,24 @@
       "after": [
         "z",
         "t"
+      ]
+    },
+    {
+      "comment": "Scroll Page Up",
+      "before": [
+        "I"
+      ],
+      "after": [
+        "<C-u>"
+      ]
+    },
+    {
+      "comment": "Scroll Page Down",
+      "before": [
+        "K"
+      ],
+      "after": [
+        "<C-d>"
       ]
     },
     {
@@ -3091,34 +3087,12 @@
       ]
     },
     {
-      "comment": "Move Cursor a Big Block Up",
-      "before": [
-        "I"
-      ],
-      "after": [
-        "1",
-        "0",
-        "k"
-      ]
-    },
-    {
-      "comment": "Move Cursor a Big Block Down",
-      "before": [
-        "K"
-      ],
-      "after": [
-        "1",
-        "0",
-        "j"
-      ]
-    },
-    {
       "comment": "Move Cursor a Big Block Left",
       "before": [
         "J"
       ],
       "after": [
-        "1",
+        "2",
         "0",
         "h"
       ]
@@ -3129,7 +3103,7 @@
         "L"
       ],
       "after": [
-        "1",
+        "2",
         "0",
         "l"
       ]
@@ -3323,6 +3297,24 @@
       "after": [
         "z",
         "t"
+      ]
+    },
+    {
+      "comment": "Scroll Page Up",
+      "before": [
+        "I"
+      ],
+      "after": [
+        "<C-u>"
+      ]
+    },
+    {
+      "comment": "Scroll Page Down",
+      "before": [
+        "K"
+      ],
+      "after": [
+        "<C-d>"
       ]
     },
     {
@@ -4811,34 +4803,12 @@
       ]
     },
     {
-      "comment": "Move Cursor a Big Block Up",
-      "before": [
-        "I"
-      ],
-      "after": [
-        "1",
-        "0",
-        "k"
-      ]
-    },
-    {
-      "comment": "Move Cursor a Big Block Down",
-      "before": [
-        "K"
-      ],
-      "after": [
-        "1",
-        "0",
-        "j"
-      ]
-    },
-    {
       "comment": "Move Cursor a Big Block Left",
       "before": [
         "J"
       ],
       "after": [
-        "1",
+        "2",
         "0",
         "h"
       ]
@@ -4849,7 +4819,7 @@
         "L"
       ],
       "after": [
-        "1",
+        "2",
         "0",
         "l"
       ]
