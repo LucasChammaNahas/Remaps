@@ -125,7 +125,7 @@ export const config = {
       after: 'e',
     },
     {
-      comment: 'Go to Start of WORD',
+      comment: 'Go to End of WORD',
       before: 'wwl',
       after: 'E',
     },
