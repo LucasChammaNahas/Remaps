@@ -69,4 +69,5 @@ const keyToSymbolMap = [
   ',,',
   '..',
   '/?',
+  '  ',
 ];

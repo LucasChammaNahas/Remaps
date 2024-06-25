@@ -1121,6 +1121,29 @@
       ]
     },
     {
+      "comment": "Target Forwards Special Symbol",
+      "before": [
+        "n",
+        " "
+      ],
+      "after": [
+        "f",
+        " "
+      ]
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "before": [
+        "<leader>",
+        "n",
+        " "
+      ],
+      "after": [
+        "F",
+        " "
+      ]
+    },
+    {
       "comment": "Paste Word From Register Clipboard",
       "before": [
         "w",
@@ -4005,6 +4028,29 @@
       "after": [
         "T",
         "?"
+      ]
+    },
+    {
+      "comment": "Target Forwards Special Symbol",
+      "before": [
+        "n",
+        " "
+      ],
+      "after": [
+        "t",
+        " "
+      ]
+    },
+    {
+      "comment": "Target Backwards Special Symbol",
+      "before": [
+        "<leader>",
+        "n",
+        " "
+      ],
+      "after": [
+        "T",
+        " "
       ]
     },
     {
