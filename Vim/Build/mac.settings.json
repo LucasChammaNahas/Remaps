@@ -253,7 +253,7 @@
       ]
     },
     {
-      "comment": "Go to Start of WORD",
+      "comment": "Go to End of WORD",
       "before": [
         "w",
         "w",
@@ -413,7 +413,7 @@
       ]
     },
     {
-      "comment": "Scroll Page Up",
+      "comment": "Scroll Page Up Moving Cursor",
       "before": [
         "I"
       ],
@@ -422,7 +422,7 @@
       ]
     },
     {
-      "comment": "Scroll Page Down",
+      "comment": "Scroll Page Down Moving Cursor",
       "before": [
         "K"
       ],
@@ -3140,7 +3140,7 @@
       ]
     },
     {
-      "comment": "Go to Start of WORD",
+      "comment": "Go to End of WORD",
       "before": [
         "w",
         "w",
@@ -3300,7 +3300,7 @@
       ]
     },
     {
-      "comment": "Scroll Page Up",
+      "comment": "Scroll Page Up Moving Cursor",
       "before": [
         "I"
       ],
@@ -3309,7 +3309,7 @@
       ]
     },
     {
-      "comment": "Scroll Page Down",
+      "comment": "Scroll Page Down Moving Cursor",
       "before": [
         "K"
       ],
@@ -4856,7 +4856,7 @@
       ]
     },
     {
-      "comment": "Go to Start of WORD",
+      "comment": "Go to End of WORD",
       "before": [
         "w",
         "w",

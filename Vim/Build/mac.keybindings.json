@@ -80,6 +80,33 @@
     }
   },
   {
+    "comment": "Scroll Page Up",
+    "key": "cmd+shift+u",
+    "command": "vim.remap",
+    "when": "editorFocus",
+    "args": {
+      "after": [
+        "<C-y>"
+      ]
+    }
+  },
+  {
+    "comment": "Scroll Page Up",
+    "key": "cmd+shift+u",
+    "command": "-workbench.action.output.toggleOutput"
+  },
+  {
+    "comment": "Scroll Page Down",
+    "key": "cmd+shift+j",
+    "command": "vim.remap",
+    "when": "editorFocus",
+    "args": {
+      "after": [
+        "<C-e>"
+      ]
+    }
+  },
+  {
     "comment": "Insert Line Above and Enter Insert Mode",
     "key": "shift+enter",
     "command": "vim.remap",

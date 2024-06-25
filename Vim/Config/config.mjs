@@ -211,14 +211,33 @@ export const config = {
       after: 'zt',
     },
     {
-      comment: 'Scroll Page Up',
+      comment: 'Scroll Page Up Moving Cursor',
       before: 'I',
       after: '<C-u>',
     },
     {
-      comment: 'Scroll Page Down',
+      comment: 'Scroll Page Down Moving Cursor',
       before: 'K',
       after: '<C-d>',
+    },
+    {
+      comment: 'Scroll Page Up',
+      key: 'ctrl+shift+u',
+      command: 'vim.remap',
+      when: 'editorFocus',
+      after: '<C-y>',
+    },
+    {
+      comment: 'Scroll Page Up',
+      key: 'ctrl+shift+u',
+      command: '-workbench.action.output.toggleOutput',
+    },
+    {
+      comment: 'Scroll Page Down',
+      key: 'ctrl+shift+j',
+      command: 'vim.remap',
+      when: 'editorFocus',
+      after: '<C-e>',
     },
   ],
 
