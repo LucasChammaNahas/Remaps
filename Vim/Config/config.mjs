@@ -506,7 +506,7 @@ export const config = {
     },
     {
       comment: 'Insert Cursor at End of Line',
-      before: 'U',
+      before: 'O',
       after: 'A',
     },
 

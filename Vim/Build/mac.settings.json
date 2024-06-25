@@ -2164,7 +2164,7 @@
     {
       "comment": "Insert Cursor at End of Line",
       "before": [
-        "U"
+        "O"
       ],
       "after": [
         "A"
