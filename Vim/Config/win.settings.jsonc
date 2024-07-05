@@ -92,13 +92,13 @@
 
   "Appearance": "---------------------------------------------------------------------------------",
   "workbench.colorCustomizations": {
-    "editor.lineHighlightBackground": "#4cfe49",
-    "editor.selectionBackground": "#6b6b6b",
-    "editor.selectionHighlightBackground": "#6b6b6b",
+    "editor.lineHighlightBackground": "#ffeeee22",
+    "editor.selectionBackground": "#ffeeee33",
+    "editor.selectionHighlightBackground": "#ffeeee33",
     "editor.wordHighlightBackground": "#404040",
     "editorCursor.foreground": "#ff4949",
     "tab.activeBorder": "#4cfe49",
-    "tab.activeBackground": "#222"
+    "tab.activeBackground": "#444"
   },
   "editor.renderLineHighlight": "gutter",
   "material-icon-theme.folders.color": "#00fc93",
