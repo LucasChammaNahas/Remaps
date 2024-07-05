@@ -93,8 +93,8 @@
   "Appearance": "---------------------------------------------------------------------------------",
   "workbench.colorCustomizations": {
     "editor.lineHighlightBackground": "#ffeeee22",
-    "editor.selectionBackground": "#6b6b6b",
-    "editor.selectionHighlightBackground": "#6b6b6b",
+    "editor.selectionBackground": "#ffeeee33",
+    "editor.selectionHighlightBackground": "#ffeeee33",
     "editor.wordHighlightBackground": "#404040",
     "editorCursor.foreground": "#ff4949",
     "tab.activeBorder": "#4cfe49",
