@@ -111,13 +111,13 @@
   "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
   "Appearance": "---------------------------------------------------------------------------------",
   "workbench.colorCustomizations": {
-    "editor.lineHighlightBackground": "#4cfe49",
-    "editor.selectionBackground": "#6b6b6b",
-    "editor.selectionHighlightBackground": "#6b6b6b",
+    "editor.lineHighlightBackground": "#ffeeee22",
+    "editor.selectionBackground": "#ffeeee33",
+    "editor.selectionHighlightBackground": "#ffeeee33",
     "editor.wordHighlightBackground": "#404040",
     "editorCursor.foreground": "#ff4949",
     "tab.activeBorder": "#4cfe49",
-    "tab.activeBackground": "#222"
+    "tab.activeBackground": "#444"
   },
   "editor.renderLineHighlight": "gutter",
   "material-icon-theme.folders.color": "#00fc93",
@@ -1153,10 +1153,7 @@
         "v",
         "i",
         "w",
-        "p",
-        "g",
-        "v",
-        "y"
+        "P"
       ]
     },
     {
@@ -1172,10 +1169,7 @@
         "w",
         "\"",
         "a",
-        "p",
-        "g",
-        "v",
-        "y"
+        "P"
       ]
     },
     {
@@ -1192,10 +1186,7 @@
         "w",
         "\"",
         "b",
-        "p",
-        "g",
-        "v",
-        "y"
+        "P"
       ]
     },
     {
@@ -1213,10 +1204,7 @@
         "w",
         "\"",
         "c",
-        "p",
-        "g",
-        "v",
-        "y"
+        "P"
       ]
     },
     {
@@ -1230,10 +1218,7 @@
         "E",
         "v",
         "B",
-        "p",
-        "g",
-        "v",
-        "y"
+        "P"
       ]
     },
     {
@@ -1250,10 +1235,7 @@
         "B",
         "\"",
         "a",
-        "p",
-        "g",
-        "v",
-        "y"
+        "P"
       ]
     },
     {
@@ -1271,10 +1253,7 @@
         "B",
         "\"",
         "b",
-        "p",
-        "g",
-        "v",
-        "y"
+        "P"
       ]
     },
     {
@@ -1293,10 +1272,7 @@
         "B",
         "\"",
         "c",
-        "p",
-        "g",
-        "v",
-        "y"
+        "P"
       ]
     },
     {
@@ -4213,11 +4189,7 @@
         "f"
       ],
       "after": [
-        "g",
-        "P",
-        "g",
-        "v",
-        "y"
+        "P"
       ]
     },
     {
@@ -4229,11 +4201,7 @@
       "after": [
         "\"",
         "a",
-        "g",
-        "P",
-        "g",
-        "v",
-        "y"
+        "P"
       ]
     },
     {
@@ -4246,11 +4214,7 @@
       "after": [
         "\"",
         "b",
-        "g",
-        "P",
-        "g",
-        "v",
-        "y"
+        "P"
       ]
     },
     {
@@ -4264,11 +4228,7 @@
       "after": [
         "\"",
         "c",
-        "g",
-        "P",
-        "g",
-        "v",
-        "y"
+        "P"
       ]
     },
     {
@@ -4277,10 +4237,7 @@
         "p"
       ],
       "after": [
-        "p",
-        "g",
-        "v",
-        "y"
+        "P"
       ]
     },
     {
@@ -4292,10 +4249,7 @@
       "after": [
         "\"",
         "a",
-        "p",
-        "g",
-        "v",
-        "y"
+        "P"
       ]
     },
     {
@@ -4308,10 +4262,7 @@
       "after": [
         "\"",
         "b",
-        "p",
-        "g",
-        "v",
-        "y"
+        "P"
       ]
     },
     {
@@ -4325,10 +4276,7 @@
       "after": [
         "\"",
         "c",
-        "p",
-        "g",
-        "v",
-        "y"
+        "P"
       ]
     },
     {

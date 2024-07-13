@@ -323,13 +323,13 @@ export const config = {
 
     ...getTextCommands({
       before: 'wf',
-      after: 'pgvy',
+      after: 'P',
       operatorName: 'Paste',
       targetName: 'Word',
     }),
     ...getTextCommands({
       before: 'wwf',
-      after: 'pgvy',
+      after: 'P',
       operatorName: 'Paste',
       targetName: 'WORD',
     }),
@@ -340,7 +340,7 @@ export const config = {
     }),
     ...getTextCommands({
       before: 'f',
-      after: 'gPgvy',
+      after: 'P',
       operatorName: 'Paste Before',
       modes: 'v',
     }),
@@ -351,7 +351,7 @@ export const config = {
     }),
     ...getTextCommands({
       before: 'p',
-      after: 'pgvy',
+      after: 'P',
       operatorName: 'Paste After',
       modes: 'v',
     }),
