@@ -328,16 +328,36 @@ export const config = {
       targetName: 'Word',
     }),
     ...getTextCommands({
+      before: 'WF',
+      after: 'p',
+      operatorName: 'Copy and Paste',
+      targetName: 'Word',
+    }),
+
+    ...getTextCommands({
       before: 'wwf',
       after: 'P',
       operatorName: 'Paste',
       targetName: 'WORD',
     }),
     ...getTextCommands({
+      before: 'WWF',
+      after: 'p',
+      operatorName: 'Copy and Paste',
+      targetName: 'WORD',
+    }),
+
+    ...getTextCommands({
       before: 'f',
       after: 'gP',
       operatorName: 'Paste Before',
     }),
+    ...getTextCommands({
+      before: 'F',
+      after: 'gp',
+      operatorName: 'Copy and Paste Before',
+    }),
+
     ...getTextCommands({
       before: 'f',
       after: 'P',
@@ -345,14 +365,28 @@ export const config = {
       modes: 'v',
     }),
     ...getTextCommands({
+      before: 'F',
+      after: 'p',
+      operatorName: 'Copy and Paste Before',
+      modes: 'v',
+    }),
+
+    ...getTextCommands({
       before: 'p',
       after: 'p',
       operatorName: 'Paste After',
     }),
+
     ...getTextCommands({
       before: 'p',
       after: 'P',
       operatorName: 'Paste After',
+      modes: 'v',
+    }),
+    ...getTextCommands({
+      before: 'P',
+      after: 'p',
+      operatorName: 'Copy and Paste After',
       modes: 'v',
     }),
   ],

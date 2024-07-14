@@ -1208,6 +1208,70 @@
       ]
     },
     {
+      "comment": "Copy and Paste Word From Register Clipboard",
+      "before": [
+        "W",
+        "F"
+      ],
+      "after": [
+        "v",
+        "i",
+        "w",
+        "p"
+      ]
+    },
+    {
+      "comment": "Copy and Paste Word From Register A",
+      "before": [
+        "<leader>",
+        "W",
+        "F"
+      ],
+      "after": [
+        "v",
+        "i",
+        "w",
+        "\"",
+        "a",
+        "p"
+      ]
+    },
+    {
+      "comment": "Copy and Paste Word From Register B",
+      "before": [
+        "<leader>",
+        "<leader>",
+        "W",
+        "F"
+      ],
+      "after": [
+        "v",
+        "i",
+        "w",
+        "\"",
+        "b",
+        "p"
+      ]
+    },
+    {
+      "comment": "Copy and Paste Word From Register C",
+      "before": [
+        "<leader>",
+        "<leader>",
+        "<leader>",
+        "W",
+        "F"
+      ],
+      "after": [
+        "v",
+        "i",
+        "w",
+        "\"",
+        "c",
+        "p"
+      ]
+    },
+    {
       "comment": "Paste WORD From Register Clipboard",
       "before": [
         "w",
@@ -1276,6 +1340,74 @@
       ]
     },
     {
+      "comment": "Copy and Paste WORD From Register Clipboard",
+      "before": [
+        "W",
+        "W",
+        "F"
+      ],
+      "after": [
+        "E",
+        "v",
+        "B",
+        "p"
+      ]
+    },
+    {
+      "comment": "Copy and Paste WORD From Register A",
+      "before": [
+        "<leader>",
+        "W",
+        "W",
+        "F"
+      ],
+      "after": [
+        "E",
+        "v",
+        "B",
+        "\"",
+        "a",
+        "p"
+      ]
+    },
+    {
+      "comment": "Copy and Paste WORD From Register B",
+      "before": [
+        "<leader>",
+        "<leader>",
+        "W",
+        "W",
+        "F"
+      ],
+      "after": [
+        "E",
+        "v",
+        "B",
+        "\"",
+        "b",
+        "p"
+      ]
+    },
+    {
+      "comment": "Copy and Paste WORD From Register C",
+      "before": [
+        "<leader>",
+        "<leader>",
+        "<leader>",
+        "W",
+        "W",
+        "F"
+      ],
+      "after": [
+        "E",
+        "v",
+        "B",
+        "\"",
+        "c",
+        "p"
+      ]
+    },
+    {
       "comment": "Paste Before From Register Clipboard",
       "before": [
         "f"
@@ -1325,6 +1457,58 @@
         "c",
         "g",
         "P"
+      ]
+    },
+    {
+      "comment": "Copy and Paste Before From Register Clipboard",
+      "before": [
+        "F"
+      ],
+      "after": [
+        "g",
+        "p"
+      ]
+    },
+    {
+      "comment": "Copy and Paste Before From Register A",
+      "before": [
+        "<leader>",
+        "F"
+      ],
+      "after": [
+        "\"",
+        "a",
+        "g",
+        "p"
+      ]
+    },
+    {
+      "comment": "Copy and Paste Before From Register B",
+      "before": [
+        "<leader>",
+        "<leader>",
+        "F"
+      ],
+      "after": [
+        "\"",
+        "b",
+        "g",
+        "p"
+      ]
+    },
+    {
+      "comment": "Copy and Paste Before From Register C",
+      "before": [
+        "<leader>",
+        "<leader>",
+        "<leader>",
+        "F"
+      ],
+      "after": [
+        "\"",
+        "c",
+        "g",
+        "p"
       ]
     },
     {
@@ -4232,6 +4416,54 @@
       ]
     },
     {
+      "comment": "Copy and Paste Before From Register Clipboard",
+      "before": [
+        "F"
+      ],
+      "after": [
+        "p"
+      ]
+    },
+    {
+      "comment": "Copy and Paste Before From Register A",
+      "before": [
+        "<leader>",
+        "F"
+      ],
+      "after": [
+        "\"",
+        "a",
+        "p"
+      ]
+    },
+    {
+      "comment": "Copy and Paste Before From Register B",
+      "before": [
+        "<leader>",
+        "<leader>",
+        "F"
+      ],
+      "after": [
+        "\"",
+        "b",
+        "p"
+      ]
+    },
+    {
+      "comment": "Copy and Paste Before From Register C",
+      "before": [
+        "<leader>",
+        "<leader>",
+        "<leader>",
+        "F"
+      ],
+      "after": [
+        "\"",
+        "c",
+        "p"
+      ]
+    },
+    {
       "comment": "Paste After From Register Clipboard",
       "before": [
         "p"
@@ -4277,6 +4509,54 @@
         "\"",
         "c",
         "P"
+      ]
+    },
+    {
+      "comment": "Copy and Paste After From Register Clipboard",
+      "before": [
+        "P"
+      ],
+      "after": [
+        "p"
+      ]
+    },
+    {
+      "comment": "Copy and Paste After From Register A",
+      "before": [
+        "<leader>",
+        "P"
+      ],
+      "after": [
+        "\"",
+        "a",
+        "p"
+      ]
+    },
+    {
+      "comment": "Copy and Paste After From Register B",
+      "before": [
+        "<leader>",
+        "<leader>",
+        "P"
+      ],
+      "after": [
+        "\"",
+        "b",
+        "p"
+      ]
+    },
+    {
+      "comment": "Copy and Paste After From Register C",
+      "before": [
+        "<leader>",
+        "<leader>",
+        "<leader>",
+        "P"
+      ],
+      "after": [
+        "\"",
+        "c",
+        "p"
       ]
     },
     {
