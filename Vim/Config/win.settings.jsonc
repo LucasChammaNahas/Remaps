@@ -95,7 +95,7 @@
     "editor.lineHighlightBackground": "#ffeeee22",
     "editor.selectionBackground": "#ffeeee33",
     "editor.selectionHighlightBackground": "#ffeeee33",
-    "editor.wordHighlightBackground": "#404040",
+    "editor.wordHighlightBackground": "#ffeeee20",
     "editorCursor.foreground": "#ff4949",
     "tab.activeBorder": "#4cfe49",
     "tab.activeBackground": "#444"
