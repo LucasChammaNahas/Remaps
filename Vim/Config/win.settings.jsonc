@@ -16,6 +16,7 @@
   "editor.accessibilitySupport": "off",
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.parameterHints.enabled": false,
+  "explorer.confirmPasteNative": false,
   "explorer.compactFolders": true,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
@@ -100,7 +101,7 @@
     "tab.activeBorder": "#4cfe49",
     "tab.activeBackground": "#444"
   },
-  "editor.renderLineHighlight": "gutter",
+  "editor.renderLineHighlight": "line",
   "material-icon-theme.folders.color": "#00fc93",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Bearded Theme Coffee",
