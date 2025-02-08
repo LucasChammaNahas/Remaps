@@ -39,9 +39,9 @@
   <^>!r:: SendRaw 9 ;AltGr
 
   ;--> T <-------------------------------
-    <!t:: SendRaw ~ ;Alt L
-    >!t:: return    ;Alt R
-  <^>!t:: return    ;AltGr
+    <!t:: Send {U+00A3} ;Alt L (£)
+    >!t:: return        ;Alt R
+  <^>!t:: return        ;AltGr
 
   ;--> A <-------------------------------
     <!a:: SendRaw @ ;Alt L
@@ -59,49 +59,46 @@
   <^>!d:: SendRaw 5 ;AltGr
 
   ;--> F <-------------------------------
-    <!f:: Send    {End}`; ;Alt L
-    >!f:: SendRaw 6       ;Alt R
-  <^>!f:: SendRaw 6       ;AltGr
+    <!f:: Send    * ;Alt L
+    >!f:: SendRaw 6 ;Alt R
+  <^>!f:: SendRaw 6 ;AltGr
 
   ;--> G <-------------------------------
-    <!g:: SendRaw : ;Alt L
+    <!g:: SendRaw + ;Alt L
     >!g:: return    ;Alt R
   <^>!g:: return    ;AltGr
 
   ;--> Z <-------------------------------
-    <!z:: SendRaw / ;Alt L
+    <!z:: return    ;Alt L
     >!z:: SendRaw 0 ;Alt R
   <^>!z:: SendRaw 0 ;AltGr
     
   ;--> X <-------------------------------
-    <!x:: SendRaw * ;Alt L
+    <!x:: SendRaw \ ;Alt L
     >!x:: SendRaw 1 ;Alt R
   <^>!x:: SendRaw 1 ;AltGr
 
   ;--> C <-------------------------------
-    <!c:: SendRaw + ;Alt L
+    <!c:: SendRaw ^ ;Alt L
     >!c:: SendRaw 2 ;Alt R
   <^>!c:: SendRaw 2 ;AltGr
 
   ;--> V <-------------------------------
-    <!v:: SendRaw `% ;Alt L
-    >!v:: SendRaw  3 ;Alt R
-  <^>!v:: SendRaw  3 ;AltGr
+    <!v:: SendRaw $ ;Alt L
+    >!v:: SendRaw 3 ;Alt R
+  <^>!v:: SendRaw 3 ;AltGr
 
   ;--> B <-------------------------------
-    <!b:: SendRaw $ ;Alt L
-    >!b:: return    ;Alt R
-  <^>!b:: return    ;AltGr
+    <!b:: SendRaw `% ;Alt L
+    >!b:: return     ;Alt R
+  <^>!b:: return     ;AltGr
 
 
 
   ;==> RIGHT HAND <====================================================
 
-  ;--> 9 <-------------------------------
-    <!9:: SendRaw ^ ;Alt 9
-
   ;--> Y <-------------------------------
-    <!y:: SendRaw & ;Alt L
+    <!y:: SendRaw ~ ;Alt L
     >!y:: return    ;Alt R
   <^>!y:: return    ;AltGr
 
@@ -126,7 +123,7 @@
   <^>!p:: return    ;AltGr
 
   ;--> H <-------------------------------
-    <!h:: SendRaw `` ;Alt L
+    <!h:: SendRaw &  ;Alt L
     >!h:: SendRaw `% ;Alt R
   <^>!h:: SendRaw `% ;AltGr
 
@@ -141,9 +138,9 @@
   <^>!k:: SendRaw + ;AltGr
 
   ;--> L <-------------------------------
-    <!l:: SendRaw ' ;Alt L
-    >!l:: SendRaw * ;Alt R
-  <^>!l:: SendRaw * ;AltGr
+    <!l:: SendRaw `` ;Alt L
+    >!l:: SendRaw *  ;Alt R
+  <^>!l:: SendRaw *  ;AltGr
 
   ;--> ; <-------------------------------
     <!`;:: SendRaw : ;Alt L
