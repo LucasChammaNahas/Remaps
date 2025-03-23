@@ -59,12 +59,12 @@
   <^>!d:: SendRaw 5 ;AltGr
 
   ;--> F <-------------------------------
-    <!f:: Send    * ;Alt L
-    >!f:: SendRaw 6 ;Alt R
-  <^>!f:: SendRaw 6 ;AltGr
+    <!f:: Send    `% ;Alt L
+    >!f:: SendRaw 6  ;Alt R
+  <^>!f:: SendRaw 6  ;AltGr
 
   ;--> G <-------------------------------
-    <!g:: SendRaw + ;Alt L
+    <!g:: SendRaw * ;Alt L
     >!g:: return    ;Alt R
   <^>!g:: return    ;AltGr
 
@@ -89,9 +89,9 @@
   <^>!v:: SendRaw 3 ;AltGr
 
   ;--> B <-------------------------------
-    <!b:: SendRaw `% ;Alt L
-    >!b:: return     ;Alt R
-  <^>!b:: return     ;AltGr
+    <!b:: SendRaw + ;Alt L
+    >!b:: return    ;Alt R
+  <^>!b:: return    ;AltGr
 
 
 
