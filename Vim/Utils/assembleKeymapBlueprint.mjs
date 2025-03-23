@@ -1,4 +1,4 @@
-export function generateListWithAllCommands(config) {
+export function assembleKeymapBlueprint(config) {
    const allCommands = [];
 
    for (const subCommands of Object.values(config)) {

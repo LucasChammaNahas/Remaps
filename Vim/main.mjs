@@ -1,63 +1,26 @@
 import fs from 'fs';
 import { config } from './Config/config.mjs';
-import { generateListWithAllCommands } from './Utils/generateListWithAllCommands.mjs';
-import { getCommandTypes } from './Utils/getCommandTypes.mjs';
-import {
-   generateCorrectCodeStructure,
-   generateCorrectVimStructure,
-} from './Utils/generateCorrectStructure.mjs';
+import { assembleKeymapBlueprint } from './Utils/assembleKeymapBlueprint.mjs';
+import { generateVimKeymap } from './Utils/generateVimKeymap.mjs';
+import { generateVscodeKeymap } from './Utils/generateVscodeKeymap.mjs';
+import { generateSettingsJson } from './Utils/generateSettingsJson.mjs';
+import { generateKeybindingsJson } from './Utils/generateKeybindingsJson.mjs';
+// import { generateNeovimKeymap } from './Utils/generateNeovimKeymap.mjs';
 
-const modes = {
-   normal: 'vim.normalModeKeyBindingsNonRecursive',
-   visual: 'vim.visualModeKeyBindingsNonRecursive',
-   pending: 'vim.operatorPendingModeKeyBindingsNonRecursive',
-};
+const keymapBlueprint = assembleKeymapBlueprint(config);
+const vimKeymap = generateVimKeymap(keymapBlueprint);
+const vscodeKeymapMac = generateVscodeKeymap(keymapBlueprint, 'mac');
+const vscodeKeymapWin = generateVscodeKeymap(keymapBlueprint, 'win');
+// const neovimKeymap = generateNeovimKeymap(keymapBlueprint);
 
-const vimSettings = {
-   [modes.normal]: [],
-   [modes.visual]: [],
-   [modes.pending]: [],
-};
+const settingsJsonMac = generateSettingsJson(vimKeymap, 'mac');
+const settingsJsonWin = generateSettingsJson(vimKeymap, 'win');
 
-const keybindings = {
-   win: [],
-   mac: [],
-};
+const keybindingsJsonMac = generateKeybindingsJson(vscodeKeymapMac);
+const keybindingsJsonWin = generateKeybindingsJson(vscodeKeymapWin);
 
-const commandList = generateListWithAllCommands(config);
+fs.writeFileSync('./Build/mac.settings.json', settingsJsonMac);
+fs.writeFileSync('./Build/mac.keybindings.json', keybindingsJsonMac);
 
-for (const command of commandList) {
-   const commandTypes = getCommandTypes(command);
-
-   if (commandTypes.includes('code')) {
-      const winCommand = generateCorrectCodeStructure(command, 'win');
-      keybindings.win.push(winCommand);
-
-      const macCommand = generateCorrectCodeStructure(command, 'mac');
-      keybindings.mac.push(macCommand);
-   } else {
-      const vimCommand = generateCorrectVimStructure(command);
-
-      for (const type of commandTypes) {
-         vimSettings[modes[type]].push(vimCommand);
-      }
-   }
-}
-
-for (const os of ['win', 'mac']) {
-   const complementarySettingsJson =
-      fs.readFileSync(`./Config/${os}.settings.jsonc`, 'utf8') || '{}';
-   const complementarySettings = JSON.parse(complementarySettingsJson) || {};
-   const settings = { ...complementarySettings, ...vimSettings };
-   const settingsJson = JSON.stringify(settings, null, 2);
-   fs.writeFileSync(`./Build/${os}.settings.json`, settingsJson);
-
-   const keybindingsJson = JSON.stringify(keybindings[os], null, 2);
-   fs.writeFileSync(`./Build/${os}.keybindings.json`, keybindingsJson.replace(/\\"/g, "'"));
-}
-
-console.log('normal', vimSettings[modes.normal].length);
-console.log('visual', vimSettings[modes.visual].length);
-console.log('pending', vimSettings[modes.pending].length);
-console.log('Win Keybindings', keybindings.win.length);
-console.log('Mac Keybindings', keybindings.mac.length);
+fs.writeFileSync('./Build/win.settings.json', settingsJsonWin);
+fs.writeFileSync('./Build/win.keybindings.json', keybindingsJsonWin);

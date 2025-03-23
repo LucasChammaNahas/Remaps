@@ -1,5 +1,5 @@
-import { getTargetedMotions } from '../Utils/getTargetedMotions.mjs';
-import { getTextCommands } from '../Utils/getTextCommands.mjs';
+import { getTargetedMotions } from './getTargetedMotions.mjs';
+import { getTextCommands } from './getTextCommands.mjs';
 
 export const config = {
    modeSwitching: [
