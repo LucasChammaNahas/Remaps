@@ -1,5 +1,5 @@
 import { getCommandTypes } from './getCommandTypes.mjs';
-import { generateCorrectVimStructure } from './generateCorrectStructure.mjs';
+import { splitInputCommands } from './splitInputCommands.mjs';
 
 const VIM_MODES = {
    normal: 'vim.normalModeKeyBindingsNonRecursive',
@@ -29,4 +29,21 @@ export function generateVimKeymap(keymapBlueprint) {
    }
 
    return vimKeymap;
+}
+
+function generateCorrectVimStructure(command) {
+   const updatedCommand = {
+      comment: command.comment,
+      before: splitInputCommands(command.before),
+   };
+
+   if ('after' in command) {
+      updatedCommand.after = splitInputCommands(command.after);
+   }
+
+   if ('command' in command) {
+      updatedCommand.commands = [command.command];
+   }
+
+   return updatedCommand;
 }
