@@ -8,27 +8,41 @@ const newConfig = [
             description: 'Selecionar tudo',
             modes: ['normal', 'visual', 'pending'],
 
-            vscode: {
-               key: ['ctrl+shift+k'],
-               command: 'vim.remap',
-               vimCommand: '20i',
-               removeCommand: '-editor.action.potato',
-               when: 'editorFocus',
-               modes: ['normal', 'visual'],
-            },
-
-            vscodeVim: {
-               before: ['A'],
-               after: 'ggVG',
-               modes: ['normal', 'visual'],
-            },
-
-            neovim: {
-               isVimClone: true,
-               before: ['A'],
-               after: 'ggVG',
-               modes: ['normal', 'visual'],
-            },
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['ctrl+e right'],
+                  command: 'workbench.action.nextEditorInGroup',
+                  removeCommand: '-editor.action.potato',
+                  when: 'editorFocus',
+               },
+               {
+                  type: 'vscodeToVim',
+                  triggers: ['ctrl+shift+k'],
+                  command: '20i',
+                  removeCommand: '-editor.action.potato',
+                  when: 'editorFocus',
+               },
+               {
+                  type: 'vimToVscode',
+                  triggers: ['co'],
+                  command: 'editor.action.indentLines',
+                  modes: ['normal', 'visual'],
+               },
+               {
+                  type: 'vim',
+                  triggers: ['A'],
+                  command: 'ggVG',
+                  modes: ['normal', 'visual'],
+               },
+               {
+                  type: 'neovim',
+                  isVimClone: true,
+                  triggers: ['A'],
+                  command: 'ggVG',
+                  modes: ['normal', 'visual'],
+               },
+            ],
          },
       ],
    },
