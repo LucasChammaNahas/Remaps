@@ -62,7 +62,7 @@ export const config = [
             platforms: [
                {
                   type: 'vscode',
-                  key: ['backspace'],
+                  triggers: ['backspace'],
                   command: 'deleteLeft',
                   removeCommand: '-editor.action.potato',
                   when: 'textInputFocus',
