@@ -2,109 +2,109 @@ import { getTargetedMotions } from './getTargetedMotions.mjs';
 import { getTextCommands } from './getTextCommands.mjs';
 
 export const config = {
-   modeSwitching: [
-      {
-         comment: 'Visual Line',
-         before: 'cv',
-         after: 'V',
-      },
-      {
-         comment: 'Visual Block',
-         before: 'cc',
-         after: '<C-v>',
-      },
-   ],
+   // modeSwitching: [
+   //    {
+   //       comment: 'Visual Line',
+   //       before: 'cv',
+   //       after: 'V',
+   //    },
+   //    {
+   //       comment: 'Visual Block',
+   //       before: 'cc',
+   //       after: '<C-v>',
+   //    },
+   // ],
 
-   basicMotions: [
-      { defaultModes: 'nvp' },
+   // basicMotions: [
+   //    { defaultModes: 'nvp' },
 
-      {
-         comment: 'Move Cursor Up',
-         before: 'i',
-         after: 'k',
-      },
-      {
-         comment: 'Move Cursor Down',
-         before: 'k',
-         after: 'j',
-      },
-      {
-         comment: 'Move Cursor Left',
-         before: 'j',
-         after: 'h',
-      },
-      {
-         comment: 'Move Cursor Right',
-         before: 'l',
-         after: 'l',
-      },
-   ],
+   //    {
+   //       comment: 'Move Cursor Up',
+   //       before: 'i',
+   //       after: 'k',
+   //    },
+   //    {
+   //       comment: 'Move Cursor Down',
+   //       before: 'k',
+   //       after: 'j',
+   //    },
+   //    {
+   //       comment: 'Move Cursor Left',
+   //       before: 'j',
+   //       after: 'h',
+   //    },
+   //    {
+   //       comment: 'Move Cursor Right',
+   //       before: 'l',
+   //       after: 'l',
+   //    },
+   // ],
 
-   bigBlockMotions: [
-      { defaultModes: 'nvp' },
+   // bigBlockMotions: [
+   //    { defaultModes: 'nvp' },
 
-      {
-         comment: 'Move Cursor a Big Block Up',
-         key: 'ctrl+shift+i',
-         command: 'vim.remap',
-         when: 'editorFocus',
-         after: '20i',
-      },
-      {
-         comment: 'Move Cursor a Big Block Down',
-         key: 'ctrl+shift+k',
-         command: 'vim.remap',
-         when: 'editorFocus',
-         after: '20k',
-      },
-      {
-         comment: 'Move Cursor a Big Block Down',
-         key: 'ctrl+shift+k',
-         command: '-editor.action.deleteLines',
-         when: 'editorFocus',
-      },
-      {
-         comment: 'Move Cursor a Big Block Left',
-         before: 'J',
-         after: '20h',
-      },
-      {
-         comment: 'Move Cursor a Big Block Right',
-         before: 'L',
-         after: '20l',
-      },
-   ],
+   //    {
+   //       comment: 'Move Cursor a Big Block Up',
+   //       key: 'ctrl+shift+i',
+   //       command: 'vim.remap',
+   //       when: 'editorFocus',
+   //       after: '20i',
+   //    },
+   //    {
+   //       comment: 'Move Cursor a Big Block Down',
+   //       key: 'ctrl+shift+k',
+   //       command: 'vim.remap',
+   //       when: 'editorFocus',
+   //       after: '20k',
+   //    },
+   //    {
+   //       comment: 'Move Cursor a Big Block Down',
+   //       key: 'ctrl+shift+k',
+   //       command: '-editor.action.deleteLines',
+   //       when: 'editorFocus',
+   //    },
+   //    {
+   //       comment: 'Move Cursor a Big Block Left',
+   //       before: 'J',
+   //       after: '20h',
+   //    },
+   //    {
+   //       comment: 'Move Cursor a Big Block Right',
+   //       before: 'L',
+   //       after: '20l',
+   //    },
+   // ],
 
-   fastMotions: [
-      {
-         comment: 'Move Cursor Strong Up',
-         key: 'up',
-         command: 'vim.remap',
-         when: 'editorTextFocus && vim.mode != "Insert"',
-         after: '2i',
-      },
-      {
-         comment: 'Move Cursor Strong Down',
-         key: 'down',
-         command: 'vim.remap',
-         when: 'editorTextFocus && vim.mode != "Insert"',
-         after: '2k',
-      },
-      {
-         comment: 'Move Cursor Strong Left',
-         key: 'left',
-         command: 'vim.remap',
-         when: 'editorTextFocus && vim.mode != "Insert"',
-         after: '2j',
-      },
-      {
-         comment: 'Move Cursor Strong Right',
-         key: 'right',
-         command: 'vim.remap',
-         when: 'editorTextFocus && vim.mode != "Insert"',
-         after: '2l',
-      },
-   ],
+   // fastMotions: [
+   //    {
+   //       comment: 'Move Cursor Strong Up',
+   //       key: 'up',
+   //       command: 'vim.remap',
+   //       when: 'editorTextFocus && vim.mode != "Insert"',
+   //       after: '2i',
+   //    },
+   //    {
+   //       comment: 'Move Cursor Strong Down',
+   //       key: 'down',
+   //       command: 'vim.remap',
+   //       when: 'editorTextFocus && vim.mode != "Insert"',
+   //       after: '2k',
+   //    },
+   //    {
+   //       comment: 'Move Cursor Strong Left',
+   //       key: 'left',
+   //       command: 'vim.remap',
+   //       when: 'editorTextFocus && vim.mode != "Insert"',
+   //       after: '2j',
+   //    },
+   //    {
+   //       comment: 'Move Cursor Strong Right',
+   //       key: 'right',
+   //       command: 'vim.remap',
+   //       when: 'editorTextFocus && vim.mode != "Insert"',
+   //       after: '2l',
+   //    },
+   // ],
 
    wordMotions: [
       { defaultModes: 'nvp' },

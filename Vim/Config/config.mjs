@@ -3,6 +3,41 @@ import { getTextCommands } from './getTextCommands.mjs';
 
 export const config = [
    {
+      group: 'Mode switching',
+      modes: ['normal', 'visual'],
+      mappings: [
+         {
+            description: 'Visual Line',
+            platforms: [
+               {
+                  type: 'vim',
+                  triggers: ['cv'],
+                  command: 'V',
+               },
+               {
+                  type: 'neovim',
+                  isVimClone: true,
+               },
+            ],
+         },
+         {
+            description: 'Visual Block',
+            platforms: [
+               {
+                  type: 'vim',
+                  triggers: ['cc'],
+                  command: '<C-v>',
+               },
+               {
+                  type: 'neovim',
+                  isVimClone: true,
+               },
+            ],
+         },
+      ],
+   },
+
+   {
       group: 'Basic motions',
       modes: ['normal', 'visual', 'pending'],
       mappings: [
@@ -14,23 +49,117 @@ export const config = [
                   triggers: ['i'],
                   command: 'k',
                },
+               {
+                  type: 'neovim',
+                  isVimClone: true,
+               },
+            ],
+         },
+         {
+            description: 'Move Cursor Down',
+            platforms: [
+               {
+                  type: 'vim',
+                  triggers: ['k'],
+                  command: 'j',
+               },
+               {
+                  type: 'neovim',
+                  isVimClone: true,
+               },
+            ],
+         },
+         {
+            description: 'Move Cursor Left',
+            platforms: [
+               {
+                  type: 'vim',
+                  triggers: ['j'],
+                  command: 'h',
+               },
+               {
+                  type: 'neovim',
+                  isVimClone: true,
+               },
+            ],
+         },
+         {
+            description: 'Move Cursor Right',
+            platforms: [
+               {
+                  type: 'vim',
+                  triggers: ['l'],
+                  command: 'l',
+               },
+               {
+                  type: 'neovim',
+                  isVimClone: true,
+               },
             ],
          },
       ],
    },
 
    {
-      group: 'Big block motions',
+      group: 'Big Block Motions',
       modes: ['normal', 'visual', 'pending'],
       mappings: [
+         {
+            description: 'Move Cursor a Big Block Up',
+            platforms: [
+               {
+                  type: 'vscodeToVim',
+                  triggers: ['ctrl+shift+i'],
+                  command: '20i',
+                  when: 'editorFocus',
+               },
+               {
+                  // Todo
+                  type: 'neovim',
+               },
+            ],
+         },
          {
             description: 'Move Cursor a Big Block Down',
             platforms: [
                {
                   type: 'vscodeToVim',
                   triggers: ['ctrl+shift+k'],
-                  command: '20j',
-                  removeCommand: '-editor.action.potato',
+                  command: '20k',
+                  removeCommand: '-editor.action.deleteLines',
+                  when: 'editorFocus',
+               },
+               {
+                  // Todo
+                  type: 'neovim',
+               },
+            ],
+         },
+         {
+            description: 'Move Cursor a Big Block Left',
+            platforms: [
+               {
+                  type: 'vim',
+                  triggers: ['J'],
+                  command: '20h',
+               },
+               {
+                  type: 'neovim',
+                  isVimClone: true,
+               },
+            ],
+         },
+         {
+            description: 'Move Cursor a Big Block Right',
+            platforms: [
+               {
+                  type: 'vim',
+                  triggers: ['L'],
+                  command: '20l',
+               },
+               {
+                  type: 'neovim',
+                  isVimClone: true,
                },
             ],
          },
@@ -38,34 +167,50 @@ export const config = [
    },
 
    {
-      group: 'Go Commands',
-      modes: ['normal', 'visual', 'pending'],
+      group: 'Fast Motions',
+      modes: ['normal', 'visual'],
       mappings: [
          {
-            description: 'Indent Lines',
+            description: 'Move Cursor Strong Up',
             platforms: [
                {
-                  type: 'vimToVscode',
-                  triggers: ['co'],
-                  command: 'editor.action.indentLines',
+                  type: 'vscodeToVim',
+                  triggers: ['up'],
+                  command: '2i',
+                  when: 'editorTextFocus && vim.mode != "Insert"',
                },
             ],
          },
-      ],
-   },
-
-   {
-      group: 'VS Code',
-      mappings: [
          {
-            description: 'Delete Left. (Required to Delete While in Normal Mode)',
+            description: 'Move Cursor Strong Down',
             platforms: [
                {
-                  type: 'vscode',
-                  triggers: ['backspace'],
-                  command: 'deleteLeft',
-                  removeCommand: '-editor.action.potato',
-                  when: 'textInputFocus',
+                  type: 'vscodeToVim',
+                  triggers: ['down'],
+                  command: '2k',
+                  when: 'editorTextFocus && vim.mode != "Insert"',
+               },
+            ],
+         },
+         {
+            description: 'Move Cursor Strong Left',
+            platforms: [
+               {
+                  type: 'vscodeToVim',
+                  triggers: ['left'],
+                  command: '2j',
+                  when: 'editorTextFocus && vim.mode != "Insert"',
+               },
+            ],
+         },
+         {
+            description: 'Move Cursor Strong Right',
+            platforms: [
+               {
+                  type: 'vscodeToVim',
+                  triggers: ['right'],
+                  command: '2l',
+                  when: 'editorTextFocus && vim.mode != "Insert"',
                },
             ],
          },
