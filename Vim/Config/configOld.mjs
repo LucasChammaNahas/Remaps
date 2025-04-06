@@ -106,217 +106,217 @@ export const config = {
    //    },
    // ],
 
-   wordMotions: [
-      { defaultModes: 'nvp' },
+   // wordMotions: [
+   //    { defaultModes: 'nvp' },
 
-      {
-         comment: 'Go to Start of Word',
-         before: 'w;',
-         after: 'w',
-      },
-      {
-         comment: 'Go to Start of WORD',
-         before: 'ww;',
-         after: 'W',
-      },
-      {
-         comment: 'Go to End of Word',
-         before: 'wl',
-         after: 'e',
-      },
-      {
-         comment: 'Go to End of WORD',
-         before: 'wwl',
-         after: 'E',
-      },
-      {
-         comment: 'Go Back to Start of Word',
-         before: 'wj',
-         after: 'b',
-      },
-      {
-         comment: 'Go Back to Start of WORD',
-         before: 'wwj',
-         after: 'B',
-      },
-      {
-         comment: 'Go Back to End of Word',
-         before: 'wh',
-         after: 'ge',
-      },
-      {
-         comment: 'Go Back to Start of WORD',
-         before: 'wwh',
-         after: 'gE',
-      },
-   ],
+   //    {
+   //       comment: 'Go to Start of Word',
+   //       before: 'w;',
+   //       after: 'w',
+   //    },
+   //    {
+   //       comment: 'Go to Start of WORD',
+   //       before: 'ww;',
+   //       after: 'W',
+   //    },
+   //    {
+   //       comment: 'Go to End of Word',
+   //       before: 'wl',
+   //       after: 'e',
+   //    },
+   //    {
+   //       comment: 'Go to End of WORD',
+   //       before: 'wwl',
+   //       after: 'E',
+   //    },
+   //    {
+   //       comment: 'Go Back to Start of Word',
+   //       before: 'wj',
+   //       after: 'b',
+   //    },
+   //    {
+   //       comment: 'Go Back to Start of WORD',
+   //       before: 'wwj',
+   //       after: 'B',
+   //    },
+   //    {
+   //       comment: 'Go Back to End of Word',
+   //       before: 'wh',
+   //       after: 'ge',
+   //    },
+   //    {
+   //       comment: 'Go Back to Start of WORD',
+   //       before: 'wwh',
+   //       after: 'gE',
+   //    },
+   // ],
 
-   lineMotions: [
-      { defaultModes: 'nvp' },
+   // lineMotions: [
+   //    { defaultModes: 'nvp' },
 
-      {
-         comment: 'Go to Start of Line',
-         before: 'h',
-         after: '^',
-      },
-      {
-         comment: 'Go to End of Line',
-         before: ';',
-         after: 'g_',
-      },
-   ],
+   //    {
+   //       comment: 'Go to Start of Line',
+   //       before: 'h',
+   //       after: '^',
+   //    },
+   //    {
+   //       comment: 'Go to End of Line',
+   //       before: ';',
+   //       after: 'g_',
+   //    },
+   // ],
 
-   ampleMotions: [
-      {
-         comment: 'Go to Top of Screen',
-         before: 'gi',
-         after: 'H',
-      },
-      {
-         comment: 'Go to Middle of Screen',
-         before: 'gj',
-         after: 'M',
-      },
-      {
-         comment: 'Go to Bottom of Screen',
-         before: 'gk',
-         after: 'L',
-      },
-      {
-         comment: 'Go to Top of Document',
-         before: 'ggi',
-         after: 'gg',
-      },
-      {
-         comment: 'Go to Bottom of Document',
-         before: 'ggk',
-         after: 'G',
-      },
-   ],
+   // ampleMotions: [
+   //    {
+   //       comment: 'Go to Top of Screen',
+   //       before: 'gi',
+   //       after: 'H',
+   //    },
+   //    {
+   //       comment: 'Go to Middle of Screen',
+   //       before: 'gj',
+   //       after: 'M',
+   //    },
+   //    {
+   //       comment: 'Go to Bottom of Screen',
+   //       before: 'gk',
+   //       after: 'L',
+   //    },
+   //    {
+   //       comment: 'Go to Top of Document',
+   //       before: 'ggi',
+   //       after: 'gg',
+   //    },
+   //    {
+   //       comment: 'Go to Bottom of Document',
+   //       before: 'ggk',
+   //       after: 'G',
+   //    },
+   // ],
 
-   scrollMotions: [
-      {
-         comment: 'Scroll Page Up (Until Cursor is at Bottom)',
-         before: 'go',
-         after: 'zb',
-      },
-      {
-         comment: 'Scroll Page Until Cursor is at Center',
-         before: 'g.',
-         after: 'zz',
-      },
-      {
-         comment: 'Scroll Page Down (Until Cursor is at Top)',
-         before: 'gl',
-         after: 'zt',
-      },
-      {
-         comment: 'Scroll Page Up Moving Cursor',
-         before: 'I',
-         after: '<C-u>',
-      },
-      {
-         comment: 'Scroll Page Down Moving Cursor',
-         before: 'K',
-         after: '<C-d>',
-      },
-      {
-         comment: 'Scroll Page Up',
-         key: 'ctrl+shift+u',
-         command: 'vim.remap',
-         when: 'editorFocus',
-         after: '<C-y>',
-      },
-      {
-         comment: 'Scroll Page Up',
-         key: 'ctrl+shift+u',
-         command: '-workbench.action.output.toggleOutput',
-      },
-      {
-         comment: 'Scroll Page Down',
-         key: 'ctrl+shift+j',
-         command: 'vim.remap',
-         when: 'editorFocus',
-         after: '<C-e>',
-      },
-   ],
+   // scrollMotions: [
+   //    {
+   //       comment: 'Scroll Page Up (Until Cursor is at Bottom)',
+   //       before: 'go',
+   //       after: 'zb',
+   //    },
+   //    {
+   //       comment: 'Scroll Page Until Cursor is at Center',
+   //       before: 'g.',
+   //       after: 'zz',
+   //    },
+   //    {
+   //       comment: 'Scroll Page Down (Until Cursor is at Top)',
+   //       before: 'gl',
+   //       after: 'zt',
+   //    },
+   //    {
+   //       comment: 'Scroll Page Up Moving Cursor',
+   //       before: 'I',
+   //       after: '<C-u>',
+   //    },
+   //    {
+   //       comment: 'Scroll Page Down Moving Cursor',
+   //       before: 'K',
+   //       after: '<C-d>',
+   //    },
+   //    {
+   //       comment: 'Scroll Page Up',
+   //       key: 'ctrl+shift+u',
+   //       command: 'vim.remap',
+   //       when: 'editorFocus',
+   //       after: '<C-y>',
+   //    },
+   //    {
+   //       comment: 'Scroll Page Up',
+   //       key: 'ctrl+shift+u',
+   //       command: '-workbench.action.output.toggleOutput',
+   //    },
+   //    {
+   //       comment: 'Scroll Page Down',
+   //       key: 'ctrl+shift+j',
+   //       command: 'vim.remap',
+   //       when: 'editorFocus',
+   //       after: '<C-e>',
+   //    },
+   // ],
 
    targetedMotions: getTargetedMotions(),
 
-   blockSelectionMotions: [
-      { defaultModes: 'v' },
+   // blockSelectionMotions: [
+   //    { defaultModes: 'v' },
 
-      {
-         comment: 'Select Inner {} Block',
-         before: 'uj',
-         after: 'i{',
-      },
-      {
-         comment: 'Select Outer {} Block',
-         before: 'oj',
-         after: 'a{',
-      },
-      {
-         comment: 'Select Inner [] Block ',
-         before: 'ue',
-         after: 'i[',
-      },
-      {
-         comment: 'Select Outer [] Block',
-         before: 'oe',
-         after: 'a[',
-      },
-      {
-         comment: 'Select Inner () Block',
-         before: 'us',
-         after: 'i(',
-      },
-      {
-         comment: 'Select Outer () Block',
-         before: 'os',
-         after: 'a(',
-      },
-      {
-         comment: 'Select Inner <> Block',
-         before: 'uu',
-         after: 'i<',
-      },
-      {
-         comment: 'Select Outer <> Block',
-         before: 'ou',
-         after: 'a<',
-      },
-      {
-         comment: 'Select Inner "" Block',
-         before: "u'",
-         after: 'i"',
-      },
-      {
-         comment: 'Select Outer "" Block',
-         before: "o'",
-         after: 'a"',
-      },
-      {
-         comment: 'Select Inner `` Block',
-         before: 'uh',
-         after: 'i`',
-      },
-      {
-         comment: 'Select Outer `` Block',
-         before: 'oh',
-         after: 'a`',
-      },
-      {
-         comment: "Select Inner '' Block",
-         before: 'ul',
-         after: "i'",
-      },
-      {
-         comment: "Select Outer '' Block",
-         before: 'ol',
-         after: "a'",
-      },
-   ],
+   //    {
+   //       comment: 'Select Inner {} Block',
+   //       before: 'uj',
+   //       after: 'i{',
+   //    },
+   //    {
+   //       comment: 'Select Outer {} Block',
+   //       before: 'oj',
+   //       after: 'a{',
+   //    },
+   //    {
+   //       comment: 'Select Inner [] Block ',
+   //       before: 'ue',
+   //       after: 'i[',
+   //    },
+   //    {
+   //       comment: 'Select Outer [] Block',
+   //       before: 'oe',
+   //       after: 'a[',
+   //    },
+   //    {
+   //       comment: 'Select Inner () Block',
+   //       before: 'us',
+   //       after: 'i(',
+   //    },
+   //    {
+   //       comment: 'Select Outer () Block',
+   //       before: 'os',
+   //       after: 'a(',
+   //    },
+   //    {
+   //       comment: 'Select Inner <> Block',
+   //       before: 'uu',
+   //       after: 'i<',
+   //    },
+   //    {
+   //       comment: 'Select Outer <> Block',
+   //       before: 'ou',
+   //       after: 'a<',
+   //    },
+   //    {
+   //       comment: 'Select Inner "" Block',
+   //       before: "u'",
+   //       after: 'i"',
+   //    },
+   //    {
+   //       comment: 'Select Outer "" Block',
+   //       before: "o'",
+   //       after: 'a"',
+   //    },
+   //    {
+   //       comment: 'Select Inner `` Block',
+   //       before: 'uh',
+   //       after: 'i`',
+   //    },
+   //    {
+   //       comment: 'Select Outer `` Block',
+   //       before: 'oh',
+   //       after: 'a`',
+   //    },
+   //    {
+   //       comment: "Select Inner '' Block",
+   //       before: 'ul',
+   //       after: "i'",
+   //    },
+   //    {
+   //       comment: "Select Outer '' Block",
+   //       before: 'ol',
+   //       after: "a'",
+   //    },
+   // ],
 
    pasteCommands: [
       { defaultModes: 'n' },
@@ -507,120 +507,120 @@ export const config = {
       }),
    ],
 
-   insertCommands: [
-      { defaultModes: 'n' },
+   // insertCommands: [
+   //    { defaultModes: 'n' },
 
-      {
-         comment: 'Inner Selector',
-         before: 'u',
-         after: 'i',
-         modes: 'vp',
-      },
-      {
-         comment: 'Outer Selector',
-         before: 'o',
-         after: 'a',
-         modes: 'vp',
-      },
+   //    {
+   //       comment: 'Inner Selector',
+   //       before: 'u',
+   //       after: 'i',
+   //       modes: 'vp',
+   //    },
+   //    {
+   //       comment: 'Outer Selector',
+   //       before: 'o',
+   //       after: 'a',
+   //       modes: 'vp',
+   //    },
 
-      {
-         comment: 'Insert Cursor Before',
-         before: 'u',
-         after: 'i',
-      },
-      {
-         comment: 'Insert Cursor at Start of Line',
-         before: 'U',
-         after: 'I',
-      },
-      {
-         comment: 'Insert Cursor After',
-         before: 'o',
-         after: 'a',
-      },
-      {
-         comment: 'Insert Cursor at End of Line',
-         before: 'O',
-         after: 'A',
-      },
+   //    {
+   //       comment: 'Insert Cursor Before',
+   //       before: 'u',
+   //       after: 'i',
+   //    },
+   //    {
+   //       comment: 'Insert Cursor at Start of Line',
+   //       before: 'U',
+   //       after: 'I',
+   //    },
+   //    {
+   //       comment: 'Insert Cursor After',
+   //       before: 'o',
+   //       after: 'a',
+   //    },
+   //    {
+   //       comment: 'Insert Cursor at End of Line',
+   //       before: 'O',
+   //       after: 'A',
+   //    },
 
-      {
-         comment: 'Insert Line Below and Enter Insert Mode',
-         before: '<enter>',
-         after: 'o',
-      },
-      {
-         comment: 'Insert Line Above and Enter Insert Mode',
-         key: 'shift+enter',
-         command: 'vim.remap',
-         when: 'editorTextFocus && vim.mode == "Normal"',
-         after: 'gza',
-      },
-      {
-         comment: 'Insert Line Above and Enter Insert Mode (Fix)',
-         before: 'gza',
-         after: 'O',
-      },
+   //    {
+   //       comment: 'Insert Line Below and Enter Insert Mode',
+   //       before: '<enter>',
+   //       after: 'o',
+   //    },
+   //    {
+   //       comment: 'Insert Line Above and Enter Insert Mode',
+   //       key: 'shift+enter',
+   //       command: 'vim.remap',
+   //       when: 'editorTextFocus && vim.mode == "Normal"',
+   //       after: 'gza',
+   //    },
+   //    {
+   //       comment: 'Insert Line Above and Enter Insert Mode (Fix)',
+   //       before: 'gza',
+   //       after: 'O',
+   //    },
 
-      {
-         comment: 'Insert Command on Command Line',
-         before: '|',
-         after: ':',
-      },
-   ],
+   //    {
+   //       comment: 'Insert Command on Command Line',
+   //       before: '|',
+   //       after: ':',
+   //    },
+   // ],
 
-   caseCommands: [
-      { defaultModes: 'n' },
+   // caseCommands: [
+   //    { defaultModes: 'n' },
 
-      {
-         comment: 'Toggle Case',
-         before: 'yy',
-         after: '~',
-         modes: 'nv',
-      },
-      {
-         comment: 'Upper Case',
-         before: 'yu',
-         after: 'U',
-         modes: 'v',
-      },
-      {
-         comment: 'Lower Case',
-         before: 'yi',
-         after: 'u',
-         modes: 'v',
-      },
-      {
-         comment: 'Toggle Word Case',
-         before: 'ywy',
-         after: 'viw~',
-      },
-      {
-         comment: 'Word Upper Case',
-         before: 'ywu',
-         after: 'viwU',
-      },
-      {
-         comment: 'Word Lower Case',
-         before: 'ywi',
-         after: 'viwu',
-      },
-      {
-         comment: 'Toggle WORD Case',
-         before: 'ywwy',
-         after: 'EvB~',
-      },
-      {
-         comment: 'WORD Upper Case',
-         before: 'ywwu',
-         after: 'EvBU',
-      },
-      {
-         comment: 'WORD Lower Case',
-         before: 'ywwi',
-         after: 'EvBu',
-      },
-   ],
+   //    {
+   //       comment: 'Toggle Case',
+   //       before: 'yy',
+   //       after: '~',
+   //       modes: 'nv',
+   //    },
+   //    {
+   //       comment: 'Upper Case',
+   //       before: 'yu',
+   //       after: 'U',
+   //       modes: 'v',
+   //    },
+   //    {
+   //       comment: 'Lower Case',
+   //       before: 'yi',
+   //       after: 'u',
+   //       modes: 'v',
+   //    },
+   //    {
+   //       comment: 'Toggle Word Case',
+   //       before: 'ywy',
+   //       after: 'viw~',
+   //    },
+   //    {
+   //       comment: 'Word Upper Case',
+   //       before: 'ywu',
+   //       after: 'viwU',
+   //    },
+   //    {
+   //       comment: 'Word Lower Case',
+   //       before: 'ywi',
+   //       after: 'viwu',
+   //    },
+   //    {
+   //       comment: 'Toggle WORD Case',
+   //       before: 'ywwy',
+   //       after: 'EvB~',
+   //    },
+   //    {
+   //       comment: 'WORD Upper Case',
+   //       before: 'ywwu',
+   //       after: 'EvBU',
+   //    },
+   //    {
+   //       comment: 'WORD Lower Case',
+   //       before: 'ywwi',
+   //       after: 'EvBu',
+   //    },
+   // ],
 
    goCommands: [
       {
