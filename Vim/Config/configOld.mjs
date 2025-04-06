@@ -903,226 +903,226 @@ export const config = {
    //    },
    // ],
 
-   searchAndReplaceCommands: [
-      {
-         comment: 'Open Replace',
-         key: 'ctrl+d',
-         command: 'editor.action.startFindReplaceAction',
-         when: 'editorFocus || editorIsOpen',
-      },
-      {
-         comment: 'Open Replace',
-         key: 'ctrl+h',
-         command: '-editor.action.startFindReplaceAction',
-         when: 'editorFocus || editorIsOpen',
-      },
-   ],
+   // searchAndReplaceCommands: [
+   //    {
+   //       comment: 'Open Replace',
+   //       key: 'ctrl+d',
+   //       command: 'editor.action.startFindReplaceAction',
+   //       when: 'editorFocus || editorIsOpen',
+   //    },
+   //    {
+   //       comment: 'Open Replace',
+   //       key: 'ctrl+h',
+   //       command: '-editor.action.startFindReplaceAction',
+   //       when: 'editorFocus || editorIsOpen',
+   //    },
+   // ],
 
-   disabledCommands: [
-      {
-         comment: 'Conflict With Symbols',
-         key: 'alt+h',
-         command: '-git.viewFileHistory',
-      },
-      {
-         comment: 'Quit All Instances',
-         key: 'ctrl+q',
-         command: '-workbench.action.quit',
-      },
-      {
-         comment: 'Open View List',
-         key: 'ctrl+q',
-         command: '-workbench.action.quickOpenView',
-      },
-      {
-         comment: 'Trigger Suggest',
-         key: 'ctrl+i',
-         command: '-editor.action.triggerSuggest',
-         when: 'editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible',
-      },
-      {
-         comment: 'Toggle Tab Focus Mode',
-         key: 'ctrl+m',
-         command: '-editor.action.toggleTabFocusMode',
-      },
-   ],
+   // disabledCommands: [
+   //    {
+   //       comment: 'Conflict With Symbols',
+   //       key: 'alt+h',
+   //       command: '-git.viewFileHistory',
+   //    },
+   //    {
+   //       comment: 'Quit All Instances',
+   //       key: 'ctrl+q',
+   //       command: '-workbench.action.quit',
+   //    },
+   //    {
+   //       comment: 'Open View List',
+   //       key: 'ctrl+q',
+   //       command: '-workbench.action.quickOpenView',
+   //    },
+   //    {
+   //       comment: 'Trigger Suggest',
+   //       key: 'ctrl+i',
+   //       command: '-editor.action.triggerSuggest',
+   //       when: 'editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible',
+   //    },
+   //    {
+   //       comment: 'Toggle Tab Focus Mode',
+   //       key: 'ctrl+m',
+   //       command: '-editor.action.toggleTabFocusMode',
+   //    },
+   // ],
 
-   listNavigation: [
-      {
-         comment: 'Up',
-         key: 'i',
-         command: 'list.focusUp',
-         when: 'listFocus && !inputFocus',
-      },
-      {
-         comment: 'Down',
-         key: 'k',
-         command: 'list.focusDown',
-         when: 'listFocus && !inputFocus',
-      },
-      {
-         comment: 'Collapse Current Item',
-         key: 'j',
-         command: 'list.collapse',
-         when: 'listFocus && !inputFocus',
-      },
-      {
-         comment: 'Collapse All',
-         key: 't y',
-         command: 'workbench.files.action.collapseExplorerFolders',
-         when: 'listFocus && !inputFocus',
-      },
-      {
-         comment: 'Expand Current Item',
-         key: 'l',
-         command: 'list.toggleExpand',
-         when: 'listFocus && !inputFocus',
-      },
-      {
-         comment: 'Navigate to Top',
-         key: 'g i',
-         command: 'list.focusFirst',
-         when: 'listFocus && !inputFocus',
-      },
-      {
-         comment: 'Navigate to Bottom',
-         key: 'g k',
-         command: 'list.focusLast',
-         when: 'listFocus && !inputFocus',
-      },
-   ],
+   // listNavigation: [
+   //    {
+   //       comment: 'Up',
+   //       key: 'i',
+   //       command: 'list.focusUp',
+   //       when: 'listFocus && !inputFocus',
+   //    },
+   //    {
+   //       comment: 'Down',
+   //       key: 'k',
+   //       command: 'list.focusDown',
+   //       when: 'listFocus && !inputFocus',
+   //    },
+   //    {
+   //       comment: 'Collapse Current Item',
+   //       key: 'j',
+   //       command: 'list.collapse',
+   //       when: 'listFocus && !inputFocus',
+   //    },
+   //    {
+   //       comment: 'Collapse All',
+   //       key: 't y',
+   //       command: 'workbench.files.action.collapseExplorerFolders',
+   //       when: 'listFocus && !inputFocus',
+   //    },
+   //    {
+   //       comment: 'Expand Current Item',
+   //       key: 'l',
+   //       command: 'list.toggleExpand',
+   //       when: 'listFocus && !inputFocus',
+   //    },
+   //    {
+   //       comment: 'Navigate to Top',
+   //       key: 'g i',
+   //       command: 'list.focusFirst',
+   //       when: 'listFocus && !inputFocus',
+   //    },
+   //    {
+   //       comment: 'Navigate to Bottom',
+   //       key: 'g k',
+   //       command: 'list.focusLast',
+   //       when: 'listFocus && !inputFocus',
+   //    },
+   // ],
 
-   sidebarNavigation: [
-      {
-         comment: 'Go Back to Editor',
-         key: 'escape',
-         command: 'workbench.action.focusActiveEditorGroup',
-         when: '!editorTextFocus && !treeFindOpen && !renameInputVisible && !callHierarchyVisible',
-      },
-      {
-         comment: 'Focus Sidebar',
-         key: 'b b',
-         command: 'workbench.action.focusSideBar',
-         when: '!inputFocus',
-      },
-      {
-         comment: 'Focus Sidebar',
-         before: 'bb',
-         command: 'workbench.action.focusSideBar',
-         modes: 'n',
-      },
-      {
-         comment: 'Toggle Sidebar',
-         key: 'b m',
-         command: 'workbench.action.toggleSidebarVisibility',
-         when: '!inputFocus',
-      },
-      {
-         comment: 'Toggle Sidebar',
-         before: 'bm',
-         command: 'workbench.action.toggleSidebarVisibility',
-         modes: 'n',
-      },
-      {
-         comment: 'Next Sidebar',
-         key: 'b k',
-         command: 'workbench.action.nextSideBarView',
-         when: '!inputFocus',
-      },
-      {
-         comment: 'Next Sidebar',
-         before: 'bk',
-         command: 'workbench.action.nextSideBarView',
-         modes: 'n',
-      },
-      {
-         comment: 'Previous Sidebar',
-         key: 'b i',
-         command: 'workbench.action.previousSideBarView',
-         when: '!inputFocus',
-      },
-      {
-         comment: 'Previous Sidebar',
-         before: 'bi',
-         command: 'workbench.action.previousSideBarView',
-         modes: 'n',
-      },
-   ],
+   // sidebarNavigation: [
+   //    {
+   //       comment: 'Go Back to Editor',
+   //       key: 'escape',
+   //       command: 'workbench.action.focusActiveEditorGroup',
+   //       when: '!editorTextFocus && !treeFindOpen && !renameInputVisible && !callHierarchyVisible',
+   //    },
+   //    {
+   //       comment: 'Focus Sidebar',
+   //       key: 'b b',
+   //       command: 'workbench.action.focusSideBar',
+   //       when: '!inputFocus',
+   //    },
+   //    {
+   //       comment: 'Focus Sidebar',
+   //       before: 'bb',
+   //       command: 'workbench.action.focusSideBar',
+   //       modes: 'n',
+   //    },
+   //    {
+   //       comment: 'Toggle Sidebar',
+   //       key: 'b m',
+   //       command: 'workbench.action.toggleSidebarVisibility',
+   //       when: '!inputFocus',
+   //    },
+   //    {
+   //       comment: 'Toggle Sidebar',
+   //       before: 'bm',
+   //       command: 'workbench.action.toggleSidebarVisibility',
+   //       modes: 'n',
+   //    },
+   //    {
+   //       comment: 'Next Sidebar',
+   //       key: 'b k',
+   //       command: 'workbench.action.nextSideBarView',
+   //       when: '!inputFocus',
+   //    },
+   //    {
+   //       comment: 'Next Sidebar',
+   //       before: 'bk',
+   //       command: 'workbench.action.nextSideBarView',
+   //       modes: 'n',
+   //    },
+   //    {
+   //       comment: 'Previous Sidebar',
+   //       key: 'b i',
+   //       command: 'workbench.action.previousSideBarView',
+   //       when: '!inputFocus',
+   //    },
+   //    {
+   //       comment: 'Previous Sidebar',
+   //       before: 'bi',
+   //       command: 'workbench.action.previousSideBarView',
+   //       modes: 'n',
+   //    },
+   // ],
 
-   treeNavigation: [
-      {
-         comment: 'Open Tree View',
-         key: 'b n',
-         command: 'workbench.view.explorer',
-         when: 'listFocus && !inputFocus',
-      },
-      {
-         comment: 'Open Tree View',
-         before: 'bn',
-         command: 'workbench.view.explorer',
-         modes: 'n',
-      },
-      {
-         comment: 'Go to File ',
-         key: 'Enter',
-         command: 'list.select',
-         when: 'listFocus && !inputFocus',
-      },
-      {
-         comment: 'Create New File',
-         key: 'n',
-         command: 'explorer.newFile',
-         when: 'listFocus && !inputFocus',
-      },
-      {
-         comment: 'New Folder',
-         key: 'm',
-         command: 'explorer.newFolder',
-         when: 'listFocus && !inputFocus',
-      },
-      {
-         comment: 'Collapse Tree',
-         key: 'q',
-         command: 'workbench.files.action.collapseExplorerFolders',
-         when: 'listFocus && !inputFocus',
-      },
-      {
-         comment: 'Cut File',
-         key: 'a',
-         command: 'filesExplorer.cut',
-         when: 'listFocus && !inputFocus',
-      },
-      {
-         comment: 'Delete File',
-         key: 's',
-         command: 'deleteFile',
-         when: 'listFocus && !inputFocus',
-      },
-      {
-         comment: 'Copy File',
-         key: 'd',
-         command: 'filesExplorer.copy',
-         when: 'listFocus && !inputFocus',
-      },
-      {
-         comment: 'Paste File',
-         key: 'f',
-         command: 'filesExplorer.paste',
-         when: 'listFocus && !inputFocus',
-      },
-      {
-         comment: 'Rename File',
-         key: 'r',
-         command: 'renameFile',
-         when: 'listFocus && !inputFocus',
-      },
-      {
-         comment: 'Find in Tree',
-         key: 'p',
-         command: 'list.find',
-         when: 'listFocus && !inputFocus',
-      },
-   ],
+   // treeNavigation: [
+   //    {
+   //       comment: 'Open Tree View',
+   //       key: 'b n',
+   //       command: 'workbench.view.explorer',
+   //       when: 'listFocus && !inputFocus',
+   //    },
+   //    {
+   //       comment: 'Open Tree View',
+   //       before: 'bn',
+   //       command: 'workbench.view.explorer',
+   //       modes: 'n',
+   //    },
+   //    {
+   //       comment: 'Go to File ',
+   //       key: 'Enter',
+   //       command: 'list.select',
+   //       when: 'listFocus && !inputFocus',
+   //    },
+   //    {
+   //       comment: 'Create New File',
+   //       key: 'n',
+   //       command: 'explorer.newFile',
+   //       when: 'listFocus && !inputFocus',
+   //    },
+   //    {
+   //       comment: 'New Folder',
+   //       key: 'm',
+   //       command: 'explorer.newFolder',
+   //       when: 'listFocus && !inputFocus',
+   //    },
+   //    {
+   //       comment: 'Collapse Tree',
+   //       key: 'q',
+   //       command: 'workbench.files.action.collapseExplorerFolders',
+   //       when: 'listFocus && !inputFocus',
+   //    },
+   //    {
+   //       comment: 'Cut File',
+   //       key: 'a',
+   //       command: 'filesExplorer.cut',
+   //       when: 'listFocus && !inputFocus',
+   //    },
+   //    {
+   //       comment: 'Delete File',
+   //       key: 's',
+   //       command: 'deleteFile',
+   //       when: 'listFocus && !inputFocus',
+   //    },
+   //    {
+   //       comment: 'Copy File',
+   //       key: 'd',
+   //       command: 'filesExplorer.copy',
+   //       when: 'listFocus && !inputFocus',
+   //    },
+   //    {
+   //       comment: 'Paste File',
+   //       key: 'f',
+   //       command: 'filesExplorer.paste',
+   //       when: 'listFocus && !inputFocus',
+   //    },
+   //    {
+   //       comment: 'Rename File',
+   //       key: 'r',
+   //       command: 'renameFile',
+   //       when: 'listFocus && !inputFocus',
+   //    },
+   //    {
+   //       comment: 'Find in Tree',
+   //       key: 'p',
+   //       command: 'list.find',
+   //       when: 'listFocus && !inputFocus',
+   //    },
+   // ],
 
    openEditorsNavigation: [
       {

@@ -1424,6 +1424,17 @@ export const config = [
             ],
          },
          {
+            description: 'Trigger Suggestions (Remove Default)',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['ctrl+i'],
+                  command: '-editor.action.triggerSuggest',
+                  when: 'editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible',
+               },
+            ],
+         },
+         {
             description: 'Trigger Copilot',
             platforms: [
                {
@@ -1624,6 +1635,379 @@ export const config = [
                   type: 'vimToVscode',
                   triggers: ['gq'],
                   command: 'workbench.action.reopenClosedEditor',
+               },
+            ],
+         },
+      ],
+   },
+
+   {
+      group: 'Search and replace commands',
+      mappings: [
+         {
+            description: 'Open Replace',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['ctrl+d'],
+                  command: 'editor.action.startFindReplaceAction',
+                  when: 'editorFocus || editorIsOpen',
+               },
+            ],
+         },
+         {
+            description: 'Removes Default Replace Command',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['ctrl+h'],
+                  command: '-editor.action.startFindReplaceAction',
+                  when: 'editorFocus || editorIsOpen',
+               },
+            ],
+         },
+      ],
+   },
+
+   {
+      group: 'Disabled Commands not Related to Other Mappings',
+      mappings: [
+         {
+            description: 'Conflict With Symbols',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['alt+h'],
+                  command: '-git.viewFileHistory',
+               },
+            ],
+         },
+         {
+            description: 'Quit All Instances',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['ctrl+q'],
+                  command: '-workbench.action.quit',
+               },
+            ],
+         },
+         {
+            description: 'Open View List',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['ctrl+q'],
+                  command: '-workbench.action.quickOpenView',
+               },
+            ],
+         },
+         {
+            description: 'Toggle Tab Focus Mode',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['ctrl+m'],
+                  command: '-editor.action.toggleTabFocusMode',
+               },
+            ],
+         },
+      ],
+   },
+
+   {
+      group: 'List navigation',
+      mappings: [
+         {
+            description: 'Up',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['i'],
+                  command: 'list.focusUp',
+                  when: 'listFocus && !inputFocus',
+               },
+            ],
+         },
+         {
+            description: 'Down',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['k'],
+                  command: 'list.focusDown',
+                  when: 'listFocus && !inputFocus',
+               },
+            ],
+         },
+         {
+            description: 'Collapse Current Item',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['j'],
+                  command: 'list.collapse',
+                  when: 'listFocus && !inputFocus',
+               },
+            ],
+         },
+         {
+            description: 'Collapse All',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['t y'],
+                  command: 'workbench.files.action.collapseExplorerFolders',
+                  when: 'listFocus && !inputFocus',
+               },
+            ],
+         },
+         {
+            description: 'Expand Current Item',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['l'],
+                  command: 'list.toggleExpand',
+                  when: 'listFocus && !inputFocus',
+               },
+            ],
+         },
+         {
+            description: 'Navigate to Top',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['g i'],
+                  command: 'list.focusFirst',
+                  when: 'listFocus && !inputFocus',
+               },
+            ],
+         },
+         {
+            description: 'Navigate to Bottom',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['g k'],
+                  command: 'list.focusLast',
+                  when: 'listFocus && !inputFocus',
+               },
+            ],
+         },
+      ],
+   },
+
+   {
+      group: 'Sidebar navigation',
+      modes: ['normal'],
+      mappings: [
+         // Todo - Esc might not be the best option for this.
+         {
+            description: 'Go Back to Editor',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['escape'],
+                  command: 'workbench.action.focusActiveEditorGroup',
+                  when: '!editorTextFocus && !treeFindOpen && !renameInputVisible && !callHierarchyVisible',
+               },
+            ],
+         },
+         {
+            description: 'Focus Sidebar',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['b b'],
+                  command: 'workbench.action.focusSideBar',
+                  when: '!inputFocus',
+               },
+               {
+                  type: 'vimToVscode',
+                  triggers: ['bb'],
+                  command: 'workbench.action.focusSideBar',
+               },
+            ],
+         },
+         {
+            description: 'Toggle Sidebar',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['b m'],
+                  command: 'workbench.action.toggleSidebarVisibility',
+                  when: '!inputFocus',
+               },
+               {
+                  type: 'vimToVscode',
+                  triggers: ['bm'],
+                  command: 'workbench.action.toggleSidebarVisibility',
+               },
+            ],
+         },
+         {
+            description: 'Next Sidebar',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['b k'],
+                  command: 'workbench.action.nextSideBarView',
+                  when: '!inputFocus',
+               },
+               {
+                  type: 'vimToVscode',
+                  triggers: ['bk'],
+                  command: 'workbench.action.nextSideBarView',
+               },
+            ],
+         },
+         {
+            description: 'Previous Sidebar',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['b i'],
+                  command: 'workbench.action.previousSideBarView',
+                  when: '!inputFocus',
+               },
+               {
+                  type: 'vimToVscode',
+                  triggers: ['bi'],
+                  command: 'workbench.action.previousSideBarView',
+               },
+            ],
+         },
+      ],
+   },
+
+   {
+      group: 'Tree Navigation',
+      mappings: [
+         {
+            description: 'Open Tree View',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['b n'],
+                  command: 'workbench.view.explorer',
+                  when: 'listFocus && !inputFocus',
+               },
+               {
+                  type: 'vimToVscode',
+                  triggers: ['bn'],
+                  command: 'workbench.view.explorer',
+                  modes: ['normal'],
+               },
+            ],
+         },
+         {
+            description: 'Go to File (Required for Mac)',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['Enter'],
+                  command: 'list.select',
+                  when: 'listFocus && !inputFocus',
+               },
+            ],
+         },
+         {
+            description: 'Create New File',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['n'],
+                  command: 'explorer.newFile',
+                  when: 'listFocus && !inputFocus',
+               },
+            ],
+         },
+         {
+            description: 'New Folder',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['m'],
+                  command: 'explorer.newFolder',
+                  when: 'listFocus && !inputFocus',
+               },
+            ],
+         },
+         {
+            description: 'Collapse Tree',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['q'],
+                  command: 'workbench.files.action.collapseExplorerFolders',
+                  when: 'listFocus && !inputFocus',
+               },
+            ],
+         },
+         {
+            description: 'Cut File',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['a'],
+                  command: 'filesExplorer.cut',
+                  when: 'listFocus && !inputFocus',
+               },
+            ],
+         },
+         {
+            description: 'Delete File',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['s'],
+                  command: 'deleteFile',
+                  when: 'listFocus && !inputFocus',
+               },
+            ],
+         },
+         {
+            description: 'Copy File',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['d'],
+                  command: 'filesExplorer.copy',
+                  when: 'listFocus && !inputFocus',
+               },
+            ],
+         },
+         {
+            description: 'Paste File',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['f'],
+                  command: 'filesExplorer.paste',
+                  when: 'listFocus && !inputFocus',
+               },
+            ],
+         },
+         {
+            description: 'Rename File',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['r'],
+                  command: 'renameFile',
+                  when: 'listFocus && !inputFocus',
+               },
+            ],
+         },
+         {
+            description: 'Find in Tree',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['p'],
+                  command: 'list.find',
+                  when: 'listFocus && !inputFocus',
                },
             ],
          },
