@@ -1083,4 +1083,550 @@ export const config = [
          },
       ],
    },
+
+   {
+      group: 'Fold Commands',
+      modes: ['normal'],
+      mappings: [
+         {
+            description: 'Define a Fold Up Motion',
+            platforms: [
+               {
+                  type: 'vim',
+                  triggers: ['th'],
+                  command: 'zf',
+               },
+               {
+                  type: 'neovim',
+                  isVimClone: true,
+               },
+            ],
+         },
+         {
+            description: 'Delete a Fold Up Motion',
+            platforms: [
+               {
+                  type: 'vim',
+                  triggers: ['ts'],
+                  command: 'zd',
+               },
+               {
+                  type: 'neovim',
+                  isVimClone: true,
+               },
+            ],
+         },
+         {
+            description: 'Toggle Fold Up Motion',
+            platforms: [
+               {
+                  type: 'vimToVscode',
+                  triggers: ['tj'],
+                  command: 'editor.toggleFold',
+               },
+               {
+                  type: 'neovim',
+                  // Todo
+               },
+            ],
+         },
+         {
+            description: 'Fold Up Region Level 1',
+            platforms: [
+               {
+                  type: 'vimToVscode',
+                  triggers: ['ty'],
+                  command: 'editor.foldLevel1',
+               },
+               {
+                  type: 'neovim',
+                  // Todo
+               },
+            ],
+         },
+         {
+            description: 'Fold Up Region Level 2',
+            platforms: [
+               {
+                  type: 'vimToVscode',
+                  triggers: ['tu'],
+                  command: 'editor.foldLevel2',
+               },
+               {
+                  type: 'neovim',
+                  // Todo
+               },
+            ],
+         },
+         {
+            description: 'Fold Up Region Level 3',
+            platforms: [
+               {
+                  type: 'vimToVscode',
+                  triggers: ['ti'],
+                  command: 'editor.foldLevel3',
+               },
+               {
+                  type: 'neovim',
+                  // Todo
+               },
+            ],
+         },
+         {
+            description: 'Fold Up Region Level 4',
+            platforms: [
+               {
+                  type: 'vimToVscode',
+                  triggers: ['to'],
+                  command: 'editor.foldLevel4',
+               },
+               {
+                  type: 'neovim',
+                  // Todo
+               },
+            ],
+         },
+         {
+            description: 'Fold Up Region Level 5',
+            platforms: [
+               {
+                  type: 'vimToVscode',
+                  triggers: ['tp'],
+                  command: 'editor.foldLevel5',
+               },
+               {
+                  type: 'neovim',
+                  // Todo
+               },
+            ],
+         },
+         {
+            description: 'Fold Up All Levels',
+            platforms: [
+               {
+                  type: 'vimToVscode',
+                  triggers: ['TT'],
+                  command: 'editor.foldAll',
+               },
+               {
+                  type: 'neovim',
+                  // Todo
+               },
+            ],
+         },
+         {
+            description: 'Unfold Up All Levels',
+            platforms: [
+               {
+                  type: 'vimToVscode',
+                  triggers: ['tt'],
+                  command: 'editor.unfoldAll',
+               },
+               {
+                  type: 'neovim',
+                  // Todo
+               },
+            ],
+         },
+      ],
+   },
+
+   {
+      group: 'Mark commands',
+      modes: ['normal'],
+      mappings: [
+         {
+            description: 'Set Mark',
+            platforms: [
+               {
+                  type: 'vim',
+                  triggers: ['M'],
+                  command: 'm',
+               },
+               {
+                  type: 'neovim',
+                  isVimClone: true,
+               },
+            ],
+         },
+         {
+            description: 'Go to Mark',
+            platforms: [
+               {
+                  type: 'vim',
+                  triggers: ['m'],
+                  command: '`',
+               },
+               {
+                  type: 'neovim',
+                  isVimClone: true,
+               },
+            ],
+         },
+         {
+            description: 'Copies From the current position up to mark #',
+            platforms: [
+               {
+                  type: 'vim',
+                  triggers: ['dm'],
+                  command: 'y`',
+               },
+               {
+                  type: 'neovim',
+                  isVimClone: true,
+               },
+            ],
+         },
+      ],
+   },
+
+   {
+      group: 'Change-List Commands',
+      modes: ['normal'],
+      mappings: [
+         {
+            description: 'Go Back in Change List',
+            platforms: [
+               {
+                  type: 'vim',
+                  triggers: ['gn'],
+                  command: 'g;',
+               },
+               {
+                  type: 'neovim',
+                  isVimClone: true,
+               },
+            ],
+         },
+         {
+            description: 'Go Forth in Change List',
+            platforms: [
+               {
+                  type: 'vim',
+                  triggers: ['gm'],
+                  command: 'g,',
+               },
+               {
+                  type: 'neovim',
+                  isVimClone: true,
+               },
+            ],
+         },
+      ],
+   },
+
+   {
+      group: 'Join line commands',
+      modes: ['normal'],
+      mappings: [
+         {
+            description: 'Join With Line Below Without Space',
+            platforms: [
+               {
+                  type: 'vim',
+                  triggers: ['cj'],
+                  command: 'gJ',
+               },
+               {
+                  type: 'neovim',
+                  isVimClone: true,
+               },
+            ],
+         },
+         {
+            description: 'Join With Line Below With Space',
+            platforms: [
+               {
+                  type: 'vim',
+                  triggers: ['cl'],
+                  command: 'J',
+               },
+               {
+                  type: 'neovim',
+                  isVimClone: true,
+               },
+            ],
+         },
+      ],
+   },
+
+   {
+      group: 'Miscellaneous Commands',
+      mappings: [
+         {
+            description: 'Toggle Extremes of Selected Area',
+            modes: ['visual'],
+            platforms: [
+               {
+                  type: 'vim',
+                  triggers: ['<enter>'],
+                  command: 'o',
+               },
+               {
+                  type: 'neovim',
+                  isVimClone: true,
+               },
+            ],
+         },
+         {
+            description: 'Rename Symbol',
+            modes: ['normal'],
+            platforms: [
+               {
+                  type: 'vimToVscode',
+                  triggers: ['<leader>r'],
+                  command: 'editor.action.rename',
+               },
+               {
+                  type: 'neovim',
+                  // Todo
+               },
+            ],
+         },
+      ],
+   },
+
+   {
+      group: 'VSCode Commands',
+      mappings: [
+         {
+            description: 'Delete Left. (Required for Normal Mode)',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['backspace'],
+                  command: 'deleteLeft',
+                  when: 'textInputFocus',
+               },
+            ],
+         },
+         {
+            description: 'Delete Right. (Required for Normal Mode)',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['delete'],
+                  command: 'deleteRight',
+                  when: 'textInputFocus',
+               },
+            ],
+         },
+         {
+            description: "Trigger Suggestions (Mac Doesn't Work With ctrl+space)",
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['ctrl+g'],
+                  command: 'editor.action.triggerSuggest',
+                  when: 'editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible',
+                  removeCommand: '-editor.action.nextMatchFindAction',
+               },
+            ],
+         },
+         {
+            description: 'Trigger Copilot',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['ctrl+alt+space'],
+                  command: 'github.copilot.generate',
+                  when: 'editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused',
+               },
+            ],
+         },
+         {
+            description: 'Disable Copilot When Pressing ctrl+enter',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['ctrl+enter'],
+                  command: '-github.copilot.generate',
+                  when: 'editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused',
+               },
+            ],
+         },
+         {
+            description:
+               'Prevents From Going into Normal Mode When Closing Suggest Box (!inDebugRepl is Required for Some Reason)',
+            platforms: [
+               // This is not mistake. Both are required.
+               {
+                  type: 'vscode',
+                  triggers: ['escape'],
+                  command: 'extension.vim_escape',
+                  when: 'editorTextFocus && vim.active && !inDebugRepl && !suggestWidgetVisible',
+               },
+               {
+                  type: 'vscode',
+                  triggers: ['escape'],
+                  command: '-extension.vim_escape',
+                  when: 'editorTextFocus && !inDebugRepl && vim.active',
+               },
+            ],
+         },
+      ],
+   },
+
+   {
+      group: 'Peek commands',
+      modes: ['normal'],
+      mappings: [
+         {
+            description: 'Peek Definition',
+            platforms: [
+               {
+                  type: 'vimToVscode',
+                  triggers: ['cd'],
+                  command: 'editor.action.peekDefinition',
+               },
+               {
+                  type: 'neovim',
+                  // Todo
+               },
+            ],
+         },
+         {
+            description: 'Peek Call Hierarchy',
+            platforms: [
+               {
+                  type: 'vimToVscode',
+                  triggers: ['cf'],
+                  command: 'editor.showCallHierarchy',
+               },
+               {
+                  type: 'neovim',
+                  // Todo
+               },
+            ],
+         },
+         {
+            // Investigate this one.
+            // looks like it's clashing with other commands.
+            description: 'Toggle Peek Call Hierarchy Direction',
+            platforms: [
+               {
+                  type: 'vscode',
+                  triggers: ['ctrl+j'],
+                  command: 'editor.showOutgoingCalls',
+                  when: 'callHierarchyVisible && callHierarchyDirection == "incomingCalls"',
+               },
+               {
+                  type: 'vscode',
+                  triggers: ['ctrl+j'],
+                  command: 'editor.showIncomingCalls',
+                  when: 'callHierarchyVisible && callHierarchyDirection == "outgoingCalls"',
+               },
+            ],
+         },
+         {
+            description: 'Open Call Hierarchy View',
+            platforms: [
+               {
+                  type: 'vimToVscode',
+                  triggers: ['bf'],
+                  command: 'references-view.showCallHierarchy',
+               },
+               {
+                  type: 'neovim',
+                  // Todo
+               },
+            ],
+         },
+      ],
+   },
+
+   {
+      group: 'Save commands',
+      modes: ['normal', 'visual'],
+      mappings: [
+         {
+            description: 'Save',
+            platforms: [
+               {
+                  type: 'vimToVscode',
+                  triggers: ['<leader>s'],
+                  command: 'workbench.action.files.save',
+               },
+               {
+                  type: 'vscode',
+                  triggers: ['ctrl+e space'],
+                  command: 'workbench.action.files.save',
+                  when: 'editorFocus && !editorReadonly',
+               },
+            ],
+         },
+         {
+            description: 'Save All',
+            platforms: [
+               {
+                  type: 'vimToVscode',
+                  triggers: ['<leader><leader>s'],
+                  command: 'saveAll',
+               },
+               {
+                  type: 'vscode',
+                  triggers: ['ctrl+shift+s'],
+                  command: 'saveAll',
+               },
+            ],
+         },
+      ],
+   },
+
+   {
+      group: 'Close Commands',
+      modes: ['normal'],
+      mappings: [
+         {
+            description: 'Close Current Editor',
+            platforms: [
+               {
+                  type: 'vimToVscode',
+                  triggers: ['q'],
+                  command: 'workbench.action.closeActiveEditor',
+               },
+            ],
+         },
+         {
+            description: 'Close Other Editors in Group',
+            platforms: [
+               {
+                  type: 'vimToVscode',
+                  triggers: ['Q'],
+                  command: 'workbench.action.closeOtherEditors',
+               },
+            ],
+         },
+         {
+            description: 'Close Current Group',
+            platforms: [
+               {
+                  type: 'vimToVscode',
+                  triggers: ['<leader>q'],
+                  command: 'workbench.action.closeEditorsInGroup',
+               },
+            ],
+         },
+         {
+            description: 'Close All Editors',
+            platforms: [
+               {
+                  type: 'vimToVscode',
+                  triggers: ['<leader><leader>q'],
+                  command: 'workbench.action.closeAllGroups',
+               },
+            ],
+         },
+         {
+            description: 'Reopen Closed Editor',
+            platforms: [
+               {
+                  type: 'vimToVscode',
+                  triggers: ['gq'],
+                  command: 'workbench.action.reopenClosedEditor',
+               },
+            ],
+         },
+      ],
+   },
 ];

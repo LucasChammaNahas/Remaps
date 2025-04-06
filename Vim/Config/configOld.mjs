@@ -622,287 +622,286 @@ export const config = {
    //    },
    // ],
 
-   goCommands: [
-      {
-         comment: 'Go to Global Declaration',
-         before: 'ggd',
-         after: 'gD',
-         modes: 'n',
-      },
-      {
-         comment: 'Indent Lines',
-         before: 'co',
-         command: 'editor.action.indentLines',
-      },
-      {
-         comment: 'Outdent Lines',
-         before: 'cu',
-         command: 'editor.action.outdentLines',
-      },
-   ],
+   // goCommands: [
+   //    {
+   //       comment: 'Go to Global Declaration',
+   //       before: 'ggd',
+   //       after: 'gD',
+   //       modes: 'n',
+   //    },
+   //    {
+   //       comment: 'Indent Lines',
+   //       before: 'co',
+   //       command: 'editor.action.indentLines',
+   //    },
+   //    {
+   //       comment: 'Outdent Lines',
+   //       before: 'cu',
+   //       command: 'editor.action.outdentLines',
+   //    },
+   // ],
 
-   foldCommands: [
-      { defaultModes: 'n' },
+   // foldCommands: [
+   //    { defaultModes: 'n' },
 
-      {
-         comment: 'Define a Fold Up Motion',
-         before: 'th',
-         after: 'zf',
-      },
-      {
-         comment: 'Delete a Fold Up Motion',
-         before: 'ts',
-         after: 'zd',
-      },
-      {
-         comment: 'Toggle Fold Up Motion',
-         before: 'tj',
-         command: 'editor.toggleFold',
-      },
-      {
-         comment: 'Fold Up Region Level 1',
-         before: 'ty',
-         command: 'editor.foldLevel1',
-      },
-      {
-         comment: 'Fold Up Region Level 2',
-         before: 'tu',
-         command: 'editor.foldLevel2',
-      },
-      {
-         comment: 'Fold Up Region Level 3',
-         before: 'ti',
-         command: 'editor.foldLevel3',
-      },
-      {
-         comment: 'Fold Up Region Level 4',
-         before: 'to',
-         command: 'editor.foldLevel4',
-      },
-      {
-         comment: 'Fold Up Region Level 5',
-         before: 'tp',
-         command: 'editor.foldLevel5',
-      },
-      {
-         comment: 'Fold Up All Levels',
-         before: 'TT',
-         command: 'editor.foldAll',
-      },
-      {
-         comment: 'Unfold Up All Levels',
-         before: 'tt',
-         command: 'editor.unfoldAll',
-      },
-   ],
+   //    {
+   //       comment: 'Define a Fold Up Motion',
+   //       before: 'th',
+   //       after: 'zf',
+   //    },
+   //    {
+   //       comment: 'Delete a Fold Up Motion',
+   //       before: 'ts',
+   //       after: 'zd',
+   //    },
+   //    {
+   //       comment: 'Toggle Fold Up Motion',
+   //       before: 'tj',
+   //       command: 'editor.toggleFold',
+   //    },
+   //    {
+   //       comment: 'Fold Up Region Level 1',
+   //       before: 'ty',
+   //       command: 'editor.foldLevel1',
+   //    },
+   //    {
+   //       comment: 'Fold Up Region Level 2',
+   //       before: 'tu',
+   //       command: 'editor.foldLevel2',
+   //    },
+   //    {
+   //       comment: 'Fold Up Region Level 3',
+   //       before: 'ti',
+   //       command: 'editor.foldLevel3',
+   //    },
+   //    {
+   //       comment: 'Fold Up Region Level 4',
+   //       before: 'to',
+   //       command: 'editor.foldLevel4',
+   //    },
+   //    {
+   //       comment: 'Fold Up Region Level 5',
+   //       before: 'tp',
+   //       command: 'editor.foldLevel5',
+   //    },
+   //    {
+   //       comment: 'Fold Up All Levels',
+   //       before: 'TT',
+   //       command: 'editor.foldAll',
+   //    },
+   //    {
+   //       comment: 'Unfold Up All Levels',
+   //       before: 'tt',
+   //       command: 'editor.unfoldAll',
+   //    },
+   // ],
 
-   markCommands: [
-      {
-         comment: 'Set Mark',
-         before: 'M',
-         after: 'm',
-         modes: 'n',
-      },
-      {
-         comment: 'Go to Mark',
-         before: 'm',
-         after: '`',
-         modes: 'n',
-      },
-      {
-         comment: 'Copies From the current position up to mark #',
-         before: 'dm',
-         after: 'y`',
-         modes: 'n',
-      },
-   ],
+   // markCommands: [
+   //    { defaultModes: 'n' },
 
-   changeListCommands: [
-      { defaultModes: 'n' },
+   //    {
+   //       comment: 'Set Mark',
+   //       before: 'M',
+   //       after: 'm',
+   //    },
+   //    {
+   //       comment: 'Go to Mark',
+   //       before: 'm',
+   //       after: '`',
+   //    },
+   //    {
+   //       comment: 'Copies From the current position up to mark #',
+   //       before: 'dm',
+   //       after: 'y`',
+   //    },
+   // ],
 
-      {
-         comment: 'Go Back in Change List',
-         before: 'gn',
-         after: 'g;',
-      },
-      {
-         comment: 'Go Forth in Change List',
-         before: 'gm',
-         after: 'g,',
-      },
-   ],
+   // changeListCommands: [
+   //    { defaultModes: 'n' },
 
-   joinLineCommands: [
-      { defaultModes: 'n' },
+   //    {
+   //       comment: 'Go Back in Change List',
+   //       before: 'gn',
+   //       after: 'g;',
+   //    },
+   //    {
+   //       comment: 'Go Forth in Change List',
+   //       before: 'gm',
+   //       after: 'g,',
+   //    },
+   // ],
 
-      {
-         comment: 'Join With Line Below Without Space',
-         before: 'cj',
-         after: 'gJ',
-      },
-      {
-         comment: 'Join With Line Below With Space',
-         before: 'cl',
-         after: 'J',
-      },
-   ],
+   // joinLineCommands: [
+   //    { defaultModes: 'n' },
 
-   miscellaneousCommands: [
-      {
-         comment: 'Toggle Extremes of Selected Area',
-         before: '<enter>',
-         after: 'o',
-         modes: 'v',
-      },
-      {
-         comment: 'Rename Symbol',
-         before: '<leader>r',
-         command: 'editor.action.rename',
-         modes: 'n',
-      },
-   ],
+   //    {
+   //       comment: 'Join With Line Below Without Space',
+   //       before: 'cj',
+   //       after: 'gJ',
+   //    },
+   //    {
+   //       comment: 'Join With Line Below With Space',
+   //       before: 'cl',
+   //       after: 'J',
+   //    },
+   // ],
 
-   vsCode: [
-      {
-         comment: 'Delete Left. (Required to Delete While in Normal Mode)',
-         key: 'backspace',
-         command: 'deleteLeft',
-         when: 'textInputFocus',
-      },
-      {
-         comment: 'Delete Right. (Required to Delete While in Normal Mode)',
-         key: 'delete',
-         command: 'deleteRight',
-         when: 'textInputFocus',
-      },
-      {
-         comment: "Trigger Suggestions (Mac Doesn't Work With ctrl+space)",
-         key: 'ctrl+g',
-         command: 'editor.action.triggerSuggest',
-         when: 'editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible',
-      },
-      {
-         comment: "Trigger Suggestions (Mac Doesn't Work With ctrl+space)",
-         key: 'ctrl+g',
-         command: '-editor.action.nextMatchFindAction',
-         when: 'editorFocus',
-      },
-      {
-         comment: 'Trigger Copilot',
-         key: 'ctrl+alt+space',
-         command: 'github.copilot.generate',
-         when: 'editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused',
-      },
-      {
-         comment: 'Disable Copilot When Pressing ctrl+enter',
-         key: 'ctrl+enter',
-         command: '-github.copilot.generate',
-         when: 'editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused',
-      },
-      {
-         comment:
-            'Prevents From Going into Normal Mode When Closing Suggest Box (!inDebugRepl is Required for Some Reason)',
-         key: 'escape',
-         command: 'extension.vim_escape',
-         when: 'editorTextFocus && vim.active && !inDebugRepl && !suggestWidgetVisible',
-      },
-      {
-         comment:
-            'Prevents From Going into Normal Mode When Closing Suggest Box (!inDebugRepl is Required for Some Reason)',
-         key: 'escape',
-         command: '-extension.vim_escape',
-         when: 'editorTextFocus && !inDebugRepl && vim.active',
-      },
-   ],
+   // miscellaneousCommands: [
+   //    {
+   //       comment: 'Toggle Extremes of Selected Area',
+   //       before: '<enter>',
+   //       after: 'o',
+   //       modes: 'v',
+   //    },
+   //    {
+   //       comment: 'Rename Symbol',
+   //       before: '<leader>r',
+   //       command: 'editor.action.rename',
+   //       modes: 'n',
+   //    },
+   // ],
 
-   peekCommands: [
-      { defaultModes: 'n' },
+   // vsCode: [
+   //    {
+   //       comment: 'Delete Left. (Required to Delete While in Normal Mode)',
+   //       key: 'backspace',
+   //       command: 'deleteLeft',
+   //       when: 'textInputFocus',
+   //    },
+   //    {
+   //       comment: 'Delete Right. (Required to Delete While in Normal Mode)',
+   //       key: 'delete',
+   //       command: 'deleteRight',
+   //       when: 'textInputFocus',
+   //    },
+   //    {
+   //       comment: "Trigger Suggestions (Mac Doesn't Work With ctrl+space)",
+   //       key: 'ctrl+g',
+   //       command: 'editor.action.triggerSuggest',
+   //       when: 'editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible',
+   //    },
+   //    {
+   //       comment: "Trigger Suggestions (Mac Doesn't Work With ctrl+space)",
+   //       key: 'ctrl+g',
+   //       command: '-editor.action.nextMatchFindAction',
+   //       when: 'editorFocus',
+   //    },
+   //    {
+   //       comment: 'Trigger Copilot',
+   //       key: 'ctrl+alt+space',
+   //       command: 'github.copilot.generate',
+   //       when: 'editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused',
+   //    },
+   //    {
+   //       comment: 'Disable Copilot When Pressing ctrl+enter',
+   //       key: 'ctrl+enter',
+   //       command: '-github.copilot.generate',
+   //       when: 'editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused',
+   //    },
+   //    {
+   //       comment:
+   //          'Prevents From Going into Normal Mode When Closing Suggest Box (!inDebugRepl is Required for Some Reason)',
+   //       key: 'escape',
+   //       command: 'extension.vim_escape',
+   //       when: 'editorTextFocus && vim.active && !inDebugRepl && !suggestWidgetVisible',
+   //    },
+   //    {
+   //       comment:
+   //          'Prevents From Going into Normal Mode When Closing Suggest Box (!inDebugRepl is Required for Some Reason)',
+   //       key: 'escape',
+   //       command: '-extension.vim_escape',
+   //       when: 'editorTextFocus && !inDebugRepl && vim.active',
+   //    },
+   // ],
 
-      {
-         comment: 'Peek Definition',
-         before: 'cd',
-         command: 'editor.action.peekDefinition',
-      },
-      {
-         comment: 'Peek Call Hierarchy',
-         before: 'cf',
-         command: 'editor.showCallHierarchy',
-      },
-      {
-         comment: 'Toggle Peek Call Hierarchy Direction',
-         key: 'ctrl+j',
-         command: 'editor.showOutgoingCalls',
-         when: 'callHierarchyVisible && callHierarchyDirection == "incomingCalls"',
-      },
-      {
-         comment: 'Toggle Peek Call Hierarchy Direction',
-         key: 'ctrl+j',
-         command: 'editor.showIncomingCalls',
-         when: 'callHierarchyVisible && callHierarchyDirection == "outgoingCalls"',
-      },
-      {
-         comment: 'Open Call Hierarchy View',
-         before: 'bf',
-         command: 'references-view.showCallHierarchy',
-      },
-   ],
+   // peekCommands: [
+   //    { defaultModes: 'n' },
 
-   saveCommands: [
-      {
-         comment: 'Save',
-         before: '<leader>s',
-         command: 'workbench.action.files.save',
-      },
-      {
-         comment: 'Save',
-         key: 'ctrl+e space',
-         command: 'workbench.action.files.save',
-         when: 'editorFocus && !editorReadonly',
-      },
-      {
-         comment: 'Save All',
-         before: '<leader><leader>s',
-         command: 'saveAll',
-      },
-      {
-         comment: 'Save All',
-         key: 'ctrl+shift+s',
-         command: 'saveAll',
-      },
-   ],
+   //    {
+   //       comment: 'Peek Definition',
+   //       before: 'cd',
+   //       command: 'editor.action.peekDefinition',
+   //    },
+   //    {
+   //       comment: 'Peek Call Hierarchy',
+   //       before: 'cf',
+   //       command: 'editor.showCallHierarchy',
+   //    },
+   //    {
+   //       comment: 'Toggle Peek Call Hierarchy Direction',
+   //       key: 'ctrl+j',
+   //       command: 'editor.showOutgoingCalls',
+   //       when: 'callHierarchyVisible && callHierarchyDirection == "incomingCalls"',
+   //    },
+   //    {
+   //       comment: 'Toggle Peek Call Hierarchy Direction',
+   //       key: 'ctrl+j',
+   //       command: 'editor.showIncomingCalls',
+   //       when: 'callHierarchyVisible && callHierarchyDirection == "outgoingCalls"',
+   //    },
+   //    {
+   //       comment: 'Open Call Hierarchy View',
+   //       before: 'bf',
+   //       command: 'references-view.showCallHierarchy',
+   //    },
+   // ],
 
-   closeCommands: [
-      {
-         comment: 'Close Current Editor',
-         before: 'q',
-         command: 'workbench.action.closeActiveEditor',
-         modes: 'n',
-      },
-      {
-         comment: 'Close Other Editors in Group',
-         before: 'Q',
-         command: 'workbench.action.closeOtherEditors',
-         modes: 'n',
-      },
-      {
-         comment: 'Close Current Group',
-         before: '<leader>q',
-         command: 'workbench.action.closeEditorsInGroup',
-         modes: 'n',
-      },
-      {
-         comment: 'Close All Editors',
-         before: '<leader><leader>q',
-         command: 'workbench.action.closeAllGroups',
-         modes: 'n',
-      },
-      {
-         comment: 'Reopen Closed Editor',
-         before: 'gq',
-         command: 'workbench.action.reopenClosedEditor',
-         modes: 'n',
-      },
-   ],
+   // saveCommands: [
+   //    {
+   //       comment: 'Save',
+   //       before: '<leader>s',
+   //       command: 'workbench.action.files.save',
+   //    },
+   //    {
+   //       comment: 'Save',
+   //       key: 'ctrl+e space',
+   //       command: 'workbench.action.files.save',
+   //       when: 'editorFocus && !editorReadonly',
+   //    },
+   //    {
+   //       comment: 'Save All',
+   //       before: '<leader><leader>s',
+   //       command: 'saveAll',
+   //    },
+   //    {
+   //       comment: 'Save All',
+   //       key: 'ctrl+shift+s',
+   //       command: 'saveAll',
+   //    },
+   // ],
+
+   // closeCommands: [
+   //    {
+   //       comment: 'Close Current Editor',
+   //       before: 'q',
+   //       command: 'workbench.action.closeActiveEditor',
+   //       modes: 'n',
+   //    },
+   //    {
+   //       comment: 'Close Other Editors in Group',
+   //       before: 'Q',
+   //       command: 'workbench.action.closeOtherEditors',
+   //       modes: 'n',
+   //    },
+   //    {
+   //       comment: 'Close Current Group',
+   //       before: '<leader>q',
+   //       command: 'workbench.action.closeEditorsInGroup',
+   //       modes: 'n',
+   //    },
+   //    {
+   //       comment: 'Close All Editors',
+   //       before: '<leader><leader>q',
+   //       command: 'workbench.action.closeAllGroups',
+   //       modes: 'n',
+   //    },
+   //    {
+   //       comment: 'Reopen Closed Editor',
+   //       before: 'gq',
+   //       command: 'workbench.action.reopenClosedEditor',
+   //       modes: 'n',
+   //    },
+   // ],
 
    searchAndReplaceCommands: [
       {
